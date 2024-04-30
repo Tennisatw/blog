@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang }}">
 <head>
+
+  <script src="https://cdn.jsdelivr.net/gh/tennisatw/live2d-widget@1.94/autoload.js" async="async" ></script>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/tennisatw/blogfiles@1.6/waline.css"/>
+  <script type="module">
+      import { init } from 'https://cdn.jsdelivr.net/gh/tennisatw/blogfiles@1.6/waline.mjs';
+      window.init = init;
+  </script>
+
   {{ partial('_partials/head/head.njk', {}, {cache: theme.cache.enable}) }}
   {%- include '_partials/head/head-unique.njk' -%}
   <title>{% block title %}{% endblock %}</title>
@@ -48,5 +56,14 @@
   {%- include '_third-party/quicklink.njk' -%}
 
   {{- next_inject('bodyEnd') }}
+
+  <script type="module">
+    window.init({
+      el: '.comments',
+      lang: 'en',
+      serverURL: 'https://comment.tennisatw.com',
+    });
+  </script>
+
 </body>
 </html>

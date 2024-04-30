@@ -9,10 +9,10 @@ hexo.extend.filter.register('theme_inject', injects => {
   const config = hexo.theme.config.utterances;
   if (!config.enable) return;
 
-  if (!config.repo) {
-    hexo.log.warn('utterances.repo can\'t be null.');
-    return;
-  }
+  // if (!config.repo) {
+  //   hexo.log.warn('utterances.repo can\'t be null.');
+  //   return;
+  // }
 
   injects.comment.raw('utterances', '<div class="comments utterances-container"></div>', {}, { cache: true });
 
