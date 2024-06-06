@@ -440,9 +440,11 @@ the rule of law can, lol.</p>
       </tags>
   </entry>
   <entry>
-    <title>accident-fatalities</title>
+    <title>实验：如何判断报道的事故死亡人数是否被大量修改？ - Experiment： How to judge whether the reported accident fatalities have been substantially modified?</title>
     <url>//post/5/</url>
-    <content><![CDATA[<p>由于本文可能稍有敏感，这里仅展示英文版。</p>
+    <content><![CDATA[<p class="tennisbot" id="左上角有google翻译，如果需要的话&lt;br&gt;There is Google Translate button in the upper left corner, if needed">
+由于本文可能稍有敏感，这里仅展示英文版。
+</p>
 <p>
 <br>
 </p>
@@ -474,6 +476,7 @@ for reference only.</p>
 <br>
 </p>
 <p>The experimental results are shown below.</p>
+<p><img src="1.png" /></p>
 <p>
 <br>
 </p>
@@ -503,8 +506,17 @@ death toll has not been substantially revised from 2016 to 2021.</p>
 <br>
 </p>
 <p>2023.4.22</p>
-<p><a href="/script.py" download>下载示例文件</a></p>
-<p><a href="/遇难.xlsx" download>下载示例文件2</a></p>
+<p>
+<br>
+</p>
+<p><a href="/post/5/script.py" download>Appendum 1: The python script
+used for plotting:</a></p>
+<p><a href="/post/5/遇难.xlsx" download>Addendum 2: Source Data</a></p>
 ]]></content>
+      <tags>
+        <tag>随想 - Thoughts</tag>
+        <tag>编程 - Programming</tag>
+        <tag>敏感 - Sensitive</tag>
+      </tags>
   </entry>
 </search>
