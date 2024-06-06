@@ -3,7 +3,7 @@ title: 在Python中模拟程序重启 - Simulating Program Restart in Python
 permalink: post/10/
 excerpt: 在编写Tennisbot的主程序时，总是需要使其重启。Python中，可以使用以下命令模拟重启效果。<br>When writing the main program for Tennisbot, it always needs to be restarted. The following command can be used in Python to simulate a restart effect.
 date: 2023-06-25 21:14:13
-tags:
+tags: 编程 - Programming
 ---
 
 在编写Tennisbot的主程序时，总是需要使其重启。Python中，可以使用以下命令模拟重启效果。

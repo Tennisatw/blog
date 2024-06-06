@@ -3,7 +3,7 @@ title: 参观大庆油田历史陈列馆和唐山大地震纪念馆有感 - Refl
 permalink: post/13/
 excerpt:  我相当讨厌两件事，一个是强制奉献，一个是丧事喜办。<br>There are two things I detest rather deeply：one is compulsory sacrifice, and the other is glossing over tragedies with celebrations.
 date: 2023-07-24 09:57:11
-tags:
+tags: 敏感 - Sensitive
 ---
 
 <p class="tennisbot" id="左上角有google翻译，如果需要的话<br>There is Google Translate button in the upper left corner, if needed">由于本文可能稍有敏感，这里仅展示英文版。</p>
