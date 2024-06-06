@@ -199,7 +199,7 @@ toc:
 # ---------------------------------------------------------------
 
 # Show multilingual switcher in footer.
-language_switcher: true
+language_switcher: false
 
 footer:
   # Specify the year when the site was setup. If not defined, current year will be used.
@@ -239,7 +239,7 @@ footer:
 # ---------------------------------------------------------------
 
 # Use `description` in front-matter to specify post excerpt.
-excerpt_description: false
+excerpt_description: filename_case
 
 # Read more button
 # If true, the read more button will be displayed in excerpt section.
@@ -349,8 +349,8 @@ mobile_layout_economy: true
 
 # Browser header panel color.
 theme_color:
-  light: "#222"
-  dark: "#222"
+  light: "#556"
+  dark: "#556"
 
 # Override browsers' default behavior.
 body_scrollbar:
@@ -384,6 +384,7 @@ back2top:
   sidebar: false
   # Scroll percent label in b2t button.
   scrollpercent: false
+  color: "4020c0"
 
 # Reading progress bar
 reading_progress:
@@ -400,7 +401,7 @@ reading_progress:
 bookmark:
   enable: false
   # Customize the color of the bookmark.
-  color: "#222"
+  color: "#556"
   # If auto, save the reading progress when closing the page or clicking the bookmark-icon.
   # If manual, only save it by clicking the bookmark-icon.
   save: auto

@@ -17,11 +17,11 @@ timezone: ''
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: http://test.tennisatw.com
-permalink: :year/:month/:day/:title.html
+permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
-  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
-  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+  trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: false # Set to false to remove trailing '.html' from permalinks
 
 # Directory
 source_dir: source
@@ -34,7 +34,8 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: :title.md # File name of new posts
+# new_post_name: :title.md # File name of new posts
+new_post_name: :year-:month-:day_:title.md
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link:
@@ -43,7 +44,7 @@ external_link:
   exclude: ''
 filename_case: 1
 render_drafts: false
-post_asset_folder: true
+post_asset_folder: True
 relative_link: false
 future: false
 syntax_highlighter: highlight.js
@@ -100,6 +101,10 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next
+
+# Scripts
+scripts:
+  - scripts/increment_id.js
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

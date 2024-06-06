@@ -3,6 +3,18 @@
 {%- if theme.menu or theme.algolia_search.enable or theme.local_search.enable %}
 <nav class="site-nav">
   <ul class="main-menu menu">
+    <div id="google_translate_element"></div>
+    <script type="text/javascript" async="async" >
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {pageLanguage: 'en,zh-CN', 
+        includedLanguages: 'en,zh-CN,zh-TW,es,ar,hi,ru,ja,de,fr', 
+        layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 
+        'google_translate_element');
+    }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
     {%- for node in theme.main_menu %}
       {{- menu_item.render(node) | trim }}
     {%- endfor %}

@@ -67,3 +67,33 @@
 
 </body>
 </html>
+
+<script>
+  window.onload = function() {
+    // 延迟执行，确保动画已经完成
+    setTimeout(function() {
+      // 获取需要操作的元素
+      const targetLanguageDiv = document.getElementById(":0.targetLanguage");
+      const skipTranslateDiv = document.querySelector(".skiptranslate.goog-te-gadget");
+      
+      // 删除不需要的文本节点和span元素
+      if (skipTranslateDiv) {
+        const textNodes = Array.from(skipTranslateDiv.childNodes).filter(node => node.nodeType === Node.TEXT_NODE);
+        textNodes.forEach(node => node.remove());
+        
+        const spanElement = skipTranslateDiv.querySelector("span");
+        if (spanElement) {
+            spanElement.remove();
+        }
+      }
+
+      // 隐藏不需要的元素
+      var trans = document.getElementsByClassName('VIpgJd-ZVi9od-aZ2wEe-wOHMyf');
+        for (var i = 0; i < trans.length; i++) {
+            var tran = trans[i];
+                tran.className += " hidden";
+        }
+
+    }, 500); // 延迟时间，可以根据实际情况调整
+  };
+</script>
