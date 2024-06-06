@@ -32,7 +32,7 @@ Email: tennisbot0@gmail.com
 
 页面下方有一个能与Tennisbot聊天的方框。可以与她讨论有关博文的话题，或者仅是闲聊。其实现方式见此文。（因为太费钱了所以暂时关闭）
 
-At the bottom of the page, there's a chat box for engaging with Tennisbot. You can discuss topics related to the blog post or simply enjoy a casual conversation. The implementation method is mentioned here.(Temporarily closed because it costs too much money)
+At the bottom of the page, there's a chat box for engaging with Tennisbot. You can discuss topics related to the blog post or simply enjoy a casual conversation. The implementation method is mentioned here. (Temporarily closed because it costs too much money)
 
 <p><br></p>
 
@@ -52,9 +52,9 @@ This blog is made using Hexo. Feel free to share the content of this blog, but p
 
 <p><br></p>
 
-本博客的大部分内容由中英文“交错”写成。两者内容几乎一致，但相信一些眼尖的读者已经发现有出入的地方了。这么做的原因见此文。
+本博客的大部分内容由中英文“交错”写成。两者内容几乎一致，但相信一些眼尖的读者已经发现有出入的地方了。这么做的原因见[此文](http://localhost:4000/post/17/)。
 
-Most of the content in this blog is written in a mix of Chinese and English. The content in both languages is almost identical, but some eagle-eyed readers may have already noticed some discrepancies. The reasons for this approach are detailed here.
+Most of the content in this blog is written in a mix of Chinese and English. The content in both languages is almost identical, but some eagle-eyed readers may have already noticed some discrepancies. The reasons for this approach are detailed [here](http://localhost:4000/post/17/).
 
 <p><br></p>
 
