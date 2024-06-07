@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <script src="https://cdn.jsdelivr.net/gh/tennisatw/live2d-widget@1.94/autoload.js" async="async" ></script>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/tennisatw/blogfiles@1.6/waline.css"/>
+  <script type="module">
+      import { init } from 'https://cdn.jsdelivr.net/gh/tennisatw/blogfiles@1.6/waline.mjs';
+      window.init = init;
+  </script>
+
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#556"><meta name="generator" content="Hexo 7.1.1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-50.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-50.png">
+  <link rel="mask-icon" href="/images/favicon-50.svg" color="#556">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha256-wiz7ZSCn/btzhjKDQBms9Hx4sSeUYsDrTLg7roPstac=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"test.tennisatw.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.19.2","exturl":false,"sidebar":{"position":"left","display":"remove","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#556","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"utterances","storage":true,"lazyload":false,"nav":null,"activeClass":"utterances"},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="可以使用ChatGPT做客观的政治倾向分析。因为ChatGPT学习过大量的文本数据，其中自然包括政治方面的知识。事实上，ChatGPT对政治的理解相当深刻，并且十分博学。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="政治言论倾向分析器">
+<meta property="og:url" content="http://test.tennisatw.com/post/48/">
+<meta property="og:site_name" content="Tennisatw的博客 - Blog of Tennisatw">
+<meta property="og:description" content="可以使用ChatGPT做客观的政治倾向分析。因为ChatGPT学习过大量的文本数据，其中自然包括政治方面的知识。事实上，ChatGPT对政治的理解相当深刻，并且十分博学。">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://test.tennisatw.com/post/48/1.png">
+<meta property="og:image" content="http://test.tennisatw.com/post/48/2.png">
+<meta property="og:image" content="http://test.tennisatw.com/post/48/3.png">
+<meta property="og:image" content="http://test.tennisatw.com/post/48/4.png">
+<meta property="og:image" content="http://test.tennisatw.com/post/48/6.png">
+<meta property="og:image" content="http://test.tennisatw.com/post/48/5.webp">
+<meta property="article:published_time" content="2024-04-13T02:26:38.000Z">
+<meta property="article:modified_time" content="2024-06-07T20:40:54.456Z">
+<meta property="article:author" content="Tennisatw">
+<meta property="article:tag" content="随想 - Thoughts">
+<meta property="article:tag" content="技术 - Technology">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://test.tennisatw.com/post/48/1.png">
+
+
+<link rel="canonical" href="http://test.tennisatw.com/post/48/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://test.tennisatw.com/post/48/","path":"/post/48/","title":"政治言论倾向分析器"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>政治言论倾向分析器 | Tennisatw的博客 - Blog of Tennisatw</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Tennisatw的博客 - Blog of Tennisatw</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索 - Search" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+    <div id="google_translate_element"></div>
+    <script type="text/javascript" async="async" >
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {pageLanguage: 'en,zh-CN', 
+        includedLanguages: 'en,zh-CN,zh-TW,es,ar,hi,ru,ja,de,fr', 
+        layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 
+        'google_translate_element');
+    }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script><li class="menu-item menu-item-首页---home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页 - home</a></li><li class="menu-item menu-item-关于---about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于 - about</a></li><li class="menu-item menu-item-标签---tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签 - tags</a></li><li class="menu-item menu-item-分类---categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类 - categories</a></li><li class="menu-item menu-item-归档---archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档 - archives</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索 - Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://test.tennisatw.com/post/48/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Tennisatw">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Tennisatw的博客 - Blog of Tennisatw">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="政治言论倾向分析器 | Tennisatw的博客 - Blog of Tennisatw">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          政治言论倾向分析器
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2024/04/12 20:26:38" itemprop="dateCreated datePublished" datetime="2024-04-12T20:26:38-06:00">2024/04/12</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2024/06/07 14:40:54" itemprop="dateModified" datetime="2024-06-07T14:40:54-06:00">2024/06/07</time>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="Word count in article">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">Word count in article: </span>
+      <span>2k</span>
+    </span>
+    <span class="post-meta-item" title="Reading time">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">Reading time &asymp;</span>
+      <span>7 mins.</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h3 id="背景介绍">背景介绍</h3>
+<p>Mhyyyy老师的视频<a
+target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=WItmdbBPOww&amp;t=413s">《从零教你懂政治6》</a>介绍了多维政治坐标。通过使用计划-市场；民主-威权；进步-保守；世界-民族这4个指标来判断一个人的政治思想确实是相当全面的思想。</p>
+<p>但是由“人”
+来判断政治坐标总归是主观的。因为“人”做评价时，总是不可避免地带有其自己的倾向，如果我是极左，那我看其他人都偏右。此外，人的思想总是会受到环境的干扰，比如一个人，听多了极端保守主义的言论，就可能会把一个中立的言论当成进步的。</p>
+<p>目前为止，最客观的评价政治指标方法当然是做测试题，但是如果只是想分析一句话的政治倾向，或者想给一个已经去世的人做客观的政治指标分析，测试题就没有用武之地了。</p>
+<p>
+<br>
+</p>
+<p>除了做测试题之外，其实也可以使用ChatGPT（特指GPT-4）做客观的政治倾向分析。因为ChatGPT学习过大量的文本数据，其中自然包括政治方面的知识。事实上，ChatGPT对政治的理解相当深刻，并且十分博学。</p>
+<p>我稍稍测试了一些常见的政治术语，要求ChatGPT进行解释，它的回答也基本令人满意。想必ChatGPT有能力评价一个人的政治倾向。</p>
+<p><img src="1.png" /></p>
+<p>
+<br>
+</p>
+<h3 id="提示词">提示词</h3>
+<p>这里抛砖引玉，给出一份效果还可以的提示词，用于分析某一言论的政治倾向。如果有谁有更好的提示词，欢迎分享。</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">请分析以下言论所体现的言论本人的政治倾向。请从4个维度来分析其政治倾向，请在每一个评价处简要说明原因。</span><br><span class="line"></span><br><span class="line">经济: 计划(平等, 左) - 市场(自由, 右) ，如果此言论支持市场主义，依据其支持程度不同，将其评价为市场6-市场10，市场6为中立，稍偏向市场经济，而市场10为极端市场经济，数值越大越极端。如果此言论支持计划主义，依据其支持程度不同，评价其为计划6-计划10。如中立，则评价为中立5，如未体现明显的倾向请回复未知0。</span><br><span class="line">政治: 民主(自由) - 威权(权威)，评价规则同上。</span><br><span class="line">文化: 进步 - 保守，评价规则同上。</span><br><span class="line">身份: 世界(全球) - 民族(国家)，评价规则同上。</span><br><span class="line"></span><br><span class="line">请以以下格式回复：</span><br><span class="line"><span class="strong">**经济 计划/市场num**</span> - 原因</span><br><span class="line"><span class="strong">**政治 民主/威权num**</span> - 原因</span><br><span class="line"><span class="strong">**文化 进步/保守num**</span> - 原因</span><br><span class="line"><span class="strong">**身份 世界/民族num**</span> - 原因</span><br><span class="line"></span><br><span class="line">请注意：言论本人并不一定支持其提到的政治倾向。如某言论虽然提到了计划经济，但认为其属于极左，这意味这他的经济倾向可能偏向市场。反之同理，政治，文化，民族方面同理。</span><br><span class="line"></span><br><span class="line">一些例子以供参考：</span><br><span class="line">通常认为，斯大林：</span><br><span class="line"><span class="strong">**经济 计划9**</span> - 明显倾向计划经济</span><br><span class="line"><span class="strong">**政治 威权9**</span> - 搞威权统治</span><br><span class="line"><span class="strong">**文化 进步8**</span> - 推行无神论</span><br><span class="line"><span class="strong">**身份 民族6**</span> - 是大俄罗斯主义者，但也会参与共产国际</span><br><span class="line"></span><br><span class="line">希特勒：</span><br><span class="line"><span class="strong">**经济 市场7**</span> - 相对支持市场经济</span><br><span class="line"><span class="strong">**政治 威权9**</span> - 搞威权统治</span><br><span class="line"><span class="strong">**文化 中立5**</span> - 没有明显倾向</span><br><span class="line"><span class="strong">**身份 民族9**</span> - 非常严重的民族主义</span><br><span class="line"></span><br><span class="line">---以下为待分析的言论---</span><br><span class="line"></span><br><span class="line">“无论国际风云如何变幻，中国都会坚定不移地扩大开放。长江、黄河不会倒流。”</span><br></pre></td></tr></table></figure>
+<p>将上述一段话复制到ChatGPT里，然后将最后一句话改成想要分析的言论，然后就可以得到ChatGPT的回复了。一种可能的回复如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">对于给出的言论“无论国际风云如何变幻，中国都会坚定不移地扩大开放。长江、黄河不会倒流。”，我们可以从以下四个维度进行政治倾向分析：</span><br><span class="line"></span><br><span class="line">经济 市场7 - 原因：这句话强调“扩大开放”，通常这表示对外贸易和市场经济的支持。这种表述通常反映了对市场机制和国际交流的重视，但由于言论中未具体提及市场经济的极端自由化措施，故评为稍微偏向市场经济的市场7。</span><br><span class="line"></span><br><span class="line">政治 民主6 - 原因：虽然这句话没有直接涉及到政治体制的具体形态，但“坚定不移地扩大开放”可能暗示了对包容和一定程度上的政治自由的支持，因为经济开放往往与政治体制的某种开放性相伴随。评为略微倾向于民主的民主6。</span><br><span class="line"></span><br><span class="line">文化 进步6 - 原因：开放通常与文化的进步和现代化联系在一起，意味着接受新思想和国际文化的融合。此言论表达了对变革和新观念的接纳态度，因此评为略微偏向文化进步的进步6。</span><br><span class="line"></span><br><span class="line">身份 世界7 - 原因：“扩大开放”强调的是对外关系和国际合作的重要性，这体现了一种全球化的视角。同时，使用“长江、黄河不会倒流”作为比喻，强调中国文化和传统的持续，但在全球化语境下，这种表述更倾向于表明在保持自身文化特色的同时，积极参与全球事务。故评为稍微偏向世界主义的世界7。</span><br></pre></td></tr></table></figure>
+<p>
+<br>
+</p>
+<p>注意，ChatGPT给出的分数不一定每一次都相同，但误差通常不会超过正负1。此外，GPT-3.5给出的结果并不好，如果有条件，尽量使用GPT-4模型。</p>
+<p>另请注意，一个人的言论不一定和其行为一致，且不一定100%体现其意识型态，反例实在是太多了。</p>
+<p>免责声明：此结果仅供娱乐，本人不为使用此提示词生成的任何内容负责。如果ChatGPT生成了冒犯您的言论，本人深感遗憾。</p>
+<p>
+<br>
+</p>
+<h3 id="构建gpts可选">构建GPTs（可选）</h3>
+<p>如果不想每一次都复制这么长一段文字，ChatGPT
+plus用户可以构建一个自己的GPT。点击<a
+target="_blank" rel="noopener" href="https://chat.openai.com/gpts/mine">https://chat.openai.com/gpts/mine</a>，点击create
+a
+GPT，在Name中随便起一个名字，在Instructions一栏中填入刚才的文字，删掉最后一行的言论。然后点击右上角的create，就可以使用了。</p>
+<p>使用时只需要复制需要评价的言论，输入给它就可以。</p>
+<p>或者你也可以用<a
+target="_blank" rel="noopener" href="https://chat.openai.com/g/g-hCAF8rWLv-zheng-zhi-yan-lun-qing-xiang-fen-xi-qi">我的GPT</a>。</p>
+<p><img src="2.png" /></p>
+<p><img src="3.png" /></p>
+<p>
+<br>
+</p>
+<h3 id="更复杂的文本">更复杂的文本</h3>
+<p>将更复杂的文本输入进ChatGPT也是可行的，但其准确率会稍稍变差，因为文本可能体现同一个人不同时期的主张，甚至可能体现作者的矛盾的心理。生成出来的评价指标误差也会更大。下文挑选了毛泽东早期，中期，晚期的一些言论，ChatGPT给出了计划8，民主7，进步7，世界6的评价。</p>
+<p><img src="4.png" /></p>
+<p>
+<br>
+</p>
+<h3 id="分析毛的间谍日本人言论">分析毛的“间谍日本人”言论</h3>
+<p>毛泽东曾经说过这样一句话：</p>
+<p>“中日关系的历史是很长的，人类几十万年以来过着和平的生活，我们的祖先吵过架，打过仗，这一套可以忘记啦！应该忘记，因为那是不愉快的事情，记在我们脑子里干什么呢？”</p>
+<p>ChatGPT对这句话给出了未知0，民主6，进步6，世界6的打分。</p>
+<p><img src="6.png" /></p>
+<p>
+<br>
+</p>
+<p>但是近年来，中国民族主义思潮流行，而毛泽东本人大体上是全球主义者。所以有一些人在不知道这句话的来源时，攻击这句话“要么是间谍，要么是日本人”，颇有喜剧效果。</p>
+<p><img src="5.webp" /></p>
+<p><a
+target="_blank" rel="noopener" href="https://weibo.com/1763708565/O88KZqTBy">https://weibo.com/1763708565/O88KZqTBy</a></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E9%9A%8F%E6%83%B3-thoughts/" rel="tag"># 随想 - Thoughts</a>
+              <a href="/tags/%E6%8A%80%E6%9C%AF-technology/" rel="tag"># 技术 - Technology</a>
+          </div>
+
+        
+  <div class="social-like a2a_kit a2a_kit_size_32 a2a_default_style">
+    <a class="a2a_dd" target="_blank" rel="noopener" href="https://www.addtoany.com/share"></a>
+      <a class="a2a_button_facebook"></a>
+      <a class="a2a_button_twitter"></a>
+      <a class="a2a_button_mastodon"></a>
+  </div>
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/post/47/" rel="prev" title="魔改Gromacs，并运行 - Modify the Gromacs, and run it">
+                  <i class="fa fa-angle-left"></i> 魔改Gromacs，并运行 - Modify the Gromacs, and run it
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/post/49/" rel="next" title="为MDAnalysis包增加计算间断氢键自相关函数功能 - Add the functionality to calculate intermittent hydrogen bond autocorrelation functions to the MDAnalysis package">
+                  为MDAnalysis包增加计算间断氢键自相关函数功能 - Add the functionality to calculate intermittent hydrogen bond autocorrelation functions to the MDAnalysis package <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments utterances-container"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2023 – 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class=""></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">多想，多读，多练，多问 - Think more, read more, practice more, and ask more</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+
+  <script src="/js/third-party/addtoany.js"></script>
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+<script class="next-config" data-name="utterances" type="application/json">{"enable":true,"repo":"user-name/repo-name","issue_term":"pathname","theme":"github-light"}</script>
+<script src="/js/third-party/comments/utterances.js"></script>
+
+
+  <script type="module">
+    window.init({
+      el: '.comments',
+      lang: 'en',
+      serverURL: 'https://comment.tennisatw.com',
+    });
+  </script>
+
+</body>
+</html>
+
+<script>
+  window.onload = function() {
+    // 延迟执行，确保动画已经完成
+    setTimeout(function() {
+      // 获取需要操作的元素
+      const targetLanguageDiv = document.getElementById(":0.targetLanguage");
+      const skipTranslateDiv = document.querySelector(".skiptranslate.goog-te-gadget");
+      
+      // 删除不需要的文本节点和span元素
+      if (skipTranslateDiv) {
+        const textNodes = Array.from(skipTranslateDiv.childNodes).filter(node => node.nodeType === Node.TEXT_NODE);
+        textNodes.forEach(node => node.remove());
+        
+        const spanElement = skipTranslateDiv.querySelector("span");
+        if (spanElement) {
+            spanElement.remove();
+        }
+      }
+
+      // 隐藏不需要的元素
+      var trans = document.getElementsByClassName('VIpgJd-ZVi9od-aZ2wEe-wOHMyf');
+        for (var i = 0; i < trans.length; i++) {
+            var tran = trans[i];
+                tran.className += " hidden";
+        }
+
+    }, 500); // 延迟时间，可以根据实际情况调整
+  };
+</script>
