@@ -7,15 +7,21 @@ tags: 随想 - Thought
 categories: 元键政 - Meta Political Discussion
 ---
 
-在排除掉不好好说话的嘴臭玩家，阴阳人（指说话阴阳怪气的人），和乐子人（指看乐子的人）之后，剩下的能讨论政治的人就都是理性人了。所有理性人本质上都是相同的，即，遇到相同的事情时，理性的看法只有一种。所以理论上来说，每个人的政见都应该一致。在与理性人讨论政治的过程中，不会有任何冲突。
+注：本人并不是政治专业出身，键政只是我的一个兴趣罢了。《元键政》这一系列文章只是本人对于键政的由浅入深的思考，以讨论一些键政圈中常见的“元”问题。有任何与主流政治界的认识有出入的地方，实在是再正常不过了。
 
-After eliminating those who speak irresponsibly, mockingly, and those who just make jokes, only the rational people who can discuss politics remain. As all rational beings are fundamentally the same, that is, there is only one rational perspective when faced with the same situation. Theoretically, their political views should coincide. There should be no conflict when discussing politics with rational individuals.
+Note: I am not a professional in political science; keyboard politics is just an interest of mine. The "Meta Political Discussion" series of articles is simply my progressive exploration of keyboard politics, discussing some common "meta" issues in the political discussion community. Any differences from mainstream political views are entirely normal.
+
+---
+
+不是所有人对政治都有兴趣，更不是所有对政治有兴趣的人都值得与之讨论。在排除掉不好好说话的嘴臭玩家，阴阳人（指说话阴阳怪气的人），和乐子人（指看乐子的人）之后，剩下的值得讨论政治的人就都是理性人了。
+
+Not everyone is interested in politics, and not everyone who is interested in politics is worth discussing with. After eliminating those who speak irresponsibly, mockingly, and those who just enjoy making jokes, only the rational people who is worth discussing politics remain. 
 
 <p><br></p>
 
-但是每个人都有要捍卫的理念，而其他人可能会认为这些理念没什么意义。理性人的政见就建立在所捍卫的理念不受侵犯上。
+所有理性人本质上都是相同的，即，遇到相同的事情时，理性的看法只有一种。所以理论上来说，每个人的政见都应该一致。在与理性人讨论政治的过程中，不会有任何冲突。但是每个人都有要捍卫的理念。而相同的理念，在其他人看来可能一文不值。理性人的政见就建立在所捍卫的理念不受侵犯上。
 
-However, everyone has values to defend, and others may think these values are meaningless. Rational people's political views are based on the premise that their values are not violated.
+As all rational beings are fundamentally the same, that is, there is only one rational perspective when faced with the same situation. Theoretically, their political views should coincide. There should be no conflict when discussing politics with rational individuals. However, everyone has values to defend. And the same values may be worthless in the eyes of others. Rational people's political views are based on the premise that their values are not violated.
 
 <p><br></p>
 
@@ -35,35 +41,41 @@ For another instance, take one high-level patriot - Tuzhuxi (the 'Chairman Rabbi
 
 Freedom and equality fundamentally contradict each other, as do Quebec's independence and preservation of national unity, democracy and elitism, traditional male chauvinism, radical feminism, and gender equality. Capitalist government, proletarian dictatorship, fascism, absolute monarchy, Islamic theocracy, and Xi's thought, they all contradict each other.
 
-<p><br></p>
+---
 
-那么，即使我与大家的想法有矛盾，和我不一样的其他政治派别就没有道理了吗？
+那么，作为理性人，应该怎么看待与其矛盾/不一致的政治理论呢？
 
-Then, just because I hold contradictory views compared to everyone else, does it mean that different political factions from mine are irrational?
-
-<p><br></p>
-
-这个问题过于高深，我仅说说我自己的看法：有的有，有的没有。以马克思主义为例：
-
-This question is complex, but I could indicate from my perspective: some do, and some don't. Let's take Marxism as an example:
+So, as a rational person, how should one view political theories that are contradict with their own?
 
 <p><br></p>
 
-一方面，马克思主义是有非常严密的逻辑体系的，从阶级斗争，到唯物史观，论证了消除封建和资本主义，无产阶级专政的合理性，在这一点上，马克思主义十分有道理。但另一方面，马克思主义的很多理念很极端，比如“商品的价值仅与劳动量有关”，或者“人是社会关系的总和”，它明显是一个很有乌托邦感觉的主义，很多结论是应然而不是实然。在理性自由派者眼中，马克思主义有一定道理，但不是最佳选项。
+有相当一部分的政治理论至少是有道理的。这里以马克思主义为例：一方面，马克思主义是有非常严密的逻辑体系的，从阶级斗争，到唯物史观，论证了消除封建和资本主义，无产阶级专政的合理性，在这一点上，马克思主义十分有道理。但另一方面，马克思主义的很多理念比较极端，比如“商品的价值仅与劳动量有关”，或者“人是社会关系的总和”，它明显是一个很有乌托邦感觉的主义，很多结论是应然而不是实然。在理性自由派者眼中，马克思主义有一定道理，但不是最佳选项。
 
-On the one hand, Marxism has a very rigorous logical system, from class struggle to historical materialism, it argues for the rationality of eliminating feudalism and capitalism and establishing proletarian dictatorship. In this regard, Marxism is very reasonable. On the other hand, many of Marxism's ideas are extreme, such as "the value of a commodity is only related to the amount of labor" or "People are the sum of social relationships". It is evidently a very utopian ideology, and many of its conclusions are normative rather than empirical. In the eyes of rational liberals, Marxism has some merit, but it is not the best option.
-
-<p><br></p>
-
-但是，还有一些十分激进的理论，比如20世纪80年代还在中国称帝的人，或者想要消灭所有男性的激进女权，以及想要杀光所有“滞纳珠”的原教旨神友（极端逆向民族主义者&献忠人）。这些人的政治理论要么完全没有道理，经不起推敲，要么虽然有，但是又不符合实际情况。于理性自由派而言，它们太过激进了，完全无法理解。
-
-Then there are the radical theories, such as the self-proclaimed emperors in China during the 1980s, radical feminists advocating the extermination of all males, and the reversed ultraconservative nationalists intent on eradicating all Chinese. The political theories of these groups are either baseless and stand no scrutiny, or have some merit but are out of touch with reality. For rational liberals, these theories are too radical, they are beyond my comprehension.
+There are quite a few political theories that are at least reasonable. Let's take Marxism as an example: On the one hand, Marxism has a very rigorous logical system, from class struggle to historical materialism, it argues for the rationality of eliminating feudalism and capitalism and establishing proletarian dictatorship. In this regard, Marxism is very reasonable. On the other hand, some of Marxism's ideas are extreme, such as "the value of a commodity is only related to the amount of labor" or "People are the sum of social relationships". It is evidently a very utopian ideology, and many of its conclusions are normative rather than empirical. In the eyes of rational liberals, Marxism has some merit, but it is not the best option.
 
 <p><br></p>
 
-最后，呼吁一件事情：希望各位温和地与别人讨论，因为大部分持有不同意见的人既不是疯子也不是傻子，更不是拿钱去搞“大外宣”或“煽动颠覆国家政权”的人。
+但是，还有一些十分极端的理论，比如20世纪80年代还在中国称帝的人，或者想要消灭所有男性的激进女权，以及想要杀光所有“滞纳珠”（中国人）的原教旨神友（极端逆向民族主义者&献忠人）。这些人的政治理论要么完全没有道理，经不起推敲，要么虽然有，但是又不符合实际情况。于理性自由派而言，它们太过极端了，完全没有道理。
 
-Finally, here's a plea: I hope everyone can engage in discussions with others in a moderate manner. Most people with differing opinions are not irrational, naive, nor are they being paid to propagate foreign propaganda or incite subversion of the state power. 
+Then there are the radical theories, such as the self-proclaimed emperors in China during the 1980s, radical feminists advocating the extermination of all males, and the reversed ultraconservative nationalists intent on eradicating all Chinese. The political theories of these groups are either baseless and stand no scrutiny, or have some merit but are out of touch with reality. For rational liberals, these theories are too radical, they are beyond comprehension.
+
+<p><br></p>
+
+让我们更深一层地考虑这个问题：对于一个理性人来说，这个世界上的所有政见可以分成3类：可理解并应该接受的，可理解但不应该接受的，不可理解的。比如说，对于一个理性自由派者来说，“人人生而平等”是可理解并应该接受的，“资本主义应该被消灭”是可理解但不应该接受的（在认真思考过马克思主义之后），而“所有男性都应该被消灭”是不可理解的。
+
+Let's delve deeper into this issue: For a rational person, all political views in the world can be divided into three categories: understandable and acceptable, understandable but unacceptable, and incomprehensible. For example, for a rational liberal, "all people are born equal" is understandable and acceptable, "capitalism should be eliminated" is understandable but unacceptable (after careful consideration of Marxism), and "all males should be exterminated" is incomprehensible.
+
+<p><br></p>
+
+如果一个政治理论包含的大多数政见属于可理解的，那么理性人应该至少认为这个政治理论是有道理的，即使他不认同它。但如果一个政治理论包含的大多数政见属于不可理解的，那么理性人应该认为这个政治理论是没有道理的。虽然每个理性人认同的政治理论不一定相同，但是我相信理性人们对于“哪些政治理论是有道理的”看法应该区别不大。
+
+If most of the political views contained in a political theory are understandable, then a rational person should at least consider the political theory to be reasonable, even if they do not agree with it. But if most of the political views contained in a political theory are incomprehensible, then a rational person should consider the political theory to be unreasonable. Although the political theories that each rational person agrees with may not be the same, I believe that rational people's views on "which political theories are reasonable" should not differ much.
+
+<p><br></p>
+
+最后，呼吁一件事情：希望各位温和地与别人讨论，因为大部分持有不同政见的人既不是疯子也不是傻子，更不是拿钱去搞“大外宣”或“煽动颠覆国家政权”的人。
+
+Finally, here's a plea: I hope everyone can engage in discussions with others in a moderate manner. Most people with differing political opinions are not irrational, naive, nor are they being paid to propagate foreign propaganda or incite subversion of the state power. 
 
 ---
 
@@ -114,35 +126,3 @@ Regarding immigration, every country will inevitably become an immigrant-inhabit
 Moderation: Extremism tremendously harms peoples' interests. One's utopia may be another's hell.  
 Care for the weak: Moderate social security ensures a decent living standard for the underprivileged or the unlucky.  
 Religion to play a role in social security should be acceptable.  
-
-<p><br></p>
-
-此外，还有一些常见的价值观，但我认为不是必须的：
-
-民族/爱国/集体主义：我不是很接受仅通过血缘、共同的文化、共同的国家、出生地、等各种外在的条件，就让我和某一群特定的人比较亲。  
-很明显是有共同爱好，或者和我每天聊天的人更亲嘛。  
-我不认同一个我无法自由退出的集体。  
-乐观主义：它真的理性吗？  
-浪漫主义：同上  
-传统文化：糟粕太多，建议做好防护措施（对现代思想有了解）后再接触  
-马克思主义：我更喜欢通过工会和工党，而不是共产党和工人革命，来解决工人待遇问题  
-它貌似很极端  
-而且没有成功先例  
-民族伟大复兴：如果它带来战争，我甚至会反对。  
-确定这不是蛮族入侵世界吗，建议等民主化，法治化之后再提这件事  
-
-<p><br></p>
-
-There are other values which commonly talked about, but I don't think they are necessary:
-
-Nationalism/Patriotism/Collectivism: It's hard for me to feel close to a specific group of people simply based on blood, culture, country, birthplace, etc.   
-Obviously, I feel closer to those who share my hobbies or chat with me every day.   
-I don't want to subscribe to a collectivity that I cannot willingly exit.  
-Optimism: Is it rational?  
-Romanticism: Same as above  
-Traditional Culture: It contains too much dross, better to contact after being informed of modern ideas.
-Marxism: I suggest resolving workers' issues through unions and labor parties, not through communist parties and workers' revolutions.  
-It seems extreme  
-And has no successful precedent  
-National Rejuvenation: If it leads to war, I would even oppose it.   
-Won't it be an invasion by the primitive? Better wait till democratizes and nomocratizes before bringing this up.  

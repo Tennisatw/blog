@@ -20,6 +20,8 @@ tags:
 {% asset_img 1.png graph2 %}
 这张图片可以显示在摘要中。
 
+![](1.png){ width=200px }
+
 <p><br></p>
 
 Tennisbot发表评论：

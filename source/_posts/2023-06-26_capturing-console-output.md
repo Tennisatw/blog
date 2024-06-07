@@ -2,7 +2,6 @@
 title: 使用自定义类捕获 Python 控制台输出 - Capturing Console Output in Python Using Custom Class
 permalink: post/11/
 excerpt: 在python中，当执行一段代码时，如果想要获取这段代码输出到控制台的信息的话，可以使用重定向stdout的方法。<br>In Python, if you want to capture the information output to the console when executing a piece of code, you can use the method of redirecting stdout.
-
 date: 2023-06-26 20:23:44
 tags: 编程 - Programming
 ---

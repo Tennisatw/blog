@@ -27,11 +27,15 @@ hexo.extend.filter.register('new_post_path', function(data) {
 // Register filter for new post creation
 hexo.extend.filter.register('before_exit', function() {
 
-  // Generate new increment ID
-  const newId = generateIncrementId();
+  if (!postData) {
+    return;
+  }
 
   // Read the newly created post file
   const postContent = fs.readFileSync(postData, 'utf8');
+
+  // Generate new increment ID
+  const newId = generateIncrementId();
 
   // Replace the placeholder with the actual ID
   const newContent = postContent.replace('increment_id', newId);
