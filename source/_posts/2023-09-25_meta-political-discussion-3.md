@@ -3,7 +3,7 @@ title: 元键政3：与低水平言论缠斗意义不大 - Meta Political Discus
 permalink: post/29/
 excerpt: 我一向认为，如果不能好好键政的话，还不如不键政。<br>I have always believed that if you can't discuss politics properly, it's better not to discuss it at all.
 date: 2023-09-25 18:28:53
-tags: 随想 - Thought
+tags: 随想 - Thoughts
 categories: 元键政 - Meta Political Discussion
 ---
 

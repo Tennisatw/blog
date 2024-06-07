@@ -3,7 +3,7 @@ title: 元键政1：所有理性人本质上都是相同的，但有独特的要
 permalink: post/21/
 excerpt: 所有理性人本质上都是相同的，即，遇到相同的事情时，理性的看法只有一种。所以理论上来说，每个人的政见都应该一致。在与理性人讨论政治的过程中，不会有任何冲突。<br> All rational beings are fundamentally the same, that is, there is only one rational perspective when faced with the same situation. Theoretically, their political views should coincide. There should be no conflict when discussing politics with rational individuals.
 date: 2023-09-09 03:54:36
-tags: 随想 - Thought
+tags: 随想 - Thoughts
 categories: 元键政 - Meta Political Discussion
 ---
 

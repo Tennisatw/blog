@@ -3,7 +3,7 @@ title: 元键政2：键政的意义何在？ - Meta Political Discussion 2：Wha
 permalink: post/25/
 excerpt: 公民社会的力量越强，越能影响党/政府的决策，而这也是参与键政的意义。<br>The stronger the power of civil society, the greater the influence on party/governmental decisions, underlying the significance of engaging in political debates.
 date: 2023-09-16 03:01:14
-tags: 随想 - Thought
+tags: 随想 - Thoughts
 categories: 元键政 - Meta Political Discussion
 ---
 

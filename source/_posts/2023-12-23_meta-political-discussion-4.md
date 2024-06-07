@@ -3,7 +3,7 @@ title: 元键政4：谈谈为什么要了解观点不同的人的想法 - Meta P
 permalink: post/36/
 excerpt: 世界是复杂的，而人类认识世界的水平有限，所以如果不对这个世界做简化，那就几乎无法去认识它。比如，在牛顿总结出经典运动定律之后，人们才对世界的运动规律有了认识。科研中常用的“做实验” - “观察结果” - “建立理论模型” 等其实都是对世界的简化。<br>The world is complex, and human understanding of it is limited. Without simplifying this complexity, it would be nearly impossible to comprehend it. For instance, it was only after Newton formulated his classical laws of motion that people began to understand the principles governing movement. In scientific research, the commonly used processes of "conducting experiments" – "observing results" – "establishing theoretical models" are essentially ways of simplifying the world.
 date: 2023-12-23 00:04:21
-tags: 随想 - Thought
+tags: 随想 - Thoughts
 categories: 元键政 - Meta Political Discussion
 ---
 
