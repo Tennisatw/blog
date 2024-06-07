@@ -99,7 +99,7 @@ menu:
   首页 - home: / || fa fa-home
   关于 - about: /about/ || fa fa-user
   标签 - tags: /tags/ || fa fa-tags
-  #categories: /categories/ || fa fa-th
+  分类 - categories: /categories/ || fa fa-th
   归档 - archives: /archives/ || fa fa-archive
   #schedule: /schedule/ || fa fa-calendar
   #sitemap: /sitemap.xml || fa fa-sitemap
@@ -312,8 +312,8 @@ tagcloud:
   min: 12 # Minimum font size in px
   max: 30 # Maximum font size in px
   amount: 200 # Total amount of tags
-  orderby: name # Order of tags
-  order: 1 # Sort order
+  orderby: length
+  order: -1 # Sort order
 
 # Google Calendar
 # Share your recent schedule to others via calendar page.
