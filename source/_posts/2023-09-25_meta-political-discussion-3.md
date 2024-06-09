@@ -46,3 +46,87 @@ For the same reasons, I don't wholly support initiatives like 'The Great Transla
 上图为在虎扑社区搜索“昂撒”的结果。在一个有很多极端民族主义者的平台搜索一个只有极端民族主义者常用的词，我也属于自讨苦吃。
 
 The screenshot above is the search result for the "昂撒" (Short for Anglo-Saxons, sometimes with a derogatory connotation) on Hupu, a platform with a large number of extreme nationalists. Searching for a term predominantly used by extremists on their platform, my behavior was essentially a case of asking for trouble.
+
+---
+
+说了这么多，什么是低水平言论呢？这里我把键政中经常遇到的 我认为的 “低水平言论” 总结为以下几点，依照其“水平”高低和是否容易区分排序。
+
+What exactly are low-level remarks? Here, I summarize the types of "low-level remarks" often encountered in online political discussions, ranking them by their "level" and ease of identification.
+
+<p><br></p>
+
+1：谩骂与人身攻击 - Insults and Personal Attacks
+
+这种言论是水平最低的，也是最容易发现的，除了能给其他人提供一些“情绪”价值之外，毫无任何意义。
+
+These are the lowest level remarks and the easiest to spot. Besides providing some "emotional" value to others, they are utterly meaningless.
+
+![](3.png)
+
+![](4.png)
+
+<p><br></p>
+
+2：谣言，和未证实的信息 - Rumors and Unverified Information
+
+各种话题都大量充斥着谣言和未正式的信息，尤其是与政治有关的话题。这种言论的检测难度可高可低，主要还是需要自己对相关话题有一定了解。请注意，官方发布的言论也有可能是谣言。
+
+Various topics are flooded with rumors and unverified information, especially those related to politics. The difficulty of detecting these remarks can vary; it mainly requires a certain level of understanding of the relevant topics. Note that even official statements can be rumors.
+
+<p><br></p>
+
+谣言的量是相当相当大的，在某些平台，谣言的数量要比真实新闻的数量还多。在这里非常感谢各大辟谣平台的工作。
+
+The volume of rumors is enormous, and on some platforms, there are more rumors than real news. A big thanks to all the rumor-debunking platforms for their work.
+
+![](5.png)
+
+![](6.png)
+
+<p><br></p>
+
+3：阴阳怪气，冷嘲热讽的言论 - Sarcasm and Mockery
+
+这也是一种弱化的谩骂，非常常见于知乎，微博，贴吧。这种言论也是最容易煽动读者情绪的。
+
+从这一阶段开始，这些低水平的言论已经变得比较“可以接受”了，体面的键政人也会偶尔使用。不过，这还不是有意义的键政，当然也不需要理会。
+
+This is a milder form of insults, very common on platforms like Zhihu, Weibo, and forums. These remarks are also the easiest to incite readers' emotions.
+
+From this stage onward, these low-level remarks become somewhat "acceptable," and even respectable commentators might occasionally use them. However, this is still not meaningful political discussion and does not need to be taken seriously.
+
+![](7.png)
+
+<p><br></p>
+
+4：简单化和极端化 - Simplification and Extremism
+
+这种言论是相当难以区分的，尤其是带有情绪的言论。主要的原因在于，读者不一定了解相关的话题，而一众解释中，最容易接受的往往是最简单的。
+
+These remarks are quite difficult to identify, especially those with emotional content. The main reason is that readers may not understand the related topics, and the simplest explanations are often the easiest to accept.
+
+![](8.png)
+
+![](9.png)
+
+<p><br></p>
+
+5：逻辑谬误 - Logical Fallacies
+
+这种言论已经比之前4种好太多了，因为它至少讲逻辑，只是可惜有问题。
+
+These remarks are much better than the previous four because at least they involve logic, even if flawed.
+
+![](10.png)
+
+<p><br></p>
+
+键政是一场群体之间，没有输赢的辩论。几乎没有人会因为其他的言论而改变立场，就算把“对手”打倒了，也不代表“赢家”的立场比他的更正确。在键政过程中，遇到低水平言论，最体面的应对方式就是视而不见，知道自己占上风了就好了。
+
+Online political discussions are a debate with no winners or losers. Almost no one changes their stance because of others' remarks, and even if you defeat your "opponent," it doesn't mean your position is more correct. When encountering low-level remarks during these discussions, the most dignified response is to ignore them, knowing you have the upper hand.
+
+<p><br></p>
+
+键政之外也是这样，遇到低水平言论，知道谁是对的，谁是错的，自己该怎么做就好了。既没有必要去和它们争论，更没有必要被他们影响。
+
+This also applies outside of online discussions. When encountering low-level remarks, just know who is right and wrong and what you should do. There's no need to argue with them or be influenced by them.

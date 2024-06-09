@@ -187,7 +187,7 @@ Lastly, Marx and Engels launch broad accusations without evidence, acting like o
 
 However, it must be said, it's filled with a fighting spirit, akin to a shrewish quarrel or internet trolls launching attacks everywhere. It's drawing targets out of thin air, concluding first and discrediting for the sake of discrediting. Such lofty discourse is truly refined.
 
-![](3.jpg)
+![](3.png)
 
 [Image Source](http://theory.people.com.cn/n1/2018/0524/c40531-30009908.html)
 
