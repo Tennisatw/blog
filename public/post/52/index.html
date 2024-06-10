@@ -27,26 +27,32 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"blog.tennisatw.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.19.2","exturl":false,"sidebar":{"position":"left","display":"remove","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#556","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"utterances","storage":true,"lazyload":false,"nav":null,"activeClass":"utterances"},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Tennisatw的博客 - Blog of Tennisatw">
-<meta property="og:url" content="http://blog.tennisatw.com/archives/">
+    <meta name="description" content="MDAnalysis的线性密度模块有bug：模拟一盒Lammps模拟的均匀的水分子，计算出来的线性密度有一些向上突起的尖峰。There is a bug in the MDAnalysis linear density module：when calculating the linear density of a uniformly simulated box of water molecules">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MDAnalysis线性密度模块的bug修复 - Bug fix for the MDAnalysis linear density module">
+<meta property="og:url" content="http://blog.tennisatw.com/post/52/">
 <meta property="og:site_name" content="Tennisatw的博客 - Blog of Tennisatw">
+<meta property="og:description" content="MDAnalysis的线性密度模块有bug：模拟一盒Lammps模拟的均匀的水分子，计算出来的线性密度有一些向上突起的尖峰。There is a bug in the MDAnalysis linear density module：when calculating the linear density of a uniformly simulated box of water molecules">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://blog.tennisatw.com/post/52/1.png">
+<meta property="og:image" content="http://blog.tennisatw.com/post/52/2.png">
+<meta property="article:published_time" content="2024-06-10T19:45:07.000Z">
+<meta property="article:modified_time" content="2024-06-10T20:09:32.829Z">
 <meta property="article:author" content="Tennisatw">
-<meta property="article:tag" content="chemistry">
-<meta property="article:tag" content="programming">
-<meta property="article:tag" content="Tennisbot">
+<meta property="article:tag" content="编程 - Programming">
+<meta property="article:tag" content="技术 - Technology">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://blog.tennisatw.com/post/52/1.png">
 
 
-<link rel="canonical" href="http://blog.tennisatw.com/archives/">
+<link rel="canonical" href="http://blog.tennisatw.com/post/52/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":"","permalink":"","path":"archives/index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://blog.tennisatw.com/post/52/","path":"/post/52/","title":"MDAnalysis线性密度模块的bug修复 - Bug fix for the MDAnalysis linear density module"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Archive | Tennisatw的博客 - Blog of Tennisatw</title>
+<title>MDAnalysis线性密度模块的bug修复 - Bug fix for the MDAnalysis linear density module | Tennisatw的博客 - Blog of Tennisatw</title>
   
 
 
@@ -79,7 +85,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">Tennisatw的博客 - Blog of Tennisatw</h1>
+      <p class="site-title">Tennisatw的博客 - Blog of Tennisatw</p>
       <i class="logo-line"></i>
     </a>
   </div>
@@ -141,230 +147,145 @@
 </header>
     </div>
 
-    <div class="main-inner archive posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
-  
-  
-  <div class="post-block">
-    <div class="post-content">
 
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://blog.tennisatw.com/post/52/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Tennisatw">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Tennisatw的博客 - Blog of Tennisatw">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="MDAnalysis线性密度模块的bug修复 - Bug fix for the MDAnalysis linear density module | Tennisatw的博客 - Blog of Tennisatw">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          MDAnalysis线性密度模块的bug修复 - Bug fix for the MDAnalysis linear density module
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
       
-    <div class="collection-year">
-      <span class="collection-header">2024</span>
+
+      <time title="Created: 2024/06/10 13:45:07 / Modified: 14:09:32" itemprop="dateCreated datePublished" datetime="2024-06-10T13:45:07-06:00">2024/06/10</time>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="Word count in article">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">Word count in article: </span>
+      <span>259</span>
+    </span>
+    <span class="post-meta-item" title="Reading time">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">Reading time &asymp;</span>
+      <span>1 mins.</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>MDAnalysis的线性密度模块有bug：模拟一盒Lammps模拟的均匀的水分子，计算出来的线性密度有一些向上突起的尖峰，如图所示：</p>
+<p>There is a bug in the MDAnalysis linear density module: when
+calculating the linear density of a uniformly simulated box of water
+molecules using LAMMPS, the result includes some sharp upward spikes, as
+shown below.</p>
+<p><img src="1.png" /></p>
+<p><br></p>
+<p>其bug位于<code>lineardensity.py</code>中，<code>LinearDensity</code>类的<code>__init__</code>function，第218行：</p>
+<p>The bug is located in the <code>lineardensity.py</code> file, within
+the <code>__init__</code> function of the <code>LinearDensity</code>
+class, at line 218:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bins = (self.dimensions // self.binsize).astype(<span class="built_in">int</span>)</span><br></pre></td></tr></table></figure>
+<p><br></p>
+<p>当<code>self.dimensions</code>为<code>numpy([20., 20., 20.])</code>且<code>self.binsize</code>为<code>0.1</code>时，由于浮点精度误差<code>bins</code>不是<code>200, 200, 200</code>，而是<code>199, 199, 199</code>。这会导致后续<code>np.histogram</code>函数计算出现错误。</p>
+<p>可将其替换为：</p>
+<p>When <code>self.dimensions</code> is
+<code>numpy([20., 20., 20.])</code> and <code>self.binsize</code> is
+<code>0.1</code>, due to floating-point precision errors,
+<code>bins</code> becomes <code>199, 199, 199</code> instead of
+<code>200, 200, 200</code>. This causes incorrect calculations in the
+subsequent <code>np.histogram</code> function.</p>
+<p>This can be fixed by replacing the line with:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bins = np.<span class="built_in">round</span>(self.dimensions / self.binsize).astype(<span class="built_in">int</span>)</span><br></pre></td></tr></table></figure>
+<p><img src="2.png" /></p>
+<p><br></p>
+<p>有关于这个问题的详细讨论在<a
+target="_blank" rel="noopener" href="https://github.com/MDAnalysis/mdanalysis/issues/4476">这个github
+issue</a>中</p>
+<p>For more detailed discussion on this issue, please refer to <a
+target="_blank" rel="noopener" href="https://github.com/MDAnalysis/mdanalysis/issues/4476">this GitHub
+issue</a>.</p>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2024-06-10T13:45:07-06:00"
-              content="2024/06/10">
-          06-10
-        </time>
-      </div>
+    
+    
+    
 
-      <div class="post-title">
-          <a class="post-title-link" href="/post/52/" itemprop="url">
-            <span itemprop="name">MDAnalysis线性密度模块的bug修复 - Bug fix for the MDAnalysis linear density module</span>
-          </a>
-      </div>
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E7%BC%96%E7%A8%8B-programming/" rel="tag"># 编程 - Programming</a>
+              <a href="/tags/%E6%8A%80%E6%9C%AF-technology/" rel="tag"># 技术 - Technology</a>
+          </div>
 
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2024-06-07T23:56:03-06:00"
-              content="2024/06/07">
-          06-07
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/post/51/" itemprop="url">
-            <span itemprop="name">推荐一个听歌识别曲风的网站：cyanite - Recommend a website for identifying music genres：cyanite</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2024-05-06T00:38:25-06:00"
-              content="2024/05/06">
-          05-06
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/post/50/" itemprop="url">
-            <span itemprop="name">数据科学课程学习记录</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2024-05-05T02:38:34-06:00"
-              content="2024/05/05">
-          05-05
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/post/49/" itemprop="url">
-            <span itemprop="name">为MDAnalysis包增加计算间断氢键自相关函数功能 - Add the functionality to calculate intermittent hydrogen bond autocorrelation functions to the MDAnalysis package</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2024-04-12T20:26:38-06:00"
-              content="2024/04/12">
-          04-12
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/post/48/" itemprop="url">
-            <span itemprop="name">政治言论倾向分析器</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2024-04-01T01:16:08-06:00"
-              content="2024/04/01">
-          04-01
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/post/47/" itemprop="url">
-            <span itemprop="name">魔改Gromacs，并运行 - Modify the Gromacs, and run it</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2024-03-30T01:39:44-06:00"
-              content="2024/03/30">
-          03-30
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/post/46/" itemprop="url">
-            <span itemprop="name">为没有拓扑信息的系统分析氢键 - Analyzing Hydrogen Bonds in Systems without Topological Information</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2024-03-27T21:31:52-06:00"
-              content="2024/03/27">
-          03-27
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/post/45/" itemprop="url">
-            <span itemprop="name">使用R语言分析各国的新冠死亡率 - Analyzing COVID-19 Mortality Rates Among Countries Using R</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2024-03-27T00:58:56-06:00"
-              content="2024/03/27">
-          03-27
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/post/44/" itemprop="url">
-            <span itemprop="name">绘制Gromacs的xvg文件的脚本 - Script for plotting Gromacs xvg files</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2024-03-24T22:06:12-06:00"
-              content="2024/03/24">
-          03-24
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/post/43/" itemprop="url">
-            <span itemprop="name">推荐一个歌曲生成网站：suno.ai - Recommending a song generation website：suno.ai</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-
-    </div>
+        
+  <div class="social-like a2a_kit a2a_kit_size_32 a2a_default_style">
+    <a class="a2a_dd" target="_blank" rel="noopener" href="https://www.addtoany.com/share"></a>
+      <a class="a2a_button_facebook"></a>
+      <a class="a2a_button_twitter"></a>
+      <a class="a2a_button_mastodon"></a>
   </div>
-  
-  
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/archives/page/7/">7</a><a class="extend next" rel="next" title="Next page" aria-label="Next page" href="/archives/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
 
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/post/51/" rel="prev" title="推荐一个听歌识别曲风的网站：cyanite - Recommend a website for identifying music genres：cyanite">
+                  <i class="fa fa-angle-left"></i> 推荐一个听歌识别曲风的网站：cyanite - Recommend a website for identifying music genres：cyanite
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments utterances-container"></div>
 </div>
   </main>
 
