@@ -51,3 +51,10 @@ One last note, it might be better to pick a cute avatar, like Doraemon, because 
 Updated March 6, 2024:
 
 Reflecting on the news over the past six months, I haven't heard of anyone showing symptoms of nuclear radiation, nor has there been much discussion about Japan's discharge of nuclear-contaminated water. In fact, since October, there's been scarcely any talk about the nuclear wastewater issue.
+
+
+<br>
+
+推荐一个视频：[《福岛核污水排放，自然杂志报道的解读。》](https://www.youtube.com/watch?v=ZrLL8ycpdD0)，这个视频是由一个专业的科普up主：医痴的小木屋做的，专业程度较高。
+
+Here I recommend a video: [“Interpreting the Nature Journal's Report on Fukushima Nuclear Wastewater Discharge”](https://www.youtube.com/watch?v=ZrLL8ycpdD0). This video is made by a professional science popularizer: "Medical Fool's Little Cabin," and it is highly professional.
