@@ -1,7 +1,7 @@
 ---
 title: 数据科学课程学习记录
 permalink: post/50/
-excerpt: 暂无预览 - No preview available
+excerpt: 在coursera上试听了《IBM Data Science Professional Certificate》这一系列，一共有10门数据处理课。
 date: 2024-05-06 00:38:25
 tags: 
  - 技术 - Technology
@@ -22,6 +22,16 @@ tags:
 
 它提到了一个数据科学的竞赛：kaggle，如果需要的话可能得参加一下。
 
+2024/05/06
+
 <p><br></p>
+
+### 第二门课：Open Source tools for Data Science
+
+[https://www.coursera.org/learn/open-source-tools-for-data-science?specialization=ibm-data-science](https://www.coursera.org/learn/open-source-tools-for-data-science?specialization=ibm-data-science)
+
+这门课讲的很杂，包括python，jupyter notebook，R，Rstudio，github，watson studio，spark，hardoop等等。我对python和R相关的东西都很熟悉，但是spark，hardoop等软件就不是很懂了。
+
+2024/06/12
 
 未完待续
