@@ -28,7 +28,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://blog.tennisatw.com/post/47/1.png">
 <meta property="article:published_time" content="2024-04-01T07:16:08.000Z">
-<meta property="article:modified_time" content="2024-06-07T20:16:30.887Z">
+<meta property="article:modified_time" content="2024-06-14T18:31:47.712Z">
 <meta property="article:author" content="Tennisatw">
 <meta property="article:tag" content="编程 - Programming">
 <meta property="article:tag" content="技术 - Technology">
@@ -187,7 +187,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024/06/07 14:16:30" itemprop="dateModified" datetime="2024-06-07T14:16:30-06:00">2024/06/07</time>
+      <time title="Modified: 2024/06/14 12:31:47" itemprop="dateModified" datetime="2024-06-14T12:31:47-06:00">2024/06/14</time>
     </span>
 
   
@@ -197,7 +197,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">Word count in article: </span>
-      <span>533</span>
+      <span>521</span>
     </span>
     <span class="post-meta-item" title="Reading time">
       <span class="post-meta-item-icon">
@@ -218,17 +218,13 @@
 <p>Gromacs is an open-source software developed in C++. If you are
 dissatisfied with a particular feature of Gromacs, you can directly
 modify its source code, then compile and install it.</p>
-<p>
-<br>
-</p>
+<p><br></p>
 <p>首先，从github上下载其源代码：在想要储存代码的地方打开terminal（或者对于windows用户就是powershell），输入：</p>
 <p>First, download the source code from GitHub: Open the terminal (or
 PowerShell for Windows users) in the desired location to store the code,
 and type:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/gromacs/gromacs.git</span><br></pre></td></tr></table></figure>
-<p>
-<br>
-</p>
+<p><br></p>
 <p>源代码储存在gromacs/src/gromacs/里，比如分析氢键的gmx
 hbond就位于gromacs/src/gromacs/gmxana/gmx_hbond.cpp</p>
 <p>想怎么改都可以，改好后保存。</p>
@@ -236,9 +232,7 @@ hbond就位于gromacs/src/gromacs/gmxana/gmx_hbond.cpp</p>
 code for analyzing hydrogen bonds, gmx hbond, is located at
 gromacs/src/gromacs/gmxana/gmx_hbond.cpp.</p>
 <p>Modify as you like and then save.</p>
-<p>
-<br>
-</p>
+<p><br></p>
 <p>然后，使用cmake编译gromacs：进入gromacs的主文件夹，创建一个名为build的文件夹，进入，在此打开terminal，输入：</p>
 <p>Next, compile Gromacs using cmake: Enter the main Gromacs directory,
 create a folder named build, enter it, open the terminal there, and
@@ -249,25 +243,19 @@ type:</p>
 <p>This path is where you want to install the new Gromacs.</p>
 <p>Errors may occur during this process, usually due to missing
 packages. Installing them with sudo should resolve the issue.</p>
-<p>
-<br>
-</p>
+<p><br></p>
 <p>编译好了之后，输入：</p>
 <p>After compilation, enter:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">make install</span><br></pre></td></tr></table></figure>
 <p>安装魔改版的gromacs。</p>
 <p>To install the modified version of Gromacs.</p>
-<p>
-<br>
-</p>
+<p><br></p>
 <p>（可选）使用以下命令将此gromacs所在的位置暂时添加到环境变量中。这样使用时就可以不用指定其完整路径了。</p>
 <p>(Optional) Use the following command to temporarily add the location
 of this Gromacs to the environment variables. This way, you won't need
 to specify the full path when using.</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export PATH=/path/to/new/gromacs/bin:$PATH</span><br></pre></td></tr></table></figure>
-<p>
-<br>
-</p>
+<p><br></p>
 <p>Since today is April Fool's Day, a small April Fool's effect has been
 added, as shown in the image below. Happy April Fool's Day to
 everyone.</p>

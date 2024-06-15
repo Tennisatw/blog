@@ -8,7 +8,7 @@ tags: 编程 - Programming
 
 ### 背景介绍 - Background
 
-<p><br></p>
+<br>
 
 组里的人要分析一个系统的氢键数量和氢键自相关函数（Hbond autocorrelation function，hbacf）。
 
@@ -16,7 +16,7 @@ A colleague in our group is tasked with analyzing the number of hydrogen bonds a
 
 ![](1.png)
 
-<p><br></p>
+<br>
 
 通常来说，想要获得氢键相关的信息，如果是Gromacs模拟的系统，直接用Gromacs分析就可以。对于其他系统，如果懂点python的话，也可以用MDAnalysis来分析。但是这两个软件必须要系统的拓扑信息（即键连接的信息）。但是我们是用cp2k做的量子力学模拟，根本就没有“键”的概念，也更无从谈起拓扑信息了。
 
@@ -26,25 +26,25 @@ To obtain information about hydrogen bonds, if the system is simulated with Grom
 
 VMD can calculate hydrogen bonds without topological information, but it cannot compute the autocorrelation function of hydrogen bonds. Moreover, VMD seems to encounter errors very frequently, rendering it unusable.
 
-<p><br></p>
+<br>
 
 此外，系统中除了要分析的分子外，还有一些水分子，我们不想分析水分子产生的氢键，但我们的轨迹文件里又区分不开不同的氧原子和氢原子。这说明我们要么手动编辑轨迹文件，要么只能手动写代码了。
 
 Additionally, besides the molecules of interest, there are water molecules in the system whose hydrogen bonds we do not wish to analyze. However, our trajectory files do not differentiate between the various oxygen and hydrogen atoms. This means we must either manually edit the trajectory files or resort to writing our own code.
 
-<p><br></p>
+<br>
 
 还有一个小难点：我们的系统不是正交系统（系统晶胞的三个边长的夹角不都是90度），而且我们也没有晶胞（unit cell）在模拟过程中尺寸变化的信息。这无论如何都会影响 对穿过边界的氢键的判断。
 
 Another minor issue is that our system is non-orthogonal (the angles between the sides of the unit cell are not all 90 degrees), and we do not have information on the size changes of the unit cell during the simulation. This will inevitably affect the judgment of hydrogen bonds that cross boundaries.
 
-<p><br></p>
+<br>
 
 简单搜索了一下发现网上没有现成的脚本（估计也不能有，因为要求太多了），于是就自己动手撸了。
 
 A quick search revealed that there are no ready-made scripts available online (probably because the requirements are too complex), so we decided to develop our own.
 
-<p><br></p>
+<br>
 
 事后看来，似乎可以用MDAnalysis.topology.guessers.guess_bonds猜测生成键的信息，然后计算氢键的各个性质。非正交的晶胞也可以用MDAnalysis.transformations.boxdimensions设置。只需手动编辑轨迹文件，再生成一个拓扑文件，应该是可以用的......
 
@@ -54,7 +54,7 @@ In hindsight, it seems possible to use MDAnalysis.topology.guessers.guess_bonds 
 
 But debugging these things might take even longer, and it might not be faster than writing our own code.
 
-<p><br></p>
+<br>
 
 ---
 
@@ -73,13 +73,13 @@ First, we read the trajectory. Our trajectory file is in .xyz format, where each
   C         9.1651693300       20.6276966700        1.9919611600
 ...
 ```
-<p><br></p>
+<br>
 
 读取这种轨迹非常简单，一个readline()循环，然后根据其split()出的列表长度判断，是把这一行储存在现有的帧中，还是把这一帧结束掉，储存到列表里，新建一帧。这里留了个心眼，估计之后对原子的位置的计算会非常多，所以把原子的位置储存为np.ndarray形式，而把原子的种类信息单独储存在另一个列表中。
 
 Reading this type of trajectory is quite straightforward: a `readline()` loop is used, and then based on the length of the list obtained from its `split()`, it is determined whether to store the line in the current frame or to end the frame and store it in a list, then start a new frame. Anticipating frequent calculations on atomic positions in subsequent steps, the atomic positions are stored in the form of an `np.ndarray`, while the atomic type information is kept in a separate list.
 
-<p><br></p>
+<br>
 
 下一步是判断系统内有哪些氢键。这个没有捷径，只能一帧一帧地判断。这也是本程序中最慢的一步。
 
@@ -97,7 +97,7 @@ The criteria I used are: D-A less than 3.5 Å, DHA angle not less than 150°, an
 
 To reduce the number of angle calculations and focus more on distance, I also consider any D-A distance less than 1.8 Å as not a valid hydrogen bond, because the longest chemical bond between D and A is also about 1.7 Å.
 
-<p><br></p>
+<br>
 
 寻找氢键，首先是计算两个原子之间的距离，这里需要用一点高数的几何学的知识。由于本系统含有周期性边界，且非正交，所以需要先把原子坐标转换为相对于晶胞的坐标，然后计算其距离，并四舍五入成最小的值，然后再转回正常的坐标。
 
@@ -129,7 +129,7 @@ def distance(coord1: np.ndarray, coord2: np.ndarray) -> float:
     return distance
 ```
 
-<p><br></p>
+<br>
 
 计算三个原子之间的角度也是一样，首先计算从H到D的向量（计算向量和距离的唯一区别就在于，向量不需要最后对三个差值平方求和后开根号），然后计算从H到A的向量。这两个向量的夹角的cos值就是a·b/(|a||b|)。为了稍微省一点计算步骤，这里不把它转换成角度，直接用cos值比较。代码如下：
 
@@ -159,7 +159,7 @@ def angle(coord1: np.ndarray, coord2: np.ndarray, coord3: np.ndarray) -> float:
     return np.clip(cos_angle, -1, 1)
 ```
 
-<p><br></p>
+<br>
 
 寻找所有潜在的氢键受体与供体，以及所有的H原子，然后是套用三层循环来“逐个判断”每个原子三元组是否形成氢键。丑陋的代码如下所示：
 
@@ -192,7 +192,7 @@ for num_d in indices_da:
 
 Outside these three nested loops, there is another loop iterating over the frames.
 
-<p><br></p>
+<br>
 
 其实，如果这个系统是正交的话，可以用kdtree来非常方便地统计与D距离小于1.2的H，和与D距离小于3.5的A。虽然也是三层循环，但是不用判断原子之间的距离了，计算速度超级加倍，代码如下所示。
 
@@ -223,7 +223,7 @@ for num_d, num_hs in enumerate(neighbors_dh):
                 angle_dha = angle(coord_d, coord_h, coord_a)
 ```
 
-<p><br></p>
+<br>
 
 为了估算无聊的等待有多久，我在对帧循环的末尾添加了这么一个小进度条：
 
@@ -235,13 +235,13 @@ To estimate the duration of the tedious waiting period, I added a small progress
 print("\r100% Done!")
 ```
 
-<p><br></p>
+<br>
 
 寻找完所有的氢键后，使用pickle包把氢键的信息储存为二进制文件，因为氢键的信息储存在一个自定义类的列表里。我感觉把氢键储存为一个字典列表，然后json.dump也未尝不可。
 
 After identifying all the hydrogen bonds, the information is stored as a binary file using the pickle package, because the hydrogen bond information is kept in a list of custom classes. It seems feasible to store the hydrogen bonds as a list of dictionaries and then use `json.dump` to save them.
 
-<p><br></p>
+<br>
 
 至此，从文件中读取结构并寻找氢键这一部分就完成了，完整代码如下。我知道读者们（如果有的话）都在等这个。
 
@@ -436,7 +436,7 @@ with open(file_address2, "wb") as file:
 print(f"Save the information of hydrogen bonds to \n{file_address2}")
 ```
 
-<p><br></p>
+<br>
 
 ---
 
@@ -495,7 +495,7 @@ plt.savefig(file_address2)
 plt.show()
 ```
 
-<p><br></p>
+<br>
 
 ---
 
@@ -505,13 +505,13 @@ plt.show()
 
 The final step is to calculate the autocorrelation function of the hydrogen bonds. There are typically two types of autocorrelation functions: continuous and intermittent.
 
-<p><br></p>
+<br>
 
 有[一篇文章](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.85.768 )讲了这两种自相关函数的区别。简而言之，连续自相关函数要求氢键形成后不能断裂，如果断裂后又重连就把它看成另一个新的氢键，而间断自相关函数不做此要求。
 
 A [paper](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.85.768 ) discusses the differences between these two types of autocorrelation functions. In essence, the continuous autocorrelation function requires that once a hydrogen bond is formed, it must not break. If it breaks and then reforms, it is considered a new hydrogen bond. On the other hand, the intermittent autocorrelation function does not have this requirement.
 
-<p><br></p>
+<br>
 
 首先统计间断的自相关函数，用一个循环处理氢键数据。
 
@@ -528,7 +528,7 @@ for hbond in hbonds:
     hbonds_dict[atoms][hbond.frame] = 1
 ```
 
-<p><br></p>
+<br>
 
 如果需要计算连续的自相关函数的话，首先要找出间断的自相关函数的断点，然后把它切断，然后粘贴到序列的最开始，然后用0补齐后面的数据。
 
@@ -553,7 +553,7 @@ if continuous:
     hbonds_dict = hbonds_dict_new
 ```
 
-<p><br></p>
+<br>
 
 然后是利用快速傅立叶变换（fft）进行自相关函数的计算
 
@@ -576,7 +576,7 @@ def autocorrelation_fft(data):
     return result / result[0]
 ```
 
-<p><br></p>
+<br>
 
 最后，把所有的氢键的自相关函数做一个平均，然后作图。函数图像如下所示（连续的氢键自相关函数）。
 
@@ -584,7 +584,7 @@ Finally, average the autocorrelation functions of all the hydrogen bonds and plo
 
 ![](2.png)
 
-<p><br></p>
+<br>
 
 这一部分的代码如下所示。
 

@@ -10,13 +10,13 @@ tags:
 
 <p class="tennisbot" id="左上角有google翻译，如果需要的话<br>There is Google Translate button in the upper left corner, if needed">由于本文可能稍有敏感，这里仅展示英文版。</p>
 
-<p><br></p>
+<br>
 
 ### Foreword
 
 My younger brother was tasked by his school to write a 3,000-word reflection on "The Communist Manifesto," and he asked for my help. Embarrassingly, I hadn't read the Manifesto myself, so I took this as an opportunity to dive in.
 
-<p><br></p>
+<br>
 
 I read [this](https://www.marxists.org/chinese/marx/01.htm) version.
 
@@ -24,17 +24,17 @@ I read [this](https://www.marxists.org/chinese/marx/01.htm) version.
 
 [Image Source](https://www.reddit.com/r/LOOK_CHINA/comments/178dy79/%E6%B9%96%E5%8D%97%E5%8D%AB%E8%A7%86%E6%8E%A8%E5%87%BA%E6%96%B0%E5%89%A7%E5%BD%93%E9%A9%AC%E5%85%8B%E6%80%9D%E9%81%87%E8%A7%81%E5%AD%94%E5%AD%90/)
 
-<p><br></p>
+<br>
 
 ### Significance
 
 First and foremost, "The Communist Manifesto" played a pivotal role in organizing labor struggles. It defined the proletariat, organized unions, united workers, and led the proletariat in resisting capitalist oppression, most importantly, making capitalist countries reconsider their need to demonstrate their superiority. As Che Guevara once said, "After we're gone, they'll build schools and hospitals for you, raise your wages, not because they've had a change of heart or become kind, but because we were here."
 
-<p><br></p>
+<br>
 
 The struggle of the lower and middle classes is an eternal theme of human civilization, as they often represent the most oppressed and impoverished within a nation or society. Every left-leaning individual (or rather, anyone who isn't far-right) should spend time and effort contemplating how to mobilize these groups into a political force, unite them, and improve their living conditions.
 
-<p><br></p>
+<br>
 
 ### Limitations
 
@@ -42,7 +42,7 @@ The struggle of the lower and middle classes is an eternal theme of human civili
 
 For instance, in Canada, a worker earning a monthly salary of `$ 5,000` can afford a `$ 400,000` small villa (perhaps with some loans), drive a `$ 30,000` car, dine at Earls for a decent `$ 40` steak, bread, and wine meal, and buy groceries like 4L of milk for `$ 6`, 1kg of pork for `$ 15`. Healthcare and eyeglasses are free, and education is almost free. They enjoy weekends with sports, picnics, hiking, skiing, and worship, and might even invest in stocks and bonds. This group can be considered middle class.
 
-<p><br></p>
+<br>
 
 **Socialist states practicing Marxism-Leninism have generally failed at checks and balances,** leading to highly centralized power. China, Vietnam, Laos, and Cuba are all authoritarian states, ranking low on global democracy indices.
 
@@ -50,7 +50,7 @@ I believe this is fundamentally because Marxism doesn't prioritize power balance
 
 Moreover, "The Communist Manifesto" emphasizes the state power of the proletarian dictatorship but downplays the supervision of the "representatives of the proletariat." In reality, power corrupts all who wield it. A leader from a proletarian background ceases to be a proletarian the moment he assumes office; he becomes part of the bureaucratic class. For various reasons, states capable of authoritarian rule will inevitably resort to it.
 
-<p><br></p>
+<br>
 
 **"The Communist Manifesto" holds an overly extreme view on traditional culture and religion.** Modern society should value diversity and individual rights more. For instance, if the goal of an ideology is to eliminate all religions, then it inherently lacks freedom. Furthermore, for a nation, is the benefit of "eliminating religion" worth the effort compared to its costs?
 
@@ -58,7 +58,7 @@ I think the idea of eradicating traditional culture and religion (among many sim
 
 From a scientific standpoint, eradicating traditional culture and religion might seem beneficial. However, humans and societies are complex, and these elements offer alternative perspectives. Eliminating them also eradicates social complexity, leading to homogenization.
 
-<p><br></p>
+<br>
 
 ### Conclusion
 
@@ -68,7 +68,7 @@ It represents an ideology that has never succeeded (no Marxist-Leninist state ha
 
 **Destruction is infinitely easier than construction. "The Communist Manifesto" should only serve as a reference for left-wing party activities, not as a guiding philosophy for a nation.**
 
-<p><br></p>
+<br>
 
 ### Other
 
@@ -76,7 +76,7 @@ For Chinese students, since Marxism is considered far-left (i.e., its demands ar
 
 **Before committing to revolution attracted by the far-left's utopian visions, young people should ponder whether a terrestrial paradise is realistic.**
 
-<p><br></p>
+<br>
 
 I dislike Marx's statement, "Philosophers have only interpreted the world in various ways; the point, however, is to change it."
 
@@ -84,19 +84,19 @@ Marx and Engels were theorists who didn't perfect their theory yet dismissed its
 
 Moreover, the Great Leap Forward and the Cultural Revolution, driven by Mao Zedong and others' rigid adherence to communist literature and inflexible theories, brought suffering to China. Concepts like "Man must conquer nature," "exercise subjective initiative," and "class struggle" were to blame.
 
-<p><br></p>
+<br>
 
 No stable modern state is built on hatred, seeking "revenge" against another class (e.g., the feudal or capitalist classes). All hatred can be a tool for rulers to manipulate and control the masses.
 
 Moreover, if the feudal and capitalist classes are eliminated, what is the government's legitimacy? Shouldn't the government step down and relinquish power?
 
-<p><br></p>
+<br>
 
 ### Analysis of Selected Sentences
 
 Below is my aggressive analysis, sentence by sentence, of some passages from "The Communist Manifesto."
 
-<p><br></p>
+<br>
 
 #### Chapter One: Bourgeois and Proletarians
 
@@ -108,7 +108,7 @@ People do not necessarily need to ally with others of the same class. There are 
 
 Furthermore, the term "struggle" may not be the most fitting. In a well-functioning society, the competition among various forces is not so intense, and there are many historical examples of successful peaceful protests. Instead of "struggle," "balance" might be a more appropriate term.
 
-<p><br></p>
+<br>
 
 "The bourgeoisie has stripped of its halo every occupation hitherto honored and looked up to with reverent awe. It has converted the physician, the lawyer, the priest, the poet, the man of science, into its paid wage laborers."  
 
@@ -116,37 +116,37 @@ And then what?
 
 If not compensated with money for their labor, should we use something more ethereal? It's not impossible, but it could facilitate exploitation by the powerful over the weak. For example, a village tyrant or local official could have his doctor treat him for free, without any compensation.
 
-<p><br></p>
+<br>
 
 "The bourgeoisie, during its rule of less than a hundred years, has created more massive and more colossal productive forces than have all preceding generations together."  
 
 I'd argue that it's "advanced technology," not the "bourgeoisie," that created productive forces. The proletariat, or even emperors, could also utilize advanced technology to create productive forces, build steamships, and lay telegraph lines.
 
-<p><br></p>
+<br>
 
 "Modern industry has converted the little workshop of the patriarchal master into the great factory of the industrial capitalist. Masses of laborers, crowded into the factory, are organized like soldiers."  
 
 Personally, I'm not sure whether small workshops or large factories are definitively more comfortable for workers. However, with the advancement of time, large factories are more advanced, brighter, cleaner, and have stricter safety measures, possibly making them somewhat better than small workshops.
 
-<p><br></p>
+<br>
 
 "Occasionally the workers are victorious, but only for a time. The real fruit of their battles lies, not in the immediate result, but in the ever-expanding union of the workers."  
 
 I strongly agree. If workers are to gain more power, they must unite to fight atomization by the state or capitalists.
 
-<p><br></p>
+<br>
 
 "The proletariat goes through various stages of development. With its birth begins its struggle with the bourgeoisie. At first the contest is carried on by individual laborers, then by the workpeople of a factory, then by the operatives of one trade, in one locality, against the individual bourgeois who directly exploits them."  
 
 I strongly agree. The workers' failures are temporary. As long as they continue to be oppressed, they will organize and resist. I sincerely hope that everyone dissatisfied with their lives will take the time to read "The Communist Manifesto."
 
-<p><br></p>
+<br>
 
 "In the conditions of the proletariat, those of old society at large are already virtually swamped. The proletarian is without property; his relation to his wife and children has no longer anything in common with the bourgeois family relations."  
 
 Is this how it should be or how it actually is? I don't believe the proletariat should or indeed has abandoned nation, law, morality, or religion.
 
-<p><br></p>
+<br>
 
 #### Chapter Two: Proletarians and Communists
 
@@ -154,7 +154,7 @@ Is this how it should be or how it actually is? I don't believe the proletariat 
 
 This only holds true in situations where workers cannot unite to demand their rights. In modern society, workers' wages are determined by the degree of their unity and the scarcity of labor.
 
-<p><br></p>
+<br>
 
 "Some object that upon the abolition of private property, all work will cease, and universal laziness will overtake us."  
 
@@ -162,13 +162,13 @@ The latter half of this statement does not logically follow from the first. It c
 
 We can infer from this that "The Communist Manifesto" is not a bible, its contents are not eternal truths, and its authors are not saints. There are errors within that need to be corrected by later generations.
 
-<p><br></p>
+<br>
 
 ![](2.png)
 
 [Image Source](http://www.qstheory.cn/zhuanqu/bkjx/2019-11/28/c_1125283907.htm)
 
-<p><br></p>
+<br>
 
 "But you communists would introduce community of women, screams the entire bourgeoisie in chorus. The bourgeois sees his wife merely as a production instrument.   
 When they hear that production instruments are to be exploited in common, they naturally think that the same fate will befall women.   
@@ -191,7 +191,7 @@ However, it must be said, it's filled with a fighting spirit, akin to a shrewish
 
 [Image Source](http://theory.people.com.cn/n1/2018/0524/c40531-30009908.html)
 
-<p><br></p>
+<br>
 
 "Some accuse communists of wanting to abolish nations and nationalities."  
 "Workers have no country. You cannot take from them what they do not have."   
@@ -200,19 +200,19 @@ According to Marx, if workers feel they have no country, then they indeed have n
 
 A compromise would be to send all workers who feel they have no country to a "Marxist state," while those who feel a connection to their homeland can return to their respective nations.
 
-<p><br></p>
+<br>
 
 "The ruling ideas of each age have ever been the ideas of its ruling class."   
 
 Strongly agree, this is insightful.
 
-<p><br></p>
+<br>
 
 Provide public and free education for all children, abolish the current form of child labor in factories, and integrate education with material production, among other measures.   
 
 This reminds me of the "Up to the Mountains and Down to the Countryside" movement, where children were mobilized for production labor. Reflecting on it, Mao Zedong's adherence to "The Communist Manifesto" seems proficient... whether this was a blessing or a curse is still up for debate.
 
-<p><br></p>
+<br>
 
 #### Chapter Three: Socialist and Communist Literature
 
@@ -222,7 +222,7 @@ Is this reality or Marx's fantasy? If it's the latter, data is needed to show ho
 
 My assessment is: Inferior propaganda, appealing to emotions.
 
-<p><br></p>
+<br>
 
 #### Chapter Four: Position of the Communists in Relation to the Various Existing Opposition Parties
 
@@ -233,7 +233,7 @@ How does this differ from terrorism, such as the jihadist faction of Islam? More
 
 Could the jihadist faction also say: "We jihadists support every revolutionary movement against the existing social and political order, let Europe tremble before the glory of the true God."
 
-<p><br></p>
+<br>
 
 "Workers of the world, unite!"  
 
@@ -241,7 +241,7 @@ Could the jihadist faction also say: "We jihadists support every revolutionary m
 
 "Burrito lovers" is a term I've coined for those who enjoy burritos and have eaten them in at least two out of their last three meals. I believe "burrito lovers" have more in common worldwide and more shared demands than "proletarians." The term itself is better defined, and "burrito lovers" should be able to unite more easily than "proletarians."
 
-<p><br></p>
+<br>
 
 ### Epilogue
 

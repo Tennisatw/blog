@@ -27,7 +27,7 @@
 <meta property="og:description" content="暂无预览 - No preview available">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-11-22T05:45:01.000Z">
-<meta property="article:modified_time" content="2024-06-07T05:06:04.251Z">
+<meta property="article:modified_time" content="2024-06-14T18:31:47.709Z">
 <meta property="article:author" content="Tennisatw">
 <meta property="article:tag" content="编程 - Programming">
 <meta name="twitter:card" content="summary">
@@ -184,7 +184,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024/06/06 23:06:04" itemprop="dateModified" datetime="2024-06-06T23:06:04-06:00">2024/06/06</time>
+      <time title="Modified: 2024/06/14 12:31:47" itemprop="dateModified" datetime="2024-06-14T12:31:47-06:00">2024/06/14</time>
     </span>
 
   
@@ -194,7 +194,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">Word count in article: </span>
-      <span>596</span>
+      <span>586</span>
     </span>
     <span class="post-meta-item" title="Reading time">
       <span class="post-meta-item-icon">
@@ -214,25 +214,19 @@
     <div class="post-body" itemprop="articleBody"><p>想要计算lammps模拟系统的密度，需要知道系统的尺寸，和系统内的原子数。</p>
 <p>To calculate the density of a lammps simulated system, you need to
 know the system's dimensions and the number of atoms within it.</p>
-<p>
-<br>
-</p>
+<p><br></p>
 <p>对于尺寸在模拟中不发生变化的系统，可以读取其输入文件的结构文件来获得系统的三维尺寸。以下为一个典型的结构文件的例子：</p>
 <p>For systems whose dimensions do not change during simulation, you can
 obtain the three-dimensional size of the system by reading the structure
 file in its input file. Here's an example of a typical structure
 file:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">LAMMPS data file</span><br><span class="line"></span><br><span class="line">3072 atoms</span><br><span class="line">2 atom types</span><br><span class="line">2048 bonds</span><br><span class="line">1 bond types</span><br><span class="line">1024 angles</span><br><span class="line">1 angle types</span><br><span class="line"></span><br><span class="line">-1.2631399999999999e+01 1.2631399999999999e+01 xlo xhi</span><br><span class="line">-1.2631399999999999e+01 1.2631399999999999e+01 ylo yhi</span><br><span class="line">-2.5262750000000000e+01 2.5262750000000000e+01 zlo zhi</span><br><span class="line"></span><br><span class="line">Masses</span><br><span class="line"></span><br><span class="line">1 1.008</span><br><span class="line">2 15.9994</span><br></pre></td></tr></table></figure>
-<p>
-<br>
-</p>
+<p><br></p>
 <p>最长的那三行是盒子的尺寸。x方向的尺寸为12.6314-(-12.6314)=25.2628A。y和z方向的尺寸计算方法类似。</p>
 <p>The three longest lines represent the dimensions of the box. The size
 in the x-direction is 12.6314 - (-12.6314) = 25.2628 Å. The size in the
 y and z directions is calculated similarly.</p>
-<p>
-<br>
-</p>
+<p><br></p>
 <p>对于尺寸在模拟中发生变化的系统，可以使其输出某一帧的三维尺寸。可以在lammps使用dump命令，比如：</p>
 <p>For systems whose dimensions change during simulation, you can output
 the three-dimensional size of a specific frame. In lammps, you can use
@@ -243,15 +237,11 @@ the dump command, for example:</p>
 process, such as the number of atoms, box dimensions, and coordinates of
 atoms.</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">ITEM: TIMESTEP</span><br><span class="line">100000</span><br><span class="line">ITEM: NUMBER OF ATOMS</span><br><span class="line">3072</span><br><span class="line">ITEM: BOX BOUNDS pp pp pp</span><br><span class="line">-1.2631399999999999e+01 1.2631399999999999e+01</span><br><span class="line">-1.2631399999999999e+01 1.2631399999999999e+01</span><br><span class="line">-2.5262750000000000e+01 2.5262750000000000e+01</span><br></pre></td></tr></table></figure>
-<p>
-<br>
-</p>
+<p><br></p>
 <p>系统内各分子或原子的种类与个数可以通过检查输入文件的结构文件来确定。</p>
 <p>The types and numbers of molecules or atoms in the system can be
 determined by examining the structure file in the input file.</p>
-<p>
-<br>
-</p>
+<p><br></p>
 <p>在清楚x，y，z，和系统的分子个数后，可以使用以下python脚本计算总系统的密度。</p>
 <p>Once you know the dimensions in x, y, z, and the number of molecules
 in the system, you can use the following python script to calculate the

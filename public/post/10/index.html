@@ -27,7 +27,7 @@
 <meta property="og:description" content="在编写Tennisbot的主程序时，总是需要使其重启。Python中，可以使用以下命令模拟重启效果。When writing the main program for Tennisbot, it always needs to be restarted. The following command can be used in Python to simulate a restart effect">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-06-26T03:14:13.000Z">
-<meta property="article:modified_time" content="2024-06-06T07:34:01.532Z">
+<meta property="article:modified_time" content="2024-06-14T18:31:47.671Z">
 <meta property="article:author" content="Tennisatw">
 <meta property="article:tag" content="编程 - Programming">
 <meta name="twitter:card" content="summary">
@@ -184,7 +184,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024/06/06 01:34:01" itemprop="dateModified" datetime="2024-06-06T01:34:01-06:00">2024/06/06</time>
+      <time title="Modified: 2024/06/14 12:31:47" itemprop="dateModified" datetime="2024-06-14T12:31:47-06:00">2024/06/14</time>
     </span>
 
   
@@ -194,7 +194,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">Word count in article: </span>
-      <span>370</span>
+      <span>362</span>
     </span>
     <span class="post-meta-item" title="Reading time">
       <span class="post-meta-item-icon">
@@ -216,29 +216,21 @@
 restarted. The following command can be used in Python to simulate a
 restart effect.</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">os.spawnv(os.P_WAIT, sys.executable, [sys.executable] + sys.argv)</span><br><span class="line">exit(<span class="number">0</span>)</span><br></pre></td></tr></table></figure>
-<p>
-<br>
-</p>
+<p><br></p>
 <p>本命令的原理是，首先，使用spawnv生成一个子进程，然后挂起父进程。子进程是使用相同的python程序执行相同的脚本。子进程结束后，父进程也立即退出。</p>
 <p>The principle of this command is that it first generates a child
 process using spawnv and then suspends the parent process. The child
 process executes the same script using the same Python program. Once the
 child process ends, the parent process also exits immediately.</p>
-<p>
-<br>
-</p>
+<p><br></p>
 <p>但是，其与真正意义上的重启不同的是，父进程是在子进程结束后才结束，所以，在子进程中，执行列出所有进程的代码，可以查看到父进程。如下所示：</p>
 <p>However, it's different from a true restart in that the parent
 process ends only after the child process has finished. Therefore, if
 you run code to list all processes in the child process, you can see the
 parent process. This is demonstrated as follows:</p>
-<p>
-<br>
-</p>
+<p><br></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> psutil</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">pids = [p <span class="keyword">for</span> p <span class="keyword">in</span> psutil.pids() <span class="keyword">if</span> psutil.Process(p).name() == <span class="string">&#x27;python.exe&#x27;</span>]</span><br><span class="line"><span class="built_in">print</span>(pids)</span><br><span class="line">time.sleep(<span class="number">1</span>)</span><br><span class="line">os.spawnv(os.P_WAIT, sys.executable, [sys.executable] + sys.argv)</span><br><span class="line">exit(<span class="number">0</span>)</span><br></pre></td></tr></table></figure>
-<p>
-<br>
-</p>
+<p><br></p>
 <p>其输出结果为：</p>
 <p>One possible output could be:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[24188, 31972]</span><br><span class="line">[9440, 19540, 24188, 31972]</span><br><span class="line">[9440, 16408, 19540, 24188, 31972, 33404]</span><br><span class="line">[9440, 9564, 12696, 16408, 19540, 24188, 31972, 33404]</span><br><span class="line">[1352, 9440, 9564, 12696, 16408, 19540, 24188, 24700, 31972, 33404]</span><br><span class="line">[1352, 4052, 9440, 9564, 12696, 16408, 19540, 24188, 24700, 31972, 33404, 33956]</span><br><span class="line">...</span><br></pre></td></tr></table></figure>

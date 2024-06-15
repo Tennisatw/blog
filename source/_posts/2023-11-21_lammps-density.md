@@ -10,7 +10,7 @@ tags: 编程 - Programming
 
 To calculate the density of a lammps simulated system, you need to know the system's dimensions and the number of atoms within it.
 
-<p><br></p>
+<br>
 
 对于尺寸在模拟中不发生变化的系统，可以读取其输入文件的结构文件来获得系统的三维尺寸。以下为一个典型的结构文件的例子：
 
@@ -36,13 +36,13 @@ Masses
 2 15.9994
 ```
 
-<p><br></p>
+<br>
 
 最长的那三行是盒子的尺寸。x方向的尺寸为12.6314-(-12.6314)=25.2628A。y和z方向的尺寸计算方法类似。
 
 The three longest lines represent the dimensions of the box. The size in the x-direction is 12.6314 - (-12.6314) = 25.2628 Å. The size in the y and z directions is calculated similarly.
 
-<p><br></p>
+<br>
 
 对于尺寸在模拟中发生变化的系统，可以使其输出某一帧的三维尺寸。可以在lammps使用dump命令，比如：
 
@@ -66,13 +66,13 @@ ITEM: BOX BOUNDS pp pp pp
 -2.5262750000000000e+01 2.5262750000000000e+01
 ```
 
-<p><br></p>
+<br>
 
 系统内各分子或原子的种类与个数可以通过检查输入文件的结构文件来确定。
 
 The types and numbers of molecules or atoms in the system can be determined by examining the structure file in the input file.
 
-<p><br></p>
+<br>
 
 在清楚x，y，z，和系统的分子个数后，可以使用以下python脚本计算总系统的密度。
 

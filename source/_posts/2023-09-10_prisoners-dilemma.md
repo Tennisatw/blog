@@ -12,7 +12,7 @@ tags: 编程 - Programming
 
 The prisoner's dilemma is a representative example in non-zero-sum game theory, where the best choice for the individual is not necessarily the best choice for the group. Here is a classic presentation of the Prisoner's Dilemma:
 
-<p><br></p>
+<br>
 
 警方逮捕甲、乙两名嫌疑犯，但没有足够证据指控二人有罪。于是警方分开囚禁嫌疑犯，分别和二人见面，并向双方提供以下相同的选择：
 
@@ -34,13 +34,13 @@ https://zh.wikipedia.org/wiki/%E5%9B%9A%E5%BE%92%E5%9B%B0%E5%A2%83
 
 https://en.wikipedia.org/wiki/Prisoner%27s_dilemma
 
-<p><br></p>
+<br>
 
 因为不知道另一位囚徒是否会选择合作还是背叛，而无论对方选择什么，自己选择背叛的收益总比选择合作要高。所以，对于理性的囚徒来说，最佳的选择是选择背叛。因此两位囚徒都选择了背叛，他们被判监2年。
 
 As the prisoner is uncertain if the other prisoner will choose to cooperate or defect, the gains from defecting tend to be higher no matter what the other decides. Hence, it's rational for the prisoner to choose defecting. As a result, both prisoners defected, resulting in a two-year sentence.
 
-<p><br></p>
+<br>
 
 但这种选择又明显不是整体利益最大化的解决方案（帕累托最优）。如果双方都选择合作，两人只会被判监1年。
 
@@ -51,13 +51,13 @@ However, this decision obviously isn't the optimal solution for maximizing colle
 
 The outcome is completely different if the two prisoners are allowed to play the game repeatedly. In such a case, a prisoner would have the chance to retaliate in the next round if he is defected against. This could, to a certain extent, encourage his opponent to cooperate with him. 
 
-<p><br></p>
+<br>
 
 阿克塞尔罗德组织了一场重复囚徒困境博弈，参与者提交代码两两对决，每人都有自己独特的策略。最终，根据总得分判断输赢。这其中，最出彩的却是一种简单的方法：“以牙还牙”策略。该策略在第一次博弈中选择合作，之后会在下一次博弈中重复对手上一次的选择。本文打算复现他的博弈结果。
 
 Axelrod organized a Repeated Prisoner's Dilemma game where participants submitted codes for head-to-head battles, each with their unique strategies. The winners were determined based on total scores. Among all, the most impressive strategy was a simple one: "Tit for Tat." This strategy cooperates in the first round, then copies the opponent's decision in the next round thereafter. This article intends to replicate his game results.
 
-<p><br></p>
+<br>
 
 ### 模拟实验 - Simulating
 
@@ -127,7 +127,7 @@ def tester_5(we=None, them=None):
 
 The term "Generous Tit-for-Tat" refers to the strategy where even if the opponent chooses to defect, there's a 10% chance of cooperation in the next round. "Retaliatory_strike" strategy starts with cooperation but switches to constant defection once betrayed. The "Tester" begins with defection, chooses cooperation if the opponent also defects, but returns to defection after five continuous rounds of opponent's cooperation.
 
-<p><br></p>
+<br>
 
 为每个策略生成10个玩家，使其进行200次交易。（但是玩家们（明显）不知道交易的次数）。定义玩家的奖惩机制如下：
 
@@ -151,7 +151,7 @@ Create ten players for each strategy and let them engage in 200 transactions. Ho
 
 Each player starts with a score of 100,000 points. After each game (200 transactions), points are deducted from their score (480 points in this case). When their score falls below zero, they are forced to adopt an alternative strategy currently in use in the field. This methodology increases selection pressure, ensuring only the most robust strategies survive.
 
-<p><br></p>
+<br>
 
 模拟1500场对局，并渲染成视频。完整代码如下：
 
@@ -376,7 +376,7 @@ with writer.saving(fig, "rpdg.mp4", dpi=100):
             writer.grab_frame()
 ```
 
-<p><br></p>
+<br>
 
 生成的视频如下：
 
@@ -384,19 +384,19 @@ The videos are as follows:
 
 ![](1.mp4)
 
-<p><br></p>
+<br>
 
 可以看出，“总是合作”策略不久就消失了，一些无脑合作的策略消失的也很快。虽然“总是背叛”和“报复”在中期主导着局面，并且导致所有的策略的分数都掉得飞快，但最终还是三种“以牙还牙”策略坚持到了最后。这似乎说明纯圣母和纯坏蛋都不会在社会上存在，主导社会的是有自卫能力的好人。
 
 It becomes clear that the "always cooperate" strategy soon faded, as did strategies that involved mindless cooperation. Although "always defect" and "retaliatory strike" dominated the scene in the medium term and caused a rapid drop in all strategies' scores, three types of "tit-for-tat" strategies eventually prevailed. This suggests that Real good guys and real devils do not exist in society, and those who govern are good people with the ability to defend themselves.
 
-<p><br></p>
+<br>
 
 另，“慷慨的以牙还牙”要比普通“以牙还牙”更成功，这似乎说明要适当原谅别人的错误。
 
 Additionally, the "generous tit-for-tat" has proven to be more successful than the regular "tit-for-tat," implying the importance of forgiving others' mistakes.
 
-<p><br></p>
+<br>
 
 ### 修改初始分布 - Adjusting the Initial Distribution
 
@@ -408,13 +408,13 @@ It seems that if there is only one "tit-for-tat," and everyone else "always betr
 strategy_increase = ['tit_for_tat', 'generous_tit_for_tat']
 ```
 
-<p><br></p>
+<br>
 
 所有模拟的结果只有两种可能，“针锋相对”阵营获胜，或者“报复”获胜。“针锋相对”阵营其实相当脆弱。如果“全部背叛”和“报复”的比例超过一定值，那针锋相对就很难取得优势。值得注意的是，即使开局是由“全部合作”主导的，但由于它不会存活太久，它反而变成了培养“全部背叛”等非友善策略的土壤。
 
 All the simulations' results only have two possibilities - either the "Tit for Tat" camp wins or the "retaliatory strike" prevails. The "Tit for Tat" camp is relatively fragile. If the proportion of "always betrays" and "retaliatory strike" exceeds a certain level, it makes it challenging for "Tit for Tat" to gain superiority. Notably, even though the game could start with a dominance of "Total Cooperation", it doesn’t last long and ironically, it becomes the breeding ground for non-friendly strategies like "always betrays". 
 
-<p><br></p>
+<br>
 
 另外，如果开局就是由“针锋相对”系策略主导，那么所有的非友善策略会很快得全都消失，但很多友善策略都能有存活空间。
 

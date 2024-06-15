@@ -10,7 +10,7 @@ tags: 编程 - Programming
 
 In Python, if you want to capture the information output to the console when executing a piece of code, you can use the method of redirecting stdout.
 
-<p><br></p>
+<br>
 
 首先，建立一个类，里面有两个函数，write和flush
 
@@ -28,7 +28,7 @@ class StdoutRedirect:
         self.content = ''
 ```
 
-<p><br></p>
+<br>
 
 实例化这个类，并且重定向sys.stdout
 
@@ -43,7 +43,7 @@ sys.stdout = my_stdout
 
 Any subsequent output will go into the content of my_stdout.
 
-<p><br></p>
+<br>
 
 在所需重定向输出的代码结束后，只需将sys.stdout重定向回默认的输出流即可。
 
@@ -53,7 +53,7 @@ At the end of the code where you need to redirect the output, you just need to r
 sys.stdout = sys.__stdout__
 ```
 
-<p><br></p>
+<br>
 
 完整代码如下
 

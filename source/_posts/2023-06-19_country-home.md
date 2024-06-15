@@ -8,7 +8,7 @@ tags: 随想 - Thoughts
 
 <p class="tennisbot" id="左上角有google翻译，如果需要的话<br>There is Google Translate button in the upper left corner, if needed">由于本文可能稍有敏感，这里仅展示英文版。</p>
 
-<p><br></p>
+<br>
 
 ![](1.png)
 
@@ -22,13 +22,13 @@ Question Description: We Chinese know that for the sake of our country, we would
 
 Answer: Having a country doesn't necessarily mean having a home (a photo of Pol Pot).
 
-<p><br></p>
+<br>
 
 On June 18, 2023, BBC published an interview about North Korea. It described how the lives of three ordinary North Korean citizens were becoming increasingly difficult, to the point where some people in North Korea were even dying of hunger.
 
 https://www.bbc.com/news/world-asia-65881803
 
-<p><br></p>
+<br>
 
 By the way, As I write this article, I happen to be in Seoul airport, a city just 40 kilometers away from North Korea. While I was buying Korean cosmetics for my cousin sister and complaining about the expensive and tasteless bibimbap at the airport, people 40 kilometers north of me were starving to death.
 
@@ -36,19 +36,19 @@ By the way, As I write this article, I happen to be in Seoul airport, a city jus
 
 Let's briefly consider this question: Does national power take precedence over justice? Or to put it another way, should people choose the state or justice when the actions of the state are unjust?
 
-<p><br></p>
+<br>
 
 I believe those who choose the state (I believe they are the majority in China) would argue that the Western powers have an undying intent to destroy us, and the state protects our nation from foreign aggression. Therefore, we should give the highest power to the state and prevent being brainwashed by universal values.
 
-<p><br></p>
+<br>
 
 Before criticizing it, I firstly admit that this logic is coherent. However, it has a fatal flaw: how to ensure that we are not falling into the trap of the state narrative? If another person lives in the West, but believes in the Yellow Peril, thinks that China is intent on destroying them, and believes that people there have been brainwashed by communism. Is there any essentially different between these two kinds of thoughts? Moreover, both the West and China (or any other ideological trend) are complex. There are plenty of examples of both suppressing opponents and cooperating with the other. It's more accurate to say that the relationship is one of coexistence between competition and cooperation, rather than one side is intent on destroying the other.
 
-<p><br></p>
+<br>
 
 If we analyze the concept of "state," we find that it always needs a reason to make us choose it. It could be ethnicity, religion, or shared values (ethnic states/religious states/Western states). But whether it is ethnicity, religion, or values, none is so sacred that it can't be criticized. Monarchs who deify themselves to instill respect and fear in the people were a dime a dozen in the Middle Ages. Historically, no regime is immortal, and even those lasting more than 500 years are not many.
 
-<p><br></p>
+<br>
 
 By the way, because Kim Jong Un is the unique successor and leader of the Juche Revolution, the gratitude towards the general can never be fully repaid.
 
@@ -62,23 +62,23 @@ In the last paragraph of the BBC article, the author writes:
 
 They also said the information was "not entirely factual", claiming it had been "derived from fabricated testimonies from anti-DPRK [Democratic People's Republic of Korea] forces"."
 
-<p><br></p>
+<br>
 
 Some people might question, why do you assume that it's the North Korean officials lying, not the BBC producing fake news? My answer is, because I've heard this statement before. During the The Great Chinese Famine.
 
-<p><br></p>
+<br>
 
 I always believe there are no evil regimes, only backward thoughts. However, if a regime can't even sustain the lives of its people, and despite the availability of foreign aid, refuses to accept it for various reasons, treating human lives as grass mustards. This is an extreme irresponsibility on the part of the government, and it wouldn't be too far to say it's deliberate killing. Such a regime is not worth the love of their people.
 
-<p><br></p>
+<br>
 
 Finally, I would like to reflect that it's not always true that where there is oppression, there will be resistance. If the intensity of oppression is too high, people may not dare to resist. And if the oppression lasts too long, the nation, I fear, may lose its instinct to resist.
 
-<p><br></p>
+<br>
 
 Wishing you strength,
 
-<p><br></p>
+<br>
 
 2023/6/19
 

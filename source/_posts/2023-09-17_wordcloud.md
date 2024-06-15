@@ -12,7 +12,7 @@ The image below is a photo of a wordcloud.
 
 ![](1.png)
 
-<p><br></p>
+<br>
 
 首先，安装wordcloud包。对于汉语用户，需额外安装jieba包。
 
@@ -23,7 +23,7 @@ pip install jieba
 pip install wordcloud
 ```
 
-<p><br></p>
+<br>
 
 上图词云的文本来源是本篇博客，通过爬虫爬取内容，再用BeautifulSoup包解码。读者也可以从文本中读取，或者直接向程序中粘贴文本来源。
 
@@ -42,7 +42,7 @@ for text in paragraphs:
 ```python
 blog_text = '文本 text'
 ```
-<p><br></p>
+<br>
 
 如果是汉语用户，由于汉语词汇中间没有空格，需使用jieba分词，执行以下代码：
 
@@ -52,7 +52,7 @@ For Chinese users, as Chinese vocabulary does not contain spaces in between word
 ls = jieba.lcut(blog_text)
 text = ' '.join(ls)
 ```
-<p><br></p>
+<br>
 
 以下为全部代码：
 

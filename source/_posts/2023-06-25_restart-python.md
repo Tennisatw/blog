@@ -15,19 +15,19 @@ os.spawnv(os.P_WAIT, sys.executable, [sys.executable] + sys.argv)
 exit(0)
 ```
 
-<p><br></p>
+<br>
 
 本命令的原理是，首先，使用spawnv生成一个子进程，然后挂起父进程。子进程是使用相同的python程序执行相同的脚本。子进程结束后，父进程也立即退出。
 
 The principle of this command is that it first generates a child process using spawnv and then suspends the parent process. The child process executes the same script using the same Python program. Once the child process ends, the parent process also exits immediately.
 
-<p><br></p>
+<br>
 
 但是，其与真正意义上的重启不同的是，父进程是在子进程结束后才结束，所以，在子进程中，执行列出所有进程的代码，可以查看到父进程。如下所示：
 
 However, it's different from a true restart in that the parent process ends only after the child process has finished. Therefore, if you run code to list all processes in the child process, you can see the parent process. This is demonstrated as follows:
 
-<p><br></p>
+<br>
 
 ```python
 import os
@@ -43,7 +43,7 @@ time.sleep(1)
 os.spawnv(os.P_WAIT, sys.executable, [sys.executable] + sys.argv)
 exit(0)
 ```
-<p><br></p>
+<br>
 
 其输出结果为：
 

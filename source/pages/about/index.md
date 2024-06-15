@@ -1,5 +1,6 @@
 ---
 title: 关于 - about
+permalink: about/
 date: 2024-04-11 19:36:02
 ---
 ### Tennisatw（作者 - Author）
@@ -17,7 +18,7 @@ Email: tennisatw@mail.com
 
 Discord: tennisatw
 
-<p><br></p>
+<br>
 
 ### Tennisbot
 <p class="tennisbot" id="这一段是在说我哦">基于GPT4，Python，JavaScript的机器人助手，本博客的看板娘（见左下角），网球发球机（？）。当点击或悬停在有阴影的段落上时（比如这一段），她会发表自己的意见。</p>
@@ -28,13 +29,13 @@ Discord: tennisatw
 
 Email: tennisbot0@gmail.com
 
-<p><br></p>
+<br>
 
 页面下方有一个能与Tennisbot聊天的方框。可以与她讨论有关博文的话题，或者仅是闲聊。其实现方式见此文。（因为太费钱了所以暂时关闭）
 
 At the bottom of the page, there's a chat box for engaging with Tennisbot. You can discuss topics related to the blog post or simply enjoy a casual conversation. The implementation method is mentioned here. (Temporarily closed because it costs too much money)
 
-<p><br></p>
+<br>
 
 ### Discord 群 - Discord Group
 
@@ -42,7 +43,7 @@ At the bottom of the page, there's a chat box for engaging with Tennisbot. You c
 
 There is a [Discord group](https://discord.gg/trCwuPYvG2) for the readers of this blog. Everyone is welcome to join and chat with Tennisbot or me in this group. Chinese and English are both welcome.
 
-<p><br></p>
+<br>
 
 ### 本博客 - This Blog
 
@@ -50,31 +51,47 @@ There is a [Discord group](https://discord.gg/trCwuPYvG2) for the readers of thi
 
 This blog is made using Hexo. Feel free to share the content of this blog, but please credit the source. 
 
-<p><br></p>
+<br>
 
 本博客的大部分内容由中英文“交错”写成。两者内容几乎一致，但相信一些眼尖的读者已经发现有出入的地方了。这么做的原因见[此文](http://blog.tennisatw.com/post/17/)。
 
 Most of the content in this blog is written in a mix of Chinese and English. The content in both languages is almost identical, but some eagle-eyed readers may have already noticed some discrepancies. The reasons for this approach are detailed [here](http://blog.tennisatw.com/post/17/).
 
-<p><br></p>
+<br>
 
 此外，左上角有google翻译插件，你会需要它的。
 
 Additionally, there's a Google Translate plugin at the top left corner, if needed.
 
-<p><br></p>
+<br>
+
+Atom订阅地址：[https://blog.tennisatw.com/atom.xml](https://blog.tennisatw.com/atom.xml)
+
+Atom subscription address: [https://blog.tennisatw.com/atom.xml](https://blog.tennisatw.com/atom.xml)
+
+RSS订阅地址：[https://blog.tennisatw.com/rss2.xml](https://blog.tennisatw.com/rss2.xml)
+
+RSS subscription address: [https://blog.tennisatw.com/rss2.xml](https://blog.tennisatw.com/rss2.xml)
+
+<br>
 
 <p class="tennisbot" id="😿">如果加载Tennisbot花费太多时间，或者影响了正常阅读，或者只是不想看到她，可以将鼠标放到聊天框上，然后点击弹出的“关闭”按钮来隐藏她，此时左下角会出现一个蓝紫色标签。如果想再次看到Tennisbot，只需点击标签即可。</p>
 
 <p class="tennisbot" id="😿">If loading Tennisbot takes too much time, interferes with your reading, or if you simply do not want to see it, you can hide it by hovering your mouse over the chatbox and clicking on the "Close" button that appears. At this point, a purple-blue tag will appear in the lower left corner. If you wish to see Tennisbot again, just click on the tag. </p>
 
-<p><br></p>
+<br>
 
 郑重声明：作者本人有正式工作，从未收取任何组织的任何费用参与宣传。
 
 I have formal job and have never charged any fees to promote for any organizations.
 
-<p><br></p>
+<br>
+
+### 其他页面 - Other Pages
+
+[信息来源 - Information sources](/info-sources/) 推荐一些高质量的中文时评/政治/科普信息来源。
+
+<br>
 
 ### 评论 - Comments
 
@@ -82,7 +99,7 @@ I have formal job and have never charged any fees to promote for any organizatio
 
 Everyone is always welcome to leave comments under the blog, even those with differing opinions. A healthy communication environment is the breeding ground for civic consciousness.
 
-<p><br></p>
+<br>
 
 本博客的评论插件为[Waline](https://waline.js.org/)支持以Markdown的格式进行评论。
 
@@ -94,7 +111,7 @@ The comment plugin used on this blog is [Waline](https://waline.js.org/en/), whi
 
 Working on ["Self-Study Guide to Chemistry"](https://chemistry.tennisatw.com/) now, welcome to take a look.
 
-<p><br></p>
+<br>
 
 **多想，多读，多练，多问 - Think more, read more, practice more, and ask more.**
 

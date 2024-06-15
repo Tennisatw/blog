@@ -7,7 +7,7 @@ tags:
 ---
 
 分段
-<p><br></p>
+<br>
 
 分隔符
 ---
@@ -22,7 +22,7 @@ tags:
 
 ![](1.png){ width=200px }
 
-<p><br></p>
+<br>
 
 Tennisbot发表评论：
 
@@ -31,7 +31,7 @@ Tennisbot发表评论：
 或者
 <p class="Tennisbot会说出这句话" id="tennisbot_0">显示内容</p>
 
-<p><br></p>
+<br>
 
 插入代码：
 
@@ -42,7 +42,7 @@ print("Hello, World!")
 插入可下载文件：
 <a href="/post/0/xx.txt" download>Addendum xx</a>
 
-<p><br></p>
+<br>
 
 敏感：
 <p class="tennisbot" id="左上角有google翻译，如果需要的话<br>There is Google Translate button in the upper left corner, if needed">由于本文可能稍有敏感，这里仅展示英文版。</p>

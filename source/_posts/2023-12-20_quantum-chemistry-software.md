@@ -10,7 +10,7 @@ tags: 编程 - Programming
 
 While current quantum chemistry software like Gaussian, Orca, and GAMESS are incredibly robust, there are times when using Python for simple quantum chemistry calculations is more convenient or helps deepen our understanding.
 
-<p><br></p>
+<br>
 
 python中的量子化学软件包有以下几个：
 
@@ -22,7 +22,7 @@ pyscf
 
 PyQuante（因为年代过于久远而安装失败 failed to install due to its age）
 
-<p><br></p>
+<br>
 
 此外，还有几个类似的量子计算包，但不能做单分子量子化学计算，在本文中暂不考虑：
 
@@ -32,13 +32,13 @@ QuTiP（用于量子物理 used in quantum physics）
 
 Quantum ESPRESSO（用于固体物理 used in solid-state physics）
 
-<p><br></p>
+<br>
 
 本文将介绍如何使用psi4和pyscf。出于方便，本文将使用google colab安装并使用所有的软件包。
 
 This article focuses on how to utilize psi4 and pyscf. For ease of use, all software packages will be installed and employed using Google Colab.
 
-<p><br></p>
+<br>
 
 安装psi4的最简单的方法是使用conda，在google colab中使用conda的方法如下所示。
 
@@ -52,7 +52,7 @@ The simplest method to install Psi4  in Google Colab is using Conda, as demonstr
 import sys
 sys.path.append('/usr/local/lib/python3.10/site-packages/')
 ```
-<p><br></p>
+<br>
 
 下载完conda之后，使用conda安装psi4：
 
@@ -61,7 +61,7 @@ After Conda is downloaded, psi4 can be installed using Conda.
 ```python
 !conda install psi4 python=3.10 -c conda-forge/label/libint_dev -c conda-forge -y
 ```
-<p><br></p>
+<br>
 
 这里测试一下psi4是否安装正常：使用b3lyp/6-31G进行乙醇分子的单点能计算。乙醇分子的结构由rdkit产生（也是一个在python上可以安装并使用的软件包，rdkit使用代码如下所示）：
 
@@ -82,7 +82,7 @@ AllChem.MMFFOptimizeMolecule(ethanol_molecule)
 
 print(Chem.MolToXYZBlock(ethanol_molecule))
 ```
-<p><br></p>
+<br>
 
 使用psi4计算乙醇的单点能的代码如下：
 
@@ -108,7 +108,7 @@ psi4.set_options({'basis': '6-31G'})
 energy = psi4.energy('B3LYP', molecule=molecule)
 print(f"B3LYP Energy: {energy} Hartree")
 ```
-<p><br></p>
+<br>
 
 结果为：
 
@@ -129,7 +129,7 @@ Pyscf can be simply installed by pip:
 ```python
 !pip install --prefer-binary pyscf
 ```
-<p><br></p>
+<br>
 
 使用pyscf计算乙醇的单点能的代码如下：
 
@@ -159,7 +159,7 @@ mf.xc = 'b3lyp'
 energy = mf.kernel()
 print(f"B3LYP Energy: {energy} Hartree")
 ```
-<p><br></p>
+<br>
 
 其结果为：
 
@@ -177,7 +177,7 @@ The quantum chemistry calculation takes about 8 seconds, which is slightly slowe
 
 We then tasked both software packages with a more time-consuming job: optimizing the geometric structure of benzoic acid to determine their practicality. The initial structure of benzoic acid was sourced here.
 
-<p><br></p>
+<br>
 
 对于psi4，代码如下：
 
@@ -216,7 +216,7 @@ print(geometry.save_string_xyz())
 
 This calculation took about 3 minutes, resulting in a final optimized energy of -420.7053888500819.
 
-<p><br></p>
+<br>
 
 pyscf不能做几何优化，但其可以引用一些几何优化包的代码。这里使用geometric包，其全部代码如下：
 
@@ -258,13 +258,13 @@ print(mol_eq.atom_coords())
 
 This process took roughly 11 minutes, with an energy of -420.705454579.
 
-<p><br></p>
+<br>
 
 在CCCBDB数据库中，苯甲酸的b3lyp/6-31G的能量为-420.705447。两个软件包的能量误差均较小，均可以使用。
 
 In the CCCBDB database, the B3LYP/6-31G energy for benzoic acid is -420.705447. Both software packages show a small energy error and are considered usable.
 
-<p><br></p>
+<br>
 
 综上，psi4似乎执行速度更快，但是pyscf的输出比较全，而且更灵活。
 

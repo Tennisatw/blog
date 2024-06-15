@@ -12,7 +12,7 @@ tags:
 
 [https://www.coursera.org/professional-certificates/ibm-data-science](https://www.coursera.org/professional-certificates/ibm-data-science)
 
-<p><br></p>
+<br>
 
 ### 第一门课：What is Data Science? 
 
@@ -24,7 +24,7 @@ tags:
 
 2024/05/06
 
-<p><br></p>
+<br>
 
 ### 第二门课：Open Source tools for Data Science
 

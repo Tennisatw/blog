@@ -14,7 +14,7 @@ There's no need to fear any presentation; the so-called fear is all due to insuf
 
 This article is primarily focused on academic presentations in non-native languages.
 
-<p><br></p>
+<br>
 
 如果可能的话，要自己写演讲稿。以你自己熟悉的表达方法为主。如果演讲是英语的话，适当用一点点更地道或者更专业的表达方法，但绝对不能多用。除了专有名词外，尽量少用生僻的词汇和高级词汇。无论怎么说，演讲绝对不是背诵，必须要先了解自己讲的东西，才能讲得好。
 
@@ -24,25 +24,25 @@ If possible, write your own speech. Use expressions you're familiar with. If the
 
 After writing your speech, copy it into the notes section of your PowerPoint slides.
 
-<p><br></p>
+<br>
 
 写好稿子之后，照着稿子自己顺一遍。想到什么说什么，超时也没关系，而不是简单地念稿。在这一过程中，尽量不要一直盯着ppt和稿子。如果感觉还是不熟，就等一段时间之后再顺几遍。
 
 Once the speech is written, go through it on your own. Speak freely, going off-script is fine, and don't just read it verbatim. Try not to constantly look at your slides or script during this process. If you still feel unprepared, go through it a few more times after taking a break.
 
-<p><br></p>
+<br>
 
 演讲的时候完全可以读稿，甚至完全可以从头读到尾。学术演讲的好处就在于，其实几乎没人在乎你是读的还是背的，他们只关心演讲的内容。
 
 During the presentation, it's completely fine to read from your script, even from start to finish. The benefit of academic presentations is that almost nobody cares whether you are reading or have memorized it; they are only interested in the content of your presentation.
 
-<p><br></p>
+<br>
 
 最难的环节其实是提问环节。主要有2大难点：一是听不懂问题，二是不知道怎么回答。
 
 The most challenging part is the Q&A session. There are two main difficulties: not understanding the questions and not knowing how to answer them.
 
-<p><br></p>
+<br>
 
 如果担心听不懂问题，可以在准备的时候，让ChatGPT参考你的演讲稿和ppt，帮忙生成一些可能的问题，注意其用词。但是这个说到底是英语水平的问题，所以还是要多练习听力。
 

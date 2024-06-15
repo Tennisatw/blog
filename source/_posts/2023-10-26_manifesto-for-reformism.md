@@ -14,15 +14,15 @@ tags:
 
 Before leaving office, Wen Jiabao stated: "We must not only advance economic system reform but also political system reform. Without the guarantee of political system reform, the achievements of economic system reform may be lost, and the goals of modernization cannot be realized."
 
-<p><br></p>
+<br>
 
 Before leaving office, Li Keqiang said: "The Yangtze and Yellow Rivers will not flow backward, and West Korea's opening-up will not change."
 
-<p><br></p>
+<br>
 
 I believe Li Keqiang's statement is more of a warning than a guarantee: the West Korean nation is at a perilous moment. West Korea is now at a crossroads, facing the choice between continuing reform and opening up and modernization, or regressing to a closed and conservative mode like North Korea. It's crucial for us to stand up and guide West Korea towards the right direction.
 
-<p><br></p>
+<br>
 
 ### Some Preliminary Theories
 
@@ -34,7 +34,7 @@ There's no evidence to prove that our leaders won't become dictatorial like Suha
 
 The only way to prevent this is to strengthen the powers outside of officials, enabling mutual supervision and checks and balances.
 
-<p><br></p>
+<br>
 
 For a nation, the political system influences the economic system, and vice versa.
 
@@ -46,14 +46,14 @@ I think the biggest issue in West Korea now is that the leadership (including th
 
 Enhancing the political power of the common people is crucial, and some methods I can think of include:
 
-<p><br></p>
+<br>
 
  - Improving the economic status of the common people  
  - Enhancing the political knowledge of the common people  
  - Boosting the protesting capability of the common people  
  - Uniting the common people  
 
-<p><br></p>
+<br>
 
 From my observation, the Party cares most about two things:
 
@@ -62,27 +62,27 @@ From my observation, the Party cares most about two things:
 
 I don't want to anger them, nor do I recommend anyone to resist it forcefully. In fact, I believe that modernization and democratization can help achieve these two goals.
 
-<p><br></p>
+<br>
 
 To maintain the Party's leadership position, the Party chooses to strictly control Party members, the military, and the media.
 
-<p><br></p>
+<br>
 
 The leadership is composed of elites, but not all elites are part of the leadership. "Elites" tend to look down on the common people, inherently reluctant to share power with them, and believe that doing so would lead to chaos.
 
 Self-proclaimed elites among the common people might also side with the leadership.
 
-<p><br></p>
+<br>
 
 ### The people we "Trying to Change"
 
 The people we "Trying to Change" (a softened term of enermies) are the conservative faction within the Party, not any other political groups, such as the Party's reformist faction, government agencies, the West Korean people, official media, independent media, or those with different political views (such as nationalists, orthodox Marxists, extreme fans of the divine).
 
-<p><br></p>
+<br>
 
 Some groups, like the Party's reformist faction and independent media, are clearly allies.
 
-<p><br></p>
+<br>
 
 My definition of the conservative faction within the Party (compared to the reformist faction) includes:
 
@@ -99,13 +99,13 @@ My definition of the conservative faction within the Party (compared to the refo
  - Those who block communication between West Korea's lower and upper classes  
  - Those who prevent the public from supervising the government  
 
-<p><br></p>
+<br>
 
 The conservative faction within the Party is portrayed as economically right-leaning (due to West Korea's unique form of socialism), politically authoritarian, and culturally conservative, which is entirely opposite to Marxism.
 
 (They might see this as criticism, but I genuinely mean no criticism. In the 21st century, it's reasonable for anyone to support any political view.)
 
-<p><br></p>
+<br>
 
 The conservative faction has two major weaknesses:
 
@@ -127,15 +127,15 @@ Note: The conservative faction is not a single person; you can't persuade them t
 
 Reform requires the efforts of two forces: the reformist faction within the Party and patriotic liberal civilians (people from all walks of life).
 
-<p><br></p>
+<br>
 
 The factional struggles within the Party are not public, but in reality, these internal struggles are the main force pushing West Korea towards democracy and modernization. The role of patriotic civilian protests is limited to pressuring the conservative faction within the Party.
 
-<p><br></p>
+<br>
 
 The success or failure of West Korea's democratization depends on whether the reformist faction within the Party can successfully seize power. Xi belongs to the conservative faction and has already succeeded in seizing power. It's almost impossible for West Korea to become democratic before he steps down. Now, a strong reformist faction within the Party is urgently needed to lead the struggle.
 
-<p><br></p>
+<br>
 
 For patriotic civilians, the most willing to reform the current system should be the **elite civilians (intellectuals) and the lower-class workers and farmers**:
 
@@ -146,7 +146,7 @@ However, if West Korea's economy continues to decline, everyone might protest, l
 
 The more people participate in the struggle, the stronger it is, and the post-struggle system can take care of more people.
 
-<p><br></p>
+<br>
 
 ### What Needs to Be Done
 
@@ -179,15 +179,15 @@ Identify and target specific errors committed by the conservative faction within
 
 The essence of protest is for the people to express their dissatisfaction in a mild manner.
 
-<p><br></p>
+<br>
 
 Traditional forms of protest such as marches and sit-ins are valid, but new methods can also be employed, such as flooding the comment sections of official government media with messages or using anonymous accounts to highlight issues. Organizing "Constitution Reading Groups" can be effective. Protests should be decentralized, with every protester acting as a focal point.
 
-<p><br></p>
+<br>
 
 For a successful protest, collaboration among intellectuals (students, white-collar workers, those knowledgeable about political movements), overseas individuals, and grassroots workers and farmers is crucial.
 
-<p><br></p>
+<br>
 
  - Intellectuals can pinpoint the issues, craft slogans, plan activities, and (eventually) negotiate with the Party.  
  - Overseas individuals can help consolidate and disseminate information to intellectuals and take the blame if things go south.  
@@ -198,25 +198,25 @@ The more people participate in a protest, the better, but demands should be spec
 
  - Avoid making excessive demands; the important thing is to successfully initiate the first protest.
 
-<p><br></p>
+<br>
 
 Having support from Western countries might be beneficial, but it could also provide fodder for extreme nationalists and care must be taken as Western countries might prefer to escalate situations rather than resolve them.
 
-<p><br></p>
+<br>
 
 ### Possible Demands
 
 It's entirely reasonable for citizens to make demands of their government, but this form of communication is not smooth in West Korea, which is detrimental to both sides. **Even the conservative faction within the Party might agree that allowing citizens to make some demands could help stabilize the situation.**
 
-<p><br></p>
+<br>
 
 Some actions of the conservative faction are illegal (such as forced demolitions and invasions of privacy), and although the laws are set by the Party's subordinates (the National People's Congress), utilizing the power of law can at least highlight the contradictions between the reformists and conservatives.
 
-<p><br></p>
+<br>
 
 During our tug-of-war with the leadership, different stages of struggle require different demands. Some current high-demand issues include:
 
-<p><br></p>
+<br>
 
  - Stabilizing housing prices  
  - Boosting the economy, maintaining development, and solving employment issues  
@@ -232,11 +232,11 @@ Making some non-politically charged demands can also be useful, perhaps even mor
  - **Demanding the Football Association to improve football!** (Not joking; everyone knows the FA is performing poorly, which is a window to reveal possible government incompetence. This is the only organization we can safely protest against now.)
  - Stopping the display of IP addresses on social media
 
-<p><br></p>
+<br>
 
 Some demands are obviously excessive in the modern era, such as:
 
-<p><br></p>
+<br>
 
  - Restoring the presidential term limit  
  - Demanding freedom of speech (not excessive in 2010, but now it is)  
@@ -247,7 +247,7 @@ Some demands are obviously excessive in the modern era, such as:
  - Overthrowing the current regime  
  - Inviting Western colonization
 
-<p><br></p>
+<br>
 
 ### A Note of Caution About the Accelerationists
 
@@ -257,11 +257,11 @@ Even if Xi performs poorly, it's unlikely for West Korea to collapse, and the We
 Even if West Korea collapses, who would establish a better government than the current one?
 The support for acceleration might stem from despair over reforming West Korea. But in the 21st century, nothing is truly hopeless.
 
-<p><br></p>
+<br>
 
 If you feel strong despair, consider reading more books by reformists. (Or read this article again.)
 
-<p><br></p>
+<br>
 
 ### Read More World History
 
@@ -277,11 +277,11 @@ Plurality voting: South Korea under Park Chung-hee
 
 A progressive country taking a huge step backward: Iran
 
-<p><br></p>
+<br>
 
 My advice is to read more world history and politics. Our level of political and historical knowledge may not be as high as that of the leadership, but only by enhancing our knowledge can we engage in dialogue with them on equal footing.
 
-<p><br></p>
+<br>
 
 ### A Few Words About Ourselves
 
@@ -289,7 +289,7 @@ We are not dissidents; We support Hu Yaobang, Zhao Ziyang, Wen Jiabao, Li Keqian
 
 We are liberals, and for West Korea, I do not seek to overthrow the regime but to reform West Korea's political system, leading West Korea towards true modernization and democratization. I believe that under a modernized, democratized government, West Korea's economy can unleash even greater vitality.
 
-<p><br></p>
+<br>
 
 ### Other
 
@@ -301,7 +301,7 @@ Our enemies are not foolish; even if they seem not very knowledgeable, their lev
 
 Not many people wish to overthrow the current regime; most prefer peace.
 
-<p><br></p>
+<br>
 
 Appendix: Selected Articles from the Constitution
 
@@ -309,43 +309,43 @@ Appendix: Selected Articles from the Constitution
 
 The socialist system is the fundamental system of the People's Republic of West Korea.
 
-<p><br></p>
+<br>
 
 1.2:
 
 The people, according to law, manage state affairs, economic and cultural undertakings, and social affairs through various channels and forms.
 
-<p><br></p>
+<br>
 
 1.5:
 
 All state organs, the armed forces, political parties, social groups, enterprises, and institutions must abide by the Constitution and the law. Any act that violates the Constitution or the law must be investigated.
 
-<p><br></p>
+<br>
 
 1.27:
 
 All state organs implement the principle of simplicity and efficiency, establish a responsibility system for their work, a training and evaluation system for their staff, continuously improve the quality and efficiency of their work, and oppose bureaucracy. All state organs and state functionaries must rely on the support of the people, maintain close ties with the people, listen to their opinions and suggestions, accept their supervision, and serve the people diligently.
 
-<p><br></p>
+<br>
 
 1.40:
 
 The freedom and privacy of correspondence of citizens of the People's Republic of West Korea are protected by law. No organization or individual may, on any grounds, infringe upon the freedom and privacy of citizens' correspondence, except in cases where, to meet the needs of state security or of investigation into criminal offences, public security organs or procuratorial organs are to inspect communications in accordance with the procedures prescribed by law.
 
-<p><br></p>
+<br>
 
 1.41:
 
 Citizens of the People's Republic of West Korea have the right to criticize and make suggestions to any state organ or functionary. Citizens have the right to lodge complaints, bring charges, or make exposures against any state organ or functionary for violation of the law or dereliction of duty, but fabrication or distortion of facts for the purpose of libel or false accusation is prohibited. State organs shall investigate and deal with complaints, charges, or exposures made by citizens in accordance with the law and keep confidentiality for them. No one shall suppress and retaliate against complainants, accusers, or exposers.
 
-<p><br></p>
+<br>
 
 1.48:
 
 The state protects the rights and interests of women, upholding the principle of equal pay for equal work for men and women.
 
-<p><br></p>
+<br>
 
 1.54:
 

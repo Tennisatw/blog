@@ -10,19 +10,19 @@ tags: 推荐 - Recommendation
 
 Highly recommending a top-quality textbook: "Dive into Deep Learning". It covers various topics including multilayer perceptron, deep neural networks, recurrent neural networks, convolutional neural networks, and other concepts related to deep learning. Each topic comes with a snippet of code. It is somewhat challenging and not that suitable for beginners.
 
-<p><br></p>
+<br>
 
 [中文版](https://zh.d2l.ai/)
 
 [English version](https://d2l.ai/)
 
-<p><br></p>
+<br>
 
 这本教材主要优点有以下几个：
 
 The primary advantages of this textbook are as follows:
 
-<p><br></p>
+<br>
 
 第一，也是非常非常重要的一点，每一个知识点，它都会附带一段随手即用的代码。不仅能帮助读者更深地理解知识点。同时也使得本教材成为了一本工具书，即使是完全不懂的外行，也可以参照代码自己做深度学习。
 

@@ -10,7 +10,7 @@ tags: 推荐 - Recommendation
 
 Here I recommend a website for identifying music genres: [cyanite](https://app.cyanite.ai/library)
 
-<p><br></p>
+<br>
 
 上传一首音乐，或者输入一个Youtube链接，cyanite会自动识别这首歌的风格，曲风，情感，使用的器乐。识别的还算准确吧。
 
@@ -18,7 +18,7 @@ Upload a piece of music or enter a YouTube link, and Cyanite will automatically 
 
 ![](1.png)
 
-<p><br></p>
+<br>
 
 美中不足的是，似乎它支持的电音种类一共就这么几种，电音仍然是小众音乐。
 

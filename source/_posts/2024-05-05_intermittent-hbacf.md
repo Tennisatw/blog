@@ -12,7 +12,7 @@ MDAnalysis包是一个用于分析MD的数据结果的python包，其内有丰�
 
 The MDAnalysis package is a Python package for analyzing molecular dynamics (MD) data results, equipped with a rich set of analysis tools, including a function for analyzing Hydrogen bond autocorrelation function (hbacf). However, it only supports the analysis of continuous hbacf and not intermittent hbacf. The intermittency parameter included does not fully comply with the definition of intermittent hbacf either. Therefore, I plan to manually modify the source code.
 
-<p><br></p>
+<br>
 
 首先，其计算自相关函数的源代码是MDAnalysis/lib/correlation.py处的autocorrelation函数。在这里有一行代码：
 
@@ -22,7 +22,7 @@ Firstly, the source code for computing the autocorrelation function is found in 
 Ntau = len(set.intersection(*list_of_sets[t:t + tau + 1]))
 ```
 
-<p><br></p>
+<br>
 
 其中，`*list_of_sets[t:t + tau + 1]`是每一帧的氢键数据的集合。如果想要把它修改成既可以计算连续的，也可以计算间断的的hbacf的话，可以把它改成`list_of_sets[t], list_of_sets[t + tau]`。即，将这一行修改为：
 
@@ -37,13 +37,13 @@ else:
     Ntau = len(set.intersection(list_of_sets[t], list_of_sets[t + tau]))
 ```
 
-<p><br></p>
+<br>
 
 这样，如果参数continuous为Ture，就会计算连续的hbacf，如果continuous为False，就会计算间断的。
 
 This time, if the continuous parameter is set to True, it will compute the continuous hbacf; if set to False, it will compute the intermittent type.
 
-<p><br></p>
+<br>
 
 autocorrelation函数的定义处也需要修改一下：
 
@@ -53,7 +53,7 @@ The definition of the autocorrelation function also needs some modification:
 def autocorrelation(list_of_sets, tau_max, window_step=1, continuous=True):
 ```
 
-<p><br></p>
+<br>
 
 通常，我们用来计算氢键的自相关函数所用的是HydrogenBondAnalysis类的lifetime方法。这个方法的源代码在MDAnalysis/analysis/hydrogenbonds/hbond_analysis.py中。我们需要在lifetime调用autocorrelation函数时，传递一个continuous变量，即把它修改成：
 
@@ -68,7 +68,7 @@ tau_timeseries, timeseries = autocorrelation(
 )
 ```
 
-<p><br></p>
+<br>
 
 同样，在lifetime的定义处，修改为
 
@@ -78,7 +78,7 @@ Similarly, in the definition of lifetime, modify to:
 def lifetime(self, tau_max=20, window_step=1, intermittency=0, continuous=True):
 ```
 
-<p><br></p>
+<br>
 
 这样，在计算hbacf时，如果我们将continuous参数设为False，就会得到间断的自相关函数，如下所示。
 
@@ -88,7 +88,7 @@ With these changes, when calculating hbacf and setting the continuous parameter 
 tau_frame, hbond_lifetime = hbonds.lifetime(tau_max=2000, continuous=False)
 ```
 
-<p><br></p>
+<br>
 
 附注： - Note:
 

@@ -12,25 +12,25 @@ Since last year (2022), or the beginning of this year, hundreds of porn-related 
 
 ![](1.png)
 
-<p><br></p>
+<br>
 
 这里推荐一个[插件](https://github.com/daymade/Twitter-Block-Porn)，能够屏蔽这些恶心的sb。
 
 To remedy this, here is a [plugin](https://github.com/daymade/Twitter-Block-Porn) recommendation capable of blocking these vexing accounts. 
 
-<p><br></p>
+<br>
 
 首先，需要安装一个浏览器扩展程序：篡改猴。其支持chrome，firefox，edge等常见的浏览器。这里以chrome为例。[点此](https://www.tampermonkey.net/)安装篡改猴：
 
 Firstly, you'll need to install a browser extension named "Tampermonkey". It is compatible with popular browsers like Chrome, Firefox, and Edge. For this example, we will use Chrome. [Click here](https://www.tampermonkey.net/) to install Tampermonkey:
 
-<p><br></p>
+<br>
 
 [点击此处](https://greasyfork.org/zh-CN/scripts/470359-twitter-block-porn)，在篡改猴里安装这款插件。
 
 Following that, [click here](https://greasyfork.org/zh-CN/scripts/470359-twitter-block-porn) to install the plugin in Tampermonkey. 
 
-<p><br></p>
+<br>
 
 之后，打开chrome的扩展程序，选择篡改猴，可以看到几个共享黑名单，即黄推名单。点开，然后点击右上角的“屏蔽所有诈骗犯”。如果找不到“屏蔽所有诈骗犯”按钮，就刷新一下。
 

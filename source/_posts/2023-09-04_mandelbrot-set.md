@@ -10,13 +10,13 @@ tags: 编程 - Programming
 
 The Mandelbrot set is a fractal on the complex plane. It is defined by the series z where z(0)=0 and z(n+1)=z^2+c. The collection of all c (complex numbers) that make the series z converge is the Mandelbrot set. 
 
-<p><br></p>
+<br>
 
 不收敛的级数也有有趣之处，我们可以去研究其发散的速度。一般来说，越接近曼德勃罗集合的点，其级数发散得越慢。
 
 The series that doesn't converge is also interesting, as we can examine the rate at which it diverges. Generally, points near the Mandelbrot set tend to have series that diverge slowly.
 
-<p><br></p>
+<br>
 
 以下为绘制曼德勃罗集合的全部代码。
 
@@ -62,7 +62,7 @@ plt.show()
 
 ![](1.png)
 
-<p><br></p>
+<br>
 
 曼德勃罗集具有无限复杂的细微分形结构。稍微改动上述代码，即可放大绘制其局部。比如下图就是一个曼德勃罗集，其中c的实部在-0.5, 0之间，虚部在0.5, 1之间。
 
