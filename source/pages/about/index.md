@@ -3,8 +3,16 @@ title: 关于 - about
 permalink: about/
 date: 2024-04-11 19:36:02
 ---
+
+### 站点地图 - Site Map
+
+[信息来源 - Information sources](/info-sources/) 推荐一些高质量的中文时评/政治/科普信息来源。
+
+<br>
+
 ### Tennisatw（作者 - Author）
-![](images/avatar.png){ width=200px }
+
+![](pages/about/images/avatar.png){ width=200px }
 
 业余极客，业余诗人，理论化学专业。
 
@@ -84,12 +92,6 @@ RSS subscription address: [https://blog.tennisatw.com/rss2.xml](https://blog.ten
 郑重声明：作者本人有正式工作，从未收取任何组织的任何费用参与宣传。
 
 I have formal job and have never charged any fees to promote for any organizations.
-
-<br>
-
-### 其他页面 - Other Pages
-
-[信息来源 - Information sources](/info-sources/) 推荐一些高质量的中文时评/政治/科普信息来源。
 
 <br>
 

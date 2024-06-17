@@ -21,7 +21,7 @@
 
     <meta property="og:type" content="website">
 <meta property="og:title" content="Tennisatw的博客 - Blog of Tennisatw">
-<meta property="og:url" content="http://blog.tennisatw.com/archives/page/6/">
+<meta property="og:url" content="https://blog.tennisatw.com/archives/page/6/">
 <meta property="og:site_name" content="Tennisatw的博客 - Blog of Tennisatw">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="Tennisatw">
@@ -31,7 +31,7 @@
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://blog.tennisatw.com/archives/page/6/">
+<link rel="canonical" href="https://blog.tennisatw.com/archives/page/6/">
 
 
 
@@ -426,14 +426,6 @@
 <script src="/js/third-party/comments/utterances.js"></script>
 
 
-  <script type="module">
-    window.init({
-      el: '.comments',
-      lang: 'en',
-      serverURL: 'https://comment.tennisatw.com',
-    });
-  </script>
-
 </body>
 </html>
 
@@ -442,6 +434,14 @@
 <script type="module">
     import { init } from 'https://cdn.jsdelivr.net/gh/tennisatw/blogfiles@1.6/waline.mjs';
     window.init = init;
+</script>
+
+<script type="module">
+  window.init({
+    el: '.comments',
+    lang: 'en',
+    serverURL: 'https://comment.tennisatw.com',
+  });
 </script>
 
 <script>
