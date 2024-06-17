@@ -4,15 +4,15 @@ permalink: about/
 date: 2024-04-11 19:36:02
 ---
 
-### 站点地图 - Site Map
+### 页面列表 - Page list
 
-[信息来源 - Information sources](/info-sources/) 推荐一些高质量的中文时评/政治/科普信息来源。
+**[信息来源 - Information sources](/info-sources/)**\ \ \ \ 推荐一些高质量的中文时评/政治/科普信息来源。
 
 <br>
 
 ### Tennisatw（作者 - Author）
 
-![](pages/about/images/avatar.png){ width=200px }
+![](../images/avatar.png){ width=200px }
 
 业余极客，业余诗人，理论化学专业。
 

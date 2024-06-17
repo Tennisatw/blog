@@ -1,6 +1,6 @@
 ---
 title: {{ title }}
-permalink: page/increment_id/
+permalink: {{ title }}/
 date: {{ date }}
 ---
 
