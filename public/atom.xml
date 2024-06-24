@@ -1,0 +1,1251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Tennisatw的博客 - Blog of Tennisatw</title>
+  <icon>https://blog.tennisatw.com/icon.png</icon>
+  
+  <link href="https://blog.tennisatw.com/atom.xml" rel="self"/>
+  
+  <link href="https://blog.tennisatw.com/"/>
+  <updated>2024-06-10T20:09:32.829Z</updated>
+  <id>https://blog.tennisatw.com/</id>
+  
+  <author>
+    <name>Tennisatw</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MDAnalysis线性密度模块的bug修复 - Bug fix for the MDAnalysis linear density module</title>
+    <link href="https://blog.tennisatw.com/post/52/"/>
+    <id>https://blog.tennisatw.com/post/52/</id>
+    <published>2024-06-10T19:45:07.000Z</published>
+    <updated>2024-06-10T20:09:32.829Z</updated>
+    
+    
+    <summary type="html">MDAnalysis的线性密度模块有bug：模拟一盒Lammps模拟的均匀的水分子，计算出来的线性密度有一些向上突起的尖峰。&lt;br&gt;There is a bug in the MDAnalysis linear density module：when calculating the linear density of a uniformly simulated box of water molecules using LAMMPS, the result includes some sharp upward spikes.</summary>
+    
+    
+    
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
+    
+    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>推荐一个听歌识别曲风的网站：cyanite - Recommend a website for identifying music genres：cyanite</title>
+    <link href="https://blog.tennisatw.com/post/51/"/>
+    <id>https://blog.tennisatw.com/post/51/</id>
+    <published>2024-06-08T05:56:03.000Z</published>
+    <updated>2024-06-14T18:31:47.712Z</updated>
+    
+    
+    <summary type="html">推荐一个听歌识别曲风的网站：cyanite。&lt;br&gt;Here I recommend a website for identifying music genres：cyanite.</summary>
+    
+    
+    
+    
+    <category term="推荐 - Recommendation" scheme="https://blog.tennisatw.com/tags/%E6%8E%A8%E8%8D%90-recommendation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据科学课程学习记录</title>
+    <link href="https://blog.tennisatw.com/post/50/"/>
+    <id>https://blog.tennisatw.com/post/50/</id>
+    <published>2024-05-06T06:38:25.000Z</published>
+    <updated>2024-06-14T18:31:47.624Z</updated>
+    
+    
+    <summary type="html">在coursera上试听了《IBM Data Science Professional Certificate》这一系列，一共有10门数据处理课。</summary>
+    
+    
+    
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
+    
+    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>为MDAnalysis包增加计算间断氢键自相关函数功能 - Add the functionality to calculate intermittent hydrogen bond autocorrelation functions to the MDAnalysis package</title>
+    <link href="https://blog.tennisatw.com/post/49/"/>
+    <id>https://blog.tennisatw.com/post/49/</id>
+    <published>2024-05-05T08:38:34.000Z</published>
+    <updated>2024-06-14T18:31:47.712Z</updated>
+    
+    
+    <summary type="html">MDAnalysis包是一个用于分析MD的数据结果的python包，其内有丰富的分析工具，包括分析氢键的自相关函数（Hydrogen bond autocorelation function，hbacf）。但是其只支持分析连续的氢键自相关函数（continuous hbacf），不支持分析间断的（intermittent hbacf）。而其内部支持的intermittency参数也不完全符合间断的hbacf的定义。所以，我打算手动修改源代码。&lt;br&gt;The MDAnalysis package is a Python package for analyzing molecular dynamics (MD) data results, equipped with a rich set of analysis tools, including a function for analyzing Hydrogen bond autocorrelation function (hbacf). However, it only supports the analysis of continuous hbacf and not intermittent hbacf. The intermittency parameter included does not fully comply with the definition of intermittent hbacf either. Therefore, I plan to manually modify the source code.</summary>
+    
+    
+    
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
+    
+    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>政治言论倾向分析器</title>
+    <link href="https://blog.tennisatw.com/post/48/"/>
+    <id>https://blog.tennisatw.com/post/48/</id>
+    <published>2024-04-13T02:26:38.000Z</published>
+    <updated>2024-06-14T18:31:47.712Z</updated>
+    
+    
+    <summary type="html">可以使用ChatGPT做客观的政治倾向分析。因为ChatGPT学习过大量的文本数据，其中自然包括政治方面的知识。事实上，ChatGPT对政治的理解相当深刻，并且十分博学。</summary>
+    
+    
+    
+    
+    <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
+    
+    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>魔改Gromacs，并运行 - Modify the Gromacs, and run it</title>
+    <link href="https://blog.tennisatw.com/post/47/"/>
+    <id>https://blog.tennisatw.com/post/47/</id>
+    <published>2024-04-01T07:16:08.000Z</published>
+    <updated>2024-06-14T18:31:47.712Z</updated>
+    
+    
+    <summary type="html">Gromacs是一个开源的软件，用c++开发。如果对Gromacs的某个功能不满意，大可以直接去修改其源代码，然后编译，安装。&lt;br&gt;Gromacs is an open-source software developed in C++. If you are dissatisfied with a particular feature of Gromacs, you can directly modify its source code, then compile and install it.</summary>
+    
+    
+    
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
+    
+    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>为没有拓扑信息的系统分析氢键 - Analyzing Hydrogen Bonds in Systems without Topological Information</title>
+    <link href="https://blog.tennisatw.com/post/46/"/>
+    <id>https://blog.tennisatw.com/post/46/</id>
+    <published>2024-03-30T07:39:44.000Z</published>
+    <updated>2024-06-14T18:31:47.712Z</updated>
+    
+    
+    <summary type="html">组里的人要分析一个系统的氢键数量和氢键自相关函数（Hbond autocorrelation function，hbacf）。&lt;br&gt;A colleague in our group is tasked with analyzing the number of hydrogen bonds and the hydrogen bond autocorrelation function (hbacf) in a system.</summary>
+    
+    
+    
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用R语言分析各国的新冠死亡率 - Analyzing COVID-19 Mortality Rates Among Countries Using R</title>
+    <link href="https://blog.tennisatw.com/post/45/"/>
+    <id>https://blog.tennisatw.com/post/45/</id>
+    <published>2024-03-28T03:31:52.000Z</published>
+    <updated>2024-06-14T18:31:47.712Z</updated>
+    
+    
+    <summary type="html">约翰霍普金斯大学有新冠期间的确诊人数和死亡人数的数据文件。利用这些文件，可以分析各国的新冠死亡率。&lt;br&gt;Johns Hopkins University provides data files on confirmed cases and deaths during the COVID-19 pandemic. Using these files, one can analyze the COVID-19 mortality rates of different countries.</summary>
+    
+    
+    
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>绘制Gromacs的xvg文件的脚本 - Script for plotting Gromacs xvg files</title>
+    <link href="https://blog.tennisatw.com/post/44/"/>
+    <id>https://blog.tennisatw.com/post/44/</id>
+    <published>2024-03-27T06:58:56.000Z</published>
+    <updated>2024-06-14T18:31:47.712Z</updated>
+    
+    
+    <summary type="html">写了一个脚本，将Gromacs产生的xvg文件绘制成png图片。&lt;br&gt;Wrote a script that converts xvg files generated by Gromacs into png images.</summary>
+    
+    
+    
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>推荐一个歌曲生成网站：suno.ai - Recommending a song generation website：suno.ai</title>
+    <link href="https://blog.tennisatw.com/post/43/"/>
+    <id>https://blog.tennisatw.com/post/43/</id>
+    <published>2024-03-25T04:06:12.000Z</published>
+    <updated>2024-06-14T18:31:47.712Z</updated>
+    
+    
+    <summary type="html">推荐一个AI生成歌曲的网站：suno.ai。你提供一些风格提示词，以及歌词。它会据此生成歌曲，生成的质量相当不错。&lt;br&gt;Here I recommend an AI-powered music creation website：suno.ai. You can provide some style prompts and lyrics, and it will generate songs based on these. The quality of the generated songs is quite good.</summary>
+    
+    
+    
+    
+    <category term="推荐 - Recommendation" scheme="https://blog.tennisatw.com/tags/%E6%8E%A8%E8%8D%90-recommendation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>番剧&amp;漫画推荐：《街角魔族》</title>
+    <link href="https://blog.tennisatw.com/post/42/"/>
+    <id>https://blog.tennisatw.com/post/42/</id>
+    <published>2024-03-07T23:26:08.000Z</published>
+    <updated>2024-06-14T18:31:47.711Z</updated>
+    
+    
+    <summary type="html">本质上，我们期待的生活也就是一个温柔而又欢乐的日常，</summary>
+    
+    
+    
+    
+    <category term="推荐 - Recommendation" scheme="https://blog.tennisatw.com/tags/%E6%8E%A8%E8%8D%90-recommendation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>借助ChatGPT，从0开始学一点前端</title>
+    <link href="https://blog.tennisatw.com/post/41/"/>
+    <id>https://blog.tennisatw.com/post/41/</id>
+    <published>2024-02-25T23:22:08.000Z</published>
+    <updated>2024-06-14T18:31:47.711Z</updated>
+    
+    
+    <summary type="html">心血来潮，我打算从0开始，花几天时间，学一点前端知识。</summary>
+    
+    
+    
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
+    
+    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>演讲的一些小tips - Some tips for your presentations</title>
+    <link href="https://blog.tennisatw.com/post/40/"/>
+    <id>https://blog.tennisatw.com/post/40/</id>
+    <published>2024-02-12T22:17:15.000Z</published>
+    <updated>2024-06-14T18:31:47.712Z</updated>
+    
+    
+    <summary type="html">不用害怕任何演讲，所谓的害怕全都是由于准备不足。本文会给出一些小tips，让大家在准备演讲的时候，用更少的精力去准备得更充分。本文主要针对的是学术类别的，非母语演讲。&lt;br&gt;There&#39;s no need to fear any presentation; the so-called fear is all due to insufficient preparation. Here are some tips to help you prepare more efficiently and effectively for your presentations. This article is primarily focused on academic presentations in non-native languages.</summary>
+    
+    
+    
+    
+    <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>视频推荐：文化进步与保守坐标图</title>
+    <link href="https://blog.tennisatw.com/post/39/"/>
+    <id>https://blog.tennisatw.com/post/39/</id>
+    <published>2024-01-31T00:38:49.000Z</published>
+    <updated>2024-06-14T18:31:47.712Z</updated>
+    
+    
+    <summary type="html">推荐一个mhyyyy老师的视频：《文化进步与保守坐标图》</summary>
+    
+    
+    
+    
+    <category term="推荐 - Recommendation" scheme="https://blog.tennisatw.com/tags/%E6%8E%A8%E8%8D%90-recommendation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>统计局在报道全国固定资产投资时数据有误 - The Bureau of Statistics falsified data in their report on national fixed-asset investment.</title>
+    <link href="https://blog.tennisatw.com/post/38/"/>
+    <id>https://blog.tennisatw.com/post/38/</id>
+    <published>2024-01-30T07:25:41.000Z</published>
+    <updated>2024-06-14T18:31:47.712Z</updated>
+    
+    
+    <summary type="html">政府也会有作假行为，这就是一个证明。</summary>
+    
+    
+    
+    
+    <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用贝叶斯方法分析汪文斌“新闻自由”言论 - Using Bayesian methods to analyze Wang Wenbin&#39;s remarks on &quot;freedom of the press.&quot;</title>
+    <link href="https://blog.tennisatw.com/post/37/"/>
+    <id>https://blog.tennisatw.com/post/37/</id>
+    <published>2024-01-09T06:04:17.000Z</published>
+    <updated>2024-06-14T18:31:47.712Z</updated>
+    
+    
+    <summary type="html">中国外交部发言人汪文斌在2024年1月2日说：“所谓“新闻自由”不过是有关国家攻击别国的工具。”这句话对不少人来说都是一句暴论，下面让我们使用贝叶斯方法来分析这句话的可信度如何。&lt;br&gt;On January 2, 2024, Chinese Foreign Ministry Spokesperson Wang Wenbin stated, &quot;The so-called &#39;freedom of the press&#39; is merely a tool used by certain countries to attack and slander other nations.&quot; This statement has sparked controversy and is considered extreme by many. Let&#39;s analyze its credibility using the Bayesian approach.</summary>
+    
+    
+    
+    
+    <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
+    
+    <category term="敏感 - Sensitive" scheme="https://blog.tennisatw.com/tags/%E6%95%8F%E6%84%9F-sensitive/"/>
+    
+    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>元键政4：谈谈为什么要了解观点不同的人的想法 - Meta Political Discussion 4：Why Be Aware of Opposing Political Views Matters</title>
+    <link href="https://blog.tennisatw.com/post/36/"/>
+    <id>https://blog.tennisatw.com/post/36/</id>
+    <published>2023-12-23T07:04:21.000Z</published>
+    <updated>2024-06-14T18:31:47.712Z</updated>
+    
+    
+    <summary type="html">世界是复杂的，而人类认识世界的水平有限，所以如果不对这个世界做简化，那就几乎无法去认识它。比如，在牛顿总结出经典运动定律之后，人们才对世界的运动规律有了认识。科研中常用的“做实验” - “观察结果” - “建立理论模型” 等其实都是对世界的简化。&lt;br&gt;The world is complex, and human understanding of it is limited. Without simplifying this complexity, it would be nearly impossible to comprehend it. For instance, it was only after Newton formulated his classical laws of motion that people began to understand the principles governing movement. In scientific research, the commonly used processes of &quot;conducting experiments&quot; – &quot;observing results&quot; – &quot;establishing theoretical models&quot; are essentially ways of simplifying the world.</summary>
+    
+    
+    
+    <category term="元键政 - Meta Political Discussion" scheme="https://blog.tennisatw.com/categories/%E5%85%83%E9%94%AE%E6%94%BF-meta-political-discussion/"/>
+    
+    
+    <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>油管up主推荐：小岛大浪吹 - Youtuber Recommendation：Xiaodaodalang</title>
+    <link href="https://blog.tennisatw.com/post/35/"/>
+    <id>https://blog.tennisatw.com/post/35/</id>
+    <published>2023-12-23T00:45:21.000Z</published>
+    <updated>2024-06-14T18:31:47.712Z</updated>
+    
+    
+    <summary type="html">小岛大浪吹是一位聊政治和经济的油管up主，他的风格比较鲜明，就是“理性爱国”（这里所说的爱国指的是爱共产党以及中国政府）。</summary>
+    
+    
+    
+    
+    <category term="推荐 - Recommendation" scheme="https://blog.tennisatw.com/tags/%E6%8E%A8%E8%8D%90-recommendation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何使用python中的量子化学软件包（包括psi4和pyscf） - How to use quantum chemistry software packages in Python (including psi4 and pyscf)</title>
+    <link href="https://blog.tennisatw.com/post/34/"/>
+    <id>https://blog.tennisatw.com/post/34/</id>
+    <published>2023-12-21T06:09:14.000Z</published>
+    <updated>2024-06-14T18:31:47.712Z</updated>
+    
+    
+    <summary type="html">综上，psi4似乎执行速度更快，但是pyscf的输出比较全，而且更灵活。&lt;br&gt;In summary, psi4 appears to be faster in execution, but PySCF offers more comprehensive outputs and greater flexibility.</summary>
+    
+    
+    
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计算lammps模拟系统的密度 - Calculate the density of a lammps simulated system</title>
+    <link href="https://blog.tennisatw.com/post/33/"/>
+    <id>https://blog.tennisatw.com/post/33/</id>
+    <published>2023-11-22T05:45:01.000Z</published>
+    <updated>2024-06-14T18:31:47.709Z</updated>
+    
+    
+    <summary type="html">暂无预览 - No preview available</summary>
+    
+    
+    
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>对普通女权，田园女权，与激进女权的粗浅探讨</title>
+    <link href="https://blog.tennisatw.com/post/32/"/>
+    <id>https://blog.tennisatw.com/post/32/</id>
+    <published>2023-11-16T19:22:33.000Z</published>
+    <updated>2024-06-14T18:31:47.706Z</updated>
+    
+    
+    <summary type="html">普通女权，田园女权，激进女权是中国最常见的三种女权形式。在这里我对这三种女权做一个简单的定义：普通女权试图推翻父权制，追求男女平等；田园女权追求女性特权；激进女权主张性别分离。</summary>
+    
+    
+    
+    
+    <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《共产党宣言》读后感 - Reflections on &quot;The Communist Manifesto&quot;</title>
+    <link href="https://blog.tennisatw.com/post/31/"/>
+    <id>https://blog.tennisatw.com/post/31/</id>
+    <published>2023-11-11T09:37:37.000Z</published>
+    <updated>2024-06-14T18:31:47.710Z</updated>
+    
+    
+    <summary type="html">总而言之，政治团体们要批判地学习《共产党宣言》，在承认其意义的同时，也要注意其“毒性”。破坏总是比建设简单一万倍，《共产党宣言》只可用于左翼政党举行活动的参考，而不可成为指导一个国家的思想。&lt;br&gt;In summary, political groups should critically study &quot;The Communist Manifesto,&quot; acknowledging its significance while being wary of its &quot;toxicity.&quot; Destruction is infinitely easier than construction. &quot;The Communist Manifesto&quot; should only serve as a reference for left-wing party activities, not as a guiding philosophy for a nation.</summary>
+    
+    
+    
+    
+    <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
+    
+    <category term="敏感 - Sensitive" scheme="https://blog.tennisatw.com/tags/%E6%95%8F%E6%84%9F-sensitive/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>改良主义宣言：防止西朝鲜变成北朝鲜 - Manifesto for Reformism：Preventing &quot;West Korea&quot; from Becoming the &quot;North Korea&quot;</title>
+    <link href="https://blog.tennisatw.com/post/30/"/>
+    <id>https://blog.tennisatw.com/post/30/</id>
+    <published>2023-10-26T17:55:00.000Z</published>
+    <updated>2024-06-14T18:31:47.706Z</updated>
+    
+    
+    <summary type="html">温家宝离职前说：不仅要推进经济体制改革，还要推进政治体制改革。没有政治体制改革的保障，经济体制改革的成果就会得而复失，现代化建设的目标就不可能实现。&lt;br&gt;Before leaving office, Wen Jiabao stated：&quot;We must not only advance economic system reform but also political system reform. Without the guarantee of political system reform, the achievements of economic system reform may be lost, and the goals of modernization cannot be realized.&quot;&lt;br&gt;&lt;br&gt;李克强离职前说：长江黄河不会倒流，中国对外开放不会改变。&lt;br&gt;Before leaving office, Li Keqiang said：&quot;The Yangtze and Yellow Rivers will not flow backward, and China&#39;s opening-up will not change.&quot;</summary>
+    
+    
+    
+    
+    <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
+    
+    <category term="敏感 - Sensitive" scheme="https://blog.tennisatw.com/tags/%E6%95%8F%E6%84%9F-sensitive/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>元键政3：与低水平言论缠斗意义不大 - Meta Political Discussion 3：It&#39;s insignificant to engage in a battle of words with low-level arguments</title>
+    <link href="https://blog.tennisatw.com/post/29/"/>
+    <id>https://blog.tennisatw.com/post/29/</id>
+    <published>2023-09-26T00:28:53.000Z</published>
+    <updated>2024-06-14T18:31:47.704Z</updated>
+    
+    
+    <summary type="html">我一向认为，如果不能好好键政的话，还不如不键政。&lt;br&gt;I have always believed that if you can&#39;t discuss politics properly, it&#39;s better not to discuss it at all.</summary>
+    
+    
+    
+    <category term="元键政 - Meta Political Discussion" scheme="https://blog.tennisatw.com/categories/%E5%85%83%E9%94%AE%E6%94%BF-meta-political-discussion/"/>
+    
+    
+    <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>资料搜寻：韩国财阀干政的程度有多高？ -  Data Search：To what extent do South Korean chaebols interfere in politics?</title>
+    <link href="https://blog.tennisatw.com/post/28/"/>
+    <id>https://blog.tennisatw.com/post/28/</id>
+    <published>2023-09-23T11:16:19.000Z</published>
+    <updated>2024-06-14T18:31:47.703Z</updated>
+    
+    
+    <summary type="html">财阀作为韩国政治的参与者确实在干政，但财阀与政府的势力不断抗衡，我们不能说财阀主导了政府。&lt;br&gt;Although the chaebols, as participants in Korean politics, have influenced the government, their power is counterbalanced by the government, making it inaccurate to say the chaebols control the government.</summary>
+    
+    
+    
+    
+    <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何泡各种茶 - How to make various types of tea</title>
+    <link href="https://blog.tennisatw.com/post/27/"/>
+    <id>https://blog.tennisatw.com/post/27/</id>
+    <published>2023-09-20T01:24:54.000Z</published>
+    <updated>2024-06-14T18:31:47.704Z</updated>
+    
+    
+    <summary type="html">三点几了，饮茶先啦！</summary>
+    
+    
+    
+    
+    <category term="日常 - Daily" scheme="https://blog.tennisatw.com/tags/%E6%97%A5%E5%B8%B8-daily/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何制作词云 - How to make wordcloud</title>
+    <link href="https://blog.tennisatw.com/post/26/"/>
+    <id>https://blog.tennisatw.com/post/26/</id>
+    <published>2023-09-17T09:56:21.000Z</published>
+    <updated>2024-06-14T18:31:47.698Z</updated>
+    
+    
+    <summary type="html">暂无预览 - No preview available</summary>
+    
+    
+    
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>元键政2：键政的意义何在？ - Meta Political Discussion 2：What is the significance of discussing politics?</title>
+    <link href="https://blog.tennisatw.com/post/25/"/>
+    <id>https://blog.tennisatw.com/post/25/</id>
+    <published>2023-09-16T09:01:14.000Z</published>
+    <updated>2024-06-14T18:31:47.694Z</updated>
+    
+    
+    <summary type="html">公民社会的力量越强，越能影响党/政府的决策，而这也是参与键政的意义。&lt;br&gt;The stronger the power of civil society, the greater the influence on party/governmental decisions, underlying the significance of engaging in political debates.</summary>
+    
+    
+    
+    <category term="元键政 - Meta Political Discussion" scheme="https://blog.tennisatw.com/categories/%E5%85%83%E9%94%AE%E6%94%BF-meta-political-discussion/"/>
+    
+    
+    <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>自学教材推荐：《动手学深度学习》 - Self-study Material Recommendation：&quot;Dive into Deep Learning&quot;.</title>
+    <link href="https://blog.tennisatw.com/post/24/"/>
+    <id>https://blog.tennisatw.com/post/24/</id>
+    <published>2023-09-15T06:12:54.000Z</published>
+    <updated>2024-06-14T18:31:47.694Z</updated>
+    
+    
+    <summary type="html">强力推荐一本优质教材：《动手学深度学习》。它包含了以下内容：多层感知机，深度神经网络，循环神经网络，卷积神经网络，以及有关深度学习的其他知识点。每一个知识点都会附带一小段代码。有一点难度，不适合纯小白。&lt;br&gt;Highly recommending a top-quality textbook：&quot;Dive into Deep Learning&quot;. It covers various topics including multilayer perceptron, deep neural networks, recurrent neural networks, convolutional neural networks, and other concepts related to deep learning. Each topic comes with a snippet of code. It is somewhat challenging and not that suitable for beginners.</summary>
+    
+    
+    
+    
+    <category term="推荐 - Recommendation" scheme="https://blog.tennisatw.com/tags/%E6%8E%A8%E8%8D%90-recommendation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>插件推荐：屏蔽黄推 - Plugin Recommendation：Twitter Block Porn</title>
+    <link href="https://blog.tennisatw.com/post/23/"/>
+    <id>https://blog.tennisatw.com/post/23/</id>
+    <published>2023-09-12T21:48:31.000Z</published>
+    <updated>2024-06-14T18:31:47.694Z</updated>
+    
+    
+    <summary type="html">暂无预览 - No preview available</summary>
+    
+    
+    
+    
+    <category term="推荐 - Recommendation" scheme="https://blog.tennisatw.com/tags/%E6%8E%A8%E8%8D%90-recommendation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>实验复现：重复的囚徒困境博弈 - Experiment Replication：Repeated Prisoner&#39;s Dilemma Game</title>
+    <link href="https://blog.tennisatw.com/post/22/"/>
+    <id>https://blog.tennisatw.com/post/22/</id>
+    <published>2023-09-11T03:30:08.000Z</published>
+    <updated>2024-06-14T18:31:47.694Z</updated>
+    
+    
+    <summary type="html">...这说明爱与和平不能拯救世界，法治和正义才能&lt;br&gt;...This highlights that love and peace cannot save the world, but law and justice can.</summary>
+    
+    
+    
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>元键政1：所有理性人本质上都是相同的，但有独特的要捍卫的价值观 - Meta Political Discussion 1：All rational people are fundamentally the same, but each has unique values to defend.</title>
+    <link href="https://blog.tennisatw.com/post/21/"/>
+    <id>https://blog.tennisatw.com/post/21/</id>
+    <published>2023-09-09T09:54:36.000Z</published>
+    <updated>2024-06-14T18:31:47.703Z</updated>
+    
+    
+    <summary type="html">所有理性人本质上都是相同的，即，遇到相同的事情时，理性的看法只有一种。所以理论上来说，每个人的政见都应该一致。在与理性人讨论政治的过程中，不会有任何冲突。&lt;br&gt; All rational beings are fundamentally the same, that is, there is only one rational perspective when faced with the same situation. Theoretically, their political views should coincide. There should be no conflict when discussing politics with rational individuals.</summary>
+    
+    
+    
+    <category term="元键政 - Meta Political Discussion" scheme="https://blog.tennisatw.com/categories/%E5%85%83%E9%94%AE%E6%94%BF-meta-political-discussion/"/>
+    
+    
+    <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>视频推荐：《陌生人——柴静对话圣战分子》 - Video Recommendation：&quot;Stranger：Talking to Jihadists&quot;</title>
+    <link href="https://blog.tennisatw.com/post/20/"/>
+    <id>https://blog.tennisatw.com/post/20/</id>
+    <published>2023-09-05T22:55:10.000Z</published>
+    <updated>2024-06-14T18:31:47.703Z</updated>
+    
+    
+    <summary type="html">暂无预览 - No preview available</summary>
+    
+    
+    
+    
+    <category term="推荐 - Recommendation" scheme="https://blog.tennisatw.com/tags/%E6%8E%A8%E8%8D%90-recommendation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>实验复现：绘制曼德勃罗集合 - Experiment Replication：sketch a Mandelbrot set</title>
+    <link href="https://blog.tennisatw.com/post/19/"/>
+    <id>https://blog.tennisatw.com/post/19/</id>
+    <published>2023-09-04T09:00:22.000Z</published>
+    <updated>2024-06-14T18:31:47.694Z</updated>
+    
+    
+    <summary type="html">曼德勃罗集合是一个在复平面上的分形。定义级数z，z(0)=0，z(n+1)=z^2+c。使得级数z收敛的所有c（复数）的集合即为曼德勃罗集。&lt;br&gt;The Mandelbrot set is a fractal on the complex plane. It is defined by the series z where z(0)=0 and z(n+1)=z^2+c. The collection of all c (complex numbers) that make the series z converge is the Mandelbrot set.</summary>
+    
+    
+    
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>视频推荐：方脸说核污水排放 &amp; 我的一些杂谈 - Video Recommendation：Big Face’s Discusses on Nuclear Wastewater Discharge &amp; My Miscellaneous Talks</title>
+    <link href="https://blog.tennisatw.com/post/18/"/>
+    <id>https://blog.tennisatw.com/post/18/</id>
+    <published>2023-09-01T06:36:04.000Z</published>
+    <updated>2024-06-14T18:31:47.686Z</updated>
+    
+    
+    <summary type="html">推荐一个视频：《方脸说：日本福岛核污水排放，会对我们的健康产生影响？会有富集作用吗？》&lt;br&gt;Here&#39;s a video recommendation：&quot;Big Face&#39;s talks about The impact of Japan&#39;s Fukushima&#39;s nuclear wastewater discharge on our health. Is there any enrichment effect?&quot;</summary>
+    
+    
+    
+    
+    <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
+    
+    <category term="推荐 - Recommendation" scheme="https://blog.tennisatw.com/tags/%E6%8E%A8%E8%8D%90-recommendation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>插件推荐：沉浸式翻译 - Tool recommendation：Immersive Translate</title>
+    <link href="https://blog.tennisatw.com/post/17/"/>
+    <id>https://blog.tennisatw.com/post/17/</id>
+    <published>2023-08-29T08:24:42.000Z</published>
+    <updated>2024-06-14T18:31:47.688Z</updated>
+    
+    
+    <summary type="html">暂无预览 - No preview available</summary>
+    
+    
+    
+    
+    <category term="推荐 - Recommendation" scheme="https://blog.tennisatw.com/tags/%E6%8E%A8%E8%8D%90-recommendation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>视频推荐：键政圈三大主流意识形态的逻辑基础——神左兔人自述</title>
+    <link href="https://blog.tennisatw.com/post/16/"/>
+    <id>https://blog.tennisatw.com/post/16/</id>
+    <published>2023-08-29T05:55:03.000Z</published>
+    <updated>2024-06-14T18:31:47.694Z</updated>
+    
+    
+    <summary type="html">暂无预览 - No preview available</summary>
+    
+    
+    
+    
+    <category term="推荐 - Recommendation" scheme="https://blog.tennisatw.com/tags/%E6%8E%A8%E8%8D%90-recommendation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>聊聊二次元文化的人生观和世界观的问题 - Discussing the Issues of Life Values and Worldviews in Otaku Culture</title>
+    <link href="https://blog.tennisatw.com/post/15/"/>
+    <id>https://blog.tennisatw.com/post/15/</id>
+    <published>2023-08-25T08:47:34.000Z</published>
+    <updated>2024-06-14T18:31:47.684Z</updated>
+    
+    
+    <summary type="html">《凉宫春日》里的阿虚有一句名言：“在虚构的故事当中寻求真实感的人脑袋一定有问题”。不能对御宅文化要求太多，它的意义只是娱乐，不是要培养人的健全人格。但是如果一个人除了看番别的什么都不做，那他/她的思想一定缺很多东西。&lt;br&gt;The character Kyon from &quot;The Melancholy of Haruhi Suzumiya&quot; famously said, &quot;Anyone who seeks reality in a fabricated story must have something wrong with their head.&quot; We should not expect too much from otaku culture, as its purpose is only to entertain, not to develop a mature personality. But if one does nothing but watch anime, his/her thinking will lack diversity.</summary>
+    
+    
+    
+    
+    <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>诗-冬之城</title>
+    <link href="https://blog.tennisatw.com/post/14/"/>
+    <id>https://blog.tennisatw.com/post/14/</id>
+    <published>2023-08-22T05:40:34.000Z</published>
+    <updated>2024-06-14T18:31:47.684Z</updated>
+    
+    
+    <summary type="html">暂无预览 - No preview available</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>参观大庆油田历史陈列馆和唐山大地震纪念馆有感 - Reflections on Visiting the Daqing Oilfield History Exhibition Hall and the Tangshan Earthquake Memorial Hall</title>
+    <link href="https://blog.tennisatw.com/post/13/"/>
+    <id>https://blog.tennisatw.com/post/13/</id>
+    <published>2023-07-24T15:57:11.000Z</published>
+    <updated>2024-06-14T18:31:47.684Z</updated>
+    
+    
+    <summary type="html">我相当讨厌两件事，一个是强制奉献，一个是丧事喜办。&lt;br&gt;There are two things I detest rather deeply：one is compulsory sacrifice, and the other is glossing over tragedies with celebrations.</summary>
+    
+    
+    
+    
+    <category term="敏感 - Sensitive" scheme="https://blog.tennisatw.com/tags/%E6%95%8F%E6%84%9F-sensitive/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>诗-冷夏</title>
+    <link href="https://blog.tennisatw.com/post/12/"/>
+    <id>https://blog.tennisatw.com/post/12/</id>
+    <published>2023-07-10T15:22:23.000Z</published>
+    <updated>2024-06-14T18:31:47.671Z</updated>
+    
+    
+    <summary type="html">暂无预览 - No preview available</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用自定义类捕获 Python 控制台输出 - Capturing Console Output in Python Using Custom Class</title>
+    <link href="https://blog.tennisatw.com/post/11/"/>
+    <id>https://blog.tennisatw.com/post/11/</id>
+    <published>2023-06-27T02:23:44.000Z</published>
+    <updated>2024-06-14T18:31:47.671Z</updated>
+    
+    
+    <summary type="html">在python中，当执行一段代码时，如果想要获取这段代码输出到控制台的信息的话，可以使用重定向stdout的方法。&lt;br&gt;In Python, if you want to capture the information output to the console when executing a piece of code, you can use the method of redirecting stdout.</summary>
+    
+    
+    
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在Python中模拟程序重启 - Simulating Program Restart in Python</title>
+    <link href="https://blog.tennisatw.com/post/10/"/>
+    <id>https://blog.tennisatw.com/post/10/</id>
+    <published>2023-06-26T03:14:13.000Z</published>
+    <updated>2024-06-14T18:31:47.671Z</updated>
+    
+    
+    <summary type="html">在编写Tennisbot的主程序时，总是需要使其重启。Python中，可以使用以下命令模拟重启效果。&lt;br&gt;When writing the main program for Tennisbot, it always needs to be restarted. The following command can be used in Python to simulate a restart effect.</summary>
+    
+    
+    
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>有国才有家？——读bbc关于朝鲜的采访有感 - Only With a Country, Can There be a Home? — Reflections on BBC&#39;s Interview About North Korea</title>
+    <link href="https://blog.tennisatw.com/post/9/"/>
+    <id>https://blog.tennisatw.com/post/9/</id>
+    <published>2023-06-19T11:02:16.000Z</published>
+    <updated>2024-06-14T18:31:47.671Z</updated>
+    
+    
+    <summary type="html">最后感慨一句，从来不是哪里有压迫，哪里就有反抗。压迫的强度太大，人们可能会不敢反抗。压迫的时间太久，这个民族，恐怕就会失去反抗的本能。&lt;br&gt;Finally, I would like to reflect that it&#39;s not always true that where there is oppression, there will be resistance. If the intensity of oppression is too high, people may not dare to resist. And if the oppression lasts too long, the nation, I fear, may lose its instinct to resist.</summary>
+    
+    
+    
+    
+    <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SD WebUI 2： 如何设置Stable Diffusion WebUI？ - SD WebUI 2： How to set Stable Diffusion WebUI?</title>
+    <link href="https://blog.tennisatw.com/post/8/"/>
+    <id>https://blog.tennisatw.com/post/8/</id>
+    <published>2023-05-05T03:16:02.000Z</published>
+    <updated>2024-06-14T18:31:47.671Z</updated>
+    
+    
+    <summary type="html">暂无预览 - No preview available</summary>
+    
+    
+    
+    <category term="SD WebUI" scheme="https://blog.tennisatw.com/categories/sd-webui/"/>
+    
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
+    
+    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SD WebUI 1： 如何安装Stable Diffusion WebUI？ - SD WebUI 1： How to install Stable Diffusion WebUI?</title>
+    <link href="https://blog.tennisatw.com/post/7/"/>
+    <id>https://blog.tennisatw.com/post/7/</id>
+    <published>2023-05-05T03:14:38.000Z</published>
+    <updated>2024-06-14T18:31:47.684Z</updated>
+    
+    
+    <summary type="html">暂无预览 - No preview available</summary>
+    
+    
+    
+    <category term="SD WebUI" scheme="https://blog.tennisatw.com/categories/sd-webui/"/>
+    
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
+    
+    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何在《1984》这样的极权世界里尽可能好地生活？ - How to live the best possible life in a totalitarian world like &quot;1984&quot;?</title>
+    <link href="https://blog.tennisatw.com/post/6/"/>
+    <id>https://blog.tennisatw.com/post/6/</id>
+    <published>2023-04-30T09:47:40.000Z</published>
+    <updated>2024-06-14T18:31:47.668Z</updated>
+    
+    
+    <summary type="html">假设我们生活在《1984》里的世界里。&lt;br&gt;Imagine living in the world of &quot;1984&quot;.</summary>
+    
+    
+    
+    
+    <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>实验：如何判断报道的事故死亡人数是否被大量修改？ - Experiment： How to judge whether the reported accident fatalities have been substantially modified?</title>
+    <link href="https://blog.tennisatw.com/post/5/"/>
+    <id>https://blog.tennisatw.com/post/5/</id>
+    <published>2023-04-22T07:12:38.000Z</published>
+    <updated>2024-06-14T18:31:47.671Z</updated>
+    
+    
+    <summary type="html">从图中可以看出，从2016年到2021年，橙色线与红色线左右的事故发生频数差不多，符合指数分布。这说明从2016年到2021年，死亡人数未被大量修改。&lt;br&gt;It can be seen from the figure that from 2016 to 2021, the frequency of accidents around the orange line and the red line is similar, which conforms to the exponential distribution. This illustrates that the death toll has not been substantially revised from 2016 to 2021.</summary>
+    
+    
+    
+    
+    <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
+    
+    <category term="敏感 - Sensitive" scheme="https://blog.tennisatw.com/tags/%E6%95%8F%E6%84%9F-sensitive/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>聊聊价值观茧房 - Discussion on the filter bubble of values</title>
+    <link href="https://blog.tennisatw.com/post/4/"/>
+    <id>https://blog.tennisatw.com/post/4/</id>
+    <published>2023-04-11T19:18:29.000Z</published>
+    <updated>2024-06-14T18:31:47.668Z</updated>
+    
+    
+    <summary type="html">...所以，爱和正义拯救不了世界，文明和法治才可以。手动呲牙。&lt;br&gt;... Therefore, love and justice cannot save the world, but civilization and the rule of law can, lol.</summary>
+    
+    
+    
+    
+    <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>聊聊带节奏与独立思考 - Discussion on stirring up and thinking independently</title>
+    <link href="https://blog.tennisatw.com/post/3/"/>
+    <id>https://blog.tennisatw.com/post/3/</id>
+    <published>2023-04-08T07:43:03.000Z</published>
+    <updated>2024-06-14T18:31:47.668Z</updated>
+    
+    
+    <summary type="html">一年以来，我一直关注一个推主：多伦多方脸。我感觉他比较喜欢带节奏。&lt;br&gt;For a year now, I&#39;ve been following one tweeter Torontobigface. I feel like he likes to stir up.</summary>
+    
+    
+    
+    
+    <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>通过哲学分析我的赛博分身的存在的可能性 - A philosophical analysis of the possibility of my cyber clone&#39;s existence</title>
+    <link href="https://blog.tennisatw.com/post/2/"/>
+    <id>https://blog.tennisatw.com/post/2/</id>
+    <published>2023-04-04T02:57:57.000Z</published>
+    <updated>2024-06-14T18:31:47.655Z</updated>
+    
+    
+    <summary type="html">说到赛博分身，别人都是开玩笑的，到我这里就当真了。&lt;br&gt;Others are just joking about someone&#39;s cyber clone, but I take it seriously.</summary>
+    
+    
+    
+    
+    <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>开始写博客 - Start blogging</title>
+    <link href="https://blog.tennisatw.com/post/1/"/>
+    <id>https://blog.tennisatw.com/post/1/</id>
+    <published>2023-04-04T02:36:20.000Z</published>
+    <updated>2024-06-14T18:31:47.655Z</updated>
+    
+    
+    <summary type="html">开始写博客&lt;br&gt;Start blogging</summary>
+    
+    
+    
+    
+    <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>诗 - 毕业生</title>
+    <link href="https://blog.tennisatw.com/post/-1/"/>
+    <id>https://blog.tennisatw.com/post/-1/</id>
+    <published>2023-03-27T05:29:35.000Z</published>
+    <updated>2024-06-14T18:31:47.655Z</updated>
+    
+    
+    <summary type="html">暂无预览 - No preview available</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>诗-另一代人</title>
+    <link href="https://blog.tennisatw.com/post/-2/"/>
+    <id>https://blog.tennisatw.com/post/-2/</id>
+    <published>2022-12-16T06:36:15.000Z</published>
+    <updated>2024-06-14T18:31:47.655Z</updated>
+    
+    
+    <summary type="html">暂无预览 - No preview available</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>诗-美丽猫猫新世界</title>
+    <link href="https://blog.tennisatw.com/post/-3/"/>
+    <id>https://blog.tennisatw.com/post/-3/</id>
+    <published>2022-08-16T05:38:41.000Z</published>
+    <updated>2024-06-14T18:31:47.655Z</updated>
+    
+    
+    <summary type="html">暂无预览 - No preview available</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>诗-怀念一棵榕树</title>
+    <link href="https://blog.tennisatw.com/post/-4/"/>
+    <id>https://blog.tennisatw.com/post/-4/</id>
+    <published>2022-08-03T05:44:33.000Z</published>
+    <updated>2024-06-14T18:31:47.655Z</updated>
+    
+    
+    <summary type="html">暂无预览 - No preview available</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>诗-住在黑洞里</title>
+    <link href="https://blog.tennisatw.com/post/-5/"/>
+    <id>https://blog.tennisatw.com/post/-5/</id>
+    <published>2022-01-21T06:47:00.000Z</published>
+    <updated>2024-06-14T18:31:47.654Z</updated>
+    
+    
+    <summary type="html">暂无预览 - No preview available</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>诗-跨年</title>
+    <link href="https://blog.tennisatw.com/post/-6/"/>
+    <id>https://blog.tennisatw.com/post/-6/</id>
+    <published>2022-01-01T06:48:55.000Z</published>
+    <updated>2024-06-14T18:31:47.655Z</updated>
+    
+    
+    <summary type="html">暂无预览 - No preview available</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>诗-爱城雪</title>
+    <link href="https://blog.tennisatw.com/post/-7/"/>
+    <id>https://blog.tennisatw.com/post/-7/</id>
+    <published>2021-12-24T06:54:15.000Z</published>
+    <updated>2024-06-14T18:31:47.636Z</updated>
+    
+    
+    <summary type="html">暂无预览 - No preview available</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>诗-折耳说</title>
+    <link href="https://blog.tennisatw.com/post/-8/"/>
+    <id>https://blog.tennisatw.com/post/-8/</id>
+    <published>2021-11-02T05:55:58.000Z</published>
+    <updated>2024-06-14T18:31:47.648Z</updated>
+    
+    
+    <summary type="html">暂无预览 - No preview available</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>诗-交大秋</title>
+    <link href="https://blog.tennisatw.com/post/-9/"/>
+    <id>https://blog.tennisatw.com/post/-9/</id>
+    <published>2021-10-11T07:58:47.000Z</published>
+    <updated>2024-06-14T18:31:47.636Z</updated>
+    
+    
+    <summary type="html">暂无预览 - No preview available</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>诗-可怜的意大利小孩</title>
+    <link href="https://blog.tennisatw.com/post/-10/"/>
+    <id>https://blog.tennisatw.com/post/-10/</id>
+    <published>2021-08-22T06:02:34.000Z</published>
+    <updated>2024-06-14T18:31:47.654Z</updated>
+    
+    
+    <summary type="html">暂无预览 - No preview available</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>诗-致刘昊</title>
+    <link href="https://blog.tennisatw.com/post/-11/"/>
+    <id>https://blog.tennisatw.com/post/-11/</id>
+    <published>2021-07-13T06:07:02.000Z</published>
+    <updated>2024-06-14T18:31:47.636Z</updated>
+    
+    
+    <summary type="html">暂无预览 - No preview available</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>诗-今晚的月光亮得刺眼</title>
+    <link href="https://blog.tennisatw.com/post/-12/"/>
+    <id>https://blog.tennisatw.com/post/-12/</id>
+    <published>2021-07-09T06:10:00.000Z</published>
+    <updated>2024-06-14T18:31:47.671Z</updated>
+    
+    
+    <summary type="html">暂无预览 - No preview available</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>诗-题老黑板</title>
+    <link href="https://blog.tennisatw.com/post/-13/"/>
+    <id>https://blog.tennisatw.com/post/-13/</id>
+    <published>2021-06-19T06:12:35.000Z</published>
+    <updated>2024-06-14T18:31:47.635Z</updated>
+    
+    
+    <summary type="html">暂无预览 - No preview available</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>诗-人上人上人</title>
+    <link href="https://blog.tennisatw.com/post/-14/"/>
+    <id>https://blog.tennisatw.com/post/-14/</id>
+    <published>2020-09-26T20:59:41.000Z</published>
+    <updated>2024-06-14T18:31:47.635Z</updated>
+    
+    
+    <summary type="html">暂无预览 - No preview available</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>诗-日月行焉</title>
+    <link href="https://blog.tennisatw.com/post/-15/"/>
+    <id>https://blog.tennisatw.com/post/-15/</id>
+    <published>2019-10-17T06:18:52.000Z</published>
+    <updated>2024-06-14T18:31:47.635Z</updated>
+    
+    
+    <summary type="html">暂无预览 - No preview available</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>诗-梦想</title>
+    <link href="https://blog.tennisatw.com/post/-16/"/>
+    <id>https://blog.tennisatw.com/post/-16/</id>
+    <published>2019-05-09T20:23:40.000Z</published>
+    <updated>2024-06-14T18:31:47.688Z</updated>
+    
+    
+    <summary type="html">暂无预览 - No preview available</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>诗-假登黄鹤楼</title>
+    <link href="https://blog.tennisatw.com/post/-17/"/>
+    <id>https://blog.tennisatw.com/post/-17/</id>
+    <published>2018-10-03T07:20:51.000Z</published>
+    <updated>2024-06-14T18:31:47.629Z</updated>
+    
+    
+    <summary type="html">暂无预览 - No preview available</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>诗-在夜里出发</title>
+    <link href="https://blog.tennisatw.com/post/-18/"/>
+    <id>https://blog.tennisatw.com/post/-18/</id>
+    <published>2016-03-13T20:05:45.000Z</published>
+    <updated>2024-06-14T18:31:47.694Z</updated>
+    
+    
+    <summary type="html">暂无预览 - No preview available</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
+    
+  </entry>
+  
+</feed>

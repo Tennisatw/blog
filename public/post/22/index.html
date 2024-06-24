@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#556"><meta name="generator" content="Hexo 7.1.1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-50.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-50.png">
+  <link rel="mask-icon" href="/images/favicon-50.svg" color="#556">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha256-wiz7ZSCn/btzhjKDQBms9Hx4sSeUYsDrTLg7roPstac=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"blog.tennisatw.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.19.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#556","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"utterances","storage":true,"lazyload":false,"nav":null,"activeClass":"utterances"},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="...这说明爱与和平不能拯救世界，法治和正义才能...This highlights that love and peace cannot save the world, but law and justice can.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="实验复现：重复的囚徒困境博弈 - Experiment Replication：Repeated Prisoner&#39;s Dilemma Game">
+<meta property="og:url" content="https://blog.tennisatw.com/post/22/">
+<meta property="og:site_name" content="Tennisatw的博客 - Blog of Tennisatw">
+<meta property="og:description" content="...这说明爱与和平不能拯救世界，法治和正义才能...This highlights that love and peace cannot save the world, but law and justice can.">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-09-11T03:30:08.000Z">
+<meta property="article:modified_time" content="2024-06-14T18:31:47.694Z">
+<meta property="article:author" content="Tennisatw">
+<meta property="article:tag" content="编程 - Programming">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://blog.tennisatw.com/post/22/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://blog.tennisatw.com/post/22/","path":"/post/22/","title":"实验复现：重复的囚徒困境博弈 - Experiment Replication：Repeated Prisoner's Dilemma Game"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>实验复现：重复的囚徒困境博弈 - Experiment Replication：Repeated Prisoner's Dilemma Game | Tennisatw的博客 - Blog of Tennisatw</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="Tennisatw的博客 - Blog of Tennisatw" type="application/atom+xml">
+<link rel="alternate" href="/rss2.xml" title="Tennisatw的博客 - Blog of Tennisatw" type="application/rss+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Tennisatw的博客 - Blog of Tennisatw</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索 - Search" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+    <div id="google_translate_element"></div>
+    <script type="text/javascript" async="async" >
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {pageLanguage: 'en,zh-CN', 
+        includedLanguages: 'en,zh-CN,zh-TW,es,ar,hi,ru,ja,de,fr', 
+        layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 
+        'google_translate_element');
+    }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script><li class="menu-item menu-item-首页---home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页 - Home</a></li><li class="menu-item menu-item-关于---about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于 - About</a></li><li class="menu-item menu-item-页面列表---pages"><a href="/pages/" rel="section"><i class="fa fa-sitemap fa-fw"></i>页面列表 - Pages</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索 - Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%83%8C%E6%99%AF---background"><span class="nav-number">1.</span> <span class="nav-text">背景 - Background</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A8%A1%E6%8B%9F%E5%AE%9E%E9%AA%8C---simulating"><span class="nav-number">2.</span> <span class="nav-text">模拟实验 - Simulating</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E5%88%9D%E5%A7%8B%E5%88%86%E5%B8%83---adjusting-the-initial-distribution"><span class="nav-number">3.</span> <span class="nav-text">修改初始分布
+- Adjusting the Initial Distribution</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Tennisatw"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">Tennisatw</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="mailto:tennisatw@mail.com" title="Email → mailto:tennisatw@mail.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://github.com/tennisatw" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;tennisatw" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/tennisatw" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;tennisatw" rel="noopener me" target="_blank"><i class="fab fa-twitter fa-fw"></i></a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://blog.tennisatw.com/post/22/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Tennisatw">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Tennisatw的博客 - Blog of Tennisatw">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="实验复现：重复的囚徒困境博弈 - Experiment Replication：Repeated Prisoner's Dilemma Game | Tennisatw的博客 - Blog of Tennisatw">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          实验复现：重复的囚徒困境博弈 - Experiment Replication：Repeated Prisoner's Dilemma Game
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2023/09/10 21:30:08" itemprop="dateCreated datePublished" datetime="2023-09-10T21:30:08-06:00">2023/09/10</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2024/06/14 12:31:47" itemprop="dateModified" datetime="2024-06-14T12:31:47-06:00">2024/06/14</time>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="Word count in article">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">Word count in article: </span>
+      <span>2.9k</span>
+    </span>
+    <span class="post-meta-item" title="Reading time">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">Reading time &asymp;</span>
+      <span>11 mins.</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h3 id="背景---background">背景 - Background</h3>
+<p>囚徒困境是博弈论的非零和博弈中具代表性的例子，个人最佳选择并非群体的最佳选择。以下为囚徒困境的经典表述：</p>
+<p>The prisoner's dilemma is a representative example in non-zero-sum
+game theory, where the best choice for the individual is not necessarily
+the best choice for the group. Here is a classic presentation of the
+Prisoner's Dilemma:</p>
+<p><br></p>
+<p>警方逮捕甲、乙两名嫌疑犯，但没有足够证据指控二人有罪。于是警方分开囚禁嫌疑犯，分别和二人见面，并向双方提供以下相同的选择：</p>
+<p>若一人认罪并作证检控对方（背叛对方），而对方保持沉默，此人将即时获释，沉默者将判监3年。</p>
+<p>若二人都保持沉默（互相合作），则二人同样判监1年。</p>
+<p>若二人都互相检举（互相背叛），则二人同样判监2年。</p>
+<p>The police arrested two suspects, A and B, but there was not enough
+evidence to charge them. Therefore, the police detained the suspects
+separately, met with them individually, and offered the same options to
+both:</p>
+<p>If one confesses and testifies against the other (defects), while the
+other remains silent, the one who confessed will be released
+immediately, and the silent one will be sentenced to 3 years in
+prison.</p>
+<p>If both remain silent (cooperate), they will both be sentenced to 1
+year in prison.</p>
+<p>If both testify against each other (defect), they will both be
+sentenced to 2 years in prison.</p>
+<p>https://zh.wikipedia.org/wiki/%E5%9B%9A%E5%BE%92%E5%9B%B0%E5%A2%83</p>
+<p>https://en.wikipedia.org/wiki/Prisoner%27s_dilemma</p>
+<p><br></p>
+<p>因为不知道另一位囚徒是否会选择合作还是背叛，而无论对方选择什么，自己选择背叛的收益总比选择合作要高。所以，对于理性的囚徒来说，最佳的选择是选择背叛。因此两位囚徒都选择了背叛，他们被判监2年。</p>
+<p>As the prisoner is uncertain if the other prisoner will choose to
+cooperate or defect, the gains from defecting tend to be higher no
+matter what the other decides. Hence, it's rational for the prisoner to
+choose defecting. As a result, both prisoners defected, resulting in a
+two-year sentence.</p>
+<p><br></p>
+<p>但这种选择又明显不是整体利益最大化的解决方案（帕累托最优）。如果双方都选择合作，两人只会被判监1年。</p>
+<p>However, this decision obviously isn't the optimal solution for
+maximizing collective interests (Pareto optimal). If both parties chose
+to cooperate, they would only have to serve a one-year sentence.</p>
+<p>重复的囚徒困境博弈 - Repeated Prisoner's Dilemma Game
+如果允许两个囚犯重复博弈，那么结果就完全不一样了，因为一个囚犯被背叛后，可以在下一轮中惩罚他的对手，这会在某种程度上鼓励对方与自己合作。</p>
+<p>The outcome is completely different if the two prisoners are allowed
+to play the game repeatedly. In such a case, a prisoner would have the
+chance to retaliate in the next round if he is defected against. This
+could, to a certain extent, encourage his opponent to cooperate with
+him.</p>
+<p><br></p>
+<p>阿克塞尔罗德组织了一场重复囚徒困境博弈，参与者提交代码两两对决，每人都有自己独特的策略。最终，根据总得分判断输赢。这其中，最出彩的却是一种简单的方法：“以牙还牙”策略。该策略在第一次博弈中选择合作，之后会在下一次博弈中重复对手上一次的选择。本文打算复现他的博弈结果。</p>
+<p>Axelrod organized a Repeated Prisoner's Dilemma game where
+participants submitted codes for head-to-head battles, each with their
+unique strategies. The winners were determined based on total scores.
+Among all, the most impressive strategy was a simple one: "Tit for Tat."
+This strategy cooperates in the first round, then copies the opponent's
+decision in the next round thereafter. This article intends to replicate
+his game results.</p>
+<p><br></p>
+<h3 id="模拟实验---simulating">模拟实验 - Simulating</h3>
+<p>首先，定义一系列策略。我把我能想到的策略都罗列了出来，包括总是合作（always_cooperation），总是背叛（always_defect），随机（random），以牙还牙（tit_for_tat）及其一些变种，报复（retaliatory_strike），和测试者（tester）等等。读者也可以添加自己的策略。</p>
+<p>Firstly, a range of strategies are defined. I've listed all the
+strategies I could think of, including always_cooperation,
+always_defect, random, tit_for_tat and its variants, retaliatory_strike,
+tester, and so on. Readers can add their own strategies.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">always_cooperation</span>(<span class="params">we=<span class="literal">None</span>, them=<span class="literal">None</span></span>):</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">always_defect</span>(<span class="params">we=<span class="literal">None</span>, them=<span class="literal">None</span></span>):</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">random_react_50</span>(<span class="params">we=<span class="literal">None</span>, them=<span class="literal">None</span></span>):</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">bool</span>(random.randint(<span class="number">0</span>, <span class="number">1</span>))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">tit_for_tat</span>(<span class="params">we=<span class="literal">None</span>, them=<span class="literal">None</span></span>):</span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">len</span>(them) &lt; <span class="number">1</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> them[-<span class="number">1</span>]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">generous_tit_for_tat</span>(<span class="params">we=<span class="literal">None</span>, them=<span class="literal">None</span></span>):</span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">len</span>(them) &lt; <span class="number">1</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> them[-<span class="number">1</span>]:</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">not</span> <span class="built_in">bool</span>(random.randint(<span class="number">0</span>, <span class="number">9</span>))</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">tit_for_two_tat</span>(<span class="params">we=<span class="literal">None</span>, them=<span class="literal">None</span></span>):</span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">len</span>(them) &lt; <span class="number">2</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">    <span class="keyword">elif</span> (<span class="keyword">not</span> them[-<span class="number">1</span>]) <span class="keyword">and</span> (<span class="keyword">not</span> them[-<span class="number">2</span>]):</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">retaliatory_strike</span>(<span class="params">we=<span class="literal">None</span>, them=<span class="literal">None</span></span>):</span><br><span class="line">    <span class="keyword">if</span> <span class="literal">False</span> <span class="keyword">in</span> them:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">tester_5</span>(<span class="params">we=<span class="literal">None</span>, them=<span class="literal">None</span></span>):</span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">len</span>(them) &lt; <span class="number">1</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            <span class="keyword">if</span> <span class="literal">False</span> <span class="keyword">in</span> them[-<span class="number">5</span>:]:</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">        <span class="keyword">except</span> IndexError:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">True</span></span><br></pre></td></tr></table></figure>
+<p>这其中，“慷慨的以牙还牙”指即使对面选择了背叛，下一次的策略也有10%的可能是合作；“报复”指以合作开始，但一旦对面背叛了一次，就一直背叛直到结束。“测试者”是以背叛开始，如果对面选择背叛，就选择合作。但一旦对面持续合作5次，就再次开始背叛。</p>
+<p>The term "Generous Tit-for-Tat" refers to the strategy where even if
+the opponent chooses to defect, there's a 10% chance of cooperation in
+the next round. "Retaliatory_strike" strategy starts with cooperation
+but switches to constant defection once betrayed. The "Tester" begins
+with defection, chooses cooperation if the opponent also defects, but
+returns to defection after five continuous rounds of opponent's
+cooperation.</p>
+<p><br></p>
+<p>为每个策略生成10个玩家，使其进行200次交易。（但是玩家们（明显）不知道交易的次数）。定义玩家的奖惩机制如下：</p>
+<p>Create ten players for each strategy and let them engage in 200
+transactions. However, the players (obviously) are not aware of the
+number of transactions. Let's define the reward and punishment mechanism
+for the players as follows:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> st1 <span class="keyword">and</span> st2:</span><br><span class="line">    score1 += <span class="number">3</span></span><br><span class="line">    score2 += <span class="number">3</span></span><br><span class="line"><span class="keyword">if</span> st1 <span class="keyword">and</span> <span class="keyword">not</span> st2:</span><br><span class="line">    score1 += <span class="number">0</span></span><br><span class="line">    score2 += <span class="number">5</span></span><br><span class="line"><span class="keyword">if</span> <span class="keyword">not</span> st1 <span class="keyword">and</span> st2:</span><br><span class="line">    score1 += <span class="number">5</span></span><br><span class="line">    score2 += <span class="number">0</span></span><br><span class="line"><span class="keyword">if</span> <span class="keyword">not</span> st1 <span class="keyword">and</span> <span class="keyword">not</span> st2:</span><br><span class="line">    score1 += <span class="number">1</span></span><br><span class="line">    score2 += <span class="number">1</span></span><br></pre></td></tr></table></figure>
+<p>每个玩家的初始分数为100000分，每当它参与一局游戏（200次交易）后就扣掉一定的分数（在本局游戏中是480分），当分数小于0时，就迫使它将策略改变成另一个场上存在的策略。通过这种方法来增加选择压力，使得最终只有强大的策略才能存活下来。</p>
+<p>Each player starts with a score of 100,000 points. After each game
+(200 transactions), points are deducted from their score (480 points in
+this case). When their score falls below zero, they are forced to adopt
+an alternative strategy currently in use in the field. This methodology
+increases selection pressure, ensuring only the most robust strategies
+survive.</p>
+<p><br></p>
+<p>模拟1500场对局，并渲染成视频。完整代码如下：</p>
+<p>Simulate 1500 games and render them into a video. The full code is as
+follows:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> random</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> matplotlib <span class="keyword">import</span> pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">from</span> matplotlib.animation <span class="keyword">import</span> FFMpegWriter</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># define strategies</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">always_cooperation</span>(<span class="params">we=<span class="literal">None</span>, them=<span class="literal">None</span></span>):</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">always_defect</span>(<span class="params">we=<span class="literal">None</span>, them=<span class="literal">None</span></span>):</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">random_react_75</span>(<span class="params">we=<span class="literal">None</span>, them=<span class="literal">None</span></span>):</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">bool</span>(random.randint(<span class="number">0</span>, <span class="number">3</span>))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">random_react_50</span>(<span class="params">we=<span class="literal">None</span>, them=<span class="literal">None</span></span>):</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">bool</span>(random.randint(<span class="number">0</span>, <span class="number">1</span>))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">random_react_25</span>(<span class="params">we=<span class="literal">None</span>, them=<span class="literal">None</span></span>):</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">not</span> <span class="built_in">bool</span>(random.randint(<span class="number">0</span>, <span class="number">3</span>))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">tit_for_tat</span>(<span class="params">we=<span class="literal">None</span>, them=<span class="literal">None</span></span>):</span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">len</span>(them) &lt; <span class="number">1</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> them[-<span class="number">1</span>]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">reverse_tit_for_tat</span>(<span class="params">we=<span class="literal">None</span>, them=<span class="literal">None</span></span>):</span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">len</span>(them) &lt; <span class="number">1</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">not</span> them[-<span class="number">1</span>]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">generous_tit_for_tat</span>(<span class="params">we=<span class="literal">None</span>, them=<span class="literal">None</span></span>):</span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">len</span>(them) &lt; <span class="number">1</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> them[-<span class="number">1</span>]:</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">not</span> <span class="built_in">bool</span>(random.randint(<span class="number">0</span>, <span class="number">9</span>))</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">tit_for_two_tat</span>(<span class="params">we=<span class="literal">None</span>, them=<span class="literal">None</span></span>):</span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">len</span>(them) &lt; <span class="number">2</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">    <span class="keyword">elif</span> (<span class="keyword">not</span> them[-<span class="number">1</span>]) <span class="keyword">and</span> (<span class="keyword">not</span> them[-<span class="number">2</span>]):</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">retaliatory_strike</span>(<span class="params">we=<span class="literal">None</span>, them=<span class="literal">None</span></span>):</span><br><span class="line">    <span class="keyword">if</span> <span class="literal">False</span> <span class="keyword">in</span> them:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">tester_2</span>(<span class="params">we=<span class="literal">None</span>, them=<span class="literal">None</span></span>):</span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">len</span>(them) &lt; <span class="number">1</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            <span class="keyword">if</span> <span class="literal">False</span> <span class="keyword">in</span> them[-<span class="number">2</span>:]:</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">        <span class="keyword">except</span> IndexError:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">tester_5</span>(<span class="params">we=<span class="literal">None</span>, them=<span class="literal">None</span></span>):</span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">len</span>(them) &lt; <span class="number">1</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            <span class="keyword">if</span> <span class="literal">False</span> <span class="keyword">in</span> them[-<span class="number">5</span>:]:</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">        <span class="keyword">except</span> IndexError:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">win_stay_lose_switch</span>(<span class="params">we=<span class="literal">None</span>, them=<span class="literal">None</span></span>):</span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">len</span>(them) == <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">    <span class="keyword">if</span> we[-<span class="number">1</span>] == them[-<span class="number">1</span>]:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Player</span>:</span><br><span class="line">    st_name = <span class="string">&#x27;&#x27;</span></span><br><span class="line">    st_func = <span class="literal">None</span></span><br><span class="line">    score = <span class="number">100000</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">players = []</span><br><span class="line"></span><br><span class="line">fig = plt.figure(figsize=(<span class="number">12</span>, <span class="number">5</span>))</span><br><span class="line">plt.subplots_adjust(left=<span class="number">0.15</span>)</span><br><span class="line"></span><br><span class="line">strategies = &#123;<span class="string">&#x27;always_cooperation&#x27;</span>: always_cooperation,</span><br><span class="line">              <span class="string">&#x27;random_react_75&#x27;</span>: random_react_75,</span><br><span class="line">              <span class="string">&#x27;tester_5&#x27;</span>: tester_5,</span><br><span class="line">              <span class="string">&#x27;tit_for_two_tat&#x27;</span>: tit_for_two_tat,</span><br><span class="line">              <span class="string">&#x27;generous_tit_for_tat&#x27;</span>: generous_tit_for_tat,</span><br><span class="line">              <span class="string">&#x27;tit_for_tat&#x27;</span>: tit_for_tat,</span><br><span class="line">              <span class="string">&#x27;win_stay_lose_switch&#x27;</span>: win_stay_lose_switch,</span><br><span class="line">              <span class="string">&#x27;random_react_50&#x27;</span>: random_react_50,</span><br><span class="line">              <span class="string">&#x27;reverse_tit_for_tat&#x27;</span>: reverse_tit_for_tat,</span><br><span class="line">              <span class="string">&#x27;retaliatory_strike&#x27;</span>: retaliatory_strike,</span><br><span class="line">              <span class="string">&#x27;tester_2&#x27;</span>: tester_2,</span><br><span class="line">              <span class="string">&#x27;random_react_25&#x27;</span>: random_react_25,</span><br><span class="line">              <span class="string">&#x27;always_defect&#x27;</span>: always_defect, &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># Increase the number of players using a certain strategy from 10 to 50</span></span><br><span class="line">strategy_increase = []</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> strategy <span class="keyword">in</span> strategies:</span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">10</span>):</span><br><span class="line">        player = Player()</span><br><span class="line">        player.st_name = strategy</span><br><span class="line">        player.st_func = strategies[player.st_name]</span><br><span class="line">        players.append(player)</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> strategy <span class="keyword">in</span> strategy_increase:</span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">40</span>):</span><br><span class="line">        player = Player()</span><br><span class="line">        player.st_name = strategy</span><br><span class="line">        player.st_func = strategies[player.st_name]</span><br><span class="line">        players.append(player)</span><br><span class="line"></span><br><span class="line">treat_num = <span class="number">200</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">treat</span>(<span class="params">player1: Player, player2: Player</span>):</span><br><span class="line">    history1 = []</span><br><span class="line">    history2 = []</span><br><span class="line">    score1 = <span class="number">0</span></span><br><span class="line">    score2 = <span class="number">0</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(treat_num):</span><br><span class="line">        <span class="comment"># There is a 1% chance that the decision will go wrong</span></span><br><span class="line">        st1 = player1.st_func(history1, history2)</span><br><span class="line">        st1 = st1 <span class="keyword">if</span> random.randint(<span class="number">0</span>, <span class="number">99</span>) &gt; <span class="number">1</span> <span class="keyword">else</span> (<span class="keyword">not</span> st1)</span><br><span class="line">        st2 = player2.st_func(history2, history1)</span><br><span class="line">        st2 = st2 <span class="keyword">if</span> random.randint(<span class="number">0</span>, <span class="number">99</span>) &gt; <span class="number">1</span> <span class="keyword">else</span> (<span class="keyword">not</span> st2)</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> st1 <span class="keyword">and</span> st2:</span><br><span class="line">            score1 += <span class="number">3</span></span><br><span class="line">            score2 += <span class="number">3</span></span><br><span class="line">        <span class="keyword">if</span> st1 <span class="keyword">and</span> <span class="keyword">not</span> st2:</span><br><span class="line">            score1 += <span class="number">0</span></span><br><span class="line">            score2 += <span class="number">5</span></span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> st1 <span class="keyword">and</span> st2:</span><br><span class="line">            score1 += <span class="number">5</span></span><br><span class="line">            score2 += <span class="number">0</span></span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> st1 <span class="keyword">and</span> <span class="keyword">not</span> st2:</span><br><span class="line">            score1 += <span class="number">1</span></span><br><span class="line">            score2 += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">        history1.append(st1)</span><br><span class="line">        history2.append(st2)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Add some pressure to force each player to improve their score.</span></span><br><span class="line">    player1.score += score1 - <span class="number">2.4</span> * treat_num</span><br><span class="line">    player2.score += score2 - <span class="number">2.4</span> * treat_num</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">writer = FFMpegWriter(fps=<span class="number">30</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> writer.saving(fig, <span class="string">&quot;rpdg.mp4&quot;</span>, dpi=<span class="number">100</span>):</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, <span class="number">1501</span>):</span><br><span class="line">        <span class="keyword">for</span> player1 <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(players)):</span><br><span class="line">            <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">                player2 = random.randint(<span class="number">0</span>, <span class="built_in">len</span>(players) - <span class="number">1</span>)</span><br><span class="line">                <span class="keyword">if</span> player1 != player2:</span><br><span class="line">                    <span class="keyword">break</span></span><br><span class="line">            treat(players[player1], players[player2])</span><br><span class="line"></span><br><span class="line">            <span class="comment"># Players unable to improve their scores will be forced to use new strategies</span></span><br><span class="line">            <span class="keyword">if</span> players[player1].score &lt;= <span class="number">0</span>:</span><br><span class="line">                p = random.randint(<span class="number">0</span>, <span class="built_in">len</span>(players) - <span class="number">1</span>)</span><br><span class="line">                players[player1].score = <span class="number">10000</span></span><br><span class="line">                players[player1].st_name = players[p].st_name</span><br><span class="line">                players[player1].st_func = players[p].st_func</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span> players[player1].score &lt;= <span class="number">0</span>:</span><br><span class="line">                p = random.randint(<span class="number">0</span>, <span class="built_in">len</span>(players) - <span class="number">1</span>)</span><br><span class="line">                players[player2].score = <span class="number">10000</span></span><br><span class="line">                players[player2].st_name = players[p].st_name</span><br><span class="line">                players[player2].st_func = players[p].st_func</span><br><span class="line"></span><br><span class="line">        x = <span class="built_in">list</span>(strategies.keys())</span><br><span class="line">        result = [<span class="number">0</span> <span class="keyword">for</span> result <span class="keyword">in</span> x]</span><br><span class="line">        <span class="keyword">for</span> player <span class="keyword">in</span> players:</span><br><span class="line">            result[x.index(player.st_name)] += player.score</span><br><span class="line"></span><br><span class="line">        plt.clf()</span><br><span class="line">        plt.barh(x, result)</span><br><span class="line">        plt.title(<span class="string">f&#x27;increase=<span class="subst">&#123;strategy_increase&#125;</span> round=<span class="subst">&#123;i&#125;</span> &#x27;</span>)</span><br><span class="line">        plt.pause(<span class="number">0.001</span>)</span><br><span class="line">        <span class="keyword">if</span> i % <span class="number">10</span> == <span class="number">0</span>:</span><br><span class="line">            writer.grab_frame()</span><br></pre></td></tr></table></figure>
+<p><br></p>
+<p>生成的视频如下：</p>
+<p>The videos are as follows:</p>
+<p><video src="1.mp4" controls=""><a href="1.mp4">Video</a></video></p>
+<p><br></p>
+<p>可以看出，“总是合作”策略不久就消失了，一些无脑合作的策略消失的也很快。虽然“总是背叛”和“报复”在中期主导着局面，并且导致所有的策略的分数都掉得飞快，但最终还是三种“以牙还牙”策略坚持到了最后。这似乎说明纯圣母和纯坏蛋都不会在社会上存在，主导社会的是有自卫能力的好人。</p>
+<p>It becomes clear that the "always cooperate" strategy soon faded, as
+did strategies that involved mindless cooperation. Although "always
+defect" and "retaliatory strike" dominated the scene in the medium term
+and caused a rapid drop in all strategies' scores, three types of
+"tit-for-tat" strategies eventually prevailed. This suggests that Real
+good guys and real devils do not exist in society, and those who govern
+are good people with the ability to defend themselves.</p>
+<p><br></p>
+<p>另，“慷慨的以牙还牙”要比普通“以牙还牙”更成功，这似乎说明要适当原谅别人的错误。</p>
+<p>Additionally, the "generous tit-for-tat" has proven to be more
+successful than the regular "tit-for-tat," implying the importance of
+forgiving others' mistakes.</p>
+<p><br></p>
+<h3 id="修改初始分布---adjusting-the-initial-distribution">修改初始分布
+- Adjusting the Initial Distribution</h3>
+<p>考虑到如果只有一个“以牙还牙”，其余人都是“全部背叛”，那这一个“以牙还牙”一定坚持不了多久。这说明最终结果与策略的初始分布有关。在上文的程序中，在strategy_increase列表处添加策略的名字可以将此策略的初始数量从10加到50。比如：</p>
+<p>It seems that if there is only one "tit-for-tat," and everyone else
+"always betrays", this single one is unlikely to last long. Does this
+signify that the final outcome is related to the initial distribution of
+strategies. In the above program, adding strategy names to the
+strategy_increase list increases its initial number from 10 to 50. For
+instance:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">strategy_increase = [<span class="string">&#x27;tit_for_tat&#x27;</span>, <span class="string">&#x27;generous_tit_for_tat&#x27;</span>]</span><br></pre></td></tr></table></figure>
+<p><br></p>
+<p>所有模拟的结果只有两种可能，“针锋相对”阵营获胜，或者“报复”获胜。“针锋相对”阵营其实相当脆弱。如果“全部背叛”和“报复”的比例超过一定值，那针锋相对就很难取得优势。值得注意的是，即使开局是由“全部合作”主导的，但由于它不会存活太久，它反而变成了培养“全部背叛”等非友善策略的土壤。</p>
+<p>All the simulations' results only have two possibilities - either the
+"Tit for Tat" camp wins or the "retaliatory strike" prevails. The "Tit
+for Tat" camp is relatively fragile. If the proportion of "always
+betrays" and "retaliatory strike" exceeds a certain level, it makes it
+challenging for "Tit for Tat" to gain superiority. Notably, even though
+the game could start with a dominance of "Total Cooperation", it doesn’t
+last long and ironically, it becomes the breeding ground for
+non-friendly strategies like "always betrays".</p>
+<p><br></p>
+<p>另外，如果开局就是由“针锋相对”系策略主导，那么所有的非友善策略会很快得全都消失，但很多友善策略都能有存活空间。</p>
+<p>这说明爱与和平不能拯救世界，法治和正义才能（</p>
+<p>On another note, if the game starts dominated by the "Tit for Tat"
+strategy, then all the non-friendly strategies will soon disappear,
+providing space for many friendly strategies.</p>
+<p>This highlights that love and peace cannot save the world, but law
+and justice can.</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E7%BC%96%E7%A8%8B-programming/" rel="tag"># 编程 - Programming</a>
+          </div>
+
+        
+  <div class="social-like a2a_kit a2a_kit_size_32 a2a_default_style">
+    <a class="a2a_dd" target="_blank" rel="noopener" href="https://www.addtoany.com/share"></a>
+      <a class="a2a_button_facebook"></a>
+      <a class="a2a_button_twitter"></a>
+      <a class="a2a_button_mastodon"></a>
+  </div>
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/post/21/" rel="prev" title="元键政1：所有理性人本质上都是相同的，但有独特的要捍卫的价值观 - Meta Political Discussion 1：All rational people are fundamentally the same, but each has unique values to defend.">
+                  <i class="fa fa-angle-left"></i> 元键政1：所有理性人本质上都是相同的，但有独特的要捍卫的价值观 - Meta Political Discussion 1：All rational people are fundamentally the same, but each has unique values to defend.
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/post/23/" rel="next" title="插件推荐：屏蔽黄推 - Plugin Recommendation：Twitter Block Porn">
+                  插件推荐：屏蔽黄推 - Plugin Recommendation：Twitter Block Porn <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments utterances-container"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2023 – 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class=""></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">多想，多读，多练，多问 - Think more, read more, practice more, and ask more</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+
+  <script src="/js/third-party/addtoany.js"></script>
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+<script class="next-config" data-name="utterances" type="application/json">{"enable":true,"repo":"user-name/repo-name","issue_term":"pathname","theme":"github-light"}</script>
+<script src="/js/third-party/comments/utterances.js"></script>
+
+
+</body>
+</html>
+
+<script src="https://cdn.jsdelivr.net/gh/tennisatw/live2d-widget@1.96/autoload.js" async="async" ></script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/tennisatw/blogfiles@1.6/waline.css"/>
+<script type="module">
+    import { init } from 'https://cdn.jsdelivr.net/gh/tennisatw/blogfiles@1.6/waline.mjs';
+    window.init = init;
+</script>
+
+<script type="module">
+  window.init({
+    el: '.comments',
+    lang: 'en',
+    serverURL: 'https://comment.tennisatw.com',
+  });
+</script>
+
+<script>
+  window.onload = function() {
+    // 延迟执行，确保动画已经完成
+    setTimeout(function() {
+      // 获取需要操作的元素
+      const targetLanguageDiv = document.getElementById(":0.targetLanguage");
+      const skipTranslateDiv = document.querySelector(".skiptranslate.goog-te-gadget");
+      
+      // 删除不需要的文本节点和span元素
+      if (skipTranslateDiv) {
+        const textNodes = Array.from(skipTranslateDiv.childNodes).filter(node => node.nodeType === Node.TEXT_NODE);
+        textNodes.forEach(node => node.remove());
+        
+        const spanElement = skipTranslateDiv.querySelector("span");
+        if (spanElement) {
+            spanElement.remove();
+        }
+      }
+
+      // 隐藏不需要的元素
+      var trans = document.getElementsByClassName('VIpgJd-ZVi9od-aZ2wEe-wOHMyf');
+        for (var i = 0; i < trans.length; i++) {
+            var tran = trans[i];
+                tran.className += " hidden";
+        }
+
+    }, 500); // 延迟时间
+  };
+</script>
