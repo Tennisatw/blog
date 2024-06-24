@@ -4,12 +4,6 @@ permalink: about/
 date: 2024-04-11 19:36:02
 ---
 
-### 页面列表 - Page list
-
-**[信息来源 - Information sources](/info-sources/)**\ \ \ \ 推荐一些高质量的中文时评/政治/科普信息来源。
-
-<br>
-
 ### Tennisatw（作者 - Author）
 
 ![](../images/avatar.png){ width=200px }
@@ -73,16 +67,6 @@ Additionally, there's a Google Translate plugin at the top left corner, if neede
 
 <br>
 
-Atom订阅地址：[https://blog.tennisatw.com/atom.xml](https://blog.tennisatw.com/atom.xml)
-
-Atom subscription address: [https://blog.tennisatw.com/atom.xml](https://blog.tennisatw.com/atom.xml)
-
-RSS订阅地址：[https://blog.tennisatw.com/rss2.xml](https://blog.tennisatw.com/rss2.xml)
-
-RSS subscription address: [https://blog.tennisatw.com/rss2.xml](https://blog.tennisatw.com/rss2.xml)
-
-<br>
-
 <p class="tennisbot" id="😿">如果加载Tennisbot花费太多时间，或者影响了正常阅读，或者只是不想看到她，可以将鼠标放到聊天框上，然后点击弹出的“关闭”按钮来隐藏她，此时左下角会出现一个蓝紫色标签。如果想再次看到Tennisbot，只需点击标签即可。</p>
 
 <p class="tennisbot" id="😿">If loading Tennisbot takes too much time, interferes with your reading, or if you simply do not want to see it, you can hide it by hovering your mouse over the chatbox and clicking on the "Close" button that appears. At this point, a purple-blue tag will appear in the lower left corner. If you wish to see Tennisbot again, just click on the tag. </p>
@@ -106,12 +90,6 @@ Everyone is always welcome to leave comments under the blog, even those with dif
 本博客的评论插件为[Waline](https://waline.js.org/)支持以Markdown的格式进行评论。
 
 The comment plugin used on this blog is [Waline](https://waline.js.org/en/), which supports comments in Markdown format.
-
-### 其他 - Others
-
-正在写[《化学自学指南》](https://chemistry.tennisatw.com/)，欢迎随时监工。
-
-Working on ["Self-Study Guide to Chemistry"](https://chemistry.tennisatw.com/) now, welcome to take a look.
 
 <br>
 

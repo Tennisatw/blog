@@ -96,11 +96,9 @@ open_graph:
 # Value before `||` delimiter is the target link, value after `||` delimiter is the name of Font Awesome icon.
 # External url should start with http:// or https://
 menu:
-  首页 - home: / || fa fa-home
-  关于 - about: /about/ || fa fa-user
-  标签 - tags: /tags/ || fa fa-tags
-  分类 - categories: /categories/ || fa fa-th
-  归档 - archives: /archives/ || fa fa-archive
+  首页 - Home: / || fa fa-home
+  关于 - About: /about/ || fa fa-user
+  页面列表 - Pages: /pages/ || fa fa-sitemap
   #schedule: /schedule/ || fa fa-calendar
   #站点地图 - sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat
@@ -131,7 +129,7 @@ sidebar:
   #  - always  expand for all pages automatically.
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  totally remove sidebar including sidebar toggle.
-  display: remove
+  display: post
 
   # Sidebar padding in pixels.
   padding: 18
@@ -141,7 +139,7 @@ sidebar:
 # Sidebar Avatar
 avatar:
   # Replace the default image and set the url here.
-  url: #/images/avatar.gif
+  url: /images/avatar.png
   # If true, the avatar will be displayed in circle.
   rounded: false
   # If true, the avatar will be rotated with the cursor.
@@ -155,10 +153,10 @@ site_state: false
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
-  #Email: mailto:tennisatw@mail.com || fa fa-envelope
-  #GitHub: https://github.com/tennisatw || fab fa-github
+  Email: mailto:tennisatw@mail.com || fa fa-envelope
+  GitHub: https://github.com/tennisatw || fab fa-github
   #Weibo: https://weibo.com/yourname || fab fa-weibo
-  #Twitter: https://twitter.com/tennisatw || fab fa-twitter
+  Twitter: https://twitter.com/tennisatw || fab fa-twitter
   #FB Page: https://www.facebook.com/yourname || fab fa-facebook
   #StackOverflow: https://stackoverflow.com/yourname || fab fa-stack-overflow
   #YouTube: https://youtube.com/yourname || fab fa-youtube
@@ -182,7 +180,7 @@ links:
 # Table of Contents in the Sidebar
 # Front-matter variable (nonsupport wrap expand_all).
 toc:
-  enable: false
+  enable: true
   # Automatically add list number to toc.
   number: true
   # If true, all words will placed on next lines if header width longer then sidebar width.
