@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#505070"><meta name="generator" content="Hexo 7.1.1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-50.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-50.png">
+  <link rel="mask-icon" href="/images/favicon-50.svg" color="#505070">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha256-wiz7ZSCn/btzhjKDQBms9Hx4sSeUYsDrTLg7roPstac=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"blog.tennisatw.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.19.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":true,"color":"#505070","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"utterances","storage":true,"lazyload":false,"nav":null,"activeClass":"utterances"},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="组里的人要分析一个系统的氢键数量和氢键自相关函数（Hbond autocorrelation function，hbacf）。A colleague in our group is tasked with analyzing the number of hydrogen bonds and the hydrogen bond autocorrelation function (hbacf) in">
+<meta property="og:type" content="article">
+<meta property="og:title" content="为没有拓扑信息的系统分析氢键 - Analyzing Hydrogen Bonds in Systems without Topological Information">
+<meta property="og:url" content="https://blog.tennisatw.com/post/46/">
+<meta property="og:site_name" content="Tennisatw的博客 - Blog of Tennisatw">
+<meta property="og:description" content="组里的人要分析一个系统的氢键数量和氢键自相关函数（Hbond autocorrelation function，hbacf）。A colleague in our group is tasked with analyzing the number of hydrogen bonds and the hydrogen bond autocorrelation function (hbacf) in">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://blog.tennisatw.com/post/46/1.png">
+<meta property="og:image" content="https://blog.tennisatw.com/post/46/2.png">
+<meta property="article:published_time" content="2024-03-30T07:39:44.000Z">
+<meta property="article:modified_time" content="2024-06-14T18:31:47.712Z">
+<meta property="article:author" content="Tennisatw">
+<meta property="article:tag" content="编程 - Programming">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://blog.tennisatw.com/post/46/1.png">
+
+
+<link rel="canonical" href="https://blog.tennisatw.com/post/46/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://blog.tennisatw.com/post/46/","path":"/post/46/","title":"为没有拓扑信息的系统分析氢键 - Analyzing Hydrogen Bonds in Systems without Topological Information"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>为没有拓扑信息的系统分析氢键 - Analyzing Hydrogen Bonds in Systems without Topological Information | Tennisatw的博客 - Blog of Tennisatw</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="Tennisatw的博客 - Blog of Tennisatw" type="application/atom+xml">
+<link rel="alternate" href="/rss2.xml" title="Tennisatw的博客 - Blog of Tennisatw" type="application/rss+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Tennisatw的博客 - Blog of Tennisatw</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索 - Search" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+    <div id="google_translate_element"></div>
+    <script type="text/javascript" async="async" >
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {pageLanguage: 'en,zh-CN', 
+        includedLanguages: 'en,zh-CN,zh-TW,es,ar,hi,ru,ja,de,fr', 
+        layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 
+        'google_translate_element');
+    }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script><li class="menu-item menu-item-首页---home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页 - Home</a></li><li class="menu-item menu-item-关于---about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于 - About</a></li><li class="menu-item menu-item-页面列表---pages"><a href="/pages/" rel="section"><i class="fa fa-sitemap fa-fw"></i>页面列表 - Pages</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索 - Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%83%8C%E6%99%AF%E4%BB%8B%E7%BB%8D---background"><span class="nav-text">背景介绍 - Background</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%BB%E5%8F%96%E8%BD%A8%E8%BF%B9%E5%AF%BB%E6%89%BE%E6%B0%A2%E9%94%AE---reading-the-trajectory-and-identifying-hydrogen-bonds"><span class="nav-text">1.
+读取轨迹，寻找氢键 - Reading the trajectory and identifying hydrogen
+bonds</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%B0%A2%E9%94%AE%E6%95%B0%E9%87%8F---calculating-the-number-of-hydrogen-bonds"><span class="nav-text">2.
+计算氢键数量 - Calculating the Number of Hydrogen Bonds</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%B0%A2%E9%94%AE%E8%87%AA%E7%9B%B8%E5%85%B3%E5%87%BD%E6%95%B0---calculating-the-hydrogen-bond-acf"><span class="nav-text">3.
+计算氢键自相关函数 - Calculating the Hydrogen Bond ACF</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Tennisatw"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">Tennisatw</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="mailto:tennisatw@mail.com" title="Email → mailto:tennisatw@mail.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://github.com/tennisatw" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;tennisatw" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/tennisatw" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;tennisatw" rel="noopener me" target="_blank"><i class="fab fa-twitter fa-fw"></i></a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://blog.tennisatw.com/post/46/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Tennisatw">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Tennisatw的博客 - Blog of Tennisatw">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="为没有拓扑信息的系统分析氢键 - Analyzing Hydrogen Bonds in Systems without Topological Information | Tennisatw的博客 - Blog of Tennisatw">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          为没有拓扑信息的系统分析氢键 - Analyzing Hydrogen Bonds in Systems without Topological Information
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2024/03/30 01:39:44" itemprop="dateCreated datePublished" datetime="2024-03-30T01:39:44-06:00">2024/03/30</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2024/06/14 12:31:47" itemprop="dateModified" datetime="2024-06-14T12:31:47-06:00">2024/06/14</time>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="Word count in article">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">Word count in article: </span>
+      <span>4.8k</span>
+    </span>
+    <span class="post-meta-item" title="Reading time">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">Reading time &asymp;</span>
+      <span>17 mins.</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h3 id="背景介绍---background">背景介绍 - Background</h3>
+<p><br></p>
+<p>组里的人要分析一个系统的氢键数量和氢键自相关函数（Hbond
+autocorrelation function，hbacf）。</p>
+<p>A colleague in our group is tasked with analyzing the number of
+hydrogen bonds and the hydrogen bond autocorrelation function (hbacf) in
+a system.</p>
+<p><img src="1.png" /></p>
+<p><br></p>
+<p>通常来说，想要获得氢键相关的信息，如果是Gromacs模拟的系统，直接用Gromacs分析就可以。对于其他系统，如果懂点python的话，也可以用MDAnalysis来分析。但是这两个软件必须要系统的拓扑信息（即键连接的信息）。但是我们是用cp2k做的量子力学模拟，根本就没有“键”的概念，也更无从谈起拓扑信息了。</p>
+<p>VMD倒是可以在没有拓扑信息的条件下计算氢键，但是它给不出氢键的自相关函数，并且VMD非常容易报错，所以也没法用。</p>
+<p>To obtain information about hydrogen bonds, if the system is
+simulated with Gromacs, one can directly use Gromacs for analysis. For
+other systems, if one is familiar with Python, MDAnalysis can be used
+for the analysis. However, both tools require the topological
+information of the system (i.e., the information on bond connections).
+But our simulations were conducted using cp2k for quantum mechanical
+calculations, where the concept of "bonds" doesn’t exist, let alone
+topological information.</p>
+<p>VMD can calculate hydrogen bonds without topological information, but
+it cannot compute the autocorrelation function of hydrogen bonds.
+Moreover, VMD seems to encounter errors very frequently, rendering it
+unusable.</p>
+<p><br></p>
+<p>此外，系统中除了要分析的分子外，还有一些水分子，我们不想分析水分子产生的氢键，但我们的轨迹文件里又区分不开不同的氧原子和氢原子。这说明我们要么手动编辑轨迹文件，要么只能手动写代码了。</p>
+<p>Additionally, besides the molecules of interest, there are water
+molecules in the system whose hydrogen bonds we do not wish to analyze.
+However, our trajectory files do not differentiate between the various
+oxygen and hydrogen atoms. This means we must either manually edit the
+trajectory files or resort to writing our own code.</p>
+<p><br></p>
+<p>还有一个小难点：我们的系统不是正交系统（系统晶胞的三个边长的夹角不都是90度），而且我们也没有晶胞（unit
+cell）在模拟过程中尺寸变化的信息。这无论如何都会影响
+对穿过边界的氢键的判断。</p>
+<p>Another minor issue is that our system is non-orthogonal (the angles
+between the sides of the unit cell are not all 90 degrees), and we do
+not have information on the size changes of the unit cell during the
+simulation. This will inevitably affect the judgment of hydrogen bonds
+that cross boundaries.</p>
+<p><br></p>
+<p>简单搜索了一下发现网上没有现成的脚本（估计也不能有，因为要求太多了），于是就自己动手撸了。</p>
+<p>A quick search revealed that there are no ready-made scripts
+available online (probably because the requirements are too complex), so
+we decided to develop our own.</p>
+<p><br></p>
+<p>事后看来，似乎可以用MDAnalysis.topology.guessers.guess_bonds猜测生成键的信息，然后计算氢键的各个性质。非正交的晶胞也可以用MDAnalysis.transformations.boxdimensions设置。只需手动编辑轨迹文件，再生成一个拓扑文件，应该是可以用的......</p>
+<p>但是调试这些东西也可能花更长的时间，整不好还不如自己写代码快。</p>
+<p>In hindsight, it seems possible to use
+MDAnalysis.topology.guessers.guess_bonds to guess and generate bond
+information, and then compute various properties of hydrogen bonds.
+Non-orthogonal cells can also be addressed with
+MDAnalysis.transformations.boxdimensions. With manual editing of the
+trajectory files and generating a topology file, it should work...</p>
+<p>But debugging these things might take even longer, and it might not
+be faster than writing our own code.</p>
+<p><br></p>
+<hr />
+<h3
+id="读取轨迹寻找氢键---reading-the-trajectory-and-identifying-hydrogen-bonds">1.
+读取轨迹，寻找氢键 - Reading the trajectory and identifying hydrogen
+bonds</h3>
+<p>首先先读取轨迹。我们的轨迹文件是.xyz结构。如下所示：</p>
+<p>First, we read the trajectory. Our trajectory file is in .xyz format,
+where each frame is structured as follows:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">     375</span><br><span class="line"> i =        0, time =        0.000, E =     -1806.5448765045</span><br><span class="line">  C         8.1095344200       15.8026241800        1.5938169800</span><br><span class="line">  C         5.7444869400       16.3711774800       -2.6299998400</span><br><span class="line">  C         6.6043943500       21.2214335300       -2.1728327500</span><br><span class="line">  C         9.1651693300       20.6276966700        1.9919611600</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<p><br></p>
+<p>读取这种轨迹非常简单，一个readline()循环，然后根据其split()出的列表长度判断，是把这一行储存在现有的帧中，还是把这一帧结束掉，储存到列表里，新建一帧。这里留了个心眼，估计之后对原子的位置的计算会非常多，所以把原子的位置储存为np.ndarray形式，而把原子的种类信息单独储存在另一个列表中。</p>
+<p>Reading this type of trajectory is quite straightforward: a
+<code>readline()</code> loop is used, and then based on the length of
+the list obtained from its <code>split()</code>, it is determined
+whether to store the line in the current frame or to end the frame and
+store it in a list, then start a new frame. Anticipating frequent
+calculations on atomic positions in subsequent steps, the atomic
+positions are stored in the form of an <code>np.ndarray</code>, while
+the atomic type information is kept in a separate list.</p>
+<p><br></p>
+<p>下一步是判断系统内有哪些氢键。这个没有捷径，只能一帧一帧地判断。这也是本程序中最慢的一步。</p>
+<p>氢键的判断的标准不一，通常来说，如果
+氢键受体原子(D)与氢键供体原子(A)之间的距离 小于一个值，且
+氢键受体原子-氢原子(H)-氢键供体原子
+大于一个角度时，就认为这是一个氢键。有时D-H的距离也会考虑在内。</p>
+<p>我采用的标准是
+D-A小于3.5A，DHA角不小于150°，且D-H小于1.2A。它不是最合理的判断标准，但应该可以用。</p>
+<p>为了少判断一点角度，多判断一点距离，D-A小于1.8A的我也都认为不是合理的氢键，因为D-A的化学键最长也差不多有1.7A。</p>
+<p>The next step is to determine the hydrogen bonds present in the
+system. This process has no shortcut and must be done frame by frame,
+making it the slowest step in the program.</p>
+<p>The criteria for identifying hydrogen bonds vary, but generally, if
+the distance between the hydrogen bond acceptor atom (D) and the
+hydrogen bond donor atom (A) is less than a certain value, and the angle
+formed by the hydrogen bond acceptor atom, hydrogen atom (H), and
+hydrogen bond donor atom is greater than a certain angle, then it is
+considered a hydrogen bond. Sometimes the distance between D and H is
+also taken into account.</p>
+<p>The criteria I used are: D-A less than 3.5 Å, DHA angle not less than
+150°, and D-H less than 1.2 Å. While not the most accurate criteria,
+they should be functional.</p>
+<p>To reduce the number of angle calculations and focus more on
+distance, I also consider any D-A distance less than 1.8 Å as not a
+valid hydrogen bond, because the longest chemical bond between D and A
+is also about 1.7 Å.</p>
+<p><br></p>
+<p>寻找氢键，首先是计算两个原子之间的距离，这里需要用一点高数的几何学的知识。由于本系统含有周期性边界，且非正交，所以需要先把原子坐标转换为相对于晶胞的坐标，然后计算其距离，并四舍五入成最小的值，然后再转回正常的坐标。</p>
+<p>因为我们没有每一步的晶胞尺寸数据，所以只能用平均值，导致晶胞参数变动较大的一些帧（如果有的话）处
+无法准确判断边界处的氢键。</p>
+<p>To find hydrogen bonds, the first step is to calculate the distance
+between two atoms, requiring some knowledge of calculus and geometry.
+Given that our system has periodic boundaries and is non-orthogonal,
+it's necessary to convert the atomic coordinates into coordinates
+relative to the unit cell, calculate their distance, round it to the
+nearest minimum value, and then convert back to the standard
+coordinates.</p>
+<p>We lack the cell size data for each step, so we must use an average
+value. This approach may lead to inaccuracies in determining hydrogen
+bonds at the boundaries of frames with significant variations in cell
+parameters, if any exist.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># box size, in Angstrom</span></span><br><span class="line">A = np.array([<span class="number">25.11</span>, <span class="number">0.0</span>, <span class="number">0.0</span>])  </span><br><span class="line">B = np.array([<span class="number">0.0</span>, <span class="number">22.99</span>, <span class="number">0.0</span>])</span><br><span class="line">C = np.array([-<span class="number">1.49</span>, <span class="number">0</span>, <span class="number">6.82</span>])</span><br><span class="line">vectors = np.array([A, B, C]).T</span><br><span class="line">inverse_vectors = np.linalg.inv(vectors)</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">distance</span>(<span class="params">coord1: np.ndarray, coord2: np.ndarray</span>) -&gt; <span class="built_in">float</span>:</span><br><span class="line">    <span class="comment"># Convert points to the box&#x27;s coordinate system</span></span><br><span class="line">    p1_box = np.dot(inverse_vectors, coord1)</span><br><span class="line">    p2_box = np.dot(inverse_vectors, coord2)</span><br><span class="line">    <span class="comment"># Apply minimum image convention in the box&#x27;s coordinate system</span></span><br><span class="line">    delta_box = p1_box - p2_box</span><br><span class="line">    delta_box -= np.<span class="built_in">round</span>(delta_box)</span><br><span class="line">    <span class="comment"># Convert the distance back to the original coordinate system</span></span><br><span class="line">    delta = np.dot(vectors, delta_box)</span><br><span class="line">    <span class="comment"># Calculate the distance</span></span><br><span class="line">    distance = np.sqrt(np.<span class="built_in">sum</span>(delta**<span class="number">2</span>))</span><br><span class="line">    <span class="keyword">return</span> distance</span><br></pre></td></tr></table></figure>
+<p><br></p>
+<p>计算三个原子之间的角度也是一样，首先计算从H到D的向量（计算向量和距离的唯一区别就在于，向量不需要最后对三个差值平方求和后开根号），然后计算从H到A的向量。这两个向量的夹角的cos值就是a·b/(|a||b|)。为了稍微省一点计算步骤，这里不把它转换成角度，直接用cos值比较。代码如下：</p>
+<p>Calculating the angle between three atoms follows a similar process.
+First, calculate the vector from H to D (the only difference between
+calculating the vector and the distance is that for the vector, you
+don't need to take the square root of the sum of the squares of the
+three differences), and then calculate the vector from H to A. The
+cosine of the angle between these two vectors is given by a·b/(|a||b|).
+To save some computational steps, the comparison is made directly using
+the cosine value instead of converting it to an angle. The code is as
+follows:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">direction_vector</span>(<span class="params">coord1, coord2</span>):</span><br><span class="line">    <span class="comment"># Convert points to the box&#x27;s coordinate system</span></span><br><span class="line">    p1_box = np.dot(inverse_vectors, coord1)</span><br><span class="line">    p2_box = np.dot(inverse_vectors, coord2)</span><br><span class="line">    <span class="comment"># Apply minimum image convention in the box&#x27;s coordinate system</span></span><br><span class="line">    delta_box = p1_box - p2_box</span><br><span class="line">    delta_box -= np.<span class="built_in">round</span>(delta_box)</span><br><span class="line">    <span class="comment"># Convert the direction vector back to the original coordinate system</span></span><br><span class="line">    direction = np.dot(vectors, delta_box)</span><br><span class="line">    <span class="keyword">return</span> direction</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">angle</span>(<span class="params">coord1: np.ndarray, coord2: np.ndarray, coord3: np.ndarray</span>) -&gt; <span class="built_in">float</span>:</span><br><span class="line">    <span class="comment"># Calculate direction vectors</span></span><br><span class="line">    v1 = direction_vector(coord2, coord1)</span><br><span class="line">    v2 = direction_vector(coord3, coord1)</span><br><span class="line">    <span class="comment"># Calculate the cosine of the angle using the dot product</span></span><br><span class="line">    cos_angle = np.dot(v1, v2) / (np.linalg.norm(v1) * np.linalg.norm(v2))</span><br><span class="line">    <span class="comment"># Return cos(angle)</span></span><br><span class="line">    <span class="comment"># Ensure the cosine value is in the valid range [-1, 1] to avoid numerical issues</span></span><br><span class="line">    <span class="keyword">return</span> np.clip(cos_angle, -<span class="number">1</span>, <span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+<p><br></p>
+<p>寻找所有潜在的氢键受体与供体，以及所有的H原子，然后是套用三层循环来“逐个判断”每个原子三元组是否形成氢键。丑陋的代码如下所示：</p>
+<p>To identify all potential hydrogen bond acceptors, donors, and all
+hydrogen (H) atoms, a triple nested loop is employed to "individually
+assess" whether each set of three atoms forms a hydrogen bond. The crude
+code is as follows:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> num_d <span class="keyword">in</span> indices_da:</span><br><span class="line">    <span class="keyword">for</span> num_h <span class="keyword">in</span> indices_h:</span><br><span class="line">        coord_d = coord[num_d]</span><br><span class="line">        coord_h = coord[num_h]</span><br><span class="line">        <span class="keyword">if</span> distance(coord_d, coord_h) &gt; hbond_distance_dh:</span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line">        <span class="keyword">for</span> num_a <span class="keyword">in</span> indices_da:</span><br><span class="line">            <span class="keyword">if</span> num_a == num_d:</span><br><span class="line">                <span class="keyword">continue</span></span><br><span class="line">            coord_a = coord[num_a]</span><br><span class="line"></span><br><span class="line">            distance_da = distance(coord_d, coord_a)</span><br><span class="line">            <span class="keyword">if</span> distance_da &lt;<span class="number">1.8</span>:</span><br><span class="line">                <span class="keyword">continue</span></span><br><span class="line">            <span class="keyword">elif</span> distance_da &gt; hbond_distance_da:</span><br><span class="line">                <span class="keyword">continue</span></span><br><span class="line"></span><br><span class="line">            angle_dha = angle(coord_d, coord_h, coord_a)</span><br><span class="line">            <span class="comment"># angle &gt; 150 means cos(angle) &lt; cos(150)</span></span><br><span class="line">            <span class="keyword">if</span> angle_dha &lt; hbond_angle_dha_cos:</span><br><span class="line">                hbond = Hbond(num_d, num_h, num_a)</span><br></pre></td></tr></table></figure>
+<p>这三层循环外，还有一个对帧循环。</p>
+<p>Outside these three nested loops, there is another loop iterating
+over the frames.</p>
+<p><br></p>
+<p>其实，如果这个系统是正交的话，可以用kdtree来非常方便地统计与D距离小于1.2的H，和与D距离小于3.5的A。虽然也是三层循环，但是不用判断原子之间的距离了，计算速度超级加倍，代码如下所示。</p>
+<p>In fact, if the system were orthogonal, a k-d tree could be used to
+efficiently identify H atoms within a 1.2 Å distance from D, and A atoms
+within a 3.5 Å distance from D. Although this still involves three
+nested loops, there is no need to calculate the distances between atoms
+directly, which significantly speeds up the computations. The code for
+this approach is as follows:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">atom_h = [atom == <span class="string">&#x27;H&#x27;</span> <span class="keyword">for</span> atom <span class="keyword">in</span> atoms]</span><br><span class="line">atom_da = [atom <span class="keyword">in</span> hbond_donors_acceptors <span class="keyword">for</span> atom <span class="keyword">in</span> atoms]</span><br><span class="line">indices_h = [i <span class="keyword">for</span> i, is_h <span class="keyword">in</span> <span class="built_in">enumerate</span>(atom_h) <span class="keyword">if</span> is_h]</span><br><span class="line">indices_da = [i <span class="keyword">for</span> i, is_da <span class="keyword">in</span> <span class="built_in">enumerate</span>(atom_da) <span class="keyword">if</span> is_da]</span><br><span class="line"></span><br><span class="line"><span class="comment"># Build the KDTree, a data structure for quickly finding the nearest atoms</span></span><br><span class="line"><span class="comment"># For each donor atom, find the hydrogen atoms within the distance hbond_distance_dh</span></span><br><span class="line"><span class="comment"># For each donor atom, find the acceptor atoms within the distance hbond_distance_da</span></span><br><span class="line">kdtree_h = KDTree(coord[atom_h], boxsize=box_size)</span><br><span class="line">kdtree_da = KDTree(coord[atom_da], boxsize=box_size)</span><br><span class="line">neighbors_dh = kdtree_da.query_ball_tree(kdtree_h, hbond_distance_dh)</span><br><span class="line">neighbors_da = kdtree_da.query_ball_tree(kdtree_da, hbond_distance_da)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Use triple loop to find the hydrogen bonds</span></span><br><span class="line"><span class="keyword">for</span> num_d, num_hs <span class="keyword">in</span> <span class="built_in">enumerate</span>(neighbors_dh):</span><br><span class="line">    <span class="keyword">for</span> num_h <span class="keyword">in</span> num_hs:</span><br><span class="line">        <span class="keyword">for</span> num_a <span class="keyword">in</span> neighbors_da[num_d]:</span><br><span class="line">            <span class="keyword">if</span> num_a != num_d:</span><br><span class="line">                coord_d = coord[indices_da[num_d]]</span><br><span class="line">                coord_h = coord[indices_h[num_h]]</span><br><span class="line">                coord_a = coord[indices_da[num_a]]</span><br><span class="line">                angle_dha = angle(coord_d, coord_h, coord_a)</span><br></pre></td></tr></table></figure>
+<p><br></p>
+<p>为了估算无聊的等待有多久，我在对帧循环的末尾添加了这么一个小进度条：</p>
+<p>To estimate the duration of the tedious waiting period, I added a
+small progress bar at the end of the loop over frames:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">    percent = prec / <span class="built_in">len</span>(frames) * <span class="number">100</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;\r<span class="subst">&#123;percent:<span class="number">.2</span>f&#125;</span>%&quot;</span>, end=<span class="string">&quot;&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;\r100% Done!&quot;</span>)</span><br></pre></td></tr></table></figure>
+<p><br></p>
+<p>寻找完所有的氢键后，使用pickle包把氢键的信息储存为二进制文件，因为氢键的信息储存在一个自定义类的列表里。我感觉把氢键储存为一个字典列表，然后json.dump也未尝不可。</p>
+<p>After identifying all the hydrogen bonds, the information is stored
+as a binary file using the pickle package, because the hydrogen bond
+information is kept in a list of custom classes. It seems feasible to
+store the hydrogen bonds as a list of dictionaries and then use
+<code>json.dump</code> to save them.</p>
+<p><br></p>
+<p>至此，从文件中读取结构并寻找氢键这一部分就完成了，完整代码如下。我知道读者们（如果有的话）都在等这个。</p>
+<p>With that, the part of reading the structure from the file and
+identifying hydrogen bonds is completed. The complete code is as
+follows, which I know the readers (if there are any) have been waiting
+for.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> pickle</span><br><span class="line"></span><br><span class="line"><span class="comment"># parameters</span></span><br><span class="line">file_address = <span class="string">r&quot;xxx.xyz&quot;</span></span><br><span class="line">hbond_distance_da = <span class="number">3.5</span></span><br><span class="line">hbond_distance_dh = <span class="number">1.2</span></span><br><span class="line">hbond_angle_dha = <span class="number">150</span> * np.pi / <span class="number">180</span>  <span class="comment"># in radian, 150 degree</span></span><br><span class="line">hbond_donors_acceptors = [<span class="string">&quot;O&quot;</span>, <span class="string">&quot;N&quot;</span>, <span class="string">&quot;F&quot;</span>, <span class="string">&quot;P&quot;</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment"># use the average box size, may lead to a certain error in the boundary Hbonds</span></span><br><span class="line">A = np.array([<span class="number">25.11</span>, <span class="number">0.0</span>, <span class="number">0.0</span>])  <span class="comment"># box size, in Angstrom</span></span><br><span class="line">B = np.array([<span class="number">0.0</span>, <span class="number">22.99</span>, <span class="number">0.0</span>])</span><br><span class="line">C = np.array([-<span class="number">1.49</span>, <span class="number">0</span>, <span class="number">6.82</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment"># --------------------------------------------------------------------------------------------</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Frame</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, coord: np.ndarray</span>):</span><br><span class="line">        self.index = <span class="number">0</span></span><br><span class="line">        self.time = <span class="number">0.0</span></span><br><span class="line">        self.atoms = []</span><br><span class="line">        self.coord = coord</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Hbond</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, donor: <span class="built_in">int</span>, hydrogen: <span class="built_in">int</span>, acceptor: <span class="built_in">int</span></span>):</span><br><span class="line">        self.donor = donor</span><br><span class="line">        self.hydrogen = hydrogen</span><br><span class="line">        self.acceptor = acceptor</span><br><span class="line">        self.frame = <span class="number">0</span></span><br><span class="line">        self.distance_dh = <span class="number">0.0</span></span><br><span class="line">        self.distance_da = <span class="number">0.0</span></span><br><span class="line">        self.angle = <span class="number">0.0</span></span><br><span class="line">        <span class="comment"># self.angle = cos(angle_dha)</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># Read the xyz file</span></span><br><span class="line">frames = []</span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(file_address, <span class="string">&quot;r&quot;</span>) <span class="keyword">as</span> file:</span><br><span class="line">    frame = <span class="literal">None</span></span><br><span class="line">    atom_index = <span class="number">0</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            data = file.readline().split()</span><br><span class="line">        <span class="keyword">except</span> EOFError:</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(data) == <span class="number">0</span>:</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(data) == <span class="number">1</span>:</span><br><span class="line">            <span class="keyword">if</span> frame <span class="keyword">is</span> <span class="keyword">not</span> <span class="literal">None</span>:</span><br><span class="line">                frames.append(frame)</span><br><span class="line">            atom_index = <span class="number">0</span></span><br><span class="line">            atom_num = <span class="built_in">int</span>(data[<span class="number">0</span>])</span><br><span class="line">            frame = Frame(np.zeros((atom_num, <span class="number">3</span>)))</span><br><span class="line"></span><br><span class="line">        <span class="keyword">elif</span> data[<span class="number">0</span>] == <span class="string">&quot;i&quot;</span>:</span><br><span class="line">            <span class="comment"># data = [&#x27;i&#x27;, &#x27;=&#x27;, &#x27;1,&#x27;, &#x27;time&#x27;, &#x27;=&#x27;, &#x27;0.500,&#x27;, &#x27;E&#x27;, &#x27;=&#x27;, &#x27;-1806.5437038456&#x27;]</span></span><br><span class="line">            frame.index = <span class="built_in">int</span>(data[<span class="number">2</span>][:-<span class="number">1</span>])</span><br><span class="line">            frame.time = <span class="built_in">float</span>(data[<span class="number">5</span>][:-<span class="number">1</span>])</span><br><span class="line"></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="comment"># data = [&#x27;O&#x27;, &#x27;20.6553100045&#x27;, &#x27;19.5185586845&#x27;, &#x27;1.9664762578&#x27;]</span></span><br><span class="line">            coord = np.array([<span class="built_in">float</span>(data[<span class="number">1</span>]), <span class="built_in">float</span>(data[<span class="number">2</span>]), <span class="built_in">float</span>(data[<span class="number">3</span>])])</span><br><span class="line">            frame.coord[atom_index] = coord</span><br><span class="line">            atom_index += <span class="number">1</span></span><br><span class="line">            frame.atoms.append(data[<span class="number">0</span>])</span><br><span class="line"></span><br><span class="line">    frames.append(frame)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># Function to calculate the distance between two points</span></span><br><span class="line">vectors = np.array([A, B, C]).T</span><br><span class="line">inverse_vectors = np.linalg.inv(vectors)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">distance</span>(<span class="params">coord1: np.ndarray, coord2: np.ndarray</span>) -&gt; <span class="built_in">float</span>:</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Convert points to the box&#x27;s coordinate system</span></span><br><span class="line">    p1_box = np.dot(inverse_vectors, coord1)</span><br><span class="line">    p2_box = np.dot(inverse_vectors, coord2)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Apply minimum image convention in the box&#x27;s coordinate system</span></span><br><span class="line">    delta_box = p1_box - p2_box</span><br><span class="line">    delta_box -= np.<span class="built_in">round</span>(delta_box)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Convert the distance back to the original coordinate system</span></span><br><span class="line">    delta = np.dot(vectors, delta_box)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Calculate the distance</span></span><br><span class="line">    distance = np.sqrt(np.<span class="built_in">sum</span>(delta**<span class="number">2</span>))</span><br><span class="line">    <span class="keyword">return</span> distance</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># Function to calculate the angle between three points</span></span><br><span class="line">vectors = np.array([A, B, C]).T</span><br><span class="line">inverse_vectors = np.linalg.inv(vectors)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">direction_vector</span>(<span class="params">coord1, coord2</span>):</span><br><span class="line">    <span class="comment"># Convert points to the box&#x27;s coordinate system</span></span><br><span class="line">    p1_box = np.dot(inverse_vectors, coord1)</span><br><span class="line">    p2_box = np.dot(inverse_vectors, coord2)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Apply minimum image convention in the box&#x27;s coordinate system</span></span><br><span class="line">    delta_box = p1_box - p2_box</span><br><span class="line">    delta_box -= np.<span class="built_in">round</span>(delta_box)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Convert the direction vector back to the original coordinate system</span></span><br><span class="line">    direction = np.dot(vectors, delta_box)</span><br><span class="line">    <span class="keyword">return</span> direction</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">angle</span>(<span class="params">coord1: np.ndarray, coord2: np.ndarray, coord3: np.ndarray</span>) -&gt; <span class="built_in">float</span>:</span><br><span class="line">    <span class="comment"># Calculate direction vectors</span></span><br><span class="line">    v1 = direction_vector(coord2, coord1)</span><br><span class="line">    v2 = direction_vector(coord3, coord1)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Calculate the cosine of the angle using the dot product</span></span><br><span class="line">    cos_angle = np.dot(v1, v2) / (np.linalg.norm(v1) * np.linalg.norm(v2))</span><br><span class="line">    <span class="comment"># Return cos(angle)</span></span><br><span class="line">    <span class="comment"># Ensure the cosine value is in the valid range [-1, 1] to avoid numerical issues</span></span><br><span class="line">    <span class="keyword">return</span> np.clip(cos_angle, -<span class="number">1</span>, <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># Count the number of hydrogen bonds</span></span><br><span class="line">hbonds = []</span><br><span class="line"><span class="keyword">for</span> prec, frame <span class="keyword">in</span> <span class="built_in">enumerate</span>(frames):</span><br><span class="line">    <span class="comment"># Remove the last 10 water molecules</span></span><br><span class="line">    coord = frame.coord[:-<span class="number">30</span>]</span><br><span class="line">    atoms = frame.atoms[:-<span class="number">30</span>]</span><br><span class="line"></span><br><span class="line">    hbond_angle_dha_cos = np.cos(hbond_angle_dha)</span><br><span class="line"></span><br><span class="line">    atom_h = [atom == <span class="string">&quot;H&quot;</span> <span class="keyword">for</span> atom <span class="keyword">in</span> atoms]</span><br><span class="line">    atom_da = [atom <span class="keyword">in</span> hbond_donors_acceptors <span class="keyword">for</span> atom <span class="keyword">in</span> atoms]</span><br><span class="line">    indices_h = [i <span class="keyword">for</span> i, is_h <span class="keyword">in</span> <span class="built_in">enumerate</span>(atom_h) <span class="keyword">if</span> is_h]</span><br><span class="line">    indices_da = [i <span class="keyword">for</span> i, is_da <span class="keyword">in</span> <span class="built_in">enumerate</span>(atom_da) <span class="keyword">if</span> is_da]</span><br><span class="line">    <span class="comment"># indices_h = [50, 51, 52, ...]</span></span><br><span class="line">    <span class="comment"># indices_da = [89, 90, 91, ...]</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># Use triple loop to find the hydrogen bonds</span></span><br><span class="line">    <span class="keyword">for</span> num_d <span class="keyword">in</span> indices_da:</span><br><span class="line">        <span class="keyword">for</span> num_h <span class="keyword">in</span> indices_h:</span><br><span class="line">            coord_d = coord[num_d]</span><br><span class="line">            coord_h = coord[num_h]</span><br><span class="line">            <span class="keyword">if</span> distance(coord_d, coord_h) &gt; hbond_distance_dh:</span><br><span class="line">                <span class="keyword">continue</span></span><br><span class="line"></span><br><span class="line">            <span class="keyword">for</span> num_a <span class="keyword">in</span> indices_da:</span><br><span class="line">                <span class="keyword">if</span> num_a == num_d:</span><br><span class="line">                    <span class="keyword">continue</span></span><br><span class="line">                </span><br><span class="line">                coord_a = coord[num_a]</span><br><span class="line"></span><br><span class="line">                <span class="comment"># reduce the number of angle calculation, optional</span></span><br><span class="line">                distance_da = distance(coord_d, coord_a)</span><br><span class="line">                <span class="keyword">if</span> distance_da &lt; <span class="number">1.8</span>:</span><br><span class="line">                    <span class="keyword">continue</span></span><br><span class="line">                <span class="keyword">elif</span> distance_da &gt; hbond_distance_da:</span><br><span class="line">                    <span class="keyword">continue</span></span><br><span class="line"></span><br><span class="line">                angle_dha = angle(coord_d, coord_h, coord_a)</span><br><span class="line"></span><br><span class="line">                <span class="comment"># angle &gt; 150 means cos(angle) &lt; cos(150)</span></span><br><span class="line">                <span class="keyword">if</span> angle_dha &lt; hbond_angle_dha_cos:</span><br><span class="line">                    hbond = Hbond(num_d, num_h, num_a)</span><br><span class="line">                    hbond.distance_dh = distance(coord_d, coord_h)</span><br><span class="line">                    hbond.distance_da = distance(coord_d, coord_a)</span><br><span class="line">                    hbond.angle = angle_dha</span><br><span class="line">                    hbond.frame = frame.index</span><br><span class="line">                    hbonds.append(hbond)</span><br><span class="line"></span><br><span class="line">    percent = prec / <span class="built_in">len</span>(frames) * <span class="number">100</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;\r<span class="subst">&#123;percent:<span class="number">.2</span>f&#125;</span>%&quot;</span>, end=<span class="string">&quot;&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;\r100% Done!&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Save the information of hydrogen bonds to a file</span></span><br><span class="line">file_address2 = file_address.split(<span class="string">&quot;.&quot;</span>)[<span class="number">0</span>] + <span class="string">&quot;_hbond.pkl&quot;</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(file_address2, <span class="string">&quot;wb&quot;</span>) <span class="keyword">as</span> file:</span><br><span class="line">    pickle.dump(hbonds, file)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;Save the information of hydrogen bonds to \n<span class="subst">&#123;file_address2&#125;</span>&quot;</span>)</span><br></pre></td></tr></table></figure>
+<p><br></p>
+<hr />
+<h3 id="计算氢键数量---calculating-the-number-of-hydrogen-bonds">2.
+计算氢键数量 - Calculating the Number of Hydrogen Bonds</h3>
+<p>在有了氢键的数据之后，下一步是统计每一帧的氢键的数量。这一部分的代码相当简单，使用pickle读取数据后，简单用一个循环统计一下。代码如下所示。</p>
+<p>After obtaining the hydrogen bond data, the next step is to count the
+number of hydrogen bonds in each frame. This part of the code is quite
+simple: after reading the data with pickle, a loop is used for the
+count. The code is as follows:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> pickle</span><br><span class="line"></span><br><span class="line"><span class="comment"># parameters</span></span><br><span class="line">file_address = <span class="string">r&quot;xxx_hbond.pkl&quot;</span></span><br><span class="line">dt = <span class="number">0.5</span>  <span class="comment"># time interval between two frames, in fs</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># --------------------------------------------------------------------------------------------</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Hbond</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, donor: <span class="built_in">int</span>, hydrogen: <span class="built_in">int</span>, acceptor: <span class="built_in">int</span></span>):</span><br><span class="line">        self.donor = donor</span><br><span class="line">        self.hydrogen = hydrogen</span><br><span class="line">        self.acceptor = acceptor</span><br><span class="line">        self.frame = <span class="number">0</span></span><br><span class="line">        self.distance_dh = <span class="number">0.0</span></span><br><span class="line">        self.distance_da = <span class="number">0.0</span></span><br><span class="line">        self.angle = <span class="number">0.0</span></span><br><span class="line">        <span class="comment"># self.angle = cos(angle_dha)</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># Read the pkl file</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(file_address, <span class="string">&quot;rb&quot;</span>) <span class="keyword">as</span> file:</span><br><span class="line">    hbonds = pickle.load(file)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Count the number of hydrogen bonds for each frame</span></span><br><span class="line">trajectory_length = hbonds[-<span class="number">1</span>].frame + <span class="number">1</span></span><br><span class="line">frames = np.zeros(trajectory_length)</span><br><span class="line"><span class="keyword">for</span> hbond <span class="keyword">in</span> hbonds:</span><br><span class="line">    frames[hbond.frame] += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">average_hbonds = np.mean(frames)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Average number of hydrogen bonds:&quot;</span>, average_hbonds)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Plot the number of hydrogen bonds for each frame</span></span><br><span class="line">plt.plot(np.arange(trajectory_length) * dt, frames)</span><br><span class="line">plt.xlabel(<span class="string">&quot;Time (fs)&quot;</span>)</span><br><span class="line">plt.ylabel(<span class="string">&quot;Number of hydrogen bonds&quot;</span>)</span><br><span class="line">plt.title(</span><br><span class="line">    <span class="string">&quot;Number of hydrogen bonds vs time&quot;</span></span><br><span class="line">)</span><br><span class="line">file_address2 = file_address.replace(<span class="string">&quot;.pkl&quot;</span>, <span class="string">&quot;.png&quot;</span>)</span><br><span class="line">plt.savefig(file_address2)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<p><br></p>
+<hr />
+<h3 id="计算氢键自相关函数---calculating-the-hydrogen-bond-acf">3.
+计算氢键自相关函数 - Calculating the Hydrogen Bond ACF</h3>
+<p>最后就是计算氢键的自相关函数了。自相关函数通常有2种，一个是连续（continuous）自相关函数，一个是间断（intermittent）自相关函数。</p>
+<p>The final step is to calculate the autocorrelation function of the
+hydrogen bonds. There are typically two types of autocorrelation
+functions: continuous and intermittent.</p>
+<p><br></p>
+<p>有<a
+target="_blank" rel="noopener" href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.85.768">一篇文章</a>讲了这两种自相关函数的区别。简而言之，连续自相关函数要求氢键形成后不能断裂，如果断裂后又重连就把它看成另一个新的氢键，而间断自相关函数不做此要求。</p>
+<p>A <a
+target="_blank" rel="noopener" href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.85.768">paper</a>
+discusses the differences between these two types of autocorrelation
+functions. In essence, the continuous autocorrelation function requires
+that once a hydrogen bond is formed, it must not break. If it breaks and
+then reforms, it is considered a new hydrogen bond. On the other hand,
+the intermittent autocorrelation function does not have this
+requirement.</p>
+<p><br></p>
+<p>首先统计间断的自相关函数，用一个循环处理氢键数据。</p>
+<p>First, the intermittent autocorrelation function is calculated by
+processing the hydrogen bond data with a loop.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Create a dictionary to store the hydrogen bond information</span></span><br><span class="line">hbonds_dict: <span class="built_in">dict</span> = &#123;&#125;</span><br><span class="line"><span class="keyword">for</span> hbond <span class="keyword">in</span> hbonds:</span><br><span class="line">    <span class="comment"># hbond: Hbond</span></span><br><span class="line">    atoms = (hbond.donor, hbond.hydrogen, hbond.acceptor)</span><br><span class="line">    <span class="keyword">if</span> atoms <span class="keyword">not</span> <span class="keyword">in</span> hbonds_dict:</span><br><span class="line">        hbonds_dict[atoms] = np.zeros(trajectory_length)</span><br><span class="line">    hbonds_dict[atoms][hbond.frame] = <span class="number">1</span></span><br></pre></td></tr></table></figure>
+<p><br></p>
+<p>如果需要计算连续的自相关函数的话，首先要找出间断的自相关函数的断点，然后把它切断，然后粘贴到序列的最开始，然后用0补齐后面的数据。</p>
+<p>To calculate the continuous autocorrelation function, it's necessary
+to identify the breakpoints in the intermittent autocorrelation
+function, cut at these points, and then move these segments to the
+beginning of the sequence. The rest of the data sequence is then padded
+with zeros to complete the series.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> continuous:</span><br><span class="line">    hbonds_dict_new = &#123;&#125;</span><br><span class="line">    <span class="keyword">for</span> hbond <span class="keyword">in</span> hbonds_dict:</span><br><span class="line">        <span class="comment"># hbond: (donor, hydrogen, acceptor)</span></span><br><span class="line">        <span class="comment"># hbonds_dict[hbond]: np.ndarray</span></span><br><span class="line">        ones = np.where(hbonds_dict[hbond] == <span class="number">1</span>)[<span class="number">0</span>]</span><br><span class="line">        <span class="keyword">if</span> ones.size != <span class="number">0</span>:</span><br><span class="line">            split_indices = np.where(np.diff(ones) &gt; <span class="number">1</span>)[<span class="number">0</span>] + <span class="number">1</span></span><br><span class="line">            ones_subarrays = np.split(ones, split_indices)</span><br><span class="line">            result = [hbonds_dict[hbond][s[<span class="number">0</span>] : s[-<span class="number">1</span>] + <span class="number">1</span>] <span class="keyword">for</span> s <span class="keyword">in</span> ones_subarrays]</span><br><span class="line">            <span class="keyword">for</span> i, subarray <span class="keyword">in</span> <span class="built_in">enumerate</span>(result):</span><br><span class="line">                hbond_new = hbond + (i,)</span><br><span class="line">                array_new = np.zeros(trajectory_length)</span><br><span class="line">                array_new[: <span class="built_in">len</span>(subarray)] = subarray</span><br><span class="line">                hbonds_dict_new[hbond_new] = array_new</span><br><span class="line">    hbonds_dict = hbonds_dict_new</span><br></pre></td></tr></table></figure>
+<p><br></p>
+<p>然后是利用快速傅立叶变换（fft）进行自相关函数的计算</p>
+<p>Then, the autocorrelation function is calculated using the Fast
+Fourier Transform (FFT).</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">autocorrelation_fft</span>(<span class="params">data</span>):</span><br><span class="line">    n = <span class="built_in">len</span>(data)</span><br><span class="line">    data_mean = np.mean(data)</span><br><span class="line">    data = data - data_mean</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Padding to 2 times the original length</span></span><br><span class="line">    padded_data = np.zeros(<span class="number">2</span> * n)</span><br><span class="line">    padded_data[:n] = data</span><br><span class="line">    <span class="comment"># Do a full-time acf</span></span><br><span class="line">    result = np.fft.ifft(</span><br><span class="line">        np.fft.fft(padded_data) * np.conj(np.fft.fft(padded_data))</span><br><span class="line">    ).real</span><br><span class="line">    result = result[:n]</span><br><span class="line">    <span class="keyword">return</span> result / result[<span class="number">0</span>]</span><br></pre></td></tr></table></figure>
+<p><br></p>
+<p>最后，把所有的氢键的自相关函数做一个平均，然后作图。函数图像如下所示（连续的氢键自相关函数）。</p>
+<p>Finally, average the autocorrelation functions of all the hydrogen
+bonds and plot the result. The graph of the function is shown below (for
+the continuous hydrogen bond autocorrelation function).</p>
+<p><img src="2.png" /></p>
+<p><br></p>
+<p>这一部分的代码如下所示。</p>
+<p>The code for this part is as follows.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> pickle</span><br><span class="line"></span><br><span class="line"><span class="comment"># parameters</span></span><br><span class="line">file_address = <span class="string">r&quot;xxx_hbond.pkl&quot;</span></span><br><span class="line">dt = <span class="number">0.5</span>  <span class="comment"># time interval between two frames, in fs</span></span><br><span class="line">continuous = <span class="literal">True</span>  <span class="comment"># True for continuous hbacf, False for intermittent hbacf</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># --------------------------------------------------------------------------------------------</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Hbond</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, donor: <span class="built_in">int</span>, hydrogen: <span class="built_in">int</span>, acceptor: <span class="built_in">int</span></span>):</span><br><span class="line">        self.donor = donor</span><br><span class="line">        self.hydrogen = hydrogen</span><br><span class="line">        self.acceptor = acceptor</span><br><span class="line">        self.frame = <span class="number">0</span></span><br><span class="line">        self.distance_dh = <span class="number">0.0</span></span><br><span class="line">        self.distance_da = <span class="number">0.0</span></span><br><span class="line">        self.angle = <span class="number">0.0</span></span><br><span class="line">        <span class="comment"># self.angle = cos(angle_dha)</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># Read the pkl file</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(file_address, <span class="string">&quot;rb&quot;</span>) <span class="keyword">as</span> file:</span><br><span class="line">    hbonds: <span class="built_in">list</span> = pickle.load(file)</span><br><span class="line"></span><br><span class="line">trajectory_length = hbonds[-<span class="number">1</span>].frame + <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Create a dictionary to store the hydrogen bond information</span></span><br><span class="line">hbonds_dict: <span class="built_in">dict</span> = &#123;&#125;</span><br><span class="line"><span class="keyword">for</span> hbond <span class="keyword">in</span> hbonds:</span><br><span class="line">    <span class="comment"># hbond: Hbond</span></span><br><span class="line">    atoms = (hbond.donor, hbond.hydrogen, hbond.acceptor)</span><br><span class="line">    <span class="keyword">if</span> atoms <span class="keyword">not</span> <span class="keyword">in</span> hbonds_dict:</span><br><span class="line">        hbonds_dict[atoms] = np.zeros(trajectory_length)</span><br><span class="line">    hbonds_dict[atoms][hbond.frame] = <span class="number">1</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># If continuous is True, split the data into continuous subarrays</span></span><br><span class="line"><span class="keyword">if</span> continuous:</span><br><span class="line">    hbonds_dict_new = &#123;&#125;</span><br><span class="line">    <span class="keyword">for</span> hbond <span class="keyword">in</span> hbonds_dict:</span><br><span class="line">        <span class="comment"># hbond: (donor, hydrogen, acceptor)</span></span><br><span class="line">        <span class="comment"># hbonds_dict[hbond]: np.ndarray</span></span><br><span class="line">        ones = np.where(hbonds_dict[hbond] == <span class="number">1</span>)[<span class="number">0</span>]</span><br><span class="line">        <span class="keyword">if</span> ones.size != <span class="number">0</span>:</span><br><span class="line">            split_indices = np.where(np.diff(ones) &gt; <span class="number">1</span>)[<span class="number">0</span>] + <span class="number">1</span></span><br><span class="line">            ones_subarrays = np.split(ones, split_indices)</span><br><span class="line">            result = [hbonds_dict[hbond][s[<span class="number">0</span>] : s[-<span class="number">1</span>] + <span class="number">1</span>] <span class="keyword">for</span> s <span class="keyword">in</span> ones_subarrays]</span><br><span class="line">            <span class="keyword">for</span> i, subarray <span class="keyword">in</span> <span class="built_in">enumerate</span>(result):</span><br><span class="line">                hbond_new = hbond + (i,)</span><br><span class="line">                array_new = np.zeros(trajectory_length)</span><br><span class="line">                array_new[: <span class="built_in">len</span>(subarray)] = subarray</span><br><span class="line">                hbonds_dict_new[hbond_new] = array_new</span><br><span class="line">    hbonds_dict = hbonds_dict_new</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># Calculate the autocorrelation function using FFT</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">autocorrelation_fft</span>(<span class="params">data</span>):</span><br><span class="line">    n = <span class="built_in">len</span>(data)</span><br><span class="line">    data_mean = np.mean(data)</span><br><span class="line">    data = data - data_mean</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Padding to 2 times the original length</span></span><br><span class="line">    padded_data = np.zeros(<span class="number">2</span> * n)</span><br><span class="line">    padded_data[:n] = data</span><br><span class="line">    <span class="comment"># Do a full-time acf</span></span><br><span class="line">    <span class="comment"># <span class="doctag">TODO:</span> use shorter data window to speed up the calculation</span></span><br><span class="line">    result = np.fft.ifft(</span><br><span class="line">        np.fft.fft(padded_data) * np.conj(np.fft.fft(padded_data))</span><br><span class="line">    ).real</span><br><span class="line">    result = result[:n]</span><br><span class="line">    <span class="keyword">return</span> result / result[<span class="number">0</span>]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># Calculate the autocorrelation function for each hydrogen bond</span></span><br><span class="line">acfs = []</span><br><span class="line"><span class="keyword">for</span> hbond <span class="keyword">in</span> hbonds_dict:</span><br><span class="line">    <span class="comment"># hbond: (donor, hydrogen, acceptor)</span></span><br><span class="line">    <span class="comment"># hbonds_dict[hbond]: np.ndarray</span></span><br><span class="line">    acfs.append(autocorrelation_fft(hbonds_dict[hbond]))</span><br><span class="line"></span><br><span class="line"><span class="comment"># Calculate the average autocorrelation function</span></span><br><span class="line">acfs = np.array(acfs)</span><br><span class="line">average_acf = np.mean(acfs, axis=<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Save autocorrelation function</span></span><br><span class="line">x = np.arange(trajectory_length) * dt</span><br><span class="line">file_address3 = file_address.split(<span class="string">&#x27;.&#x27;</span>)[<span class="number">0</span>]</span><br><span class="line">np.save(file_address3+<span class="string">&#x27;tau_times.npy&#x27;</span>, x)</span><br><span class="line">np.save(file_address3+<span class="string">&#x27;lifetime.npy&#x27;</span>, average_acf)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Plot the autocorrelation function</span></span><br><span class="line">plt.plot(x[:<span class="number">200</span>], average_acf[:<span class="number">200</span>])</span><br><span class="line">plt.xlabel(<span class="string">&quot;Time (fs)&quot;</span>)</span><br><span class="line">plt.ylabel(<span class="string">&quot;Autocorrelation function&quot;</span>)</span><br><span class="line">plt.title(<span class="string">&quot;Hydrogen bond autocorrelation function&quot;</span>)</span><br><span class="line">file_address2 = file_address.replace(<span class="string">&quot;.pkl&quot;</span>, <span class="string">&quot;_acf.png&quot;</span>)</span><br><span class="line">plt.savefig(file_address2)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E7%BC%96%E7%A8%8B-programming/" rel="tag"># 编程 - Programming</a>
+          </div>
+
+        
+  <div class="social-like a2a_kit a2a_kit_size_32 a2a_default_style">
+    <a class="a2a_dd" target="_blank" rel="noopener" href="https://www.addtoany.com/share"></a>
+      <a class="a2a_button_facebook"></a>
+      <a class="a2a_button_twitter"></a>
+      <a class="a2a_button_sina_weibo"></a>
+      <a class="a2a_button_wechat"></a>
+      <a class="a2a_button_mastodon"></a>
+  </div>
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/post/45/" rel="prev" title="使用R语言分析各国的新冠死亡率 - Analyzing COVID-19 Mortality Rates Among Countries Using R">
+                  <i class="fa fa-angle-left"></i> 使用R语言分析各国的新冠死亡率 - Analyzing COVID-19 Mortality Rates Among Countries Using R
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/post/47/" rel="next" title="魔改Gromacs，并运行 - Modify the Gromacs, and run it">
+                  魔改Gromacs，并运行 - Modify the Gromacs, and run it <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments utterances-container"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2023 – 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class=""></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">多想，多读，多练，多问 - Think more, read more, practice more, and ask more</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script><script src="/js/pjax.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+
+  <script src="/js/third-party/addtoany.js"></script>
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+<script class="next-config" data-name="utterances" type="application/json">{"enable":true,"repo":"user-name/repo-name","issue_term":"pathname","theme":"github-light"}</script>
+<script src="/js/third-party/comments/utterances.js"></script>
+
+
+</body>
+</html>
+
+<script src="https://cdn.jsdelivr.net/gh/tennisatw/live2d-widget@1.96/autoload.js" async="async" ></script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/tennisatw/blogfiles@1.6/waline.css"/>
+<script type="module">
+    import { init } from 'https://cdn.jsdelivr.net/gh/tennisatw/blogfiles@1.6/waline.mjs';
+    window.init = init;
+</script>
+
+<script type="module">
+  window.init({
+    el: '.comments',
+    lang: 'en',
+    serverURL: 'https://comment.tennisatw.com',
+  });
+</script>
+
+<script>
+  window.onload = function() {
+    // 延迟执行，确保动画已经完成
+    setTimeout(function() {
+      // 获取需要操作的元素
+      const targetLanguageDiv = document.getElementById(":0.targetLanguage");
+      const skipTranslateDiv = document.querySelector(".skiptranslate.goog-te-gadget");
+      
+      // 删除不需要的文本节点和span元素
+      if (skipTranslateDiv) {
+        const textNodes = Array.from(skipTranslateDiv.childNodes).filter(node => node.nodeType === Node.TEXT_NODE);
+        textNodes.forEach(node => node.remove());
+        
+        const spanElement = skipTranslateDiv.querySelector("span");
+        if (spanElement) {
+            spanElement.remove();
+        }
+      }
+
+      // 隐藏不需要的元素
+      var trans = document.getElementsByClassName('VIpgJd-ZVi9od-aZ2wEe-wOHMyf');
+        for (var i = 0; i < trans.length; i++) {
+            var tran = trans[i];
+                tran.className += " hidden";
+        }
+
+    }, 500); // 延迟时间
+  };
+</script>
