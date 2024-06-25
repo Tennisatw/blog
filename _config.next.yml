@@ -141,7 +141,7 @@ avatar:
   # Replace the default image and set the url here.
   url: /images/avatar.png
   # If true, the avatar will be displayed in circle.
-  rounded: false
+  rounded: true
   # If true, the avatar will be rotated with the cursor.
   rotated: false
 
@@ -184,7 +184,7 @@ toc:
   # Automatically add list number to toc.
   number: false
   # If true, all words will placed on next lines if header width longer then sidebar width.
-  wrap: false
+  wrap: true
   # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
   expand_all: true
   # Maximum heading depth of generated toc.
@@ -347,8 +347,8 @@ mobile_layout_economy: true
 
 # Browser header panel color.
 theme_color:
-  light: "#556"
-  dark: "#556"
+  light: "#505070"
+  dark: "#505070"
 
 # Override browsers' default behavior.
 body_scrollbar:
@@ -382,7 +382,7 @@ back2top:
   sidebar: false
   # Scroll percent label in b2t button.
   scrollpercent: false
-  color: "4020c0"
+  color: "#505070"
 
 # Reading progress bar
 reading_progress:
@@ -397,9 +397,9 @@ reading_progress:
 
 # Bookmark Support
 bookmark:
-  enable: false
+  enable: true
   # Customize the color of the bookmark.
-  color: "#556"
+  color: "#505070"
   # If auto, save the reading progress when closing the page or clicking the bookmark-icon.
   # If manual, only save it by clicking the bookmark-icon.
   save: auto
@@ -753,6 +753,8 @@ isso: # <data_isso>
 addtoany:
   enable: true
   buttons:
+    - sina_weibo
+    - wechat
     - facebook
     - twitter
     - mastodon
