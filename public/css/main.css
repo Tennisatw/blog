@@ -1241,15 +1241,15 @@ pre code {
 }
 .sidebar .sidebar-button button {
   background: transparent;
-  color: #fc6423;
+  color: $white;
   cursor: pointer;
   line-height: 2;
   padding: 0 15px;
-  border: 1px solid #fc6423;
+  border: 1px solid $white;
   border-radius: 4px;
 }
 .sidebar .sidebar-button button:hover {
-  background: #fc6423;
+  background: $white;
   color: #fff;
 }
 .sidebar .sidebar-button button i[class^='fa'] {
@@ -1295,17 +1295,17 @@ pre code {
   margin-left: 10px;
 }
 .sidebar-nav li:hover {
-  color: #fc6423;
+  color: $white;
 }
 .sidebar-toc-active .sidebar-nav-toc,
 .sidebar-overview-active .sidebar-nav-overview {
-  border-bottom-color: #fc6423;
-  color: #fc6423;
+  border-bottom-color: #e06070;
+  color: #e06070;
   transition-delay: 0.2s;
 }
 .sidebar-toc-active .sidebar-nav-toc:hover,
 .sidebar-overview-active .sidebar-nav-overview:hover {
-  color: #fc6423;
+  color: #e06070;
 }
 .sidebar-panel-container {
   align-items: start;
@@ -1379,7 +1379,7 @@ pre code {
   width: 16px;
   background: #201060;
   cursor: pointer;
-  opacity: 0.6;
+  opacity: 0.8;
   position: fixed;
   z-index: 30;
   right: 30px;
@@ -1390,15 +1390,15 @@ pre code {
   }
 }
 .sidebar-toggle:hover {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 @media (max-width: 991px) {
   .sidebar-toggle {
-    opacity: 0.6;
+    opacity: 0.8;
   }
 }
 .sidebar-toggle:hover .toggle-line {
-  background: #fc6423;
+  background: #e06070;
 }
 @media (any-hover: hover) {
   body:not(.sidebar-active) .sidebar-toggle:hover :first-child {
@@ -1449,14 +1449,14 @@ pre code {
   text-overflow: ellipsis;
 }
 .post-toc .nav .active > a {
-  border-bottom-color: #fc6423;
-  color: #fc6423;
+  border-bottom-color: #e06070;
+  color: #e06070;
 }
 .post-toc .nav .active-current > a {
-  color: #fc6423;
+  color: #e06070;
 }
 .post-toc .nav .active-current > a:hover {
-  color: #fc6423;
+  color: #e06070;
 }
 .footer {
   color: #999;
@@ -1605,7 +1605,7 @@ pre code {
   transition: bottom 0.2s ease-in-out;
   background: #201060;
   cursor: pointer;
-  opacity: 0.6;
+  opacity: 0.8;
   position: fixed;
   z-index: 30;
   right: 30px;
@@ -1624,15 +1624,15 @@ pre code {
   }
 }
 .back-to-top:hover {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 @media (max-width: 991px) {
   .back-to-top {
-    opacity: 0.6;
+    opacity: 0.8;
   }
 }
 .back-to-top:hover {
-  color: #fc6423;
+  color: #fff;
 }
 .back-to-top.back-to-top-on {
   bottom: 30px;
@@ -2068,18 +2068,18 @@ pre code {
 }
 .reward-container button {
   background: transparent;
-  color: #fc6423;
+  color: #e06070;
   cursor: pointer;
   line-height: 2;
   padding: 0 15px;
-  border: 2px solid #fc6423;
+  border: 2px solid #e06070;
   border-radius: 2px;
   outline: 0;
   transition: all 0.2s ease-in-out;
   vertical-align: text-top;
 }
 .reward-container button:hover {
-  background: #fc6423;
+  background: #e06070;
   color: #fff;
 }
 .post-reward {
@@ -2400,8 +2400,8 @@ ul.breadcrumb li:last-child {
 }
 mark.search-keyword {
   background: transparent;
-  border-bottom: 1px dashed #ff2a2a;
-  color: #ff2a2a;
+  border-bottom: 1px dashed #e06070;
+  color: #e06070;
   font-weight: bold;
 }
 mjx-container[jax='CHTML'][display='true'],
@@ -2566,14 +2566,14 @@ header.header {
 }
 .sub-menu .menu-item a:hover {
   background: transparent;
-  color: #fc6423;
+  color: #e06070;
 }
 .sub-menu .menu-item-active {
-  border-bottom-color: #fc6423;
-  color: #fc6423;
+  border-bottom-color: #e06070;
+  color: #e06070;
 }
 .sub-menu .menu-item-active:hover {
-  border-bottom-color: #fc6423;
+  border-bottom-color: #e06070;
 }
 .sidebar {
   position: -webkit-sticky;
