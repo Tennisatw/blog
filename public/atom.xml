@@ -6,7 +6,7 @@
   <link href="https://blog.tennisatw.com/atom.xml" rel="self"/>
   
   <link href="https://blog.tennisatw.com/"/>
-  <updated>2024-06-10T20:09:32.829Z</updated>
+  <updated>2024-06-26T04:10:29.835Z</updated>
   <id>https://blog.tennisatw.com/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>视频推荐：马前卒锐评《当马克思遇见孔夫子》</title>
+    <link href="https://blog.tennisatw.com/post/53/"/>
+    <id>https://blog.tennisatw.com/post/53/</id>
+    <published>2024-06-26T02:10:04.000Z</published>
+    <updated>2024-06-26T04:10:29.835Z</updated>
+    
+    
+    <summary type="html">马克思和中国传统文化是中国人的精神世界的2个内核。23年秋天，湖南台和芒果TV发布了《当马克思遇见孔夫子》节目。此节目由官方支持，尝试证明马克思和中国传统文化是相容的，且中国传统文化相当优秀。但由于节目制作水平低劣尴尬，引发了很多争议。马前卒做了3期视频，以一个年轻的，左派的，非民族主义的视角，来探讨马克思和中国传统文化的关系，以及这个节目应该怎么做。马前卒这三个视频对此节目的分析有很多“妙不可言”的片段，相当值得一看。</summary>
+    
+    
+    
+    
+    <category term="推荐 - Recommendation" scheme="https://blog.tennisatw.com/tags/%E6%8E%A8%E8%8D%90-recommendation/"/>
+    
+  </entry>
   
   <entry>
     <title>MDAnalysis线性密度模块的bug修复 - Bug fix for the MDAnalysis linear density module</title>
@@ -29,9 +46,9 @@
     
     
     
-    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
-    
     <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
     
   </entry>
   
@@ -65,9 +82,9 @@
     
     
     
-    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
-    
     <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
     
   </entry>
   
@@ -84,9 +101,9 @@
     
     
     
-    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
-    
     <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
     
   </entry>
   
@@ -122,9 +139,9 @@
     
     
     
-    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
-    
     <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
     
   </entry>
   
@@ -226,9 +243,9 @@
     
     
     
-    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
-    
     <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
     
   </entry>
   
@@ -298,9 +315,9 @@
     
     <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
     
-    <category term="敏感 - Sensitive" scheme="https://blog.tennisatw.com/tags/%E6%95%8F%E6%84%9F-sensitive/"/>
-    
     <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+    <category term="敏感 - Sensitive" scheme="https://blog.tennisatw.com/tags/%E6%95%8F%E6%84%9F-sensitive/"/>
     
   </entry>
   
@@ -809,9 +826,9 @@
     <category term="SD WebUI" scheme="https://blog.tennisatw.com/categories/sd-webui/"/>
     
     
-    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
-    
     <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
     
   </entry>
   
@@ -830,9 +847,9 @@
     <category term="SD WebUI" scheme="https://blog.tennisatw.com/categories/sd-webui/"/>
     
     
-    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
-    
     <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
     
   </entry>
   

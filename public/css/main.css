@@ -5,7 +5,7 @@
   --text-color: #555;
   --blockquote-color: #666;
   --link-color: #505070;
-  --link-hover-color: #505070;
+  --link-hover-color: #7080b0;
   --brand-color: #fff;
   --brand-hover-color: #fff;
   --table-row-odd-bg-color: #f9f9f9;
@@ -224,7 +224,7 @@ p {
   margin: 0 0 20px;
 }
 a {
-  border-bottom: 1px solid #505070;
+  border-bottom: 1px solid #7080b0;
   color: var(--link-color);
   cursor: pointer;
   outline: 0;

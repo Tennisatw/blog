@@ -15,8 +15,27 @@
     <atom:link href="https://blog.tennisatw.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Mon, 10 Jun 2024 20:09:32 GMT</pubDate>
+    <pubDate>Wed, 26 Jun 2024 04:10:29 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>视频推荐：马前卒锐评《当马克思遇见孔夫子》</title>
+      <link>https://blog.tennisatw.com/post/53/</link>
+      <guid>https://blog.tennisatw.com/post/53/</guid>
+      <pubDate>Wed, 26 Jun 2024 02:10:04 GMT</pubDate>
+      
+      <description>马克思和中国传统文化是中国人的精神世界的2个内核。23年秋天，湖南台和芒果TV发布了《当马克思遇见孔夫子》节目。此节目由官方支持，尝试证明马克思和中国传统文化是相容的，且中国传统文化相当优秀。但由于节目制作水平低劣尴尬，引发了很多争议。马前卒做了3期视频，以一个年轻的，左派的，非民族主义的视角，来探讨马克思和中国传统文化的关系，以及这个节目应该怎么做。马前卒这三个视频对此节目的分析有很多“妙不可言”的片段，相当值得一看。</description>
+      
+      
+      
+      
+      
+      <category domain="https://blog.tennisatw.com/tags/%E6%8E%A8%E8%8D%90-recommendation/">推荐 - Recommendation</category>
+      
+      
+      <comments>https://blog.tennisatw.com/post/53/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>MDAnalysis线性密度模块的bug修复 - Bug fix for the MDAnalysis linear density module</title>
@@ -30,9 +49,9 @@
       
       
       
-      <category domain="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/">编程 - Programming</category>
-      
       <category domain="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/">技术 - Technology</category>
+      
+      <category domain="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/">编程 - Programming</category>
       
       
       <comments>https://blog.tennisatw.com/post/52/#disqus_thread</comments>
@@ -70,9 +89,9 @@
       
       
       
-      <category domain="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/">编程 - Programming</category>
-      
       <category domain="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/">技术 - Technology</category>
+      
+      <category domain="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/">编程 - Programming</category>
       
       
       <comments>https://blog.tennisatw.com/post/50/#disqus_thread</comments>
@@ -91,9 +110,9 @@
       
       
       
-      <category domain="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/">编程 - Programming</category>
-      
       <category domain="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/">技术 - Technology</category>
+      
+      <category domain="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/">编程 - Programming</category>
       
       
       <comments>https://blog.tennisatw.com/post/49/#disqus_thread</comments>
@@ -133,9 +152,9 @@
       
       
       
-      <category domain="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/">编程 - Programming</category>
-      
       <category domain="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/">技术 - Technology</category>
+      
+      <category domain="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/">编程 - Programming</category>
       
       
       <comments>https://blog.tennisatw.com/post/47/#disqus_thread</comments>
@@ -249,9 +268,9 @@
       
       
       
-      <category domain="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/">编程 - Programming</category>
-      
       <category domain="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/">技术 - Technology</category>
+      
+      <category domain="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/">编程 - Programming</category>
       
       
       <comments>https://blog.tennisatw.com/post/41/#disqus_thread</comments>
@@ -329,9 +348,9 @@
       
       <category domain="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/">随想 - Thoughts</category>
       
-      <category domain="https://blog.tennisatw.com/tags/%E6%95%8F%E6%84%9F-sensitive/">敏感 - Sensitive</category>
-      
       <category domain="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/">技术 - Technology</category>
+      
+      <category domain="https://blog.tennisatw.com/tags/%E6%95%8F%E6%84%9F-sensitive/">敏感 - Sensitive</category>
       
       
       <comments>https://blog.tennisatw.com/post/37/#disqus_thread</comments>
@@ -898,9 +917,9 @@
       <category domain="https://blog.tennisatw.com/categories/sd-webui/">SD WebUI</category>
       
       
-      <category domain="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/">编程 - Programming</category>
-      
       <category domain="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/">技术 - Technology</category>
+      
+      <category domain="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/">编程 - Programming</category>
       
       
       <comments>https://blog.tennisatw.com/post/8/#disqus_thread</comments>
@@ -921,9 +940,9 @@
       <category domain="https://blog.tennisatw.com/categories/sd-webui/">SD WebUI</category>
       
       
-      <category domain="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/">编程 - Programming</category>
-      
       <category domain="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/">技术 - Technology</category>
+      
+      <category domain="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/">编程 - Programming</category>
       
       
       <comments>https://blog.tennisatw.com/post/7/#disqus_thread</comments>
