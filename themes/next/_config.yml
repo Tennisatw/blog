@@ -349,8 +349,8 @@ mobile_layout_economy: false
 
 # Browser header panel color.
 theme_color:
-  light: "#505070"
-  dark: "#505070"
+  light: "#504080"
+  dark: "#504080"
 
 # Override browsers' default behavior.
 body_scrollbar:
@@ -400,7 +400,7 @@ reading_progress:
 bookmark:
   enable: false
   # Customize the color of the bookmark.
-  color: "#505070"
+  color: "#504080"
   # If auto, save the reading progress when closing the page or clicking the bookmark-icon.
   # If manual, only save it by clicking the bookmark-icon.
   save: auto
