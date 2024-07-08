@@ -136,19 +136,19 @@
     vertical-align: middle;
     min-width: 2.5em;
     margin-bottom: 0;
-    padding: .5em 1em;
-    border: 1px solid var(--waline-border-color);
-    border-radius: .5em;
+    padding: 0 20px;
+    border: 2px solid var(--waline-border-color);
+    border-radius: .2px;
     background: rgba(0,0,0,0);
     color: var(--waline-color);
     font-weight: 400;
-    font-size: .75em;
-    line-height: 1.5;
+    font-size: .875em;
+    line-height: 2;
     text-align: center;
     white-space: nowrap;
     cursor: pointer;
     user-select: none;
-    transition-duration: .4s;
+    transition-duration: 0.2s;
     touch-action: manipulation
 }
 
@@ -167,13 +167,13 @@
 .wl-btn.primary {
     display: inline-block;
     border-color: var(--waline-theme-color);
-    background: var(--waline-theme-color);
-    color: var(--waline-white)
+    background: var(--waline-white);
+    color: var(--waline-theme-color)
 }
 
 .wl-btn.primary:hover,.wl-btn.primary:active {
-    border-color: var(--waline-active-color);
-    background: var(--waline-active-color);
+    border-color: var(--waline-theme-color);
+    background: var(--waline-theme-color);
     color: var(--waline-white)
 }
 

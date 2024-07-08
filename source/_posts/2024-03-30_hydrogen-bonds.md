@@ -8,8 +8,6 @@ tags: 编程 - Programming
 
 ### 背景介绍 - Background
 
-<br>
-
 组里的人要分析一个系统的氢键数量和氢键自相关函数（Hbond autocorrelation function，hbacf）。
 
 A colleague in our group is tasked with analyzing the number of hydrogen bonds and the hydrogen bond autocorrelation function (hbacf) in a system.
