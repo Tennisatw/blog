@@ -23,11 +23,12 @@ Discord: tennisatw
 <br>
 
 ### Tennisbot
-<p class="tennisbot" id="这一段是在说我哦">基于GPT4，Python，JavaScript的机器人助手，本博客的看板娘（见左下角），网球发球机（？）。当点击或悬停在有阴影的段落上时（比如这一段），她会发表自己的意见。</p>
+<p class="tennisbot" id="这一段是在说我哦">基于GPT4，Python，JavaScript的机器人助手，本博客的看板娘（见左下角），网球发球机（？）。当点击或悬停在有阴影的段落上时（比如这一段），她会发表自己的意见。如果只有一个写有“Tennisbot”的按钮，就点一下它。</p>
 
 邮箱：tennisbot0@gmail.com
 
-<p class="tennisbot" id="It's talking about me">A chatbot based on GPT4, Python, and JavaScript, yuru-chara of the blog (see bottom left), and tennis ball machine (maybe?). When clicking or hovering over the shaded paragraphs (such as this one), she will give her own opinion.</p>
+<p class="tennisbot" id="It's talking about me">A chatbot based on GPT4, Python, and JavaScript, yuru-chara of the blog (see bottom left), and tennis ball machine (maybe?). When clicking or hovering over the shaded paragraphs (such as this one), she will give her own opinion.
+If there is only a button with "Tennisbot" written on it, just click it.</p>
 
 Email: tennisbot0@gmail.com
 
@@ -49,9 +50,9 @@ There is a [Discord group](https://discord.gg/trCwuPYvG2) for the readers of thi
 
 ### 本博客 - This Blog
 
-本博客使用Hexo制作。本博客的内容可以随意转载，但请标明出处。
+本博客使用Hexo制作。本博客的内容可以随意转载，但请标明出处（cc by 4.0）。
 
-This blog is made using Hexo. Feel free to share the content of this blog, but please credit the source. 
+This blog is made using Hexo. Feel free to share the content of this blog, but please credit the source（cc by 4.0）.
 
 <br>
 
@@ -87,7 +88,7 @@ Everyone is always welcome to leave comments under the blog, even those with dif
 
 <br>
 
-本博客的评论插件为[Waline](https://waline.js.org/)支持以Markdown的格式进行评论。
+本博客的评论插件为[Waline](https://waline.js.org/)，支持以Markdown的格式进行评论。
 
 The comment plugin used on this blog is [Waline](https://waline.js.org/en/), which supports comments in Markdown format.
 
