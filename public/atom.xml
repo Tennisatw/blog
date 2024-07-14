@@ -6,7 +6,7 @@
   <link href="https://blog.tennisatw.com/atom.xml" rel="self"/>
   
   <link href="https://blog.tennisatw.com/"/>
-  <updated>2024-07-14T06:27:41.894Z</updated>
+  <updated>2024-07-14T06:32:28.297Z</updated>
   <id>https://blog.tennisatw.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://blog.tennisatw.com/post/56/"/>
     <id>https://blog.tennisatw.com/post/56/</id>
     <published>2024-07-14T05:25:41.000Z</published>
-    <updated>2024-07-14T06:27:41.894Z</updated>
+    <updated>2024-07-14T06:32:28.297Z</updated>
     
     
     <summary type="html">通过python的screen_brightness_control包来调节多个显示器的亮度，使用tkinter库创建一个简单的图形化界面，通过滑动条来调节各个显示器的亮度。&lt;br&gt;Using the screen_brightness_control package in Python to adjust the brightness of multiple monitors, creating a simple graphical interface using the tkinter library to adjust the brightness of each monitor with sliders.</summary>
