@@ -379,7 +379,7 @@ codeblock:
     height: 500
 
 back2top:
-  enable: true
+  enable: false
   # Back to top in sidebar.
   sidebar: false
   # Scroll percent label in b2t button.
