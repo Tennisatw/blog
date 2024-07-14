@@ -9128,7 +9128,7 @@ const oc = (e, t) => {
     ...l
   }) => {
     const i = e ? Di(e) : null;
-    if (e && !i) throw new Error("Option 'el' do not match any domElement!");
+    if (e && !i) console.log("Option 'el' do not match any domElement!");
     if (!l.serverURL) throw new Error("Option 'serverURL' is missing!");
     const s = Dt({ ...l }),
       o = Dt({ comment: n, pageview: r, path: t }),

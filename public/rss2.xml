@@ -15,8 +15,27 @@
     <atom:link href="https://blog.tennisatw.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Fri, 12 Jul 2024 08:51:35 GMT</pubDate>
+    <pubDate>Sun, 14 Jul 2024 06:27:41 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>利用python脚本分别调节多个屏幕的亮度 - Set the brightness of multiple screens separately using python scripts</title>
+      <link>https://blog.tennisatw.com/post/56/</link>
+      <guid>https://blog.tennisatw.com/post/56/</guid>
+      <pubDate>Sun, 14 Jul 2024 05:25:41 GMT</pubDate>
+      
+      <description>通过python的screen_brightness_control包来调节多个显示器的亮度，使用tkinter库创建一个简单的图形化界面，通过滑动条来调节各个显示器的亮度。&lt;br&gt;Using the screen_brightness_control package in Python to adjust the brightness of multiple monitors, creating a simple graphical interface using the tkinter library to adjust the brightness of each monitor with sliders.</description>
+      
+      
+      
+      
+      
+      <category domain="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/">编程 - Programming</category>
+      
+      
+      <comments>https://blog.tennisatw.com/post/56/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>诗-流浪汉</title>
