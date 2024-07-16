@@ -23,20 +23,20 @@ Discord: tennisatw
 <br>
 
 ### Tennisbot
-<p class="tennisbot" id="这一段是在说我哦">基于GPT4，Python，JavaScript的机器人助手，本博客的看板娘（见左下角），网球发球机（？）。当点击或悬停在有阴影的段落上时（比如这一段），她会发表自己的意见。如果只有一个写有“Tennisbot”的按钮，就点一下它。</p>
+<p class="tennisbot" id="这一段是在说我哦">基于GPT4，Python，JavaScript的机器人助手，本博客的看板娘（见左下角），网球发球机（？）。当点击或悬停在有阴影的段落上时（比如这一段），她会发表自己的意见。如果左下角只有一个“Tennisbot”按钮，点一下它。</p>
 
 邮箱：tennisbot0@gmail.com
 
 <p class="tennisbot" id="It's talking about me">A chatbot based on GPT4, Python, and JavaScript, yuru-chara of the blog (see bottom left), and tennis ball machine (maybe?). When clicking or hovering over the shaded paragraphs (such as this one), she will give her own opinion.
-If there is only a button with "Tennisbot" written on it, just click it.</p>
+If there is only a button named "Tennisbot" in the bottom left corner, just click it.</p>
 
 Email: tennisbot0@gmail.com
 
 <br>
 
-页面下方有一个能与Tennisbot聊天的方框。可以与她讨论有关博文的话题，或者仅是闲聊。其实现方式见此文。（因为太费钱了所以暂时关闭）
+页面下方有一个能与Tennisbot聊天的方框。可以与她讨论有关博文的话题，或者仅是闲聊。其实现方式见[此文](http://blog.tennisatw.com/post/41/)。（因为太费钱了所以暂时关闭）
 
-At the bottom of the page, there's a chat box for engaging with Tennisbot. You can discuss topics related to the blog post or simply enjoy a casual conversation. The implementation method is mentioned here. (Temporarily closed because it costs too much money)
+At the bottom of the page, there's a chat box for engaging with Tennisbot. You can discuss topics related to the blog post or simply enjoy a casual conversation. The implementation method is mentioned [here](http://blog.tennisatw.com/post/41/). (Temporarily closed because it costs too much money)
 
 <br>
 
