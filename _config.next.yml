@@ -786,7 +786,7 @@ growingio_analytics: # <project_id>
 
 # Cloudflare Web Analytics
 # See: https://www.cloudflare.com/web-analytics/
-cloudflare_analytics:
+cloudflare_analytics: jiig_99sMpUSkFHy6G-HD3B1OcouessJI0cBZ3kk
 
 # Microsoft Clarity Analytics
 # See: https://clarity.microsoft.com/
@@ -840,12 +840,12 @@ firestore:
 # For more information: http://ibruce.info/2015/04/04/busuanzi/
 busuanzi_count:
   enable: false
-  total_visitors: true
+  total_visitors: false
   total_visitors_icon: fa fa-user
-  total_views: true
-  total_views_icon: fa fa-eye
+  total_views: false
+  total_views_icon: fa fa-user
   post_views: true
-  post_views_icon: far fa-eye
+  post_views_icon: fa fa-eye
 
 
 # ---------------------------------------------------------------
