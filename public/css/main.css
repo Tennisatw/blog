@@ -1302,6 +1302,7 @@ pre code {
 .sidebar-overview-active .sidebar-nav-overview {
   border-bottom-color: #e06070;
   color: #e06070;
+  font-weight: bold;
   transition-delay: 0.2s;
 }
 .sidebar-toc-active .sidebar-nav-toc:hover,
@@ -1442,6 +1443,8 @@ pre code {
   padding-left: 0;
 }
 .post-toc ol a {
+  border-bottom: 0;
+  color: var(--text-color);
   transition: all 0.2s ease-in-out;
 }
 .post-toc .nav-item {
