@@ -15,8 +15,27 @@
     <atom:link href="https://blog.tennisatw.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Sun, 14 Jul 2024 06:32:28 GMT</pubDate>
+    <pubDate>Thu, 25 Jul 2024 14:26:12 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>诗-哈利法克斯*乔治岛</title>
+      <link>https://blog.tennisatw.com/post/58/</link>
+      <guid>https://blog.tennisatw.com/post/58/</guid>
+      <pubDate>Wed, 24 Jul 2024 01:52:01 GMT</pubDate>
+      
+      <description>暂无预览 - No preview available</description>
+      
+      
+      
+      
+      
+      <category domain="https://blog.tennisatw.com/tags/%E8%AF%97-poem/">诗 - Poem</category>
+      
+      
+      <comments>https://blog.tennisatw.com/post/58/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>利用python脚本分别调节多个屏幕的亮度 - Set the brightness of multiple screens separately using python scripts</title>

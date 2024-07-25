@@ -4,9 +4,9 @@ permalink: pages/
 date: 2024-06-23 19:47:53
 ---
 
-### 本博客的页面列表 - Page list of this blog
+### 本博客的页面 - Pages of this blog
 
-**[● 关于 - About](/about/)**
+**[关于 - About](/about/)**
 
 本博客的作者介绍，以及技术栈。
 
@@ -14,33 +14,43 @@ The author of this blog, and the tech stack.
 
 <br>
 
-**[● 推荐的信息来源 - Recommended Information Sources](/info-sources/)**
+**[推荐的信息来源 - Recommended Information Sources](/info-sources/)**
 
-推荐的一些高质量的中文时评/政治/科普信息来源
+推荐的一些高质量的中文时评/政治/科普信息来源。
 
-Some recommended high-quality Chinese news/political/science information sources
-
-<br>
-
-### 站外页面列表 - External page list
-
-正在写[《化学自学指南》](https://chemistry.tennisatw.com/)，欢迎随时监工。
-
-Working on ["Self-Study Guide to Chemistry"](https://chemistry.tennisatw.com/) now, welcome to take a look.
+Some recommended high-quality Chinese news/political/science information sources.
 
 <br>
 
-### 其他 - Other page list
+**[页面列表 - Page list](/pages/)**
 
-**[● 标签列表 - Tags](/tags/)**
+<p class="tennisbot" id="当心理发师悖论">和本博客相关的，博文之外的所有页面的列表。</p>
 
-**[● 分类列表 - Categories](/categories/)**
-
-**[● 博文归档 - Archives](/archives/)**
+<p class="tennisbot" id="Beware the Barber Paradox">A list of all pages related to this blog, other than posts.</p>
 
 <br>
 
-**● RSS订阅 - RSS Feed**
+### 站外页面 - External pages
+
+**[《化学自学指南》- "Self-Study Guide to Chemistry"](https://chemistry.tennisatw.com/)**
+
+本人正在编写的用于自学化学的指南，欢迎大家监工。
+
+A guide for self-study of chemistry that I am currently working, welcome to have a look.
+
+<br>
+
+### 其他页面 - Other pages
+
+**[标签列表 - Tags](/tags/)**
+
+**[分类列表 - Categories](/categories/)**
+
+**[博文归档 - Archives](/archives/)**
+
+<br>
+
+**RSS订阅 - RSS Feed**
 
 &emsp;[atom.xml](/atom.xml)
  

@@ -6,7 +6,7 @@
   <link href="https://blog.tennisatw.com/atom.xml" rel="self"/>
   
   <link href="https://blog.tennisatw.com/"/>
-  <updated>2024-07-14T06:32:28.297Z</updated>
+  <updated>2024-07-25T14:26:12.755Z</updated>
   <id>https://blog.tennisatw.com/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>诗-哈利法克斯*乔治岛</title>
+    <link href="https://blog.tennisatw.com/post/58/"/>
+    <id>https://blog.tennisatw.com/post/58/</id>
+    <published>2024-07-24T01:52:01.000Z</published>
+    <updated>2024-07-25T14:26:12.755Z</updated>
+    
+    
+    <summary type="html">暂无预览 - No preview available</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
+    
+  </entry>
   
   <entry>
     <title>利用python脚本分别调节多个屏幕的亮度 - Set the brightness of multiple screens separately using python scripts</title>
