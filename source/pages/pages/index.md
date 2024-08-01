@@ -16,9 +16,9 @@ The author of this blog, and the tech stack.
 
 **[推荐的信息来源 - Recommended Information Sources](/info-sources/)**
 
-博主本人推荐的一些高质量的中文时评/政治/科普信息来源。
+本人推荐的一些高质量的中文时评/政治/科普信息来源。
 
-Some high-quality Chinese news/political/science information sources recommended by me.
+Some high-quality Chinese news/political/science information sources, recommended by myself.
 
 <br>
 
@@ -41,6 +41,10 @@ A guide for self-study of chemistry that I am currently working, welcome to have
 <br>
 
 ### 其他页面 - Other pages
+
+**[本博客的github仓库 - Github Repository of this blog](https://github.com/Tennisatw/blog)**
+
+<br>
 
 **RSS订阅 - RSS Feed**
 
