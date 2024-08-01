@@ -2,15 +2,15 @@ name: English
 
 title:
   archive: Archive
-  category: Category
-  tag: Tag
+  category: 系列 - Series
+  tag: 标签 - Tag
   schedule: Schedule
 
 menu:
   home: Home
-  archives: Archives
-  categories: Categories
-  tags: Tags
+  archives: 归档 - Archives
+  categories: 系列 - Series
+  tags: 标签 - Tags
   about: About
   search: 搜索 - Search
   schedule: Schedule
@@ -23,12 +23,12 @@ sidebar:
   links: Links
 
 post:
-  posted: Posted on
-  edited: Edited on
+  posted: 发表于 - Posted on
+  edited: 编辑于 - Edited on
   created: Created
   modified: Modified
   edit: Edit this post
-  in: In
+  in: 系列 - Series  
   read_more: 阅读全文 - Read more
   untitled: Untitled
   sticky: Sticky
@@ -59,9 +59,9 @@ counter:
     other: "%d tags in total"
 
   categories:
-    zero: No categories
-    one: 1 category in total
-    other: "%d categories in total"
+    zero: No series
+    one: 1 series in total
+    other: "%d series in total"
 
   archive_posts:
     zero: No posts.
@@ -69,15 +69,15 @@ counter:
     other: "%d posts in total."
 
 state:
-  posts: posts
-  tags: tags
-  categories: categories
+  posts: 文章<br>posts
+  tags: 标签<br>tags
+  categories: 系列<br>series
 
 search:
-  placeholder: Searching...
+  placeholder: 搜索 - Searching...
   empty: "We didn't find any results for the search: %s"
   hits_time: "%s results found in %s ms"
-  hits: "%s results found"
+  hits: "%s个结果 - %s results found"
 
 cheers:
   um: Um..
@@ -113,8 +113,8 @@ accessibility:
   select_lang: Select language
 
 symbols_count_time:
-  count: Word count in article
+  count: 字数 - Word count
   count_total: Word count total
-  time: Reading time
+  time: 阅读时间 - Reading time
   time_total: Reading time total
   time_minutes: mins.

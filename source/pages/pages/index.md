@@ -16,9 +16,9 @@ The author of this blog, and the tech stack.
 
 **[推荐的信息来源 - Recommended Information Sources](/info-sources/)**
 
-推荐的一些高质量的中文时评/政治/科普信息来源。
+博主本人推荐的一些高质量的中文时评/政治/科普信息来源。
 
-Some recommended high-quality Chinese news/political/science information sources.
+Some high-quality Chinese news/political/science information sources recommended by me.
 
 <br>
 
@@ -42,9 +42,9 @@ A guide for self-study of chemistry that I am currently working, welcome to have
 
 ### 其他页面 - Other pages
 
-**[标签列表 - Tags](/tags/)**
+**[标签列表 - Tags list](/tags/)**
 
-**[分类列表 - Categories](/categories/)**
+**[系列列表 - Series list](/series/)**
 
 **[博文归档 - Archives](/archives/)**
 

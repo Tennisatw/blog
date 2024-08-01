@@ -10,11 +10,13 @@ date: 2024-04-11 19:36:02
 
 业余极客，业余诗人，理论化学专业。
 
+Amateur geek, amateur poet, major in theoretical chemistry.
+
+<br>
+
 邮箱：tennisatw@mail.com
 
 Discord: tennisatw
-
-Amateur geek, amateur poet, major in theoretical chemistry.
 
 Email: tennisatw@mail.com
 
@@ -50,9 +52,9 @@ There is a [Discord group](https://discord.gg/trCwuPYvG2) for the readers of thi
 
 ### 本博客 - This Blog
 
-本博客使用Hexo制作。本博客的内容可以随意转载，但请标明出处（cc by 4.0）。
+本博客使用Hexo制作。本博客的内容可以随意转载，但请标明出处（cc by 4.0）。如果图片显示不出来，刷新一下页面。
 
-This blog is made using Hexo. Feel free to share the content of this blog, but please credit the source（cc by 4.0）.
+This blog is made using Hexo. Feel free to share the content of this blog, but please credit the source（cc by 4.0）. If the images do not display, simply refresh the page.
 
 <br>
 
@@ -62,9 +64,9 @@ Most of the content in this blog is written in a mix of Chinese and English. The
 
 <br>
 
-此外，左上角有google翻译插件，你会需要它的。
+此外，左上角（电脑版）或上方（手机版）有google翻译插件，你会需要它的。
 
-Additionally, there's a Google Translate plugin at the top left corner, if needed.
+Additionally, there's a Google Translate plugin at the top left corner (desktop version) or top (mobile version) of the page. if needed.
 
 <br>
 

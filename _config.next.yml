@@ -146,7 +146,7 @@ avatar:
   rotated: false
 
 # Posts / Categories / Tags in sidebar.
-site_state: false
+site_state: true
 
 # Social Links
 # Usage: `Key: permalink || icon`
@@ -230,7 +230,6 @@ footer:
     gongan_num:
     # The icon for gongan beian. Login and See: https://beian.mps.gov.cn/web/business/businessHome/website
     gongan_icon_url:
-
 
 # ---------------------------------------------------------------
 # Post Settings
