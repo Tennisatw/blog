@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tennisatw.com/pages/</loc>
+    
+    <lastmod>2024-08-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.tennisatw.com/post/57/</loc>
     
     <lastmod>2024-08-01</lastmod>
@@ -39,15 +48,6 @@
   
   <url>
     <loc>https://blog.tennisatw.com/series/</loc>
-    
-    <lastmod>2024-08-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.tennisatw.com/pages/</loc>
     
     <lastmod>2024-08-01</lastmod>
     
@@ -326,7 +326,7 @@
   </url>
   
   <url>
-    <loc>https://blog.tennisatw.com/post/39/</loc>
+    <loc>https://blog.tennisatw.com/post/36/</loc>
     
     <lastmod>2024-06-14</lastmod>
     
@@ -335,7 +335,7 @@
   </url>
   
   <url>
-    <loc>https://blog.tennisatw.com/post/36/</loc>
+    <loc>https://blog.tennisatw.com/post/39/</loc>
     
     <lastmod>2024-06-14</lastmod>
     
@@ -371,7 +371,7 @@
   </url>
   
   <url>
-    <loc>https://blog.tennisatw.com/post/45/</loc>
+    <loc>https://blog.tennisatw.com/post/47/</loc>
     
     <lastmod>2024-06-14</lastmod>
     
@@ -380,7 +380,7 @@
   </url>
   
   <url>
-    <loc>https://blog.tennisatw.com/post/47/</loc>
+    <loc>https://blog.tennisatw.com/post/45/</loc>
     
     <lastmod>2024-06-14</lastmod>
     
@@ -551,7 +551,7 @@
   </url>
   
   <url>
-    <loc>https://blog.tennisatw.com/post/23/</loc>
+    <loc>https://blog.tennisatw.com/post/24/</loc>
     
     <lastmod>2024-06-14</lastmod>
     
@@ -560,7 +560,7 @@
   </url>
   
   <url>
-    <loc>https://blog.tennisatw.com/post/24/</loc>
+    <loc>https://blog.tennisatw.com/post/23/</loc>
     
     <lastmod>2024-06-14</lastmod>
     
@@ -641,7 +641,7 @@
   </url>
   
   <url>
-    <loc>https://blog.tennisatw.com/post/9/</loc>
+    <loc>https://blog.tennisatw.com/post/10/</loc>
     
     <lastmod>2024-06-14</lastmod>
     
@@ -650,7 +650,7 @@
   </url>
   
   <url>
-    <loc>https://blog.tennisatw.com/post/10/</loc>
+    <loc>https://blog.tennisatw.com/post/9/</loc>
     
     <lastmod>2024-06-14</lastmod>
     

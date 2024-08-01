@@ -347,8 +347,8 @@ mobile_layout_economy: true
 
 # Browser header panel color.
 theme_color:
-  light: "#505080"
-  dark: "#505080"
+  light: "#555080"
+  dark: "#555080"
 
 # Override browsers' default behavior.
 body_scrollbar:
@@ -382,7 +382,7 @@ back2top:
   sidebar: false
   # Scroll percent label in b2t button.
   scrollpercent: false
-  color: "#505080"
+  color: "#555080"
 
 # Reading progress bar
 reading_progress:
@@ -399,7 +399,7 @@ reading_progress:
 bookmark:
   enable: false
   # Customize the color of the bookmark.
-  color: "#505080"
+  color: "#555080"
   # If auto, save the reading progress when closing the page or clicking the bookmark-icon.
   # If manual, only save it by clicking the bookmark-icon.
   save: auto

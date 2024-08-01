@@ -4,7 +4,7 @@
   --card-bg-color: #f5f5f5;
   --text-color: #555;
   --blockquote-color: #666;
-  --link-color: #505080;
+  --link-color: #555080;
   --link-title-color: #303050;
   --link-hover-color: #7080b0;
   --brand-color: #fff;
@@ -12,13 +12,13 @@
   --table-row-odd-bg-color: #f9f9f9;
   --table-row-hover-bg-color: #f5f5f5;
   --menu-item-bg-color: #f5f5f5;
-  --theme-color: #505080;
+  --theme-color: #555080;
   --btn-default-bg: $white;
-  --btn-default-color: #505080;
-  --btn-default-border-color: #505080;
-  --btn-default-hover-bg: #505080;
+  --btn-default-color: #555080;
+  --btn-default-border-color: #555080;
+  --btn-default-hover-bg: #555080;
   --btn-default-hover-color: #fff;
-  --btn-default-hover-border-color: #505080;
+  --btn-default-hover-border-color: #555080;
   --highlight-background: #f3f3f3;
   --highlight-foreground: #444;
   --highlight-gutter-background: #e1e1e1;
@@ -174,7 +174,7 @@ template {
   display: none;
 }
 ::selection {
-  background: #505080;
+  background: #555080;
   color: #eee;
 }
 html,
@@ -1124,13 +1124,13 @@ pre code {
 }
 .site-nav-toggle .toggle,
 .site-nav-right .toggle {
-  color: var(--text-color);
+  color: var(--link-color);
   padding: 10px;
   width: 22px;
 }
 .site-nav-toggle .toggle .toggle-line,
 .site-nav-right .toggle .toggle-line {
-  background: var(--text-color);
+  background: var(--link-color);
   border-radius: 1px;
 }
 @media (max-width: 767px) {
@@ -1286,7 +1286,7 @@ pre code {
 }
 .sidebar-nav li {
   border-bottom: 1px solid transparent;
-  color: var(--text-color);
+  color: var(--link-color);
   cursor: pointer;
   display: inline-block;
   transition: 0.2s ease-in-out;
@@ -1379,7 +1379,7 @@ pre code {
   height: 16px;
   padding: 5px;
   width: 16px;
-  background: #505080;
+  background: #555080;
   cursor: pointer;
   opacity: 1;
   position: fixed;
@@ -1444,7 +1444,7 @@ pre code {
 }
 .post-toc ol a {
   border-bottom: 0;
-  color: var(--text-color);
+  color: #555080;
   transition: all 0.2s ease-in-out;
 }
 .post-toc .nav-item {
@@ -2577,7 +2577,7 @@ header.header {
   border-radius: initial;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
   box-sizing: border-box;
-  color: var(--text-color);
+  color: var(--link-color);
   margin-top: 12px;
   max-height: calc(100vh - 24px);
   visibility: hidden;
@@ -2693,7 +2693,7 @@ header.header {
   border-bottom: 1px dotted #eee;
 }
 .post-body .tennisbot {
-  background-color: #f8f6ff;
+  background-color: #fbfaff;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .main-inner {
@@ -2709,7 +2709,7 @@ header.header {
     padding: 10px 20px;
   }
   .tennisbot {
-    background-color: #f8f6ff;
+    background-color: #fbfaff;
   }
 }
 @media (max-width: 767px) {
@@ -2726,6 +2726,6 @@ header.header {
     padding: 10px 12px;
   }
   .tennisbot {
-    background-color: #f8f6ff;
+    background-color: #fbfaff;
   }
 }

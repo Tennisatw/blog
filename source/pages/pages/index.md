@@ -42,14 +42,6 @@ A guide for self-study of chemistry that I am currently working, welcome to have
 
 ### 其他页面 - Other pages
 
-**[标签列表 - Tags list](/tags/)**
-
-**[系列列表 - Series list](/series/)**
-
-**[博文归档 - Archives](/archives/)**
-
-<br>
-
 **RSS订阅 - RSS Feed**
 
 &emsp;[atom.xml](/atom.xml)
@@ -57,3 +49,9 @@ A guide for self-study of chemistry that I am currently working, welcome to have
 &emsp;[rss2.xml](/rss2.xml)
 
 <br>
+
+**站点地图 - Site Map**
+
+&emsp;[sitemap.xml](/sitemap.xml)
+
+&emsp;[sitemap.txt](/sitemap.txt)

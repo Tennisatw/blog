@@ -1,5 +1,5 @@
 #waifu-toggle {
-	background-color: #505080;
+	background-color: #555080;
 	border-radius: 10px;
 	bottom: 25px;
 	color: #fff;
@@ -107,7 +107,7 @@
 }
 
 #waifu-tool svg:hover {
-	fill: #505080; /* #34495e */
+	fill: #555080; /* #34495e */
 }
 
 @keyframes shake {
