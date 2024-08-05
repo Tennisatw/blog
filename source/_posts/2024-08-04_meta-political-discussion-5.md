@@ -1,5 +1,5 @@
 ---
-title: 元键政5：我们是谁，应该为谁说话？
+title: 元键政5：我们是谁，应该为谁说话？ - Meta Political Discussion 5：Who Are We, and Whom Should We Speak For?
 permalink: post/59/
 excerpt: 人固然会本能地为自己的身份说话，比如，争取民族独立的人往往是本民族的人，争取女性权益的人也往往是女性。但是，人也会因为自己的政治理论而热爱某一团体，为其说话。屁股不一定决定脑袋。<br>People naturally tend to speak for their own identity. For example, those fighting for national independence are often from that nation, and those advocating for women's rights are often women. However, individuals may also champion a group because of their political beliefs. Loyalties do not necessarily dictate beliefs.
 date: 2024-08-04 02:02:18
