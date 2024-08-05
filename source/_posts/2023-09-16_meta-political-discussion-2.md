@@ -25,9 +25,9 @@ I believe political discussion remains meaningful. Its value lies in two aspects
 
 <br>
 
-必须承认的是，中国的公民的政治水平，总体而言，还是比较低的。比如，即使是对政治热衷的人，他们中的大多数人也分不清总统制和议会制，我相信这是因为教材里没教。而他们对于资本主义的认识，往往停留在早就过时了的马克思主义对其的描述上，因为教材里只教了这个。在这一点上来说，我们的政治教育做的挺差的，哪怕大学多开一节《世界各国政治模式导读》之类的必修课也好。
+必须承认的是，中国的公民的政治水平，总体而言，还是比较低的。比如，即使是对政治热衷的人，他们中的大多数人也分不清总统制和议会制，我相信这是因为教材里没教。而他们对于资本主义的认识，往往停留在早就过时了的马克思主义对其的描述上，因为教材里只教了这个。（在这一点上来说，我们的政治教育做的挺差的，哪怕大学多开一节《世界各国政治模式导读》之类的必修课也好。）
 
-It must be acknowledged that, overall, the political awareness of Chinese citizens is relatively low. For example, even those who are passionate about politics often cannot distinguish between a presidential system and a parliamentary system, which I believe is due to the lack of such content in textbooks. Their understanding of capitalism is often stuck in the outdated Marxist descriptions, because that is all the textbooks teach. In this regard, our political education is quite poor. Even adding a compulsory course like "Introduction to Political Systems of Various Countries" in universities would be beneficial.
+It must be acknowledged that, overall, the political awareness of Chinese citizens is relatively low. For example, even those who are passionate about politics often cannot distinguish between a presidential system and a parliamentary system, which I believe is due to the lack of such content in textbooks. Their understanding of capitalism is often stuck in the outdated Marxist descriptions, because that is all the textbooks teach. (In this regard, our political education is quite poor. Even adding a compulsory course like "Introduction to Political Systems of Various Countries" in universities would be beneficial.)
 
 <br>
 
@@ -49,6 +49,10 @@ Whether in democratic or authoritarian countries, politics is a process of strat
 
 <br>
 
-当然，没有必要非要为了自己的理念去做一些危险的事情，保护好自己永远是最重要的，尤其是对于神友和左人而言。往好了说，大家都是体面人，智慧比头铁更重要，用他们还算能接受的方式，从各种微小的改变开始，慢慢地争取机会。往坏了说，有些人，有些事，不值得任何人为之牺牲。
+当然，没有必要非要为了自己的理念去做一些危险的事情，保护好自己永远是最重要的，尤其是对于神友和左人而言。往好了说，大家都是体面人，智慧比头铁更重要，用他们还算能接受的方式，从各种微小的改变开始，慢慢地争取机会。
 
-Of course, there's no need to take risks for one's beliefs; protecting oneself is always the most important, especially for believers and leftists. Ideally, we are all decent people, and wisdom is more crucial than stubbornness. Using methods they can tolerate, we should start with small changes and gradually seize opportunities to achieve bigger goals. On the downside, some people and things are not worth anyone's sacrifice.
+往坏了说，有些人，有些事，不值得任何人为之牺牲。
+
+Of course, there's no need to take risks for one's beliefs; protecting oneself is always the most important, especially for believers and leftists. Ideally, we are all decent people, and wisdom is more crucial than stubbornness. Using methods they can tolerate, we should start with small changes and gradually seize opportunities to achieve bigger goals. 
+
+On the downside, some people and things are not worth anyone's sacrifice.

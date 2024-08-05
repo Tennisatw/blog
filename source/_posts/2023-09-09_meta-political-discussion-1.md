@@ -7,21 +7,29 @@ tags: 随想 - Thoughts
 categories: 元键政 - Meta Political Discussion
 ---
 
-注：本人并不是政治专业出身，键政只是我的一个兴趣罢了。《元键政》这一系列文章只是本人对于键政的由浅入深的思考，以讨论一些键政圈中常见的“元”问题。有任何与主流政治界的认识有出入的地方，实在是再正常不过了。
+《元键政》这一系列文章是本人对于键政的由浅入深的思考，以讨论一些键政圈中常见的“元”问题（即对键政本身的探讨）。
 
-Note: I am not a professional in political science; keyboard politics is just an interest of mine. The "Meta Political Discussion" series of articles is simply my progressive exploration of keyboard politics, discussing some common "meta" issues in the political discussion community. Any differences from mainstream political views are entirely normal.
+本人并非政治专业出身，键政只是我的一个兴趣罢了。有任何知识上的疏漏，还请各位读者指正。如感到不爽或受到了侵犯，还请劳烦点击右上角大大的“关闭”按钮。
+
+The series of articles titled "Meta Political Analysis" represents my gradual and in-depth contemplation on political analysis, aiming to discuss some common "meta" issues in the field (i.e., the exploration of political analysis itself).
+
+I am not a political science professional; political analysis is merely an interest of mine. If there are any knowledge gaps, I welcome readers to point them out. If you feel uncomfortable or offended, please click the large "close" button in the upper right corner.
 
 ---
 
-不是所有人对政治都有兴趣，更不是所有对政治有兴趣的人都值得与之讨论。在排除掉不好好说话的嘴臭玩家，阴阳人（指说话阴阳怪气的人），和乐子人（指看乐子的人）之后，剩下的值得讨论政治的人就都是理性人了。
+不是所有人对政治都有兴趣，更不是所有对政治有兴趣的人都值得与之讨论。在排除掉不好好说话的嘴臭玩家，阴阳人（指说话阴阳怪气的人），和乐子人（指看乐子的人）之后，剩下的，我可以说，都是值得讨论政治的人，即理性人了。
 
-Not everyone is interested in politics, and not everyone who is interested in politics is worth discussing with. After eliminating those who speak irresponsibly, mockingly, and those who just enjoy making jokes, only the rational people who is worth discussing politics remain. 
+Not everyone is interested in politics, and not everyone who is interested in politics is worth discussing with. After eliminating those who speak irresponsibly, mockingly, and those who just enjoy making political jokes. The rest, I can say, are all rational individuals who are worth discussing politics with.
 
 <br>
 
-所有理性人本质上都是相同的，即，遇到相同的事情时，理性的看法只有一种。所以理论上来说，每个人的政见都应该一致。在与理性人讨论政治的过程中，不会有任何冲突。但是每个人都有要捍卫的理念。而相同的理念，在其他人看来可能一文不值。理性人的政见就建立在所捍卫的理念不受侵犯上。
+所有理性人本质上都是相同的，即，遇到相同的事情时，理性的看法只有一种。所以理论上来说，每个人的政见都应该一致。在与理性人讨论政治的过程中，不会有任何冲突。
 
-As all rational beings are fundamentally the same, that is, there is only one rational perspective when faced with the same situation. Theoretically, their political views should coincide. There should be no conflict when discussing politics with rational individuals. However, everyone has values to defend. And the same values may be worthless in the eyes of others. Rational people's political views are based on the premise that their values are not violated.
+但是每个人都有要捍卫的理念。而相同的理念，在其他人看来可能一文不值。理性人的政见就建立在所捍卫的理念不受侵犯上。
+
+As all rational beings are fundamentally the same, that is, there is only one rational perspective when faced with the same situation. Theoretically, their political views should coincide. There should be no conflict when discussing politics with rational individuals. 
+
+However, everyone has values to defend. And the same values may be worthless in the eyes of others. Rational people's political views are based on the premise that their values are not violated.
 
 <br>
 

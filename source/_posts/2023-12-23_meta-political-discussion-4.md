@@ -1,7 +1,7 @@
 ---
-title: 元键政4：谈谈为什么要了解观点不同的人的想法 - Meta Political Discussion 4：Why Be Aware of Opposing Political Views Matters
+title: 元键政4：为什么要了解观点不同的人的想法 - Meta Political Discussion 4：Why Be Aware of Opposing Political Views Matters
 permalink: post/36/
-excerpt: 世界是复杂的，而人类认识世界的水平有限，所以如果不对这个世界做简化，那就几乎无法去认识它。比如，在牛顿总结出经典运动定律之后，人们才对世界的运动规律有了认识。科研中常用的“做实验” - “观察结果” - “建立理论模型” 等其实都是对世界的简化。<br>The world is complex, and human understanding of it is limited. Without simplifying this complexity, it would be nearly impossible to comprehend it. For instance, it was only after Newton formulated his classical laws of motion that people began to understand the principles governing movement. In scientific research, the commonly used processes of "conducting experiments" – "observing results" – "establishing theoretical models" are essentially ways of simplifying the world.
+excerpt: 了解观点不同的人的想法的核心原因是 尊重“复杂性”。<br>世界是复杂的，而人类认识世界的水平有限，所以如果不对这个世界做简化，那就几乎无法去认识它。比如，在牛顿总结出经典运动定律之后，人们才对世界的运动规律有了认识。科研中常用的“做实验” - “观察结果” - “建立理论模型” 等其实都是对世界的简化。<br>The core reason for understanding the thoughts of people with different viewpoints is to respect "complexity". <br>The world is complex, and human understanding of it is limited. Without simplifying this complexity, it would be nearly impossible to comprehend it. For instance, it was only after Newton formulated his classical laws of motion that people began to understand the principles governing movement. In scientific research, the commonly used processes of "conducting experiments" – "observing results" – "establishing theoretical models" are essentially ways of simplifying the world.
 date: 2023-12-23 00:04:21
 tags: 随想 - Thoughts
 categories: 元键政 - Meta Political Discussion
@@ -41,9 +41,15 @@ Secondly, even if liberals and rational patriots have no common ground, understa
 
 <br>
 
-我相信这个回答已经可以让理性的自由派们满意了。但是，如果仅从键政的角度来看这个问题的话，它最有趣的一点还体现不出来。让我们抛开政治观念，从哲学的角度去思考这个问题。我认为，了解观点不同的人的想法的核心原因是 **尊重“复杂性”**。
+我相信这个回答已经可以让理性的自由派们满意了。但是，如果仅从键政的角度来看这个问题的话，它最有趣的一点还体现不出来。
 
-I believe this response can already satisfy rational liberals. However, if we look at this issue solely from a politic discussing perspective, its most intriguing aspect isn't fully reflected. Let's set aside political views and think about this issue from a philosophical standpoint. I believe the core reason for understanding the thoughts of people with different viewpoints is **to respect "complexity"**.
+I believe this response can already satisfy rational liberals. However, if we look at this issue solely from a politic discussing perspective, its most intriguing aspect isn't fully reflected. 
+
+<br>
+
+让我们抛开政治观念，从哲学的角度去思考这个问题。我认为，了解观点不同的人的想法的核心原因是 **尊重“复杂性”**。
+
+Let's set aside political views and think about this issue from a philosophical standpoint. I believe the core reason for understanding the thoughts of people with different viewpoints is **to respect "complexity"**.
 
 <br>
 

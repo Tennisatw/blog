@@ -42,7 +42,7 @@ Also, slightly off-topic, when the exhibition loudly advocate for rapid developm
 
 <br>
 
-Let's discuss the practice of celebrating funerals.
+Now let's discuss the practice of glossing over tragedies with celebrations.
 
 <br>
 
@@ -56,4 +56,4 @@ It's been two years since the devastating floods in Zhengzhou in the summer of 2
 
 <br>
 
-The practice of celebrating funerals might be associated with traditional Chinese culture. Traditionally, Chinese culture emphasizes expressing grief without being overcome by it, or in other words, mourning in moderation. There's even a tendency to avoid talking about death as much as possible. All we can say is, there's still a long way to go in our journey towards modernization.
+The practice of glossing over tragedies with celebrations might be associated with traditional Chinese culture. Traditionally, Chinese culture emphasizes expressing grief without being overcome by it, or in other words, mourning in moderation. There's even a tendency to avoid talking about death as much as possible. All we can say is, there's still a long way to go in our journey towards modernization.
