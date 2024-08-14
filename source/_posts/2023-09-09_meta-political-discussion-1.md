@@ -15,6 +15,14 @@ The series of articles titled "Meta Political Analysis" represents my gradual an
 
 I am not a political science professional; political analysis is merely an interest of mine. If there are any knowledge gaps, I welcome readers to point them out. If you feel uncomfortable or offended, please click the large "close" button in the upper right corner.
 
+<br>
+
+这一系列探讨的将是一些相当基础的问题，面对的群体是愿意理性讨论政治问题的人。
+
+This series will explore some fairly basic issues and will be aimed at people who are willing to discuss political issues rationally.
+
+<br>
+
 ---
 
 不是所有人对政治都有兴趣，更不是所有对政治有兴趣的人都值得与之讨论。在排除掉不好好说话的嘴臭玩家，阴阳人（指说话阴阳怪气的人），和乐子人（指看乐子的人）之后，剩下的，我可以说，都是值得讨论政治的人，即理性人了。

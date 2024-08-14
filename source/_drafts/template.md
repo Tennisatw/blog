@@ -4,7 +4,10 @@ date: {{ date }}
 permalink: post/auto_increment_id/
 excerpt: '暂无预览 - No preview available'
 tags: 
+categories:
 ---
+
+在文件名前加上`_`可以使其不被编译。
 
 分段
 <br>

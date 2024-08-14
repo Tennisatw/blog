@@ -31,9 +31,9 @@ The joke is somewhat exaggerated. But after reading it, has anyone thought about
 
 而“应该为谁说话”，这个问题比较复杂。在键政中，人说话的主要目的是为了捍卫自己的政治立场。决定人的政治立场的可能是其民族，国家，阶级，性别身份，但也可能是他自己的政治理论。
 
-人固然会本能地为自己的身份说话，比如，争取民族独立的人往往是本民族的人，争取女性权益的人也往往是女性。但是，人也会因为自己的政治理论而热爱某一团体，为其说话。恩格斯怎么说都是资产阶级，工厂主的儿子，但他却是马克思主义的奠基人。林毅夫为台湾人，但毅然“叛逃”到大陆担任经济学者。屁股不一定决定脑袋，认为“脑袋只会被屁股决定”是一种懒惰的思维方式。
-
 As for "whom should we speak for," this question is more complex. In political discourse, the main purpose of speaking is often to defend one's political stance. A person's political stance may be determined by their ethnicity, nationality, class, gender identity, or their own political theory.
+
+人固然会本能地为自己的身份说话，比如，争取民族独立的人往往是本民族的人，争取女性权益的人也往往是女性。但是，人也会因为自己的政治理论而热爱某一团体，为其说话。恩格斯怎么说都是资产阶级，工厂主的儿子，但他却是马克思主义的奠基人。林毅夫为台湾人，但毅然“叛逃”到大陆担任经济学者。屁股不一定决定脑袋，认为“脑袋只会被屁股决定”是一种懒惰的思维方式。
 
 People naturally tend to speak for their own identity. For example, those fighting for national independence are often from that nation, and those advocating for women's rights are often women. However, individuals may also champion a group because of their political beliefs. Engels, for instance, was undeniably part of the bourgeoisie and the son of a factory owner, yet he was a founding figure of Marxism. Lin Yifu was Taiwanese but resolutely "defected" to the mainland to serve as an economist. Loyalties do not necessarily dictate beliefs; thinking that "beliefs are solely determined by loyalties" is a lazy mindset.
 
@@ -44,3 +44,21 @@ People naturally tend to speak for their own identity. For example, those fighti
 All forms of identity and all stances, as long as they are based on rationality, have no inherent hierarchy. However, sometimes governments, family patriarchs, online opinion leaders, and others may emphasize one identity or stance over others for political propaganda (such as reinforcing class narratives, promoting the "China story," or the "American dream"). As rational individuals, we need to recognize this.
 
 ![](2.jpg)
+
+<br>
+
+---
+
+最后，考虑这样一个优生学问题：在没有遗传诊断的年代，是否要给遗传病人，智障等人强制绝育，以减少对国家和家庭的财政压力？
+
+Finally, consider the eugenics issue of whether people with genetic disorders or intellectual disabilities should be forcibly sterilized to reduce financial burdens on the state and families in the era before genetic diagnosis.
+
+<br>
+
+这个问题在上个世纪是一个相当有争议的问题。从国家和家庭的立场来看，国家的医疗资源相当有限，并且社会上的家庭普遍不富裕，照顾一个遗传病人或智障是相当大的负担。而强制绝育可以减少这种长期的经济负担。但从患者的角度来看，这是对人权的侵犯，没有人能剥夺其他人生育的权利。从国家的角度考虑问题的人，和从个人角度考虑问题的人，对这个问题往往会有不同的看法。
+
+This was a highly controversial topic in the last century. From the perspective of the state and families, medical resources were quite limited, and most families were not wealthy, making the care of someone with a genetic disorder or intellectual disability a significant burden. Forced sterilization could potentially reduce this long-term economic strain. However, from the patient's perspective, this is a violation of human rights, as no one has the right to strip others of their reproductive rights. People who approach this issue from the perspective of the state often have a different view than those who consider it from an individual rights standpoint.
+
+
+
+
