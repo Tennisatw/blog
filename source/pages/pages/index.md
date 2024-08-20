@@ -24,9 +24,9 @@ Some high-quality Chinese news/political/science information sources, recommende
 
 **[页面列表 - Page list](/pages/)**
 
-<p class="tennisbot" id="当心理发师悖论">和本博客相关的，博文之外的所有页面的列表。</p>
+和本博客相关的，博文之外的所有页面的列表。
 
-<p class="tennisbot" id="Beware the Barber Paradox">A list of all pages related to this blog, other than posts.</p>
+A list of all pages related to this blog, other than posts.
 
 <br>
 

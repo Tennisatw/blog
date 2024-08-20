@@ -56,4 +56,4 @@ tags: 推荐 - Recommendation
 
 <br>
 
-另，李老师也有出过相同话题的[视频](https://www.youtube.com/watch?v=SYoYeB-uz0k)，从自由派“反贼”的角度分析了这个节目的荒谬之处。
+另，李老师也有出过相同话题的[视频](https://www.youtube.com/watch?v=SYoYeB-uz0k)，从自由派“反贼”的角度分析了这个节目的荒谬之处。此外。混乱粉笔在介绍[网络文化对孔子的评价](https://www.bilibili.com/video/BV1gW42197Fu/)时，也有一些令人忍俊不禁的描述。
