@@ -1,5 +1,5 @@
 ---
-title: 现在知乎文章质量真不行了 - The quality of Zhihu articles has really gone downhill
+title: 知乎的质量真不太行 - The quality of Zhihu is really not that good.
 permalink: post/61/
 excerpt: 如果把所有的卖小说广告、厌女言论、吐槽男女关系、煽动焦虑、炫耀装逼、"指点江山"（用老套保守的价值观阴阳怪气评价各种社会事件）、追星内容，琐碎热点都屏蔽掉，实在没剩下几篇能引起我兴趣的回答。<br> If I were to block all the ads for novels, misogynistic comments, rants about gender relations, anxiety-inducing posts, show-offs, self-righteousness (using outdated conservative values to cynically judge various social events), fan content, and trivial trending topics, there’d be barely any responses left that interest me.
 date: 2024-08-27 02:21:47
@@ -56,13 +56,19 @@ But I was wrong. The same old problems are still there, and the ads have only in
 
 <br>
 
-这是我一个新号的知乎推荐首页。如果把所有的卖小说广告、厌女言论、吐槽男女关系、煽动焦虑、炫耀装逼、"指点江山"（用老套保守的价值观阴阳怪气评价各种社会事件）、追星内容，琐碎热点都屏蔽掉，实在没剩下几篇能引起我兴趣的回答。
+这是我一个新号的知乎推荐首页。如果把所有的卖小说广告、厌女言论、吐槽男女关系、煽动焦虑、炫耀装逼、"如何评价"（用老套保守的价值观阴阳怪气评价各种社会事件，指点江山）、追星内容，琐碎热点都屏蔽掉，实在没剩下几篇能引起我兴趣的回答。
 
-This is the recommended homepage for my new account on Zhihu. If I were to block all the ads for novels, misogynistic comments, rants about gender relations, anxiety-inducing posts, show-offs, self-righteousness (using outdated conservative values to cynically judge various social events), fan content, and trivial trending topics, there’d be barely any responses left that interest me.
+This is the recommended homepage on Zhihu for a new account I created. If you filter out all the novel ads, misogynistic remarks, complaints about gender relations, anxiety-inducing content, bragging and showing off, how-do-you-evaluate responses (where outdated, conservative values are used to sarcastically comment on various social events and pontificate), celebrity gossip, and trivial trending topics, there are barely any posts left that interest me.
 
 <br>
 
-知乎显然在尝试，把各种各样的内容都推送给我，试图猜测这个新用户喜欢什么东西，然后就大量推送到首页。但这种做法让我莫名感到被侮辱了。如果知乎作为一个平台就是这种态度，我觉得他们的股价跌得还不够多。
+我说它“指点江山”，但我感觉“如何评价”的回答就是知乎的买点。总有老保看社会上很多现象看不惯，但自己又没那个自信，所以打开知乎，看看其他自信的老保是怎么阴阳怪气的，然后发现，卧槽，原来不止我一个人这么想，然后就舒服了，感觉又多了几个赛博知己或者嘴替。
+
+I describe it as "pontificating," but I feel like the how-do-you-evaluate responses are actually a selling point for Zhihu. There are always some conservative folks who are displeased with many societal phenomena but lack the confidence to express it themselves. So, they turn to Zhihu to see how other confident conservatives sarcastically critique these issues. Then they realize, "Wow, I'm not the only one who thinks this way," and feel a sense of comfort, as if they've found a few cyber kindred spirits or mouthpieces.
+
+<br>
+
+知乎显然在尝试，把各种各样的内容都推送给我，试图猜测这个新用户喜欢什么东西，然后就大量推送到首页。但这种做法让我实在是感到被侮辱了。如果知乎作为一个平台就是这种态度，我觉得他们的股价跌得还不够多。
 
 Zhihu is clearly trying to push all kinds of content on me, attempting to guess what this new user might like, and then flooding the homepage with it. But this approach makes me feel strangely insulted. If this is the platform’s attitude, I don’t think their stock price has dropped enough yet.
 
