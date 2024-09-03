@@ -6,7 +6,7 @@
   <link href="https://blog.tennisatw.com/atom.xml" rel="self"/>
   
   <link href="https://blog.tennisatw.com/"/>
-  <updated>2024-08-28T10:01:33.264Z</updated>
+  <updated>2024-09-03T07:20:28.972Z</updated>
   <id>https://blog.tennisatw.com/</id>
   
   <author>
@@ -17,11 +17,28 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>知乎的质量真不太行 - The quality of Zhihu is really not that good.</title>
+    <title>烧烤时如何生火 - How to Start a Fire for Barbecuing</title>
+    <link href="https://blog.tennisatw.com/post/62/"/>
+    <id>https://blog.tennisatw.com/post/62/</id>
+    <published>2024-09-03T07:10:05.000Z</published>
+    <updated>2024-09-03T07:20:28.972Z</updated>
+    
+    
+    <summary type="html">暂无预览 - No preview available</summary>
+    
+    
+    
+    
+    <category term="日常 - Daily" scheme="https://blog.tennisatw.com/tags/%E6%97%A5%E5%B8%B8-daily/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>知乎的推送质量真不太行 - The quality of Zhihu’s recommendations is really not that good.</title>
     <link href="https://blog.tennisatw.com/post/61/"/>
     <id>https://blog.tennisatw.com/post/61/</id>
     <published>2024-08-27T08:21:47.000Z</published>
-    <updated>2024-08-28T10:01:33.264Z</updated>
+    <updated>2024-09-03T07:09:09.825Z</updated>
     
     
     <summary type="html">如果把所有的卖小说广告、厌女言论、吐槽男女关系、煽动焦虑、炫耀装逼、&quot;指点江山&quot;（用老套保守的价值观阴阳怪气评价各种社会事件）、追星内容，琐碎热点都屏蔽掉，实在没剩下几篇能引起我兴趣的回答。&lt;br&gt; If I were to block all the ads for novels, misogynistic comments, rants about gender relations, anxiety-inducing posts, show-offs, self-righteousness (using outdated conservative values to cynically judge various social events), fan content, and trivial trending topics, there’d be barely any responses left that interest me.</summary>
@@ -184,9 +201,9 @@
     
     
     
-    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
-    
     <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
+    
+    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
     
   </entry>
   
@@ -220,9 +237,9 @@
     
     
     
-    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
-    
     <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
+    
+    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
     
   </entry>
   
@@ -239,9 +256,9 @@
     
     
     
-    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
-    
     <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
+    
+    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
     
   </entry>
   
@@ -277,9 +294,9 @@
     
     
     
-    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
-    
     <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
+    
+    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
     
   </entry>
   
@@ -381,9 +398,9 @@
     
     
     
-    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
-    
     <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
+    
+    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
     
   </entry>
   
@@ -453,9 +470,9 @@
     
     <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
     
-    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
-    
     <category term="敏感 - Sensitive" scheme="https://blog.tennisatw.com/tags/%E6%95%8F%E6%84%9F-sensitive/"/>
+    
+    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
     
   </entry>
   
@@ -964,9 +981,9 @@
     <category term="SD WebUI" scheme="https://blog.tennisatw.com/series/sd-webui/"/>
     
     
-    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
-    
     <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
+    
+    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
     
   </entry>
   
@@ -985,9 +1002,9 @@
     <category term="SD WebUI" scheme="https://blog.tennisatw.com/series/sd-webui/"/>
     
     
-    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
-    
     <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
+    
+    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
     
   </entry>
   

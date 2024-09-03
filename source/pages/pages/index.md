@@ -32,11 +32,11 @@ A list of all pages related to this blog, other than posts.
 
 ### 站外页面 - External pages
 
-**[《化学自学指南》- "Self-Study Guide to Chemistry"](https://chemistry.tennisatw.com/)**
+**[《化学自学指南》- "Self-Study Guide to Chemistry"](https://chem.tennisatw.com/)**
 
-本人正在编写的用于自学化学的指南，欢迎大家监工。
+本人正在编写的用于自学化学的指南，欢迎大家监工，也欢迎任何有精力的人参与本项目。
 
-A guide for self-study of chemistry that I am currently working, welcome to have a look.
+A guide for self-study of chemistry that I am currently working, welcome to have a look, and welcome to anyone to participate in this project.
 
 <br>
 
