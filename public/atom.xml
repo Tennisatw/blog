@@ -6,7 +6,7 @@
   <link href="https://blog.tennisatw.com/atom.xml" rel="self"/>
   
   <link href="https://blog.tennisatw.com/"/>
-  <updated>2024-09-25T05:55:27.132Z</updated>
+  <updated>2024-09-25T16:43:45.228Z</updated>
   <id>https://blog.tennisatw.com/</id>
   
   <author>
@@ -17,11 +17,28 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>文章精读1：Elucidating the Competitive Adsorption of H2O and CO2 in CALF-20</title>
+    <link href="https://blog.tennisatw.com/post/64/"/>
+    <id>https://blog.tennisatw.com/post/64/</id>
+    <published>2024-09-25T16:00:31.000Z</published>
+    <updated>2024-09-25T16:43:45.228Z</updated>
+    
+    
+    <summary type="html">暂无预览 - No preview available</summary>
+    
+    
+    
+    
+    <category term="文章精读 - Paper Reading" scheme="https://blog.tennisatw.com/tags/%E6%96%87%E7%AB%A0%E7%B2%BE%E8%AF%BB-paper-reading/"/>
+    
+  </entry>
+  
+  <entry>
     <title>如何购买VPS并使用SSR科学上网</title>
     <link href="https://blog.tennisatw.com/post/63/"/>
     <id>https://blog.tennisatw.com/post/63/</id>
     <published>2024-09-25T04:44:15.000Z</published>
-    <updated>2024-09-25T05:55:27.132Z</updated>
+    <updated>2024-09-25T14:28:19.366Z</updated>
     
     
     <summary type="html">本文记录了笔者购买Vultr VPS，并设置SSR的过程。请读者遵循所处当地的法律法规合理使用。</summary>
