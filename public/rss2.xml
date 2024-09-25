@@ -15,8 +15,27 @@
     <atom:link href="https://blog.tennisatw.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Tue, 03 Sep 2024 07:20:28 GMT</pubDate>
+    <pubDate>Wed, 25 Sep 2024 05:55:27 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>如何购买VPS并使用SSR科学上网</title>
+      <link>https://blog.tennisatw.com/post/63/</link>
+      <guid>https://blog.tennisatw.com/post/63/</guid>
+      <pubDate>Wed, 25 Sep 2024 04:44:15 GMT</pubDate>
+      
+      <description>本文记录了笔者购买Vultr VPS，并设置SSR的过程。请读者遵循所处当地的法律法规合理使用。</description>
+      
+      
+      
+      
+      
+      <category domain="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/">技术 - Technology</category>
+      
+      
+      <comments>https://blog.tennisatw.com/post/63/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>烧烤时如何生火 - How to Start a Fire for Barbecuing</title>

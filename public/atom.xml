@@ -6,7 +6,7 @@
   <link href="https://blog.tennisatw.com/atom.xml" rel="self"/>
   
   <link href="https://blog.tennisatw.com/"/>
-  <updated>2024-09-03T07:20:28.972Z</updated>
+  <updated>2024-09-25T05:55:27.132Z</updated>
   <id>https://blog.tennisatw.com/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何购买VPS并使用SSR科学上网</title>
+    <link href="https://blog.tennisatw.com/post/63/"/>
+    <id>https://blog.tennisatw.com/post/63/</id>
+    <published>2024-09-25T04:44:15.000Z</published>
+    <updated>2024-09-25T05:55:27.132Z</updated>
+    
+    
+    <summary type="html">本文记录了笔者购买Vultr VPS，并设置SSR的过程。请读者遵循所处当地的法律法规合理使用。</summary>
+    
+    
+    
+    
+    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+  </entry>
   
   <entry>
     <title>烧烤时如何生火 - How to Start a Fire for Barbecuing</title>
@@ -38,7 +55,7 @@
     <link href="https://blog.tennisatw.com/post/61/"/>
     <id>https://blog.tennisatw.com/post/61/</id>
     <published>2024-08-27T08:21:47.000Z</published>
-    <updated>2024-09-03T07:09:09.825Z</updated>
+    <updated>2024-09-16T19:04:08.036Z</updated>
     
     
     <summary type="html">如果把所有的卖小说广告、厌女言论、吐槽男女关系、煽动焦虑、炫耀装逼、&quot;指点江山&quot;（用老套保守的价值观阴阳怪气评价各种社会事件）、追星内容，琐碎热点都屏蔽掉，实在没剩下几篇能引起我兴趣的回答。&lt;br&gt; If I were to block all the ads for novels, misogynistic comments, rants about gender relations, anxiety-inducing posts, show-offs, self-righteousness (using outdated conservative values to cynically judge various social events), fan content, and trivial trending topics, there’d be barely any responses left that interest me.</summary>
