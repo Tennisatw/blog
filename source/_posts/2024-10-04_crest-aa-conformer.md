@@ -2,7 +2,6 @@
 title: 使用crest探索氨基酸构象 - Exploring Amino Acid Conformations with Crest
 permalink: post/65/
 excerpt: 氨基酸的可能的构象对于研究蛋白质的结构和功能至关重要。可以使用crest来对氨基酸的可能的构象进行探索。<br>The possible conformations of amino acids are crucial for studying protein structure and function. Crest can be used to explore these conformations.
-<br>
 date: 2024-10-04 01:15:03
 tags: 技术 - Technology
 ---
@@ -30,3 +29,15 @@ Using crest to explore amino acid conformations is straightforward. Just use the
 这其中，--gfn2表示使用GFN2-xTB方法（一种半经验方法），-T 4表示使用4个线程，--ewin 3表示设定能量窗口为3 kcal/mol。
 
 Here, --gfn2 specifies the GFN2-xTB method (a semi-empirical approach), -T 4 sets the number of threads to 4, and --ewin 3 sets the energy window to 3 kcal/mol.
+
+<br>
+
+以上为在真空中的构象搜索。如果需要在水溶液中搜索，可以使用以下命令：
+
+The above command performs conformational search in vacuum. If you want to search in aqueous solution, use the following command:
+
+`crest L-Aspartic_acid.xyz --gfn2 --gbsa -T 4 --ewin 3`
+
+其中，--gbsa表示使用GBSA溶剂模型。
+
+Here, --gbsa specifies the GBSA solvent model.

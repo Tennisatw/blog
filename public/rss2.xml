@@ -15,8 +15,27 @@
     <atom:link href="https://blog.tennisatw.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Sat, 09 Nov 2024 04:21:11 GMT</pubDate>
+    <pubDate>Sat, 09 Nov 2024 04:35:28 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>使用crest探索氨基酸构象 - Exploring Amino Acid Conformations with Crest</title>
+      <link>https://blog.tennisatw.com/post/65/</link>
+      <guid>https://blog.tennisatw.com/post/65/</guid>
+      <pubDate>Fri, 04 Oct 2024 07:15:03 GMT</pubDate>
+      
+      <description>氨基酸的可能的构象对于研究蛋白质的结构和功能至关重要。可以使用crest来对氨基酸的可能的构象进行探索。&lt;br&gt;The possible conformations of amino acids are crucial for studying protein structure and function. Crest can be used to explore these conformations.</description>
+      
+      
+      
+      
+      
+      <category domain="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/">技术 - Technology</category>
+      
+      
+      <comments>https://blog.tennisatw.com/post/65/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>文章精读1：Elucidating the Competitive Adsorption of H2O and CO2 in CALF-20</title>
