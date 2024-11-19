@@ -6,7 +6,7 @@
   <link href="https://blog.tennisatw.com/atom.xml" rel="self"/>
   
   <link href="https://blog.tennisatw.com/"/>
-  <updated>2024-11-19T00:05:40.434Z</updated>
+  <updated>2024-11-19T00:10:58.929Z</updated>
   <id>https://blog.tennisatw.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://blog.tennisatw.com/post/67/"/>
     <id>https://blog.tennisatw.com/post/67/</id>
     <published>2024-11-18T23:22:29.000Z</published>
-    <updated>2024-11-19T00:05:40.434Z</updated>
+    <updated>2024-11-19T00:10:58.929Z</updated>
     
     
     <summary type="html">截至目前，我发现的登录远程目录提交slurm任务的最方便的方法是使用VSCode的Remote-SSH插件和slurm-dashboard插件，可以一键提交slurm任务。这里简单的记录一下我的安装和配置方法。&lt;br&gt;So far, the most convenient way I’ve found to submit Slurm tasks on a remote directory is by using VSCode’s Remote-SSH plugin combined with the Slurm-Dashboard plugin, allowing one-click submission of Slurm tasks. Here, I’ll briefly document my installation and configuration process.</summary>

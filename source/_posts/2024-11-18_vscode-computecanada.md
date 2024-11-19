@@ -73,3 +73,11 @@ After installation, open the Slurm-Dashboard panel. It will automatically detect
 可以在slurm-dashboard中直接点击任务，查看任务的详细信息。**也可以在slurm-dashboard中点击脚本文件，直接提交任务**。
 
 You can click on any task in the Slurm-Dashboard to view detailed information about it. **You can also click on a script file directly within the Slurm-Dashboard to submit a task with a single click.**
+
+<br>
+
+---
+
+这套方法唯一的缺点是上传/下载文件稍有复杂：需要再打开一个vscode窗口，然后在不同窗口之间互相拖拽文件。（如果想要更方便地传输文件的话，可以使用WinSCP。）
+
+The only drawback of this method is that uploading/downloading files is slightly cumbersome—you need to open another VSCode window and drag files between the two windows. (For easier file transfers, you can use WinSCP.)
