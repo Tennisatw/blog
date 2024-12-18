@@ -1,5 +1,5 @@
 ---
-title: 推荐一套非常方便的远程目录提交slurm任务的方法 - Recommend a very convenient method for submitting slurm jobs in remote directories
+title: 推荐一套方便的远程目录提交slurm任务的方法 - Recommend a convenient method for submitting slurm jobs in remote directories
 permalink: post/67/
 excerpt: 截至目前，我发现的登录远程目录提交slurm任务的最方便的方法是使用VSCode的Remote-SSH插件和slurm-dashboard插件，可以一键提交slurm任务。这里简单的记录一下我的安装和配置方法。<br>So far, the most convenient way I’ve found to submit Slurm tasks on a remote directory is by using VSCode’s Remote-SSH plugin combined with the Slurm-Dashboard plugin, allowing one-click submission of Slurm tasks. Here, I’ll briefly document my installation and configuration process.
 date: 2024-11-18 16:22:29

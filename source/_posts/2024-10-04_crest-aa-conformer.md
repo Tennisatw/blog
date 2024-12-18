@@ -41,3 +41,15 @@ The above command performs conformational search in vacuum. If you want to searc
 其中，--gbsa表示使用GBSA溶剂模型。
 
 Here, --gbsa specifies the GBSA solvent model.
+
+<br>
+
+crest会将搜索到的所有构象保存在crest_conformers.xyz中，每一帧代表一个构象。
+
+Crest saves all the conformations found in `crest_conformers.xyz`, with each frame representing a conformation.
+
+<br>
+
+有关crest的更多信息可以参考crest的[官方文档](https://crest-lab.github.io/crest-docs/)
+
+For more information about crest, refer to the [official documentation](https://crest-lab.github.io/crest-docs/)

@@ -6,7 +6,7 @@
   <link href="https://blog.tennisatw.com/atom.xml" rel="self"/>
   
   <link href="https://blog.tennisatw.com/"/>
-  <updated>2024-11-19T00:10:58.929Z</updated>
+  <updated>2024-12-18T00:12:56.883Z</updated>
   <id>https://blog.tennisatw.com/</id>
   
   <author>
@@ -17,11 +17,28 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>推荐一套非常方便的远程目录提交slurm任务的方法 - Recommend a very convenient method for submitting slurm jobs in remote directories</title>
+    <title>推荐实时视频模型：gemini-2.0-flash - Recommend a real-time video input AI model</title>
+    <link href="https://blog.tennisatw.com/post/68/"/>
+    <id>https://blog.tennisatw.com/post/68/</id>
+    <published>2024-12-17T23:56:20.000Z</published>
+    <updated>2024-12-18T00:12:56.883Z</updated>
+    
+    
+    <summary type="html">推荐一个可以实时读取摄像头/屏幕的多模态AI模型：google gemini 2.0 flash。&lt;br&gt;Recommend a multimodal AI model capable of real-time camera/screen reading：Google Gemini 2.0 Flash.</summary>
+    
+    
+    
+    
+    <category term="推荐 - Recommendation" scheme="https://blog.tennisatw.com/tags/%E6%8E%A8%E8%8D%90-recommendation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>推荐一套方便的远程目录提交slurm任务的方法 - Recommend a convenient method for submitting slurm jobs in remote directories</title>
     <link href="https://blog.tennisatw.com/post/67/"/>
     <id>https://blog.tennisatw.com/post/67/</id>
     <published>2024-11-18T23:22:29.000Z</published>
-    <updated>2024-11-19T00:10:58.929Z</updated>
+    <updated>2024-11-19T03:03:29.463Z</updated>
     
     
     <summary type="html">截至目前，我发现的登录远程目录提交slurm任务的最方便的方法是使用VSCode的Remote-SSH插件和slurm-dashboard插件，可以一键提交slurm任务。这里简单的记录一下我的安装和配置方法。&lt;br&gt;So far, the most convenient way I’ve found to submit Slurm tasks on a remote directory is by using VSCode’s Remote-SSH plugin combined with the Slurm-Dashboard plugin, allowing one-click submission of Slurm tasks. Here, I’ll briefly document my installation and configuration process.</summary>
@@ -40,7 +57,7 @@
     <link href="https://blog.tennisatw.com/post/65/"/>
     <id>https://blog.tennisatw.com/post/65/</id>
     <published>2024-10-04T07:15:03.000Z</published>
-    <updated>2024-11-15T05:36:14.543Z</updated>
+    <updated>2024-11-21T02:33:43.126Z</updated>
     
     
     <summary type="html">氨基酸的可能的构象对于研究蛋白质的结构和功能至关重要。可以使用crest来对氨基酸的可能的构象进行探索。&lt;br&gt;The possible conformations of amino acids are crucial for studying protein structure and function. Crest can be used to explore these conformations.</summary>
@@ -74,15 +91,17 @@
     <link href="https://blog.tennisatw.com/post/63/"/>
     <id>https://blog.tennisatw.com/post/63/</id>
     <published>2024-09-25T04:44:15.000Z</published>
-    <updated>2024-11-09T04:21:11.760Z</updated>
+    <updated>2024-11-19T03:05:02.974Z</updated>
     
     
-    <summary type="html">本文记录了笔者购买Vultr VPS，并设置SSR的过程。请读者遵循所处当地的法律法规合理使用。</summary>
+    <summary type="html">本文记录了本人购买Vultr VPS，并设置SSR的过程。请读者遵循所处当地的法律法规合理使用。</summary>
     
     
     
     
     <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+    <category term="敏感 - Sensitive" scheme="https://blog.tennisatw.com/tags/%E6%95%8F%E6%84%9F-sensitive/"/>
     
   </entry>
   
