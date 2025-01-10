@@ -6,7 +6,7 @@
   <link href="https://blog.tennisatw.com/atom.xml" rel="self"/>
   
   <link href="https://blog.tennisatw.com/"/>
-  <updated>2024-12-18T00:12:56.883Z</updated>
+  <updated>2025-01-10T02:43:28.554Z</updated>
   <id>https://blog.tennisatw.com/</id>
   
   <author>
@@ -17,10 +17,44 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>TUB75/76 simulate process</title>
+    <link href="https://blog.tennisatw.com/post/70/"/>
+    <id>https://blog.tennisatw.com/post/70/</id>
+    <published>2025-01-10T02:43:28.000Z</published>
+    <updated>2025-01-10T02:43:28.554Z</updated>
+    
+    
+    <summary type="html">暂无预览 - No preview available</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>如何应对痛苦</title>
+    <link href="https://blog.tennisatw.com/post/69/"/>
+    <id>https://blog.tennisatw.com/post/69/</id>
+    <published>2025-01-09T08:53:32.000Z</published>
+    <updated>2025-01-10T08:00:18.487Z</updated>
+    
+    
+    <summary type="html">人应该怎么做才能规避痛苦，或者至少减弱痛苦的程度？本文总结了本人对这个问题的思索，并尝试给出一套应对（心理上的）痛苦的通用方法。</summary>
+    
+    
+    
+    
+    <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
+    
+    <category term="日常 - Daily" scheme="https://blog.tennisatw.com/tags/%E6%97%A5%E5%B8%B8-daily/"/>
+    
+  </entry>
+  
+  <entry>
     <title>推荐实时视频模型：gemini-2.0-flash - Recommend a real-time video input AI model</title>
     <link href="https://blog.tennisatw.com/post/68/"/>
     <id>https://blog.tennisatw.com/post/68/</id>
-    <published>2024-12-17T23:56:20.000Z</published>
+    <published>2024-12-17T08:56:20.000Z</published>
     <updated>2024-12-18T00:12:56.883Z</updated>
     
     
@@ -37,7 +71,7 @@
     <title>推荐一套方便的远程目录提交slurm任务的方法 - Recommend a convenient method for submitting slurm jobs in remote directories</title>
     <link href="https://blog.tennisatw.com/post/67/"/>
     <id>https://blog.tennisatw.com/post/67/</id>
-    <published>2024-11-18T23:22:29.000Z</published>
+    <published>2024-11-18T08:22:29.000Z</published>
     <updated>2024-11-19T03:03:29.463Z</updated>
     
     
@@ -56,7 +90,7 @@
     <title>使用crest探索氨基酸构象 - Exploring Amino Acid Conformations with Crest</title>
     <link href="https://blog.tennisatw.com/post/65/"/>
     <id>https://blog.tennisatw.com/post/65/</id>
-    <published>2024-10-04T07:15:03.000Z</published>
+    <published>2024-10-03T17:15:03.000Z</published>
     <updated>2024-11-21T02:33:43.126Z</updated>
     
     
@@ -73,7 +107,7 @@
     <title>文章精读 - Paper Reading 1：Elucidating the Competitive Adsorption of H2O and CO2 in CALF-20</title>
     <link href="https://blog.tennisatw.com/post/64/"/>
     <id>https://blog.tennisatw.com/post/64/</id>
-    <published>2024-09-25T16:00:31.000Z</published>
+    <published>2024-09-25T02:00:31.000Z</published>
     <updated>2024-11-09T05:18:06.876Z</updated>
     
     
@@ -90,7 +124,7 @@
     <title>如何购买VPS并使用SSR科学上网</title>
     <link href="https://blog.tennisatw.com/post/63/"/>
     <id>https://blog.tennisatw.com/post/63/</id>
-    <published>2024-09-25T04:44:15.000Z</published>
+    <published>2024-09-24T14:44:15.000Z</published>
     <updated>2024-11-19T03:05:02.974Z</updated>
     
     
@@ -99,9 +133,9 @@
     
     
     
-    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
-    
     <category term="敏感 - Sensitive" scheme="https://blog.tennisatw.com/tags/%E6%95%8F%E6%84%9F-sensitive/"/>
+    
+    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
     
   </entry>
   
@@ -109,7 +143,7 @@
     <title>烧烤时如何生火 - How to Start a Fire for Barbecuing</title>
     <link href="https://blog.tennisatw.com/post/62/"/>
     <id>https://blog.tennisatw.com/post/62/</id>
-    <published>2024-09-03T07:10:05.000Z</published>
+    <published>2024-09-02T17:10:05.000Z</published>
     <updated>2024-11-09T04:21:11.760Z</updated>
     
     
@@ -126,7 +160,7 @@
     <title>知乎的推送质量真不太行 - The quality of Zhihu’s recommendations is really not that good.</title>
     <link href="https://blog.tennisatw.com/post/61/"/>
     <id>https://blog.tennisatw.com/post/61/</id>
-    <published>2024-08-27T08:21:47.000Z</published>
+    <published>2024-08-26T18:21:47.000Z</published>
     <updated>2024-11-09T04:21:11.760Z</updated>
     
     
@@ -143,7 +177,7 @@
     <title>视频推荐：《如何跨越官僚垄断资本主义的陷阱》</title>
     <link href="https://blog.tennisatw.com/post/60/"/>
     <id>https://blog.tennisatw.com/post/60/</id>
-    <published>2024-08-20T06:57:03.000Z</published>
+    <published>2024-08-19T16:57:03.000Z</published>
     <updated>2024-11-09T04:21:11.760Z</updated>
     
     
@@ -160,7 +194,7 @@
     <title>元键政5：我们是谁，应该为谁说话？ - Meta Political Discussion 5：Who Are We, and Whom Should We Speak For?</title>
     <link href="https://blog.tennisatw.com/post/59/"/>
     <id>https://blog.tennisatw.com/post/59/</id>
-    <published>2024-08-04T08:02:18.000Z</published>
+    <published>2024-08-03T18:02:18.000Z</published>
     <updated>2024-11-09T04:21:11.760Z</updated>
     
     
@@ -179,7 +213,7 @@
     <title>小打油 - 劝学</title>
     <link href="https://blog.tennisatw.com/post/58/"/>
     <id>https://blog.tennisatw.com/post/58/</id>
-    <published>2024-08-01T01:22:57.000Z</published>
+    <published>2024-07-31T11:22:57.000Z</published>
     <updated>2024-11-09T04:21:11.760Z</updated>
     
     
@@ -196,7 +230,7 @@
     <title>哈利法克斯 * 乔治岛</title>
     <link href="https://blog.tennisatw.com/post/57/"/>
     <id>https://blog.tennisatw.com/post/57/</id>
-    <published>2024-07-24T04:52:01.000Z</published>
+    <published>2024-07-23T14:52:01.000Z</published>
     <updated>2024-11-09T04:21:11.760Z</updated>
     
     
@@ -213,7 +247,7 @@
     <title>利用python脚本分别调节多个屏幕的亮度 - Set the brightness of multiple screens separately using python scripts</title>
     <link href="https://blog.tennisatw.com/post/56/"/>
     <id>https://blog.tennisatw.com/post/56/</id>
-    <published>2024-07-14T05:25:41.000Z</published>
+    <published>2024-07-13T15:25:41.000Z</published>
     <updated>2024-11-09T04:21:11.760Z</updated>
     
     
@@ -230,7 +264,7 @@
     <title>小打油 - 流浪汉</title>
     <link href="https://blog.tennisatw.com/post/55/"/>
     <id>https://blog.tennisatw.com/post/55/</id>
-    <published>2024-07-11T04:54:48.000Z</published>
+    <published>2024-07-10T14:54:48.000Z</published>
     <updated>2024-11-09T04:21:11.760Z</updated>
     
     
@@ -247,7 +281,7 @@
     <title>关于压力和拓宽见识的一点看法，致我的好老弟</title>
     <link href="https://blog.tennisatw.com/post/54/"/>
     <id>https://blog.tennisatw.com/post/54/</id>
-    <published>2024-06-26T08:04:49.000Z</published>
+    <published>2024-06-25T18:04:49.000Z</published>
     <updated>2024-11-09T04:21:11.760Z</updated>
     
     
@@ -264,7 +298,7 @@
     <title>视频推荐：马前卒锐评《当马克思遇见孔夫子》</title>
     <link href="https://blog.tennisatw.com/post/53/"/>
     <id>https://blog.tennisatw.com/post/53/</id>
-    <published>2024-06-26T02:10:04.000Z</published>
+    <published>2024-06-25T12:10:04.000Z</published>
     <updated>2024-11-09T04:21:11.760Z</updated>
     
     
@@ -281,7 +315,7 @@
     <title>MDAnalysis线性密度模块的bug修复 - Bug fix for the MDAnalysis linear density module</title>
     <link href="https://blog.tennisatw.com/post/52/"/>
     <id>https://blog.tennisatw.com/post/52/</id>
-    <published>2024-06-10T19:45:07.000Z</published>
+    <published>2024-06-10T05:45:07.000Z</published>
     <updated>2024-11-09T04:21:11.760Z</updated>
     
     
@@ -290,9 +324,9 @@
     
     
     
-    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
-    
     <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
+    
+    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
     
   </entry>
   
@@ -300,7 +334,7 @@
     <title>推荐一个听歌识别曲风的网站：cyanite - Recommend a website for identifying music genres：cyanite</title>
     <link href="https://blog.tennisatw.com/post/51/"/>
     <id>https://blog.tennisatw.com/post/51/</id>
-    <published>2024-06-08T05:56:03.000Z</published>
+    <published>2024-06-07T15:56:03.000Z</published>
     <updated>2024-11-09T04:21:11.760Z</updated>
     
     
@@ -317,7 +351,7 @@
     <title>数据科学课程学习记录</title>
     <link href="https://blog.tennisatw.com/post/50/"/>
     <id>https://blog.tennisatw.com/post/50/</id>
-    <published>2024-05-06T06:38:25.000Z</published>
+    <published>2024-05-05T16:38:25.000Z</published>
     <updated>2024-11-09T04:21:11.760Z</updated>
     
     
@@ -326,9 +360,9 @@
     
     
     
-    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
-    
     <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
+    
+    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
     
   </entry>
   
@@ -336,7 +370,7 @@
     <title>为MDAnalysis包增加计算间断氢键自相关函数功能 - Add the functionality to calculate intermittent hydrogen bond autocorrelation functions to the MDAnalysis package</title>
     <link href="https://blog.tennisatw.com/post/49/"/>
     <id>https://blog.tennisatw.com/post/49/</id>
-    <published>2024-05-05T08:38:34.000Z</published>
+    <published>2024-05-04T18:38:34.000Z</published>
     <updated>2024-11-09T04:21:11.760Z</updated>
     
     
@@ -345,9 +379,9 @@
     
     
     
-    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
-    
     <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
+    
+    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
     
   </entry>
   
@@ -355,7 +389,7 @@
     <title>政治言论倾向分析器</title>
     <link href="https://blog.tennisatw.com/post/48/"/>
     <id>https://blog.tennisatw.com/post/48/</id>
-    <published>2024-04-13T02:26:38.000Z</published>
+    <published>2024-04-12T12:26:38.000Z</published>
     <updated>2024-11-09T04:21:11.760Z</updated>
     
     
@@ -374,7 +408,7 @@
     <title>魔改Gromacs，并运行 - Modify the Gromacs, and run it</title>
     <link href="https://blog.tennisatw.com/post/47/"/>
     <id>https://blog.tennisatw.com/post/47/</id>
-    <published>2024-04-01T07:16:08.000Z</published>
+    <published>2024-03-31T17:16:08.000Z</published>
     <updated>2024-11-09T04:21:11.744Z</updated>
     
     
@@ -383,9 +417,9 @@
     
     
     
-    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
-    
     <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
+    
+    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
     
   </entry>
   
@@ -393,7 +427,7 @@
     <title>为没有拓扑信息的系统分析氢键 - Analyzing Hydrogen Bonds in Systems without Topological Information</title>
     <link href="https://blog.tennisatw.com/post/46/"/>
     <id>https://blog.tennisatw.com/post/46/</id>
-    <published>2024-03-30T07:39:44.000Z</published>
+    <published>2024-03-29T17:39:44.000Z</published>
     <updated>2024-11-09T04:21:11.744Z</updated>
     
     
@@ -410,7 +444,7 @@
     <title>使用R语言分析各国的新冠死亡率 - Analyzing COVID-19 Mortality Rates Among Countries Using R</title>
     <link href="https://blog.tennisatw.com/post/45/"/>
     <id>https://blog.tennisatw.com/post/45/</id>
-    <published>2024-03-28T03:31:52.000Z</published>
+    <published>2024-03-27T13:31:52.000Z</published>
     <updated>2024-11-09T04:21:11.744Z</updated>
     
     
@@ -427,7 +461,7 @@
     <title>绘制Gromacs的xvg文件的脚本 - Script for plotting Gromacs xvg files</title>
     <link href="https://blog.tennisatw.com/post/44/"/>
     <id>https://blog.tennisatw.com/post/44/</id>
-    <published>2024-03-27T06:58:56.000Z</published>
+    <published>2024-03-26T16:58:56.000Z</published>
     <updated>2024-11-09T04:21:11.744Z</updated>
     
     
@@ -444,7 +478,7 @@
     <title>推荐一个歌曲生成网站：suno.ai - Recommending a song generation website：suno.ai</title>
     <link href="https://blog.tennisatw.com/post/43/"/>
     <id>https://blog.tennisatw.com/post/43/</id>
-    <published>2024-03-25T04:06:12.000Z</published>
+    <published>2024-03-24T14:06:12.000Z</published>
     <updated>2024-11-09T04:21:11.744Z</updated>
     
     
@@ -461,7 +495,7 @@
     <title>番剧&amp;漫画推荐：《街角魔族》</title>
     <link href="https://blog.tennisatw.com/post/42/"/>
     <id>https://blog.tennisatw.com/post/42/</id>
-    <published>2024-03-07T23:26:08.000Z</published>
+    <published>2024-03-07T08:26:08.000Z</published>
     <updated>2024-11-09T04:21:11.744Z</updated>
     
     
@@ -478,7 +512,7 @@
     <title>借助ChatGPT，从0开始学一点前端</title>
     <link href="https://blog.tennisatw.com/post/41/"/>
     <id>https://blog.tennisatw.com/post/41/</id>
-    <published>2024-02-25T23:22:08.000Z</published>
+    <published>2024-02-25T08:22:08.000Z</published>
     <updated>2024-11-09T04:21:11.744Z</updated>
     
     
@@ -487,9 +521,9 @@
     
     
     
-    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
-    
     <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
+    
+    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
     
   </entry>
   
@@ -497,7 +531,7 @@
     <title>演讲的一些小tips - Some tips for your presentations</title>
     <link href="https://blog.tennisatw.com/post/40/"/>
     <id>https://blog.tennisatw.com/post/40/</id>
-    <published>2024-02-12T22:17:15.000Z</published>
+    <published>2024-02-12T07:17:15.000Z</published>
     <updated>2024-11-09T04:21:11.744Z</updated>
     
     
@@ -514,7 +548,7 @@
     <title>视频推荐：文化进步与保守坐标图</title>
     <link href="https://blog.tennisatw.com/post/39/"/>
     <id>https://blog.tennisatw.com/post/39/</id>
-    <published>2024-01-31T00:38:49.000Z</published>
+    <published>2024-01-30T09:38:49.000Z</published>
     <updated>2024-11-09T04:21:11.744Z</updated>
     
     
@@ -531,7 +565,7 @@
     <title>统计局在报道全国固定资产投资时数据有误 - The Bureau of Statistics falsified data in their report on national fixed-asset investment.</title>
     <link href="https://blog.tennisatw.com/post/38/"/>
     <id>https://blog.tennisatw.com/post/38/</id>
-    <published>2024-01-30T07:25:41.000Z</published>
+    <published>2024-01-29T16:25:41.000Z</published>
     <updated>2024-11-09T04:21:11.744Z</updated>
     
     
@@ -548,7 +582,7 @@
     <title>使用贝叶斯方法分析汪文斌“新闻自由”言论 - Using Bayesian methods to analyze Wang Wenbin&#39;s remarks on &quot;freedom of the press.&quot;</title>
     <link href="https://blog.tennisatw.com/post/37/"/>
     <id>https://blog.tennisatw.com/post/37/</id>
-    <published>2024-01-09T06:04:17.000Z</published>
+    <published>2024-01-08T15:04:17.000Z</published>
     <updated>2024-11-09T04:21:11.744Z</updated>
     
     
@@ -559,9 +593,9 @@
     
     <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
     
-    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
-    
     <category term="敏感 - Sensitive" scheme="https://blog.tennisatw.com/tags/%E6%95%8F%E6%84%9F-sensitive/"/>
+    
+    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
     
   </entry>
   
@@ -569,7 +603,7 @@
     <title>元键政4：为什么要了解观点不同的人的想法 - Meta Political Discussion 4：Why Be Aware of Opposing Political Views Matters</title>
     <link href="https://blog.tennisatw.com/post/36/"/>
     <id>https://blog.tennisatw.com/post/36/</id>
-    <published>2023-12-23T07:04:21.000Z</published>
+    <published>2023-12-22T16:04:21.000Z</published>
     <updated>2024-11-09T04:21:11.744Z</updated>
     
     
@@ -588,7 +622,7 @@
     <title>油管up主推荐：小岛大浪吹 - Youtuber Recommendation：Xiaodaodalang</title>
     <link href="https://blog.tennisatw.com/post/35/"/>
     <id>https://blog.tennisatw.com/post/35/</id>
-    <published>2023-12-23T00:45:21.000Z</published>
+    <published>2023-12-22T09:45:21.000Z</published>
     <updated>2024-11-09T04:21:11.744Z</updated>
     
     
@@ -605,7 +639,7 @@
     <title>如何使用python中的量子化学软件包（包括psi4和pyscf） - How to use quantum chemistry software packages in Python (including psi4 and pyscf)</title>
     <link href="https://blog.tennisatw.com/post/34/"/>
     <id>https://blog.tennisatw.com/post/34/</id>
-    <published>2023-12-21T06:09:14.000Z</published>
+    <published>2023-12-20T15:09:14.000Z</published>
     <updated>2024-11-09T04:21:11.744Z</updated>
     
     
@@ -622,7 +656,7 @@
     <title>计算lammps模拟系统的密度 - Calculate the density of a lammps simulated system</title>
     <link href="https://blog.tennisatw.com/post/33/"/>
     <id>https://blog.tennisatw.com/post/33/</id>
-    <published>2023-11-22T05:45:01.000Z</published>
+    <published>2023-11-21T14:45:01.000Z</published>
     <updated>2024-11-09T04:21:11.744Z</updated>
     
     
@@ -639,7 +673,7 @@
     <title>对普通女权，田园女权，与激进女权的粗浅探讨</title>
     <link href="https://blog.tennisatw.com/post/32/"/>
     <id>https://blog.tennisatw.com/post/32/</id>
-    <published>2023-11-16T19:22:33.000Z</published>
+    <published>2023-11-16T04:22:33.000Z</published>
     <updated>2024-11-09T04:21:11.744Z</updated>
     
     
@@ -656,7 +690,7 @@
     <title>《共产党宣言》读后感 - Reflections on &quot;The Communist Manifesto&quot;</title>
     <link href="https://blog.tennisatw.com/post/31/"/>
     <id>https://blog.tennisatw.com/post/31/</id>
-    <published>2023-11-11T09:37:37.000Z</published>
+    <published>2023-11-10T18:37:37.000Z</published>
     <updated>2024-11-09T04:21:11.744Z</updated>
     
     
@@ -675,7 +709,7 @@
     <title>改良主义宣言：防止西朝鲜变成北朝鲜 - Manifesto for Reformism：Preventing &quot;West Korea&quot; from Becoming the &quot;North Korea&quot;</title>
     <link href="https://blog.tennisatw.com/post/30/"/>
     <id>https://blog.tennisatw.com/post/30/</id>
-    <published>2023-10-26T17:55:00.000Z</published>
+    <published>2023-10-26T03:55:00.000Z</published>
     <updated>2024-11-09T04:21:11.744Z</updated>
     
     
@@ -694,7 +728,7 @@
     <title>元键政3：与低水平言论缠斗意义不大 - Meta Political Discussion 3：It&#39;s insignificant to engage in a battle of words with low-level arguments</title>
     <link href="https://blog.tennisatw.com/post/29/"/>
     <id>https://blog.tennisatw.com/post/29/</id>
-    <published>2023-09-26T00:28:53.000Z</published>
+    <published>2023-09-25T10:28:53.000Z</published>
     <updated>2024-11-09T04:21:11.744Z</updated>
     
     
@@ -713,7 +747,7 @@
     <title>资料搜寻：韩国财阀干政的程度有多高？ -  Data Search：To what extent do South Korean chaebols interfere in politics?</title>
     <link href="https://blog.tennisatw.com/post/28/"/>
     <id>https://blog.tennisatw.com/post/28/</id>
-    <published>2023-09-23T11:16:19.000Z</published>
+    <published>2023-09-22T21:16:19.000Z</published>
     <updated>2024-11-09T04:21:11.744Z</updated>
     
     
@@ -730,7 +764,7 @@
     <title>如何泡各种茶 - How to make various types of tea</title>
     <link href="https://blog.tennisatw.com/post/27/"/>
     <id>https://blog.tennisatw.com/post/27/</id>
-    <published>2023-09-20T01:24:54.000Z</published>
+    <published>2023-09-19T11:24:54.000Z</published>
     <updated>2024-11-09T04:21:11.744Z</updated>
     
     
@@ -747,7 +781,7 @@
     <title>如何制作词云 - How to make wordcloud</title>
     <link href="https://blog.tennisatw.com/post/26/"/>
     <id>https://blog.tennisatw.com/post/26/</id>
-    <published>2023-09-17T09:56:21.000Z</published>
+    <published>2023-09-16T19:56:21.000Z</published>
     <updated>2024-11-09T04:21:11.744Z</updated>
     
     
@@ -764,7 +798,7 @@
     <title>元键政2：键政的意义何在？ - Meta Political Discussion 2：What is the significance of discussing politics?</title>
     <link href="https://blog.tennisatw.com/post/25/"/>
     <id>https://blog.tennisatw.com/post/25/</id>
-    <published>2023-09-16T09:01:14.000Z</published>
+    <published>2023-09-15T19:01:14.000Z</published>
     <updated>2024-11-09T04:21:11.744Z</updated>
     
     
@@ -783,7 +817,7 @@
     <title>自学教材推荐：《动手学深度学习》 - Self-study Material Recommendation：&quot;Dive into Deep Learning&quot;.</title>
     <link href="https://blog.tennisatw.com/post/24/"/>
     <id>https://blog.tennisatw.com/post/24/</id>
-    <published>2023-09-15T06:12:54.000Z</published>
+    <published>2023-09-14T16:12:54.000Z</published>
     <updated>2024-11-09T04:21:11.744Z</updated>
     
     
@@ -800,7 +834,7 @@
     <title>插件推荐：屏蔽黄推 - Plugin Recommendation：Twitter Block Porn</title>
     <link href="https://blog.tennisatw.com/post/23/"/>
     <id>https://blog.tennisatw.com/post/23/</id>
-    <published>2023-09-12T21:48:31.000Z</published>
+    <published>2023-09-12T07:48:31.000Z</published>
     <updated>2024-11-09T04:21:11.744Z</updated>
     
     
@@ -817,7 +851,7 @@
     <title>实验复现：重复的囚徒困境博弈 - Experiment Replication：Repeated Prisoner&#39;s Dilemma Game</title>
     <link href="https://blog.tennisatw.com/post/22/"/>
     <id>https://blog.tennisatw.com/post/22/</id>
-    <published>2023-09-11T03:30:08.000Z</published>
+    <published>2023-09-10T13:30:08.000Z</published>
     <updated>2024-11-09T04:21:11.744Z</updated>
     
     
@@ -834,7 +868,7 @@
     <title>元键政1：所有理性人本质上都是相同的，但有独特的要捍卫的价值观 - Meta Political Discussion 1：All rational people are fundamentally the same, but each has unique values to defend.</title>
     <link href="https://blog.tennisatw.com/post/21/"/>
     <id>https://blog.tennisatw.com/post/21/</id>
-    <published>2023-09-09T09:54:36.000Z</published>
+    <published>2023-09-08T19:54:36.000Z</published>
     <updated>2024-11-09T04:21:11.744Z</updated>
     
     
@@ -853,7 +887,7 @@
     <title>视频推荐：《陌生人——柴静对话圣战分子》 - Video Recommendation：&quot;Stranger：Talking to Jihadists&quot;</title>
     <link href="https://blog.tennisatw.com/post/20/"/>
     <id>https://blog.tennisatw.com/post/20/</id>
-    <published>2023-09-05T22:55:10.000Z</published>
+    <published>2023-09-05T08:55:10.000Z</published>
     <updated>2024-11-09T04:21:11.744Z</updated>
     
     
@@ -870,7 +904,7 @@
     <title>实验复现：绘制曼德勃罗集合 - Experiment Replication：sketch a Mandelbrot set</title>
     <link href="https://blog.tennisatw.com/post/19/"/>
     <id>https://blog.tennisatw.com/post/19/</id>
-    <published>2023-09-04T09:00:22.000Z</published>
+    <published>2023-09-03T19:00:22.000Z</published>
     <updated>2024-11-09T04:21:11.744Z</updated>
     
     
@@ -887,7 +921,7 @@
     <title>视频推荐：方脸说核污水排放 &amp; 我的一些杂谈 - Video Recommendation：Big Face’s Discusses on Nuclear Wastewater Discharge &amp; My Miscellaneous Talks</title>
     <link href="https://blog.tennisatw.com/post/18/"/>
     <id>https://blog.tennisatw.com/post/18/</id>
-    <published>2023-09-01T06:36:04.000Z</published>
+    <published>2023-08-31T16:36:04.000Z</published>
     <updated>2024-11-09T04:21:11.744Z</updated>
     
     
@@ -906,7 +940,7 @@
     <title>插件推荐：沉浸式翻译 - Tool recommendation：Immersive Translate</title>
     <link href="https://blog.tennisatw.com/post/17/"/>
     <id>https://blog.tennisatw.com/post/17/</id>
-    <published>2023-08-29T08:24:42.000Z</published>
+    <published>2023-08-28T18:24:42.000Z</published>
     <updated>2024-11-09T04:21:11.744Z</updated>
     
     
@@ -923,7 +957,7 @@
     <title>视频推荐：键政圈三大主流意识形态的逻辑基础——神左兔人自述</title>
     <link href="https://blog.tennisatw.com/post/16/"/>
     <id>https://blog.tennisatw.com/post/16/</id>
-    <published>2023-08-29T05:55:03.000Z</published>
+    <published>2023-08-28T15:55:03.000Z</published>
     <updated>2024-11-09T04:21:11.744Z</updated>
     
     
@@ -940,7 +974,7 @@
     <title>聊聊二次元文化的人生观和世界观的问题 - Discussing the Issues of Life Values and Worldviews in Otaku Culture</title>
     <link href="https://blog.tennisatw.com/post/15/"/>
     <id>https://blog.tennisatw.com/post/15/</id>
-    <published>2023-08-25T08:47:34.000Z</published>
+    <published>2023-08-24T18:47:34.000Z</published>
     <updated>2024-11-09T04:21:11.744Z</updated>
     
     
@@ -957,7 +991,7 @@
     <title>冬之城</title>
     <link href="https://blog.tennisatw.com/post/14/"/>
     <id>https://blog.tennisatw.com/post/14/</id>
-    <published>2023-08-22T05:40:34.000Z</published>
+    <published>2023-08-21T15:40:34.000Z</published>
     <updated>2024-11-09T04:21:11.729Z</updated>
     
     
@@ -974,7 +1008,7 @@
     <title>参观大庆油田历史陈列馆和唐山大地震纪念馆有感 - Reflections on Visiting the Daqing Oilfield History Exhibition Hall and the Tangshan Earthquake Memorial Hall</title>
     <link href="https://blog.tennisatw.com/post/13/"/>
     <id>https://blog.tennisatw.com/post/13/</id>
-    <published>2023-07-24T15:57:11.000Z</published>
+    <published>2023-07-24T01:57:11.000Z</published>
     <updated>2024-11-09T04:21:11.729Z</updated>
     
     
@@ -991,7 +1025,7 @@
     <title>冷夏</title>
     <link href="https://blog.tennisatw.com/post/12/"/>
     <id>https://blog.tennisatw.com/post/12/</id>
-    <published>2023-07-10T15:22:23.000Z</published>
+    <published>2023-07-10T01:22:23.000Z</published>
     <updated>2024-11-09T04:21:11.729Z</updated>
     
     
@@ -1008,7 +1042,7 @@
     <title>使用自定义类捕获 Python 控制台输出 - Capturing Console Output in Python Using Custom Class</title>
     <link href="https://blog.tennisatw.com/post/11/"/>
     <id>https://blog.tennisatw.com/post/11/</id>
-    <published>2023-06-27T02:23:44.000Z</published>
+    <published>2023-06-26T12:23:44.000Z</published>
     <updated>2024-11-09T04:21:11.729Z</updated>
     
     
@@ -1025,7 +1059,7 @@
     <title>在Python中模拟程序重启 - Simulating Program Restart in Python</title>
     <link href="https://blog.tennisatw.com/post/10/"/>
     <id>https://blog.tennisatw.com/post/10/</id>
-    <published>2023-06-26T03:14:13.000Z</published>
+    <published>2023-06-25T13:14:13.000Z</published>
     <updated>2024-11-09T04:21:11.729Z</updated>
     
     
@@ -1042,7 +1076,7 @@
     <title>有国才有家？——读bbc关于朝鲜的采访有感 - Only With a Country, Can There be a Home? — Reflections on BBC&#39;s Interview About North Korea</title>
     <link href="https://blog.tennisatw.com/post/9/"/>
     <id>https://blog.tennisatw.com/post/9/</id>
-    <published>2023-06-19T11:02:16.000Z</published>
+    <published>2023-06-18T21:02:16.000Z</published>
     <updated>2024-11-09T04:21:11.729Z</updated>
     
     
@@ -1059,7 +1093,7 @@
     <title>SD WebUI 2： 如何设置Stable Diffusion WebUI？ - SD WebUI 2： How to set Stable Diffusion WebUI?</title>
     <link href="https://blog.tennisatw.com/post/8/"/>
     <id>https://blog.tennisatw.com/post/8/</id>
-    <published>2023-05-05T03:16:02.000Z</published>
+    <published>2023-05-04T13:16:02.000Z</published>
     <updated>2024-11-09T04:21:11.729Z</updated>
     
     
@@ -1070,9 +1104,9 @@
     <category term="SD WebUI" scheme="https://blog.tennisatw.com/series/sd-webui/"/>
     
     
-    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
-    
     <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
+    
+    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
     
   </entry>
   
@@ -1080,7 +1114,7 @@
     <title>SD WebUI 1： 如何安装Stable Diffusion WebUI？ - SD WebUI 1： How to install Stable Diffusion WebUI?</title>
     <link href="https://blog.tennisatw.com/post/7/"/>
     <id>https://blog.tennisatw.com/post/7/</id>
-    <published>2023-05-05T03:14:38.000Z</published>
+    <published>2023-05-04T13:14:38.000Z</published>
     <updated>2024-11-09T04:21:11.729Z</updated>
     
     
@@ -1091,9 +1125,9 @@
     <category term="SD WebUI" scheme="https://blog.tennisatw.com/series/sd-webui/"/>
     
     
-    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
-    
     <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
+    
+    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
     
   </entry>
   
@@ -1101,7 +1135,7 @@
     <title>如何在《1984》这样的极权世界里尽可能好地生活？ - How to live the best possible life in a totalitarian world like &quot;1984&quot;?</title>
     <link href="https://blog.tennisatw.com/post/6/"/>
     <id>https://blog.tennisatw.com/post/6/</id>
-    <published>2023-04-30T09:47:40.000Z</published>
+    <published>2023-04-29T19:47:40.000Z</published>
     <updated>2024-11-09T04:21:11.729Z</updated>
     
     
@@ -1118,7 +1152,7 @@
     <title>实验：如何判断报道的事故死亡人数是否被大量修改？ - Experiment： How to judge whether the reported accident fatalities have been substantially modified?</title>
     <link href="https://blog.tennisatw.com/post/5/"/>
     <id>https://blog.tennisatw.com/post/5/</id>
-    <published>2023-04-22T07:12:38.000Z</published>
+    <published>2023-04-21T17:12:38.000Z</published>
     <updated>2024-11-09T04:21:11.729Z</updated>
     
     
@@ -1139,7 +1173,7 @@
     <title>聊聊价值观茧房 - Discussion on the filter bubble of values</title>
     <link href="https://blog.tennisatw.com/post/4/"/>
     <id>https://blog.tennisatw.com/post/4/</id>
-    <published>2023-04-11T19:18:29.000Z</published>
+    <published>2023-04-11T05:18:29.000Z</published>
     <updated>2024-11-09T04:21:11.729Z</updated>
     
     
@@ -1156,7 +1190,7 @@
     <title>聊聊带节奏与独立思考 - Discussion on stirring up and thinking independently</title>
     <link href="https://blog.tennisatw.com/post/3/"/>
     <id>https://blog.tennisatw.com/post/3/</id>
-    <published>2023-04-08T07:43:03.000Z</published>
+    <published>2023-04-07T17:43:03.000Z</published>
     <updated>2024-11-09T04:21:11.729Z</updated>
     
     
@@ -1173,7 +1207,7 @@
     <title>通过哲学分析我的赛博分身的存在的可能性 - A philosophical analysis of the possibility of my cyber clone&#39;s existence</title>
     <link href="https://blog.tennisatw.com/post/2/"/>
     <id>https://blog.tennisatw.com/post/2/</id>
-    <published>2023-04-04T02:57:57.000Z</published>
+    <published>2023-04-03T12:57:57.000Z</published>
     <updated>2024-11-09T04:21:11.729Z</updated>
     
     
@@ -1190,7 +1224,7 @@
     <title>开始写博客 - Start blogging</title>
     <link href="https://blog.tennisatw.com/post/1/"/>
     <id>https://blog.tennisatw.com/post/1/</id>
-    <published>2023-04-04T02:36:20.000Z</published>
+    <published>2023-04-03T12:36:20.000Z</published>
     <updated>2024-11-09T04:21:11.729Z</updated>
     
     
@@ -1207,7 +1241,7 @@
     <title>毕业生</title>
     <link href="https://blog.tennisatw.com/post/-1/"/>
     <id>https://blog.tennisatw.com/post/-1/</id>
-    <published>2023-03-27T05:29:35.000Z</published>
+    <published>2023-03-26T15:29:35.000Z</published>
     <updated>2024-11-09T04:21:11.729Z</updated>
     
     
@@ -1224,7 +1258,7 @@
     <title>另一代人</title>
     <link href="https://blog.tennisatw.com/post/-2/"/>
     <id>https://blog.tennisatw.com/post/-2/</id>
-    <published>2022-12-16T06:36:15.000Z</published>
+    <published>2022-12-15T15:36:15.000Z</published>
     <updated>2024-11-09T04:21:11.729Z</updated>
     
     
@@ -1241,7 +1275,7 @@
     <title>美丽猫猫新世界</title>
     <link href="https://blog.tennisatw.com/post/-3/"/>
     <id>https://blog.tennisatw.com/post/-3/</id>
-    <published>2022-08-16T05:38:41.000Z</published>
+    <published>2022-08-15T15:38:41.000Z</published>
     <updated>2024-11-09T04:21:11.729Z</updated>
     
     
@@ -1258,7 +1292,7 @@
     <title>怀念一棵榕树</title>
     <link href="https://blog.tennisatw.com/post/-4/"/>
     <id>https://blog.tennisatw.com/post/-4/</id>
-    <published>2022-08-03T05:44:33.000Z</published>
+    <published>2022-08-02T15:44:33.000Z</published>
     <updated>2024-11-09T04:21:11.729Z</updated>
     
     
@@ -1275,7 +1309,7 @@
     <title>住在黑洞里</title>
     <link href="https://blog.tennisatw.com/post/-5/"/>
     <id>https://blog.tennisatw.com/post/-5/</id>
-    <published>2022-01-21T06:47:00.000Z</published>
+    <published>2022-01-20T15:47:00.000Z</published>
     <updated>2024-11-09T04:21:11.729Z</updated>
     
     
@@ -1292,7 +1326,7 @@
     <title>跨年</title>
     <link href="https://blog.tennisatw.com/post/-6/"/>
     <id>https://blog.tennisatw.com/post/-6/</id>
-    <published>2022-01-01T06:48:55.000Z</published>
+    <published>2021-12-31T15:48:55.000Z</published>
     <updated>2024-11-09T04:21:11.729Z</updated>
     
     
@@ -1309,7 +1343,7 @@
     <title>爱城雪</title>
     <link href="https://blog.tennisatw.com/post/-7/"/>
     <id>https://blog.tennisatw.com/post/-7/</id>
-    <published>2021-12-24T06:54:15.000Z</published>
+    <published>2021-12-23T15:54:15.000Z</published>
     <updated>2024-11-09T04:21:11.729Z</updated>
     
     
@@ -1326,7 +1360,7 @@
     <title>折耳说</title>
     <link href="https://blog.tennisatw.com/post/-8/"/>
     <id>https://blog.tennisatw.com/post/-8/</id>
-    <published>2021-11-02T05:55:58.000Z</published>
+    <published>2021-11-01T15:55:58.000Z</published>
     <updated>2024-11-09T04:21:11.729Z</updated>
     
     
@@ -1343,7 +1377,7 @@
     <title>交大秋</title>
     <link href="https://blog.tennisatw.com/post/-9/"/>
     <id>https://blog.tennisatw.com/post/-9/</id>
-    <published>2021-10-11T07:58:47.000Z</published>
+    <published>2021-10-10T17:58:47.000Z</published>
     <updated>2024-11-09T04:21:11.729Z</updated>
     
     
@@ -1360,7 +1394,7 @@
     <title>可怜的意大利小孩 - A poor Italian kid</title>
     <link href="https://blog.tennisatw.com/post/-10/"/>
     <id>https://blog.tennisatw.com/post/-10/</id>
-    <published>2021-08-22T06:02:34.000Z</published>
+    <published>2021-08-21T16:02:34.000Z</published>
     <updated>2024-11-09T04:21:11.729Z</updated>
     
     
@@ -1377,7 +1411,7 @@
     <title>致刘昊</title>
     <link href="https://blog.tennisatw.com/post/-11/"/>
     <id>https://blog.tennisatw.com/post/-11/</id>
-    <published>2021-07-13T06:07:02.000Z</published>
+    <published>2021-07-12T16:07:02.000Z</published>
     <updated>2024-11-09T04:21:11.729Z</updated>
     
     
@@ -1394,7 +1428,7 @@
     <title>今晚的月光亮得刺眼</title>
     <link href="https://blog.tennisatw.com/post/-12/"/>
     <id>https://blog.tennisatw.com/post/-12/</id>
-    <published>2021-07-09T06:10:00.000Z</published>
+    <published>2021-07-08T16:10:00.000Z</published>
     <updated>2024-11-09T04:21:11.729Z</updated>
     
     
@@ -1411,7 +1445,7 @@
     <title>题老黑板</title>
     <link href="https://blog.tennisatw.com/post/-13/"/>
     <id>https://blog.tennisatw.com/post/-13/</id>
-    <published>2021-06-19T06:12:35.000Z</published>
+    <published>2021-06-18T16:12:35.000Z</published>
     <updated>2024-11-09T04:21:11.729Z</updated>
     
     
@@ -1428,7 +1462,7 @@
     <title>人上人上人</title>
     <link href="https://blog.tennisatw.com/post/-14/"/>
     <id>https://blog.tennisatw.com/post/-14/</id>
-    <published>2020-09-26T20:59:41.000Z</published>
+    <published>2020-09-26T06:59:41.000Z</published>
     <updated>2024-11-09T04:21:11.729Z</updated>
     
     
@@ -1445,7 +1479,7 @@
     <title>日月行焉</title>
     <link href="https://blog.tennisatw.com/post/-15/"/>
     <id>https://blog.tennisatw.com/post/-15/</id>
-    <published>2019-10-17T06:18:52.000Z</published>
+    <published>2019-10-16T16:18:52.000Z</published>
     <updated>2024-11-09T04:21:11.729Z</updated>
     
     
@@ -1462,7 +1496,7 @@
     <title>梦想</title>
     <link href="https://blog.tennisatw.com/post/-16/"/>
     <id>https://blog.tennisatw.com/post/-16/</id>
-    <published>2019-05-09T20:23:40.000Z</published>
+    <published>2019-05-09T06:23:40.000Z</published>
     <updated>2024-11-09T04:21:11.729Z</updated>
     
     
@@ -1479,7 +1513,7 @@
     <title>小打油 - 假登黄鹤楼</title>
     <link href="https://blog.tennisatw.com/post/-17/"/>
     <id>https://blog.tennisatw.com/post/-17/</id>
-    <published>2018-10-03T07:20:51.000Z</published>
+    <published>2018-10-02T17:20:51.000Z</published>
     <updated>2024-11-09T04:21:11.729Z</updated>
     
     
@@ -1496,7 +1530,7 @@
     <title>在夜里出发</title>
     <link href="https://blog.tennisatw.com/post/-18/"/>
     <id>https://blog.tennisatw.com/post/-18/</id>
-    <published>2016-03-13T20:05:45.000Z</published>
+    <published>2016-03-13T06:05:45.000Z</published>
     <updated>2024-11-09T04:21:11.729Z</updated>
     
     
