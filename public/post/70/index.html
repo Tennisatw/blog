@@ -27,7 +27,7 @@
 <meta property="og:description" content="暂无预览 - No preview available">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2025-01-10T02:43:28.000Z">
-<meta property="article:modified_time" content="2025-01-10T11:50:02.267Z">
+<meta property="article:modified_time" content="2025-01-11T08:10:35.157Z">
 <meta property="article:author" content="Tennisatw">
 <meta property="article:tag" content="chemistry">
 <meta property="article:tag" content="programming">
@@ -141,7 +141,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           目录 - TOC
@@ -154,6 +154,8 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#description-of-simulated-systems"><span class="nav-text">Description of Simulated
+Systems</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#force-fields"><span class="nav-text">Force Fields</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#simulation-details"><span class="nav-text">Simulation Details</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#analysis-method"><span class="nav-text">Analysis method</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -248,9 +250,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于 - Posted on</span>
-      
 
-      <time title="Created: 2025/01/10 10:43:28 / Modified: 19:50:02" itemprop="dateCreated datePublished" datetime="2025-01-10T10:43:28+08:00">2025/01/10</time>
+      <time title="Created: 2025/01/10 10:43:28" itemprop="dateCreated datePublished" datetime="2025-01-10T10:43:28+08:00">2025/01/10</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">编辑于 - Edited on</span>
+      <time title="Modified: 2025/01/11 16:10:35" itemprop="dateModified" datetime="2025-01-11T16:10:35+08:00">2025/01/11</time>
     </span>
 
   
@@ -260,14 +268,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">字数 - Word count: </span>
-      <span>80</span>
+      <span>558</span>
     </span>
     <span class="post-meta-item" title="阅读时间 - Reading time">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时间 - Reading time &asymp;</span>
-      <span>1 mins.</span>
+      <span>2 mins.</span>
     </span>
 </div>
 
@@ -277,10 +285,28 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><p>总结一下最近带领团队做的一个小项目：使用Lammps模拟两种MOF：TUB75与TUB76，在CO2和H2O存在时的分子动力学。</p>
-<p>这个小项目是一个更大的项目的一部分，在合作组的实验做完后，将会以文章的形式发表。</p>
+    <div class="post-body" itemprop="articleBody"><p>总结一下最近带领团队做的一个小项目：使用Lammps模拟两种MOF：TUB75与TUB76，在潮湿环境下，对CO2吸附作用的动力学。</p>
+<p>本模拟将试图解释：为什么在潮湿环境下，TUB75也能表现出优异的CO2吸附性能；并预测TUB76是否也有此性能。</p>
+<p>本项目是更大的项目的一部分，在合作组的实验做完后，整体的项目将会以文章的形式发表。</p>
 <p><br></p>
-<p>构件</p>
+<h3 id="description-of-simulated-systems">Description of Simulated
+Systems</h3>
+<p>在本项研究中，我们共基于TUB75与TUB76这两种MOF构建了含有不同数量的H2O和CO2分子的数个系统。</p>
+<p>本模拟使用实验测定的TUB75 unit
+cell的结构尺寸与重原子初始坐标，在适当的位置加入氢原子。之后，我们采用密度泛函理论（DFT）对几何结构进行优化。我们采用的泛函为PBE，结合GTH-PBE赝势和DZVP-MOLOPT-SR-GTH基组，并包括DFT-D3(BJ)范德华修正。我们使用优化后的结构构建了4<em>12</em>4的TUB75
+supercell，其边长为71.63Å x 55.72Å x 40.34Å，共含有13824个原子。</p>
+<p>对于TUB75体系，我们分别构建了含有30，100，300个水分子的系统，以模拟3种不同的潮湿度。对于每一种潮湿度，我们又分别向系统插入了0，10，30，100个CO2分子，以模拟不同浓度的CO2环境。所有的系统共计12个。</p>
+<p>与TUB75类似，本模拟使用实验测定的TUB76 unit
+cell的结构尺寸与重原子初始坐标，在适当的位置加入氢原子，之后在相同的DFT计算条件下进行了几何优化。TUB76与TUB75的晶胞排列方式并不相同，我们构建了2<em>12</em>2的TUB76
+supercell，以保证两个MOF的supercell的金属原子数量与配体数量相同。TUB76
+supercell的边长为90.54Å x 55.56Å x 39.98Å，共含有15744个原子。</p>
+<p>由CO2填充预实验可知，TUB76的空穴体积约为TUB75的1.5倍。所以对于含有TUB76的系统，我们选择的H2O浓度为：45，150，450个水分子，CO2浓度为：0，15，45，150个CO2分子。</p>
+<p><br></p>
+<h3 id="force-fields">Force Fields</h3>
+<p><br></p>
+<h3 id="simulation-details">Simulation Details</h3>
+<p><br></p>
+<h3 id="analysis-method">Analysis method</h3>
 
     </div>
 
@@ -336,7 +362,7 @@
   <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
     <div>
       <p class="footer-hidden"><br><br><br><br><br><br><br><br>本处广告位招租 - This ad space is available for rent</p>
-      <p class="footer-hidden">上次更新时间 - Last Updated: ||2025/01/10 19:51:03||</p>
+      <p class="footer-hidden">上次更新时间 - Last Updated: ||2025/01/11 16:10:56||</p>
     </div>
   </div>
 
