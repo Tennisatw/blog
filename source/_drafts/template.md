@@ -25,9 +25,22 @@ categories:
 {% asset_img 1.png graph2 %}
 这张图片可以显示在摘要中。
 
+<img src="/post/70/xx.png" alt="graph3" />
+
+可以调整图片大小：
+
 ![](1.png){ width=200px }
+![](1.png){ height=40% }
+
+并排显示图片
+<img src="/post/70/xy.png" style="width:400px; display:inline-block; margin-right: 1px;" />
+<img src="/post/70/xz.png" style="width:400px; display:inline-block;" />
 
 <br>
+
+<div style="text-align: center; font-size: smaller;">
+居中与缩小字号的图例
+</div>
 
 Tennisbot发表评论：
 
@@ -46,7 +59,7 @@ print("Hello, World!")
 ```
 
 插入可下载文件：
-<a href="/post/0/xx.txt" download>Addendum xx</a>
+<a href="/post/5/xx.txt" download>Addendum xx</a>
 
 <br>
 
