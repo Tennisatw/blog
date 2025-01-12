@@ -19,30 +19,51 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"blog.tennisatw.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.19.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#555080","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"utterances","storage":true,"lazyload":false,"nav":null,"activeClass":"utterances"},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索 - Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits}个结果 - undefined results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="暂无预览 - No preview available">
+    <meta name="description" content="本文总结了我们团队近期完成的一个小项目：使用Lammps模拟两种MOF（TUB75和TUB76）在潮湿环境下对CO2吸附作用的动力学。本模拟旨在解释为何TUB75在潮湿环境下仍能表现出优异的CO2吸附性能，并预测TUB76是否也具备类似性能。This article summarizes a recent small project completed by our team：using Lamm">
 <meta property="og:type" content="article">
-<meta property="og:title" content="TUB75&#x2F;76 Simulation Process">
+<meta property="og:title" content="两种MOF的潮湿环境下CO2吸附动力学模拟 - Simulation of CO2 Adsorption Dynamics by Two MOFs in a Humid Environment">
 <meta property="og:url" content="https://blog.tennisatw.com/post/70/">
 <meta property="og:site_name" content="Tennisatw的博客 - Blog of Tennisatw">
-<meta property="og:description" content="暂无预览 - No preview available">
+<meta property="og:description" content="本文总结了我们团队近期完成的一个小项目：使用Lammps模拟两种MOF（TUB75和TUB76）在潮湿环境下对CO2吸附作用的动力学。本模拟旨在解释为何TUB75在潮湿环境下仍能表现出优异的CO2吸附性能，并预测TUB76是否也具备类似性能。This article summarizes a recent small project completed by our team：using Lamm">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://blog.tennisatw.com/post/70/traj_overlay_TUB75/TUB75_100_0_xz.png">
+<meta property="og:image" content="https://blog.tennisatw.com/post/70/traj_overlay_TUB75/TUB75_100_10_xz.png">
+<meta property="og:image" content="https://blog.tennisatw.com/post/70/traj_overlay_TUB75/TUB75_100_30_xz.png">
+<meta property="og:image" content="https://blog.tennisatw.com/post/70/traj_overlay_TUB75/TUB75_100_100_xz.png">
+<meta property="og:image" content="https://blog.tennisatw.com/post/70/traj_overlay_TUB75/TUB75_30_30_xz.png">
+<meta property="og:image" content="https://blog.tennisatw.com/post/70/traj_overlay_TUB75/TUB75_100_30_xz.png">
+<meta property="og:image" content="https://blog.tennisatw.com/post/70/traj_overlay_TUB75/TUB75_300_30_xz.png">
+<meta property="og:image" content="https://blog.tennisatw.com/post/70/traj_overlay_TUB76/TUB76_150_0_xz.png">
+<meta property="og:image" content="https://blog.tennisatw.com/post/70/traj_overlay_TUB76/TUB76_150_15_xz.png">
+<meta property="og:image" content="https://blog.tennisatw.com/post/70/traj_overlay_TUB76/TUB76_150_45_xz.png">
+<meta property="og:image" content="https://blog.tennisatw.com/post/70/traj_overlay_TUB76/TUB76_150_150_xz.png">
+<meta property="og:image" content="https://blog.tennisatw.com/post/70/traj_overlay_TUB76/TUB76_45_45_xz.png">
+<meta property="og:image" content="https://blog.tennisatw.com/post/70/traj_overlay_TUB76/TUB76_150_45_xz.png">
+<meta property="og:image" content="https://blog.tennisatw.com/post/70/traj_overlay_TUB76/TUB76_450_45_xz.png">
+<meta property="og:image" content="https://blog.tennisatw.com/post/70/rdf_TUB75/RDF_Ow_Oc_varying_H2O.png">
+<meta property="og:image" content="https://blog.tennisatw.com/post/70/rdf_TUB75/RDF_Omof_Ow_varying_H2O.png">
+<meta property="og:image" content="https://blog.tennisatw.com/post/70/rdf_TUB75/RDF_Ow_Oc_varying_CO2.png">
+<meta property="og:image" content="https://blog.tennisatw.com/post/70/rdf_TUB75/RDF_Omof_Ow_varying_CO2.png">
+<meta property="og:image" content="https://blog.tennisatw.com/post/70/rdf_TUB76/RDF_Ow_Oc_varying_H2O.png">
+<meta property="og:image" content="https://blog.tennisatw.com/post/70/rdf_TUB76/RDF_Omof_Ow_varying_H2O.png">
+<meta property="og:image" content="https://blog.tennisatw.com/post/70/rdf_TUB76/RDF_Ow_Oc_varying_CO2.png">
+<meta property="og:image" content="https://blog.tennisatw.com/post/70/rdf_TUB76/RDF_Omof_Ow_varying_CO2.png">
 <meta property="article:published_time" content="2025-01-10T02:43:28.000Z">
-<meta property="article:modified_time" content="2025-01-12T03:50:07.764Z">
+<meta property="article:modified_time" content="2025-01-12T06:16:03.433Z">
 <meta property="article:author" content="Tennisatw">
-<meta property="article:tag" content="chemistry">
-<meta property="article:tag" content="programming">
-<meta property="article:tag" content="Tennisbot">
+<meta property="article:tag" content="技术 - Technology">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://blog.tennisatw.com/post/70/traj_overlay_TUB75/TUB75_100_0_xz.png">
 
 
 <link rel="canonical" href="https://blog.tennisatw.com/post/70/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://blog.tennisatw.com/post/70/","path":"/post/70/","title":"TUB75/76 Simulation Process"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://blog.tennisatw.com/post/70/","path":"/post/70/","title":"两种MOF的潮湿环境下CO2吸附动力学模拟 - Simulation of CO2 Adsorption Dynamics by Two MOFs in a Humid Environment"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>TUB75/76 Simulation Process | Tennisatw的博客 - Blog of Tennisatw</title>
+<title>两种MOF的潮湿环境下CO2吸附动力学模拟 - Simulation of CO2 Adsorption Dynamics by Two MOFs in a Humid Environment | Tennisatw的博客 - Blog of Tennisatw</title>
   
 
 
@@ -239,12 +260,12 @@ Coefficients</span></a></li><li class="nav-item nav-level-3"><a class="nav-link"
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="TUB75/76 Simulation Process | Tennisatw的博客 - Blog of Tennisatw">
+      <meta itemprop="name" content="两种MOF的潮湿环境下CO2吸附动力学模拟 - Simulation of CO2 Adsorption Dynamics by Two MOFs in a Humid Environment | Tennisatw的博客 - Blog of Tennisatw">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          TUB75/76 Simulation Process
+          两种MOF的潮湿环境下CO2吸附动力学模拟 - Simulation of CO2 Adsorption Dynamics by Two MOFs in a Humid Environment
         </h1>
 
         <div class="post-meta-container">
@@ -262,7 +283,7 @@ Coefficients</span></a></li><li class="nav-item nav-level-3"><a class="nav-link"
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">编辑于 - Edited on</span>
-      <time title="Modified: 2025/01/12 11:50:07" itemprop="dateModified" datetime="2025-01-12T11:50:07+08:00">2025/01/12</time>
+      <time title="Modified: 2025/01/12 14:16:03" itemprop="dateModified" datetime="2025-01-12T14:16:03+08:00">2025/01/12</time>
     </span>
 
   
@@ -272,14 +293,14 @@ Coefficients</span></a></li><li class="nav-item nav-level-3"><a class="nav-link"
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">字数 - Word count: </span>
-      <span>3.1k</span>
+      <span>4.3k</span>
     </span>
     <span class="post-meta-item" title="阅读时间 - Reading time">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时间 - Reading time &asymp;</span>
-      <span>11 mins.</span>
+      <span>16 mins.</span>
     </span>
 </div>
 
@@ -400,6 +421,49 @@ obtain atomic density maps in three directions.</p>
 <p>In the figures, different colors represent different types of atoms,
 and the color intensity indicates atomic density, with darker colors
 representing higher atomic density.</p>
+<p><img src="/post/70/traj_overlay_TUB75/TUB75_100_0_xz.png" style="width:400px; display:inline-block; margin-right: 1px;" />
+<img src="/post/70/traj_overlay_TUB75/TUB75_100_10_xz.png" style="width:400px; display:inline-block;" />
+<img src="/post/70/traj_overlay_TUB75/TUB75_100_30_xz.png" style="width:400px; display:inline-block; margin-right: 1px;" />
+<img src="/post/70/traj_overlay_TUB75/TUB75_100_100_xz.png" style="width:400px; display:inline-block;" /></p>
+<div style="text-align: center; font-size: smaller;">
+<p>图一：TUB75系统中，含有100个H2O分子的系统的一个晶胞的x-z平面原子轨迹叠加图，CO2浓度分别为0、10、30、100。这其中，水色，绿色代表H2O的氧原子和氢原子；红色，橙色代表CO2的碳原子和氧原子；金色，深蓝色，深橙色，深红色，深灰色，灰色分别代表MOF中的铜原子，氮原子，磷原子，氧原子，碳原子和氢原子。图片中的单位为Angstrom。下同。</p>
+<p>Figure 1: The x-z plane atomic trajectory overlay maps of a unit cell
+of the TUB75 system containing 100 H2O molecules with CO2 concentrations
+of 0, 10, 30, and 100. In this figure, cyan and green represent the
+oxygen and hydrogen atoms of H2O, respectively; red and orange represent
+the carbon and oxygen atoms of CO2, respectively; gold, dark blue, dark
+orange, dark red, dark gray, and gray represent the copper, nitrogen,
+phosphorus, oxygen, carbon, and hydrogen atoms in the MOF, respectively.
+The unit in the figure is Angstrom. The same below.</p>
+</div>
+<p><img src="/post/70/traj_overlay_TUB75/TUB75_30_30_xz.png" style="width:400px; display:inline-block; margin-right: 1px;" />
+<img src="/post/70/traj_overlay_TUB75/TUB75_100_30_xz.png" style="width:400px; display:inline-block;" />
+<img src="/post/70/traj_overlay_TUB75/TUB75_300_30_xz.png" style="width:400px;" /></p>
+<div style="text-align: center; font-size: smaller;">
+<p>图二：TUB75系统中，含有30、100、300个H2O分子的系统的一个晶胞的x-z平面原子轨迹叠加图，CO2浓度均为30。</p>
+<p>Figure 2: The x-z plane atomic trajectory overlay maps of a unit cell
+of the TUB75 system containing 30, 100, and 300 H2O molecules with a CO2
+concentration of 30.</p>
+</div>
+<p><img src="/post/70/traj_overlay_TUB76/TUB76_150_0_xz.png" style="width:400px; display:inline-block; margin-right: 1px;" />
+<img src="/post/70/traj_overlay_TUB76/TUB76_150_15_xz.png" style="width:400px; display:inline-block;" />
+<img src="/post/70/traj_overlay_TUB76/TUB76_150_45_xz.png" style="width:400px; display:inline-block; margin-right: 1px;" />
+<img src="/post/70/traj_overlay_TUB76/TUB76_150_150_xz.png" style="width:400px; display:inline-block;" /></p>
+<div style="text-align: center; font-size: smaller;">
+<p>图三：TUB76系统中，含有150个H2O分子的系统的一个晶胞的x-z平面原子轨迹叠加图，CO2浓度分别为0、15、45、150。</p>
+<p>Figure 3: The x-z plane atomic trajectory overlay maps of a unit cell
+of the TUB76 system containing 150 H2O molecules with CO2 concentrations
+of 0, 15, 45, and 150.</p>
+</div>
+<p><img src="/post/70/traj_overlay_TUB76/TUB76_45_45_xz.png" style="width:400px; display:inline-block; margin-right: 1px;" />
+<img src="/post/70/traj_overlay_TUB76/TUB76_150_45_xz.png" style="width:400px; display:inline-block;" />
+<img src="/post/70/traj_overlay_TUB76/TUB76_450_45_xz.png" style="width:400px;" /></p>
+<div style="text-align: center; font-size: smaller;">
+<p>图四：TUB76系统中，含有45、150、450个H2O分子的系统的一个晶胞的x-z平面原子轨迹叠加图，CO2浓度均为45。</p>
+<p>Figure 4: The x-z plane atomic trajectory overlay maps of a unit cell
+of the TUB76 system containing 45, 150, and 450 H2O molecules with a CO2
+concentration of 45.</p>
+</div>
 <p><br></p>
 <p>通过对原子轨迹叠加图进行分析，我们得到了许多有趣的结论：</p>
 <p>By analyzing the atomic trajectory overlay maps, we obtained several
@@ -434,21 +498,50 @@ channels.</p>
 <p>In TUB76, the position and orientation distribution of CO2 and H2O
 molecules show no obvious pattern.</p>
 <p><br></p>
-<p>对原子轨迹叠加图分析得到的结论也与径向分布函数的结果相符。我们绘制了CO2的O原子和H2O的O原子，与TUB75和TUB76中的铜氧簇中的O原子的径向分布函数，结果如下所示：</p>
+<p>对原子轨迹叠加图分析得到的结论也与径向分布函数的结果相符。我们绘制了H2O的O原子，与CO2的O原子和TUB75和TUB76中的铜氧簇中的O原子的径向分布函数，结果如下所示：</p>
 <p>The conclusions obtained from the analysis of the atomic trajectory
 overlay maps are also consistent with the results of the radial
 distribution functions. We plotted the radial distribution functions of
-the O atoms of CO2 and H2O with the O atoms in the copper-oxygen
-clusters of TUB75 and TUB76, as shown below:</p>
+the O atoms of H2O, the O atoms of CO2, and the O atoms in the
+copper-oxygen clusters in TUB75 and TUB76, as shown below:</p>
+<p><img src="/post/70/rdf_TUB75/RDF_Ow_Oc_varying_H2O.png" style="width:400px; display:inline-block; margin-right: 1px;" />
+<img src="/post/70/rdf_TUB75/RDF_Omof_Ow_varying_H2O.png" style="width:400px; display:inline-block;" />
+<img src="/post/70/rdf_TUB75/RDF_Ow_Oc_varying_CO2.png" style="width:400px; display:inline-block; margin-right: 1px;" />
+<img src="/post/70/rdf_TUB75/RDF_Omof_Ow_varying_CO2.png" style="width:400px; display:inline-block;" /></p>
+<div style="text-align: center; font-size: smaller;">
+<p>图五：TUB75系统中，CO2的O原子和H2O的O原子的径向分布函数，随着H2O浓度的变化的变化结果，与随着CO2浓度的变化的变化结果。以及H2O的O原子和MOF中铜氧簇中的O原子的径向分布函数，随着H2O浓度的变化的变化结果，与随着CO2浓度的变化的变化结果。H2O浓度分别为30、100、300，CO2浓度分别为0、10、30、100。</p>
+<p>Figure 5: The radial distribution functions of the O atoms of CO2 and
+H2O in the TUB75 system, with varying H2O concentrations and varying CO2
+concentrations. Also shown are the radial distribution functions of the
+O atoms of H2O and the O atoms in the copper-oxygen clusters in the MOF,
+with varying H2O concentrations and varying CO2 concentrations. The H2O
+concentrations were 30, 100, and 300, and the CO2 concentrations were 0,
+10, 30, and 100.</p>
+</div>
+<p><img src="/post/70/rdf_TUB76/RDF_Ow_Oc_varying_H2O.png" style="width:400px; display:inline-block; margin-right: 1px;" />
+<img src="/post/70/rdf_TUB76/RDF_Omof_Ow_varying_H2O.png" style="width:400px; display:inline-block;" />
+<img src="/post/70/rdf_TUB76/RDF_Ow_Oc_varying_CO2.png" style="width:400px; display:inline-block; margin-right: 1px;" />
+<img src="/post/70/rdf_TUB76/RDF_Omof_Ow_varying_CO2.png" style="width:400px; display:inline-block;" /></p>
+<div style="text-align: center; font-size: smaller;">
+<p>图六：TUB76系统中，CO2的O原子和H2O的O原子的径向分布函数，随着H2O浓度的变化的变化结果，与随着CO2浓度的变化的变化结果。以及H2O的O原子和MOF中铜氧簇中的O原子的径向分布函数，随着H2O浓度的变化的变化结果，与随着CO2浓度的变化的变化结果。H2O浓度分别为45，150，450，CO2浓度分别为0，15，45，150。</p>
+<p>Figure 6: The radial distribution functions of the O atoms of CO2 and
+H2O in the TUB76 system, with varying H2O concentrations and varying CO2
+concentrations. Also shown are the radial distribution functions of the
+O atoms of H2O and the O atoms in the copper-oxygen clusters in the MOF,
+with varying H2O concentrations and varying CO2 concentrations. The H2O
+concentrations were 45, 150, and 450, and the CO2 concentrations were 0,
+15, 45, and 150.</p>
+</div>
 <p><br></p>
-<p>在TUB75系统中，随着H2O浓度逐渐升高，H2O（的O原子，下同）与CO2的径向分布函数的第一个峰逐渐降低。而增加CO2的浓度会使得此径向分布函数的第一个峰逐渐升高。除此之外，调节CO2和H2O的浓度对其他的径向分布函数影响不大。</p>
+<p>在TUB75系统中，随着H2O浓度逐渐升高，H2O（的O原子，下同）与CO2的径向分布函数的第一个峰逐渐降低。而增加CO2的浓度会使得此径向分布函数的第一个峰逐渐升高。除此之外，调节CO2和H2O的浓度对其他原子对的径向分布函数影响不大。</p>
 <p>在TUB76系统中，随着H2O浓度逐渐升高，H2O中的O原子与铜氧簇中的O原子的径向分布函数的第一个峰逐渐降低，而其与CO2的O原子的径向分布函数的第一个峰逐渐升高。</p>
 <p>In the TUB75 system, as the H2O concentration gradually increases,
 the first peak of the radial distribution function between H2O (O atoms,
 the same below) and CO2 gradually decreases. Increasing the CO2
 concentration causes the first peak of this radial distribution function
 to gradually increase. Besides this, adjusting the concentrations of CO2
-and H2O has little effect on other radial distribution functions.</p>
+and H2O has little effect on the radial distribution functions of other
+atom pairs.</p>
 <p>In the TUB76 system, as the H2O concentration gradually increases,
 the first peak of the radial distribution function between the O atoms
 in H2O and the O atoms in the copper-oxygen clusters gradually
@@ -458,6 +551,9 @@ increases.</p>
 <p><br></p>
 <h3 id="扩散系数---diffusion-coefficients">扩散系数 - Diffusion
 Coefficients</h3>
+<p>（补充MSD的结果）</p>
+<p>(Add results for MSD)</p>
+<p><br></p>
 <h3 id="结论---conclusion">结论 - Conclusion</h3>
 <p>综上所述，由于TUB75的空穴管道是氢键惰性的管道，H2O与CO2都不与管道壁产生氢键相互作用，而是以静电相互作用和范德华力吸附在空穴管道中。CO2和H2O偏好物理结合在不同的位点。因此，这两种气体分子的吸附并不存在竞争性吸附关系。由于空穴管道内壁为低极性的疏水有机配体，较为倾向于与非极性的CO2分子相互作用，这也导致了H2O分子难以影响CO2的吸附。</p>
 <p>相比之下，TUB76的空穴管道更为宽敞，且低浓度的H2O易于与铜氧簇形成氢键，CO2分子与H2O分子的吸附位点仍然不重叠。因此，TUB76的CO2吸附性能应该也不会受到H2O的影响。</p>
@@ -490,6 +586,9 @@ adsorption performance in a humid environment.</p>
     
 
     <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%8A%80%E6%9C%AF-technology/" rel="tag"># 技术 - Technology</a>
+          </div>
 
         
   <div class="social-like a2a_kit a2a_kit_size_32 a2a_default_style">
@@ -537,7 +636,7 @@ adsorption performance in a humid environment.</p>
   <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
     <div>
       <p class="footer-hidden"><br><br><br><br><br><br><br><br>本处广告位招租 - This ad space is available for rent</p>
-      <p class="footer-hidden">上次更新时间 - Last Updated: ||2025/01/12 14:02:56||</p>
+      <p class="footer-hidden">上次更新时间 - Last Updated: ||2025/01/12 15:32:01||</p>
     </div>
   </div>
 

@@ -1,9 +1,7 @@
 ---
 title: 两种MOF的潮湿环境下CO2吸附动力学模拟 - Simulation of CO2 Adsorption Dynamics by Two MOFs in a Humid Environment
 permalink: post/70/
-excerpt: 
-本文总结了我们团队近期完成的一个小项目：使用Lammps模拟两种MOF（TUB75和TUB76）在潮湿环境下对CO2吸附作用的动力学。本模拟旨在解释为何TUB75在潮湿环境下仍能表现出优异的CO2吸附性能，并预测TUB76是否也具备类似性能。<br>
-This article summarizes a recent small project completed by our team：using Lammps to simulate the dynamics of CO2 adsorption by two MOFs (TUB75 and TUB76) in a humid environment. The simulation aims to explain why TUB75 exhibits excellent CO2 adsorption performance in a humid environment and to predict whether TUB76 has similar performance.
+excerpt: 本文总结了我们团队近期完成的一个小项目：使用Lammps模拟两种MOF（TUB75和TUB76）在潮湿环境下对CO2吸附作用的动力学。本模拟旨在解释为何TUB75在潮湿环境下仍能表现出优异的CO2吸附性能，并预测TUB76是否也具备类似性能。<br>This article summarizes a recent small project completed by our team：using Lammps to simulate the dynamics of CO2 adsorption by two MOFs (TUB75 and TUB76) in a humid environment. The simulation aims to explain why TUB75 exhibits excellent CO2 adsorption performance in a humid environment and to predict whether TUB76 has similar performance.
 date: 2025-01-10 10:43:28
 tags: 技术 - Technology
 ---
@@ -164,9 +162,9 @@ In TUB76, the position and orientation distribution of CO2 and H2O molecules sho
 
 <br>
 
-对原子轨迹叠加图分析得到的结论也与径向分布函数的结果相符。我们绘制了CO2的O原子和H2O的O原子，与TUB75和TUB76中的铜氧簇中的O原子的径向分布函数，结果如下所示：
+对原子轨迹叠加图分析得到的结论也与径向分布函数的结果相符。我们绘制了H2O的O原子，与CO2的O原子和TUB75和TUB76中的铜氧簇中的O原子的径向分布函数，结果如下所示：
 
-The conclusions obtained from the analysis of the atomic trajectory overlay maps are also consistent with the results of the radial distribution functions. We plotted the radial distribution functions of the O atoms of CO2 and H2O with the O atoms in the copper-oxygen clusters of TUB75 and TUB76, as shown below:
+The conclusions obtained from the analysis of the atomic trajectory overlay maps are also consistent with the results of the radial distribution functions. We plotted the radial distribution functions of the O atoms of H2O, the O atoms of CO2, and the O atoms in the copper-oxygen clusters in TUB75 and TUB76, as shown below:
 
 <img src="/post/70/rdf_TUB75/RDF_Ow_Oc_varying_H2O.png" style="width:400px; display:inline-block; margin-right: 1px;" />
 <img src="/post/70/rdf_TUB75/RDF_Omof_Ow_varying_H2O.png" style="width:400px; display:inline-block;" />

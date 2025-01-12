@@ -6,7 +6,7 @@
   <link href="https://blog.tennisatw.com/atom.xml" rel="self"/>
   
   <link href="https://blog.tennisatw.com/"/>
-  <updated>2025-01-12T03:50:07.764Z</updated>
+  <updated>2025-01-12T06:16:03.433Z</updated>
   <id>https://blog.tennisatw.com/</id>
   
   <author>
@@ -17,17 +17,19 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>TUB75/76 Simulation Process</title>
+    <title>两种MOF的潮湿环境下CO2吸附动力学模拟 - Simulation of CO2 Adsorption Dynamics by Two MOFs in a Humid Environment</title>
     <link href="https://blog.tennisatw.com/post/70/"/>
     <id>https://blog.tennisatw.com/post/70/</id>
     <published>2025-01-10T02:43:28.000Z</published>
-    <updated>2025-01-12T03:50:07.764Z</updated>
+    <updated>2025-01-12T06:16:03.433Z</updated>
     
     
-    <summary type="html">暂无预览 - No preview available</summary>
+    <summary type="html">本文总结了我们团队近期完成的一个小项目：使用Lammps模拟两种MOF（TUB75和TUB76）在潮湿环境下对CO2吸附作用的动力学。本模拟旨在解释为何TUB75在潮湿环境下仍能表现出优异的CO2吸附性能，并预测TUB76是否也具备类似性能。&lt;br&gt;This article summarizes a recent small project completed by our team：using Lammps to simulate the dynamics of CO2 adsorption by two MOFs (TUB75 and TUB76) in a humid environment. The simulation aims to explain why TUB75 exhibits excellent CO2 adsorption performance in a humid environment and to predict whether TUB76 has similar performance.</summary>
     
     
     
+    
+    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
     
   </entry>
   
