@@ -14,7 +14,7 @@ tags:
 
 <br>
 
-### 第一门课：What is Data Science? 
+## 第一门课：What is Data Science? 
 
 [https://www.coursera.org/learn/what-is-datascience/](https://www.coursera.org/learn/what-is-datascience/)
 
@@ -26,7 +26,7 @@ tags:
 
 <br>
 
-### 第二门课：Open Source tools for Data Science
+## 第二门课：Open Source tools for Data Science
 
 [https://www.coursera.org/learn/open-source-tools-for-data-science?specialization=ibm-data-science](https://www.coursera.org/learn/open-source-tools-for-data-science?specialization=ibm-data-science)
 

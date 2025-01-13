@@ -6,7 +6,7 @@ date: 2023-09-10 21:30:08
 tags: 编程 - Programming
 ---
 
-### 背景 - Background
+## 背景 - Background
 
 囚徒困境是博弈论的非零和博弈中具代表性的例子，个人最佳选择并非群体的最佳选择。以下为囚徒困境的经典表述：
 
@@ -59,7 +59,7 @@ Axelrod organized a Repeated Prisoner's Dilemma game where participants submitte
 
 <br>
 
-### 模拟实验 - Simulating
+## 模拟实验 - Simulating
 
 首先，定义一系列策略。我把我能想到的策略都罗列了出来，包括总是合作（always_cooperation），总是背叛（always_defect），随机（random），以牙还牙（tit_for_tat）及其一些变种，报复（retaliatory_strike），和测试者（tester）等等。读者也可以添加自己的策略。
 
@@ -398,7 +398,7 @@ Additionally, the "generous tit-for-tat" has proven to be more successful than t
 
 <br>
 
-### 修改初始分布 - Adjusting the Initial Distribution
+## 修改初始分布 - Adjusting the Initial Distribution
 
 考虑到如果只有一个“以牙还牙”，其余人都是“全部背叛”，那这一个“以牙还牙”一定坚持不了多久。这说明最终结果与策略的初始分布有关。在上文的程序中，在strategy_increase列表处添加策略的名字可以将此策略的初始数量从10加到50。比如：
 

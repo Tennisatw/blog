@@ -10,7 +10,7 @@ tags:
 
 <p class="tennisbot" id="如果需要的话，左上角有google翻译<br>There is Google Translate button in the upper left corner, if needed">由于本文可能稍有敏感，这里仅展示英文版。</p>
 
-### Preface
+## Preface
 
 Before leaving office, Wen Jiabao stated: "We must not only advance economic system reform but also political system reform. Without the guarantee of political system reform, the achievements of economic system reform may be lost, and the goals of modernization cannot be realized."
 
@@ -24,7 +24,7 @@ I believe Li Keqiang's statement is more of a warning than a guarantee: the West
 
 <br>
 
-### Some Preliminary Theories
+## Some Preliminary Theories
 
 Without oversight, there's no reason for leaders to ensure the nation's progress. If maintaining a North Korea-like state benefits their wealth accumulation, why not do it?
 
@@ -74,7 +74,7 @@ Self-proclaimed elites among the common people might also side with the leadersh
 
 <br>
 
-### The people we "Trying to Change"
+## The people we "Trying to Change"
 
 The people we "Trying to Change" (a softened term of enermies) are the conservative faction within the Party, not any other political groups, such as the Party's reformist faction, government agencies, the West Korean people, official media, independent media, or those with different political views (such as nationalists, orthodox Marxists, extreme fans of the divine).
 
@@ -123,7 +123,7 @@ Additionally, the weak links within the organization are also their weaknesses, 
 
 Note: The conservative faction is not a single person; you can't persuade them to relinquish power like convincing an emperor. Even if the leader of the conservative faction is assassinated, others would continue the same policies.
 
-### Motivation for Reform
+## Motivation for Reform
 
 Reform requires the efforts of two forces: the reformist faction within the Party and patriotic liberal civilians (people from all walks of life).
 
@@ -148,7 +148,7 @@ The more people participate in the struggle, the stronger it is, and the post-st
 
 <br>
 
-### What Needs to Be Done
+## What Needs to Be Done
 
 We must avoid direct confrontation, as it would be futile. Nor can we afford to engage in tirades only to end up banned or silenced. It is crucial to pinpoint and target specific errors made by the conservative faction within the Party. Fundamentally, we need to demonstrate that entrusting the nation to us would lead to better development than leaving it in the hands of the conservatives.
 
@@ -175,7 +175,7 @@ Identify and target specific errors committed by the conservative faction within
  - Strict behavioral standards should be applied to those participating in protests.
 
 
-### How to Protest
+## How to Protest
 
 The essence of protest is for the people to express their dissatisfaction in a mild manner.
 
@@ -204,7 +204,7 @@ Having support from Western countries might be beneficial, but it could also pro
 
 <br>
 
-### Possible Demands
+## Possible Demands
 
 It's entirely reasonable for citizens to make demands of their government, but this form of communication is not smooth in West Korea, which is detrimental to both sides. **Even the conservative faction within the Party might agree that allowing citizens to make some demands could help stabilize the situation.**
 
@@ -249,7 +249,7 @@ Some demands are obviously excessive in the modern era, such as:
 
 <br>
 
-### A Note of Caution About the Accelerationists
+## A Note of Caution About the Accelerationists
 
 Accelerationists hope Xi will reverse reforms faster, leading to a "break to rebuild" scenario, but I believe this is illogical:
 
@@ -263,7 +263,7 @@ If you feel strong despair, consider reading more books by reformists. (Or read 
 
 <br>
 
-### Read More World History
+## Read More World History
 
 The problems West Korea faces are, frankly, not unique; many countries around the world have encountered similar issues:
 
@@ -283,7 +283,7 @@ My advice is to read more world history and politics. Our level of political and
 
 <br>
 
-### A Few Words About Ourselves
+## A Few Words About Ourselves
 
 We are not dissidents; We support Hu Yaobang, Zhao Ziyang, Wen Jiabao, Li Keqiang, and others.
 
@@ -291,7 +291,7 @@ We are liberals, and for West Korea, I do not seek to overthrow the regime but t
 
 <br>
 
-### Other
+## Other
 
 Do not despair; we still have strength! Use wisdom to find people we can unite with.
 

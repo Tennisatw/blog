@@ -12,7 +12,7 @@ tags:
 
 <br>
 
-### Foreword
+## Foreword
 
 My younger brother was tasked by his school to write a 3,000-word reflection on "The Communist Manifesto," and he asked for my help. Embarrassingly, I hadn't read the Manifesto myself, so I took this as an opportunity to dive in.
 
@@ -26,7 +26,7 @@ I read [this](https://www.marxists.org/chinese/marx/01.htm) version.
 
 <br>
 
-### Significance
+## Significance
 
 First and foremost, "The Communist Manifesto" played a pivotal role in organizing labor struggles. It defined the proletariat, organized unions, united workers, and led the proletariat in resisting capitalist oppression, most importantly, making capitalist countries reconsider their need to demonstrate their superiority. As Che Guevara once said, "After we're gone, they'll build schools and hospitals for you, raise your wages, not because they've had a change of heart or become kind, but because we were here."
 
@@ -36,7 +36,7 @@ The struggle of the lower and middle classes is an eternal theme of human civili
 
 <br>
 
-### Limitations
+## Limitations
 
 **"The Communist Manifesto" is somewhat outdated in certain aspects; the era of proletarian oppression it concerns is nearly behind us.** A clear example is the near absence of a true proletariat in developed countries, where it has merged with the middle class. Thanks to increased welfare, higher base wages, and various labor movements, the proletariat in developed nations is no longer "property-less" as before. Instead, they live relatively comfortable lives.
 
@@ -60,7 +60,7 @@ From a scientific standpoint, eradicating traditional culture and religion might
 
 <br>
 
-### Conclusion
+## Conclusion
 
 In summary, political groups should critically study "The Communist Manifesto," acknowledging its significance while being wary of its "toxicity."
 
@@ -70,7 +70,7 @@ It represents an ideology that has never succeeded (no Marxist-Leninist state ha
 
 <br>
 
-### Other
+## Other
 
 For Chinese students, since Marxism is considered far-left (i.e., its demands are too extreme compared to today's society: abolishing private property, abolishing the state, pursuing excessive equality), it might push students' thinking towards extremism. Therefore, Marxism is not suitable as the first (or only) political theory lesson for students. A course like "Introduction to Contemporary Chinese and World Political Thought" would be better than "Principles of Marxism."
 
@@ -92,13 +92,13 @@ Moreover, if the feudal and capitalist classes are eliminated, what is the gover
 
 <br>
 
-### Analysis of Selected Sentences
+## Analysis of Selected Sentences
 
 Below is my aggressive analysis, sentence by sentence, of some passages from "The Communist Manifesto."
 
 <br>
 
-#### Chapter One: Bourgeois and Proletarians
+### Chapter One: Bourgeois and Proletarians
 
 "All hitherto societies have had a history of class struggles."  
 
@@ -148,7 +148,7 @@ Is this how it should be or how it actually is? I don't believe the proletariat 
 
 <br>
 
-#### Chapter Two: Proletarians and Communists
+### Chapter Two: Proletarians and Communists
 
 "The average price of wage labor is the minimum wage, i.e., that quantum of the means of subsistence which is absolutely requisite to keep the laborer in bare existence as a laborer."  
 
@@ -214,7 +214,7 @@ This reminds me of the "Up to the Mountains and Down to the Countryside" movemen
 
 <br>
 
-#### Chapter Three: Socialist and Communist Literature
+### Chapter Three: Socialist and Communist Literature
 
 "To win over the people, nobles brandish the proletarian's beggar's bag as a flag. However, whenever the people follow them, they discover the old feudal coat of arms on their backsides, leading to laughter and dispersion. "
 
@@ -224,7 +224,7 @@ My assessment is: Inferior propaganda, appealing to emotions.
 
 <br>
 
-#### Chapter Four: Position of the Communists in Relation to the Various Existing Opposition Parties
+### Chapter Four: Position of the Communists in Relation to the Various Existing Opposition Parties
 
 "In short, the Communists everywhere support every revolutionary movement against the existing social and political order of things."   
 "The Communists disdain to conceal their views and aims. They openly declare that their ends can be attained only by the forcible overthrow of all existing social conditions. Let the ruling classes tremble at a Communistic revolution."  
@@ -243,6 +243,6 @@ Could the jihadist faction also say: "We jihadists support every revolutionary m
 
 <br>
 
-### Epilogue
+## Epilogue
 
 My younger brother plans to revise this reflection before submitting it. I believe it might be the most aggressive critique of "The Communist Manifesto" his school has received in the past three years.

@@ -4,7 +4,7 @@ permalink: pages/
 date: 2024-06-23 19:47:53
 ---
 
-### 本博客的页面 - Pages of this blog
+## 本博客的页面 - Pages of this blog
 
 **[关于 - About](/about/)**
 
@@ -30,7 +30,7 @@ A list of all pages related to this blog, other than posts.
 
 <br>
 
-### 站外页面 - External pages
+## 站外页面 - External pages
 
 **[《化学自学指南》- "Self-Study Guide to Chemistry"](https://chem.tennisatw.com/)**
 
@@ -40,7 +40,7 @@ A guide for self-study of chemistry that I am currently working, welcome to have
 
 <br>
 
-### 其他页面 - Other pages
+## 其他页面 - Other pages
 
 **[本博客的github仓库 - Github Repository of this blog](https://github.com/Tennisatw/blog)**
 

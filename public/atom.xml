@@ -57,7 +57,7 @@
     <link href="https://blog.tennisatw.com/post/69/"/>
     <id>https://blog.tennisatw.com/post/69/</id>
     <published>2025-01-09T08:53:32.000Z</published>
-    <updated>2025-01-10T13:38:44.308Z</updated>
+    <updated>2025-01-13T21:39:00.332Z</updated>
     
     
     <summary type="html">人应该怎么做才能规避痛苦，或者至少减弱痛苦的程度？本文总结了本人对这个问题的思索，并尝试给出一套应对（心理上的）痛苦的通用方法。</summary>
@@ -108,6 +108,23 @@
   </entry>
   
   <entry>
+    <title>想你</title>
+    <link href="https://blog.tennisatw.com/post/66/"/>
+    <id>https://blog.tennisatw.com/post/66/</id>
+    <published>2024-10-30T21:02:05.000Z</published>
+    <updated>2025-01-13T21:32:16.882Z</updated>
+    
+    
+    <summary type="html">暂无预览 - No preview available</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
+    
+  </entry>
+  
+  <entry>
     <title>使用crest探索氨基酸构象 - Exploring Amino Acid Conformations with Crest</title>
     <link href="https://blog.tennisatw.com/post/65/"/>
     <id>https://blog.tennisatw.com/post/65/</id>
@@ -146,7 +163,7 @@
     <link href="https://blog.tennisatw.com/post/63/"/>
     <id>https://blog.tennisatw.com/post/63/</id>
     <published>2024-09-24T14:44:15.000Z</published>
-    <updated>2025-01-13T20:49:29.965Z</updated>
+    <updated>2025-01-13T20:54:08.751Z</updated>
     
     
     <summary type="html">本文记录了本人购买Vultr VPS，并设置SSR的过程。请读者遵循所处当地的法律法规合理使用。</summary>
@@ -269,7 +286,7 @@
     <link href="https://blog.tennisatw.com/post/56/"/>
     <id>https://blog.tennisatw.com/post/56/</id>
     <published>2024-07-13T15:25:41.000Z</published>
-    <updated>2024-11-09T04:21:11.760Z</updated>
+    <updated>2025-01-13T20:53:51.823Z</updated>
     
     
     <summary type="html">通过python的screen_brightness_control包来调节多个显示器的亮度，使用tkinter库创建一个简单的图形化界面，通过滑动条来调节各个显示器的亮度。&lt;br&gt;Using the screen_brightness_control package in Python to adjust the brightness of multiple monitors, creating a simple graphical interface using the tkinter library to adjust the brightness of each monitor with sliders.</summary>
@@ -303,7 +320,7 @@
     <link href="https://blog.tennisatw.com/post/54/"/>
     <id>https://blog.tennisatw.com/post/54/</id>
     <published>2024-06-25T18:04:49.000Z</published>
-    <updated>2024-11-09T04:21:11.760Z</updated>
+    <updated>2025-01-13T20:53:50.242Z</updated>
     
     
     <summary type="html">尽量多跟见识广的，包容心强的人接触。不要理会那些狭隘的人，自己也不要狭隘。“出淤泥而不染”&lt;br&gt;尽早知道自己想做什么样的人，干什么事，保持“自洽”。&lt;br&gt;保持复杂，不要太在意一件事，也不要太在意一个人。</summary>
@@ -373,7 +390,7 @@
     <link href="https://blog.tennisatw.com/post/50/"/>
     <id>https://blog.tennisatw.com/post/50/</id>
     <published>2024-05-05T16:38:25.000Z</published>
-    <updated>2024-11-09T04:21:11.760Z</updated>
+    <updated>2025-01-13T20:53:49.214Z</updated>
     
     
     <summary type="html">在coursera上试听了《IBM Data Science Professional Certificate》这一系列，一共有10门数据处理课。</summary>
@@ -411,7 +428,7 @@
     <link href="https://blog.tennisatw.com/post/48/"/>
     <id>https://blog.tennisatw.com/post/48/</id>
     <published>2024-04-12T12:26:38.000Z</published>
-    <updated>2024-11-09T04:21:11.760Z</updated>
+    <updated>2025-01-13T20:53:45.758Z</updated>
     
     
     <summary type="html">可以使用ChatGPT做客观的政治倾向分析。因为ChatGPT学习过大量的文本数据，其中自然包括政治方面的知识。事实上，ChatGPT对政治的理解相当深刻，并且十分博学。</summary>
@@ -449,7 +466,7 @@
     <link href="https://blog.tennisatw.com/post/46/"/>
     <id>https://blog.tennisatw.com/post/46/</id>
     <published>2024-03-29T17:39:44.000Z</published>
-    <updated>2024-11-09T04:21:11.744Z</updated>
+    <updated>2025-01-13T20:53:44.306Z</updated>
     
     
     <summary type="html">组里的人要分析一个系统的氢键数量和氢键自相关函数（Hbond autocorrelation function，hbacf）。&lt;br&gt;A colleague in our group is tasked with analyzing the number of hydrogen bonds and the hydrogen bond autocorrelation function (hbacf) in a system.</summary>
@@ -534,7 +551,7 @@
     <link href="https://blog.tennisatw.com/post/41/"/>
     <id>https://blog.tennisatw.com/post/41/</id>
     <published>2024-02-25T08:22:08.000Z</published>
-    <updated>2024-11-09T04:21:11.744Z</updated>
+    <updated>2025-01-13T20:53:42.638Z</updated>
     
     
     <summary type="html">心血来潮，我打算从0开始，花几天时间，学一点前端知识。</summary>
@@ -695,7 +712,7 @@
     <link href="https://blog.tennisatw.com/post/32/"/>
     <id>https://blog.tennisatw.com/post/32/</id>
     <published>2023-11-16T04:22:33.000Z</published>
-    <updated>2024-11-09T04:21:11.744Z</updated>
+    <updated>2025-01-13T20:53:39.750Z</updated>
     
     
     <summary type="html">普通女权，田园女权，激进女权是中国最常见的三种女权形式。在这里我对这三种女权做一个简单的定义：普通女权试图推翻父权制，追求男女平等；田园女权追求女性特权；激进女权主张性别分离。</summary>
@@ -712,7 +729,7 @@
     <link href="https://blog.tennisatw.com/post/31/"/>
     <id>https://blog.tennisatw.com/post/31/</id>
     <published>2023-11-10T18:37:37.000Z</published>
-    <updated>2024-11-09T04:21:11.744Z</updated>
+    <updated>2025-01-13T20:53:37.303Z</updated>
     
     
     <summary type="html">总而言之，政治团体们要批判地学习《共产党宣言》，在承认其意义的同时，也要注意其“毒性”。破坏总是比建设简单一万倍，《共产党宣言》只可用于左翼政党举行活动的参考，而不可成为指导一个国家的思想。&lt;br&gt;In summary, political groups should critically study &quot;The Communist Manifesto,&quot; acknowledging its significance while being wary of its &quot;toxicity.&quot; Destruction is infinitely easier than construction. &quot;The Communist Manifesto&quot; should only serve as a reference for left-wing party activities, not as a guiding philosophy for a nation.</summary>
@@ -731,7 +748,7 @@
     <link href="https://blog.tennisatw.com/post/30/"/>
     <id>https://blog.tennisatw.com/post/30/</id>
     <published>2023-10-26T03:55:00.000Z</published>
-    <updated>2024-11-09T04:21:11.744Z</updated>
+    <updated>2025-01-13T20:53:22.285Z</updated>
     
     
     <summary type="html">温家宝离职前说：不仅要推进经济体制改革，还要推进政治体制改革。没有政治体制改革的保障，经济体制改革的成果就会得而复失，现代化建设的目标就不可能实现。&lt;br&gt;Before leaving office, Wen Jiabao stated：&quot;We must not only advance economic system reform but also political system reform. Without the guarantee of political system reform, the achievements of economic system reform may be lost, and the goals of modernization cannot be realized.&quot;&lt;br&gt;&lt;br&gt;李克强离职前说：长江黄河不会倒流，中国对外开放不会改变。&lt;br&gt;Before leaving office, Li Keqiang said：&quot;The Yangtze and Yellow Rivers will not flow backward, and China&#39;s opening-up will not change.&quot;</summary>
@@ -786,7 +803,7 @@
     <link href="https://blog.tennisatw.com/post/27/"/>
     <id>https://blog.tennisatw.com/post/27/</id>
     <published>2023-09-19T11:24:54.000Z</published>
-    <updated>2024-11-09T04:21:11.744Z</updated>
+    <updated>2025-01-13T20:56:46.037Z</updated>
     
     
     <summary type="html">三点几了，饮茶先啦！</summary>
@@ -873,7 +890,7 @@
     <link href="https://blog.tennisatw.com/post/22/"/>
     <id>https://blog.tennisatw.com/post/22/</id>
     <published>2023-09-10T13:30:08.000Z</published>
-    <updated>2024-11-09T04:21:11.744Z</updated>
+    <updated>2025-01-13T20:52:24.698Z</updated>
     
     
     <summary type="html">...这说明爱与和平不能拯救世界，法治和正义才能&lt;br&gt;...This highlights that love and peace cannot save the world, but law and justice can.</summary>
@@ -1297,7 +1314,7 @@
     <link href="https://blog.tennisatw.com/post/-3/"/>
     <id>https://blog.tennisatw.com/post/-3/</id>
     <published>2022-08-15T15:38:41.000Z</published>
-    <updated>2024-11-09T04:21:11.729Z</updated>
+    <updated>2025-01-13T20:52:14.544Z</updated>
     
     
     <summary type="html">暂无预览 - No preview available</summary>
@@ -1331,7 +1348,7 @@
     <link href="https://blog.tennisatw.com/post/-5/"/>
     <id>https://blog.tennisatw.com/post/-5/</id>
     <published>2022-01-20T15:47:00.000Z</published>
-    <updated>2024-11-09T04:21:11.729Z</updated>
+    <updated>2025-01-13T20:52:10.131Z</updated>
     
     
     <summary type="html">暂无预览 - No preview available</summary>

@@ -16,7 +16,7 @@ date: 2024-04-11 19:36:02
 
 <br>
 
-### 键政相关 - Political Discussion
+## 键政相关 - Political Discussion
 
 以下推荐依照政治倾向，分成自由派（神），马克思主义&左翼（左），爱国派（兔），中立四个部分。
 
@@ -26,7 +26,7 @@ date: 2024-04-11 19:36:02
 
 <br>
 
-#### 自由派 - Liberal
+### 自由派 - Liberal
 
 - [b站-罗翔说刑法](https://space.bilibili.com/517327498/)
 
@@ -66,7 +66,7 @@ date: 2024-04-11 19:36:02
 
 <!-- 端传媒 -->
 
-#### 马克思主义&左翼 - Marxist&Left-wing
+### 马克思主义&左翼 - Marxist&Left-wing
 
 - [b站-马前卒](https://space.bilibili.com/316568752)
 
@@ -102,7 +102,7 @@ date: 2024-04-11 19:36:02
 
 <br>
 
-#### 爱国派 - Patriotic
+### 爱国派 - Patriotic
 
 - [微博-胡锡进](https://weibo.com/huxijin)
 
@@ -132,7 +132,7 @@ date: 2024-04-11 19:36:02
 
 <br>
 
-#### 中立 - Neutral
+### 中立 - Neutral
 
 - [油管-Mhyyyy*](https://www.youtube.com/@MHYYY123)/[b站-Mhyyyy](https://space.bilibili.com/199676483)
 
@@ -148,7 +148,7 @@ date: 2024-04-11 19:36:02
 
 <br>
 
-### 科普 - Science Popularization
+## 科普 - Science Popularization
 
 - [b站-大问题Dialectic](https://space.bilibili.com/1871365234/)
 
@@ -174,7 +174,7 @@ date: 2024-04-11 19:36:02
 
 <br>
 
-### 其他 - Others
+## 其他 - Others
 
 - 张雪峰
 
@@ -200,7 +200,7 @@ date: 2024-04-11 19:36:02
 
 <br>
 
-### 信息平台 - Information Platforms
+## 信息平台 - Information Platforms
 
 有一些信息平台上的信息的整体质量较高。
 
@@ -230,7 +230,7 @@ date: 2024-04-11 19:36:02
 
 <br>
 
-### 大语言模型 - Large Language Models
+## 大语言模型 - Large Language Models
 
 大语言模型，即人工智能聊天机器人，目前已经发展到其知识总量和理论水平远超普通人的阶段。与其对话也可以获得高质量的信息。使用时请尽量选择最先进的版本。
 
@@ -246,7 +246,7 @@ date: 2024-04-11 19:36:02
 
 <br>
 
-### 已注销 - Closed
+## 已注销 - Closed
 
 - 微信公众号：海边的西塞罗
 
