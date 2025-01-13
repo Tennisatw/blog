@@ -6,7 +6,7 @@
   <link href="https://blog.tennisatw.com/atom.xml" rel="self"/>
   
   <link href="https://blog.tennisatw.com/"/>
-  <updated>2025-01-12T06:16:03.433Z</updated>
+  <updated>2025-01-13T20:45:27.224Z</updated>
   <id>https://blog.tennisatw.com/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>VS Code、Cursor和WindSurf：三款AI辅助编程工具的对比及打分 - VS Code, Cursor, and WindSurf：A Comparison and Rating of Three AI-Assisted Programming Tools</title>
+    <link href="https://blog.tennisatw.com/post/71/"/>
+    <id>https://blog.tennisatw.com/post/71/</id>
+    <published>2025-01-13T12:55:20.000Z</published>
+    <updated>2025-01-13T20:45:27.224Z</updated>
+    
+    
+    <summary type="html">VSCode（配合GitHub Copilot），Cursor，和WindSurf是三种常见的AI辅助的代码编辑软件。它们的界面风格和功能（特指AI功能）大同小异，使用体验上也有很多相似之处。本人已处在选择困难状态长达半年之久，故对这三种软件的界面风格和功能进行了对比及打分。最终，Cursor以微弱优势胜出。&lt;br&gt;VSCode (with GitHub Copilot), Cursor, and WindSurf are three common AI-assisted code editing software. They share similar interface styles and features (specifically AI features), with comparable user experiences. Having been in a state of decision paralysis for half a year, I&#39;ve compared and rated these three software&#39;s interface styles and features. In the end, Cursor emerged victorious by a narrow margin.</summary>
+    
+    
+    
+    
+    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+    <category term="推荐 - Recommendation" scheme="https://blog.tennisatw.com/tags/%E6%8E%A8%E8%8D%90-recommendation/"/>
+    
+  </entry>
   
   <entry>
     <title>两种MOF的潮湿环境下CO2吸附动力学模拟 - Simulation of CO2 Adsorption Dynamics by Two MOFs in a Humid Environment</title>
@@ -127,7 +146,7 @@
     <link href="https://blog.tennisatw.com/post/63/"/>
     <id>https://blog.tennisatw.com/post/63/</id>
     <published>2024-09-24T14:44:15.000Z</published>
-    <updated>2024-11-19T03:05:02.974Z</updated>
+    <updated>2025-01-13T20:49:29.965Z</updated>
     
     
     <summary type="html">本文记录了本人购买Vultr VPS，并设置SSR的过程。请读者遵循所处当地的法律法规合理使用。</summary>

@@ -15,8 +15,29 @@
     <atom:link href="https://blog.tennisatw.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Sun, 12 Jan 2025 06:16:03 GMT</pubDate>
+    <pubDate>Mon, 13 Jan 2025 20:45:27 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>VS Code、Cursor和WindSurf：三款AI辅助编程工具的对比及打分 - VS Code, Cursor, and WindSurf：A Comparison and Rating of Three AI-Assisted Programming Tools</title>
+      <link>https://blog.tennisatw.com/post/71/</link>
+      <guid>https://blog.tennisatw.com/post/71/</guid>
+      <pubDate>Mon, 13 Jan 2025 12:55:20 GMT</pubDate>
+      
+      <description>VSCode（配合GitHub Copilot），Cursor，和WindSurf是三种常见的AI辅助的代码编辑软件。它们的界面风格和功能（特指AI功能）大同小异，使用体验上也有很多相似之处。本人已处在选择困难状态长达半年之久，故对这三种软件的界面风格和功能进行了对比及打分。最终，Cursor以微弱优势胜出。&lt;br&gt;VSCode (with GitHub Copilot), Cursor, and WindSurf are three common AI-assisted code editing software. They share similar interface styles and features (specifically AI features), with comparable user experiences. Having been in a state of decision paralysis for half a year, I&#39;ve compared and rated these three software&#39;s interface styles and features. In the end, Cursor emerged victorious by a narrow margin.</description>
+      
+      
+      
+      
+      
+      <category domain="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/">技术 - Technology</category>
+      
+      <category domain="https://blog.tennisatw.com/tags/%E6%8E%A8%E8%8D%90-recommendation/">推荐 - Recommendation</category>
+      
+      
+      <comments>https://blog.tennisatw.com/post/71/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>两种MOF的潮湿环境下CO2吸附动力学模拟 - Simulation of CO2 Adsorption Dynamics by Two MOFs in a Humid Environment</title>

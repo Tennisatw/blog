@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#555080"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-50.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-50.png">
+  <link rel="mask-icon" href="/images/favicon-50.svg" color="#555080">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha256-wiz7ZSCn/btzhjKDQBms9Hx4sSeUYsDrTLg7roPstac=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"blog.tennisatw.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.19.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#555080","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"utterances","storage":true,"lazyload":false,"nav":null,"activeClass":"utterances"},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索 - Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits}个结果 - undefined results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="VSCode（配合GitHub Copilot），Cursor，和WindSurf是三种常见的AI辅助的代码编辑软件。它们的界面风格和功能（特指AI功能）大同小异，使用体验上也有很多相似之处。本人已处在选择困难状态长达半年之久，故对这三种软件的界面风格和功能进行了对比及打分。最终，Cursor以微弱优势胜出。VSCode (with GitHub Copilot), Cursor, and Win">
+<meta property="og:type" content="article">
+<meta property="og:title" content="VS Code、Cursor和WindSurf：三款AI辅助编程工具的对比及打分 - VS Code, Cursor, and WindSurf：A Comparison and Rating of Three AI-Assisted Programming Tools">
+<meta property="og:url" content="https://blog.tennisatw.com/post/71/">
+<meta property="og:site_name" content="Tennisatw的博客 - Blog of Tennisatw">
+<meta property="og:description" content="VSCode（配合GitHub Copilot），Cursor，和WindSurf是三种常见的AI辅助的代码编辑软件。它们的界面风格和功能（特指AI功能）大同小异，使用体验上也有很多相似之处。本人已处在选择困难状态长达半年之久，故对这三种软件的界面风格和功能进行了对比及打分。最终，Cursor以微弱优势胜出。VSCode (with GitHub Copilot), Cursor, and Win">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://blog.tennisatw.com/post/71/1.png">
+<meta property="og:image" content="https://blog.tennisatw.com/post/71/2.png">
+<meta property="article:published_time" content="2025-01-13T12:55:20.000Z">
+<meta property="article:modified_time" content="2025-01-13T20:45:27.224Z">
+<meta property="article:author" content="Tennisatw">
+<meta property="article:tag" content="技术 - Technology">
+<meta property="article:tag" content="推荐 - Recommendation">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://blog.tennisatw.com/post/71/1.png">
+
+
+<link rel="canonical" href="https://blog.tennisatw.com/post/71/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://blog.tennisatw.com/post/71/","path":"/post/71/","title":"VS Code、Cursor和WindSurf：三款AI辅助编程工具的对比及打分 - VS Code, Cursor, and WindSurf：A Comparison and Rating of Three AI-Assisted Programming Tools"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>VS Code、Cursor和WindSurf：三款AI辅助编程工具的对比及打分 - VS Code, Cursor, and WindSurf：A Comparison and Rating of Three AI-Assisted Programming Tools | Tennisatw的博客 - Blog of Tennisatw</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="Tennisatw的博客 - Blog of Tennisatw" type="application/atom+xml">
+<link rel="alternate" href="/rss2.xml" title="Tennisatw的博客 - Blog of Tennisatw" type="application/rss+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Tennisatw的博客 - Blog of Tennisatw</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索 - Search" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+    <div id="google_translate_element"></div>
+    <script type="text/javascript" async="async" >
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {pageLanguage: 'en,zh-CN', 
+        includedLanguages: 'en,zh-CN,zh-TW,es,ar,hi,ru,ja,de,fr', 
+        layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 
+        'google_translate_element');
+    }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script><li class="menu-item menu-item-首页---home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页 - Home</a></li><li class="menu-item menu-item-关于---about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于 - About</a></li><li class="menu-item menu-item-页面列表---pages"><a href="/pages/" rel="section"><i class="fa fa-sitemap fa-fw"></i>页面列表 - Pages</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索 - Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索 - Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          目录 - TOC
+        </li>
+        <li class="sidebar-nav-overview">
+          概览 - Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%B7%E6%A0%BC---pricing"><span class="nav-text">价格 - Pricing</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ai%E5%8A%9F%E8%83%BD---ai-features"><span class="nav-text">AI功能 - AI Features</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8---code-autocompletion"><span class="nav-text">代码自动补全 - Code
+Autocompletion</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AE%B5%E5%86%85%E5%86%85%E8%81%94%E4%BF%AE%E6%94%B9ctrlk--inline-modifications-ctrlk"><span class="nav-text">段内内联修改（ctrl+k）-
+Inline Modifications (ctrl+k)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%81%8A%E5%A4%A9%E7%BC%96%E8%BE%91ctrll--chatcomposer-ctrll"><span class="nav-text">聊天&#x2F;编辑（ctrl+l）-
+Chat&#x2F;Composer (ctrl+l)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%95%8C%E9%9D%A2%E9%A3%8E%E6%A0%BC---interface-style"><span class="nav-text">界面风格 - Interface Style</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E4%BB%96---others"><span class="nav-text">其他 - Others</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E5%88%86---final-score"><span class="nav-text">总分 - Final Score</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Tennisatw"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">Tennisatw</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">88</span>
+          <span class="site-state-item-name">文章<br>posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/series/">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">系列<br>series</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">标签<br>tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="mailto:tennisatw@mail.com" title="Email → mailto:tennisatw@mail.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://github.com/tennisatw" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;tennisatw" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/tennisatw" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;tennisatw" rel="noopener me" target="_blank"><i class="fab fa-twitter fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://discord.gg/3eerBKZbpX" title="Discord → https:&#x2F;&#x2F;discord.gg&#x2F;3eerBKZbpX" rel="noopener me" target="_blank"><i class="fab fa-discord fa-fw"></i></a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://blog.tennisatw.com/post/71/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Tennisatw">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Tennisatw的博客 - Blog of Tennisatw">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="VS Code、Cursor和WindSurf：三款AI辅助编程工具的对比及打分 - VS Code, Cursor, and WindSurf：A Comparison and Rating of Three AI-Assisted Programming Tools | Tennisatw的博客 - Blog of Tennisatw">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          VS Code、Cursor和WindSurf：三款AI辅助编程工具的对比及打分 - VS Code, Cursor, and WindSurf：A Comparison and Rating of Three AI-Assisted Programming Tools
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于 - Posted on</span>
+
+      <time title="Created: 2025/01/13 20:55:20" itemprop="dateCreated datePublished" datetime="2025-01-13T20:55:20+08:00">2025/01/13</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">编辑于 - Edited on</span>
+      <time title="Modified: 2025/01/14 04:45:27" itemprop="dateModified" datetime="2025-01-14T04:45:27+08:00">2025/01/14</time>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="字数 - Word count">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">字数 - Word count: </span>
+      <span>1.2k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时间 - Reading time">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时间 - Reading time &asymp;</span>
+      <span>5 mins.</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>VSCode（配合GitHub
+Copilot），Cursor，和WindSurf是三种常见的AI辅助的代码编辑软件。它们的界面风格和功能（特指AI功能）大同小异，使用体验上也有很多相似之处。本人已处在选择困难状态长达半年之久，故对这三种软件的界面风格和功能进行了对比及打分，让本人可以做出选择，也供读者参考。</p>
+<p>VSCode (with GitHub Copilot), Cursor, and WindSurf are three common
+AI-assisted code editing software. They share similar interface styles
+and features (specifically AI features), with comparable user
+experiences. Having been in a state of decision paralysis for half a
+year, I've compared and rated these software's interface styles and
+features to help make a choice and provide reference for readers.</p>
+<p><br></p>
+<h2 id="价格---pricing">价格 - Pricing</h2>
+<p>这三个软件都可以免费使用，但VSCode的GitHub
+Copilot一个月10美元，Cursor会员一个月20美元，WindSurf会员是一个月15美元。Cursor扣10分，WindSurf扣5分。</p>
+<p>All three software are free to use, but GitHub Copilot for VSCode
+costs 10 USD/month, Cursor premium is 20 USD/month, and WindSurf premium
+is 15 USD/month. Cursor loses 10 points, WindSurf loses 5 points.</p>
+<p><br></p>
+<h2 id="ai功能---ai-features">AI功能 - AI Features</h2>
+<h3 id="代码自动补全---code-autocompletion">代码自动补全 - Code
+Autocompletion</h3>
+<p>我使用代码自动补全（Autocompletion）的功能相当频繁，因为我总是有一些编写软件的输入文件的需求。VSCode的GitHub
+Copilot的代码自动补全功能很不错，智商也在线。Cursor的代码自动补全功能有点弱，需要手动修改，但它可以在一段话中间补全，且Cursor
+Tab可以修改已经写过的句子/代码的错误。WindSurf的代码自动补全有点...不太智能，并且有时候调用不出来，也许是模型的问题。WindSurf扣5分。</p>
+<p>I frequently use code autocompletion as I often need to write input
+files for software. VSCode's GitHub Copilot has excellent autocompletion
+and shows good intelligence. Cursor's autocompletion is somewhat weak
+and requires manual modifications, but it can complete code
+mid-sentence, and Cursor's tab feature can fix errors in existing
+sentences/code. WindSurf's autocompletion is somewhat... not so
+intelligent, and sometimes fails to respond, perhaps due to model
+issues. WindSurf loses 5 points.</p>
+<p>Cursor
+Tab确实很舒服，虽说有时候有点智障，但是整体而言能够省掉很多手动修改的精力。VSCode和WindSurf扣10分。</p>
+<p>Cursor's tab feature is indeed comfortable to use, and although it
+can be a bit silly sometimes, it overall saves a lot of manual editing
+effort. VSCode and WindSurf lose 10 points.</p>
+<p><br></p>
+<h3
+id="段内内联修改ctrlk--inline-modifications-ctrlk">段内内联修改（ctrl+k）-
+Inline Modifications (ctrl+k)</h3>
+<p>VSCode和Cursor可以使用GPT-O1和GPT-4O，Claude
+3.5-Sonnet。而WindSurf只能使用GPT-4O和Claude
+3.5-Sonnet。WindSurf扣5分。</p>
+<p>VSCode and Cursor can use GPT-O1, GPT-4O, and Claude 3.5-Sonnet.
+WindSurf can only use GPT-4O and Claude 3.5-Sonnet. WindSurf loses 5
+points.</p>
+<p><br></p>
+<h3 id="聊天编辑ctrll--chatcomposer-ctrll">聊天/编辑（ctrl+l）-
+Chat/Composer (ctrl+l)</h3>
+<p>Cursor和WindSurf有一个非常明显的优点：当对一篇文章或代码进行多处修改时，可以逐条选择接受或拒绝每一条修改意见，而GitHub
+Copilot只能全部接受或全部拒绝。VSCode扣15分。</p>
+<p>Cursor and WindSurf have a significant advantage: when making
+multiple modifications to an article or code, you can selectively accept
+or reject each modification, while GitHub Copilot only allows accepting
+or rejecting all changes at once. VSCode loses 15 points.</p>
+<p><br></p>
+<h2 id="界面风格---interface-style">界面风格 - Interface Style</h2>
+<p>三款软件的界面风格几乎一致。唯一的不可修改的区别在于左上角侧栏目录（Primary
+Side Bar）的不同。VSCode和WindSurf的如下所示：</p>
+<p>The interface styles of all three software are almost identical. The
+only non-modifiable difference is in the Primary side bar layout in the
+upper left corner. VSCode and WindSurf's layout is shown below:</p>
+<p><img src="1.png" /></p>
+<p>而Cursor的如下所示：</p>
+<p>While Cursor's layout is shown below:</p>
+<p><img src="2.png" /></p>
+<p>说实在的，VSCode和WindSurf的侧栏目录的设计更简洁，且与副侧栏目录的风格更一致。而Cursor的不能拖动，有时候寻找某个侧栏很不方便，想要设置只能通过修改JSON来实现（如下所示）。给Cursor设计师的傲慢扣2分。</p>
+<p>Honestly, VSCode and WindSurf's sidebar design is more concise and
+consistent with the secondary sidebar style. Cursor's sidebar cannot be
+dragged, making it inconvenient to find specific sidebars sometimes, and
+settings can only be modified through JSON (as shown below). Deducting 2
+points for Cursor designers' arrogance.</p>
+<p><code>"workbench.activityBar.orientation": "vertical",</code></p>
+<p><br></p>
+<h2 id="其他---others">其他 - Others</h2>
+<p>本人有一个非常高频的需求，即登录需要密码的远程SSH服务器。VSCode和Cursor都必须进入手动点击消息弹出窗口中的Detail，然后手动在终端输入密码。只有WindSurf可以弹出一个窗口，优雅地输入密码。VSCode和Cursor扣10分。</p>
+<p>I have a very frequent need to log into password-protected remote SSH
+servers. VSCode and Cursor both require manually clicking details in the
+message popup window and then manually entering the password in the
+terminal. Only WindSurf can pop up a window for elegant password input.
+VSCode and Cursor lose 10 points.</p>
+<p>但是不知道为什么WindSurf在弹出窗口时会一并弹出一个黑色的控制行终端窗口，挡住密码窗口，给智障WindSurf也扣5分。</p>
+<p>However, for some reason, WindSurf also pops up a black command-line
+terminal window that blocks the password window, so WindSurf also loses
+5 points.</p>
+<p><br></p>
+<h2 id="总分---final-score">总分 - Final Score</h2>
+<p>满分100分，VSCode 65分，Cursor 78分，WindSurf
+70分。Cursor以微弱优势胜出。</p>
+<p>Out of 100 points, VSCode scores 65, Cursor scores 78, and WindSurf
+scores 70. Cursor wins by a narrow margin.</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%8A%80%E6%9C%AF-technology/" rel="tag"># 技术 - Technology</a>
+              <a href="/tags/%E6%8E%A8%E8%8D%90-recommendation/" rel="tag"># 推荐 - Recommendation</a>
+          </div>
+
+        
+  <div class="social-like a2a_kit a2a_kit_size_32 a2a_default_style">
+    <a class="a2a_dd" target="_blank" rel="noopener" href="https://www.addtoany.com/share"></a>
+      <a class="a2a_button_facebook"></a>
+      <a class="a2a_button_twitter"></a>
+      <a class="a2a_button_sina_weibo"></a>
+      <a class="a2a_button_wechat"></a>
+      <a class="a2a_button_mastodon"></a>
+  </div>
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/post/70/" rel="prev" title="两种MOF的潮湿环境下CO2吸附动力学模拟 - Simulation of CO2 Adsorption Dynamics by Two MOFs in a Humid Environment">
+                  <i class="fa fa-angle-left"></i> 两种MOF的潮湿环境下CO2吸附动力学模拟 - Simulation of CO2 Adsorption Dynamics by Two MOFs in a Humid Environment
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments utterances-container"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2023 – 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class=""></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">多想，多读，多练，多问 - Think more, read more, practice more, and ask more</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
+    <div>
+      <p class="footer-hidden"><br><br><br><br><br><br><br><br>本处广告位招租 - This ad space is available for rent</p>
+      <p class="footer-hidden">上次更新时间 - Last Updated: ||2025/01/14 04:50:42||</p>
+    </div>
+  </div>
+
+    </div>
+  </footer>
+
+  
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+
+  <script src="/js/third-party/addtoany.js"></script>
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+<script class="next-config" data-name="utterances" type="application/json">{"enable":true,"repo":"user-name/repo-name","issue_term":"pathname","theme":"github-light"}</script>
+<script src="/js/third-party/comments/utterances.js"></script>
+
+
+</body>
+</html>
+
+<script src="/live2d-widget/autoload.js" async="async" ></script>
+<link rel="stylesheet" href="/waline/waline.css"/>
+<script type="module">
+    import { init } from '/waline/waline.mjs';
+    window.init = init;
+</script>
+
+<script type="module">
+  window.init({
+    el: '.comments',
+    lang: 'en',
+    serverURL: 'https://comment.tennisatw.com',
+  });
+</script>
+
+<script>
+  window.onload = function() {
+    // 延迟执行，确保动画已经完成
+    setTimeout(function() {
+      // 获取需要操作的元素
+      const targetLanguageDiv = document.getElementById(":0.targetLanguage");
+      const skipTranslateDiv = document.querySelector(".skiptranslate.goog-te-gadget");
+      
+      // 删除不需要的文本节点和span元素
+      if (skipTranslateDiv) {
+        const textNodes = Array.from(skipTranslateDiv.childNodes).filter(node => node.nodeType === Node.TEXT_NODE);
+        textNodes.forEach(node => node.remove());
+        
+        const spanElement = skipTranslateDiv.querySelector("span");
+        if (spanElement) {
+            spanElement.remove();
+        }
+      }
+
+      // 隐藏不需要的元素
+      var trans = document.getElementsByClassName('VIpgJd-ZVi9od-aZ2wEe-wOHMyf');
+        for (var i = 0; i < trans.length; i++) {
+            var tran = trans[i];
+                tran.className += " hidden";
+        }
+
+    }, 500); // 延迟时间
+  };
+</script>
