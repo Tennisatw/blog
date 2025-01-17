@@ -6,7 +6,7 @@
   <link href="https://blog.tennisatw.com/atom.xml" rel="self"/>
   
   <link href="https://blog.tennisatw.com/"/>
-  <updated>2025-01-17T04:46:53.731Z</updated>
+  <updated>2025-01-17T04:58:50.477Z</updated>
   <id>https://blog.tennisatw.com/</id>
   
   <author>
@@ -21,13 +21,17 @@
     <link href="https://blog.tennisatw.com/post/72/"/>
     <id>https://blog.tennisatw.com/post/72/</id>
     <published>2025-01-16T03:44:57.000Z</published>
-    <updated>2025-01-17T04:46:53.731Z</updated>
+    <updated>2025-01-17T04:58:50.477Z</updated>
     
     
-    <summary type="html">暂无预览 - No preview available</summary>
+    <summary type="html">Tennisbot更新至第六版，新版本支持Linux服务器运行，大幅重构代码结构使其更现代化，并全面支持中英文。本文详细介绍了更新内容、项目特性及部署方法。</summary>
     
     
     
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
+    
+    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
     
   </entry>
   

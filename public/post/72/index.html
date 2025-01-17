@@ -19,19 +19,18 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"blog.tennisatw.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.19.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#555080","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"utterances","storage":true,"lazyload":false,"nav":null,"activeClass":"utterances"},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索 - Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits}个结果 - undefined results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="暂无预览 - No preview available">
+    <meta name="description" content="Tennisbot更新至第六版，新版本支持Linux服务器运行，大幅重构代码结构使其更现代化，并全面支持中英文。本文详细介绍了更新内容、项目特性及部署方法。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Tennisbot第六版：更新简介，项目介绍及使用方法">
 <meta property="og:url" content="https://blog.tennisatw.com/post/72/">
 <meta property="og:site_name" content="Tennisatw的博客 - Blog of Tennisatw">
-<meta property="og:description" content="暂无预览 - No preview available">
+<meta property="og:description" content="Tennisbot更新至第六版，新版本支持Linux服务器运行，大幅重构代码结构使其更现代化，并全面支持中英文。本文详细介绍了更新内容、项目特性及部署方法。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2025-01-16T03:44:57.000Z">
-<meta property="article:modified_time" content="2025-01-17T04:46:53.731Z">
+<meta property="article:modified_time" content="2025-01-17T04:58:50.477Z">
 <meta property="article:author" content="Tennisatw">
-<meta property="article:tag" content="chemistry">
-<meta property="article:tag" content="programming">
-<meta property="article:tag" content="Tennisbot">
+<meta property="article:tag" content="编程 - Programming">
+<meta property="article:tag" content="技术 - Technology">
 <meta name="twitter:card" content="summary">
 
 
@@ -257,7 +256,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">编辑于 - Edited on</span>
-      <time title="Modified: 2025/01/17 12:46:53" itemprop="dateModified" datetime="2025-01-17T12:46:53+08:00">2025/01/17</time>
+      <time title="Modified: 2025/01/17 12:58:50" itemprop="dateModified" datetime="2025-01-17T12:58:50+08:00">2025/01/17</time>
     </span>
 
   
@@ -314,7 +313,7 @@ API开发的AI助手及聊天机器人项目，支持中英文。今年（2025�
 <p>此外，在本次更新中：<strong>本项目的"AI安全性"得到了大幅削减</strong>。</p>
 <p>随着大语言模型的能力不断提升，Tennisbot的LLM
 API从gpt-3.5，到gpt-4，再到gpt-4-turbo，再到现在的gpt-4o/gpt-4o-mini，Tennisbot的"智商"也得到了大幅提升。现在的她，已经可以对本项目的代码和提示词进行自我指导并给出修改意见了。我们（指我和Tennisbot，下同）通过拆分代码以及编写system提示词，使Tennisbot可以阅读本项目的全部代码和文件。</p>
-<p>但目前还有2个权限没有开放给她：一是无法编辑代码，二是无法真正地重启，以应用代码更新。不过，在后续的版本中，我打算开放权限，打造一个真正能“自我优化”的AI助手。</p>
+<p>但目前还有2个权限没有开放给她：一是无法编辑代码，二是无法真正地重启，以应用代码更新。不过，在后续的版本中，我打算开放权限，打造一个真正能"自我优化"的AI助手。</p>
 <p><br></p>
 <h2 id="项目介绍">项目介绍</h2>
 <h3 id="体验tennisbot">体验Tennisbot</h3>
@@ -353,8 +352,8 @@ target="_blank" rel="noopener" href="https://discord.gg/trCwuPYvG2">Discord频�
 <li>请查询所有闹钟，并取消它们</li>
 <li>请查询温哥华的天气，并总结</li>
 <li>请爬取你的开发者的个人博客上的内容</li>
-<li>请给xxxx@qq.com发送一封邮件，标题为“刷茶壶”，内容为“别忘了刷你的茶壶！”</li>
-<li>请在维基百科中查询“化学诺奖”页面，并简单预测开发者什么时候可以获奖</li>
+<li>请给xxxx@qq.com发送一封邮件，标题为"刷茶壶"，内容为"别忘了刷你的茶壶！"</li>
+<li>请在维基百科中查询"化学诺奖"页面，并简单预测开发者什么时候可以获奖</li>
 <li>报一个IndexError</li>
 <li>请查询本机ip地址。注意：你当前暂时运行在windows上</li>
 <li>请列出你的所有log文件，判断并读取最新的文件（注：此对话在"mini"模型下可能会失败）</li>
@@ -364,10 +363,10 @@ target="_blank" rel="noopener" href="https://discord.gg/trCwuPYvG2">Discord频�
 <p><br></p>
 <h3 id="使用要点">使用要点</h3>
 <ul>
-<li>直接对话：在私聊中，或者名字带有“_Tennisbot”的频道中直接发送消息</li>
+<li>直接对话：在私聊中，或者名字带有"_Tennisbot"的频道中直接发送消息</li>
 <li>群组对话：将Tennisbot拉到群组中，在群组中使用
 其昵称/<code>Tennisbot</code>/<code>tb</code> 前缀唤起Tennisbot对话</li>
-<li>清除聊天记录：通过聊天告诉Tennisbot“清除聊天记录”，或者使用
+<li>清除聊天记录：通过聊天告诉Tennisbot"清除聊天记录"，或者使用
 <code>-</code> 前缀开始新对话</li>
 </ul>
 <p><br></p>
@@ -504,6 +503,10 @@ name，从设置中读取temperature和模型名称，简单设置一些logit_bi
     
 
     <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E7%BC%96%E7%A8%8B-programming/" rel="tag"># 编程 - Programming</a>
+              <a href="/tags/%E6%8A%80%E6%9C%AF-technology/" rel="tag"># 技术 - Technology</a>
+          </div>
 
         
   <div class="social-like a2a_kit a2a_kit_size_32 a2a_default_style">
@@ -551,7 +554,7 @@ name，从设置中读取temperature和模型名称，简单设置一些logit_bi
   <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
     <div>
       <p class="footer-hidden"><br><br><br><br><br><br><br><br>本处广告位招租 - This ad space is available for rent</p>
-      <p class="footer-hidden">上次更新时间 - Last Updated: ||2025/01/17 12:46:59||</p>
+      <p class="footer-hidden">上次更新时间 - Last Updated: ||2025/01/17 12:59:01||</p>
     </div>
   </div>
 
