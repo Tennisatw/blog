@@ -81,3 +81,9 @@ You can click on any task in the Slurm-Dashboard to view detailed information ab
 这套方法唯一的缺点是上传/下载文件稍有复杂：需要再打开一个vscode窗口，然后在不同窗口之间互相拖拽文件。（如果想要更方便地传输文件的话，可以使用WinSCP。）
 
 The only drawback of this method is that uploading/downloading files is slightly cumbersome—you need to open another VSCode window and drag files between the two windows. (For easier file transfers, you can use WinSCP.)
+
+---
+
+2025.01.14 补充：
+
+除了VSCode，Cursor和WindSurf也可以安装这两个插件，使用方法类似。

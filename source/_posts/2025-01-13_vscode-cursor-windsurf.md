@@ -80,14 +80,14 @@ Honestly, VSCode and WindSurf's sidebar design is more concise and consistent wi
 
 I have a very frequent need to log into password-protected remote SSH servers. VSCode and Cursor both require manually clicking details in the message popup window and then manually entering the password in the terminal. Only WindSurf can pop up a window for elegant password input. VSCode and Cursor lose 10 points.
 
-但是不知道为什么WindSurf在弹出窗口时会一并弹出一个黑色的控制行终端窗口，挡住密码窗口，给智障WindSurf也扣5分。
+但是不知道为什么WindSurf在弹出窗口时会一并弹出一个黑色的控制行终端窗口，挡住密码窗口，给智障WindSurf也扣2分。
 
-However, for some reason, WindSurf also pops up a black command-line terminal window that blocks the password window, so WindSurf also loses 5 points.
+However, for some reason, WindSurf also pops up a black command-line terminal window that blocks the password window, so WindSurf also loses 2 points.
 
 <br>
 
 ## 总分 - Final Score
 
-满分100分，VSCode 65分，Cursor 78分，WindSurf 70分。Cursor以微弱优势胜出。
+满分100分，VSCode 65分，Cursor 78分，WindSurf 73分。Cursor以微弱优势胜出。
 
-Out of 100 points, VSCode scores 65, Cursor scores 78, and WindSurf scores 70. Cursor wins by a narrow margin.
+Out of 100 points, VSCode scores 65, Cursor scores 78, and WindSurf scores 73. Cursor wins by a narrow margin.

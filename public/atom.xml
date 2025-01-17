@@ -6,7 +6,7 @@
   <link href="https://blog.tennisatw.com/atom.xml" rel="self"/>
   
   <link href="https://blog.tennisatw.com/"/>
-  <updated>2025-01-13T20:45:27.224Z</updated>
+  <updated>2025-01-17T04:46:53.731Z</updated>
   <id>https://blog.tennisatw.com/</id>
   
   <author>
@@ -17,11 +17,26 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Tennisbot第六版：更新简介，项目介绍及使用方法</title>
+    <link href="https://blog.tennisatw.com/post/72/"/>
+    <id>https://blog.tennisatw.com/post/72/</id>
+    <published>2025-01-16T03:44:57.000Z</published>
+    <updated>2025-01-17T04:46:53.731Z</updated>
+    
+    
+    <summary type="html">暂无预览 - No preview available</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>VS Code、Cursor和WindSurf：三款AI辅助编程工具的对比及打分 - VS Code, Cursor, and WindSurf：A Comparison and Rating of Three AI-Assisted Programming Tools</title>
     <link href="https://blog.tennisatw.com/post/71/"/>
     <id>https://blog.tennisatw.com/post/71/</id>
     <published>2025-01-13T12:55:20.000Z</published>
-    <updated>2025-01-13T20:45:27.224Z</updated>
+    <updated>2025-01-14T03:35:56.178Z</updated>
     
     
     <summary type="html">VSCode（配合GitHub Copilot），Cursor，和WindSurf是三种常见的AI辅助的代码编辑软件。它们的界面风格和功能（特指AI功能）大同小异，使用体验上也有很多相似之处。本人已处在选择困难状态长达半年之久，故对这三种软件的界面风格和功能进行了对比及打分。最终，Cursor以微弱优势胜出。&lt;br&gt;VSCode (with GitHub Copilot), Cursor, and WindSurf are three common AI-assisted code editing software. They share similar interface styles and features (specifically AI features), with comparable user experiences. Having been in a state of decision paralysis for half a year, I&#39;ve compared and rated these three software&#39;s interface styles and features. In the end, Cursor emerged victorious by a narrow margin.</summary>
@@ -40,7 +55,7 @@
     <link href="https://blog.tennisatw.com/post/70/"/>
     <id>https://blog.tennisatw.com/post/70/</id>
     <published>2025-01-10T02:43:28.000Z</published>
-    <updated>2025-01-12T06:16:03.433Z</updated>
+    <updated>2025-01-14T04:40:41.053Z</updated>
     
     
     <summary type="html">本文总结了我们团队近期完成的一个小项目：使用Lammps模拟两种MOF（TUB75和TUB76）在潮湿环境下对CO2吸附作用的动力学。本模拟旨在解释为何TUB75在潮湿环境下仍能表现出优异的CO2吸附性能，并预测TUB76是否也具备类似性能。&lt;br&gt;This article summarizes a recent small project completed by our team：using Lammps to simulate the dynamics of CO2 adsorption by two MOFs (TUB75 and TUB76) in a humid environment. The simulation aims to explain why TUB75 exhibits excellent CO2 adsorption performance in a humid environment and to predict whether TUB76 has similar performance.</summary>
@@ -57,7 +72,7 @@
     <link href="https://blog.tennisatw.com/post/69/"/>
     <id>https://blog.tennisatw.com/post/69/</id>
     <published>2025-01-09T08:53:32.000Z</published>
-    <updated>2025-01-13T21:39:00.332Z</updated>
+    <updated>2025-01-14T04:41:52.492Z</updated>
     
     
     <summary type="html">人应该怎么做才能规避痛苦，或者至少减弱痛苦的程度？本文总结了本人对这个问题的思索，并尝试给出一套应对（心理上的）痛苦的通用方法。</summary>
@@ -93,7 +108,7 @@
     <link href="https://blog.tennisatw.com/post/67/"/>
     <id>https://blog.tennisatw.com/post/67/</id>
     <published>2024-11-18T08:22:29.000Z</published>
-    <updated>2024-11-19T03:03:29.463Z</updated>
+    <updated>2025-01-14T02:57:45.980Z</updated>
     
     
     <summary type="html">截至目前，我发现的登录远程目录提交slurm任务的最方便的方法是使用VSCode的Remote-SSH插件和slurm-dashboard插件，可以一键提交slurm任务。这里简单的记录一下我的安装和配置方法。&lt;br&gt;So far, the most convenient way I’ve found to submit Slurm tasks on a remote directory is by using VSCode’s Remote-SSH plugin combined with the Slurm-Dashboard plugin, allowing one-click submission of Slurm tasks. Here, I’ll briefly document my installation and configuration process.</summary>
@@ -112,7 +127,7 @@
     <link href="https://blog.tennisatw.com/post/66/"/>
     <id>https://blog.tennisatw.com/post/66/</id>
     <published>2024-10-30T21:02:05.000Z</published>
-    <updated>2025-01-13T21:40:57.428Z</updated>
+    <updated>2025-01-13T21:42:54.720Z</updated>
     
     
     <summary type="html">暂无预览 - No preview available</summary>
