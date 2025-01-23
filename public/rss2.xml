@@ -15,8 +15,27 @@
     <atom:link href="https://blog.tennisatw.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Fri, 17 Jan 2025 04:58:50 GMT</pubDate>
+    <pubDate>Thu, 23 Jan 2025 08:33:46 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>模拟实验：自然界中手性偏好的起源 - Simulation Experiment：The Origin of Chiral Preference in Nature</title>
+      <link>https://blog.tennisatw.com/post/73/</link>
+      <guid>https://blog.tennisatw.com/post/73/</guid>
+      <pubDate>Thu, 23 Jan 2025 08:11:07 GMT</pubDate>
+      
+      <description>自然界中的手性偏好可能源于自催化分子手性与活性突变的不均衡。出于好奇，我们通过模拟自催化分子的演化过程，考察了手性在时间演变中的分布变化。&lt;br&gt;The chiral preference observed in nature may stem from an imbalance between the self-catalytic chirality of molecules and active mutations. Out of curiosity, we simulated the evolutionary process of self-catalytic molecules to explore how chirality evolves over time.</description>
+      
+      
+      
+      
+      
+      <category domain="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/">编程 - Programming</category>
+      
+      
+      <comments>https://blog.tennisatw.com/post/73/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Tennisbot第六版：更新简介，项目介绍及使用方法</title>
