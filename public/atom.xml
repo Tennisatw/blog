@@ -6,7 +6,7 @@
   <link href="https://blog.tennisatw.com/atom.xml" rel="self"/>
   
   <link href="https://blog.tennisatw.com/"/>
-  <updated>2025-01-23T08:33:46.422Z</updated>
+  <updated>2025-01-30T16:52:03.862Z</updated>
   <id>https://blog.tennisatw.com/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>让大语言模型来当你我的人生导师吧！- Let Large Language Models Be Our Life Coaches!</title>
+    <link href="https://blog.tennisatw.com/post/74/"/>
+    <id>https://blog.tennisatw.com/post/74/</id>
+    <published>2025-01-30T15:12:47.000Z</published>
+    <updated>2025-01-30T16:52:03.862Z</updated>
+    
+    
+    <summary type="html">论阅历，没有人比大语言模型（LLM）读过的书更多了，论知识，没有人比LLM的知识更丰富，论认知，只要你用的多了就会发现，LLM的认知明显高于一般人。所以LLM完全可以充当你我的人生导师&lt;br&gt;In terms of experience, no one has read more books than a large language model (LLM). In terms of knowledge, no one is more knowledgeable than an LLM. In terms of cognition, the more you use it, the more you&#39;ll realize that an LLM&#39;s cognition is significantly higher than that of the average person. So, an LLM can absolutely serve as a life coach for us.</summary>
+    
+    
+    
+    
+    <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
+    
+  </entry>
   
   <entry>
     <title>模拟实验：自然界中手性偏好的起源 - Simulation Experiment：The Origin of Chiral Preference in Nature</title>
@@ -46,9 +63,9 @@
     
     
     
-    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
-    
     <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
     
   </entry>
   
@@ -89,14 +106,14 @@
   </entry>
   
   <entry>
-    <title>如何应对痛苦</title>
+    <title>如何应对痛苦 - How to Deal with Pain</title>
     <link href="https://blog.tennisatw.com/post/69/"/>
     <id>https://blog.tennisatw.com/post/69/</id>
     <published>2025-01-09T08:53:32.000Z</published>
-    <updated>2025-01-28T13:22:10.315Z</updated>
+    <updated>2025-01-30T15:40:30.853Z</updated>
     
     
-    <summary type="html">人应该怎么做才能规避痛苦，或者至少减弱痛苦的程度？本文总结了本人对这个问题的思索，并尝试给出一套应对（心理上的）痛苦的通用方法。</summary>
+    <summary type="html">人应该怎么做才能规避痛苦，或者至少减弱痛苦的程度？本文总结了本人对这个问题的思索，并尝试给出一套应对（心理上的）痛苦的通用方法。&lt;br&gt;What should one do to avoid pain, or at least mitigate its intensity? This article summarizes my thoughts on this question and attempts to provide a general method for dealing with (psychological) pain.</summary>
     
     
     
@@ -207,9 +224,9 @@
     
     
     
-    <category term="敏感 - Sensitive" scheme="https://blog.tennisatw.com/tags/%E6%95%8F%E6%84%9F-sensitive/"/>
-    
     <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+    <category term="敏感 - Sensitive" scheme="https://blog.tennisatw.com/tags/%E6%95%8F%E6%84%9F-sensitive/"/>
     
   </entry>
   
@@ -398,9 +415,9 @@
     
     
     
-    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
-    
     <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
     
   </entry>
   
@@ -434,9 +451,9 @@
     
     
     
-    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
-    
     <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
     
   </entry>
   
@@ -453,9 +470,9 @@
     
     
     
-    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
-    
     <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
     
   </entry>
   
@@ -491,9 +508,9 @@
     
     
     
-    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
-    
     <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
     
   </entry>
   
@@ -595,9 +612,9 @@
     
     
     
-    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
-    
     <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
     
   </entry>
   
@@ -667,9 +684,9 @@
     
     <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
     
-    <category term="敏感 - Sensitive" scheme="https://blog.tennisatw.com/tags/%E6%95%8F%E6%84%9F-sensitive/"/>
-    
     <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+    <category term="敏感 - Sensitive" scheme="https://blog.tennisatw.com/tags/%E6%95%8F%E6%84%9F-sensitive/"/>
     
   </entry>
   
@@ -1178,9 +1195,9 @@
     <category term="SD WebUI" scheme="https://blog.tennisatw.com/series/sd-webui/"/>
     
     
-    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
-    
     <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
     
   </entry>
   
@@ -1199,9 +1216,9 @@
     <category term="SD WebUI" scheme="https://blog.tennisatw.com/series/sd-webui/"/>
     
     
-    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
-    
     <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
     
   </entry>
   
