@@ -1,7 +1,7 @@
 ---
 title: 视频推荐：《陌生人——柴静对话圣战分子》 - Video Recommendation："Stranger：Talking to Jihadists"
 permalink: post/20/
-excerpt: 暂无预览 - No preview available
+excerpt: 
 date: 2023-09-05 16:55:10
 tags: 推荐 - Recommendation
 ---

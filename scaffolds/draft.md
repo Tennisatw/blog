@@ -1,7 +1,7 @@
 ---
 title: {{ title }}
-permalink: post/increment_id/
-excerpt: 暂无预览 - No preview available
+permalink: post/post_id/
+excerpt: 
 date: {{ date }}
 tags:
 ---

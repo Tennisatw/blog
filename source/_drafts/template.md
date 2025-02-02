@@ -2,7 +2,7 @@
 title: {{ title }}
 date: {{ date }}
 permalink: post/auto_increment_id/
-excerpt: '暂无预览 - No preview available'
+excerpt: ''
 tags: 
  - 1
  - 2

@@ -1,7 +1,7 @@
 ---
 title: 文章精读 - Paper Reading 1：paper_title
 permalink: post/auto_increment_id/
-excerpt: 暂无预览 - No preview available
+excerpt: 
 date: {{ date }}
 tags: 文章精读 - Paper Reading
 ---

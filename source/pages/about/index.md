@@ -4,13 +4,13 @@ permalink: about/
 date: 2024-04-11 19:36:02
 ---
 
-## Tennisatw（作者 - Author）
+## 作者 - Author
 
 ![](../images/avatar.png){ width=200px }
 
-业余极客，业余诗人，理论化学专业。
+Tennisatw，业余极客，业余诗人，理论化学专业。
 
-Amateur geek, amateur poet, major in theoretical chemistry.
+Tennisatw, Amateur geek, amateur poet, major in theoretical chemistry.
 
 <br>
 

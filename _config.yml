@@ -106,7 +106,7 @@ theme: next
 
 # Scripts
 scripts:
-  - scripts/increment_id.js
+  # - scripts/increment_id.js
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

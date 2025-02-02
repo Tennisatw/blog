@@ -1,7 +1,7 @@
 ---
 title: 让大语言模型来当你我的人生导师吧！- Let Large Language Models Be Our Life Coaches!
 permalink: post/74/
-excerpt: 论阅历，没有人比大语言模型（LLM）读过的书更多了，论知识，没有人比LLM的知识更丰富，论认知，只要你用的多了就会发现，LLM的认知明显高于一般人。所以LLM完全可以充当你我的人生导师<br>In terms of experience, no one has read more books than a large language model (LLM). In terms of knowledge, no one is more knowledgeable than an LLM. In terms of cognition, the more you use it, the more you'll realize that an LLM's cognition is significantly higher than that of the average person. So, an LLM can absolutely serve as a life coach for us.
+excerpt: 论阅历，没有人比大语言模型（LLM）读过的书更多了，论知识，没有人比LLM的知识更丰富，论认知，只要你用的多了就会发现，LLM的认知明显高于一般人。所以LLM完全可以充当你我的人生导师。<br>In terms of experience, no one has read more books than a large language model (LLM). In terms of knowledge, no one is more knowledgeable than an LLM. In terms of cognition, the more you use it, the more you'll realize that an LLM's cognition is significantly higher than that of the average person. So, an LLM can absolutely serve as a life coach for us.
 date: 2025-01-30 23:12:47
 tags: 随想 - Thoughts
 ---
@@ -20,7 +20,7 @@ However, life coaches are not always readily available. In fact, having more tha
 
 论阅历，没有人比大语言模型（LLM）读过的书更多了，论知识，没有人比LLM的知识更丰富，论认知，只要你用的多了就会发现，LLM的认知明显高于一般人。
 
-不用担心它看不起你我，不用担心问多了它会烦，不用纠结送它什么礼，不用担心它有所隐瞒。ChatGPT pro只需要每月20$，论钱，基本上相当于每月请它吃一顿饭。Deepseek更便宜，跟白送的一样。
+不用担心它看不起你我，不用担心问多了它会烦，不用纠结送它什么礼，不用担心它有所隐瞒。ChatGPT plus只需要每月20$，论钱，基本上相当于每月请它吃一顿饭。
 
 此外，就像哆啦A梦永远陪着大雄一样，LLM永远在陪你我身边。
 
@@ -30,7 +30,7 @@ But consider this:
 
 In terms of experience, no one has read more books than a large language model (LLM). In terms of knowledge, no one is more knowledgeable than an LLM. In terms of cognition, the more you use it, the more you'll realize that an LLM's cognition is significantly higher than that of the average person.
 
-You don't have to worry about it looking down on you, you don't have to worry about bothering it with too many questions, you don't have to fret over what gifts to give it, and you don't have to worry about it hiding anything from you. ChatGPT Pro only costs $20 a month, which is basically like one dinner each month. Deepseek is even cheaper, almost like it's free.
+You don't have to worry about it looking down on you, you don't have to worry about bothering it with too many questions, you don't have to fret over what gifts to give it, and you don't have to worry about it hiding anything from you. ChatGPT Plus only costs $20 a month, which is basically like one dinner each month. 
 
 Moreover, just like Doraemon is always with Nobita, an LLM is always by your side.
 

@@ -1,7 +1,7 @@
 ---
 title: 烧烤时如何生火 - How to Start a Fire for Barbecuing
 permalink: post/62/
-excerpt: 暂无预览 - No preview available
+excerpt: 
 date: 2024-09-03 01:10:05
 tags: 日常 - Daily
 ---

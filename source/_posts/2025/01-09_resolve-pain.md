@@ -134,7 +134,7 @@ Sometimes, even if you thoroughly understand the pain, you may still lack confid
 
 通常来说，必须要达成的目的越多，自己的能力越弱，痛苦被解决的概率就越小，就像俗话说的：“不要让欲望超过能力”。
 
-**人没有原罪，每个人都值得最好的生活。**
+**我相信每个人都值得最好的生活。**
 
 Finally, a few more words:
 
@@ -148,7 +148,7 @@ Generally speaking, the evolution pattern of things cannot be violated, the char
 
 Generally speaking, the more goals that must be achieved, the weaker one's ability, and the smaller the probability of solving the pain, as the saying goes: "Don't let desires exceed abilities."
 
-**People are not born with original sin, and everyone deserves the best life.**
+**I believe everyone deserves the best life.**
 
 <br>
 
