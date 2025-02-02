@@ -1,7 +1,7 @@
 ---
 title: SD WebUI 2： 如何设置Stable Diffusion WebUI？ - SD WebUI 2： How to set Stable Diffusion WebUI?
 permalink: post/8/
-excerpt: 
+excerpt: <br>
 date: 2023-05-04 21:16:02
 tags: 
  - 技术 - Technology

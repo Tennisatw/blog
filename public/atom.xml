@@ -82,9 +82,9 @@
     
     
     
-    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
-    
     <category term="推荐 - Recommendation" scheme="https://blog.tennisatw.com/tags/%E6%8E%A8%E8%8D%90-recommendation/"/>
+    
+    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
     
   </entry>
   
@@ -154,9 +154,26 @@
     
     
     
+    <category term="推荐 - Recommendation" scheme="https://blog.tennisatw.com/tags/%E6%8E%A8%E8%8D%90-recommendation/"/>
+    
     <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
     
-    <category term="推荐 - Recommendation" scheme="https://blog.tennisatw.com/tags/%E6%8E%A8%E8%8D%90-recommendation/"/>
+  </entry>
+  
+  <entry>
+    <title>想你</title>
+    <link href="https://blog.tennisatw.com/post/66/"/>
+    <id>https://blog.tennisatw.com/post/66/</id>
+    <published>2024-10-31T11:02:05.000Z</published>
+    <updated>2025-02-02T04:51:30.859Z</updated>
+    
+    
+    <summary type="html">&lt;br&gt;</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
     
   </entry>
   
@@ -178,6 +195,23 @@
   </entry>
   
   <entry>
+    <title>文章精读 - Paper Reading 1：Elucidating the Competitive Adsorption of H2O and CO2 in CALF-20</title>
+    <link href="https://blog.tennisatw.com/post/64/"/>
+    <id>https://blog.tennisatw.com/post/64/</id>
+    <published>2024-09-25T16:00:31.000Z</published>
+    <updated>2025-02-02T04:51:30.859Z</updated>
+    
+    
+    <summary type="html">&lt;br&gt;</summary>
+    
+    
+    
+    
+    <category term="文章精读 - Paper Reading" scheme="https://blog.tennisatw.com/tags/%E6%96%87%E7%AB%A0%E7%B2%BE%E8%AF%BB-paper-reading/"/>
+    
+  </entry>
+  
+  <entry>
     <title>如何购买VPS并使用SSR科学上网</title>
     <link href="https://blog.tennisatw.com/post/63/"/>
     <id>https://blog.tennisatw.com/post/63/</id>
@@ -193,6 +227,23 @@
     <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
     
     <category term="敏感 - Sensitive" scheme="https://blog.tennisatw.com/tags/%E6%95%8F%E6%84%9F-sensitive/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>烧烤时如何生火 - How to Start a Fire for Barbecuing</title>
+    <link href="https://blog.tennisatw.com/post/62/"/>
+    <id>https://blog.tennisatw.com/post/62/</id>
+    <published>2024-09-03T07:10:05.000Z</published>
+    <updated>2025-02-02T04:51:30.859Z</updated>
+    
+    
+    <summary type="html">&lt;br&gt;</summary>
+    
+    
+    
+    
+    <category term="日常 - Daily" scheme="https://blog.tennisatw.com/tags/%E6%97%A5%E5%B8%B8-daily/"/>
     
   </entry>
   
@@ -250,6 +301,40 @@
   </entry>
   
   <entry>
+    <title>小打油 - 劝学</title>
+    <link href="https://blog.tennisatw.com/post/58/"/>
+    <id>https://blog.tennisatw.com/post/58/</id>
+    <published>2024-08-01T01:22:57.000Z</published>
+    <updated>2025-02-02T04:51:30.859Z</updated>
+    
+    
+    <summary type="html">&lt;br&gt;</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>哈利法克斯 * 乔治岛</title>
+    <link href="https://blog.tennisatw.com/post/57/"/>
+    <id>https://blog.tennisatw.com/post/57/</id>
+    <published>2024-07-24T04:52:01.000Z</published>
+    <updated>2025-02-02T04:51:30.859Z</updated>
+    
+    
+    <summary type="html">&lt;br&gt;</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
+    
+  </entry>
+  
+  <entry>
     <title>利用python脚本分别调节多个屏幕的亮度 - Set the brightness of multiple screens separately using python scripts</title>
     <link href="https://blog.tennisatw.com/post/56/"/>
     <id>https://blog.tennisatw.com/post/56/</id>
@@ -263,6 +348,23 @@
     
     
     <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>小打油 - 流浪汉</title>
+    <link href="https://blog.tennisatw.com/post/55/"/>
+    <id>https://blog.tennisatw.com/post/55/</id>
+    <published>2024-07-11T04:54:48.000Z</published>
+    <updated>2025-02-02T04:51:30.859Z</updated>
+    
+    
+    <summary type="html">&lt;br&gt;</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
     
   </entry>
   
@@ -642,6 +744,23 @@
   </entry>
   
   <entry>
+    <title>计算lammps模拟系统的密度 - Calculate the density of a lammps simulated system</title>
+    <link href="https://blog.tennisatw.com/post/33/"/>
+    <id>https://blog.tennisatw.com/post/33/</id>
+    <published>2023-11-22T05:45:01.000Z</published>
+    <updated>2025-02-02T04:51:30.859Z</updated>
+    
+    
+    <summary type="html">&lt;br&gt;</summary>
+    
+    
+    
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
+    
+  </entry>
+  
+  <entry>
     <title>对普通女权，田园女权，与激进女权的粗浅探讨</title>
     <link href="https://blog.tennisatw.com/post/32/"/>
     <id>https://blog.tennisatw.com/post/32/</id>
@@ -750,6 +869,23 @@
   </entry>
   
   <entry>
+    <title>如何制作词云 - How to make wordcloud</title>
+    <link href="https://blog.tennisatw.com/post/26/"/>
+    <id>https://blog.tennisatw.com/post/26/</id>
+    <published>2023-09-17T09:56:21.000Z</published>
+    <updated>2025-02-02T04:51:30.859Z</updated>
+    
+    
+    <summary type="html">&lt;br&gt;</summary>
+    
+    
+    
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
+    
+  </entry>
+  
+  <entry>
     <title>元键政2：键政的意义何在？ - Meta Political Discussion 2：What is the significance of discussing politics?</title>
     <link href="https://blog.tennisatw.com/post/25/"/>
     <id>https://blog.tennisatw.com/post/25/</id>
@@ -777,6 +913,23 @@
     
     
     <summary type="html">强力推荐一本优质教材：《动手学深度学习》。它包含了以下内容：多层感知机，深度神经网络，循环神经网络，卷积神经网络，以及有关深度学习的其他知识点。每一个知识点都会附带一小段代码。有一点难度，不适合纯小白。&lt;br&gt;Highly recommending a top-quality textbook：&quot;Dive into Deep Learning&quot;. It covers various topics including multilayer perceptron, deep neural networks, recurrent neural networks, convolutional neural networks, and other concepts related to deep learning. Each topic comes with a snippet of code. It is somewhat challenging and not that suitable for beginners.</summary>
+    
+    
+    
+    
+    <category term="推荐 - Recommendation" scheme="https://blog.tennisatw.com/tags/%E6%8E%A8%E8%8D%90-recommendation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>插件推荐：屏蔽黄推 - Plugin Recommendation：Twitter Block Porn</title>
+    <link href="https://blog.tennisatw.com/post/23/"/>
+    <id>https://blog.tennisatw.com/post/23/</id>
+    <published>2023-09-12T21:48:31.000Z</published>
+    <updated>2025-02-02T04:51:30.859Z</updated>
+    
+    
+    <summary type="html">&lt;br&gt;</summary>
     
     
     
@@ -822,6 +975,23 @@
   </entry>
   
   <entry>
+    <title>视频推荐：《陌生人——柴静对话圣战分子》 - Video Recommendation：&quot;Stranger：Talking to Jihadists&quot;</title>
+    <link href="https://blog.tennisatw.com/post/20/"/>
+    <id>https://blog.tennisatw.com/post/20/</id>
+    <published>2023-09-05T22:55:10.000Z</published>
+    <updated>2025-02-02T04:51:30.859Z</updated>
+    
+    
+    <summary type="html">&lt;br&gt;</summary>
+    
+    
+    
+    
+    <category term="推荐 - Recommendation" scheme="https://blog.tennisatw.com/tags/%E6%8E%A8%E8%8D%90-recommendation/"/>
+    
+  </entry>
+  
+  <entry>
     <title>实验复现：绘制曼德勃罗集合 - Experiment Replication：sketch a Mandelbrot set</title>
     <link href="https://blog.tennisatw.com/post/19/"/>
     <id>https://blog.tennisatw.com/post/19/</id>
@@ -851,7 +1021,41 @@
     
     
     
+    <category term="推荐 - Recommendation" scheme="https://blog.tennisatw.com/tags/%E6%8E%A8%E8%8D%90-recommendation/"/>
+    
     <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>插件推荐：沉浸式翻译 - Tool recommendation：Immersive Translate</title>
+    <link href="https://blog.tennisatw.com/post/17/"/>
+    <id>https://blog.tennisatw.com/post/17/</id>
+    <published>2023-08-29T08:24:42.000Z</published>
+    <updated>2025-02-02T04:51:30.859Z</updated>
+    
+    
+    <summary type="html">&lt;br&gt;</summary>
+    
+    
+    
+    
+    <category term="推荐 - Recommendation" scheme="https://blog.tennisatw.com/tags/%E6%8E%A8%E8%8D%90-recommendation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>视频推荐：键政圈三大主流意识形态的逻辑基础——神左兔人自述</title>
+    <link href="https://blog.tennisatw.com/post/16/"/>
+    <id>https://blog.tennisatw.com/post/16/</id>
+    <published>2023-08-29T05:55:03.000Z</published>
+    <updated>2025-02-02T04:51:30.859Z</updated>
+    
+    
+    <summary type="html">&lt;br&gt;</summary>
+    
+    
+    
     
     <category term="推荐 - Recommendation" scheme="https://blog.tennisatw.com/tags/%E6%8E%A8%E8%8D%90-recommendation/"/>
     
@@ -875,6 +1079,23 @@
   </entry>
   
   <entry>
+    <title>冬之城</title>
+    <link href="https://blog.tennisatw.com/post/14/"/>
+    <id>https://blog.tennisatw.com/post/14/</id>
+    <published>2023-08-22T05:40:34.000Z</published>
+    <updated>2025-02-02T04:51:30.855Z</updated>
+    
+    
+    <summary type="html">&lt;br&gt;</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
+    
+  </entry>
+  
+  <entry>
     <title>参观大庆油田历史陈列馆和唐山大地震纪念馆有感 - Reflections on Visiting the Daqing Oilfield History Exhibition Hall and the Tangshan Earthquake Memorial Hall</title>
     <link href="https://blog.tennisatw.com/post/13/"/>
     <id>https://blog.tennisatw.com/post/13/</id>
@@ -888,6 +1109,23 @@
     
     
     <category term="敏感 - Sensitive" scheme="https://blog.tennisatw.com/tags/%E6%95%8F%E6%84%9F-sensitive/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>冷夏</title>
+    <link href="https://blog.tennisatw.com/post/12/"/>
+    <id>https://blog.tennisatw.com/post/12/</id>
+    <published>2023-07-10T15:22:23.000Z</published>
+    <updated>2025-02-02T04:51:30.859Z</updated>
+    
+    
+    <summary type="html">&lt;br&gt;</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
     
   </entry>
   
@@ -939,6 +1177,48 @@
     
     
     <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SD WebUI 2： 如何设置Stable Diffusion WebUI？ - SD WebUI 2： How to set Stable Diffusion WebUI?</title>
+    <link href="https://blog.tennisatw.com/post/8/"/>
+    <id>https://blog.tennisatw.com/post/8/</id>
+    <published>2023-05-05T03:16:02.000Z</published>
+    <updated>2025-02-02T04:51:30.859Z</updated>
+    
+    
+    <summary type="html">&lt;br&gt;</summary>
+    
+    
+    
+    <category term="SD WebUI" scheme="https://blog.tennisatw.com/series/sd-webui/"/>
+    
+    
+    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SD WebUI 1： 如何安装Stable Diffusion WebUI？ - SD WebUI 1： How to install Stable Diffusion WebUI?</title>
+    <link href="https://blog.tennisatw.com/post/7/"/>
+    <id>https://blog.tennisatw.com/post/7/</id>
+    <published>2023-05-05T03:14:38.000Z</published>
+    <updated>2025-02-02T04:51:30.859Z</updated>
+    
+    
+    <summary type="html">&lt;br&gt;</summary>
+    
+    
+    
+    <category term="SD WebUI" scheme="https://blog.tennisatw.com/series/sd-webui/"/>
+    
+    
+    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
     
   </entry>
   
@@ -1045,6 +1325,312 @@
     
     
     <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>毕业生</title>
+    <link href="https://blog.tennisatw.com/post/-1/"/>
+    <id>https://blog.tennisatw.com/post/-1/</id>
+    <published>2023-03-27T05:29:35.000Z</published>
+    <updated>2025-02-02T04:51:30.859Z</updated>
+    
+    
+    <summary type="html">&lt;br&gt;</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>另一代人</title>
+    <link href="https://blog.tennisatw.com/post/-2/"/>
+    <id>https://blog.tennisatw.com/post/-2/</id>
+    <published>2022-12-16T06:36:15.000Z</published>
+    <updated>2025-02-02T04:51:30.832Z</updated>
+    
+    
+    <summary type="html">&lt;br&gt;</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>美丽猫猫新世界</title>
+    <link href="https://blog.tennisatw.com/post/-3/"/>
+    <id>https://blog.tennisatw.com/post/-3/</id>
+    <published>2022-08-16T05:38:41.000Z</published>
+    <updated>2025-02-02T04:51:30.838Z</updated>
+    
+    
+    <summary type="html">&lt;br&gt;</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>怀念一棵榕树</title>
+    <link href="https://blog.tennisatw.com/post/-4/"/>
+    <id>https://blog.tennisatw.com/post/-4/</id>
+    <published>2022-08-03T05:44:33.000Z</published>
+    <updated>2025-02-02T04:51:30.838Z</updated>
+    
+    
+    <summary type="html">&lt;br&gt;</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>住在黑洞里</title>
+    <link href="https://blog.tennisatw.com/post/-5/"/>
+    <id>https://blog.tennisatw.com/post/-5/</id>
+    <published>2022-01-21T06:47:00.000Z</published>
+    <updated>2025-02-02T04:51:30.838Z</updated>
+    
+    
+    <summary type="html">&lt;br&gt;</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>跨年</title>
+    <link href="https://blog.tennisatw.com/post/-6/"/>
+    <id>https://blog.tennisatw.com/post/-6/</id>
+    <published>2022-01-01T06:48:55.000Z</published>
+    <updated>2025-02-02T04:51:30.843Z</updated>
+    
+    
+    <summary type="html">&lt;br&gt;</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>爱城雪</title>
+    <link href="https://blog.tennisatw.com/post/-7/"/>
+    <id>https://blog.tennisatw.com/post/-7/</id>
+    <published>2021-12-24T06:54:15.000Z</published>
+    <updated>2025-02-02T04:51:30.838Z</updated>
+    
+    
+    <summary type="html">&lt;br&gt;</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>折耳说</title>
+    <link href="https://blog.tennisatw.com/post/-8/"/>
+    <id>https://blog.tennisatw.com/post/-8/</id>
+    <published>2021-11-02T05:55:58.000Z</published>
+    <updated>2025-02-02T04:51:30.843Z</updated>
+    
+    
+    <summary type="html">&lt;br&gt;</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>交大秋</title>
+    <link href="https://blog.tennisatw.com/post/-9/"/>
+    <id>https://blog.tennisatw.com/post/-9/</id>
+    <published>2021-10-11T07:58:47.000Z</published>
+    <updated>2025-02-02T04:51:30.843Z</updated>
+    
+    
+    <summary type="html">&lt;br&gt;</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>可怜的意大利小孩 - A poor Italian kid</title>
+    <link href="https://blog.tennisatw.com/post/-10/"/>
+    <id>https://blog.tennisatw.com/post/-10/</id>
+    <published>2021-08-22T06:02:34.000Z</published>
+    <updated>2025-02-02T04:51:30.843Z</updated>
+    
+    
+    <summary type="html">&lt;br&gt;</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>致刘昊</title>
+    <link href="https://blog.tennisatw.com/post/-11/"/>
+    <id>https://blog.tennisatw.com/post/-11/</id>
+    <published>2021-07-13T06:07:02.000Z</published>
+    <updated>2025-02-02T04:51:30.832Z</updated>
+    
+    
+    <summary type="html">&lt;br&gt;</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>今晚的月光亮得刺眼</title>
+    <link href="https://blog.tennisatw.com/post/-12/"/>
+    <id>https://blog.tennisatw.com/post/-12/</id>
+    <published>2021-07-09T06:10:00.000Z</published>
+    <updated>2025-02-02T04:51:30.843Z</updated>
+    
+    
+    <summary type="html">&lt;br&gt;</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>题老黑板</title>
+    <link href="https://blog.tennisatw.com/post/-13/"/>
+    <id>https://blog.tennisatw.com/post/-13/</id>
+    <published>2021-06-19T06:12:35.000Z</published>
+    <updated>2025-02-02T04:51:30.832Z</updated>
+    
+    
+    <summary type="html">&lt;br&gt;</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>人上人上人</title>
+    <link href="https://blog.tennisatw.com/post/-14/"/>
+    <id>https://blog.tennisatw.com/post/-14/</id>
+    <published>2020-09-26T20:59:41.000Z</published>
+    <updated>2025-02-02T04:51:30.845Z</updated>
+    
+    
+    <summary type="html">&lt;br&gt;</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>日月行焉</title>
+    <link href="https://blog.tennisatw.com/post/-15/"/>
+    <id>https://blog.tennisatw.com/post/-15/</id>
+    <published>2019-10-17T06:18:52.000Z</published>
+    <updated>2025-02-02T04:51:30.855Z</updated>
+    
+    
+    <summary type="html">&lt;br&gt;</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>梦想</title>
+    <link href="https://blog.tennisatw.com/post/-16/"/>
+    <id>https://blog.tennisatw.com/post/-16/</id>
+    <published>2019-05-09T20:23:40.000Z</published>
+    <updated>2025-02-02T04:51:30.855Z</updated>
+    
+    
+    <summary type="html">&lt;br&gt;</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>小打油 - 假登黄鹤楼</title>
+    <link href="https://blog.tennisatw.com/post/-17/"/>
+    <id>https://blog.tennisatw.com/post/-17/</id>
+    <published>2018-10-03T07:20:51.000Z</published>
+    <updated>2025-02-02T04:51:30.859Z</updated>
+    
+    
+    <summary type="html">&lt;br&gt;</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在夜里出发</title>
+    <link href="https://blog.tennisatw.com/post/-18/"/>
+    <id>https://blog.tennisatw.com/post/-18/</id>
+    <published>2016-03-13T20:05:45.000Z</published>
+    <updated>2025-02-02T04:51:30.832Z</updated>
+    
+    
+    <summary type="html">&lt;br&gt;</summary>
+    
+    
+    
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
     
   </entry>
   
