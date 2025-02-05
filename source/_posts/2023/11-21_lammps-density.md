@@ -1,7 +1,7 @@
 ---
 title: 计算lammps模拟系统的密度 - Calculate the density of a lammps simulated system
 permalink: post/33/
-excerpt: <br>
+excerpt: <!-- -->
 date: 2023-11-21 22:45:01
 tags: 编程 - Programming
 ---

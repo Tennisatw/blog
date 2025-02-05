@@ -16,7 +16,7 @@ However, life coaches are not always readily available. In fact, having more tha
 
 <br>
 
-但是，考虑这样一件事：
+但是，有没有一种可能：
 
 论阅历，没有人比大语言模型（LLM）读过的书更多了，论知识，没有人比LLM的知识更丰富，论认知，只要你用的多了就会发现，LLM的认知明显高于一般人。
 

@@ -1,7 +1,7 @@
 ---
 title: 如何制作词云 - How to make wordcloud
 permalink: post/26/
-excerpt: <br>
+excerpt: <!-- -->
 date: 2023-09-17 03:56:21
 tags: 编程 - Programming
 ---

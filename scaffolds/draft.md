@@ -1,7 +1,7 @@
 ---
 title: {{ title }}
 permalink: post/post_id/
-excerpt: <br>
+excerpt: <!-- -->
 date: {{ date }}
 tags:
 ---
