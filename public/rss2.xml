@@ -15,8 +15,27 @@
     <atom:link href="https://blog.tennisatw.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Wed, 05 Feb 2025 13:04:23 GMT</pubDate>
+    <pubDate>Tue, 15 Apr 2025 09:02:22 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>基于vscode的最简易的c/c++开发环境搭建</title>
+      <link>https://blog.tennisatw.com/post/76/</link>
+      <guid>https://blog.tennisatw.com/post/76/</guid>
+      <pubDate>Mon, 14 Apr 2025 20:43:05 GMT</pubDate>
+      
+      <description>对于非计算机专业的人来说，c/c++的配置和构建相当复杂。这里给习惯vscode的windows用户推荐一个简单的方案：使用vscode及插件 + msys2作为开发环境。</description>
+      
+      
+      
+      
+      
+      <category domain="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/">编程 - Programming</category>
+      
+      
+      <comments>https://blog.tennisatw.com/post/76/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Deep Research 1：撰写文章综述 - Deep Research 1：Writing Review of Articles</title>
@@ -24,7 +43,7 @@
       <guid>https://blog.tennisatw.com/post/75/</guid>
       <pubDate>Wed, 05 Feb 2025 09:59:38 GMT</pubDate>
       
-      <description>&lt;!-- --&gt;</description>
+      <description>我购买了Openai的ChatGPT pro，使用其Deep Research（深度研究）功能，撰写了一篇有关近5年Molecular Dynamics（分子动力学）研究的学术综述。</description>
       
       
       
@@ -150,9 +169,9 @@
       
       
       
-      <category domain="https://blog.tennisatw.com/tags/%E6%97%A5%E5%B8%B8-daily/">日常 - Daily</category>
-      
       <category domain="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/">随想 - Thoughts</category>
+      
+      <category domain="https://blog.tennisatw.com/tags/%E6%97%A5%E5%B8%B8-daily/">日常 - Daily</category>
       
       
       <comments>https://blog.tennisatw.com/post/69/#disqus_thread</comments>
@@ -563,9 +582,9 @@
       
       
       
-      <category domain="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/">技术 - Technology</category>
-      
       <category domain="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/">随想 - Thoughts</category>
+      
+      <category domain="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/">技术 - Technology</category>
       
       
       <comments>https://blog.tennisatw.com/post/48/#disqus_thread</comments>
@@ -778,9 +797,9 @@
       
       
       
-      <category domain="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/">技术 - Technology</category>
-      
       <category domain="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/">随想 - Thoughts</category>
+      
+      <category domain="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/">技术 - Technology</category>
       
       <category domain="https://blog.tennisatw.com/tags/%E6%95%8F%E6%84%9F-sensitive/">敏感 - Sensitive</category>
       
@@ -1155,9 +1174,9 @@
       
       
       
-      <category domain="https://blog.tennisatw.com/tags/%E6%8E%A8%E8%8D%90-recommendation/">推荐 - Recommendation</category>
-      
       <category domain="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/">随想 - Thoughts</category>
+      
+      <category domain="https://blog.tennisatw.com/tags/%E6%8E%A8%E8%8D%90-recommendation/">推荐 - Recommendation</category>
       
       
       <comments>https://blog.tennisatw.com/post/18/#disqus_thread</comments>
@@ -1414,9 +1433,9 @@
       
       <category domain="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/">随想 - Thoughts</category>
       
-      <category domain="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/">编程 - Programming</category>
-      
       <category domain="https://blog.tennisatw.com/tags/%E6%95%8F%E6%84%9F-sensitive/">敏感 - Sensitive</category>
+      
+      <category domain="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/">编程 - Programming</category>
       
       
       <comments>https://blog.tennisatw.com/post/5/#disqus_thread</comments>

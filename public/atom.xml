@@ -6,7 +6,7 @@
   <link href="https://blog.tennisatw.com/atom.xml" rel="self"/>
   
   <link href="https://blog.tennisatw.com/"/>
-  <updated>2025-02-05T13:04:23.671Z</updated>
+  <updated>2025-04-15T09:02:22.603Z</updated>
   <id>https://blog.tennisatw.com/</id>
   
   <author>
@@ -17,14 +17,31 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>基于vscode的最简易的c/c++开发环境搭建</title>
+    <link href="https://blog.tennisatw.com/post/76/"/>
+    <id>https://blog.tennisatw.com/post/76/</id>
+    <published>2025-04-14T20:43:05.000Z</published>
+    <updated>2025-04-15T09:02:22.603Z</updated>
+    
+    
+    <summary type="html">对于非计算机专业的人来说，c/c++的配置和构建相当复杂。这里给习惯vscode的windows用户推荐一个简单的方案：使用vscode及插件 + msys2作为开发环境。</summary>
+    
+    
+    
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Deep Research 1：撰写文章综述 - Deep Research 1：Writing Review of Articles</title>
     <link href="https://blog.tennisatw.com/post/75/"/>
     <id>https://blog.tennisatw.com/post/75/</id>
     <published>2025-02-05T09:59:38.000Z</published>
-    <updated>2025-02-05T13:04:23.671Z</updated>
+    <updated>2025-02-05T13:11:01.001Z</updated>
     
     
-    <summary type="html">&lt;!-- --&gt;</summary>
+    <summary type="html">我购买了Openai的ChatGPT pro，使用其Deep Research（深度研究）功能，撰写了一篇有关近5年Molecular Dynamics（分子动力学）研究的学术综述。</summary>
     
     
     
@@ -93,7 +110,7 @@
     <link href="https://blog.tennisatw.com/post/71/"/>
     <id>https://blog.tennisatw.com/post/71/</id>
     <published>2025-01-14T03:55:20.000Z</published>
-    <updated>2025-01-14T03:35:56.178Z</updated>
+    <updated>2025-04-14T20:35:32.766Z</updated>
     
     
     <summary type="html">VSCode（配合GitHub Copilot），Cursor，和WindSurf是三种常见的AI辅助的代码编辑软件。它们的界面风格和功能（特指AI功能）大同小异，使用体验上也有很多相似之处。本人已处在选择困难状态长达半年之久，故对这三种软件的界面风格和功能进行了对比及打分。最终，Cursor以微弱优势胜出。&lt;br&gt;VSCode (with GitHub Copilot), Cursor, and WindSurf are three common AI-assisted code editing software. They share similar interface styles and features (specifically AI features), with comparable user experiences. Having been in a state of decision paralysis for half a year, I&#39;ve compared and rated these three software&#39;s interface styles and features. In the end, Cursor emerged victorious by a narrow margin.</summary>
@@ -137,9 +154,9 @@
     
     
     
-    <category term="日常 - Daily" scheme="https://blog.tennisatw.com/tags/%E6%97%A5%E5%B8%B8-daily/"/>
-    
     <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
+    
+    <category term="日常 - Daily" scheme="https://blog.tennisatw.com/tags/%E6%97%A5%E5%B8%B8-daily/"/>
     
   </entry>
   
@@ -508,9 +525,9 @@
     
     
     
-    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
-    
     <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
+    
+    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
     
   </entry>
   
@@ -701,9 +718,9 @@
     
     
     
-    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
-    
     <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
+    
+    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
     
     <category term="敏感 - Sensitive" scheme="https://blog.tennisatw.com/tags/%E6%95%8F%E6%84%9F-sensitive/"/>
     
@@ -1040,9 +1057,9 @@
     
     
     
-    <category term="推荐 - Recommendation" scheme="https://blog.tennisatw.com/tags/%E6%8E%A8%E8%8D%90-recommendation/"/>
-    
     <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
+    
+    <category term="推荐 - Recommendation" scheme="https://blog.tennisatw.com/tags/%E6%8E%A8%E8%8D%90-recommendation/"/>
     
   </entry>
   
@@ -1273,9 +1290,9 @@
     
     <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
     
-    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
-    
     <category term="敏感 - Sensitive" scheme="https://blog.tennisatw.com/tags/%E6%95%8F%E6%84%9F-sensitive/"/>
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
     
   </entry>
   
@@ -1539,7 +1556,7 @@
     <link href="https://blog.tennisatw.com/post/-12/"/>
     <id>https://blog.tennisatw.com/post/-12/</id>
     <published>2021-07-09T06:10:00.000Z</published>
-    <updated>2025-02-05T13:02:48.181Z</updated>
+    <updated>2025-03-13T04:09:54.184Z</updated>
     
     
     <summary type="html">&lt;!-- --&gt;</summary>

@@ -1,7 +1,7 @@
 ---
 title: Deep Research 1：撰写文章综述 - Deep Research 1：Writing Review of Articles
 permalink: post/75/
-excerpt: <!-- -->
+excerpt: 我购买了Openai的ChatGPT pro，使用其Deep Research（深度研究）功能，撰写了一篇有关近5年Molecular Dynamics（分子动力学）研究的学术综述。
 date: 2025-02-05 02:59:38
 tags: 技术 - Technology
 categories: 
