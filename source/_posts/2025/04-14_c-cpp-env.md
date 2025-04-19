@@ -12,7 +12,7 @@ c++广泛用于系统开发、游戏开发和高性能应用。但对于非计�
 
 <br>
 
-#### 安装及更新msys2
+### 安装及更新msys2
 
 msys2是一个微型的Linux系统，可以使用msys2的包管理器（pacman）安装开发c/c++所需的所有工具，包括编译器（mingw64的gcc和g++），调试器（mingw64的gdb），项目构建配置工具（mingw64的cmake），项目构建工具（mingw64的make或ninja）。
 
@@ -27,7 +27,7 @@ pacman -Syu
 
 <br>
 
-#### 安装开发工具
+### 安装开发工具
 
 接下来，在msys2中安装c/c++的开发工具：
 
@@ -46,7 +46,7 @@ pacman -S mingw-w64-x86_64-sfml
 
 <br>
 
-#### 安装vscode及插件
+### 安装vscode及插件
 
 去官网下载并安装vscode。安装完成后，安装C/C++插件和CMake Tools插件。
 
@@ -56,7 +56,7 @@ pacman -S mingw-w64-x86_64-sfml
 
 <br>
 
-#### 创建项目
+### 创建项目
 
 在vscode中打开一个新的文件夹，作为项目的根目录，之后就可以在这个文件夹中开发c/c++项目了。
 
@@ -92,9 +92,11 @@ target_link_libraries(galaxy
 
 <br>
 
-#### 配置并构建项目
+### 配置并构建项目
 
-项目编写完成后，使用vscode的CMake Tools插件来配置并构建项目。首先打开Cmake Tools插件页面。在configure中选择msys2 - mingw64的GCC编译器，如图所示。之后，插件会依据CMakeLists自动配置项目。
+项目编写完成后，使用vscode的CMake Tools插件来配置并构建项目。
+
+首先打开Cmake Tools插件页面。在configure中选择msys2 - mingw64的GCC编译器，如图所示。之后，插件会依据CMakeLists自动配置项目。
 
 ![](image.png)
 

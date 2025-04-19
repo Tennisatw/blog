@@ -12,7 +12,7 @@ categories:
 
 <br>
 
-## Deep Research简介
+### Deep Research简介
 
 Deep Research是Openai在3天前发布的一项新功能，由最新的o3模型驱动，可以深入探究一个复杂主题，耗时10分钟甚至更久，生成一份专业的，详细的万字报告。
 
@@ -22,7 +22,7 @@ Deep Research是Openai在3天前发布的一项新功能，由最新的o3模型�
 
 <br>
 
-## 使用方法
+### 使用方法
 
 打开chatgpt网页，使用任意模型，点击输入框中的`Deep research`按钮，然后输入你的要求，越详细越好，最后回车。
 
@@ -42,7 +42,7 @@ Deep Research是Openai在3天前发布的一项新功能，由最新的o3模型�
 
 <br>
 
-## 结果评价
+### 结果评价
 
 Deep Research真的能生成一篇简易的学术综述，并给出所有的引用。我检查了其中的一些引用，它们确实是真实的链接，且忠实地保留了原文的主旨。
 
@@ -56,9 +56,9 @@ Deep Research真的能生成一篇简易的学术综述，并给出所有的引�
 
 <br>
 
-## 完整的聊天记录
+### 完整的聊天记录
 
-![本次对话的网页链接](https://chatgpt.com/share/67a2900a-3028-800f-b1db-2c0dc2689300)
+[本次对话的网页链接](https://chatgpt.com/share/67a2900a-3028-800f-b1db-2c0dc2689300)
 
 <br>
 

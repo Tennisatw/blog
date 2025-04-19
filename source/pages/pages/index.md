@@ -16,17 +16,17 @@ The author of this blog, and the tech stack.
 
 **[推荐的信息来源 - Recommended Information Sources](/info-sources/)**
 
-本人推荐的一些高质量的中文时评/政治/科普信息来源。
+本人推荐的一些高质量的中文科普/时评/政治信息来源。
 
-Some high-quality Chinese news/political/science information sources, recommended by myself.
+Some high-quality Chinese science/political/news information sources, recommended by myself.
 
 <br>
 
 **[页面列表 - Page list](/pages/)**
 
-和本博客相关的，博文之外的所有页面的列表。
+<p class="tennisbot" id="这说明本页面列表是一个包含了自身的页面列表，不涉及理发师悖论"> 和本博客相关的，博文之外的所有页面的列表。</p>
 
-A list of all pages related to this blog, other than posts.
+<p class="tennisbot" id="This means that this page list is a page list that contains itself, and does not involve the barber paradox."> A list of all pages related to this blog, other than posts.</p>
 
 <br>
 
