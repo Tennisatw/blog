@@ -34,11 +34,11 @@
   </entry>
   
   <entry>
-    <title>Galaxy开发记录与心得</title>
+    <title>Galaxy开发记录与心得 - Galaxy Development Log and Reflections</title>
     <link href="https://blog.tennisatw.com/post/77/"/>
     <id>https://blog.tennisatw.com/post/77/</id>
     <published>2025-04-19T07:43:01.000Z</published>
-    <updated>2025-04-20T09:27:52.410Z</updated>
+    <updated>2025-04-20T10:46:04.651Z</updated>
     
     
     <summary type="html">&lt;!-- --&gt;</summary>
@@ -55,7 +55,7 @@
     <link href="https://blog.tennisatw.com/post/76/"/>
     <id>https://blog.tennisatw.com/post/76/</id>
     <published>2025-04-14T20:43:05.000Z</published>
-    <updated>2025-04-20T09:17:24.906Z</updated>
+    <updated>2025-04-20T10:48:31.224Z</updated>
     
     
     <summary type="html">对于非计算机专业的人来说，c/c++的配置和构建相当复杂。这里给习惯vscode的windows用户推荐一个简单的方案：使用vscode及插件 + msys2作为开发环境。</summary>
@@ -68,11 +68,26 @@
   </entry>
   
   <entry>
+    <title>cpp env</title>
+    <link href="https://blog.tennisatw.com/post/76/"/>
+    <id>https://blog.tennisatw.com/post/76/</id>
+    <published>2025-04-14T20:43:05.000Z</published>
+    <updated>2025-04-20T11:08:56.063Z</updated>
+    
+    
+    <summary type="html">&lt;!-- --&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>Deep Research：撰写文章综述 - Deep Research：Writing Review of Articles</title>
     <link href="https://blog.tennisatw.com/post/75/"/>
     <id>https://blog.tennisatw.com/post/75/</id>
     <published>2025-02-05T09:59:38.000Z</published>
-    <updated>2025-04-20T09:07:31.829Z</updated>
+    <updated>2025-04-20T10:49:53.449Z</updated>
     
     
     <summary type="html">我购买了Openai的ChatGPT pro会员，使用其Deep Research（深度研究）功能，撰写了一篇有关近5年Molecular Dynamics（分子动力学）研究的学术综述。</summary>
@@ -89,7 +104,7 @@
     <link href="https://blog.tennisatw.com/post/74/"/>
     <id>https://blog.tennisatw.com/post/74/</id>
     <published>2025-01-31T06:12:47.000Z</published>
-    <updated>2025-02-05T10:23:34.341Z</updated>
+    <updated>2025-04-20T10:56:01.560Z</updated>
     
     
     <summary type="html">论阅历，没有人比大语言模型（LLM）读过的书更多了，论知识，没有人比LLM的知识更丰富，论认知，只要你用的多了就会发现，LLM的认知明显高于一般人。所以LLM完全可以充当你我的人生导师。&lt;br&gt;In terms of experience, no one has read more books than a large language model (LLM). In terms of knowledge, no one is more knowledgeable than an LLM. In terms of cognition, the more you use it, the more you&#39;ll realize that an LLM&#39;s cognition is significantly higher than that of the average person. So, an LLM can absolutely serve as a life coach for us.</summary>
@@ -106,7 +121,7 @@
     <link href="https://blog.tennisatw.com/post/73/"/>
     <id>https://blog.tennisatw.com/post/73/</id>
     <published>2025-01-23T23:11:07.000Z</published>
-    <updated>2025-01-23T08:33:46.422Z</updated>
+    <updated>2025-04-20T11:00:10.652Z</updated>
     
     
     <summary type="html">自然界中的手性偏好可能源于自催化分子手性与活性突变的不均衡。出于好奇，我们通过模拟自催化分子的演化过程，考察了手性在时间演变中的分布变化。&lt;br&gt;The chiral preference observed in nature may stem from an imbalance between the self-catalytic chirality of molecules and active mutations. Out of curiosity, we simulated the evolutionary process of self-catalytic molecules to explore how chirality evolves over time.</summary>
@@ -178,7 +193,7 @@
     <link href="https://blog.tennisatw.com/post/69/"/>
     <id>https://blog.tennisatw.com/post/69/</id>
     <published>2025-01-09T23:53:32.000Z</published>
-    <updated>2025-02-01T18:01:55.949Z</updated>
+    <updated>2025-04-20T11:13:00.881Z</updated>
     
     
     <summary type="html">人应该怎么做才能规避痛苦，或者至少减弱痛苦的程度？本文总结了本人对这个问题的思索，并尝试给出一套应对（心理上的）痛苦的通用方法。&lt;br&gt;What should one do to avoid pain, or at least mitigate its intensity? This article summarizes my thoughts on this question and attempts to provide a general method for dealing with (psychological) pain.</summary>
@@ -197,7 +212,7 @@
     <link href="https://blog.tennisatw.com/post/68/"/>
     <id>https://blog.tennisatw.com/post/68/</id>
     <published>2024-12-17T23:56:20.000Z</published>
-    <updated>2024-12-18T00:12:56.883Z</updated>
+    <updated>2025-04-20T11:14:57.053Z</updated>
     
     
     <summary type="html">推荐一个可以实时读取摄像头/屏幕的多模态AI模型：google gemini 2.0 flash。&lt;br&gt;Recommend a multimodal AI model capable of real-time camera/screen reading：Google Gemini 2.0 Flash.</summary>
@@ -214,7 +229,7 @@
     <link href="https://blog.tennisatw.com/post/67/"/>
     <id>https://blog.tennisatw.com/post/67/</id>
     <published>2024-11-18T23:22:29.000Z</published>
-    <updated>2025-01-14T02:57:45.980Z</updated>
+    <updated>2025-04-20T11:18:55.109Z</updated>
     
     
     <summary type="html">截至目前，我发现的登录远程目录提交slurm任务的最方便的方法是使用VSCode的Remote-SSH插件和slurm-dashboard插件，可以一键提交slurm任务。这里简单的记录一下我的安装和配置方法。&lt;br&gt;So far, the most convenient way I’ve found to submit Slurm tasks on a remote directory is by using VSCode’s Remote-SSH plugin combined with the Slurm-Dashboard plugin, allowing one-click submission of Slurm tasks. Here, I’ll briefly document my installation and configuration process.</summary>
@@ -233,7 +248,7 @@
     <link href="https://blog.tennisatw.com/post/66/"/>
     <id>https://blog.tennisatw.com/post/66/</id>
     <published>2024-10-31T11:02:05.000Z</published>
-    <updated>2025-02-05T13:02:48.272Z</updated>
+    <updated>2025-04-20T11:19:34.443Z</updated>
     
     
     <summary type="html">&lt;!-- --&gt;</summary>
@@ -320,7 +335,7 @@
     <link href="https://blog.tennisatw.com/post/61/"/>
     <id>https://blog.tennisatw.com/post/61/</id>
     <published>2024-08-27T08:21:47.000Z</published>
-    <updated>2024-11-09T04:21:11.760Z</updated>
+    <updated>2025-04-20T11:26:57.330Z</updated>
     
     
     <summary type="html">如果把所有的卖小说广告、厌女言论、吐槽男女关系、煽动焦虑、炫耀装逼、&quot;指点江山&quot;（用老套保守的价值观阴阳怪气评价各种社会事件）、追星内容，琐碎热点都屏蔽掉，实在没剩下几篇能引起我兴趣的回答。&lt;br&gt; If I were to block all the ads for novels, misogynistic comments, rants about gender relations, anxiety-inducing posts, show-offs, self-righteousness (using outdated conservative values to cynically judge various social events), fan content, and trivial trending topics, there’d be barely any responses left that interest me.</summary>
@@ -354,7 +369,7 @@
     <link href="https://blog.tennisatw.com/post/59/"/>
     <id>https://blog.tennisatw.com/post/59/</id>
     <published>2024-08-04T08:02:18.000Z</published>
-    <updated>2024-11-09T04:21:11.760Z</updated>
+    <updated>2025-04-20T10:04:45.001Z</updated>
     
     
     <summary type="html">人固然会本能地为自己的身份说话，比如，争取民族独立的人往往是本民族的人，争取女性权益的人也往往是女性。但是，人也会因为自己的政治理论而热爱某一团体，为其说话。屁股不一定决定脑袋。&lt;br&gt;People naturally tend to speak for their own identity. For example, those fighting for national independence are often from that nation, and those advocating for women&#39;s rights are often women. However, individuals may also champion a group because of their political beliefs. Loyalties do not necessarily dictate beliefs.</summary>
@@ -407,7 +422,7 @@
     <link href="https://blog.tennisatw.com/post/56/"/>
     <id>https://blog.tennisatw.com/post/56/</id>
     <published>2024-07-14T05:25:41.000Z</published>
-    <updated>2025-01-13T20:53:51.823Z</updated>
+    <updated>2025-04-20T11:30:08.051Z</updated>
     
     
     <summary type="html">通过python的screen_brightness_control包来调节多个显示器的亮度，使用tkinter库创建一个简单的图形化界面，通过滑动条来调节各个显示器的亮度。&lt;br&gt;Using the screen_brightness_control package in Python to adjust the brightness of multiple monitors, creating a simple graphical interface using the tkinter library to adjust the brightness of each monitor with sliders.</summary>
@@ -441,7 +456,7 @@
     <link href="https://blog.tennisatw.com/post/54/"/>
     <id>https://blog.tennisatw.com/post/54/</id>
     <published>2024-06-26T08:04:49.000Z</published>
-    <updated>2025-01-13T20:53:50.242Z</updated>
+    <updated>2025-04-20T10:06:56.175Z</updated>
     
     
     <summary type="html">尽量多跟见识广的，包容心强的人接触。不要理会那些狭隘的人，自己也不要狭隘。“出淤泥而不染”&lt;br&gt;尽早知道自己想做什么样的人，干什么事，保持“自洽”。&lt;br&gt;保持复杂，不要太在意一件事，也不要太在意一个人。</summary>
@@ -458,7 +473,7 @@
     <link href="https://blog.tennisatw.com/post/53/"/>
     <id>https://blog.tennisatw.com/post/53/</id>
     <published>2024-06-26T02:10:04.000Z</published>
-    <updated>2024-11-09T04:21:11.760Z</updated>
+    <updated>2025-04-20T10:11:37.853Z</updated>
     
     
     <summary type="html">马克思和中国传统文化是中国人的精神世界的2个内核。23年秋天，湖南台和芒果TV发布了《当马克思遇见孔夫子》节目。此节目由官方支持，尝试证明马克思和中国传统文化是相容的，且中国传统文化相当优秀。但由于节目制作水平低劣尴尬，引发了很多争议。马前卒做了3期视频，以一个年轻的，左派的，非民族主义的视角，来探讨马克思和中国传统文化的关系，以及这个节目应该怎么做。马前卒这三个视频对此节目的分析有很多“妙不可言”的片段，相当值得一看。</summary>
@@ -475,7 +490,7 @@
     <link href="https://blog.tennisatw.com/post/52/"/>
     <id>https://blog.tennisatw.com/post/52/</id>
     <published>2024-06-10T19:45:07.000Z</published>
-    <updated>2024-11-09T04:21:11.760Z</updated>
+    <updated>2025-04-20T11:27:33.797Z</updated>
     
     
     <summary type="html">MDAnalysis的线性密度模块有bug：模拟一盒Lammps模拟的均匀的水分子，计算出来的线性密度有一些向上突起的尖峰。&lt;br&gt;There is a bug in the MDAnalysis linear density module：when calculating the linear density of a uniformly simulated box of water molecules using LAMMPS, the result includes some sharp upward spikes.</summary>
@@ -494,7 +509,7 @@
     <link href="https://blog.tennisatw.com/post/51/"/>
     <id>https://blog.tennisatw.com/post/51/</id>
     <published>2024-06-08T05:56:03.000Z</published>
-    <updated>2024-11-09T04:21:11.760Z</updated>
+    <updated>2025-04-20T11:33:24.015Z</updated>
     
     
     <summary type="html">推荐一个听歌识别曲风的网站：cyanite。&lt;br&gt;Here I recommend a website for identifying music genres：cyanite.</summary>
@@ -511,7 +526,7 @@
     <link href="https://blog.tennisatw.com/post/50/"/>
     <id>https://blog.tennisatw.com/post/50/</id>
     <published>2024-05-06T06:38:25.000Z</published>
-    <updated>2025-01-13T20:53:49.214Z</updated>
+    <updated>2025-04-20T11:37:47.259Z</updated>
     
     
     <summary type="html">在coursera上试听了《IBM Data Science Professional Certificate》这一系列，一共有10门数据处理课。</summary>
@@ -549,7 +564,7 @@
     <link href="https://blog.tennisatw.com/post/48/"/>
     <id>https://blog.tennisatw.com/post/48/</id>
     <published>2024-04-13T02:26:38.000Z</published>
-    <updated>2025-01-13T20:53:45.758Z</updated>
+    <updated>2025-04-20T11:37:28.710Z</updated>
     
     
     <summary type="html">可以使用ChatGPT做客观的政治倾向分析。因为ChatGPT学习过大量的文本数据，其中自然包括政治方面的知识。事实上，ChatGPT对政治的理解相当深刻，并且十分博学。</summary>
@@ -568,7 +583,7 @@
     <link href="https://blog.tennisatw.com/post/47/"/>
     <id>https://blog.tennisatw.com/post/47/</id>
     <published>2024-04-01T07:16:08.000Z</published>
-    <updated>2024-11-09T04:21:11.744Z</updated>
+    <updated>2025-04-20T11:44:50.237Z</updated>
     
     
     <summary type="html">Gromacs是一个开源的软件，用c++开发。如果对Gromacs的某个功能不满意，大可以直接去修改其源代码，然后编译，安装。&lt;br&gt;Gromacs is an open-source software developed in C++. If you are dissatisfied with a particular feature of Gromacs, you can directly modify its source code, then compile and install it.</summary>
@@ -587,7 +602,7 @@
     <link href="https://blog.tennisatw.com/post/46/"/>
     <id>https://blog.tennisatw.com/post/46/</id>
     <published>2024-03-30T07:39:44.000Z</published>
-    <updated>2025-01-13T20:53:44.306Z</updated>
+    <updated>2025-04-20T11:39:18.989Z</updated>
     
     
     <summary type="html">组里的人要分析一个系统的氢键数量和氢键自相关函数（Hbond autocorrelation function，hbacf）。&lt;br&gt;A colleague in our group is tasked with analyzing the number of hydrogen bonds and the hydrogen bond autocorrelation function (hbacf) in a system.</summary>
@@ -655,10 +670,10 @@
     <link href="https://blog.tennisatw.com/post/42/"/>
     <id>https://blog.tennisatw.com/post/42/</id>
     <published>2024-03-07T23:26:08.000Z</published>
-    <updated>2024-11-09T04:21:11.744Z</updated>
+    <updated>2025-04-20T10:33:40.865Z</updated>
     
     
-    <summary type="html">本质上，我们期待的生活也就是一个温柔而又欢乐的日常，</summary>
+    <summary type="html">本质上，我们期待的生活无外乎一个温柔而又欢乐的日常，</summary>
     
     
     
@@ -672,7 +687,7 @@
     <link href="https://blog.tennisatw.com/post/41/"/>
     <id>https://blog.tennisatw.com/post/41/</id>
     <published>2024-02-25T23:22:08.000Z</published>
-    <updated>2025-01-13T20:53:42.638Z</updated>
+    <updated>2025-04-20T11:51:45.928Z</updated>
     
     
     <summary type="html">心血来潮，我打算从0开始，花几天时间，学一点前端知识。</summary>
@@ -691,7 +706,7 @@
     <link href="https://blog.tennisatw.com/post/40/"/>
     <id>https://blog.tennisatw.com/post/40/</id>
     <published>2024-02-12T22:17:15.000Z</published>
-    <updated>2024-11-09T04:21:11.744Z</updated>
+    <updated>2025-04-20T11:53:26.322Z</updated>
     
     
     <summary type="html">不用害怕任何演讲，所谓的害怕全都是由于准备不足。本文会给出一些小tips，让大家在准备演讲的时候，用更少的精力去准备得更充分。本文主要针对的是学术类别的，非母语演讲。&lt;br&gt;There&#39;s no need to fear any presentation; the so-called fear is all due to insufficient preparation. Here are some tips to help you prepare more efficiently and effectively for your presentations. This article is primarily focused on academic presentations in non-native languages.</summary>
@@ -725,7 +740,7 @@
     <link href="https://blog.tennisatw.com/post/38/"/>
     <id>https://blog.tennisatw.com/post/38/</id>
     <published>2024-01-30T07:25:41.000Z</published>
-    <updated>2024-11-09T04:21:11.744Z</updated>
+    <updated>2025-04-20T11:55:31.684Z</updated>
     
     
     <summary type="html">政府也会有作假行为，这就是一个证明。</summary>
@@ -742,7 +757,7 @@
     <link href="https://blog.tennisatw.com/post/37/"/>
     <id>https://blog.tennisatw.com/post/37/</id>
     <published>2024-01-09T06:04:17.000Z</published>
-    <updated>2024-11-09T04:21:11.744Z</updated>
+    <updated>2025-04-20T09:38:54.011Z</updated>
     
     
     <summary type="html">中国外交部发言人汪文斌在2024年1月2日说：“所谓“新闻自由”不过是有关国家攻击别国的工具。”这句话对不少人来说都是一句暴论，下面让我们使用贝叶斯方法来分析这句话的可信度如何。&lt;br&gt;On January 2, 2024, Chinese Foreign Ministry Spokesperson Wang Wenbin stated, &quot;The so-called &#39;freedom of the press&#39; is merely a tool used by certain countries to attack and slander other nations.&quot; This statement has sparked controversy and is considered extreme by many. Let&#39;s analyze its credibility using the Bayesian approach.</summary>
@@ -763,7 +778,7 @@
     <link href="https://blog.tennisatw.com/post/36/"/>
     <id>https://blog.tennisatw.com/post/36/</id>
     <published>2023-12-23T07:04:21.000Z</published>
-    <updated>2024-11-09T04:21:11.744Z</updated>
+    <updated>2025-04-20T09:59:50.879Z</updated>
     
     
     <summary type="html">了解观点不同的人的想法的核心原因是 尊重“复杂性”。&lt;br&gt;世界是复杂的，而人类认识世界的水平有限，所以如果不对这个世界做简化，那就几乎无法去认识它。比如，在牛顿总结出经典运动定律之后，人们才对世界的运动规律有了认识。科研中常用的“做实验” - “观察结果” - “建立理论模型” 等其实都是对世界的简化。&lt;br&gt;The core reason for understanding the thoughts of people with different viewpoints is to respect &quot;complexity&quot;. &lt;br&gt;The world is complex, and human understanding of it is limited. Without simplifying this complexity, it would be nearly impossible to comprehend it. For instance, it was only after Newton formulated his classical laws of motion that people began to understand the principles governing movement. In scientific research, the commonly used processes of &quot;conducting experiments&quot; – &quot;observing results&quot; – &quot;establishing theoretical models&quot; are essentially ways of simplifying the world.</summary>
@@ -850,7 +865,7 @@
     <link href="https://blog.tennisatw.com/post/31/"/>
     <id>https://blog.tennisatw.com/post/31/</id>
     <published>2023-11-11T09:37:37.000Z</published>
-    <updated>2025-01-13T20:53:37.303Z</updated>
+    <updated>2025-04-20T09:38:54.007Z</updated>
     
     
     <summary type="html">总而言之，政治团体们要批判地学习《共产党宣言》，在承认其意义的同时，也要注意其“毒性”。破坏总是比建设简单一万倍，《共产党宣言》只可用于左翼政党举行活动的参考，而不可成为指导一个国家的思想。&lt;br&gt;In summary, political groups should critically study &quot;The Communist Manifesto,&quot; acknowledging its significance while being wary of its &quot;toxicity.&quot; Destruction is infinitely easier than construction. &quot;The Communist Manifesto&quot; should only serve as a reference for left-wing party activities, not as a guiding philosophy for a nation.</summary>
@@ -869,7 +884,7 @@
     <link href="https://blog.tennisatw.com/post/30/"/>
     <id>https://blog.tennisatw.com/post/30/</id>
     <published>2023-10-26T17:55:00.000Z</published>
-    <updated>2025-01-13T20:53:22.285Z</updated>
+    <updated>2025-04-20T09:38:53.997Z</updated>
     
     
     <summary type="html">温家宝离职前说：不仅要推进经济体制改革，还要推进政治体制改革。没有政治体制改革的保障，经济体制改革的成果就会得而复失，现代化建设的目标就不可能实现。&lt;br&gt;Before leaving office, Wen Jiabao stated：&quot;We must not only advance economic system reform but also political system reform. Without the guarantee of political system reform, the achievements of economic system reform may be lost, and the goals of modernization cannot be realized.&quot;&lt;br&gt;&lt;br&gt;李克强离职前说：长江黄河不会倒流，中国对外开放不会改变。&lt;br&gt;Before leaving office, Li Keqiang said：&quot;The Yangtze and Yellow Rivers will not flow backward, and China&#39;s opening-up will not change.&quot;</summary>
@@ -888,7 +903,7 @@
     <link href="https://blog.tennisatw.com/post/29/"/>
     <id>https://blog.tennisatw.com/post/29/</id>
     <published>2023-09-26T00:28:53.000Z</published>
-    <updated>2024-11-09T04:21:11.744Z</updated>
+    <updated>2025-04-20T09:52:54.706Z</updated>
     
     
     <summary type="html">遇到低水平言论，知道谁是对的，谁是错的，自己该怎么做就够了。既没有必要去和它们争论，更没有必要被他们影响。&lt;br&gt;When encountering low-level remarks, just know who is right and wrong and what you should do. There&#39;s no need to argue with them or be influenced by them.</summary>
@@ -958,7 +973,7 @@
     <link href="https://blog.tennisatw.com/post/25/"/>
     <id>https://blog.tennisatw.com/post/25/</id>
     <published>2023-09-16T09:01:14.000Z</published>
-    <updated>2024-11-09T04:21:11.744Z</updated>
+    <updated>2025-04-20T09:47:31.721Z</updated>
     
     
     <summary type="html">公民社会的力量越强，越能影响党/政府的决策，而这也是参与键政的意义。&lt;br&gt;The stronger the power of civil society, the greater the influence on party/governmental decisions, underlying the significance of engaging in political debates.</summary>
@@ -1168,7 +1183,7 @@
     <link href="https://blog.tennisatw.com/post/13/"/>
     <id>https://blog.tennisatw.com/post/13/</id>
     <published>2023-07-24T15:57:11.000Z</published>
-    <updated>2024-11-09T04:21:11.729Z</updated>
+    <updated>2025-04-20T09:38:54.007Z</updated>
     
     
     <summary type="html">我相当讨厌两件事，一个是强制奉献，一个是丧事喜办。&lt;br&gt;There are two things I detest rather deeply：one is compulsory sacrifice, and the other is glossing over tragedies with celebrations.</summary>
@@ -1236,7 +1251,7 @@
     <link href="https://blog.tennisatw.com/post/9/"/>
     <id>https://blog.tennisatw.com/post/9/</id>
     <published>2023-06-19T11:02:16.000Z</published>
-    <updated>2024-11-09T04:21:11.729Z</updated>
+    <updated>2025-04-20T09:38:53.997Z</updated>
     
     
     <summary type="html">最后感慨一句，从来不是哪里有压迫，哪里就有反抗。压迫的强度太大，人们可能会不敢反抗。压迫的时间太久，这个民族，恐怕就会失去反抗的本能。&lt;br&gt;Finally, I would like to reflect that it&#39;s not always true that where there is oppression, there will be resistance. If the intensity of oppression is too high, people may not dare to resist. And if the oppression lasts too long, the nation, I fear, may lose its instinct to resist.</summary>
@@ -1312,7 +1327,7 @@
     <link href="https://blog.tennisatw.com/post/5/"/>
     <id>https://blog.tennisatw.com/post/5/</id>
     <published>2023-04-22T07:12:38.000Z</published>
-    <updated>2024-11-09T04:21:11.729Z</updated>
+    <updated>2025-04-20T09:38:53.997Z</updated>
     
     
     <summary type="html">从图中可以看出，从2016年到2021年，橙色线与红色线左右的事故发生频数差不多，符合指数分布。这说明从2016年到2021年，死亡人数未被大量修改。&lt;br&gt;It can be seen from the figure that from 2016 to 2021, the frequency of accidents around the orange line and the red line is similar, which conforms to the exponential distribution. This illustrates that the death toll has not been substantially revised from 2016 to 2021.</summary>

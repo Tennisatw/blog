@@ -18,7 +18,7 @@ Gromacs is an open-source software developed in C++. If you are dissatisfied wit
 
 First, download the source code from GitHub: Open the terminal (or PowerShell for Windows users) in the desired location to store the code, and type:
 
-```
+```bash
 git clone https://github.com/gromacs/gromacs.git
 ```
 
@@ -38,7 +38,7 @@ Modify as you like and then save.
 
 Next, compile Gromacs using cmake: Enter the main Gromacs directory, create a folder named build, enter it, open the terminal there, and type:
 
-```
+```bash
 cmake .. -DCMAKE_INSTALL_PREFIX=/path/to/new/gromacs
 ```
 此地址为你想要将新gromacs安装的位置。
@@ -55,7 +55,7 @@ Errors may occur during this process, usually due to missing packages. Installin
 
 After compilation, enter:
 
-```
+```bash
 make install
 ```
 安装魔改版的gromacs。
@@ -68,7 +68,7 @@ To install the modified version of Gromacs.
 
 (Optional) Use the following command to temporarily add the location of this Gromacs to the environment variables. This way, you won't need to specify the full path when using.
 
-```
+```bash
 export PATH=/path/to/new/gromacs/bin:$PATH
 ```
 

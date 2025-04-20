@@ -20,7 +20,7 @@ Upload a piece of music or enter a YouTube link, and Cyanite will automatically 
 
 <br>
 
-美中不足的是，似乎它支持的电音种类一共就这么几种，电音仍然是小众音乐。
+美中不足的是，似乎它支持的电音种类一共就这么几种，看来电音还是小众啊。
 
 However, a minor drawback is that it seems to support only a limited number of electronic music genres, as electronic music remains niche.
 

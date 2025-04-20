@@ -8,7 +8,7 @@ tags:
  - 随想 - Thoughts
 ---
 
-## 应对痛苦的通用方法 - General Methods for Dealing with Pain
+### 应对痛苦的通用方法 - General Methods for Dealing with Pain
 
 <p class="tennisbot" id="Tennisatw说：这篇文章已经达到他本人的认知极限了。如果有谁能对解决痛苦有更佳的应对，他甘愿拜师求教。">6年前，我因为繁重的学业和竞争压力，一度非常的痛苦抑郁。不过，当时我在痛苦之余一直在思考：人应该怎么做才能规避痛苦，或者至少减弱痛苦的程度？本文总结了这6年我对这个问题的思索，并尝试给出一套应对（心理上的）痛苦的通用方法。</p>
 
@@ -26,7 +26,7 @@ Additionally, if you feel "mentally exhausted" for a long time, lose interest in
 
 <br>
 
-### 暂时远离痛苦的根源 - Temporarily Distance Yourself from the Source of Pain
+#### 暂时远离痛苦的根源 - Temporarily Distance Yourself from the Source of Pain
 
 当感到痛苦时，第一件要紧的事情是，如果可能的话，暂时远离导致自己痛苦的人或事。哪怕是半天也好。
 
@@ -44,15 +44,11 @@ The act of "temporarily distancing yourself from the source of pain" itself is a
 
 <br>
 
-### 缓解情绪 - Relieve Emotions
+#### 缓解情绪 - Relieve Emotions
 
 在暂时远离痛苦来源后（或者实在没有条件远离时），如果自己完全无法冷静，一直沉浸在痛苦之中，就需要刻意的缓解自己的情绪，让自己平静下来。
 
-虽说面对痛苦，所有情绪反应都是正常的，应当接纳。但是想要解决痛苦，就有必要对情绪作适当处理、缓解。
-
 After temporarily distancing yourself from the source of pain (or if it's impossible to distance yourself), if you find it completely impossible to calm down and are immersed in pain, you need to deliberately relieve your emotions and calm yourself down.
-
-While all emotional reactions to pain are normal and should be accepted, if you are dissatisfied with the status quo and want to solve the pain, appropriate handling and relief of emotions are necessary.
 
 <br>
 
@@ -62,7 +58,7 @@ There are some methods to help relieve emotions, such as identifying and naming 
 
 <br>
 
-### 彻底理解痛苦 - Thoroughly Understand Pain
+#### 彻底理解痛苦 - Thoroughly Understand Pain
 
 **彻底理解痛苦**是解决痛苦最重要的一步。理论上来说，在遇到同一件事情时，理解得越通透的人，痛苦程度越轻。具体来说，就是**想清楚“是什么导致了自己的痛苦，应该怎么解决”**。细分的话，包括以下要点：
 
@@ -90,12 +86,6 @@ If you can answer the above questions clearly, you can say you have "thoroughly 
 
 <br>
 
-“彻底理解”是一个可以通过刻意练习而达到的程度。事实上，人平时就应该刻意联系洞察力，和处理复杂情况的能力。不过，等到痛苦的时候再去努力理解也还算亡羊补牢，为时未晚。
-
-"Thorough understanding" is a level that can be achieved through deliberate practice. In fact, people should deliberately practice insight and the ability to handle complex situations in daily life. However, even if you only start to understand when in pain, it is still not too late.
-
-<br>
-
 很多事情都不只有一种看待方法，并且每一种看待方法都是正确的。比如，和对象说的话越来越少，既是感情从热恋期走向平稳期，也是换了一种相处模式，也是Ta有其他事情要忙。需要的时候，采取一种方便解决问题的看待方法就可以。
 
 Many things do not have only one way of looking at them, and each way of looking at them is correct. For example, saying fewer words to your partner can mean the relationship is moving from the passionate phase to a stable phase, a change in interaction mode, or that they have other things to do. When needed, adopt a perspective that conveniently solves the problem.
@@ -108,7 +98,7 @@ If you think you don't have the level to see through people or things, you can a
 
 <br>
 
-### 主动迎接痛苦 - Actively Embrace Pain
+#### 主动迎接痛苦 - Actively Embrace Pain
 
 在彻底理解了自身痛苦之后，人的心态会有很多变化，比如：情绪会缓解很多，对别人的误会会消失，想法也会变得更成熟。最重要的是，他/她自己对于如何解决痛苦已经有一个大体上的思路了，这时候就要大胆迎接痛苦，即，通过主动做事来尝试解决或者缓解它。
 
@@ -154,13 +144,13 @@ Generally speaking, the more goals that must be achieved, the weaker one's abili
 
 ---
 
-## 附录：常见的痛苦种类及应对建议
+### 附录：常见的痛苦种类及应对建议
 
 除了大碗鸡汤之外，我的读者还值得一篇处事指南。以下是我列举出的常见的痛苦种类，以及如何缓解/解决，供读者参考。
 
 <br>
 
-### 个体内部因素
+#### 个体内部因素
    
 | 痛苦种类 | 建议 | 
 |--------|------------------| 
@@ -175,7 +165,7 @@ Generally speaking, the more goals that must be achieved, the weaker one's abili
 | 成瘾行为 | 培养健康的兴趣爱好，设立明确目标，寻求心理支持，逐步建立自控力和成就感，如严重考虑接受心理咨询 | 
 | 精神或生理问题 | 寻求就医，同时接受自己的状态，培养自我关怀的能力 | 
 
-### 亲密关系因素
+#### 亲密关系因素
 
 | 痛苦种类 | 建议 | 
 |--------|------------------| 
@@ -185,7 +175,7 @@ Generally speaking, the more goals that must be achieved, the weaker one's abili
 | 伴侣的情感操控与依赖 | 建立清晰的界限，提升自我价值，学会独立思考与情感管理，如严重考虑分手离婚 | 
 | 伴侣三观不合 | 学会接受差异、明确界限，专注自我成长，而非试图改变他人，如严重考虑分手离婚 |
 
-### 家庭因素
+#### 家庭因素
 
 | 痛苦种类 | 建议 | 
 |--------|------------------| 
@@ -196,7 +186,7 @@ Generally speaking, the more goals that must be achieved, the weaker one's abili
 | 原生家庭角色错位 | 明确自己的边界，专注于为自己的人生负责，逐步释放内心的责任感负担 |
 | 缺乏父母关爱或认可 | 自我接纳，关注内在价值，用理性思考代替对外界评价的执着 |
 
-### 人际与社交因素
+#### 人际与社交因素
 
 | 痛苦种类 | 建议 | 
 |--------|------------------| 
@@ -208,7 +198,7 @@ Generally speaking, the more goals that must be achieved, the weaker one's abili
 | 不健康的情感依赖 | 学会自我接纳与独立，逐步建立自己的生活重心和内在支持系统 | 
 | 过度取悦他人 | 认识并接纳真实的自我，逐步设立健康的边界，逐步减少对外界认可的依赖 |
 
-### 学业与职业因素
+#### 学业与职业因素
 
 | 痛苦种类 | 建议 | 
 |--------|------------------| 
@@ -218,7 +208,7 @@ Generally speaking, the more goals that must be achieved, the weaker one's abili
 | 事业瓶颈与迷茫 | 接受当下的迷茫，聚焦提升可迁移的核心能力，同时逐步探索感兴趣的新方向 | 
 | 失业或经济压力 | 专注当前可控的小目标，逐步改善经济状况。降低要求，寻找副业 | 
 
-### 社会与道德因素
+#### 社会与道德因素
 
 | 痛苦种类 | 建议 | 
 |--------|------------------| 
@@ -231,7 +221,7 @@ Generally speaking, the more goals that must be achieved, the weaker one's abili
 | 理想与现实的冲突 | 接纳现实的不完美，在小事中寻找美好，将理想转化为可实现的目标并逐步行动 | 
 | 违背了自己的道德底线 | 坦诚面对自己的感受，分析冲突根源，通过行动弥补过失或调整期望，与信任的人倾诉以获得支持 | 
 
-### 生活事件与重大变故
+#### 生活事件与重大变故
 
 | 痛苦种类 | 建议 | 
 |--------|------------------| 
@@ -242,13 +232,13 @@ Generally speaking, the more goals that must be achieved, the weaker one's abili
 
 <br>
 
-## Appendix: Common Types of Pain and Coping Suggestions
+### Appendix: Common Types of Pain and Coping Suggestions
 
 Besides a big bowl of chicken soup, my readers also deserve a guide to dealing with things. Below are the common types of pain I have listed, and how to alleviate/solve them, for readers' reference.
 
 <br>
 
-### Internal Factors
+#### Internal Factors
    
 | Type of Pain | Suggestion | 
 |--------|------------------| 
@@ -263,7 +253,7 @@ Besides a big bowl of chicken soup, my readers also deserve a guide to dealing w
 | Addictive behavior | Cultivate healthy hobbies, set clear goals, seek psychological support, and gradually build self-control and a sense of achievement, and consider psychological counseling if severe | 
 | Mental or physical problems | Seek medical treatment, accept your state, and cultivate the ability to care for yourself | 
 
-### Intimate Relationship Factors
+#### Intimate Relationship Factors
 
 | Type of Pain | Suggestion | 
 |--------|------------------| 
@@ -273,7 +263,7 @@ Besides a big bowl of chicken soup, my readers also deserve a guide to dealing w
 | Emotional manipulation and dependence by a partner | Establish clear boundaries, enhance self-worth, learn independent thinking and emotional management, and consider breaking up or divorce if severe | 
 | Incompatible values with a partner | Learn to accept differences, clarify boundaries, focus on self-growth rather than trying to change others, and consider breaking up or divorce if severe |
 
-### Family Factors
+#### Family Factors
 
 | Type of Pain | Suggestion | 
 |--------|------------------| 
@@ -284,7 +274,7 @@ Besides a big bowl of chicken soup, my readers also deserve a guide to dealing w
 | Misplaced roles in the original family | Clarify your boundaries, focus on being responsible for your own life, and gradually release the burden of inner responsibility |
 | Lack of parental care or recognition | Accept yourself, focus on inner value, and replace obsession with external evaluation with rational thinking |
 
-### Interpersonal and Social Factors
+#### Interpersonal and Social Factors
 
 | Type of Pain | Suggestion | 
 |--------|------------------| 
@@ -296,7 +286,7 @@ Besides a big bowl of chicken soup, my readers also deserve a guide to dealing w
 | Unhealthy emotional dependence | Learn self-acceptance and independence, gradually establish your own life focus and internal support system | 
 | Excessive people-pleasing | Recognize and accept your true self, gradually set healthy boundaries, and gradually reduce dependence on external recognition |
 
-### Academic and Career Factors
+#### Academic and Career Factors
 
 | Type of Pain | Suggestion | 
 |--------|------------------| 
@@ -306,7 +296,7 @@ Besides a big bowl of chicken soup, my readers also deserve a guide to dealing w
 | Career bottleneck and confusion | Accept the current confusion, focus on improving transferable core skills, and gradually explore new directions of interest | 
 | Unemployment or economic pressure | Focus on small controllable goals, gradually improve the economic situation, lower requirements, and look for side jobs |
 
-### Social and Moral Factors
+#### Social and Moral Factors
 
 | Type of Pain | Suggestion | 
 |--------|------------------| 
@@ -319,7 +309,7 @@ Besides a big bowl of chicken soup, my readers also deserve a guide to dealing w
 | Conflict between ideals and reality | Accept the imperfection of reality, find beauty in small things, turn ideals into achievable goals, and act gradually | 
 | Violating your moral bottom line | Honestly face your feelings, analyze the root of the conflict, make up for mistakes or adjust expectations through actions, and confide in trusted people for support |
 
-### Life Events and Major Changes
+#### Life Events and Major Changes
 
 | Type of Pain | Suggestion | 
 |--------|------------------| 

@@ -15,15 +15,19 @@ Sometimes when I go to websites like Douyin, Kuaishou, Twitter, Sohu News, Baiji
 
 <br>
 
-但是我本不应该和这种言论，这种人有任何瓜葛。我相信，不敢说所有，但是大多数比较火的键政自媒体，都是精心设计过他们的内容的。很明显，他们的受众肯定不包括我，看见不爽，划走就完事了。至于说，中国人是否“有救”，《论语》有云：君子之德风，小人之德草，草上之风必偃。
+但是我本不应该和这种言论，这种人有任何瓜葛。我相信，不敢说所有，但是大多数比较火的键政自媒体，都是精心设计过他们的内容的。很明显，他们的受众肯定不包括我，看见不爽，划走就完事了。至于说，中国人是否“有救”，《论语》有云：**君子之德风，小人之德草，草上之风必偃。**
 
-However, I shouldn't have any involvement with such remarks or people. I believe —— though I can't say for all —— most popular political self-media content is meticulously crafted. Clearly, their audience doesn't include me. If someone find it unpleasant, they can just swipe away. As for whether "there is hope" for Chinese people, there is a famous saying in "the Analects": The virtue of a gentleman is like the wind; the virtue of a petty person is like grass. When the wind blows over the grass, the grass must bend.
+However, I shouldn't have any involvement with such remarks or people. I believe —— though I can't say for all —— most popular political self-media content is meticulously crafted. Clearly, their audience doesn't include me. If someone find it unpleasant, they can just swipe away. As for whether "there is hope" for Chinese people, there is a famous saying in "the Analects": **The virtue of a gentleman is like the wind; the virtue of a petty person is like grass. When the wind blows over the grass, the grass must bend.**
 
 <br>
 
-与低水平言论接触多了，会有一个严重的问题：人都是倾向于模仿的。假如我是一个神友（自由派），一直专挑墙内的不堪入目的言论看，虽然很爽，但我会理所当然地认为：键政就是用污言秽语骂对方，我甚至还会说：对待流氓就应该比流氓还流氓。可是只要用脑子想一想就知道，高水平和低水平的兔友（爱国者）都肯定存在，神友也是如此，当我与低水平的兔友缠斗时，我自己也变成了一个低水平的神友，我们劣化了政治辩论，就像下图那样。这也是我三五年前犯的错误。
+与低水平言论接触多了，会有一个严重的问题：人都是倾向于模仿的。假如我一直专挑不堪入目的言论看，虽然很爽，但我会理所当然地认为：键政就是用污言秽语骂对方，我甚至还会说：对待流氓就应该比流氓还流氓。可是只要用脑子想一想就知道，高水平和低水平的政友都肯定存在，当我与低水平的言论缠斗时，我自己也变成了一个低水平的人，我们劣化了政治辩论，就像下图那样。
 
-Constant exposure to negative and low-level discourse comes with a major risk: our tendency to mimic. Assume I am a liberal. Suppose Ideliberately select and read detrimental comments from within the 'Great Firewall'. I am likely to adopt a similar offensive language to hit them back. What's more, I'm likely believe that to handle an online 'hooligan', you must be more 'hooligan' than the 'hooligan' itself. However, just as there can be high and low-level patriots, there can be high and low-level liberals too. Engaging in a low-level discourse makes me the low-level liberal as well, degrading the overall political debate, just like the graph below. This was also a mistake I made several years ago.
+这也是我三五年前犯的错误。
+
+Constant exposure to negative and low-level discourse comes with a major risk: our tendency to mimic. Assume I am a liberal. Suppose I deliberately select and read detrimental comments. I am likely to adopt a similar offensive language to hit them back. What's more, I'm likely to believe that to handle an online 'hooligan', you must be more 'hooligan' than the 'hooligan' itself. However, just as there can be high and low-level patriots, there can be high and low-level liberals too. Engaging in a low-level discourse makes me the low-level person as well, degrading the overall political debate, just like the graph below. 
+
+This was also a mistake I made several years ago.
 
 ![](1.jpg)
 
@@ -55,13 +59,11 @@ These are the lowest level remarks and the easiest to spot. Besides providing so
 
 各种话题都大量充斥着谣言和未正式的信息，尤其是与政治有关的话题。这种言论的检测难度可高可低，主要还是需要自己对相关话题有一定了解。请注意，官方发布的言论也有可能是谣言。
 
+三人成虎。在某些平台，谣言的数量要比真实新闻的数量还多。在这里非常感谢各大辟谣平台的工作。
+
 Various topics are flooded with rumors and unverified information, especially those related to politics. The difficulty of detecting these remarks can vary; it mainly requires a certain level of understanding of the relevant topics. Note that even official statements can be rumors.
 
-<br>
-
-谣言的量是相当相当大的，在某些平台，谣言的数量要比真实新闻的数量还多。在这里非常感谢各大辟谣平台的工作。
-
-The volume of rumors is enormous, and on some platforms, there are more rumors than real news. A big thanks to all the rumor-debunking platforms for their work.
+The volume of rumors can be enormous, and on some platforms, there are more rumors than real news. A big thanks to all the rumor-debunking platforms for their work.
 
 ![](5.png)
 

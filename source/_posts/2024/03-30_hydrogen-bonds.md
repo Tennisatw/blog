@@ -6,7 +6,7 @@ date: 2024-03-30 01:39:44
 tags: 编程 - Programming
 ---
 
-## 背景介绍 - Background
+### 背景介绍 - Background
 
 组里的人要分析一个系统的氢键数量和氢键自相关函数（Hbond autocorrelation function，hbacf）。
 
@@ -56,7 +56,7 @@ But debugging these things might take even longer, and it might not be faster th
 
 ---
 
-## 1. 读取轨迹，寻找氢键 - Reading the trajectory and identifying hydrogen bonds
+### 1. 读取轨迹，寻找氢键 - Reading the trajectory and identifying hydrogen bonds
 
 首先先读取轨迹。我们的轨迹文件是.xyz结构。如下所示：
 
@@ -438,7 +438,7 @@ print(f"Save the information of hydrogen bonds to \n{file_address2}")
 
 ---
 
-## 2. 计算氢键数量 - Calculating the Number of Hydrogen Bonds
+### 2. 计算氢键数量 - Calculating the Number of Hydrogen Bonds
 
 在有了氢键的数据之后，下一步是统计每一帧的氢键的数量。这一部分的代码相当简单，使用pickle读取数据后，简单用一个循环统计一下。代码如下所示。
 
@@ -497,7 +497,7 @@ plt.show()
 
 ---
 
-## 3. 计算氢键自相关函数 - Calculating the Hydrogen Bond ACF
+### 3. 计算氢键自相关函数 - Calculating the Hydrogen Bond ACF
 
 最后就是计算氢键的自相关函数了。自相关函数通常有2种，一个是连续（continuous）自相关函数，一个是间断（intermittent）自相关函数。
 

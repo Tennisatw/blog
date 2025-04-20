@@ -22,6 +22,6 @@ No surprise from Google — deep pockets mean even the free tools they give deve
 
 <br>
 
-它现在还有一个问题：如果让其语音输出回答，会把汉字读成日本字。比如把“大丈夫”读成daijoubu。当然让其打字回复就没有问题了。
+它现在还有一个问题：如果让其语音输出回答，会把汉字读成日本字。比如把“大丈夫”读成daijoubu。打字回复就没有问题了。
 
-That said, it still has one issue: when responding via voice output, it pronounces Chinese characters as Japanese. For example, it reads 大丈夫 as daijoubu. Of course, this issue doesn’t occur when it responds via text.
+That said, it still has one issue: when responding via voice output, it pronounces Chinese characters as Japanese. For example, it reads 大丈夫 as daijoubu. This issue doesn’t occur when it responds via text.

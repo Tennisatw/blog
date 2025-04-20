@@ -1,5 +1,5 @@
 ---
-title: Galaxy开发记录与心得
+title: Galaxy开发记录与心得 - Galaxy Development Log and Reflections
 permalink: post/77/
 excerpt: <!-- -->
 date: 2025-04-19 01:43:01
@@ -66,6 +66,8 @@ To address that, here’s what Galaxy will feature:
 
 <br>
 
+### 开发过程 - Development Process
+
 游戏的主框架花了3天就写完了。其余的功能和debug花了我2周的业余时间。
 
 说实在的，这个项目比我想象的简单多了。
@@ -86,7 +88,7 @@ Honestly, the project was much simpler than I expected.
 
 3. 开发python时，往往不会亲自手写算法，因为有很多现成的库，其中的代码也往往被优化过。而c++安装一个库非常麻烦，且库中的代码再优化，相比自己写的代码也很难有绝对优势。所以在c++中，很多时候需要自己手写算法。
 
-<p class="tennisbot" id="其实还是在github上抄的">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;比如我在判断城市边界时，就“手写”了寻找凸包的算法。</p>
+<p class="tennisbot" id="其实还是在github上抄的">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;比如我在判断城市边界时，就“手写”了寻找凸包的算法。</p>
 
 4. 慎用AI辅助编程！一定要仔细检查AI生成的代码。我相信今年后AI一定比人强，但现在还不行。
 
@@ -94,13 +96,15 @@ Honestly, the project was much simpler than I expected.
 
 6. 最后，对于游戏开发来说，游戏设计，运营，甚至游戏心理学都相当重要，代码可能是最不重要的部分了。我花了2周写完的游戏，2天就玩腻了。
 
+<br>
+
 1. My C++ skills improved rapidly during this project. Learning by doing is definitely the most effective method.
 
 2. Compared to Python, setting up the C++ environment—compiling, debugging, and running—is far more complex. Development is also much slower. So if I’m ever working on a time-sensitive project, Python is still the way to go.
 
 3. When using Python, I rarely write algorithms from scratch, thanks to the abundance of optimized libraries. In C++, however, installing libraries is a hassle, and even the best-optimized libraries often don't offer a clear advantage over custom code. That means I often had to implement algorithms manually.
 
-<p class="tennisbot" id="manually copied from Github">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For example, when determining city boundaries, I "manually" implemented a convex hull algorithm.</p>
+<p class="tennisbot" id="manually copied from Github">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For example, when determining city boundaries, I "manually" implemented a convex hull algorithm.</p>
 
 4. Be cautious when using AI for coding! Always double-check the generated code. I believe AI will surpass humans in this area within 1 year—but that day hasn’t come yet.
 

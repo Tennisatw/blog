@@ -9,7 +9,7 @@ tags:
  - 敏感 - Sensitive
 ---
 
-<p class="tennisbot" id="如果需要的话，左上角有google翻译<br>There is Google Translate button in the upper left corner, if needed">由于本文可能稍有敏感，这里仅展示英文版。</p>
+由于本文较为敏感，这里仅展示英文版。
 
 <br>
 

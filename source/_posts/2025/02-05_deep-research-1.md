@@ -22,7 +22,7 @@ Deep Research是OpenAI在3天前发布的一项新功能，由最新的o3模型�
 
 Deep Research is a brand-new feature released by OpenAI three days ago. Powered by the latest o3 model, it can research deeply into complex topics, taking 10 minutes or more to generate a professional, in-depth report in thousands of words.
 
-Unlike the standard ChatGPT conversational mode, Deep Research is autonomous. It doesn’t rely on user interaction to proceed—it clarifies questions on its own, searches the web, interprets data, and generates a comprehensive report. In essence, it's an AI agent.
+Unlike the standard ChatGPT conversational mode, Deep Research is **autonomous**. It doesn’t rely on user interaction to proceed—it clarifies questions on its own, searches the web, interprets data, and generates a comprehensive report. In essence, it's an AI agent.
 
 It’s exclusive to ChatGPT Pro users, and I spent $200 USD to access it.
 

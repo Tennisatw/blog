@@ -50,9 +50,9 @@ ssh-keygen -t rsa -b 4096 -C "
 
 <br>
 
-Tip：可以在设置中把 Remote.SSH: Show Login Terminal 设成 true。这对于一些需要额外验证的远程服务器（如Compute Canada）非常方便。
+Tip：可以在设置中把 Remote.SSH: Show Login Terminal 设成 true。这对于一些需要额外验证的远程服务器非常方便。
 
-Tip: In the VSCode settings, set Remote.SSH: Show Login Terminal to true for convience. This is particularly helpful if your remote server (e.g., Compute Canada) requires additional authentication steps.
+Tip: In the VSCode settings, set Remote.SSH: Show Login Terminal to true for convenience. This is particularly helpful if your remote server requires additional authentication steps.
 
 <br>
 

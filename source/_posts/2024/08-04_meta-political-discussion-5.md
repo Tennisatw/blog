@@ -39,7 +39,7 @@ People naturally tend to speak for their own identity. For example, those fighti
 
 <br>
 
-所有的身份认同，和所有的立场，只要是出于理性，就没有高下之分。然而有时，政府，或家族族长，或网络上的意见领袖等人，可能会出于政治宣传，而强调某一种身份或某一种立场超出其他的身份和立场（包括强化阶级叙事，讲好中国故事，美国梦，等等）。理性人们要认清这一点。
+所有的身份认同，和所有的立场，只要是出于理性，就没有高下之分。然而有时，政府，或家族族长，或网络上的意见领袖等人，可能会出于政治宣传，而强调应该以某一种身份或某一种立场为主，其他的身份和立场都不重要。（比如：强化阶级叙事，讲好中国故事，美国梦，等等）。理性人们要认清这一点。
 
 All forms of identity and all stances, as long as they are based on rationality, have no inherent hierarchy. However, sometimes governments, family patriarchs, online opinion leaders, and others may emphasize one identity or stance over others for political propaganda (such as reinforcing class narratives, promoting the "China story," or the "American dream"). As rational individuals, we need to recognize this.
 
@@ -55,6 +55,6 @@ Finally, consider the eugenics issue of whether people with genetic disorders or
 
 <br>
 
-这个问题在上个世纪是一个相当有争议的问题。从国家和家庭的立场来看，国家的医疗资源相当有限，并且社会上的家庭普遍不富裕，照顾一个遗传病人或智障是相当大的负担。而强制绝育可以减少这种长期的经济负担。但从患者的角度来看，这是对人权的侵犯，没有人能剥夺其他人生育的权利。从国家的角度考虑问题的人，和从个人角度考虑问题的人，对这个问题往往会有不同的看法。
+这个问题迄今为止仍然相当有争议。从国家和家庭的立场来看，国家的医疗资源相当有限，并且社会上的家庭普遍不富裕，照顾一个遗传病人或智障是相当大的负担。而强制绝育可以减少这种长期的经济负担。但从患者的角度来看，这是对人权的侵犯，没有人能剥夺其他人生育的权利。从国家的角度考虑问题的人，和从个人角度考虑问题的人，对这个问题往往会有不同的看法。
 
-This was a highly controversial topic in the last century. From the perspective of the state and families, medical resources were quite limited, and most families were not wealthy, making the care of someone with a genetic disorder or intellectual disability a significant burden. Forced sterilization could potentially reduce this long-term economic strain. However, from the patient's perspective, this is a violation of human rights, as no one has the right to strip others of their reproductive rights. People who approach this issue from the perspective of the state often have a different view than those who consider it from an individual rights standpoint.
+This was a highly controversial topic till now. From the perspective of the state and families, medical resources were quite limited, and most families were not wealthy, making the care of someone with a genetic disorder or intellectual disability a significant burden. Forced sterilization could potentially reduce this long-term economic strain. However, from the patient's perspective, this is a violation of human rights, as no one has the right to strip others of their reproductive rights. People who approach this issue from the perspective of the state often have a different view than those who consider it from an individual rights standpoint.

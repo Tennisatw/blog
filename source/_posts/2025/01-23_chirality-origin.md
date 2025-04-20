@@ -12,15 +12,15 @@ The chiral preference observed in nature may stem from an imbalance between the 
 
 <br>
 
-起初，系统中分子具有随机的手性和活性，并经历两种主要过程：自催化繁殖和与环境承载能力相关的死亡。繁殖时，分子的手性保持不变，活性则可能略有波动。
+起初，系统中分子具有随机的手性和活性，随着时间的推移，他们会自催化繁殖和死亡。繁殖时，分子的手性保持不变，活性则可能略有波动。
 
-在模拟中，分子数量经历了“爆炸式”指数增长后逐渐趋于稳定。左旋和右旋分子在指数增长初期存在微小的活性差异，在增长过程中，这种差异被持续放大，导致一种手性分子的数量与平均活性高于另一种手性。
+在模拟中，分子数量经历了“爆炸式”指数增长后逐渐趋于稳定。左旋和右旋分子在指数增长初期存在微小的活性差异，在增长过程中，这种差异被持续放大，导致一种手性分子的数量与平均活性总是高于另一种手性。
 
 在指数增长后期，随着环境承载能力开始限制总数量并提升死亡率，手性数量差距会进一步加剧，最终可能使其中一种手性完全消失。
 
-Initially, the system contained molecules with random chirality and activity, undergoing two main processes: self-catalytic reproduction and death related to the environment's carrying capacity. During reproduction, the chirality of molecules remained unchanged, while their activity could slightly fluctuate.
+Initially, the system contained molecules with random chirality and activity. Over time, they would self-catalyze reproduction and death. During reproduction, the chirality of molecules remained unchanged, while their activity could slightly fluctuate.
 
-In the simulation, the number of molecules experienced an "explosive" exponential growth before stabilizing. Left-handed and right-handed molecules had minor differences in activity at the start of the exponential growth phase, but this difference was continuously amplified throughout the process, leading to one chiral type having a higher population and average activity than the other.
+In the simulation, the number of molecules experienced an "explosive" exponential growth before stabilizing. Left-handed and right-handed molecules had minor differences in activity at the start of the exponential growth phase, but this difference was continuously amplified throughout the process, leading to one chiral type keeping having a higher population and average activity than the other.
 
 In the later stages of exponential growth, as the environment's carrying capacity began to limit the total number and increase the death rate, the disparity in chiral populations intensified, ultimately causing one chiral type to potentially disappear completely.
 

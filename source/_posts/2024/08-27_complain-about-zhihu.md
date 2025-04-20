@@ -16,9 +16,9 @@ I used to be a heavy user of Zhihu, spending an average of over three hours on i
 
 Anxiety is like spicy peas———tasty, but consuming too much leaves an unpleasant aftertaste, and it ruins your appetite for anything else.
 
-人在焦虑症状发作的时候，会本能地把自己的焦虑具象化，知乎就恰好给了我无限的主题供我焦虑，比如身材焦虑，社会地位焦虑，性别焦虑，年龄焦虑，学历焦虑，专业焦虑。记得18/19年的时候，生化环材是唯四的天坑专业，知乎上的态度是，不转码这辈子就废了。
+人在焦虑症状发作的时候，会本能地把自己的焦虑具象化，知乎就恰好满足我这一需求：给了我无限的主题供我焦虑，比如身材焦虑，社会地位焦虑，性别焦虑，年龄焦虑，学历焦虑，专业焦虑。记得18/19年的时候，生化环材是唯四的天坑专业，我也为我的专业未来感到焦虑。知乎上的态度是，不转码这辈子就废了，我当时可太“认可”这句话了啊。
 
-When people experience anxiety, they instinctively look for something to focus that anxiety on, and Zhihu provided me with endless topics to worry about: body image, social status, gender, age, education, and career prospects. I remember back in 2018 and 2019, fields like biochemistry and materials science were considered the ultimate dead-end majors on Zhihu, with the prevailing attitude being that if you didn’t switch to coding, your life was basically over.
+When people experience anxiety, they instinctively look for something to focus that anxiety on, and Zhihu provided me with endless topics to worry about: body image, social status, gender, age, education, and career prospects. I remember back in 2018 and 2019, fields like biochemistry and materials science were considered the ultimate dead-end majors on Zhihu, with the prevailing attitude being that if you didn’t switch to coding, your life was basically over. I really "agreed" with that sentiment at the time.
 
 不仅如此，刷知乎还会加重人的焦虑症。很好玩的是，我之前一直对我的学历相当自信，但在知乎，即使是985，没什么奖学金/荣誉也仍然是废物，更别提麻省哈佛的了。当时这对我这种，对焦虑没什么抵抗能力的破大学生来说，就是一个恶性循环，刷知乎的时间越多，越焦虑，越焦虑，越刷知乎。
 
@@ -117,8 +117,5 @@ Btw, the content pushed by other platforms isn't much better than Zhihu's, and s
 ---
 
 我赢了。  
+
 但我记得几年前，我还不用与它战斗。
-
-<br>
-
-知乎真挺没意思的，尤其是在我不焦虑什么，不讨厌什么的情况下。知乎在拿它那套东西，一件一件试我是什么人，在焦虑什么事。

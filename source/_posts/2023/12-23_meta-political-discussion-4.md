@@ -45,19 +45,21 @@ Secondly, even if liberals and rational patriots have no common ground, understa
 
 I believe this response can already satisfy rational liberals. However, if we look at this issue solely from a politic discussing perspective, its most intriguing aspect isn't fully reflected. 
 
-<br>
-
-让我们抛开政治观念，从哲学的角度去思考这个问题。我认为，了解观点不同的人的想法的核心原因是 **尊重“复杂性”**。
-
-Let's set aside political views and think about this issue from a philosophical standpoint. I believe the core reason for understanding the thoughts of people with different viewpoints is **to respect "complexity"**.
+---
 
 <br>
 
-世界是复杂的，而人类认识世界的水平有限，所以如果不对这个世界做简化，那就几乎无法去认识它。比如，在牛顿总结出经典运动定律之后，人们才对世界的运动规律有了认识。科研中常用的“做实验” - “观察结果” - “建立理论模型” 等其实都是对世界的简化。
+让我们抛开政治，从哲学的角度去思考这个问题。我认为，了解观点不同的人的想法的核心原因是 **尊重“复杂性”**。
+
+Let's set aside politics and think about this issue from a philosophical standpoint. I believe the core reason for understanding the thoughts of people with different viewpoints is **to respect "complexity"**.
+
+<br>
+
+世界是复杂的，而人类认识世界的水平有限，所以如果不对这个世界做简化，那就几乎无法去认识它。比如，在牛顿总结出经典运动定律之后，人们才对世界的运动规律有了认识。科研中常用的“做实验” - “观察结果” - “建立理论模型” 等其实都是对世界的简化与认知。
 
 **但是不能因为自己认识事物的模型是简单的，就认为事物本身是简单的**，就像不能只知道牛顿三大定律，就说宇宙的一切都已经知晓。不仅牛顿的三大定律只是高阶物理定律的近似；就算它不是近似，难道要用牛顿的三大定律研究老虎捕猎吗？
 
-The world is complex, and human understanding of it is limited. Without simplifying this complexity, it would be nearly impossible to comprehend it. For instance, it was only after Newton formulated his classical laws of motion that people began to understand the principles governing movement. In scientific research, the commonly used processes of "conducting experiments" – "observing results" – "establishing theoretical models" are essentially ways of simplifying the world.
+The world is complex, and human understanding of it is limited. Without simplifying this complexity, it would be nearly impossible to comprehend it. For instance, it was only after Newton formulated his classical laws of motion that people began to understand the principles governing movement. In scientific research, the commonly used processes of "conducting experiments" – "observing results" – "establishing theoretical models" are essentially ways of simplifying and understanding the world.
 
 **However, we must not assume that just because our models of understanding are simple, the phenomena themselves are simple.** It's similar to how knowing Newton's three laws of motion doesn't mean we understand everything about the universe. Not only are Newton's laws merely approximations of higher-order physical laws, but even if they weren't, would you use Newton's laws to study a tiger hunting?
 
@@ -87,17 +89,17 @@ To comprehensively understand the Israel-Palestine conflict, one must also consi
 
 <br>
 
-再比如，考虑“如何评价江泽民”这个问题。长者一方面坚持改革开放发展经济，促进中国与世界的联系，多才多艺，个人魅力很足。但另一方面，他镇压法轮功，并且在国际关系上处理得比较软弱。每一条都可以是喜欢他或者讨厌他的理由，但每一个足够了解他的人，对他的感情一定是复杂的。
+再比如，考虑“如何评价江泽民”这个问题。长者一方面坚持改革开放发展经济，促进中国与世界的联系，多才多艺，个人魅力很足。但另一方面，他镇压宗教，并且在国际关系上处理得比较软弱。每一条都可以是喜欢他或者讨厌他的理由，但每一个足够了解他的人，对他的感情一定是复杂的。
 
 Another example is evaluating Jiang Zemin. On one hand, he insisted on reform and opening up, promoting economic development and enhancing China's connections with the world. Additionally, he was talented and charismatic. On the other hand, he suppressed Falun Gong and was considered relatively weak in handling international relations. Each of these points can be reasons to like or dislike him, but anyone who knows him well would have complex feelings about him.
 
 <br>
 
-再比如，这世上有大量的哲学家支持唯心主义，也有大量的哲学家支持唯物主义，每一个哲学家都是绝顶聪明。那难道有一半的绝顶聪明的人错了吗？更好的解释是：唯心与唯物同时都对，或者说，唯心与唯物同时都是对世界的不同侧面的近似。如果之前的哲学思考使得一个哲学家推理出唯心主义，那他就完全可以接受唯心主义，反之亦然。
+再比如，这世上有大量的哲学家支持唯心主义，也有大量的哲学家支持唯物主义，每一个哲学家都是绝顶聪明。那难道有一半的绝顶聪明的人错了吗？更好的解释是：唯心与唯物同时都对，或者说，唯心与唯物同时都是对世界的不同侧面的近似。如果哲学家的哲学思考使得他/她推理出唯心主义，那他/她就完全可以接受唯心主义，反之亦然。
 
 从这个角度上来说，世界是足够复杂的，足够使得哲学家们通过不同的方法推理出不同的结论。
 
-Similarly, there are many philosophers who support idealism and many who support materialism, and each of these philosophers is incredibly intelligent. So, does this mean that half of these brilliant minds are wrong? A better explanation is that both idealism and materialism are correct, or rather, both are approximations of different aspects of the world. If previous philosophical reasoning leads a philosopher to idealism, they can fully embrace idealism, and the same goes for materialism.
+Similarly, there are many philosophers who support idealism and many who support materialism, and each of these philosophers is incredibly intelligent. So, does this mean that half of these brilliant minds are wrong? A better explanation is that both idealism and materialism are correct, or rather, both are approximations of different aspects of the world. If a philosopher's reasoning leads them to idealism, then they can fully embrace that perspective, and the same applies to materialism.
 
 From this perspective, the world is complex enough to allow philosophers to use different methods to arrive at different conclusions.
 

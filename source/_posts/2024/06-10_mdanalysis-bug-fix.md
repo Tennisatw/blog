@@ -27,7 +27,7 @@ bins = (self.dimensions // self.binsize).astype(int)
 
 <br>
 
-当`self.dimensions`为`numpy([20., 20., 20.])`且`self.binsize`为`0.1`时，由于浮点精度误差`bins`不是`200, 200, 200`，而是`199, 199, 199`。这会导致后续`np.histogram`函数计算出现错误。
+当`self.dimensions`为`numpy([20., 20., 20.])`且`self.binsize`为`0.1`时，由于浮点精度误差，`bins`不是`200, 200, 200`，而是`199, 199, 199`。这会导致后续`np.histogram`函数计算出现错误。
 
 可将其替换为：
 

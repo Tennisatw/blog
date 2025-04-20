@@ -85,11 +85,11 @@ Note 2: As of early April 2025, the VS Code C/C++ extension no longer supports a
 
 在vscode中打开一个新的文件夹，作为项目的根目录，之后就可以在这个文件夹中开发c/c++项目了。
 
-在项目文件夹的根目录，创建一个CMakeLists.txt文件，用于配置项目构建。其内容因语言/使用的库而会有不同。对于我的项目（使用c++语言，且使用SFML库），CMakeLists的内容如下：
+在项目文件夹的根目录，创建一个CMakeLists.txt文件，用于配置项目构建。其内容因语言/使用的库而会有不同。对于我的项目（使用c++语言，且使用SFML库，见下一篇博客），CMakeLists的内容如下：
 
 Open a new folder in VS Code to serve as the root directory of your project. You’ll develop your C/C++ project inside this folder.
 
-In the root directory, create a CMakeLists.txt file to configure the build process. Its content will vary depending on the language and libraries used. For example, here’s a CMakeLists.txt for a C++ project using the SFML library:
+In the root directory, create a CMakeLists.txt file to configure the build process. Its content will vary depending on the language and libraries used. For example, here’s a CMakeLists.txt for a C++ project using the SFML library (as discussed in my next blog post):
 
 ```cmake
 cmake_minimum_required(VERSION 3.10)

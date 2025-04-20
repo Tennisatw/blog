@@ -26,7 +26,7 @@ After writing your speech, copy it into the notes section of your PowerPoint sli
 
 <br>
 
-写好稿子之后，照着稿子自己顺一遍。想到什么说什么，超时也没关系，而不是简单地念稿。在这一过程中，尽量不要一直盯着ppt和稿子。如果感觉还是不熟，就等一段时间之后再顺几遍。
+写好稿子之后，不要简单地念稿，而是照着稿子自己顺一遍。想到什么说什么，超时也没关系。在这一过程中，尽量不要一直盯着ppt和稿子。如果感觉还是不熟，就等一段时间之后再顺几遍。
 
 Once the speech is written, go through it on your own. Speak freely, going off-script is fine, and don't just read it verbatim. Try not to constantly look at your slides or script during this process. If you still feel unprepared, go through it a few more times after taking a break.
 
