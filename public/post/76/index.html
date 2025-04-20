@@ -28,7 +28,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://blog.tennisatw.com/post/76/image.png">
 <meta property="article:published_time" content="2025-04-14T20:43:05.000Z">
-<meta property="article:modified_time" content="2025-04-19T09:36:28.036Z">
+<meta property="article:modified_time" content="2025-04-20T09:17:24.906Z">
 <meta property="article:author" content="Tennisatw">
 <meta property="article:tag" content="编程 - Programming">
 <meta name="twitter:card" content="summary">
@@ -154,7 +154,12 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E5%8F%8A%E6%9B%B4%E6%96%B0msys2"><span class="nav-text">安装及更新msys2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7"><span class="nav-text">安装开发工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85vscode%E5%8F%8A%E6%8F%92%E4%BB%B6"><span class="nav-text">安装vscode及插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE"><span class="nav-text">创建项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E5%B9%B6%E6%9E%84%E5%BB%BA%E9%A1%B9%E7%9B%AE"><span class="nav-text">配置并构建项目</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E5%8F%8A%E6%9B%B4%E6%96%B0msys2---installing-and-updating-msys2"><span class="nav-text">安装及更新msys2
+- Installing and Updating MSYS2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7---installing-development-tools"><span class="nav-text">安装开发工具 -
+Installing Development Tools</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85vscode%E5%8F%8A%E6%8F%92%E4%BB%B6---installing-vs-code-and-extensions"><span class="nav-text">安装vscode及插件
+- Installing VS Code and Extensions</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE---creating-a-project"><span class="nav-text">创建项目 - Creating a
+Project</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E5%B9%B6%E6%9E%84%E5%BB%BA%E9%A1%B9%E7%9B%AE---configuring-and-building-the-project"><span class="nav-text">配置并构建项目
+- Configuring and Building the Project</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -175,7 +180,7 @@
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/series/">
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">系列<br>series</span></a>
       </div>
       <div class="site-state-item site-state-tags">
@@ -257,7 +262,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">编辑于 - Edited on</span>
-      <time title="Modified: 2025/04/19 03:36:28" itemprop="dateModified" datetime="2025-04-19T03:36:28-06:00">2025/04/19</time>
+      <time title="Modified: 2025/04/20 03:17:24" itemprop="dateModified" datetime="2025-04-20T03:17:24-06:00">2025/04/20</time>
     </span>
 
   
@@ -267,14 +272,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">字数 - Word count: </span>
-      <span>815</span>
+      <span>1.4k</span>
     </span>
     <span class="post-meta-item" title="阅读时间 - Reading time">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时间 - Reading time &asymp;</span>
-      <span>3 mins.</span>
+      <span>5 mins.</span>
     </span>
 </div>
 
@@ -288,40 +293,102 @@
 <p>最简单的方法是直接使用Visual
 Studio作为开发环境。但vs安装包超级大，而且使用起来很麻烦。所以这里给习惯vscode的windows用户推荐一个次优的开发环境方案：使用vscode及插件
 + msys2作为开发环境。</p>
+<p>C++ is widely used for system development, game development, and
+high-performance applications. However, for those without a computer
+science background, configuring and building C/C++ projects can be quite
+complex.</p>
+<p>The simplest approach is to use Visual Studio as the development
+environment. But it's huge, and the IDE can be cumbersome to use. So
+here’s a solid alternative for Windows users who prefer VS Code: using
+VS Code with extensions + MSYS2 as your development environment.</p>
 <p><br></p>
-<h3 id="安装及更新msys2">安装及更新msys2</h3>
+<h3 id="安装及更新msys2---installing-and-updating-msys2">安装及更新msys2
+- Installing and Updating MSYS2</h3>
 <p>msys2是一个微型的Linux系统，可以使用msys2的包管理器（pacman）安装开发c/c++所需的所有工具，包括编译器（mingw64的gcc和g++），调试器（mingw64的gdb），项目构建配置工具（mingw64的cmake），项目构建工具（mingw64的make或ninja）。</p>
 <p>首先去<a
 target="_blank" rel="noopener" href="https://www.msys2.org/">msys2官网</a>下载安装msys2，安装完成后，运行<strong>MSYS2
-MINGW64</strong>，执行以下命令更新系统： <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacman -Syu</span><br></pre></td></tr></table></figure></p>
+MINGW64</strong>，执行以下命令更新系统：</p>
+<p>MSYS2 is a lightweight Linux-like environment for Windows. It comes
+with a package manager (pacman) that allows you to install all the
+necessary tools for C/C++ development, including a compiler (mingw64
+versions of GCC and G++), debugger (mingw64-gdb), build configuration
+tools (mingw64-cmake), and build systems (mingw64-make or Ninja).</p>
+<p>First, download and install MSYS2 from the <a
+target="_blank" rel="noopener" href="https://www.msys2.org/">official website</a>. After installation,
+launch <strong>MSYS2 MINGW64</strong>, and run the following command to
+update the system:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacman -Syu</span><br></pre></td></tr></table></figure>
 <p>如果提示需要重启msys2，则重启后继续执行此命令。</p>
 <p>更新完成后，将 <code>C:\msys64\mingw64\bin</code>
 添加到系统的环境变量中。建议添加到靠前的位置。</p>
+<p>If prompted to restart MSYS2, do so and then rerun the same
+command.</p>
+<p>Once the update is complete, add <code>C:\msys64\mingw64\bin</code>
+to your system's PATH environment variable—preferably near the top of
+the list.</p>
 <p><br></p>
-<h3 id="安装开发工具">安装开发工具</h3>
+<h3 id="安装开发工具---installing-development-tools">安装开发工具 -
+Installing Development Tools</h3>
 <p>接下来，在msys2中安装c/c++的开发工具：</p>
+<p>Next, install the necessary C/C++ development tools within MSYS2:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pacman -S mingw-w64-x86_64-toolchain</span><br><span class="line">pacman -S mingw-w64-x86_64-cmake</span><br></pre></td></tr></table></figure>
 <p>toolchain包括了gcc、gdb等工具，而cmake包括了cmake和ninja等构建工具。</p>
 <p>在c/c++开发过程中，如果需要使用其他库，也可以通过pacman安装。比如安装SFML库：</p>
+<p>The toolchain package includes tools like gcc and gdb, while the
+cmake package contains build tools like CMake and Ninja.</p>
+<p>If your C/C++ project requires additional libraries, you can install
+them via pacman as well. For example, to install the SFML library:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacman -S mingw-w64-x86_64-sfml</span><br></pre></td></tr></table></figure>
 <p><br></p>
-<h3 id="安装vscode及插件">安装vscode及插件</h3>
+<h3
+id="安装vscode及插件---installing-vs-code-and-extensions">安装vscode及插件
+- Installing VS Code and Extensions</h3>
 <p>去官网下载并安装vscode。安装完成后，安装C/C++插件和CMake
 Tools插件。</p>
 <p>注：其他插件可能会影响构建，比如python插件，需要提前disable。此外，构建时需要退出所有的conda环境。</p>
 <p>注2：从2025年4月初开始，vscode的C/C++插件不支持其他vscode类型的ide了，比如cursor。要么使用vscode，要么在cursor中安装之前的插件版本。（微软，说好的开源精神呢？）</p>
+<p>Download and install VS Code from its official website. Once
+installed, add the C/C++ extension and the CMake Tools extension.</p>
+<p>Note: Some other extensions (like the Python extension) might
+interfere with the build process, so it's best to disable them
+beforehand. Also, be sure to exit any active Conda environments before
+building your project.</p>
+<p>Note 2: As of early April 2025, the VS Code C/C++ extension no longer
+supports alternative VS Code distributions like Cursor. So you’ll need
+to either use official VS Code or install an earlier version of the
+extension in Cursor. (To Microsoft: where's your spirit of open
+source?)</p>
 <p><br></p>
-<h3 id="创建项目">创建项目</h3>
+<h3 id="创建项目---creating-a-project">创建项目 - Creating a
+Project</h3>
 <p>在vscode中打开一个新的文件夹，作为项目的根目录，之后就可以在这个文件夹中开发c/c++项目了。</p>
 <p>在项目文件夹的根目录，创建一个CMakeLists.txt文件，用于配置项目构建。其内容因语言/使用的库而会有不同。对于我的项目（使用c++语言，且使用SFML库），CMakeLists的内容如下：</p>
-<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">cmake_minimum_required</span>(VERSION <span class="number">3.10</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 工程名</span></span><br><span class="line"><span class="keyword">project</span>(galaxy)</span><br><span class="line"></span><br><span class="line"><span class="comment"># C++ 标准</span></span><br><span class="line"><span class="keyword">set</span>(CMAKE_CXX_STANDARD <span class="number">17</span>)</span><br><span class="line"><span class="keyword">set</span>(CMAKE_CXX_STANDARD_REQUIRED <span class="keyword">ON</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 找到 SFML（2.5 或以上）</span></span><br><span class="line"><span class="keyword">find_package</span>(SFML <span class="number">2.5</span> COMPONENTS graphics window system REQUIRED)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 收集 src/ 目录下所有 .cpp 文件</span></span><br><span class="line"><span class="keyword">file</span>(GLOB SRC_FILES <span class="string">&quot;$&#123;PROJECT_SOURCE_DIR&#125;/src/*.cpp&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成可执行文件 galaxy.exe</span></span><br><span class="line"><span class="keyword">add_executable</span>(galaxy <span class="variable">$&#123;SRC_FILES&#125;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 链接SFML库</span></span><br><span class="line"><span class="keyword">target_link_libraries</span>(galaxy</span><br><span class="line">    PRIVATE</span><br><span class="line">    sfml-graphics</span><br><span class="line">    sfml-window</span><br><span class="line">    sfml-system</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<p>Open a new folder in VS Code to serve as the root directory of your
+project. You’ll develop your C/C++ project inside this folder.</p>
+<p>In the root directory, create a CMakeLists.txt file to configure the
+build process. Its content will vary depending on the language and
+libraries used. For example, here’s a CMakeLists.txt for a C++ project
+using the SFML library:</p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">cmake_minimum_required</span>(VERSION <span class="number">3.10</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 工程名 - Project name</span></span><br><span class="line"><span class="keyword">project</span>(galaxy)</span><br><span class="line"></span><br><span class="line"><span class="comment"># C++ 标准 - C++ Standard</span></span><br><span class="line"><span class="keyword">set</span>(CMAKE_CXX_STANDARD <span class="number">17</span>)</span><br><span class="line"><span class="keyword">set</span>(CMAKE_CXX_STANDARD_REQUIRED <span class="keyword">ON</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 找到 SFML（2.5 或以上） - Find SFML (2.5 or later)</span></span><br><span class="line"><span class="keyword">find_package</span>(SFML <span class="number">2.5</span> COMPONENTS graphics window system REQUIRED)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 收集 src/ 目录下所有 .cpp 文件 - Collect all .cpp files in the src/ directory</span></span><br><span class="line"><span class="keyword">file</span>(GLOB SRC_FILES <span class="string">&quot;$&#123;PROJECT_SOURCE_DIR&#125;/src/*.cpp&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成可执行文件 galaxy.exe - Create executable file galaxy.exe</span></span><br><span class="line"><span class="keyword">add_executable</span>(galaxy <span class="variable">$&#123;SRC_FILES&#125;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 链接SFML库 - Link SFML libraries</span></span><br><span class="line"><span class="keyword">target_link_libraries</span>(galaxy</span><br><span class="line">    PRIVATE</span><br><span class="line">    sfml-graphics</span><br><span class="line">    sfml-window</span><br><span class="line">    sfml-system</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
 <p><br></p>
-<h3 id="配置并构建项目">配置并构建项目</h3>
+<h3
+id="配置并构建项目---configuring-and-building-the-project">配置并构建项目
+- Configuring and Building the Project</h3>
 <p>项目编写完成后，使用vscode的CMake Tools插件来配置并构建项目。</p>
 <p>首先打开Cmake Tools插件页面。在configure中选择msys2 -
 mingw64的GCC编译器，如图所示。之后，插件会依据CMakeLists自动配置项目。</p>
+<p>After writing your code, use the CMake Tools extension in VS Code to
+configure and build the project.</p>
+<p>First, open the CMake Tools panel and select the MSYS2 - mingw64 GCC
+compiler under the Configure option, as shown in the image. Then, the
+extension will automatically configure your project based on
+CMakeLists.txt.</p>
 <p><img src="image.png" /></p>
 <p>点击build右侧的按钮，插件会构建项目。构建好的可执行文件将出现在项目的build目录中。之后，点击test/debug/run栏右侧的按钮，就可以测试/调试/运行项目了。</p>
+<p>Click the build button to compile the project. The resulting
+executable will appear in the build directory within your project. From
+there, you can test, debug, or run your project using the buttons in the
+Test / Debug / Run section.</p>
 
     </div>
 
@@ -338,7 +405,6 @@ mingw64的GCC编译器，如图所示。之后，插件会依据CMakeLists自动
   <div class="social-like a2a_kit a2a_kit_size_32 a2a_default_style">
     <a class="a2a_dd" target="_blank" rel="noopener" href="https://www.addtoany.com/share"></a>
       <a class="a2a_button_facebook"></a>
-      <a class="a2a_button_twitter"></a>
       <a class="a2a_button_sina_weibo"></a>
       <a class="a2a_button_wechat"></a>
       <a class="a2a_button_x"></a>
@@ -347,8 +413,8 @@ mingw64的GCC编译器，如图所示。之后，插件会依据CMakeLists自动
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/post/75/" rel="prev" title="Deep Research 1：撰写文章综述 - Deep Research 1：Writing Review of Articles">
-                  <i class="fa fa-angle-left"></i> Deep Research 1：撰写文章综述 - Deep Research 1：Writing Review of Articles
+                <a href="/post/75/" rel="prev" title="Deep Research：撰写文章综述 - Deep Research：Writing Review of Articles">
+                  <i class="fa fa-angle-left"></i> Deep Research：撰写文章综述 - Deep Research：Writing Review of Articles
                 </a>
             </div>
             <div class="post-nav-item">
@@ -384,7 +450,7 @@ mingw64的GCC编译器，如图所示。之后，插件会依据CMakeLists自动
   <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
     <div>
       <p class="footer-hidden"><br><br><br><br><br><br><br><br>本处广告位招租 - This ad space is available for rent</p>
-      <p class="footer-hidden">上次更新时间 - Last Updated: ||2025/04/20 01:32:13||</p>
+      <p class="footer-hidden">上次更新时间 - Last Updated: ||2025/04/20 03:28:58||</p>
     </div>
   </div>
 

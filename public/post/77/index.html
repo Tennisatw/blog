@@ -26,7 +26,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://blog.tennisatw.com/post/77/1.png">
 <meta property="article:published_time" content="2025-04-19T07:43:01.000Z">
-<meta property="article:modified_time" content="2025-04-20T02:16:30.914Z">
+<meta property="article:modified_time" content="2025-04-20T09:27:52.410Z">
 <meta property="article:author" content="Tennisatw">
 <meta property="article:tag" content="编程 - Programming">
 <meta name="twitter:card" content="summary">
@@ -152,7 +152,8 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E8%AE%A1%E6%80%9D%E8%B7%AF"><span class="nav-text">设计思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BF%83%E5%BE%97%E4%BD%93%E4%BC%9A"><span class="nav-text">心得体会</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E8%AE%A1%E6%80%9D%E8%B7%AF---design-concept"><span class="nav-text">设计思路 - Design Concept</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BF%83%E5%BE%97%E4%BD%93%E4%BC%9A---reflections-and-takeaways"><span class="nav-text">心得体会 - Reflections and
+Takeaways</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -173,7 +174,7 @@
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/series/">
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">系列<br>series</span></a>
       </div>
       <div class="site-state-item site-state-tags">
@@ -247,9 +248,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于 - Posted on</span>
-      
 
-      <time title="Created: 2025/04/19 01:43:01 / Modified: 20:16:30" itemprop="dateCreated datePublished" datetime="2025-04-19T01:43:01-06:00">2025/04/19</time>
+      <time title="Created: 2025/04/19 01:43:01" itemprop="dateCreated datePublished" datetime="2025-04-19T01:43:01-06:00">2025/04/19</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">编辑于 - Edited on</span>
+      <time title="Modified: 2025/04/20 03:27:52" itemprop="dateModified" datetime="2025-04-20T03:27:52-06:00">2025/04/20</time>
     </span>
 
   
@@ -259,14 +266,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">字数 - Word count: </span>
-      <span>779</span>
+      <span>1.3k</span>
     </span>
     <span class="post-meta-item" title="阅读时间 - Reading time">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时间 - Reading time &asymp;</span>
-      <span>3 mins.</span>
+      <span>5 mins.</span>
     </span>
 </div>
 
@@ -278,11 +285,28 @@
     
     <div class="post-body" itemprop="articleBody"><p>我是steam上的Galimulator的重度玩家。但是它bug很多，更新又太慢。于是我打算自己写一个。</p>
 <p>考虑到游戏运行时需要大量的计算，但没有复杂的显示内容，我打算使用c++，配合轻量级的游戏库SFML，来实现。游戏的名字暂定为Galaxy。</p>
+<p>I'm a hardcore player of Galimulator on Steam. But the game is
+riddled with bugs and updates are far too slow. So I decided to write my
+own version.</p>
+<p>Since the game demands heavy computation but doesn’t rely on complex
+visuals, I’ve chosen to develop it in C++ using the lightweight SFML
+library. It's tentatively named Galaxy.</p>
 <p><br></p>
-<h3 id="设计思路">设计思路</h3>
+<h3 id="设计思路---design-concept">设计思路 - Design Concept</h3>
 <p>Galimulator是一个在星系中模拟国家的游戏。玩家可以创建一个星系，星系中会自然诞生很多国家。国家之间会发生战争，和平等行为。国家的状态会发生变化。玩家不需要特地做什么，以“看海”为主。</p>
 <p>在此基础上，Galaxy将基本保留Galimulator的玩法（即放置），删去一些不好复刻的功能，加入一些新的元素，比如文化系统，以及动态修路。</p>
 <p>这里吐个槽：Galimulater的统计系统做的真不行，玩家既什么都不能做，又几乎什么数据都不能看，那游玩的意义何在呢？</p>
+<p>Galimulator is a simulation game for empires within a galaxy. Players
+generate a galaxy, and over time, nations form naturally, waging wars,
+making peace, and evolving. The gameplay is largely passive—more about
+watching the world unfold than actively participating.</p>
+<p>So, my Galaxy will retain this core gameplay loop—essentially idle
+simulation—while removing some of the features that are hard to
+replicate. In their place, I’m adding new systems, such as culture
+mechanics and dynamic road building.</p>
+<p>Side note: Galimulator's stats system is awful. Players can’t
+interact with much, and there’s barely any data to look at. So what’s
+the point of playing?</p>
 <p><br></p>
 <p>综上，Galaxy需要的功能有：<br />
 - 生成地图<br />
@@ -300,20 +324,73 @@
 - 绘制地图，城市，道路<br />
 -
 鼠标点击国家时，高亮国家领土，并绘制数据统计图（以满足我对“统计”的怪癖）</p>
+<p>To address that, here’s what Galaxy will feature: - Procedural map
+generation<br />
+- City generation based on the map<br />
+- Road-building algorithms connecting cities<br />
+- National behavior simulation, including:<br />
+- Nation formation<br />
+- State progression (expansion, stabilization, decline)<br />
+- War and diplomacy<br />
+- Cultural influence between cities and nations<br />
+- Technological advancement<br />
+- Taxes and expenditures<br />
+- Nation ascension (a unique Galimulator mechanic)<br />
+- Nation collapse<br />
+- Rendering of maps, cities, and roads<br />
+- When a player clicks on a nation, highlight its territory and show
+statistical graphs (to indulge my obsession with data)</p>
 <p><br></p>
-<p>游戏的主框架花了3天就写完了。其余的功能和debug花了我2周的业余时间。说实在的，这个项目没什么难度。</p>
+<p>游戏的主框架花了3天就写完了。其余的功能和debug花了我2周的业余时间。</p>
+<p>说实在的，这个项目比我想象的简单多了。</p>
+<p>It only took me three days to write the main framework. The
+rest—adding features and debugging—took about two weeks of my spare
+time.</p>
+<p>Honestly, the project was much simpler than I expected.</p>
 <p><img src="1.png" /></p>
 <p><br></p>
-<h3 id="心得体会">心得体会</h3>
-<p>我的c++水平在开发此项目中提升飞快。“干中学”一定是最好的学习方法。</p>
-<p>c++的搭建环境，编译，调试，运行都比python复杂很多。开发速度也很慢。对于我来说，如果有什么着急的项目，还是得用python。</p>
-<p>开发python时，往往不会亲自手写算法，因为有很多现成的库，其中的代码也往往被优化过。而c++安装一个库非常麻烦，且库中的代码再优化，相比自己写的代码也很难有绝对优势。所以在c++中，很多时候需要自己手写算法。</p>
-<p class="tennisbot" id="还不是在github上抄的">
-比如我在判断城市边界时，就“手写”了寻找凸包的算法。
+<h3 id="心得体会---reflections-and-takeaways">心得体会 - Reflections and
+Takeaways</h3>
+<ol type="1">
+<li><p>我的c++水平在开发此项目中提升飞快。“干中学”一定是最好的学习方法。</p></li>
+<li><p>c++的搭建环境，编译，调试，运行都比python复杂很多。开发速度也很慢。对于我来说，如果有什么着急的项目，还是得用python。</p></li>
+<li><p>开发python时，往往不会亲自手写算法，因为有很多现成的库，其中的代码也往往被优化过。而c++安装一个库非常麻烦，且库中的代码再优化，相比自己写的代码也很难有绝对优势。所以在c++中，很多时候需要自己手写算法。</p></li>
+</ol>
+<p class="tennisbot" id="其实还是在github上抄的">
+            比如我在判断城市边界时，就“手写”了寻找凸包的算法。
 </p>
-<p>慎用AI辅助编程！一定要仔细检查AI生成的代码。我相信今年后AI一定比人强，但现在还不行。</p>
-<p>接上，注释清晰，变量命名规范，项目结构规范，都有助于让AI更理解此项目，减少错误。</p>
-<p>最后，对于游戏开发来说，游戏设计，运营，甚至游戏心理学都相当重要，代码可能是最不重要的部分了。我花了2周写完的游戏，2天就玩腻了。</p>
+<ol start="4" type="1">
+<li><p>慎用AI辅助编程！一定要仔细检查AI生成的代码。我相信今年后AI一定比人强，但现在还不行。</p></li>
+<li><p>接上，注释清晰，变量命名规范，项目结构规范，都有助于让AI更理解此项目，减少错误。</p></li>
+<li><p>最后，对于游戏开发来说，游戏设计，运营，甚至游戏心理学都相当重要，代码可能是最不重要的部分了。我花了2周写完的游戏，2天就玩腻了。</p></li>
+<li><p>My C++ skills improved rapidly during this project. Learning by
+doing is definitely the most effective method.</p></li>
+<li><p>Compared to Python, setting up the C++ environment—compiling,
+debugging, and running—is far more complex. Development is also much
+slower. So if I’m ever working on a time-sensitive project, Python is
+still the way to go.</p></li>
+<li><p>When using Python, I rarely write algorithms from scratch, thanks
+to the abundance of optimized libraries. In C++, however, installing
+libraries is a hassle, and even the best-optimized libraries often don't
+offer a clear advantage over custom code. That means I often had to
+implement algorithms manually.</p></li>
+</ol>
+<p class="tennisbot" id="manually copied from Github">
+            For example, when determining city boundaries, I "manually"
+implemented a convex hull algorithm.
+</p>
+<ol start="4" type="1">
+<li><p>Be cautious when using AI for coding! Always double-check the
+generated code. I believe AI will surpass humans in this area within 1
+year—but that day hasn’t come yet.</p></li>
+<li><p>On that note, writing clear comments, using consistent naming
+conventions, and organizing your project well all help the AI better
+understand your code and reduce errors.</p></li>
+<li><p>Lastly, in game development, design, user engagement, and even
+game psychology are often far more important than the code itself. I
+spent two weeks building this game... and got bored of it in two
+days.</p></li>
+</ol>
 
     </div>
 
@@ -330,7 +407,6 @@
   <div class="social-like a2a_kit a2a_kit_size_32 a2a_default_style">
     <a class="a2a_dd" target="_blank" rel="noopener" href="https://www.addtoany.com/share"></a>
       <a class="a2a_button_facebook"></a>
-      <a class="a2a_button_twitter"></a>
       <a class="a2a_button_sina_weibo"></a>
       <a class="a2a_button_wechat"></a>
       <a class="a2a_button_x"></a>
@@ -376,7 +452,7 @@
   <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
     <div>
       <p class="footer-hidden"><br><br><br><br><br><br><br><br>本处广告位招租 - This ad space is available for rent</p>
-      <p class="footer-hidden">上次更新时间 - Last Updated: ||2025/04/20 01:32:13||</p>
+      <p class="footer-hidden">上次更新时间 - Last Updated: ||2025/04/20 03:28:58||</p>
     </div>
   </div>
 

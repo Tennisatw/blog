@@ -38,7 +38,7 @@
     <link href="https://blog.tennisatw.com/post/77/"/>
     <id>https://blog.tennisatw.com/post/77/</id>
     <published>2025-04-19T07:43:01.000Z</published>
-    <updated>2025-04-20T02:16:30.914Z</updated>
+    <updated>2025-04-20T09:27:52.410Z</updated>
     
     
     <summary type="html">&lt;!-- --&gt;</summary>
@@ -55,7 +55,7 @@
     <link href="https://blog.tennisatw.com/post/76/"/>
     <id>https://blog.tennisatw.com/post/76/</id>
     <published>2025-04-14T20:43:05.000Z</published>
-    <updated>2025-04-19T09:36:28.036Z</updated>
+    <updated>2025-04-20T09:17:24.906Z</updated>
     
     
     <summary type="html">对于非计算机专业的人来说，c/c++的配置和构建相当复杂。这里给习惯vscode的windows用户推荐一个简单的方案：使用vscode及插件 + msys2作为开发环境。</summary>
@@ -68,18 +68,16 @@
   </entry>
   
   <entry>
-    <title>Deep Research 1：撰写文章综述 - Deep Research 1：Writing Review of Articles</title>
+    <title>Deep Research：撰写文章综述 - Deep Research：Writing Review of Articles</title>
     <link href="https://blog.tennisatw.com/post/75/"/>
     <id>https://blog.tennisatw.com/post/75/</id>
     <published>2025-02-05T09:59:38.000Z</published>
-    <updated>2025-04-19T09:37:47.785Z</updated>
+    <updated>2025-04-20T09:07:31.829Z</updated>
     
     
-    <summary type="html">我购买了Openai的ChatGPT pro，使用其Deep Research（深度研究）功能，撰写了一篇有关近5年Molecular Dynamics（分子动力学）研究的学术综述。</summary>
+    <summary type="html">我购买了Openai的ChatGPT pro会员，使用其Deep Research（深度研究）功能，撰写了一篇有关近5年Molecular Dynamics（分子动力学）研究的学术综述。</summary>
     
     
-    
-    <category term="Deep Research" scheme="https://blog.tennisatw.com/series/deep-research/"/>
     
     
     <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
@@ -188,9 +186,9 @@
     
     
     
-    <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
-    
     <category term="日常 - Daily" scheme="https://blog.tennisatw.com/tags/%E6%97%A5%E5%B8%B8-daily/"/>
+    
+    <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
     
   </entry>
   
@@ -559,9 +557,9 @@
     
     
     
-    <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
-    
     <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+    <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
     
   </entry>
   
@@ -752,9 +750,9 @@
     
     
     
-    <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
-    
     <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+    <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
     
     <category term="敏感 - Sensitive" scheme="https://blog.tennisatw.com/tags/%E6%95%8F%E6%84%9F-sensitive/"/>
     
