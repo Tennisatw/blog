@@ -5,6 +5,7 @@ excerpt: 说到赛博分身，别人都是开玩笑的，到我这里就当真�
 date: 2023-04-03 20:57:57
 tags: 随想 - Thoughts
 ---
+
 说到赛博分身，别人都是开玩笑的，到我这里就当真了。
 
 Others are just joking about someone's cyber clone, but I take it seriously.

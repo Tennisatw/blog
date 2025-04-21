@@ -1,5 +1,5 @@
 ---
-title: 如何泡各种茶 - How to make various types of tea
+title: 如何泡各种茶
 permalink: post/27/
 excerpt: 三点几了，饮茶先啦！
 date: 2023-09-19 19:24:54

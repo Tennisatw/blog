@@ -18,12 +18,16 @@ This is an incredibly profound series of interviews and conversations with jihad
 
 <br>
 
-柴静说：“人们认为恐怖分子是疯子，但从我采访的感受来看，他们不是精神病学意义上的疯狂，杀人，是推理的结果：人类立法者是假神，宗教就成了政治，暴力就成了表达虔诚的最高方式。地狱天堂作为奖惩制度，杀人自毁就成了功利计算。一旦进入，他们的逻辑轨道就完全封闭。”因为害怕下地狱而参加圣战救赎自己，我理解他们的逻辑（但不认同）。
+柴静说：“人们认为恐怖分子是疯子，但从我采访的感受来看，他们不是精神病学意义上的疯狂，杀人，是推理的结果：人类立法者是假神，宗教就成了政治，暴力就成了表达虔诚的最高方式。地狱天堂作为奖惩制度，杀人自毁就成了功利计算。一旦进入，他们的逻辑轨道就完全封闭。”
 
-Chai Jing said, "People think terrorists are madmen, but from my interviews, they are not insane in the psychiatric sense. Their murders are the result of logical reasoning: human law-makers are false gods, religion has become politics, and violence the ultimate expression of devotion. Heaven and hell have become a system of reward and punishment, thus murder and self-destruction have become a utilitarian calculation. Once they're in, their logic becomes completely enclosed." I understand their logic of joining a holy war for redemption due to the fear of hell (though I do not agree with it).
+因为害怕下地狱而参加圣战救赎自己，我理解他们的逻辑（但不认同）。
+
+Chai Jing said, "People think terrorists are madmen, but from my interviews, they are not insane in the psychiatric sense. Their murders are the result of logical reasoning: human law-makers are false gods, religion has become politics, and violence the ultimate expression of devotion. Heaven and hell have become a system of reward and punishment, thus murder and self-destruction have become a utilitarian calculation. Once they're in, their logic becomes completely enclosed." 
+
+I understand their logic of joining a holy war for redemption due to the fear of hell (though I do not agree with it).
 
 <br>
 
-这个视频特别有条理，一看就是学院派，我就喜欢这种井井有条的样子。此外，柴静每一个问题都问到了我的心坎里。每当对一件事情有疑问时，她都会把它问出来。综上，神作。
+这一系列视频特别有条理，我就喜欢这种井井有条的样子。此外，柴静每一个问题都问到了我的心坎里。每当对一件事情有疑问时，她都会把它问出来。综上，神作。
 
-The videos are very well organized, it's clear they have an academic approach, which I really appreciate. Also, Chai Jing manages to ask questions that touch upon my deepest concerns. Whenever there's a doubt about anything, she addresses it. In a word, it's a masterpiece.
+The videos are very well organized, which I really appreciate. Also, Chai Jing manages to ask questions that touch upon my deepest concerns. Whenever there's a doubt about anything, she addresses it. In a word, it's a masterpiece.

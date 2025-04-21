@@ -27,7 +27,7 @@
 <meta property="og:description" content="综上，psi4似乎执行速度更快，但是pyscf的输出比较全，而且更灵活。In summary, psi4 appears to be faster in execution, but PySCF offers more comprehensive outputs and greater flexibility.">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-12-21T06:09:14.000Z">
-<meta property="article:modified_time" content="2024-11-09T04:21:11.744Z">
+<meta property="article:modified_time" content="2025-04-21T07:52:58.708Z">
 <meta property="article:author" content="Tennisatw">
 <meta property="article:tag" content="编程 - Programming">
 <meta name="twitter:card" content="summary">
@@ -254,7 +254,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">编辑于 - Edited on</span>
-      <time title="Modified: 2024/11/08 21:21:11" itemprop="dateModified" datetime="2024-11-08T21:21:11-07:00">2024/11/08</time>
+      <time title="Modified: 2025/04/21 01:52:58" itemprop="dateModified" datetime="2025-04-21T01:52:58-06:00">2025/04/21</time>
     </span>
 
   
@@ -331,9 +331,10 @@ psi4 is as follows:</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> psi4</span><br><span class="line"></span><br><span class="line">molecule = psi4.geometry(<span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">C     -0.887089    0.175064   -0.012535</span></span><br><span class="line"><span class="string">C      0.460489   -0.515516   -0.046535</span></span><br><span class="line"><span class="string">O      1.442965    0.307267    0.565572</span></span><br><span class="line"><span class="string">H     -0.847478    1.127768   -0.550817</span></span><br><span class="line"><span class="string">H     -1.658782   -0.453327   -0.465842</span></span><br><span class="line"><span class="string">H     -1.176944    0.403676    1.018306</span></span><br><span class="line"><span class="string">H      0.768712   -0.724328   -1.075460</span></span><br><span class="line"><span class="string">H      0.419486   -1.462073    0.500177</span></span><br><span class="line"><span class="string">H      1.478640    1.141468    0.067135</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span>)</span><br><span class="line"></span><br><span class="line">psi4.set_options(&#123;<span class="string">&#x27;basis&#x27;</span>: <span class="string">&#x27;6-31G&#x27;</span>&#125;)</span><br><span class="line"></span><br><span class="line">energy = psi4.energy(<span class="string">&#x27;B3LYP&#x27;</span>, molecule=molecule)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;B3LYP Energy: <span class="subst">&#123;energy&#125;</span> Hartree&quot;</span>)</span><br></pre></td></tr></table></figure>
 <p><br></p>
 <p>结果为：</p>
-<p>The result is:</p>
 <p>B3LYP Energy: -154.9882218123809 Hartree</p>
 <p>其中量子化学计算所需时间大约为5s。</p>
+<p>The result is:</p>
+<p>B3LYP Energy: -154.9882218123809 Hartree</p>
 <p>The quantum chemistry calculation takes about 5 seconds.</p>
 <hr />
 <p>pyscf可以使用pip安装：</p>
@@ -346,17 +347,17 @@ pyscf is as follows:</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pyscf <span class="keyword">import</span> gto, dft</span><br><span class="line"></span><br><span class="line">mol = gto.Mole()</span><br><span class="line">mol.atom = <span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">C     -0.887089    0.175064   -0.012535</span></span><br><span class="line"><span class="string">C      0.460489   -0.515516   -0.046535</span></span><br><span class="line"><span class="string">O      1.442965    0.307267    0.565572</span></span><br><span class="line"><span class="string">H     -0.847478    1.127768   -0.550817</span></span><br><span class="line"><span class="string">H     -1.658782   -0.453327   -0.465842</span></span><br><span class="line"><span class="string">H     -1.176944    0.403676    1.018306</span></span><br><span class="line"><span class="string">H      0.768712   -0.724328   -1.075460</span></span><br><span class="line"><span class="string">H      0.419486   -1.462073    0.500177</span></span><br><span class="line"><span class="string">H      1.478640    1.141468    0.067135</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line">mol.basis = <span class="string">&#x27;6-31g&#x27;</span></span><br><span class="line">mol.build()</span><br><span class="line"></span><br><span class="line">mf = dft.RKS(mol)</span><br><span class="line">mf.xc = <span class="string">&#x27;b3lyp&#x27;</span></span><br><span class="line"></span><br><span class="line">energy = mf.kernel()</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;B3LYP Energy: <span class="subst">&#123;energy&#125;</span> Hartree&quot;</span>)</span><br></pre></td></tr></table></figure>
 <p><br></p>
 <p>其结果为：</p>
-<p>The result is:</p>
 <p>B3LYP Energy: -154.98821705367368 Hartree</p>
 <p>量子化学计算所需时间大约为8s，比psi4慢上一些。</p>
+<p>The result is:</p>
+<p>B3LYP Energy: -154.98821705367368 Hartree</p>
 <p>The quantum chemistry calculation takes about 8 seconds, which is
 slightly slower than psi4.</p>
 <hr />
-<p>这边让这两个软件包进行一个更耗时的任务：优化苯甲酸的几何结构，来判断这两个软件包是否足够实用。苯甲酸的初始结构来源于此。</p>
+<p>这边让这两个软件包进行一个更耗时的任务：优化苯甲酸的几何结构，来判断这两个软件包是否足够实用。</p>
 <p>We then tasked both software packages with a more time-consuming job:
 optimizing the geometric structure of benzoic acid to determine their
-practicality. The initial structure of benzoic acid was sourced
-here.</p>
+practicality.</p>
 <p><br></p>
 <p>对于psi4，代码如下：</p>
 <p>For psi4, the code is as follows:</p>
@@ -443,7 +444,7 @@ more comprehensive outputs and greater flexibility.</p>
   <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
     <div>
       <p class="footer-hidden"><br><br><br><br><br><br><br><br>本处广告位招租 - This ad space is available for rent</p>
-      <p class="footer-hidden">上次更新时间 - Last Updated: ||2025/04/20 12:55:58||</p>
+      <p class="footer-hidden">上次更新时间 - Last Updated: ||2025/04/21 03:28:32||</p>
     </div>
   </div>
 

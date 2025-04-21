@@ -7,17 +7,9 @@ tags: 随想 - Thoughts
 categories: 元键政 - Meta Political Discussion
 ---
 
-有一个段子，说的是：晚上吃饭时，一个半生不熟的朋友跟我说，美国太不是东西了，跟我们打贸易战。“我们不惜一切代价，也要打赢贸易战”。我心想，你也不照镜子看看自己，你是那个“我们”吗？其实你就是那个“代价”。
+在网上和人激烈键政的时候，被人骂“屁股歪了”的次数实在是太多了。生气之余，回头想想：我们是谁，应该为谁说话？或者说：人的屁股和脑袋应该在哪里？
 
-There is a joke that goes like this: While having dinner one evening, an acquaintance who I barely know said to me, "America is such a jerk, starting a trade war with us. 'We will spare no cost to win this trade war.'" I thought to myself: have you even looked in the mirror? Are you part of that "we"? You're probably just part of the "cost".
-
-![](1.jpg)
-
-<br>
-
-段子当然是有些夸张。但是，不知道大家看完之后是否想过同样的问题：我们什么时候是“我们”，什么时候是“代价”？再进一步问，我们是谁，应该为谁说话？用通俗的话说就是：人的屁股和脑袋应该在哪里？
-
-The joke is somewhat exaggerated. But after reading it, has anyone thought about this question: when are we the "we" and when are we the "cost"? Furthermore, who are we, and whom should we speak for? 
+When arguing with people online, it’s all too common to be accused of having a “crooked stance.” But after the anger fades, it’s worth reflecting: Who are we, and for whom should we speak? Or put another way—where should a person's head and their behind truly be?
 
 <br>
 

@@ -112,11 +112,13 @@ print(f"B3LYP Energy: {energy} Hartree")
 
 结果为：
 
-The result is:
-
 B3LYP Energy: -154.9882218123809 Hartree
 
 其中量子化学计算所需时间大约为5s。
+
+The result is:
+
+B3LYP Energy: -154.9882218123809 Hartree
 
 The quantum chemistry calculation takes about 5 seconds.
 
@@ -163,19 +165,21 @@ print(f"B3LYP Energy: {energy} Hartree")
 
 其结果为：
 
-The result is:
-
 B3LYP Energy: -154.98821705367368 Hartree
 
 量子化学计算所需时间大约为8s，比psi4慢上一些。
+
+The result is:
+
+B3LYP Energy: -154.98821705367368 Hartree
 
 The quantum chemistry calculation takes about 8 seconds, which is slightly slower than psi4.
 
 ---
 
-这边让这两个软件包进行一个更耗时的任务：优化苯甲酸的几何结构，来判断这两个软件包是否足够实用。苯甲酸的初始结构来源于此。
+这边让这两个软件包进行一个更耗时的任务：优化苯甲酸的几何结构，来判断这两个软件包是否足够实用。
 
-We then tasked both software packages with a more time-consuming job: optimizing the geometric structure of benzoic acid to determine their practicality. The initial structure of benzoic acid was sourced here.
+We then tasked both software packages with a more time-consuming job: optimizing the geometric structure of benzoic acid to determine their practicality.
 
 <br>
 
