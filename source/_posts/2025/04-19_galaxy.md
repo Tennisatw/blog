@@ -10,9 +10,9 @@ tags: 编程 - Programming
 
 考虑到游戏运行时需要大量的计算，但没有复杂的显示内容，我打算使用c++，配合轻量级的游戏库SFML，来实现。游戏的名字暂定为Galaxy。
 
-I'm a hardcore player of Galimulator on Steam. But the game is riddled with bugs and updates are far too slow. So I decided to write my own version.
+I'm a hardcore player of a game on Steam named Galimulator. But the game is riddled with bugs and updates are far too slow. So I decided to create my own version.
 
-Since the game demands heavy computation but doesn’t rely on complex visuals, I’ve chosen to develop it in C++ using the lightweight SFML library. It's tentatively named Galaxy.
+Since the game demands heavy computation but doesn’t rely on complex visuals, I’ve chosen to develop it in C++ with the lightweight SFML library. It's tentatively named Galaxy.
 
 <br>
 
@@ -22,20 +22,20 @@ Galimulator是一个在星系中模拟国家的游戏。玩家可以创建一个
 
 在此基础上，Galaxy将基本保留Galimulator的玩法（即放置），删去一些不好复刻的功能，加入一些新的元素，比如文化系统，以及动态修路。
 
-这里吐个槽：Galimulater的统计系统做的真不行，玩家既什么都不能做，又几乎什么数据都不能看，那游玩的意义何在呢？
+这里吐个槽：Galimulater的统计系统做的真不行，本来玩家就几乎什么都不能做，又几乎什么数据都不能看，那还有什么玩头了？
 
 Galimulator is a simulation game for empires within a galaxy. Players generate a galaxy, and over time, nations form naturally, waging wars, making peace, and evolving. The gameplay is largely passive—more about watching the world unfold than actively participating.
 
 So, my Galaxy will retain this core gameplay loop—essentially idle simulation—while removing some of the features that are hard to replicate. In their place, I’m adding new systems, such as culture mechanics and dynamic road building.
 
-Side note: Galimulator's stats system is awful. Players can’t interact with much, and there’s barely any data to look at. So what’s the point of playing?
+Side note: Galimulator's stats system is awful. Players can’t really do much, and there’s hardly any data to analyze. So what’s the point of playing?
 
 <br>
 
 综上，Galaxy需要的功能有：  
 - 生成地图  
 - 依据地图生成城市  
-- 开发算法，为城市生成道路  
+- 城市之间需要生成道路  
 - 模拟国家行为，包括  
     - 国家生成  
     - 国家状态的演化（扩张，稳定，衰退）  
@@ -72,7 +72,7 @@ To address that, here’s what Galaxy will feature:
 
 说实在的，这个项目比我想象的简单多了。
 
-It only took me three days to write the main framework. The rest—adding features and debugging—took about two weeks of my spare time. 
+It only took me three days to finish the main framework. The rest—adding features and debugging—took about two weeks of my spare time. 
 
 Honestly, the project was much simpler than I expected.
 
@@ -100,7 +100,7 @@ Honestly, the project was much simpler than I expected.
 
 1. My C++ skills improved rapidly during this project. Learning by doing is definitely the most effective method.
 
-2. Compared to Python, setting up the C++ environment—compiling, debugging, and running—is far more complex. Development is also much slower. So if I’m ever working on a time-sensitive project, Python is still the way to go.
+2. Compared to Python, setting up the C++ environment—compiling, debugging, and running—is far more complex. Development is also much slower. So if I’m ever working on a urgent project, Python is still the way to go.
 
 3. When using Python, I rarely write algorithms from scratch, thanks to the abundance of optimized libraries. In C++, however, installing libraries is a hassle, and even the best-optimized libraries often don't offer a clear advantage over custom code. That means I often had to implement algorithms manually.
 

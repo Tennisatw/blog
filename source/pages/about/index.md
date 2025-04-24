@@ -10,7 +10,7 @@ date: 2024-04-11 19:36:02
 
 Tennisatw，业余极客，业余诗人，理论化学专业。
 
-Tennisatw, Amateur geek, amateur poet, major in theoretical chemistry.
+Tennisatw, an amateur geek, and an amateur poet, major in theoretical chemistry.
 
 <br>
 
@@ -32,12 +32,6 @@ Email: tennisbot0@gmail.com
 
 <br>
 
-~~页面下方有一个能与Tennisbot聊天的方框。可以与她讨论有关博文的话题，或者仅是闲聊。其实现方式见[此文](http://blog.tennisatw.com/post/41/)。（因为太费钱了所以暂时关闭，想要与Tennisbot聊天的话请加入Discord群。）~~
-
-~~At the bottom of the page, there's a chat box for engaging with Tennisbot. You can discuss topics related to the blog post or simply enjoy a casual conversation. The implementation method is mentioned [here](http://blog.tennisatw.com/post/41/). (Temporarily closed because it's too expensive, if you want to chat with Tennisbot, please join the Discord group.)~~
-
-<br>
-
 ## Discord 群 - Discord Group
 
 本博客有一个读者粉丝交流的[Discord群](https://discord.gg/trCwuPYvG2)，欢迎加入。可以在群里与Tennisbot或我聊天，中英文均可。
@@ -54,9 +48,9 @@ This blog is made using Hexo. Feel free to share the content of this blog, but p
 
 <br>
 
-本博客的大部分内容由中英文“交错”写成。这么做的原因见[此文](http://blog.tennisatw.com/post/17/)。
+本博客的大部分文章由中英文“交错”写成。读一遍汉语，再读一遍英语，我保证你们的英语能力提升飞快。
 
-Most of the content in this blog is written in a mix of Chinese and English. The reasons for this approach are detailed [here](http://blog.tennisatw.com/post/17/).
+Most of the content in this blog is written in a mix of Chinese and English. If you have some spare time, try learning a few Chinese characters.
 
 <br>
 
@@ -80,9 +74,9 @@ I have formal job and have never charged any fees to promote for any organizatio
 
 ## 评论 - Comments
 
-永远欢迎所有人在博客下方评论留言，即使你我意见不同，良好的交流环境是公民意识诞生的土壤。
+永远欢迎所有人在博客下方评论留言，即使你我意见不同。
 
-Everyone is always welcome to leave comments under the blog, even those with differing opinions. A healthy communication environment is the breeding ground for civic consciousness.
+Everyone is always welcome to leave comments under the blog, even those with differing opinions.
 
 <br>
 

@@ -15,8 +15,29 @@
     <atom:link href="https://blog.tennisatw.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Sun, 20 Apr 2025 07:04:21 GMT</pubDate>
+    <pubDate>Thu, 24 Apr 2025 10:04:57 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>元键政6：越小的政治问题越有意义 - Meta Political Discussion 6：The Smaller the Political Question, the More Meaningful It Is</title>
+      <link>https://blog.tennisatw.com/post/80/</link>
+      <guid>https://blog.tennisatw.com/post/80/</guid>
+      <pubDate>Tue, 22 Apr 2025 06:22:41 GMT</pubDate>
+      
+      <description>真正有意义的问题一经思考讨论，就有可能推动事情发展。而“经由我们的努力，让周围环境变得更好”才是键政的社会意义。&lt;br&gt;The political questions that do matter are questions that, once considered and discussed, have the potential to drive real change. And that’s the true social significance of political discourse：“Through our efforts, we can make our surroundings better.”</description>
+      
+      
+      
+      
+      <category domain="https://blog.tennisatw.com/series/%E5%85%83%E9%94%AE%E6%94%BF-meta-political-discussion/">元键政 - Meta Political Discussion</category>
+      
+      
+      <category domain="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/">随想 - Thoughts</category>
+      
+      
+      <comments>https://blog.tennisatw.com/post/80/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>俳句 - 写俳句</title>
@@ -205,9 +226,9 @@
       
       
       
-      <category domain="https://blog.tennisatw.com/tags/%E6%97%A5%E5%B8%B8-daily/">日常 - Daily</category>
-      
       <category domain="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/">随想 - Thoughts</category>
+      
+      <category domain="https://blog.tennisatw.com/tags/%E6%97%A5%E5%B8%B8-daily/">日常 - Daily</category>
       
       
       <comments>https://blog.tennisatw.com/post/69/#disqus_thread</comments>
@@ -565,27 +586,6 @@
     </item>
     
     <item>
-      <title>数据科学课程学习记录</title>
-      <link>https://blog.tennisatw.com/post/50/</link>
-      <guid>https://blog.tennisatw.com/post/50/</guid>
-      <pubDate>Mon, 06 May 2024 06:38:25 GMT</pubDate>
-      
-      <description>在coursera上试听了《IBM Data Science Professional Certificate》这一系列，一共有10门数据处理课。</description>
-      
-      
-      
-      
-      
-      <category domain="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/">技术 - Technology</category>
-      
-      <category domain="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/">编程 - Programming</category>
-      
-      
-      <comments>https://blog.tennisatw.com/post/50/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
       <title>为MDAnalysis包增加计算间断氢键自相关函数功能 - Add the functionality to calculate intermittent hydrogen bond autocorrelation functions to the MDAnalysis package</title>
       <link>https://blog.tennisatw.com/post/49/</link>
       <guid>https://blog.tennisatw.com/post/49/</guid>
@@ -618,9 +618,9 @@
       
       
       
-      <category domain="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/">技术 - Technology</category>
-      
       <category domain="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/">随想 - Thoughts</category>
+      
+      <category domain="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/">技术 - Technology</category>
       
       
       <comments>https://blog.tennisatw.com/post/48/#disqus_thread</comments>
@@ -755,6 +755,8 @@
       
       
       
+      <category domain="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/">随想 - Thoughts</category>
+      
       <category domain="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/">技术 - Technology</category>
       
       <category domain="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/">编程 - Programming</category>
@@ -833,9 +835,9 @@
       
       
       
-      <category domain="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/">技术 - Technology</category>
-      
       <category domain="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/">随想 - Thoughts</category>
+      
+      <category domain="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/">技术 - Technology</category>
       
       <category domain="https://blog.tennisatw.com/tags/%E6%95%8F%E6%84%9F-sensitive/">敏感 - Sensitive</category>
       
@@ -1277,25 +1279,6 @@
     </item>
     
     <item>
-      <title>冬之城</title>
-      <link>https://blog.tennisatw.com/post/14/</link>
-      <guid>https://blog.tennisatw.com/post/14/</guid>
-      <pubDate>Tue, 22 Aug 2023 05:40:34 GMT</pubDate>
-      
-      <description>&lt;!-- --&gt;</description>
-      
-      
-      
-      
-      
-      <category domain="https://blog.tennisatw.com/tags/%E8%AF%97-poem/">诗 - Poem</category>
-      
-      
-      <comments>https://blog.tennisatw.com/post/14/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
       <title>参观大庆油田历史陈列馆和唐山大地震纪念馆有感 - Reflections on Visiting the Daqing Oilfield History Exhibition Hall and the Tangshan Earthquake Memorial Hall</title>
       <link>https://blog.tennisatw.com/post/13/</link>
       <guid>https://blog.tennisatw.com/post/13/</guid>
@@ -1469,9 +1452,9 @@
       
       <category domain="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/">随想 - Thoughts</category>
       
-      <category domain="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/">编程 - Programming</category>
-      
       <category domain="https://blog.tennisatw.com/tags/%E6%95%8F%E6%84%9F-sensitive/">敏感 - Sensitive</category>
+      
+      <category domain="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/">编程 - Programming</category>
       
       
       <comments>https://blog.tennisatw.com/post/5/#disqus_thread</comments>

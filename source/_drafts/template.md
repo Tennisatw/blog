@@ -2,7 +2,7 @@
 title: {{ title }}
 date: {{ date }}
 permalink: post/auto_increment_id/
-excerpt: ''
+excerpt: <!-- -->
 tags: 
  - 1
  - 2

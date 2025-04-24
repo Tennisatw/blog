@@ -7,21 +7,21 @@ tags: 随想 - Thoughts
 categories: 元键政 - Meta Political Discussion
 ---
 
-我在[这篇文章](https://blog.tennisatw.com/post/35/)中推荐了一个油管主：小岛大浪吹。Mhyyyy评价他的政治观念为理性爱国，我深以为然，并且十分向所有理性思考政治问题的自由派推荐。
+兔主席[(微博)](https://m.weibo.cn/u/1221171697)[(x)](https://x.com/chairmanrabbit)是一个功底十分深厚的理性爱国博主，非常善于攻击自由派，宣布“只有社会主义才能救美国”。我向所有理性思考政治问题的自由派推荐这位博主。
 
-In [this article](https://blog.tennisatw.com/post/35/), I recommend a YouTuber: Xiaodaodalang. Mhyyyy describes his political views as rational patriotism, and I wholeheartedly agree, recommending him to all liberals who think about political issues rationally.
-
-<br>
-
-不过，我也承认，以小岛大浪吹为代表的理性兔友的观点和自由派的观点有很大的不同。自由派的人往往支持民主，认为民主是和平年代国家权力合法性的来源。此外，民主可以防止独裁者剥削人民。并且自由派的人往往不爱党和政府，认为如果政府官员不是由大家的票选上去的话，他和政府之间可以没有任何情感，对于国家更是这样。
-
-However, I also acknowledge that the views of rational patriots, represented by Xiaodaodalang, differ significantly from those of liberals. Liberals often support democracy, believing it to be the source of a nation's legitimate authority in times of peace. Additionally, democracy can prevent dictators from exploiting the people. Moreover, liberals often have little affection for the party and government, thinking that if government officials are not elected by the people, there can be no emotional connection between them and the government, and even less so with the country.
+ChairmanRabbit [(weibo)](https://m.weibo.cn/u/1221171697)[(x)](https://x.com/chairmanrabbit) is a highly knowledgeable and rational patriot blogger, exceptionally skilled at critiquing liberals, declaring that "only socialism can save America." Here I am recommending him to all liberals who think about political issues rationally.
 
 <br>
 
-那么，自由派，为什么要去看小岛大浪吹呢？或者考虑一个更大，更有趣的问题：**一个人为什么要去了解，甚至试图理解，与自己观点不同的人的想法呢？**
+不过，我也承认，以兔主席为代表的理性兔友的观点和自由派的观点有很大的不同。自由派的人往往支持民主，认为民主是和平年代国家权力合法性的来源。此外，民主可以防止独裁者剥削人民。并且自由派的人往往不对党和政府持警惕态度，认为如果政府官员不是由大家的票选上去的话，他和政府之间可以没有任何情感，对于国家更是这样。
 
-So, why should liberals watch Xiaodaodalang? Or, consider a bigger, more intriguing question: **Why should anyone seek to understand, or even try to comprehend, the thoughts of those with different viewpoints?**
+However, I also acknowledge that the views of rational patriots, represented by ChairmanRabbit, differ significantly from those of liberals. Liberals often support democracy, believing it to be the source of a nation's legitimate authority in times of peace. Additionally, democracy can prevent dictators from exploiting the people. Moreover, liberals often have little affection for the party and government, thinking that if government officials are not elected by the people, there can be no emotional connection between them and the government, and even less so with the country.
+
+<br>
+
+那么，自由派，为什么要去看兔主席呢？或者考虑一个更大，更有趣的问题：**一个人为什么要去了解，甚至试图理解，与自己观点不同的人的想法呢？**
+
+So, why should liberals follow ChairmanRabbit? Or, consider a bigger, more intriguing question: **Why should anyone seek to understand, or even try to comprehend, the thoughts of those with different viewpoints?**
 
 <br>
 
@@ -105,9 +105,9 @@ From this perspective, the world is complex enough to allow philosophers to use 
 
 <br>
 
-回到键政，我想说的是，要承认这世界上有多种多样的价值观，也要尊重每一个有条理且无害的价值观。和我想法不同的人也有他们的理由。对于是否爱国这一问题：人可以因为经济发展，政治制度稳定，自身的生活条件改善，热爱故乡，而爱国。也可以因为经济停滞甚至后退，政治独裁，社会风气过于保守，而不爱国。如果只简单因为爱不爱国这种事情就认为岛哥值得看（或者不值得看），那将错失多少有趣的灵魂啊。
+回到键政，我想说的是，要承认这世界上有多种多样的价值观，也要尊重每一个有条理且无害的价值观。和我想法不同的人也有他们的理由。对于是否爱国这一问题：人可以因为经济发展，政治制度稳定，自身的生活条件改善，热爱故乡，而爱国。也可以因为经济停滞甚至后退，政治独裁，社会风气过于保守，而不爱国。如果只简单因为爱不爱国这种事情就认为兔主席值得看（或者不值得看），那将错失多少有趣的灵魂啊。
 
-Returning to political discourse, I want to emphasize the importance of recognizing the diversity of values in this world and respecting every coherent and harmless value system. People who think differently from me also have their reasons. Regarding patriotism: one can love their country because of economic development, political stability, and improved living conditions, as well as a love for their homeland. Conversely, one might not love their country due to economic stagnation or decline, political dictatorship, and overly conservative societal norms. If we judge Xiaodaodalang's worth solely based on whether he is patriotic or not, we would miss out on many interesting perspectives.
+Returning to political discourse, I want to emphasize the importance of recognizing the diversity of values in this world and respecting every coherent and harmless value system. People who think differently from me also have their reasons. Regarding patriotism: one can love their country because of economic development, political stability, and improved living conditions, as well as a love for their homeland. Conversely, one might not love their country due to economic stagnation or decline, political dictatorship, and overly conservative societal norms. If we judge ChairmanRabbit's worth solely based on whether he is patriotic or not, we would miss out on many interesting perspectives.
 
 <br>
 

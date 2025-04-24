@@ -149,11 +149,7 @@ Keep going—you have so much life ahead of you. Focus on consistent effort, hea
 
 不知道你们什么感想，我最大的感慨是我生不逢时，要是在我高考的时候有人能这么劝劝我，我的人生轨迹可能大不相同。
 
-还有一个小感慨是：人类（指人类的人生导师）一败涂地。
-
 I don't know how you all feel, but my biggest takeaway is that I was born at the wrong time. If someone had given me this kind of advice when I was preparing for the college entrance exam, my life might have taken a completely different path.  
-
-Another small thought: Humanity (specifically, "human life coaches") has utterly failed.
 
 <br>
 

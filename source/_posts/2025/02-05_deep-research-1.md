@@ -36,6 +36,8 @@ It’s exclusive to ChatGPT Pro users, and I spent $200 USD to access it.
 
 Open the ChatGPT web app with any model selected, click the `Deep Research` button in the input box, type in your request (the more detailed, the better), and press Enter.
 
+It's highly recommended to converse with the Deep Research agent in English, as the o3 model performs better in English and there’s a wealth of English literature available.
+
 ![](1.png)
 
 <br>
@@ -57,15 +59,11 @@ Note: Sometimes, after asking questions, Deep Research doesn’t start automatic
 
 ### 结果评价 - Evaluation
 
-Deep Research真的能生成一篇简易的学术综述，并给出所有的引用。我检查了其中的一些引用，它们确实是真实的链接，且忠实地保留了原文的主旨。
-
-注：ChatGPT的其他模型在生成引用时，会产生幻觉/错误引用。
+Deep Research真的能生成一篇简易的学术综述，并给出所有的引用。我检查了其中的一些引用，它们确实是真实的链接，且忠实地保留了原文的主旨。这是个巨大进步，相比之下，ChatGPT的其他模型在生成引用时，总是会产生幻觉/错误引用。
 
 但是它只能读取免费文献。对于需要订阅的期刊，也许只能手动上传文献。
 
-Deep Research is genuinely capable of generating a solid academic review complete with citations. I verified several of them, and they are real links that accurately represent the source content.
-
-Note: Other ChatGPT models may hallucinate or generate incorrect citations.
+Deep Research is genuinely capable of generating a solid academic review complete with citations. I verified several of them, and they are real links that accurately represent the source content. This is a significant improvement, as other ChatGPT models often hallucinate or misquote when generating citations.
 
 However, it can only access open-access literature. For paywalled journal articles, you might need to upload them manually.
 

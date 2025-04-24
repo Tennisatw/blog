@@ -28,11 +28,11 @@ All three software are free to use, but GitHub Copilot for VSCode costs 10 USD/m
 
 我使用代码自动补全（Autocompletion）的功能相当频繁，因为我总是有一些编写软件的输入文件的需求。VSCode的GitHub Copilot的代码自动补全功能很不错，智商也在线。Cursor的代码自动补全功能有点弱，需要手动修改，但它可以在一段话中间补全，且Cursor Tab可以修改已经写过的句子/代码的错误。WindSurf的代码自动补全有点...不太智能，并且有时候调用不出来，也许是模型的问题。WindSurf扣5分。
 
-I frequently use code autocompletion as I often need to write input files for software. VSCode's GitHub Copilot has excellent autocompletion and shows good intelligence. Cursor's autocompletion is somewhat weak and requires manual modifications, but it can complete code mid-sentence, and Cursor's tab feature can fix errors in existing sentences/code. WindSurf's autocompletion is somewhat... not so intelligent, and sometimes fails to respond, perhaps due to model issues. WindSurf loses 5 points.
+I frequently use code autocompletion as I often need to write input files for software. VSCode's GitHub Copilot has excellent autocompletion and shows good intelligence. Cursor's autocompletion is somewhat weak and requires manual modifications, but it can complete code mid-sentence, and "Cursor tab" can fix errors in existing sentences/code. WindSurf's autocompletion is somewhat... not so intelligent, and sometimes fails to respond, perhaps due to model issues. WindSurf loses 5 points.
 
 Cursor Tab确实很舒服，虽说有时候有点智障，但是整体而言能够省掉很多手动修改的精力。VSCode和WindSurf扣10分。
 
-Cursor's tab feature is indeed comfortable to use, and although it can be a bit silly sometimes, it overall saves a lot of manual editing effort. VSCode and WindSurf lose 10 points.
+"Cursor tab" feature is indeed comfortable to use, and although it can be a bit silly sometimes, it overall saves a lot of manual editing effort. VSCode and WindSurf lose 10 points.
 
 <br>
 

@@ -30,7 +30,7 @@ First, download and install MSYS2 from the [official website](https://www.msys2.
 pacman -Syu
 ```
 
-如果提示需要重启msys2，则重启后继续执行此命令。
+如果提示需要重启msys2，则重启后再次执行此命令。
 
 更新完成后，将 `C:\msys64\mingw64\bin` 添加到系统的环境变量中。建议添加到靠前的位置。
 

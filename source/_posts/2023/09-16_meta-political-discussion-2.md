@@ -13,9 +13,9 @@ When discussing political issues with my mom, she often comments: "What's the po
 
 <br>
 
-在民主国家，讨论政治自然是有意义的：作为普通公民，手中的选票决定着国家将来的方向。那么在威权国家呢？尤其是在讨论政治甚至会有风险的国家呢？
+在民主国家，讨论政治自然是有意义的：作为普通公民，手中的选票决定着国家将来的方向。那么在其他国家呢？尤其是在讨论政治甚至会有风险的国家呢？
 
-In democratic countries, political discussions have significance: the votes of ordinary citizens steer the future direction of the nation. Yet what about authoritarian nations, particularly those where political discussion carries risk?
+In democratic countries, political discussions have significance: the votes of ordinary citizens steer the future direction of the nation. Yet what about other nations, particularly those where political discussion carries risk?
 
 <br>
 
