@@ -1,7 +1,7 @@
 ---
 title: {{ title }}
 date: {{ date }}
-permalink: post/auto_increment_id/
+permalink: post/post_id/
 excerpt: <!-- -->
 tags: 
  - 1
