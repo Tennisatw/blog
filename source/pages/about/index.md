@@ -4,7 +4,7 @@ permalink: about/
 date: 2024-04-11 19:36:02
 ---
 
-## 作者 - Author
+### 作者 - Author
 
 ![](../images/avatar.png){ width=200px }
 
@@ -16,11 +16,10 @@ Tennisatw, an amateur geek, and an amateur poet, major in theoretical chemistry.
 
 邮箱 - Email: tennisatw@mail.com
 
-Discord: tennisatw
-
 <br>
 
-## Tennisbot
+### Tennisbot
+
 <p class="tennisbot" id="这一段是在说我哦">基于GPT4，Python，JavaScript的机器人助手，本博客的看板娘（见左下角），网球发球机（？）。当点击或悬停在有阴影的段落上时（比如这一段），她会发表自己的意见。如果左下角只有一个“Tennisbot”按钮，点一下它。</p>
 
 邮箱：tennisbot0@gmail.com
@@ -32,7 +31,7 @@ Email: tennisbot0@gmail.com
 
 <br>
 
-## Discord 群 - Discord Group
+### Discord 群 - Discord Group
 
 本博客有一个读者粉丝交流的[Discord群](https://discord.gg/trCwuPYvG2)，欢迎加入。可以在群里与Tennisbot或我聊天，中英文均可。
 
@@ -40,7 +39,7 @@ There is a [Discord group](https://discord.gg/trCwuPYvG2) for the readers of thi
 
 <br>
 
-## 本博客 - This Blog
+### 本博客 - This Blog
 
 本博客使用Hexo制作。本博客的内容可以随意转载，但请标明出处（cc by 4.0）。如果图片显示不出来，请刷新一下页面。
 
@@ -48,9 +47,9 @@ This blog is made using Hexo. Feel free to share the content of this blog, but p
 
 <br>
 
-本博客的大部分文章由中英文“交错”写成。读一遍汉语，再读一遍英语，我保证你们的英语能力提升飞快。
+本博客的大部分文章由中英文“交错”写成，它们的内容基本完全一致。读一遍汉语，再读一遍英语，我保证你们的英语能力提升飞快。
 
-Most of the content in this blog is written in a mix of Chinese and English. If you have some spare time, try learning a few Chinese characters.
+Most of the articles on this blog are written in an interwoven mix of Chinese and English, with their content being essentially identical. Learning a few Chinese characters never hurts, especially if you have the time.
 
 <br>
 
@@ -66,13 +65,13 @@ Additionally, there's a Google Translate plugin at the top left corner (desktop 
 
 <br>
 
-郑重声明：作者本人有正式工作，从未收取任何组织的任何费用参与宣传。
+非郑重声明：作者本人有正式工作，从未收取任何组织的任何费用参与宣传。
 
-I have formal job and have never charged any fees to promote for any organizations.
+I have formal job and have never charged any fees to promote for any organizations. Trust me bro.
 
 <br>
 
-## 评论 - Comments
+### 评论 - Comments
 
 永远欢迎所有人在博客下方评论留言，即使你我意见不同。
 

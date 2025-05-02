@@ -17,11 +17,11 @@ Take a moment—just one minute—to seriously think about this: Who will win th
 
 恭喜你浪费了人生中的一分钟。我保证，这个问题是一个没办法回答的问题。不是说我们键政的水平还不够，不知道谁会成为下一个霸主，而是，即使一个人了解这世上发生的所有真相，听了这世上所有的床，他/她仍然没法判断谁会成为下一个霸主，甚至连概率都很难估算出来。回答这个问题和算命没有本质区别。
 
-举一个最简单的例子：假如明年又来一场疫情，或者某国的科技公司搞出来了遥遥领先的人工智能，或者某位领导人突然去世了，刚才这个问题的答案马上就不一样了。
+举一个最简单的例子：假如明年又来一场疫情，或者某国的科技公司搞出来了遥遥领先的人工智能，或者某位领导人突然去世了，你刚才的猜测还有意义吗。
 
 Congratulations. You’ve just wasted a minute of your life. Honestly, this is a question with no real answer. It's not that our political analysis isn’t sharp enough to predict the outcome, but rather that—even if someone knew every single truth about the world and had heard every secret behind closed doors—they still wouldn’t be able to say who will dominate the future. They probably couldn’t even offer a reliable estimate. Answering this is essentially no different from fortune-telling.
 
-Take a simple example: what if another pandemic breaks out next year? What if a country suddenly makes a breakthrough in artificial intelligence? Or what if a key leader unexpectedly passes away? Any of these events could instantly change the answer to the question.
+Take a simple example: what if another pandemic breaks out next year? What if a country suddenly makes a breakthrough in artificial intelligence? Or what if a key leader unexpectedly passes away? Would your guess still hold any weight?
 
 <br>
 

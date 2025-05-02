@@ -66,9 +66,9 @@ It sounds absurd and uninhibited: after a seemingly rigorous reasoning, the fina
 
 <br>
 
-这是一个25岁的孩子（请允许我在这里用“孩子”来称呼自己）充满幻想的看法。但这是我能想到的，我最好的结局了。
+这是一个孩子（请允许我在这里用“孩子”来称呼自己）充满幻想的看法。但这是我能想到的，我最好的结局了。
 
-This is a visionary view of a 25-year-old kid (allow me to call myself a "kid" here). But this is the best outcome I can think of for myself.
+This is a visionary view of a kid (allow me to call myself a "kid" here). But this is the best outcome I can think of for myself.
 
 <br>
 
