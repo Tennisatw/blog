@@ -2,9 +2,9 @@
 Thumbs.db
 db.json
 *.log
+__pycache__/
 node_modules/
 .deploy*/
 _multiconfig.yml
+.vscode/
 0_scripts.ipynb
-.gitignore
-.gitattributes

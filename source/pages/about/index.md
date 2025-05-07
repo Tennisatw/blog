@@ -4,6 +4,10 @@ permalink: about/
 date: 2024-04-11 19:36:02
 ---
 
+**写给每一个像我的人。**
+
+**To everyone like me.**
+
 ### 作者 - Author
 
 ![](../images/avatar.png){ width=200px }
@@ -41,9 +45,25 @@ There is a [Discord group](https://discord.gg/trCwuPYvG2) for the readers of thi
 
 ### 本博客 - This Blog
 
-本博客使用Hexo制作。本博客的内容可以随意转载，但请标明出处（cc by 4.0）。如果图片显示不出来，请刷新一下页面。
+本博客是一个个人博客，主要记录作者本人的思考和学习心得（以及各种各样的随想）。但本人也保证，大部分文章对读者而言都是有意义的。本人争取在每篇博文中，做到语言轻松灵动，但内容扎实硬核。
 
-This blog is made using Hexo. Feel free to share the content of this blog, but please credit the source（cc by 4.0）. If the images do not display, simply refresh the page.
+欢迎约稿，欢迎投稿，欢迎互动，欢迎转载（需署名）。
+
+This blog is a personal space where I document my thoughts, learning insights, and random thoughts. That said, I promise that most of the posts will hold value for readers. I strive to strike a balance in every entry—light and lively in tone, yet solid and substantial in content.
+
+Commissions, submissions, interactions, and reprints (with attribution) are all warmly welcome.
+
+<br>
+
+Slogen中“像我的人”特指 兴趣广泛，有幽默感，追求更高的智慧，遇事喜欢刨根问底 的人。
+
+The slogan's phrase "people like me" refers specifically to those with broad interests, a sense of humor, a thirst for deeper wisdom, and a habit of digging into the root of things.
+
+<br>
+
+本博客使用Hexo制作，如果图片显示不出来，请刷新一下页面。
+
+The blog is built with Hexo—if images fail to load, try refreshing the page.
 
 <br>
 

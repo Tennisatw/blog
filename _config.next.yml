@@ -215,10 +215,10 @@ footer:
 
   # If not defined, `author` from Hexo `_config.yml` will be used.
   # Set to `false` to disable the copyright statement.
-  copyright: "多想，多读，多练，多问 - Think more, read more, practice more, and ask more"
+  copyright: "写给每一个像我的人 - To everyone like me"
 
   # Powered by Hexo & NexT
-  powered: true
+  powered: false
 
   # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, https://beian.mps.gov.cn
   beian:
