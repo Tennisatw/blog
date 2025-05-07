@@ -6,3 +6,5 @@ node_modules/
 .deploy*/
 _multiconfig.yml
 0_scripts.ipynb
+.gitignore
+.gitattributes
