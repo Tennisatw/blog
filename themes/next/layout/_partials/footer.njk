@@ -19,6 +19,10 @@
       <i class="{{ theme.footer.icon.name }}"></i>
     </span>
     <span class="author" itemprop="copyrightHolder">{{ theme.footer.copyright or author }}</span>
+    <div>
+      <p class="footer-hidden"><br><br><br><br><br><br><br><br>本处广告位招租 - This ad space is available for rent</p>
+      <p class="footer-hidden">上次更新时间 - Last Updated: ||2025/05/07 00:37:48||</p>
+    </div>
   </div>
 {%- endif %}
 
@@ -52,10 +56,6 @@
   <div class="powered-by">
     {%- set next_site = 'https://theme-next.js.org' if theme.scheme === 'Gemini' else 'https://theme-next.js.org/' + theme.scheme | lower + '/' %}
     {{- __('footer.powered', next_url('https://hexo.io', 'Hexo') + ' & ' + next_url(next_site, 'NexT.' + theme.scheme)) }}
-    <div>
-      <p class="footer-hidden"><br><br><br><br><br><br><br><br>本处广告位招租 - This ad space is available for rent</p>
-      <p class="footer-hidden">上次更新时间 - Last Updated: ||2025/05/07 00:33:37||</p>
-    </div>
   </div>
 {%- endif %}
 
