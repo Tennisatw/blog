@@ -1,5 +1,5 @@
 ---
-title: 元键政6：越小的政治问题越有意义 - Meta Political Discussion 6：The Smaller the Political Question, the More Meaningful It Is
+title: 元键政6：越大的政治问题越没有意义 - Meta Political Discussion 6：The Bigger the Political Question, the Less Meaningful It Is
 permalink: post/80/
 excerpt: 真正有意义的问题一经思考讨论，就有可能推动事情发展。而“经由我们的努力，让周围环境变得更好”才是键政的社会意义。<br>The political questions that do matter are questions that, once considered and discussed, have the potential to drive real change. And that’s the true social significance of political discourse：“Through our efforts, we can make our surroundings better.”
 date: 2025-04-22 00:22:41
@@ -34,15 +34,3 @@ Yet this remains one of the internet’s hottest topics. A quick search for “w
 其他的政治大问题也大致如此，比如说“中国什么时候会打台湾？”，或者说“标普指数会涨/跌到多少？”...。这些问题的答案都是不确定的，它们也都没有意义。我们唯一能做的事就是做好两手准备，然后静观其变。
 
 Other big political questions are much the same. “When will China invade Taiwan?” or “How high or low will the S&P 500 go?” These questions all have uncertain answers, and more importantly, they’re ultimately meaningless. The only sensible approach is to prepare for different possibilities—and wait.
-
-<br>
-
----
-
-相反，有意义的政治问题都是小问题，比如“在居委会会议中，应该选择哪种电梯维护方案”，或者“学生是否要与学校交涉，以改善食堂饭菜质量”。
-
-这些问题有意义，不仅是因为这种问题可以被回答，更是因为这个问题的答案会因为你我的努力而改变，即，这些问题一经思考讨论，就有可能推动事情发展。而“经由我们的努力，让周围环境变得更好”才是键政的社会意义。
-
-In contrast, the political questions that do matter are the small ones. Things like, “Which elevator maintenance plan should the neighborhood committee choose?” or “Should students negotiate with their school to improve cafeteria food?”
-
-These questions matter not just because they have concrete answers, but because those answers can change through your efforts and mine. They are questions that, once considered and discussed, have the potential to drive real change. And that’s the true social significance of political discourse: “Through our efforts, we can make our surroundings better.”
