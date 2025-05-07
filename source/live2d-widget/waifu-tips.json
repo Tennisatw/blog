@@ -13,15 +13,15 @@
 			]
 		},
 		{
-			"selector": ".copyright",
+			"selector": "a[href='/about/']",
 			"text": [
-				"Tennisatw有时会念叨的一句话 - A phrase Tennisatw sometimes mutters"
+				"这里有更多有关Tennisatw和我的信息 - more information about Tennisatw and me"
 			]
 		},
 		{
-			"selector": ".menu-item-关于---about",
+			"selector": "a[href='/pages/']",
 			"text": [
-				"这里有更多有关Tennisatw和我的信息 - more information about Tennisatw and me"
+				"和本博客相关的，博文之外的所有页面的列表。A list of all pages related to this blog, other than posts."
 			]
 		},
 		{
@@ -63,7 +63,13 @@
 		{
 			"selector": "a[href='/tags/%E6%95%8F%E6%84%9F-sensitive/']",
 			"text": [
-				"有点敏感的文章，仅有纯英文版 - Articles contain sensitive content. Contact Tennisatw for the original text."
+				"有点敏感的文章，仅有纯英文版 - Articles contain sensitive content"
+			]
+		},
+		{
+			"selector": "a[href='/tags/%E6%96%87%E7%AB%A0%E7%B2%BE%E8%AF%BB-paper-reading/']",
+			"text": [
+				"一些学术文章的精读 - In-depth reading of some academic articles"
 			]
 		},
 		{
@@ -124,9 +130,7 @@
 				"冷知识，Tennisatw是chatgpt的忠实用户 - Fun fact, Tennisatw is a loyal user of chatgpt",
 				"冷知识，Tennisatw的atw是Anti The Wall的意思 - Fun fact, the 'atw' in Tennisatw stands for 'Anti The Wall'",
 				"冷知识，我是Tennisatw开发的第一个项目 - Fun fact, I am the first project developed by Tennisatw",
-				"冷知识，我的生日是12月15日 - Fun fact, my birthday is on December 15th",
-				"囎",
-				"草+1"
+				"冷知识，我的生日是12月15日 - Fun fact, my birthday is on December 15th"
 			]
 		},
 		{

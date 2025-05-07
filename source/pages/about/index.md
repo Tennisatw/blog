@@ -55,9 +55,9 @@ Commissions, submissions, interactions, and reprints (with attribution) are all 
 
 <br>
 
-Slogen中“像我的人”特指 兴趣广泛，有幽默感，追求更高的智慧，遇事喜欢刨根问底 的人。
+<p class="tennisbot" id="还挺自信的">Slogen中“像我的人”特指 兴趣广泛，有幽默感，追求更高的智慧，遇事喜欢刨根问底 的人。</p>
 
-The slogan's phrase "people like me" refers specifically to those with broad interests, a sense of humor, a thirst for deeper wisdom, and a habit of digging into the root of things.
+<p class="tennisbot" id="really got some confidence">The slogan's phrase "people like me" refers specifically to those with broad interests, a sense of humor, a thirst for deeper wisdom, and a habit of digging into the root of things.</p>
 
 <br>
 
@@ -79,9 +79,9 @@ Additionally, there's a Google Translate plugin at the top left corner (desktop 
 
 <br>
 
-<p class="tennisbot" id="😿">如果加载Tennisbot花费太多时间，或者影响了正常阅读，或者只是不想看到她，可以将鼠标放到聊天框上，然后点击弹出的“关闭”按钮来隐藏她，此时左下角会出现一个蓝紫色标签。如果想再次看到Tennisbot，只需点击标签即可。</p>
+<p class="tennisbot" id="哭哭">如果加载Tennisbot花费太多时间，或者影响了正常阅读，或者只是不想看到她，可以将鼠标放到聊天框上，然后点击弹出的“关闭”按钮来隐藏她，此时左下角会出现一个蓝紫色标签。如果想再次看到Tennisbot，只需点击标签即可。</p>
 
-<p class="tennisbot" id="😿">If loading Tennisbot takes too much time, interferes with your reading, or if you simply do not want to see it, you can hide it by hovering your mouse over the chatbox and clicking on the "Close" button that appears. At this point, a purple-blue tag will appear in the lower left corner. If you wish to see Tennisbot again, just click on the tag. </p>
+<p class="tennisbot" id="Sob sob">If loading Tennisbot takes too much time, interferes with your reading, or if you simply do not want to see it, you can hide it by hovering your mouse over the chatbox and clicking on the "Close" button that appears. At this point, a purple-blue tag will appear in the lower left corner. If you wish to see Tennisbot again, just click on the tag. </p>
 
 <br>
 

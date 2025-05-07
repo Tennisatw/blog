@@ -3,7 +3,9 @@ title: 深挖Lammps的源代码
 permalink: post/81/
 excerpt: <!-- -->
 date: 2025-05-03 23:25:20
-tags:
+tags: 
+- 编程 - Programming
+- 随想 - Thoughts
 ---
 
 Lammps是一个分子动力学模拟软件，擅长并行运算。我打算用一点时间（几周），深挖一下Lammps的源代码。
