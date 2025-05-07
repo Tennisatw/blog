@@ -20,13 +20,13 @@
 <script class="next-config" data-name="main" type="application/json">{"hostname":"blog.tennisatw.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.19.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#555080","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"utterances","storage":true,"lazyload":false,"nav":null,"activeClass":"utterances"},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索 - Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits}个结果 - undefined results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
     <meta property="og:type" content="article">
-<meta property="og:title" content="lammps source code">
+<meta property="og:title" content="深挖Lammps的源代码">
 <meta property="og:url" content="https://blog.tennisatw.com/post/81/">
 <meta property="og:site_name" content="Tennisatw的博客 - Blog of Tennisatw">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://blog.tennisatw.com/post/81/1746478049194.png">
 <meta property="article:published_time" content="2025-05-04T05:25:20.000Z">
-<meta property="article:modified_time" content="2025-05-07T05:38:51.218Z">
+<meta property="article:modified_time" content="2025-05-07T05:48:00.710Z">
 <meta property="article:author" content="Tennisatw">
 <meta property="article:tag" content="chemistry">
 <meta property="article:tag" content="programming">
@@ -39,10 +39,10 @@
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://blog.tennisatw.com/post/81/","path":"/post/81/","title":"lammps source code"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://blog.tennisatw.com/post/81/","path":"/post/81/","title":"深挖Lammps的源代码"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>lammps source code | Tennisatw的博客 - Blog of Tennisatw</title>
+<title>深挖Lammps的源代码 | Tennisatw的博客 - Blog of Tennisatw</title>
   
 
 
@@ -234,12 +234,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="lammps source code | Tennisatw的博客 - Blog of Tennisatw">
+      <meta itemprop="name" content="深挖Lammps的源代码 | Tennisatw的博客 - Blog of Tennisatw">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          lammps source code
+          深挖Lammps的源代码
         </h1>
 
         <div class="post-meta-container">
@@ -257,7 +257,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">编辑于 - Edited on</span>
-      <time title="Modified: 2025/05/06 23:38:51" itemprop="dateModified" datetime="2025-05-06T23:38:51-06:00">2025/05/06</time>
+      <time title="Modified: 2025/05/06 23:48:00" itemprop="dateModified" datetime="2025-05-06T23:48:00-06:00">2025/05/06</time>
     </span>
 
   
@@ -344,12 +344,17 @@ definition，可以自动打开src/lammps.h文件，然后寻找同名的src/lam
 <p>在第701行初始化kokkos（gpu/并行加速模块，如果用到的话），引用模块，输入模块等。</p>
 <p>在第715行，初始化input对象，用于读取、解析和执行用户提供的LAMMPS输入脚本命令。</p>
 <p>在第740行，调用了<code>create()</code>和<code>post_create()</code>函数，用于初始化核心模拟组件类，包括：
-- comm（并行计算中的通信）， - neighbor（邻居列表构建和管理）， -
-domain（管理模拟盒子和边界）， - atom（管理原子数据）， -
-group（管理原子组）， - force（管理力场力）， -
-modify（fix命令和compute命令）， - output（管理输出）， -
-update（管理模拟过程中的时间步进，积分，最小化算法）， -
-timer（性能计时） - python（python接口）
+- comm（并行计算中的通信）<br />
+- neighbor（邻居列表构建和管理）<br />
+- domain（管理模拟盒子和边界）<br />
+- atom（管理原子数据）<br />
+- group（管理原子组）<br />
+- force（管理力场力）<br />
+- modify（fix命令和compute命令）<br />
+- output（管理输出）<br />
+- update（管理模拟过程中的时间步进，积分，最小化算法）<br />
+- timer（性能计时）<br />
+- python（python接口）<br />
 等对象，及配置加速器包（kokkos，intel，gpu和openmp）。</p>
 <p><br></p>
 <h4 id="读取并逐行执行输入文件">读取并逐行执行输入文件</h4>
@@ -415,7 +420,7 @@ timer（性能计时） - python（python接口）
   <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
     <div>
       <p class="footer-hidden"><br><br><br><br><br><br><br><br>本处广告位招租 - This ad space is available for rent</p>
-      <p class="footer-hidden">上次更新时间 - Last Updated: ||2025/05/06 23:45:49||</p>
+      <p class="footer-hidden">上次更新时间 - Last Updated: ||2025/05/06 23:48:58||</p>
     </div>
   </div>
 

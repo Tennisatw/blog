@@ -1,5 +1,5 @@
 ---
-title: lammps source code
+title: 深挖Lammps的源代码
 permalink: post/81/
 excerpt: <!-- -->
 date: 2025-05-03 23:25:20
@@ -85,17 +85,17 @@ Lammps项目遵守典型的C++科研类项目架构。本段为不熟悉c++项�
 在第715行，初始化input对象，用于读取、解析和执行用户提供的LAMMPS输入脚本命令。
 
 在第740行，调用了`create()`和`post_create()`函数，用于初始化核心模拟组件类，包括：
-- comm（并行计算中的通信），
-- neighbor（邻居列表构建和管理），
-- domain（管理模拟盒子和边界），
-- atom（管理原子数据），
-- group（管理原子组），
-- force（管理力场力），
-- modify（fix命令和compute命令），
-- output（管理输出），
-- update（管理模拟过程中的时间步进，积分，最小化算法），
-- timer（性能计时）
-- python（python接口）
+- comm（并行计算中的通信）  
+- neighbor（邻居列表构建和管理）  
+- domain（管理模拟盒子和边界）  
+- atom（管理原子数据）  
+- group（管理原子组）  
+- force（管理力场力）  
+- modify（fix命令和compute命令）  
+- output（管理输出）  
+- update（管理模拟过程中的时间步进，积分，最小化算法）  
+- timer（性能计时）  
+- python（python接口）  
 等对象，及配置加速器包（kokkos，intel，gpu和openmp）。
 
 <br>
