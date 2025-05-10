@@ -21,7 +21,7 @@
 		{
 			"selector": "a[href='/pages/']",
 			"text": [
-				"和本博客相关的，博文之外的所有页面的列表。A list of all pages related to this blog, other than posts."
+				"博文之外的所有页面的列表。A list of all pages other than posts."
 			]
 		},
 		{

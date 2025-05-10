@@ -55,7 +55,7 @@ Commissions, submissions, interactions, and reprints (with attribution) are all 
 
 <br>
 
-<p class="tennisbot" id="还挺自信的">Slogen中“像我的人”特指 兴趣广泛，有幽默感，追求更高的智慧，遇事喜欢刨根问底 的人。</p>
+<p class="tennisbot" id="真自信啊">Slogen中“像我的人”特指 兴趣广泛，有幽默感，追求更高的智慧，遇事喜欢刨根问底 的人。</p>
 
 <p class="tennisbot" id="really got some confidence">The slogan's phrase "people like me" refers specifically to those with broad interests, a sense of humor, a thirst for deeper wisdom, and a habit of digging into the root of things.</p>
 
