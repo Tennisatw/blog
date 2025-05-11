@@ -236,47 +236,47 @@ Special Bonds
 
 #### 设置模拟环境
 
-第一个命令是`units real`。即使用真实单位（real units）系统。`units`命令定义在`src/input.cpp`的第2003行。在做了一些参数检查后，调用了`update`对象的`set_units`函数，并把第一个参数传了进去。`set_units`函数具体在`src/update.cpp`的134行。当检测到`units`为`real`时，对`force`对象中的一些物理常数和单位进行设置，包括玻尔兹曼常数，单位转换常数，电子电荷量等等。
+第一个命令是`units real`。即使用真实单位（real units）系统。`units`命令调用了定义在`src/input.cpp`的第2003行的`Input::units()`函数。在函数中，做了一些参数检查后，调用了`update`对象的`set_units`函数（以下简记为`Update::set_units`函数），并把第一个参数传了进去。`set_units`函数具体在`src/update.cpp`的134行。当检测到`units`为`real`时，对`force`对象中的一些物理常数和单位进行设置，包括玻尔兹曼常数，单位转换常数，电子电荷量等等。
 
 `atom_style full`命令定义了原子的类型和属性为`full`(即包含全部的原子参数，包括坐标，键，键角，二面角，电荷...)。它创造了一个AtomVecFull类的实例，用于管理原子数据，并设置其可能的拓扑类型（比如是否可以含有键角，二面角等等）。此类在`src/MOLECULE/atom_vec_full.cpp`中定义。该类继承了抽象的AtomVec类（在`src/atom_vec.cpp`中定义）。
 
-`region box block -5 5 -5 5 -5 5`命令定义了一个正方体的区域，边长为10。`add_region`函数（`src/domain.cpp`第1967行）进行参数检查，id重复检查之后，调用region_creator函数。此函数是一个模板函数（`src/domain.cpp`第55行），其本质上通过`region_map`查找并调用了region block对象的构造函数（`src/region_block.cpp`第30行）创建region（包括计算各边顶点，各面法向量）。最后，回到`add_region`函数，将region对象添加到regions列表中。
+`region box block -5 5 -5 5 -5 5`命令定义了一个正方体的区域，边长为10。此命令调用了`Domain::add_region`函数（`src/domain.cpp`第1967行）进行参数检查，id重复检查之后，调用region_creator函数。此函数是一个模板函数（`src/domain.cpp`第55行），其本质上通过`region_map`查找并调用了region block对象的构造函数（`src/region_block.cpp`第30行）创建region（包括计算各边顶点，各面法向量）。最后，回到`add_region`函数，将region对象添加到`domain->regions`列表中。
 
-`create_box`是一个 调用了映射到`command_map`中的函数 的命令。此函数其定义在`src/create_box.cpp`中。在做了一些检查后，从196行开始，通过bond/types等关键词，定义`atom`对象的nbondtypes，nangletypes，bond_per_atom，angle_per_atom属性。
+`create_box`调用了 映射到`command_map`中的函数`CreateBox::command`,此函数其定义在`src/create_box.cpp`中。在做了一些检查后，从196行开始，通过bond/types等关键词，定义`atom`对象的nbondtypes，nangletypes，bond_per_atom，angle_per_atom属性。
 
 <br>
 
 #### 设置力场参数
 
-`mass 1 15.9994`命令设置了原子类型1的质量为15.9994。`mass`命令调用了`atom`对象的`set_mass`函数（`src/atom.cpp`第1933行）。
+`mass 1 15.9994`命令设置了原子类型1的质量为15.9994。`mass`命令调用了`Atom::set_mass`函数（`src/atom.cpp`第1933行）。
 
-`pair_style lj/cut/coul/cut 10.0`命令设置了原子之间的相互作用力为lj/cut/coul/cut，截断距离为10.0A。具体而言，它规定了原子之间的相互作用力包括有截断半径的范德华力（lj/cut）和有截断半径的库仑力（coul/cut）。此命令会调用在`src/input.cpp`第1787行的`pair_style`函数，当检查过之前没有定义pair_style后，在1787行，其调用`create_pair`函数（在`src/force.cpp` 第227行）以创建pair相互作用。
+`pair_style lj/cut/coul/cut 10.0`命令设置了原子之间的相互作用力为lj/cut/coul/cut，截断距离为10.0A。具体而言，它规定了原子之间的相互作用力包括有截断半径的范德华力（lj/cut）和有截断半径的库仑力（coul/cut）。此命令会调用在`src/input.cpp`第1787行的`Input::pair_style`函数，当检查过之前没有定义pair_style后，在1787行，其调用`Force::create_pair`函数（在`src/force.cpp` 第227行）以创建pair相互作用。
 
-在`create_pair`函数中，调用new_pair函数（247行），其内部在`pair_map`中查找，所设置的pair样式是否有对应的类（在本例中，pair样式为lj/cut/coul/cut，对应的类为`PairLJCutCoulCut`（在`src/pair_lj_cut_coul_cut.cpp`中的33行））。如果有，则调用`pair_map`中pair样式对应的函数，并返回生成的Pair对象的指针。
+在`create_pair`函数中，调用`Force::new_pair`函数（247行），其内部在`pair_map`中查找，所设置的pair样式是否有对应的类（在本例中，pair样式为lj/cut/coul/cut，对应的类为`PairLJCutCoulCut`（在`src/pair_lj_cut_coul_cut.cpp`中的33行））。如果有，则调用`pair_map`中pair样式对应的函数，并返回生成的Pair对象的指针。
 
 `pair_map`本身的生成过程很精妙。其定义在`src/force.cpp`第89行：`pair_map = new PairCreatorMap();`。这一行动态创建了一个`PairCreatorMap`对象，并将其指针存储在`pair_map`中。`PairCreatorMap`对象本身是一个映射，键是形如“lj/cut/coul/cut”的字符串，而值是一个函数指针，此函数将返回一个指向`Pair`类型的指针。
 
 第92行定义了一个宏`PairStyle`，其接受两个参数`key`和`Class`。其作用则是将`&style_creator<Pair, Class>`赋值给`(*pair_map)[#key]`。比如`PairStyle("lj/cut/coul/cut", PairLJCutCoulCut)`就等于`(*pair_map)["lj/cut/coul/cut"] = &style_creator<Pair, PairLJCutCoulCut>;`。这其中，`style_creator`是一个通用的工厂函数，在`src/force.cpp`的第41行定义。其作用是动态创建一个`Class`对象（在本例中为`PairLJCutCoulCut`对象），并返回指向此对象的指针。
 
-每个以`pair_`开头的头文件都包含#ifdef PAIR_CLASS块，其中使用`PairStyle`宏。在编译过程中将生成`style_pair.h`文件，其包含所有以`pair_`开头的头文件。在生成`pair_map`时，会`#include "style_pair.h"`从而将这些文件对应的类注册进`pair_map`中。
+每个以`pair_`开头的头文件都包含#ifdef PAIR_CLASS块，其中使用`PairStyle`宏。在编译过程中将生成`style_pair.h`文件，其包含所有以`pair_`开头的头文件。第93行的`#include "style_pair.h"`可以将这些文件对应的类注册进`pair_map`中。
 
 上述 创建不同类型的Pair实例的编程模式 叫做“Style Factory”。此编程模式被很多其他的功能所采用，包括创建Bond，Angle，Dihedral，Improper等等，以及上文提到的atom style。[官方文档1](https://docs.lammps.org/Developer_code_design.html#style-factories)和[官方文档2](https://docs.lammps.org/Developer_write_pair.html#writing-new-pair-styles)中有对此过程的详细介绍。
 
-在`create_pair`创建完Pair对象后，返回到`pair_style`函数，并再次调用`force->pair->settings`函数（在`src/pair_lj_cut_coul_cut.cpp`的第191行）设置Pair对象的cutoff参数。
+在`create_pair`创建完Pair对象后，返回到`pair_style`函数，并再次调用`force->pair`对应的`settings`函数（在本例中为`PairLJCutCoulCut::settings`函数，在`src/pair_lj_cut_coul_cut.cpp`的第191行）设置Pair对象的cutoff参数。
 
-`pair_coeff`命令设置了各种原子类型之间相互作用力参数，其函数定义在`src/pair_lj_cut_coul_cut.cpp`的第218行。其读取原子类型1，原子类型2，epsilon，sigma等参数，并储存。
+`pair_coeff`命令设置了各种原子类型之间相互作用力参数，其函数为`PairLJCutCoulCut::coeff`，定义在`src/pair_lj_cut_coul_cut.cpp`的第218行。其读取原子类型1，原子类型2，epsilon，sigma等参数，并储存。
 
-对bond的设置也是类似的。即先进入`create_bond`函数，在`bond_map`中查找`bond_style`的对应类，然后创建bond对象。`bond_coeff`命令则是设置bond对象的参数。angle同理。
+对bond的设置也是类似的。即先进入`Force::create_bond`函数，在`bond_map`中查找`bond_style`的对应类，然后创建bond对象。`bond_coeff`命令则是设置bond对象的参数。angle同理。
 
 <br>
 
 #### 填充分子
 
-`molecule water spce.mol`命令定义了一个分子类型water，其拓扑结构在spce.mol文件中。`molecule`命令调用到了`src/atom.cpp`的`add_molecule`函数，在其中通过新建`Molecule`对象，读取spce.mol文件，解析分子拓扑结构，并将其存储在`atom`对象的`molecules`中。
+`molecule water spce.mol`命令定义了一个分子类型water，其拓扑结构在spce.mol文件中。`molecule`命令调用到了`src/atom.cpp`的`Atom::add_molecule`函数，在其中通过新建`Molecule`对象，读取spce.mol文件，解析分子拓扑结构，并将其存储在`atom`对象的`molecules`中。`Molecule`对象的构造函数`Molecule::Molecule`在`src/molecule.cpp`的第42行。读取spce.mol文件的函数为`Molecule::read`，在第425行。
 
 `create_atoms 0 random 33 34564 NULL mol water 25367 overlap 1.33`命令则是创建了33个water分子，随机分布在模拟盒子中。`create_atoms`也调用了一个映射到`command_map`中的函数：`CreateAtoms->command`（在`src/create_atoms.cpp`第97行）。从第120行开始，其开始解读参数（我们的参数为`0 random 33 34564 NULL`），从197行开始解读关键字（我们的关键字为`mol water 25367 overlap 1.33`）。经过了复杂的检查，在第532行，调用了`add_random`函数。
 
-在`add_random`函数中，首先设置随机数生成器，然后依据region确定填充边界。然后在第835行进入主循环：外层循环`nrandom`次（在本例中是33），尝试插入这么多次分子。内层循环`maxtry`次，最多尝试这么多次，来寻找一个有效的位置。
+在`add_random`函数中，首先设置随机数生成器，然后依据region确定填充边界。然后在第835行进入主循环：外层循环`nrandom`次（在本例中是33），尝试插入这么多次分子。内层循环`maxtry`次（默认为1000），最多尝试这么多次，来寻找一个有效的位置。
 
 在内层循环中，首先生成随机坐标，然后检查是否在区域内，如果定义了`overlap`，则检查插入的分子的各原子坐标是否现有原子有重叠。MPI进程0计算构成新分子的所有原子的坐标，而其他MPI则并行检查分子中每一个原子是否与已有的原子重叠。
 
@@ -286,3 +286,8 @@ Special Bonds
 
 #### 设置模拟流程
 
+`timestep 1.0`命令设置了时间步长为1.0fs。其调用`Input::timestep`函数，设置`update->dt`为1.0fs。
+
+`fix rigid all shake 0.0001 10 10000 b 1 a 1`命令使用shake算法设置了分子中编号为1的键和编号为1的键角的约束，使水分子成为刚性。`fix`命令调用了`Modify::add_fix`，在其中，再次使用Style Factory模式，调用了`src/RIGID/fix_shake.cpp`中的`FixShake::FixShake`构造函数，创建了一个`FixShake`对象，并将其添加到`modify->fix`列表中。
+
+`minimize 0.0 0.0 1000 10000`

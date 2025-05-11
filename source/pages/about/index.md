@@ -111,10 +111,6 @@ The comment plugin used on this blog is [Waline](https://waline.js.org/en/), whi
 
 <br>
 
-对于所有“像我的人”，我有2句发自肺腑的嘱托：
-
-For all "people like me", I have two heartfelt pieces of advice:
-
 **多想，多读，多练，多问，努力看穿这世界 - Think more, read more, practice more, ask more—strive to see through the world clearly.**
 
 **此外，如果可能的话，做一个善良的人 - Moreover, if possible, try to be a kind person.**
