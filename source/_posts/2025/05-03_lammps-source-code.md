@@ -68,7 +68,7 @@ Lammps项目遵守典型的C++科研类项目架构。本段为不熟悉c++项�
 
 <br>
 
-### Lammps的工作流程
+### Lammps的一般工作流程
 
 当运行Lammps时，会首先运行`src/main.cpp`中的`main()`函数。该函数是Lammps的入口函数。这其中：
 `auto lammps = new LAMMPS(argc, argv, lammps_comm);`会创建一个LAMMPS对象。该对象管理Lammps的所有功能。
@@ -125,9 +125,9 @@ Lammps项目遵守典型的C++科研类项目架构。本段为不熟悉c++项�
 
 <br>
 
-### MD模拟的流程
+### MD模拟流程
 
-一份极简的[官方MD模拟输入文件](https://docs.lammps.org/Howto_spc.html)如下所示：
+一份极简的官方MD（Molecular Dynamics，分子动力学）模拟的[输入文件](https://docs.lammps.org/Howto_spc.html)如下所示：
 
 ```lammps
 units real
@@ -165,7 +165,74 @@ run 20000 upto
 write_data spce.data nocoeff
 ```
 
-让我们一行一行地分析一下此模拟的流程。
+其中，spce.mol是一个文件，内容如下：
+
+```lammps
+# Water molecule. SPC/E geometry
+
+3 atoms
+2 bonds
+1 angles
+
+Coords
+
+1    0.00000  -0.06461   0.00000
+2    0.81649   0.51275   0.00000
+3   -0.81649   0.51275   0.00000
+
+Types
+
+1        1   # O
+2        2   # H
+3        2   # H
+
+Charges
+
+1       -0.8476
+2        0.4238
+3        0.4238
+
+Bonds
+
+1   1      1      2
+2   1      1      3
+
+Angles
+
+1   1      2      1      3
+
+Shake Flags
+
+1 1
+2 1
+3 1
+
+Shake Atoms
+
+1 1 2 3
+2 1 2 3
+3 1 2 3
+
+Shake Bond Types
+
+1 1 1 1
+2 1 1 1
+3 1 1 1
+
+Special Bond Counts
+
+1 2 0 0
+2 1 1 0
+3 1 1 0
+
+Special Bonds
+
+1 2 3
+2 1 3
+3 1 2
+```
+
+让我们一行一行地分析一下此MD模拟的流程。
 
 #### 设置模拟环境
 
@@ -175,7 +242,7 @@ write_data spce.data nocoeff
 
 `region box block -5 5 -5 5 -5 5`命令定义了一个正方体的区域，边长为10。`add_region`函数（`src/domain.cpp`第1967行）进行参数检查，id重复检查之后，调用region_creator函数。此函数是一个模板函数（`src/domain.cpp`第55行），其本质上通过`region_map`查找并调用了region block对象的构造函数（`src/region_block.cpp`第30行）创建region（包括计算各边顶点，各面法向量）。最后，回到`add_region`函数，将region对象添加到regions列表中。
 
-`create_box`是一个映射到`command_map`中的函数。其定义在`src/create_box.cpp`中。在做了一些检查后，从196行开始，通过bond/types等关键词，定义`atom`对象的nbondtypes，nangletypes，bond_per_atom，angle_per_atom属性。
+`create_box`是一个 调用了映射到`command_map`中的函数 的命令。此函数其定义在`src/create_box.cpp`中。在做了一些检查后，从196行开始，通过bond/types等关键词，定义`atom`对象的nbondtypes，nangletypes，bond_per_atom，angle_per_atom属性。
 
 <br>
 
@@ -183,16 +250,38 @@ write_data spce.data nocoeff
 
 `mass 1 15.9994`命令设置了原子类型1的质量为15.9994。`mass`命令调用了`atom`对象的`set_mass`函数（`src/atom.cpp`第1933行）。
 
-`pair_style lj/cut/coul/cut 10.0`命令设置了原子之间的相互作用力为lj/cut/coul/cut，截断距离为10.0A。具体而言，它规定了原子之间的相互作用力包括有截断半径的范德华力（lj/cut）和有截断半径的库仑力（coul/cut）。此命令会调用在`src/input.cpp`第1787行的pair_style函数，当检查过之前没有定义pair_style后，在1787行，其调用create_pair函数（在`src/force.cpp` 第227行）以创建pair相互作用。
+`pair_style lj/cut/coul/cut 10.0`命令设置了原子之间的相互作用力为lj/cut/coul/cut，截断距离为10.0A。具体而言，它规定了原子之间的相互作用力包括有截断半径的范德华力（lj/cut）和有截断半径的库仑力（coul/cut）。此命令会调用在`src/input.cpp`第1787行的`pair_style`函数，当检查过之前没有定义pair_style后，在1787行，其调用`create_pair`函数（在`src/force.cpp` 第227行）以创建pair相互作用。
 
-在create_pair函数中，调用new_pair函数（247行），其内部在`pair_map`中查找，所设置的pair样式是否有对应的类（在本例中，pair样式为lj/cut/coul/cut，对应的类为`PairLJCutCoulCut`（在`src/pair_lj_cut_coul_cut.cpp`中的33行））。
+在`create_pair`函数中，调用new_pair函数（247行），其内部在`pair_map`中查找，所设置的pair样式是否有对应的类（在本例中，pair样式为lj/cut/coul/cut，对应的类为`PairLJCutCoulCut`（在`src/pair_lj_cut_coul_cut.cpp`中的33行））。如果有，则调用`pair_map`中pair样式对应的函数，并返回生成的Pair对象的指针。
 
-`pair_map`本身的生成过程很精妙。其定义在`src/force.cpp`第89行：`pair_map = new PairCreatorMap();`。这一行动态分布了一个`PairCreatorMap`对象，并将其指针存储在`pair_map`中。`PairCreatorMap`是一个映射，键是形如“lj/cut/coul/cut”的字符串，而值是一个函数指针，此函数将返回一个指向`Pair`类型的指针。
+`pair_map`本身的生成过程很精妙。其定义在`src/force.cpp`第89行：`pair_map = new PairCreatorMap();`。这一行动态创建了一个`PairCreatorMap`对象，并将其指针存储在`pair_map`中。`PairCreatorMap`对象本身是一个映射，键是形如“lj/cut/coul/cut”的字符串，而值是一个函数指针，此函数将返回一个指向`Pair`类型的指针。
 
-第92行定义了一个宏`PairStyle`，其接受两个参数`key`和`Class`。其作用则是将`&style_creator<Pair, Class>`赋值给`(*pair_map)[#key]`。比如`PairStyle("lj/cut/coul/cut", PairLJCutCoulCut)`就等于`(*pair_map)["lj/cut/coul/cut"] = &style_creator<Pair, PairLJCutCoulCut>;`。
+第92行定义了一个宏`PairStyle`，其接受两个参数`key`和`Class`。其作用则是将`&style_creator<Pair, Class>`赋值给`(*pair_map)[#key]`。比如`PairStyle("lj/cut/coul/cut", PairLJCutCoulCut)`就等于`(*pair_map)["lj/cut/coul/cut"] = &style_creator<Pair, PairLJCutCoulCut>;`。这其中，`style_creator`是一个通用的工厂函数，在`src/force.cpp`的第41行定义。其作用是动态创建一个`Class`对象（在本例中为`PairLJCutCoulCut`对象），并返回指向此对象的指针。
 
-`style_creator`是一个通用的工厂函数，在`src/force.cpp`的第41行定义。其作用是动态创建一个`Class`对象（在本例中为`PairLJCutCoulCut`对象），并返回指向此对象的指针。
+每个以`pair_`开头的头文件都包含#ifdef PAIR_CLASS块，其中使用`PairStyle`宏。在编译过程中将生成`style_pair.h`文件，其包含所有以`pair_`开头的头文件。在生成`pair_map`时，会`#include "style_pair.h"`从而将这些文件对应的类注册进`pair_map`中。
 
-`style_pair.h`文件将在编译过程中生成，其包含所有以`pair_`开头的头文件，并调用`PairStyle`宏将这些文件对应的类注册进`pair_map`中。`doc/src/Developer_code_design.rst`和`doc/src/Developer_write_pair.rst`中有对此过程的详细介绍。
+上述 创建不同类型的Pair实例的编程模式 叫做“Style Factory”。此编程模式被很多其他的功能所采用，包括创建Bond，Angle，Dihedral，Improper等等，以及上文提到的atom style。[官方文档1](https://docs.lammps.org/Developer_code_design.html#style-factories)和[官方文档2](https://docs.lammps.org/Developer_write_pair.html#writing-new-pair-styles)中有对此过程的详细介绍。
 
-上述 创建不同类型的Pair实例的编程模式 叫做“Style Factory”。此编程模式被很多其他的功能所采用，包括创建Bond，Angle，Dihedral，Improper等等，以及上文提到的atom style。
+在`create_pair`创建完Pair对象后，返回到`pair_style`函数，并再次调用`force->pair->settings`函数（在`src/pair_lj_cut_coul_cut.cpp`的第191行）设置Pair对象的cutoff参数。
+
+`pair_coeff`命令设置了各种原子类型之间相互作用力参数，其函数定义在`src/pair_lj_cut_coul_cut.cpp`的第218行。其读取原子类型1，原子类型2，epsilon，sigma等参数，并储存。
+
+对bond的设置也是类似的。即先进入`create_bond`函数，在`bond_map`中查找`bond_style`的对应类，然后创建bond对象。`bond_coeff`命令则是设置bond对象的参数。angle同理。
+
+<br>
+
+#### 填充分子
+
+`molecule water spce.mol`命令定义了一个分子类型water，其拓扑结构在spce.mol文件中。`molecule`命令调用到了`src/atom.cpp`的`add_molecule`函数，在其中通过新建`Molecule`对象，读取spce.mol文件，解析分子拓扑结构，并将其存储在`atom`对象的`molecules`中。
+
+`create_atoms 0 random 33 34564 NULL mol water 25367 overlap 1.33`命令则是创建了33个water分子，随机分布在模拟盒子中。`create_atoms`也调用了一个映射到`command_map`中的函数：`CreateAtoms->command`（在`src/create_atoms.cpp`第97行）。从第120行开始，其开始解读参数（我们的参数为`0 random 33 34564 NULL`），从197行开始解读关键字（我们的关键字为`mol water 25367 overlap 1.33`）。经过了复杂的检查，在第532行，调用了`add_random`函数。
+
+在`add_random`函数中，首先设置随机数生成器，然后依据region确定填充边界。然后在第835行进入主循环：外层循环`nrandom`次（在本例中是33），尝试插入这么多次分子。内层循环`maxtry`次，最多尝试这么多次，来寻找一个有效的位置。
+
+在内层循环中，首先生成随机坐标，然后检查是否在区域内，如果定义了`overlap`，则检查插入的分子的各原子坐标是否现有原子有重叠。MPI进程0计算构成新分子的所有原子的坐标，而其他MPI则并行检查分子中每一个原子是否与已有的原子重叠。
+
+如果通过了所有检查，则调用`add_molecule()`函数（在`src/create_atoms.cpp`的第1595行），将分子添加到`atomvec`中。
+
+<br>
+
+#### 设置模拟流程

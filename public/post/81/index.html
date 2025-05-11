@@ -27,7 +27,7 @@
 <meta property="og:image" content="https://blog.tennisatw.com/post/81/1746478049194.png">
 <meta property="og:image" content="https://blog.tennisatw.com/post/81/1746911232551.png">
 <meta property="article:published_time" content="2025-05-04T05:25:20.000Z">
-<meta property="article:modified_time" content="2025-05-10T21:32:30.443Z">
+<meta property="article:modified_time" content="2025-05-11T06:36:14.571Z">
 <meta property="article:author" content="Tennisatw">
 <meta property="article:tag" content="随想 - Thoughts">
 <meta property="article:tag" content="编程 - Programming">
@@ -154,7 +154,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#lammps%E7%9A%84%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84"><span class="nav-text">Lammps的项目结构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%A1%B6%E5%B1%82%E6%96%87%E4%BB%B6"><span class="nav-text">顶层文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81"><span class="nav-text">代码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B7%A5%E5%85%B7"><span class="nav-text">工具</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%96%87%E6%A1%A3"><span class="nav-text">文档</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%B6%E4%BB%96"><span class="nav-text">其他</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#lammps%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B"><span class="nav-text">Lammps的工作流程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#md%E6%A8%A1%E6%8B%9F%E7%9A%84%E6%B5%81%E7%A8%8B"><span class="nav-text">MD模拟的流程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E6%A8%A1%E6%8B%9F%E7%8E%AF%E5%A2%83"><span class="nav-text">设置模拟环境</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E5%8A%9B%E5%9C%BA%E5%8F%82%E6%95%B0"><span class="nav-text">设置力场参数</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#lammps%E7%9A%84%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84"><span class="nav-text">Lammps的项目结构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%A1%B6%E5%B1%82%E6%96%87%E4%BB%B6"><span class="nav-text">顶层文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81"><span class="nav-text">代码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B7%A5%E5%85%B7"><span class="nav-text">工具</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%96%87%E6%A1%A3"><span class="nav-text">文档</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%B6%E4%BB%96"><span class="nav-text">其他</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#lammps%E7%9A%84%E4%B8%80%E8%88%AC%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B"><span class="nav-text">Lammps的一般工作流程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#md%E6%A8%A1%E6%8B%9F%E6%B5%81%E7%A8%8B"><span class="nav-text">MD模拟流程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E6%A8%A1%E6%8B%9F%E7%8E%AF%E5%A2%83"><span class="nav-text">设置模拟环境</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E5%8A%9B%E5%9C%BA%E5%8F%82%E6%95%B0"><span class="nav-text">设置力场参数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%A1%AB%E5%85%85%E5%88%86%E5%AD%90"><span class="nav-text">填充分子</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E6%A8%A1%E6%8B%9F%E6%B5%81%E7%A8%8B"><span class="nav-text">设置模拟流程</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -257,7 +257,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">编辑于 - Edited on</span>
-      <time title="Modified: 2025/05/10 15:32:30" itemprop="dateModified" datetime="2025-05-10T15:32:30-06:00">2025/05/10</time>
+      <time title="Modified: 2025/05/11 00:36:14" itemprop="dateModified" datetime="2025-05-11T00:36:14-06:00">2025/05/11</time>
     </span>
 
   
@@ -267,14 +267,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">字数 - Word count: </span>
-      <span>2.4k</span>
+      <span>3.1k</span>
     </span>
     <span class="post-meta-item" title="阅读时间 - Reading time">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时间 - Reading time &asymp;</span>
-      <span>9 mins.</span>
+      <span>11 mins.</span>
     </span>
 </div>
 
@@ -338,7 +338,7 @@ target="_blank" rel="noopener" href="https://www.sciencedirect.com/science/artic
 <li>third_party/：指向第三方库的链接。</li>
 </ul>
 <p><br></p>
-<h3 id="lammps的工作流程">Lammps的工作流程</h3>
+<h3 id="lammps的一般工作流程">Lammps的一般工作流程</h3>
 <p>当运行Lammps时，会首先运行<code>src/main.cpp</code>中的<code>main()</code>函数。该函数是Lammps的入口函数。这其中：
 <code>auto lammps = new LAMMPS(argc, argv, lammps_comm);</code>会创建一个LAMMPS对象。该对象管理Lammps的所有功能。</p>
 <p>（注：在VSCode右键点击LAMMPS，选择go to
@@ -381,31 +381,49 @@ target="_blank" rel="noopener" href="https://docs.lammps.org/Developer_org.html"
 <p><br></p>
 <p>所有命令都执行完毕后，Lammps中止MPI，优雅退出。</p>
 <p><br></p>
-<h3 id="md模拟的流程">MD模拟的流程</h3>
-<p>一份极简的<a
-target="_blank" rel="noopener" href="https://docs.lammps.org/Howto_spc.html">官方MD模拟输入文件</a>如下所示：</p>
+<h3 id="md模拟流程">MD模拟流程</h3>
+<p>一份极简的官方MD（Molecular Dynamics，分子动力学）模拟的<a
+target="_blank" rel="noopener" href="https://docs.lammps.org/Howto_spc.html">输入文件</a>如下所示：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">units real</span><br><span class="line">atom_style full</span><br><span class="line">region box block -5 5 -5 5 -5 5</span><br><span class="line">create_box 2 box  bond/types 1 angle/types 1 &amp;</span><br><span class="line">                extra/bond/per/atom 2 extra/angle/per/atom 1 extra/special/per/atom 2</span><br><span class="line"></span><br><span class="line">mass 1 15.9994</span><br><span class="line">mass 2 1.008</span><br><span class="line"></span><br><span class="line">pair_style lj/cut/coul/cut 10.0</span><br><span class="line">pair_coeff 1 1 0.1553 3.166</span><br><span class="line">pair_coeff 1 2 0.0    1.0</span><br><span class="line">pair_coeff 2 2 0.0    1.0</span><br><span class="line"></span><br><span class="line">bond_style zero</span><br><span class="line">bond_coeff 1 1.0</span><br><span class="line"></span><br><span class="line">angle_style zero</span><br><span class="line">angle_coeff 1 109.47</span><br><span class="line"></span><br><span class="line">molecule water spce.mol</span><br><span class="line">create_atoms 0 random 33 34564 NULL mol water 25367 overlap 1.33</span><br><span class="line"></span><br><span class="line">timestep 1.0</span><br><span class="line">fix rigid     all shake 0.0001 10 10000 b 1 a 1</span><br><span class="line">minimize 0.0 0.0 1000 10000</span><br><span class="line">velocity all create 300.0 5463576</span><br><span class="line">fix integrate all nvt temp 300.0 300.0 100.0</span><br><span class="line"></span><br><span class="line">thermo_style custom step temp press etotal density pe ke</span><br><span class="line">thermo 1000</span><br><span class="line">run 20000 upto</span><br><span class="line">write_data spce.data nocoeff</span><br></pre></td></tr></table></figure>
-<p>让我们一行一行地分析一下此模拟的流程。</p>
+<p>其中，spce.mol是一个文件，内容如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line"># Water molecule. SPC/E geometry</span><br><span class="line"></span><br><span class="line">3 atoms</span><br><span class="line">2 bonds</span><br><span class="line">1 angles</span><br><span class="line"></span><br><span class="line">Coords</span><br><span class="line"></span><br><span class="line">1    0.00000  -0.06461   0.00000</span><br><span class="line">2    0.81649   0.51275   0.00000</span><br><span class="line">3   -0.81649   0.51275   0.00000</span><br><span class="line"></span><br><span class="line">Types</span><br><span class="line"></span><br><span class="line">1        1   # O</span><br><span class="line">2        2   # H</span><br><span class="line">3        2   # H</span><br><span class="line"></span><br><span class="line">Charges</span><br><span class="line"></span><br><span class="line">1       -0.8476</span><br><span class="line">2        0.4238</span><br><span class="line">3        0.4238</span><br><span class="line"></span><br><span class="line">Bonds</span><br><span class="line"></span><br><span class="line">1   1      1      2</span><br><span class="line">2   1      1      3</span><br><span class="line"></span><br><span class="line">Angles</span><br><span class="line"></span><br><span class="line">1   1      2      1      3</span><br><span class="line"></span><br><span class="line">Shake Flags</span><br><span class="line"></span><br><span class="line">1 1</span><br><span class="line">2 1</span><br><span class="line">3 1</span><br><span class="line"></span><br><span class="line">Shake Atoms</span><br><span class="line"></span><br><span class="line">1 1 2 3</span><br><span class="line">2 1 2 3</span><br><span class="line">3 1 2 3</span><br><span class="line"></span><br><span class="line">Shake Bond Types</span><br><span class="line"></span><br><span class="line">1 1 1 1</span><br><span class="line">2 1 1 1</span><br><span class="line">3 1 1 1</span><br><span class="line"></span><br><span class="line">Special Bond Counts</span><br><span class="line"></span><br><span class="line">1 2 0 0</span><br><span class="line">2 1 1 0</span><br><span class="line">3 1 1 0</span><br><span class="line"></span><br><span class="line">Special Bonds</span><br><span class="line"></span><br><span class="line">1 2 3</span><br><span class="line">2 1 3</span><br><span class="line">3 1 2</span><br></pre></td></tr></table></figure>
+<p>让我们一行一行地分析一下此MD模拟的流程。</p>
 <h4 id="设置模拟环境">设置模拟环境</h4>
 <p>第一个命令是<code>units real</code>。即使用真实单位（real
 units）系统。<code>units</code>命令定义在<code>src/input.cpp</code>的第2003行。在做了一些参数检查后，调用了<code>update</code>对象的<code>set_units</code>函数，并把第一个参数传了进去。<code>set_units</code>函数具体在<code>src/update.cpp</code>的134行。当检测到<code>units</code>为<code>real</code>时，对<code>force</code>对象中的一些物理常数和单位进行设置，包括玻尔兹曼常数，单位转换常数，电子电荷量等等。</p>
 <p><code>atom_style full</code>命令定义了原子的类型和属性为<code>full</code>(即包含全部的原子参数，包括坐标，键，键角，二面角，电荷...)。它创造了一个AtomVecFull类的实例，用于管理原子数据，并设置其可能的拓扑类型（比如是否可以含有键角，二面角等等）。此类在<code>src/MOLECULE/atom_vec_full.cpp</code>中定义。该类继承了抽象的AtomVec类（在<code>src/atom_vec.cpp</code>中定义）。</p>
 <p><code>region box block -5 5 -5 5 -5 5</code>命令定义了一个正方体的区域，边长为10。<code>add_region</code>函数（<code>src/domain.cpp</code>第1967行）进行参数检查，id重复检查之后，调用region_creator函数。此函数是一个模板函数（<code>src/domain.cpp</code>第55行），其本质上通过<code>region_map</code>查找并调用了region
 block对象的构造函数（<code>src/region_block.cpp</code>第30行）创建region（包括计算各边顶点，各面法向量）。最后，回到<code>add_region</code>函数，将region对象添加到regions列表中。</p>
-<p><code>create_box</code>是一个映射到<code>command_map</code>中的函数。其定义在<code>src/create_box.cpp</code>中。在做了一些检查后，从196行开始，通过bond/types等关键词，定义<code>atom</code>对象的nbondtypes，nangletypes，bond_per_atom，angle_per_atom属性。</p>
+<p><code>create_box</code>是一个
+调用了映射到<code>command_map</code>中的函数
+的命令。此函数其定义在<code>src/create_box.cpp</code>中。在做了一些检查后，从196行开始，通过bond/types等关键词，定义<code>atom</code>对象的nbondtypes，nangletypes，bond_per_atom，angle_per_atom属性。</p>
 <p><br></p>
 <h4 id="设置力场参数">设置力场参数</h4>
 <p><code>mass 1 15.9994</code>命令设置了原子类型1的质量为15.9994。<code>mass</code>命令调用了<code>atom</code>对象的<code>set_mass</code>函数（<code>src/atom.cpp</code>第1933行）。</p>
-<p><code>pair_style lj/cut/coul/cut 10.0</code>命令设置了原子之间的相互作用力为lj/cut/coul/cut，截断距离为10.0A。具体而言，它规定了原子之间的相互作用力包括有截断半径的范德华力（lj/cut）和有截断半径的库仑力（coul/cut）。此命令会调用在<code>src/input.cpp</code>第1787行的pair_style函数，当检查过之前没有定义pair_style后，在1787行，其调用create_pair函数（在<code>src/force.cpp</code>
+<p><code>pair_style lj/cut/coul/cut 10.0</code>命令设置了原子之间的相互作用力为lj/cut/coul/cut，截断距离为10.0A。具体而言，它规定了原子之间的相互作用力包括有截断半径的范德华力（lj/cut）和有截断半径的库仑力（coul/cut）。此命令会调用在<code>src/input.cpp</code>第1787行的<code>pair_style</code>函数，当检查过之前没有定义pair_style后，在1787行，其调用<code>create_pair</code>函数（在<code>src/force.cpp</code>
 第227行）以创建pair相互作用。</p>
-<p>在create_pair函数中，调用new_pair函数（247行），其内部在<code>pair_map</code>中查找，所设置的pair样式是否有对应的类（在本例中，pair样式为lj/cut/coul/cut，对应的类为<code>PairLJCutCoulCut</code>（在<code>src/pair_lj_cut_coul_cut.cpp</code>中的33行））。</p>
-<p><code>pair_map</code>本身的生成过程很精妙。其定义在<code>src/force.cpp</code>第89行：<code>pair_map = new PairCreatorMap();</code>。这一行动态分布了一个<code>PairCreatorMap</code>对象，并将其指针存储在<code>pair_map</code>中。<code>PairCreatorMap</code>是一个映射，键是形如“lj/cut/coul/cut”的字符串，而值是一个函数指针，此函数将返回一个指向<code>Pair</code>类型的指针。</p>
-<p>第92行定义了一个宏<code>PairStyle</code>，其接受两个参数<code>key</code>和<code>Class</code>。其作用则是将<code>&amp;style_creator&lt;Pair, Class&gt;</code>赋值给<code>(*pair_map)[#key]</code>。比如<code>PairStyle("lj/cut/coul/cut", PairLJCutCoulCut)</code>就等于<code>(*pair_map)["lj/cut/coul/cut"] = &amp;style_creator&lt;Pair, PairLJCutCoulCut&gt;;</code>。</p>
-<p><code>style_creator</code>是一个通用的工厂函数，在<code>src/force.cpp</code>的第41行定义。其作用是动态创建一个<code>Class</code>对象（在本例中为<code>PairLJCutCoulCut</code>对象），并返回指向此对象的指针。</p>
-<p><code>style_pair.h</code>文件将在编译过程中生成，其包含所有以<code>pair_</code>开头的头文件，并调用<code>PairStyle</code>宏将这些文件对应的类注册进<code>pair_map</code>中。<code>doc/src/Developer_code_design.rst</code>和<code>doc/src/Developer_write_pair.rst</code>中有对此过程的详细介绍。</p>
+<p>在<code>create_pair</code>函数中，调用new_pair函数（247行），其内部在<code>pair_map</code>中查找，所设置的pair样式是否有对应的类（在本例中，pair样式为lj/cut/coul/cut，对应的类为<code>PairLJCutCoulCut</code>（在<code>src/pair_lj_cut_coul_cut.cpp</code>中的33行））。如果有，则调用<code>pair_map</code>中pair样式对应的函数，并返回生成的Pair对象的指针。</p>
+<p><code>pair_map</code>本身的生成过程很精妙。其定义在<code>src/force.cpp</code>第89行：<code>pair_map = new PairCreatorMap();</code>。这一行动态创建了一个<code>PairCreatorMap</code>对象，并将其指针存储在<code>pair_map</code>中。<code>PairCreatorMap</code>对象本身是一个映射，键是形如“lj/cut/coul/cut”的字符串，而值是一个函数指针，此函数将返回一个指向<code>Pair</code>类型的指针。</p>
+<p>第92行定义了一个宏<code>PairStyle</code>，其接受两个参数<code>key</code>和<code>Class</code>。其作用则是将<code>&amp;style_creator&lt;Pair, Class&gt;</code>赋值给<code>(*pair_map)[#key]</code>。比如<code>PairStyle("lj/cut/coul/cut", PairLJCutCoulCut)</code>就等于<code>(*pair_map)["lj/cut/coul/cut"] = &amp;style_creator&lt;Pair, PairLJCutCoulCut&gt;;</code>。这其中，<code>style_creator</code>是一个通用的工厂函数，在<code>src/force.cpp</code>的第41行定义。其作用是动态创建一个<code>Class</code>对象（在本例中为<code>PairLJCutCoulCut</code>对象），并返回指向此对象的指针。</p>
+<p>每个以<code>pair_</code>开头的头文件都包含#ifdef
+PAIR_CLASS块，其中使用<code>PairStyle</code>宏。在编译过程中将生成<code>style_pair.h</code>文件，其包含所有以<code>pair_</code>开头的头文件。在生成<code>pair_map</code>时，会<code>#include "style_pair.h"</code>从而将这些文件对应的类注册进<code>pair_map</code>中。</p>
 <p>上述 创建不同类型的Pair实例的编程模式 叫做“Style
 Factory”。此编程模式被很多其他的功能所采用，包括创建Bond，Angle，Dihedral，Improper等等，以及上文提到的atom
-style。</p>
+style。<a
+target="_blank" rel="noopener" href="https://docs.lammps.org/Developer_code_design.html#style-factories">官方文档1</a>和<a
+target="_blank" rel="noopener" href="https://docs.lammps.org/Developer_write_pair.html#writing-new-pair-styles">官方文档2</a>中有对此过程的详细介绍。</p>
+<p>在<code>create_pair</code>创建完Pair对象后，返回到<code>pair_style</code>函数，并再次调用<code>force-&gt;pair-&gt;settings</code>函数（在<code>src/pair_lj_cut_coul_cut.cpp</code>的第191行）设置Pair对象的cutoff参数。</p>
+<p><code>pair_coeff</code>命令设置了各种原子类型之间相互作用力参数，其函数定义在<code>src/pair_lj_cut_coul_cut.cpp</code>的第218行。其读取原子类型1，原子类型2，epsilon，sigma等参数，并储存。</p>
+<p>对bond的设置也是类似的。即先进入<code>create_bond</code>函数，在<code>bond_map</code>中查找<code>bond_style</code>的对应类，然后创建bond对象。<code>bond_coeff</code>命令则是设置bond对象的参数。angle同理。</p>
+<p><br></p>
+<h4 id="填充分子">填充分子</h4>
+<p><code>molecule water spce.mol</code>命令定义了一个分子类型water，其拓扑结构在spce.mol文件中。<code>molecule</code>命令调用到了<code>src/atom.cpp</code>的<code>add_molecule</code>函数，在其中通过新建<code>Molecule</code>对象，读取spce.mol文件，解析分子拓扑结构，并将其存储在<code>atom</code>对象的<code>molecules</code>中。</p>
+<p><code>create_atoms 0 random 33 34564 NULL mol water 25367 overlap 1.33</code>命令则是创建了33个water分子，随机分布在模拟盒子中。<code>create_atoms</code>也调用了一个映射到<code>command_map</code>中的函数：<code>CreateAtoms-&gt;command</code>（在<code>src/create_atoms.cpp</code>第97行）。从第120行开始，其开始解读参数（我们的参数为<code>0 random 33 34564 NULL</code>），从197行开始解读关键字（我们的关键字为<code>mol water 25367 overlap 1.33</code>）。经过了复杂的检查，在第532行，调用了<code>add_random</code>函数。</p>
+<p>在<code>add_random</code>函数中，首先设置随机数生成器，然后依据region确定填充边界。然后在第835行进入主循环：外层循环<code>nrandom</code>次（在本例中是33），尝试插入这么多次分子。内层循环<code>maxtry</code>次，最多尝试这么多次，来寻找一个有效的位置。</p>
+<p>在内层循环中，首先生成随机坐标，然后检查是否在区域内，如果定义了<code>overlap</code>，则检查插入的分子的各原子坐标是否现有原子有重叠。MPI进程0计算构成新分子的所有原子的坐标，而其他MPI则并行检查分子中每一个原子是否与已有的原子重叠。</p>
+<p>如果通过了所有检查，则调用<code>add_molecule()</code>函数（在<code>src/create_atoms.cpp</code>的第1595行），将分子添加到<code>atomvec</code>中。</p>
+<p><br></p>
+<h4 id="设置模拟流程">设置模拟流程</h4>
 
     </div>
 
@@ -463,7 +481,7 @@ style。</p>
     <span class="author" itemprop="copyrightHolder">写给每一个像我的人 - To everyone like me</span>
     <div>
       <p class="footer-hidden"><br><br><br><br><br><br><br><br>本处广告位招租 - This ad space is available for rent</p>
-      <p class="footer-hidden">上次更新时间 - Last Updated: ||2025/05/10 15:36:02||</p>
+      <p class="footer-hidden">上次更新时间 - Last Updated: ||2025/05/11 00:36:46||</p>
     </div>
   </div>
 
