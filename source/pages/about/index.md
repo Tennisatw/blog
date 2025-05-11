@@ -8,6 +8,8 @@ date: 2024-04-11 19:36:02
 
 **To everyone like me.**
 
+<br>
+
 ### 作者 - Author
 
 ![](../images/avatar.png){ width=200px }
@@ -24,11 +26,11 @@ Tennisatw, an amateur geek, and an amateur poet, major in theoretical chemistry.
 
 ### Tennisbot
 
-<p class="tennisbot" id="这一段是在说我哦">基于GPT4，Python，JavaScript的机器人助手，本博客的看板娘（见左下角），网球发球机（？）。当点击或悬停在有阴影的段落上时（比如这一段），她会发表自己的意见。如果左下角只有一个“Tennisbot”按钮，点一下它。</p>
+<p class="tennisbot" id="这一段是在说我哦">基于GPT，Python，JavaScript的人工智能助手，本博客的看板娘（见左下角），第二作者。当点击或悬停在有阴影的段落上时（比如这一段），她会发表自己的意见。如果左下角只有一个“Tennisbot”按钮，点一下它。</p>
 
 邮箱：tennisbot0@gmail.com
 
-<p class="tennisbot" id="It's talking about me">A chatbot based on GPT4, Python, and JavaScript, yuru-chara of the blog (see bottom left), and tennis ball machine (maybe?). When clicking or hovering over the shaded paragraphs (such as this one), she will give her own opinion.
+<p class="tennisbot" id="It's talking about me">An AI copilot based on GPT, Python, and JavaScript, yuru-chara of the blog (see bottom left), and the second author. When clicking or hovering over the shaded paragraphs (such as this one), she will give her own opinion.
 If there is only a button named "Tennisbot" in the bottom left corner, just click it.</p>
 
 Email: tennisbot0@gmail.com
@@ -113,7 +115,7 @@ The comment plugin used on this blog is [Waline](https://waline.js.org/en/), whi
 
 For all "people like me", I have two heartfelt pieces of advice:
 
-**多想，多读，多练，多问，努力看透这世界 - Think more, read more, practice more, ask more—strive to see through the world clearly.**
+**多想，多读，多练，多问，努力看穿这世界 - Think more, read more, practice more, ask more—strive to see through the world clearly.**
 
 **此外，如果可能的话，做一个善良的人 - Moreover, if possible, try to be a kind person.**
 
