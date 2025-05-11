@@ -57,7 +57,11 @@ Commissions, submissions, interactions, and reprints (with attribution) are all 
 
 <p class="tennisbot" id="真自信啊">Slogen中“像我的人”特指 兴趣广泛，有幽默感，追求更高的智慧，遇事喜欢刨根问底 的人。</p>
 
+此外，如果你读到这里还没关闭页面，那你一定属于“像我的人”。
+
 <p class="tennisbot" id="really got some confidence">The slogan's phrase "people like me" refers specifically to those with broad interests, a sense of humor, a thirst for deeper wisdom, and a habit of digging into the root of things.</p>
+
+Besides, if you've read this far without closing the page, you must be one of those "people like me".
 
 <br>
 
@@ -105,6 +109,16 @@ The comment plugin used on this blog is [Waline](https://waline.js.org/en/), whi
 
 <br>
 
+对于所有“像我的人”，我有2句发自肺腑的嘱托：
+
+For all "people like me", I have two heartfelt pieces of advice:
+
 **多想，多读，多练，多问 - Think more, read more, practice more, and ask more.**
 
 **此外，如果可能的话，做一个善良的人 - Moreover, if possible, strive to be kind.**
+
+<br>
+
+祝你在这里玩的开心。
+
+Have fun here.
