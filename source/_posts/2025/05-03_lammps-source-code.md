@@ -29,6 +29,10 @@ Lammps是一个分子动力学模拟软件，擅长并行运算。我打算用�
 
 <br>
 
+本文使用的Lammps的源代码为2025-05-03的实时版本。下文中提到的文件名和行号均基于此版本。
+
+<br>
+
 ### Lammps的项目结构
 
 ![](1746478049194.png)
@@ -231,29 +235,31 @@ Special Bonds
 3 1 2
 ```
 
-让我们一行一行地分析一下此MD模拟的流程。
+本模拟向box中填充了33个刚性spc/e水分子，先对系统做能量最小化，然后做NVT模拟，在300K下运行20000步。并使用thermo命令输出过程中物理性质。让我们一行一行地分析一下此MD模拟的流程。
 
 #### 设置模拟环境
 
-第一个命令是`units real`。即使用真实单位（real units）系统。`units`命令调用了定义在`src/input.cpp`的第2003行的`Input::units()`函数。在函数中，做了一些参数检查后，调用了`update`对象的`set_units`函数（以下简记为`update->set_units`函数），并把第一个参数传了进去。`set_units`函数具体在`src/update.cpp`的134行。当检测到`units`为`real`时，对`force`对象中的一些物理常数和单位进行设置，包括玻尔兹曼常数，单位转换常数，电子电荷量等等。
+第一个命令是`units real`。即使用真实单位（real units）系统。`units`命令调用了定义在`src/input.cpp`的第2003行的`Input::units()`函数。在函数中，做了一些参数检查后，调用了`update`对象的`set_units()`函数（以下简记为`update->set_units()`函数），并把第一个参数传了进去。`set_units()`函数具体在`src/update.cpp`的134行。当检测到`units`为`real`时，对`force`对象中的一些物理常数和单位进行设置，包括玻尔兹曼常数，单位转换常数，电子电荷量等等。
 
 `atom_style full`命令定义了原子的类型和属性为`full`(即包含全部的原子参数，包括坐标，键，键角，二面角，电荷...)。它创造了一个AtomVecFull类的实例，用于管理原子数据，并设置其可能的拓扑类型（比如是否可以含有键角，二面角等等）。此类在`src/MOLECULE/atom_vec_full.cpp`中定义。该类继承了抽象的AtomVec类（在`src/atom_vec.cpp`中定义）。
 
-`region box block -5 5 -5 5 -5 5`命令定义了一个正方体的区域，边长为10。此命令调用了`domain->add_region`函数（`src/domain.cpp`第1967行）进行参数检查，id重复检查之后，调用region_creator函数。此函数是一个模板函数（`src/domain.cpp`第55行），其本质上通过`region_map`查找并创建region对象（主要功能包括计算各边顶点，各面法向量，定义在`src/region_block.cpp`）。最后，回到`add_region`函数，将region对象添加到`domain->regions`列表中。
+`region box block -5 5 -5 5 -5 5`命令定义了一个正方体的区域，边长为10。此命令调用了`domain->add_region()`函数（`src/domain.cpp`第1967行）进行参数检查，id重复检查之后，调用region_creator函数。此函数是一个模板函数（`src/domain.cpp`第55行），其本质上通过`region_map`查找并创建region对象（主要功能包括计算各边顶点，各面法向量，定义在`src/region_block.cpp`）。最后，回到`add_region()`函数，将region对象添加到`domain->regions`列表中。
 
-`create_box`调用了 映射到`command_map`中的函数`CreateBox::command`,此函数其定义在`src/create_box.cpp`中。在做了一些检查后，从196行开始，通过bond/types等关键词，定义`atom`对象的nbondtypes，nangletypes，bond_per_atom，angle_per_atom属性。
+`create_box`调用了 映射到`command_map`中的函数`CreateBox::command()`,此函数其定义在`src/create_box.cpp`中。在做了一些检查后，从196行开始，通过bond/types等关键词，定义`atom`对象的nbondtypes，nangletypes，bond_per_atom，angle_per_atom属性。
 
 <br>
 
 #### 设置力场参数
 
-`mass 1 15.9994`命令设置了原子类型1的质量为15.9994。`mass`命令调用了`atom->set_mass`函数（`src/atom.cpp`第1933行）。
+`mass 1 15.9994`命令设置了原子类型1的质量为15.9994。`mass`命令调用了`atom->set_mass()`函数（`src/atom.cpp`第1933行）。
 
-`pair_style lj/cut/coul/cut 10.0`命令设置了原子之间的相互作用力为lj/cut/coul/cut，截断距离为10.0A。具体而言，它规定了原子之间的相互作用力包括有截断半径的范德华力（lj/cut）和有截断半径的库仑力（coul/cut）。此命令会调用在`src/input.cpp`第1787行的`input->pair_style`函数，当检查过之前没有定义pair_style后，在1807行，其调用`force->create_pair`函数（在`src/force.cpp` 第227行）以创建pair相互作用。
+<br>
 
-在`create_pair`函数中，调用`force->new_pair`函数（247行），其内部在`pair_map`中查找，所设置的pair样式是否有对应的类（在本例中，pair样式为lj/cut/coul/cut，对应的类为`PairLJCutCoulCut`（在`src/pair_lj_cut_coul_cut.cpp`中的33行））。如果有，则调用`pair_map`中pair样式对应的函数，并返回生成的Pair对象的指针。
+`pair_style lj/cut/coul/cut 10.0`命令设置了原子之间的相互作用力为lj/cut/coul/cut，截断距离为10.0A。具体而言，它规定了原子之间的相互作用力包括有截断半径的范德华力（lj/cut）和有截断半径的库仑力（coul/cut）。此命令会调用在`src/input.cpp`第1787行的`input->pair_style()`函数，当检查过之前没有定义pair_style后，在1807行，其调用`force->create_pair()`函数（在`src/force.cpp` 第227行）以创建pair相互作用。
 
-`pair_map`本身的生成过程很精妙。其定义在`src/force.cpp`第89行：`pair_map = new PairCreatorMap();`。这一行动态创建了一个空`PairCreatorMap`对象，并将其指针存储在`pair_map`中。`PairCreatorMap`对象本身是一个映射，其键是形如“lj/cut/coul/cut”的字符串，而值是一个函数指针，此函数将返回一个指向`Pair`类型的指针。
+在`create_pair`函数中，调用`force->new_pair()`函数（247行），其内部在`pair_map`中查找，所设置的pair样式是否有对应的类（在本例中，pair样式为lj/cut/coul/cut，对应的类为`PairLJCutCoulCut`（在`src/pair_lj_cut_coul_cut.cpp`中的33行））。如果有，则调用`pair_map`中pair样式对应的函数，并返回生成的Pair对象的指针。
+
+`pair_map`本身的生成过程很精妙。其定义在`src/force.cpp`第89行：`pair_map = new PairCreatorMap();`。这一行创建了一个空`PairCreatorMap`对象，并将其指针存储在`pair_map`中。`PairCreatorMap`对象本身是一个映射，其键是形如“lj/cut/coul/cut”的字符串，而值是一个函数指针，此函数将返回一个指向`Pair`类型的指针。
 
 第92行定义了一个宏`PairStyle`，其接受两个参数`key`和`Class`。其作用则是将`&style_creator<Pair, Class>`赋值给`(*pair_map)[#key]`。比如`PairStyle("lj/cut/coul/cut", PairLJCutCoulCut)`就等于`(*pair_map)["lj/cut/coul/cut"] = &style_creator<Pair, PairLJCutCoulCut>;`。这其中，`style_creator`是一个通用的工厂函数，在`src/force.cpp`的第41行定义。其作用是动态创建一个`Class`对象（在本例中为`PairLJCutCoulCut`对象），并返回指向此对象的指针。
 
@@ -261,21 +267,23 @@ Special Bonds
 
 上述 创建不同类型的Pair实例的编程模式 叫做“Style Factory”。此编程模式被很多其他的功能所采用，包括创建Bond，Angle，定义Command，添加Fix等等，以及上文提到定义atom style。[官方文档1](https://docs.lammps.org/Developer_code_design.html#style-factories)和[官方文档2](https://docs.lammps.org/Developer_write_pair.html#writing-new-pair-styles)中有对此过程的详细介绍。
 
-在`create_pair`创建完Pair对象后，返回到`pair_style`函数，并再次调用`force->pair`对应的`settings`函数（在本例中为`PairLJCutCoulCut::settings`函数，在`src/pair_lj_cut_coul_cut.cpp`的第191行）设置Pair对象的cutoff参数。
+在`create_pair`创建完Pair对象后，返回到`pair_style()`函数，并再次调用`force->pair`对应的`settings()`函数（在本例中为`PairLJCutCoulCut::settings()`函数，在`src/pair_lj_cut_coul_cut.cpp`的第191行）设置Pair对象的cutoff参数。
 
-`pair_coeff`命令设置了各种原子类型之间相互作用力参数，其函数为`PairLJCutCoulCut::coeff`，定义在`src/pair_lj_cut_coul_cut.cpp`的第218行。其读取原子类型1，原子类型2，epsilon，sigma等参数，并储存。
+<br>
 
-对bond的设置也是类似的。即先进入`force->create_bond`函数，在`bond_map`中查找`bond_style`的对应类，然后创建bond对象。`bond_coeff`命令则是设置bond对象的参数。angle同理。
+`pair_coeff`命令设置了各种原子类型之间相互作用力参数，其函数为`PairLJCutCoulCut::coeff()`，定义在`src/pair_lj_cut_coul_cut.cpp`的第218行。其读取原子类型1，原子类型2，epsilon，sigma等参数，并储存。
+
+对bond的设置也是类似的。即先进入`force->create_bond()`函数，在`bond_map`中查找`bond_style`的对应类，然后创建bond对象。`bond_coeff`命令则是设置bond对象的参数。angle同理。
 
 <br>
 
 #### 填充分子
 
-`molecule water spce.mol`命令定义了一个分子类型water，其拓扑结构在spce.mol文件中。`molecule`命令调用到了`src/atom.cpp`的`atom->add_molecule`函数，在其中新建`Molecule`对象，读取spce.mol文件，解析分子拓扑结构，并将其存储在`atom`对象的`molecules`中。`Molecule`对象的构造函数`Molecule::Molecule`在`src/molecule.cpp`的第42行。读取spce.mol文件的函数为`Molecule::read`，在第425行。
+`molecule water spce.mol`命令定义了一个分子类型water，其拓扑结构在spce.mol文件中。`molecule`命令调用到了`src/atom.cpp`的`atom->add_molecule()`函数，在其中新建`Molecule`对象，读取spce.mol文件，解析分子拓扑结构，并将其存储在`atom`对象的`molecules`中。`Molecule`对象定义在`src/molecule.cpp`中。读取spce.mol文件的函数为`Molecule::read()`，在第425行。
 
-`create_atoms 0 random 33 34564 NULL mol water 25367 overlap 1.33`命令则是创建了33个water分子，随机分布在模拟盒子中。`create_atoms`也调用了一个映射到`command_map`中的函数：`CreateAtoms::command`（在`src/create_atoms.cpp`第97行）。在此函数中，从第120行开始，其开始解读参数（我们的参数为`0 random 33 34564 NULL`），从197行开始解读关键字（我们的关键字为`mol water 25367 overlap 1.33`）。经过了复杂的检查，在第532行，调用了`add_random`函数。
+`create_atoms 0 random 33 34564 NULL mol water 25367 overlap 1.33`命令则是创建了33个water分子，随机分布在模拟盒子中。`create_atoms`也调用了一个映射到`command_map`中的函数：`CreateAtoms::command()`（在`src/create_atoms.cpp`第97行）。在此函数中，从第120行开始，其开始解读参数（我们的参数为`0 random 33 34564 NULL`），从197行开始解读关键字（我们的关键字为`mol water 25367 overlap 1.33`）。经过了复杂的检查，在第532行，调用了`add_random()`函数。
 
-在`add_random`函数中，首先设置随机数生成器，然后依据region确定填充边界。然后在第835行进入主循环：外层循环`nrandom`次（在本例中是33），即尝试插入`nrandom`个分子。内层循环`maxtry`次（默认为1000），即最多尝试`maxtry`次，来寻找一个有效的位置。
+在`add_random()`函数中，首先设置随机数生成器，然后依据region确定填充边界。然后在第835行进入主循环：外层循环`nrandom`次（在本例中是33），即尝试插入`nrandom`个分子。内层循环`maxtry`次（默认为1000），即最多尝试`maxtry`次，来寻找一个有效的位置。
 
 在内层循环中，首先生成随机坐标，然后检查是否在区域内，如果定义了`overlap`，则检查插入的分子的各原子坐标是否现有原子有重叠。MPI进程0计算构成新分子的所有原子的坐标，而其他MPI则并行检查分子中每一个原子是否与已有的原子重叠。
 
@@ -283,23 +291,84 @@ Special Bonds
 
 <br>
 
-#### 设置模拟流程
+#### 模拟前处理
 
-`timestep 1.0`命令设置了时间步长为1.0fs。其调用`input->timestep`函数，设置`update->dt`为1.0fs。
+`timestep 1.0`命令设置了时间步长为1.0fs。其调用`input->timestep()`函数，设置`update->dt`为1.0fs。
 
-`fix rigid all shake 0.0001 10 10000 b 1 a 1`命令使用shake算法设置了分子中编号为1的键和编号为1的键角的约束，使水分子成为刚性。`fix`命令调用了`modify->add_fix`，在其中，再次使用Style Factory模式，创建了`src/RIGID/fix_shake.cpp`中定义的`FixShake`对象，并将其添加到`modify->fix`列表中。
+`fix rigid all shake 0.0001 10 10000 b 1 a 1`命令使用shake算法设置了分子中编号为1的键和编号为1的键角的约束，使水分子成为刚性。`fix`命令调用了`modify->add_fix()`，在其中，再次使用Style Factory模式，创建了`src/RIGID/fix_shake.cpp`中定义的`FixShake`对象，并将其添加到`modify->fix`列表中。
 
-`minimize 0.0 0.0 1000 10000`命令执行了能量最小化。其调用了`Minimize::command`函数，在其中，设置了一些`update`对象的参数（比如能量判据，力判据）后，执行了`update->minimize->run`函数（定义在src/min.cpp第423行）。在此函数中，其将调用`iterate`函数进行能量最小化计算。本命令使用Lammps中默认的最小化算法，即`cg`算法（Conjugate Gradient），`iterate`函数在`src/min_cg.cpp`中定义。
+`minimize 0.0 0.0 1000 10000`命令执行了能量最小化。其调用了`Minimize::command()`函数，在其中，设置了一些`update`对象的参数（比如能量判据，力判据）后，执行了`update->minimize->run()`函数（定义在src/min.cpp第423行）。在此函数中，其将调用`iterate()`函数进行能量最小化计算。本命令使用Lammps中默认的最小化算法，即`cg`算法（Conjugate Gradient），`iterate()`函数在`src/min_cg.cpp`中定义。
 
-`velocity all create 300.0 5463576`命令设置了所有原子的初始速度为300K。此命令调用了`Velocity::command`函数（在`src/velocity.cpp`49行）。然后其调用了`Velocity::create`函数（第160行），为所有的原子分配速度。
+`velocity all create 300.0 5463576`命令设置了所有原子的初始速度为300K。此命令调用了`Velocity::command()`函数（在`src/velocity.cpp`49行）。然后其调用了`Velocity::create()`函数（第160行），为所有的原子分配速度。
 
 注：我注意到`velocity`命令会为所有原子随机分配初始速度（第274行），这意味着同一分子内的原子的初始速度大概率各不相同，导致分子内部的键和键角会在模拟的第一步受到很大的力。这也许是个问题，可能导致更容易发生崩溃。
 
-`fix integrate all nvt temp 300.0 300.0 100.0`命令设置了NVT积分器。和之前相同，`fix`命令调用了`modify->add_fix`，创建了`FixNVT`对象（定义在`src/fix_nvt.cpp`），并将其添加到`modify->fix`列表中。`FixNVT`这个类（以及NPT，NPH类）又继承了`FixNH`类（“NH”指的是“Nose-Hoover”，定义在`src/fix_nh.cpp`）中。
+`fix integrate all nvt temp 300.0 300.0 100.0`命令设置了NVT积分器。和之前相同，`fix`命令调用了`modify->add_fix()`，创建了`FixNVT`对象（定义在`src/fix_nvt.cpp`），并将其添加到`modify->fix`列表中。`FixNVT`这个类（以及NPT，NPH类）又继承了`FixNH`类（“NH”指的是“Nose-Hoover”，定义在`src/fix_nh.cpp`）中。注，此fix并不会覆盖上文中的fix rigid。
 
 <br>
 
 #### 运行模拟及输出
+
+`thermo_style`命令设置了thermo输出的格式。其调用了`output->create_thermo()`函数（在`src/output.cpp`第899行）。在`create_thermo`，其检查是否已经设置了`thermo`对象，如果没有，则创建一个新的`Thermo`对象（定义在`src/thermo.cpp`）。创建时，其在第172行调用`thermo->parse_fields()`函数处理`step temp press etotal density pe ke`等参数。
+
+注：我不太喜欢这里的程序设计理念。我认为相比于`thermo_style`命令，创建新Thermo对象的功能应该放在`thermo`命令里，或者用`new thermo t1`这种命令显式地新建。
+
+`thermo 1000`命令设置了每1000步输出一次thermo数据。其调用了`Thermo::set_thermo()`函数（在`src/thermo.cpp`第195行），设置了`output->thermo_every`为1000。
+
+<br>
+
+`run 20000 upto`命令运行了上文定义的NVT模拟，运行至20000步（包含minimize的步数）。其调用了`Run::command()`函数（在`src/run.cpp`第37行）。
+
+默认的`update->integrate`为`verlet`（见`src/update.cpp`第91行）。在设置了必须的参数（比如需要模拟的步数）并初始化了组件之后，其在第176行调用了`update->integrate->run()`函数（定义在`src/verlet.cpp`229行），正式开始做分子动力学模拟。在此函数中，其总共执行`nsteps`次循环（在本例中略小于20000步），每次循环模拟一个时间步。
+
+注：Velocity Verlet算法是分子动力学中最常用的算法之一。其在每个时间步中需进行3步：第一次积分用于更新粒子位置，然后利用新粒子位置计算新力，第二次积分用新位置和新力计算粒子的新速度。
+
+<br>
+
+在每个循环（从第246行开始）中，首先，先检查是否超时，如果超时，则退出循环。如不超时，则更新当前时间步`ntimestep`。然后，调用ev_set函数，以判断在此时间步中是否需要计算能量或位力（Virial，又译维里，系统中粒子受到的力在位置空间上的分布）。
+
+然后，调用`modify->initial_integrate()`函数，在其中，调用了所有fix对象的`initial_integrate()`函数，以进行verlet算法中的第一次积分。
+
+接下来，调用`neighbor->decide()`函数，以判断是否需要更新邻居列表。如不需要更新，则调用`comm->forward_comm()`，将本处理器的潜在的幽灵原子（即靠近子区域边界的，可能与其他处理器的原子相互作用的原子）的坐标发送至其他处理器。
+
+如果需要更新邻居列表，则调用`domain->pbc()`将每个原子重新包裹进周期性边界中（如果是三斜晶系还需要调用`domain->x2lamda()`将原子坐标转换至晶胞相对坐标（即0-1之间））。如果盒子的尺寸改变了，则调用`domain->reset_box()`重设盒子和子区域的尺寸。然后，使用`comm->exchange()`将原子转移至正确的处理器中。如果需要，调用`atom->sort()`对原子重新排序。在这之后，调用`comm->borders()`更新幽灵原子列表，并将其坐标发送至其他处理器。最后，调用`neighbor->build()`构建邻居列表。
+
+<br>
+
+下一步是计算受力（从第301行开始）。首先，调用`force_clear()`清除原子受力。然后，依据需求，依次调用
+
+- `force->pair->compute()`
+- `force->bond->compute()`
+- `force->angle->compute()`
+- `force->dihedral->compute()`
+- `force->improper->compute()`
+- `force->kspace->compute()` （如果使用长程库仑力）
+
+以计算原子受力。这里以`pair->compute()`为例。本例中使用的pair style为`PairLJCutCoulCut`，其`compute()`函数定义在`src/pair_lj_cut_coul_cut.cpp`第65行。在其中，其首先遍历原子，然后遍历此原子的邻居列表，然后计算它们的库仑相互作用和lj相互作用，并将结果叠加到各原子的总受力中。如果开启了牛顿第三定律，则也更新其邻居列表的原子的总受力。
+
+原子受力计算完毕后，如果开启了牛顿第三定律，则执行反向通信，调用comm->reverse_comm()，以更新由于幽灵原子而导致的受力。
+
+<br>
+
+最后，计算完各原子的受力之后，在第348行，调用`modify->final_integrate()`函数，调用了所有fix对象的`final_integrate()`函数，以进行verlet算法中的第二次积分。
+
+如果本步需要输出，则调用`output->write()`函数输出thermo数据，dump数据以及restart数据。
+
+<br>
+
+在`update->integrate->run()`函数中，一些重要的步骤（比如第一步积分，构建邻居列表）前后都会判断是否有一些fix 有做一些修正的需求。如有，则调用其对应函数（比如post_integrate，pre_neighbor等）。
+
+此外，在每个重要步骤前后都会调用`timer->stamp(); ...; timer->stamp(Timer::CATEGORY);`以记录执行时间。
+
+最后，回到`Run::command()`函数，调用`update->integrate->cleanup()`函数，做一些清理工作（如有）。
+
+<br>
+
+`write_data spce.data nocoeff`命令将模拟结束后的原子坐标输出到spce.data文件中。其调用了`WriteData::command()`函数（在`src/write_data.cpp`第51行）。在其中，调用了`write_data->write()`函数（在第123行），通过调用`atom->lmap->write_data()`函数将数据写入文件。
+
+<br>
+
+### 编译Lammps
 
 未完待续
 
@@ -307,14 +376,7 @@ Special Bonds
 
 ### 总结
 
-在阅读源代码的过程中，本人主要遇到的困难有：
-
-代码量大，结构复杂。如果不是熟悉MD和Lammps的工作流程的话，需要很长时间才能入门。
-本人对c++语言和编码规范不够熟悉，导致很多语句不能一眼看出来作用。
-
-<br>
-
-也总结出来了一些阅读源代码的经验：
+一些阅读源代码的经验：
 
 1. 先明确你的需求/目标再行动，不要做无用功。否则非常辛苦，也抓不住重点。
 2. 建议直接上手使用，或是读文档，以初步了解项目的功能。越了解项目的功能，代码读起来越顺利。
@@ -324,3 +386,19 @@ Special Bonds
 6. 多用ChatGPT，看不懂就问。
 7. 还是看不懂的代码直接跳过，大体知道其功能就可以。有时，读完其他部分再回头看时，可能就懂了。
 8. 注释和官方文档都很重要，其他人的阅读记录也可以参考。英语看不懂就翻译。
+
+<br>
+
+主要的收获有：
+
+1. 对lammps“开悟了”，（即有了整体性的理解），遇到bug可以清晰地定位。
+2. 对MD软件应有的组成部分和verlet算法有了更深入的了解。
+3. 对C++有了更深入的了解。
+
+<br>
+
+主要遇到的困难有：
+
+1. 代码量大，结构复杂。如果不是熟悉MD和Lammps的工作流程的话，需要很长时间才能入门。
+2. 本人对c++语言和编码规范不够熟悉，导致很多语句不能一眼看出来作用。
+3. 上述两条困难也导致调试很复杂。
