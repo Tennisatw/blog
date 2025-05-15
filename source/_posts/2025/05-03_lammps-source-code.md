@@ -10,7 +10,7 @@ tags:
 
 ## 中文版 - Chinese Version
 
-(English version is below)
+(See the English version below)
 
 Lammps是一个分子动力学模拟软件，擅长并行运算。我打算用一点时间，尽我所能，深挖一下Lammps的源代码。
 
