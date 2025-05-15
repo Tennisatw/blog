@@ -20,17 +20,19 @@
 <script class="next-config" data-name="main" type="application/json">{"hostname":"blog.tennisatw.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.19.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#555080","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"utterances","storage":true,"lazyload":false,"nav":null,"activeClass":"utterances"},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索 - Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits}个结果 - undefined results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
     <meta property="og:type" content="article">
-<meta property="og:title" content="深挖Lammps的源代码">
+<meta property="og:title" content="深挖Lammps的源代码 - Delving Deeply into Lammps Source Code">
 <meta property="og:url" content="https://blog.tennisatw.com/post/81/">
 <meta property="og:site_name" content="Tennisatw的博客 - Blog of Tennisatw">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://blog.tennisatw.com/post/81/1746478049194.png">
 <meta property="og:image" content="https://blog.tennisatw.com/post/81/1746911232551.png">
+<meta property="og:image" content="https://blog.tennisatw.com/post/81/1746478049194.png">
+<meta property="og:image" content="https://blog.tennisatw.com/post/81/1746911232551.png">
 <meta property="article:published_time" content="2025-05-04T05:25:20.000Z">
-<meta property="article:modified_time" content="2025-05-15T03:18:12.258Z">
+<meta property="article:modified_time" content="2025-05-15T06:56:15.063Z">
 <meta property="article:author" content="Tennisatw">
-<meta property="article:tag" content="编程 - Programming">
 <meta property="article:tag" content="随想 - Thoughts">
+<meta property="article:tag" content="编程 - Programming">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://blog.tennisatw.com/post/81/1746478049194.png">
 
@@ -39,10 +41,10 @@
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://blog.tennisatw.com/post/81/","path":"/post/81/","title":"深挖Lammps的源代码"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://blog.tennisatw.com/post/81/","path":"/post/81/","title":"深挖Lammps的源代码 - Delving Deeply into Lammps Source Code"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>深挖Lammps的源代码 | Tennisatw的博客 - Blog of Tennisatw</title>
+<title>深挖Lammps的源代码 - Delving Deeply into Lammps Source Code | Tennisatw的博客 - Blog of Tennisatw</title>
   
 
 
@@ -154,7 +156,10 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#lammps%E7%9A%84%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84"><span class="nav-text">Lammps的项目结构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%A1%B6%E5%B1%82%E6%96%87%E4%BB%B6"><span class="nav-text">顶层文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81"><span class="nav-text">代码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B7%A5%E5%85%B7"><span class="nav-text">工具</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%96%87%E6%A1%A3"><span class="nav-text">文档</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%B6%E4%BB%96"><span class="nav-text">其他</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#lammps%E7%9A%84%E4%B8%80%E8%88%AC%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B"><span class="nav-text">Lammps的一般工作流程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#md%E6%A8%A1%E6%8B%9F%E6%B5%81%E7%A8%8B"><span class="nav-text">MD模拟流程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E6%A8%A1%E6%8B%9F%E7%8E%AF%E5%A2%83"><span class="nav-text">设置模拟环境</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E5%8A%9B%E5%9C%BA%E5%8F%82%E6%95%B0"><span class="nav-text">设置力场参数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%A1%AB%E5%85%85%E5%88%86%E5%AD%90"><span class="nav-text">填充分子</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%A8%A1%E6%8B%9F%E5%89%8D%E5%A4%84%E7%90%86"><span class="nav-text">模拟前处理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%90%E8%A1%8C%E6%A8%A1%E6%8B%9F%E5%8F%8A%E8%BE%93%E5%87%BA"><span class="nav-text">运行模拟及输出</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%96%E8%AF%91lammps"><span class="nav-text">编译Lammps</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-text">总结</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%AD%E6%96%87%E7%89%88---chinese-version"><span class="nav-text">中文版 - Chinese Version</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#lammps%E7%9A%84%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84"><span class="nav-text">Lammps的项目结构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%A1%B6%E5%B1%82%E6%96%87%E4%BB%B6"><span class="nav-text">顶层文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81"><span class="nav-text">代码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B7%A5%E5%85%B7"><span class="nav-text">工具</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%96%87%E6%A1%A3"><span class="nav-text">文档</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%B6%E4%BB%96"><span class="nav-text">其他</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#lammps%E7%9A%84%E4%B8%80%E8%88%AC%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B"><span class="nav-text">Lammps的一般工作流程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#md%E6%A8%A1%E6%8B%9F%E6%B5%81%E7%A8%8B"><span class="nav-text">MD模拟流程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E6%A8%A1%E6%8B%9F%E7%8E%AF%E5%A2%83"><span class="nav-text">设置模拟环境</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E5%8A%9B%E5%9C%BA%E5%8F%82%E6%95%B0"><span class="nav-text">设置力场参数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%A1%AB%E5%85%85%E5%88%86%E5%AD%90"><span class="nav-text">填充分子</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%A8%A1%E6%8B%9F%E5%89%8D%E5%A4%84%E7%90%86"><span class="nav-text">模拟前处理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%90%E8%A1%8C%E6%A8%A1%E6%8B%9F%E5%8F%8A%E8%BE%93%E5%87%BA"><span class="nav-text">运行模拟及输出</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%96%E8%AF%91lammps"><span class="nav-text">编译Lammps</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-text">总结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%8B%B1%E6%96%87%E7%89%88---english-version"><span class="nav-text">英文版 - English Version</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#lammps-project-structure"><span class="nav-text">Lammps Project Structure</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#top-level-files"><span class="nav-text">Top-level Files</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#source-code"><span class="nav-text">Source Code</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#tools"><span class="nav-text">Tools</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#documentation"><span class="nav-text">Documentation</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#others"><span class="nav-text">Others</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#general-workflow-of-lammps"><span class="nav-text">General Workflow of LAMMPS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#md-simulation-workflow"><span class="nav-text">MD Simulation Workflow</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#setting-up-the-simulation-environment"><span class="nav-text">Setting up the Simulation
+Environment</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#setting-force-field-parameters"><span class="nav-text">Setting Force Field
+Parameters</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#filling-molecules"><span class="nav-text">Filling Molecules</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#preprocessing-for-simulation"><span class="nav-text">Preprocessing for Simulation</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#running-simulation-and-output"><span class="nav-text">Running Simulation and
+Output</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#compiling-lammps"><span class="nav-text">Compiling LAMMPS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#summary"><span class="nav-text">Summary</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -234,12 +239,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="深挖Lammps的源代码 | Tennisatw的博客 - Blog of Tennisatw">
+      <meta itemprop="name" content="深挖Lammps的源代码 - Delving Deeply into Lammps Source Code | Tennisatw的博客 - Blog of Tennisatw">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          深挖Lammps的源代码
+          深挖Lammps的源代码 - Delving Deeply into Lammps Source Code
         </h1>
 
         <div class="post-meta-container">
@@ -257,7 +262,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">编辑于 - Edited on</span>
-      <time title="Modified: 2025/05/14 21:18:12" itemprop="dateModified" datetime="2025-05-14T21:18:12-06:00">2025/05/14</time>
+      <time title="Modified: 2025/05/15 00:56:15" itemprop="dateModified" datetime="2025-05-15T00:56:15-06:00">2025/05/15</time>
     </span>
 
   
@@ -267,14 +272,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">字数 - Word count: </span>
-      <span>5.6k</span>
+      <span>10k</span>
     </span>
     <span class="post-meta-item" title="阅读时间 - Reading time">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时间 - Reading time &asymp;</span>
-      <span>20 mins.</span>
+      <span>37 mins.</span>
     </span>
 </div>
 
@@ -284,7 +289,8 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><p>Lammps是一个分子动力学模拟软件，擅长并行运算。我打算用一点时间，深挖一下Lammps的源代码。</p>
+    <div class="post-body" itemprop="articleBody"><h2 id="中文版---chinese-version">中文版 - Chinese Version</h2>
+<p>Lammps是一个分子动力学模拟软件，擅长并行运算。我打算用一点时间，尽我所能，深挖一下Lammps的源代码。</p>
 <p>我的目标是：</p>
 <ul>
 <li>掌握Lammps的项目结构</li>
@@ -303,7 +309,10 @@ target="_blank" rel="noopener" href="https://github.com/lammps/lammps">Lammps的
 target="_blank" rel="noopener" href="https://docs.lammps.org/">Lammps的文档</a> - <a
 target="_blank" rel="noopener" href="https://www.sciencedirect.com/science/article/pii/S0010465521002836?via%3Dihub">Lammps的文章</a></p>
 <p><br></p>
-<p>本文使用的Lammps的源代码为2025-05-03的实时版本。下文中提到的文件名和行号均基于此版本。</p>
+<p>本文使用的Lammps的源代码为2025-05-03的实时版本（即Large-scale
+Atomic/Molecular Massively Parallel Simulator - 2 Apr 2025 -
+Development）。下文中提到的文件名和行号均基于此版本。</p>
+<p>使用<code>git clone https://github.com/lammps/lammps.git</code>命令下载Lammps的源代码。</p>
 <p><br></p>
 <h3 id="lammps的项目结构">Lammps的项目结构</h3>
 <p><img src="1746478049194.png" /></p>
@@ -343,27 +352,27 @@ target="_blank" rel="noopener" href="https://www.sciencedirect.com/science/artic
 <h3 id="lammps的一般工作流程">Lammps的一般工作流程</h3>
 <p>当运行Lammps时，会首先运行<code>src/main.cpp</code>中的<code>main()</code>函数。该函数是Lammps的入口函数。这其中：
 <code>auto lammps = new LAMMPS(argc, argv, lammps_comm);</code>会创建一个LAMMPS对象。该对象管理Lammps的所有功能。</p>
-<p>（注：在VSCode右键点击LAMMPS，选择go to
-definition，可以自动打开src/lammps.h文件，然后寻找同名的src/lammps.cpp文件，即可找到对应的定义。具体而言，它从src/lammps.cpp文件的第132行开始。对于其他的类或函数，也可以用类似的方法找到其声明或定义。）</p>
+<p>（注：在VSCode右键点击LAMMPS，选择Go to
+Definition，可以自动打开src/lammps.h文件，然后寻找同名的src/lammps.cpp文件，即可找到对应的定义。具体而言，它从src/lammps.cpp文件的第132行开始。对于其他的类或函数，也可以用类似的方法找到其声明或定义。）</p>
 <p>在<code>LAMMPS</code>类的定义中：</p>
-<p>首先，其创建Memory，Error对象，用于内存管理和错误处理。</p>
-<p>在第238行，其读取命令行参数（比如-h，-in）并设置flag。</p>
+<p>首先，其创建<code>Memory</code>，<code>Error</code>对象，用于内存管理和错误处理。</p>
+<p>在第238行，其读取命令行参数（比如<code>-h</code>，<code>-in</code>）并设置flag。</p>
 <p>然后，第492行定义了partition并行的逻辑。</p>
-<p>在第701行初始化kokkos（gpu/并行加速模块，如果用到的话），引用模块，输入模块等。</p>
+<p>在第701行初始化Kokkos（gpu/并行加速模块，如果用到的话），引用模块，输入模块等。</p>
 <p>在第715行，初始化input对象，用于读取、解析和执行用户提供的LAMMPS输入脚本命令。</p>
 <p>在第740行，调用了<code>create()</code>函数，用于初始化核心模拟组件类，包括：</p>
 <ul>
-<li>comm（并行计算中的通信）</li>
-<li>neighbor（邻居列表构建和管理）</li>
-<li>domain（管理模拟盒子和边界）</li>
-<li>atom（管理原子数据）</li>
-<li>group（管理原子组）</li>
-<li>force（管理力场力）</li>
-<li>modify（fix命令和compute命令）</li>
-<li>output（管理输出）</li>
-<li>update（管理模拟过程中的时间步进，积分，最小化算法）</li>
-<li>timer（性能计时）</li>
-<li>python（python接口）</li>
+<li><code>comm</code>（并行计算中的通信）</li>
+<li><code>neighbor</code>（邻居列表构建和管理）</li>
+<li><code>domain</code>（管理模拟盒子和边界）</li>
+<li><code>atom</code>（管理原子数据）</li>
+<li><code>group</code>（管理原子组）</li>
+<li><code>force</code>（管理力场力）</li>
+<li><code>modify</code>（fix命令和compute命令）</li>
+<li><code>output</code>（管理输出）</li>
+<li><code>update</code>（管理模拟过程中的时间步进，积分，最小化算法）</li>
+<li><code>timer</code>（性能计时）</li>
+<li><code>python</code>（python接口）</li>
 </ul>
 <p>等类。这些类之间的关系见下图（<a
 target="_blank" rel="noopener" href="https://docs.lammps.org/Developer_org.html">来源</a>）。</p>
@@ -377,9 +386,9 @@ target="_blank" rel="noopener" href="https://docs.lammps.org/Developer_org.html"
 <p><code>main()</code>函数在初始化lammps对象完成后，会执行<code>lammps-&gt;input-&gt;file();</code>来读取输入文件。具体而言，首先调用<code>lammps</code>对象的<code>input</code>类，然后调用其内部的<code>file()</code>函数读取并逐行执行命令（<code>src/input.cpp</code>
 第195行）。</p>
 <p>在<code>file()</code>函数中，其使用mpi rank
-0的进程从<code>infile</code>逐行读取文件，然后广播至其他进程。之后，各进程使用parse解析命令，然后调用<code>execute_command</code>(第313行)函数来调用相关处理函数，执行每一行命令。</p>
-<p>在<code>execute_command</code>中（第764行），一些命令被硬编码了专门的处理函数，比如<code>bond_coeff</code>，<code>dump</code>，<code>thermo</code>等，在其中再调用其他模块中相关的函数来执行。</p>
-<p>另一些命令在<code>command_map</code>中被映射到相应的处理函数，比如<code>run</code>，则调用其对应的<code>command</code>函数（第868行）。</p>
+0的进程从<code>infile</code>逐行读取文件，然后广播至其他进程。之后，各进程使用parse解析命令，然后调用<code>execute_command()</code>(第313行)函数来调用相关处理函数，执行每一行命令。</p>
+<p>在<code>execute_command()</code>中（第764行），一些命令被硬编码了专门的处理函数，比如<code>bond_coeff</code>，<code>dump</code>，<code>thermo</code>等，在其中再调用其他模块中相关的函数来执行。</p>
+<p>另一些命令在<code>command_map</code>中被映射到相应的处理函数，比如<code>run</code>，则调用其对应的<code>command()</code>函数（第868行）。</p>
 <p><br></p>
 <p>所有命令都执行完毕后，Lammps中止MPI，优雅退出。</p>
 <p><br></p>
@@ -393,10 +402,10 @@ target="_blank" rel="noopener" href="https://docs.lammps.org/Howto_spc.html">输
 <h4 id="设置模拟环境">设置模拟环境</h4>
 <p>第一个命令是<code>units real</code>。即使用真实单位（real
 units）系统。<code>units</code>命令调用了定义在<code>src/input.cpp</code>的第2003行的<code>Input::units()</code>函数。在函数中，做了一些参数检查后，调用了<code>update</code>对象的<code>set_units()</code>函数（以下简记为<code>update-&gt;set_units()</code>函数），并把第一个参数传了进去。<code>set_units()</code>函数具体在<code>src/update.cpp</code>的134行。当检测到<code>units</code>为<code>real</code>时，对<code>force</code>对象中的一些物理常数和单位进行设置，包括玻尔兹曼常数，单位转换常数，电子电荷量等等。</p>
-<p><code>atom_style full</code>命令定义了原子的类型和属性为<code>full</code>(即包含全部的原子参数，包括坐标，键，键角，二面角，电荷...)。它创造了一个AtomVecFull类的实例，用于管理原子数据，并设置其可能的拓扑类型（比如是否可以含有键角，二面角等等）。此类在<code>src/MOLECULE/atom_vec_full.cpp</code>中定义。该类继承了抽象的AtomVec类（在<code>src/atom_vec.cpp</code>中定义）。</p>
-<p><code>region box block -5 5 -5 5 -5 5</code>命令定义了一个正方体的区域，边长为10。此命令调用了<code>domain-&gt;add_region()</code>函数（<code>src/domain.cpp</code>第1967行）进行参数检查，id重复检查之后，调用region_creator函数。此函数是一个模板函数（<code>src/domain.cpp</code>第55行），其本质上通过<code>region_map</code>查找并创建region对象（主要功能包括计算各边顶点，各面法向量，定义在<code>src/region_block.cpp</code>）。最后，回到<code>add_region()</code>函数，将region对象添加到<code>domain-&gt;regions</code>列表中。</p>
+<p><code>atom_style full</code>命令定义了原子的类型和属性为<code>full</code>(即包含全部的原子参数，包括坐标，键，键角，二面角，电荷...)。它创造了一个<code>AtomVecFull</code>类的实例，用于管理原子数据，并设置其可能的拓扑类型（比如是否可以含有键角，二面角等等）。此类在<code>src/MOLECULE/atom_vec_full.cpp</code>中定义。该类继承了抽象的<code>AtomVec</code>类（在<code>src/atom_vec.cpp</code>中定义）。</p>
+<p><code>region box block -5 5 -5 5 -5 5</code>命令定义了一个正方体的区域，边长为10。此命令调用了<code>domain-&gt;add_region()</code>函数（<code>src/domain.cpp</code>第1967行）进行参数检查，id重复检查之后，调用<code>region_creator()</code>函数。此函数是一个模板函数（<code>src/domain.cpp</code>第55行），其本质上通过<code>region_map</code>查找并创建region对象（主要功能包括计算各边顶点，各面法向量，定义在<code>src/region_block.cpp</code>）。最后，回到<code>add_region()</code>函数，将region对象添加到<code>domain-&gt;regions</code>列表中。</p>
 <p><code>create_box</code>调用了
-映射到<code>command_map</code>中的函数<code>CreateBox::command()</code>,此函数其定义在<code>src/create_box.cpp</code>中。在做了一些检查后，从196行开始，通过bond/types等关键词，定义<code>atom</code>对象的nbondtypes，nangletypes，bond_per_atom，angle_per_atom属性。</p>
+映射到<code>command_map</code>中的函数<code>CreateBox::command()</code>,此函数其定义在<code>src/create_box.cpp</code>中。在做了一些检查后，从196行开始，通过<code>bond/types</code>等关键词，定义<code>atom</code>对象的<code>nbondtypes</code>，<code>nangletypes</code>，<code>bond_per_atom</code>，<code>angle_per_atom</code>属性。</p>
 <p><br></p>
 <h4 id="设置力场参数">设置力场参数</h4>
 <p><code>mass 1 15.9994</code>命令设置了原子类型1的质量为15.9994。<code>mass</code>命令调用了<code>atom-&gt;set_mass()</code>函数（<code>src/atom.cpp</code>第1933行）。</p>
@@ -426,28 +435,31 @@ target="_blank" rel="noopener" href="https://docs.lammps.org/Developer_write_pai
 <p>如果通过了所有检查，则调用<code>add_molecule()</code>函数（在<code>src/create_atoms.cpp</code>的第1595行），将分子添加到<code>atomvec</code>中。</p>
 <p><br></p>
 <h4 id="模拟前处理">模拟前处理</h4>
-<p><code>timestep 1.0</code>命令设置了时间步长为1.0fs。其调用<code>input-&gt;timestep()</code>函数，设置<code>update-&gt;dt</code>为1.0fs。</p>
-<p><code>fix rigid all shake 0.0001 10 10000 b 1 a 1</code>命令使用shake算法设置了分子中编号为1的键和编号为1的键角的约束，使水分子成为刚性。<code>fix</code>命令调用了<code>modify-&gt;add_fix()</code>，在其中，再次使用Style
+<p><code>timestep 1.0</code>命令设置了时间步长为1.0
+fs。其调用<code>input-&gt;timestep()</code>函数，设置<code>update-&gt;dt</code>为1.0
+fs。</p>
+<p><code>fix rigid all shake 0.0001 10 10000 b 1 a 1</code>命令使用SHAKE算法设置了分子中编号为1的键和编号为1的键角的约束，保持水分子刚性。<code>fix</code>命令调用了<code>modify-&gt;add_fix()</code>，在其中，再次使用Style
 Factory模式，创建了<code>src/RIGID/fix_shake.cpp</code>中定义的<code>FixShake</code>对象，并将其添加到<code>modify-&gt;fix</code>列表中。</p>
 <p><code>minimize 0.0 0.0 1000 10000</code>命令执行了能量最小化。其调用了<code>Minimize::command()</code>函数，在其中，设置了一些<code>update</code>对象的参数（比如能量判据，力判据）后，执行了<code>update-&gt;minimize-&gt;run()</code>函数（定义在src/min.cpp第423行）。在此函数中，其将调用<code>iterate()</code>函数进行能量最小化计算。本命令使用Lammps中默认的最小化算法，即<code>cg</code>算法（Conjugate
 Gradient），<code>iterate()</code>函数在<code>src/min_cg.cpp</code>中定义。</p>
 <p><code>velocity all create 300.0 5463576</code>命令设置了所有原子的初始速度为300K。此命令调用了<code>Velocity::command()</code>函数（在<code>src/velocity.cpp</code>49行）。然后其调用了<code>Velocity::create()</code>函数（第160行），为所有的原子分配速度。</p>
-<p>注：我注意到<code>velocity</code>命令会为所有原子随机分配初始速度（第274行），这意味着同一分子内的原子的初始速度大概率各不相同，导致分子内部的键和键角会在模拟的第一步受到很大的力。这也许是个问题，可能导致更容易发生崩溃。</p>
+<p>注：注意到<code>velocity</code>命令会为所有原子随机分配初始速度（第274行），这意味着同一分子内的原子的初始速度大概率各不相同，导致分子内部的键和键角会在模拟的第一步受到很大的力。这也许是个问题，可能导致更容易发生崩溃。</p>
 <p><code>fix integrate all nvt temp 300.0 300.0 100.0</code>命令设置了NVT积分器。和之前相同，<code>fix</code>命令调用了<code>modify-&gt;add_fix()</code>，创建了<code>FixNVT</code>对象（定义在<code>src/fix_nvt.cpp</code>），并将其添加到<code>modify-&gt;fix</code>列表中。<code>FixNVT</code>这个类（以及NPT，NPH类）又继承了<code>FixNH</code>类（“NH”指的是“Nose-Hoover”，定义在<code>src/fix_nh.cpp</code>）中。注，此fix并不会覆盖上文中的fix
 rigid。</p>
 <p><br></p>
 <h4 id="运行模拟及输出">运行模拟及输出</h4>
 <p><code>thermo_style</code>命令设置了thermo输出的格式。其调用了<code>output-&gt;create_thermo()</code>函数（在<code>src/output.cpp</code>第899行）。在<code>create_thermo</code>，其检查是否已经设置了<code>thermo</code>对象，如果没有，则创建一个新的<code>Thermo</code>对象（定义在<code>src/thermo.cpp</code>）。创建时，其在第172行调用<code>thermo-&gt;parse_fields()</code>函数处理<code>step temp press etotal density pe ke</code>等参数。</p>
-<p>注：我不太喜欢这里的程序设计理念。我认为相比于<code>thermo_style</code>命令，创建新Thermo对象的功能应该放在<code>thermo</code>命令里，或者用<code>new thermo t1</code>这种命令显式地新建。</p>
+<p>注：我不太喜欢这里的程序设计理念。相比于<code>thermo_style</code>命令，创建新<code>Thermo</code>对象的功能应该放在<code>thermo</code>命令里，或者用<code>new thermo t1</code>这种命令显式地新建。</p>
 <p><code>thermo 1000</code>命令设置了每1000步输出一次thermo数据。其调用了<code>Thermo::set_thermo()</code>函数（在<code>src/thermo.cpp</code>第195行），设置了<code>output-&gt;thermo_every</code>为1000。</p>
 <p><br></p>
 <p><code>run 20000 upto</code>命令运行了上文定义的NVT模拟，运行至20000步（包含minimize的步数）。其调用了<code>Run::command()</code>函数（在<code>src/run.cpp</code>第37行）。</p>
 <p>默认的<code>update-&gt;integrate</code>为<code>verlet</code>（见<code>src/update.cpp</code>第91行）。在设置了必须的参数（比如需要模拟的步数）并初始化了组件之后，其在第176行调用了<code>update-&gt;integrate-&gt;run()</code>函数（定义在<code>src/verlet.cpp</code>229行），正式开始做分子动力学模拟。在此函数中，其总共执行<code>nsteps</code>次循环（在本例中略小于20000步），每次循环模拟一个时间步。</p>
-<p>注：Velocity
+<p>注：Lammps默认使用的Velocity
 Verlet算法是分子动力学中最常用的算法之一。其在每个时间步中需进行3步：第一次积分用于更新粒子位置，然后利用新粒子位置计算新力，第二次积分用新位置和新力计算粒子的新速度。</p>
 <p><br></p>
-<p>在每个循环（从第246行开始）中，首先，先检查是否超时，如果超时，则退出循环。如不超时，则更新当前时间步<code>ntimestep</code>。然后，调用ev_set函数，以判断在此时间步中是否需要计算能量或位力（Virial，又译维里，系统中粒子受到的力在位置空间上的分布）。</p>
-<p>然后，调用<code>modify-&gt;initial_integrate()</code>函数，在其中，调用了所有fix对象的<code>initial_integrate()</code>函数，以进行verlet算法中的第一次积分。</p>
+<p>在每个循环（从第246行开始）中，首先，先检查是否超时，如果超时，则退出循环。如不超时，则更新当前时间步<code>ntimestep</code>。然后，调用<code>ev_set()</code>函数，以判断在此时间步中是否需要计算能量或位力（Virial，又译维里，系统中粒子受到的力在位置空间上的分布）。</p>
+<p>然后，调用<code>modify-&gt;initial_integrate()</code>函数，在其中，调用了所有fix对象的<code>initial_integrate()</code>函数，以进行Velocity
+Verlet算法中的第一次积分。</p>
 <p>接下来，调用<code>neighbor-&gt;decide()</code>函数，以判断是否需要更新邻居列表。如不需要更新，则调用<code>comm-&gt;forward_comm()</code>，将本处理器的潜在的幽灵原子（即靠近子区域边界的，可能与其他处理器的原子相互作用的原子）的坐标发送至其他处理器。</p>
 <p>如果需要更新邻居列表，则调用<code>domain-&gt;pbc()</code>将每个原子重新包裹进周期性边界中（如果是三斜晶系还需要调用<code>domain-&gt;x2lamda()</code>将原子坐标转换至晶胞相对坐标（即0-1之间））。如果盒子的尺寸改变了，则调用<code>domain-&gt;reset_box()</code>重设盒子和子区域的尺寸。然后，使用<code>comm-&gt;exchange()</code>将原子转移至正确的处理器中。如果需要，调用<code>atom-&gt;sort()</code>对原子重新排序。在这之后，调用<code>comm-&gt;borders()</code>更新幽灵原子列表，并将其坐标发送至其他处理器。最后，调用<code>neighbor-&gt;build()</code>构建邻居列表。</p>
 <p><br></p>
@@ -465,7 +477,8 @@ Verlet算法是分子动力学中最常用的算法之一。其在每个时间�
 style为<code>PairLJCutCoulCut</code>，其<code>compute()</code>函数定义在<code>src/pair_lj_cut_coul_cut.cpp</code>第65行。在其中，其首先遍历原子，然后遍历此原子的邻居列表，然后计算它们的库仑相互作用和lj相互作用，并将结果叠加到各原子的总受力中。如果开启了牛顿第三定律，则也更新其邻居列表的原子的总受力。</p>
 <p>原子受力计算完毕后，如果开启了牛顿第三定律，则执行反向通信，调用comm-&gt;reverse_comm()，以更新由于幽灵原子而导致的受力。</p>
 <p><br></p>
-<p>最后，计算完各原子的受力之后，在第348行，调用<code>modify-&gt;final_integrate()</code>函数，调用了所有fix对象的<code>final_integrate()</code>函数，以进行verlet算法中的第二次积分。</p>
+<p>最后，计算完各原子的受力之后，在第348行，调用<code>modify-&gt;final_integrate()</code>函数，调用了所有fix对象的<code>final_integrate()</code>函数，以进行Velocity
+Verlet算法中的第二次积分。</p>
 <p>如果本步需要输出，则调用<code>output-&gt;write()</code>函数输出thermo数据，dump数据以及restart数据。</p>
 <p><br></p>
 <p>在<code>update-&gt;integrate-&gt;run()</code>函数中，一些重要的步骤（比如第一步积分，构建邻居列表）前后都会判断是否有一些fix
@@ -476,7 +489,18 @@ style为<code>PairLJCutCoulCut</code>，其<code>compute()</code>函数定义在
 <p><code>write_data spce.data nocoeff</code>命令将模拟结束后的原子坐标输出到spce.data文件中。其调用了<code>WriteData::command()</code>函数（在<code>src/write_data.cpp</code>第51行）。在其中，调用了<code>write_data-&gt;write()</code>函数（在第123行），通过调用<code>atom-&gt;lmap-&gt;write_data()</code>函数将数据写入文件。</p>
 <p><br></p>
 <h3 id="编译lammps">编译Lammps</h3>
-<p>未完待续</p>
+<p>本文使用VSCode的CMake tools插件编译Lammps。此外，<a
+target="_blank" rel="noopener" href="https://docs.lammps.org/Build_cmake.html">Lammps的官方Cmake编译指南</a>也提供了使用命令行的方式进行编译的方式。</p>
+<p>首先打开VSCode，进入到CMake面板，插件会提醒你选择一个CMakeLists.txt文件，在这里选择<code>cmake/CMakeLists.txt</code>。注，如果后续需要更改CmakeLists.txt文件，可以在<code>.vscode/settings.json</code>的<code>"cmake.sourceDirectory"</code>中指定另一个CMakeLists.txt文件的位置。</p>
+<p>然后，点击“Configure”按钮下方栏，选择一个编译器。这里我使用的是msys2-mingw64的GCC编译器。（可参考<a
+href="https://blog.tennisatw.com/post/76/">此文章</a>安装此编译器）</p>
+<p>在编译器下方栏将build
+variant设置为<code>Release</code>，然后点击“Configure”按钮，然后，VSCode会自动创建一个build文件夹，并在其中生成CMakeCache.txt文件。</p>
+<p>接下来，点击“Build”按钮，VSCode会自动编译Lammps，并在build文件夹中生成可执行文件。</p>
+<p>注：本版本的Lammps有一个bug：在<code>src\image.cpp</code>第53行，其定义的常量ABSOLUTE与全局常量ABSOLUTE冲突了。解决方法是将其改为<code>RANGE_ABSOLUTE</code>，并将本文件中的所有<code>ABSOLUTE</code>改为<code>RANGE_ABSOLUTE</code>。</p>
+<p>注2：上文描述的是最简单的编译方法，如果需要其他的功能，比如GPU加速，python脚本处理等，则需要在编译时添加额外的扩展包。即，在<code>.vscode/settings.json</code>中添加<code>"cmake.configureArgs": ["-D PKG_PYTHON=yes", "-D PKG_GPU=yes"]</code>。<a
+target="_blank" rel="noopener" href="https://docs.lammps.org/Packages_list.html">支持的扩展包的列表</a>。</p>
+<p>注3：尽管本次编译使用windows系统，但为了减少潜在的bug，还是建议编译在Linux系统上。</p>
 <p><br></p>
 <h3 id="总结">总结</h3>
 <p>一些阅读源代码的经验：</p>
@@ -487,23 +511,623 @@ style为<code>PairLJCutCoulCut</code>，其<code>compute()</code>函数定义在
 和需求相关的部分精读。</li>
 <li>多借助包括跳转，搜索等功能的现代IDE（比如VSCode）。</li>
 <li>读代码时，抓重点，和需求不相关或不重要的功能可以直接跳过。</li>
-<li>多用ChatGPT，看不懂就问。</li>
+<li>勤用ChatGPT，看不懂就问。</li>
 <li>还是看不懂的代码直接跳过，大体知道其功能就可以。有时，读完其他部分再回头看时，可能就懂了。</li>
-<li>注释和官方文档都很重要，其他人的阅读记录也可以参考。英语看不懂就翻译。</li>
+<li>注释和官方文档都很重要，其他人的阅读记录也可以参考。看不懂英语就翻译。</li>
 </ol>
 <p><br></p>
 <p>主要的收获有：</p>
 <ol type="1">
 <li>对lammps“开悟了”，（即有了整体性的理解），遇到bug可以清晰地定位。</li>
-<li>对MD软件应有的组成部分和verlet算法有了更深入的了解。</li>
-<li>对C++有了更深入的了解。</li>
+<li>对MD软件应有的组成部分，MD积分计算方法有了更深入的了解。</li>
+<li>对C++的语法，高级用法，编译有了更深入的了解。</li>
 </ol>
 <p><br></p>
 <p>主要遇到的困难有：</p>
 <ol type="1">
-<li>代码量大，结构复杂。如果不是熟悉MD和Lammps的工作流程的话，需要很长时间才能入门。</li>
+<li>本项目代码量大，结构复杂。如果不是熟悉MD和Lammps的工作流程的话，需要很长时间才能入门。</li>
 <li>本人对c++语言和编码规范不够熟悉，导致很多语句不能一眼看出来作用。</li>
 <li>上述两条困难也导致调试很复杂。</li>
+</ol>
+<p><br></p>
+<h2 id="英文版---english-version">英文版 - English Version</h2>
+<p>Lammps is a molecular dynamics simulation software renowned for its
+parallel computing capabilities. I plan to spend some time delving
+deeply into the Lammps source code to the best of my abilities.</p>
+<p>My objectives are:</p>
+<ul>
+<li>Understand the project structure of Lammps</li>
+<li>Grasp the workflow of Lammps</li>
+<li>Master the workflow of molecular dynamics simulations
+<ul>
+<li>Particularly focusing on the "pair" section, as customizing atomic
+potentials might be needed in future work</li>
+</ul></li>
+<li>Modify and compile the Lammps source code</li>
+<li>Summarize some useful experiences for deep-diving into project code,
+preferably general procedures</li>
+</ul>
+<p><br></p>
+<p>Some Useful links:</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.lammps.org/#gsc.tab=0">Lammps Official
+Website</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/lammps/lammps">Lammps Source
+Code</a></li>
+<li><a target="_blank" rel="noopener" href="https://docs.lammps.org/">Lammps Documentation</a></li>
+<li><a
+target="_blank" rel="noopener" href="https://www.sciencedirect.com/science/article/pii/S0010465521002836?via%3Dihub">Lammps
+Paper</a></li>
+</ul>
+<p><br></p>
+<p>The source code version of Lammps used in this article is the
+real-time version as of May 3, 2025 (Large-scale Atomic/Molecular
+Massively Parallel Simulator - 2 Apr 2025 - Development). The filenames
+and line numbers mentioned below are based on this version.</p>
+<p>Download Lammps source code using:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/lammps/lammps.git</span><br></pre></td></tr></table></figure>
+<p><br></p>
+<h3 id="lammps-project-structure">Lammps Project Structure</h3>
+<p><img src="1746478049194.png" /></p>
+<p>The Lammps project follows a typical structure of scientific C++
+projects. For readers unfamiliar with C++ project structures, here's a
+brief introduction to each file/folder:</p>
+<h4 id="top-level-files">Top-level Files</h4>
+<ul>
+<li>README: Brief project overview, directory information, and related
+document locations.</li>
+<li>LICENSE: Project license detailing usage permissions.</li>
+<li>CITATION.cff: Instructions on how to cite the project.</li>
+</ul>
+<h4 id="source-code">Source Code</h4>
+<ul>
+<li><code>src/</code>: Core source code implementing the primary
+functionalities of Lammps. This is the main focus for detailed
+analysis.</li>
+<li><code>lib/</code>: Source code or interfaces for plugins/extensions
+(e.g., GPU acceleration, machine learning potentials, Python) that
+require separate compilation.</li>
+<li><code>cmake/</code>: CMake build scripts and modules for compiling
+Lammps.</li>
+<li><code>python/</code> and <code>fortran/</code>: Interfaces allowing
+users to interact with Lammps via Python or Fortran.</li>
+<li><code>potentials/</code>: Contains all potential function files
+supported by Lammps.</li>
+</ul>
+<h4 id="tools">Tools</h4>
+<ul>
+<li><code>tools/</code>: Utilities for pre-processing, post-processing,
+and data conversion.</li>
+<li><code>unittest/</code>: Unit tests ensuring Lammps
+functionality.</li>
+<li><code>bench/</code>: Performance benchmarks under different
+compilation conditions.</li>
+</ul>
+<h4 id="documentation">Documentation</h4>
+<ul>
+<li><code>doc/</code>: Documentation including user manuals, developer
+guides, and tutorials.</li>
+<li><code>examples/</code>: Example scripts and input files.</li>
+</ul>
+<h4 id="others">Others</h4>
+<ul>
+<li><code>.github/</code>: Some files related to CI workflows, Issue/PR
+templates, and contribution guidelines.</li>
+<li><code>third_party/</code>: Links to third-party libraries.</li>
+</ul>
+<p><br></p>
+<h3 id="general-workflow-of-lammps">General Workflow of LAMMPS</h3>
+<p>When LAMMPS is executed, it first runs the <code>main()</code>
+function located in <code>src/main.cpp</code>. This function serves as
+the entry point for LAMMPS. Specifically, the line:
+<code>auto lammps = new LAMMPS(argc, argv, lammps_comm);</code> creates
+a LAMMPS object that manages all the functionalities of LAMMPS.</p>
+<p>(Note: In VSCode, right-click on <code>LAMMPS</code> and select "Go
+to Definition" to automatically open the <code>src/lammps.h</code> file.
+Then locate the corresponding definition in <code>src/lammps.cpp</code>,
+specifically starting from line 132. Similarly, definitions or
+declarations for other classes or functions can be found using this
+method.)</p>
+<p>In the definition of the <code>LAMMPS</code> class:</p>
+<p>First, <code>Memory</code> and <code>Error</code> objects are created
+for memory management and error handling.</p>
+<p>At line 238, command-line arguments (such as <code>-h</code>,
+<code>-in</code>) are read and flags are set accordingly.</p>
+<p>Then, at line 492, the logic for partition-based parallelism is
+defined.</p>
+<p>At line 701, Kokkos (the gpu/parallel acceleration module, if used),
+referencing modules, and input modules are initialized.</p>
+<p>At line 715, the input object is initialized for reading, parsing,
+and executing user-provided LAMMPS input script commands.</p>
+<p>At line 740, the <code>create()</code> function is invoked to
+initialize core simulation component classes, including:</p>
+<ul>
+<li><code>comm</code> (communication in parallel computations)</li>
+<li><code>neighbor</code> (building and managing neighbor lists)</li>
+<li><code>domain</code> (managing simulation boxes and boundaries)</li>
+<li><code>atom</code> (managing atom data)</li>
+<li><code>group</code> (managing atom groups)</li>
+<li><code>force</code> (managing forces and force fields)</li>
+<li><code>modify</code> (handling fix and compute commands)</li>
+<li><code>output</code> (managing simulation outputs)</li>
+<li><code>update</code> (managing timestep integration and minimization
+algorithms)</li>
+<li><code>timer</code> (performance timing)</li>
+<li><code>python</code> (Python interfaces)</li>
+</ul>
+<p>These classes' interrelationships are illustrated below (<a
+target="_blank" rel="noopener" href="https://docs.lammps.org/Developer_org.html">source</a>).</p>
+<figure>
+<img src="1746911232551.png" alt="LAMMPS class topology" />
+<figcaption aria-hidden="true">LAMMPS class topology</figcaption>
+</figure>
+<p>All core simulation component classes inherit from the
+<code>Pointer</code> class, which includes pointers to other core
+components. Hence, objects of these classes can access each other.</p>
+<p>Additionally, line 740 calls the <code>post_create()</code> function
+to configure accelerator packages (Kokkos, Intel, GPU, and OpenMP).</p>
+<p><br></p>
+<p>After initializing the LAMMPS object, the <code>main()</code>
+function executes <code>lammps-&gt;input-&gt;file();</code> to read the
+input file. Specifically, it first calls the input class of the LAMMPS
+object, and then its internal <code>file()</code> function reads and
+executes commands line by line (found in <code>src/input.cpp</code> at
+line 195).</p>
+<p>Within the <code>file()</code> function, MPI rank 0 reads the input
+file line by line from <code>infile</code>, broadcasting each line to
+other processes. Each process then parses the commands using
+<code>parse</code>, followed by calling <code>execute_command()</code>
+(line 313) to invoke relevant processing functions and execute each
+command.</p>
+<p>In <code>execute_command()</code> (line 764), some commands have
+hardcoded specialized handling functions (e.g., <code>bond_coeff</code>,
+<code>dump</code>, <code>thermo</code>), which subsequently call
+relevant functions from other modules.</p>
+<p>Other commands are mapped in <code>command_map</code> to
+corresponding handling functions. For instance, the <code>run</code>
+command invokes its respective <code>command()</code> function (line
+868).</p>
+<p><br></p>
+<p>After executing all commands, LAMMPS terminates MPI and exits
+gracefully.</p>
+<p><br></p>
+<h3 id="md-simulation-workflow">MD Simulation Workflow</h3>
+<p>An extremely simplified, official MD (Molecular Dynamics) simulation
+<a target="_blank" rel="noopener" href="https://docs.lammps.org/Howto_spc.html">input file</a> is shown
+below:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">units real</span><br><span class="line">atom_style full</span><br><span class="line">region box block -5 5 -5 5 -5 5</span><br><span class="line">create_box 2 box  bond/types 1 angle/types 1 &amp;</span><br><span class="line">                extra/bond/per/atom 2 extra/angle/per/atom 1 extra/special/per/atom 2</span><br><span class="line"></span><br><span class="line">mass 1 15.9994</span><br><span class="line">mass 2 1.008</span><br><span class="line"></span><br><span class="line">pair_style lj/cut/coul/cut 10.0</span><br><span class="line">pair_coeff 1 1 0.1553 3.166</span><br><span class="line">pair_coeff 1 2 0.0    1.0</span><br><span class="line">pair_coeff 2 2 0.0    1.0</span><br><span class="line"></span><br><span class="line">bond_style zero</span><br><span class="line">bond_coeff 1 1.0</span><br><span class="line"></span><br><span class="line">angle_style zero</span><br><span class="line">angle_coeff 1 109.47</span><br><span class="line"></span><br><span class="line">molecule water spce.mol</span><br><span class="line">create_atoms 0 random 33 34564 NULL mol water 25367 overlap 1.33</span><br><span class="line"></span><br><span class="line">timestep 1.0</span><br><span class="line">fix rigid     all shake 0.0001 10 10000 b 1 a 1</span><br><span class="line">minimize 0.0 0.0 1000 10000</span><br><span class="line">velocity all create 300.0 5463576</span><br><span class="line">fix integrate all nvt temp 300.0 300.0 100.0</span><br><span class="line"></span><br><span class="line">thermo_style custom step temp press etotal density pe ke</span><br><span class="line">thermo 1000</span><br><span class="line">run 20000 upto</span><br><span class="line">write_data spce.data nocoeff</span><br></pre></td></tr></table></figure>
+<p>Here, <code>spce.mol</code> is a file containing the following
+content:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line"># Water molecule. SPC/E geometry</span><br><span class="line"></span><br><span class="line">3 atoms</span><br><span class="line">2 bonds</span><br><span class="line">1 angles</span><br><span class="line"></span><br><span class="line">Coords</span><br><span class="line"></span><br><span class="line">1    0.00000  -0.06461   0.00000</span><br><span class="line">2    0.81649   0.51275   0.00000</span><br><span class="line">3   -0.81649   0.51275   0.00000</span><br><span class="line"></span><br><span class="line">Types</span><br><span class="line"></span><br><span class="line">1        1   # O</span><br><span class="line">2        2   # H</span><br><span class="line">3        2   # H</span><br><span class="line"></span><br><span class="line">Charges</span><br><span class="line"></span><br><span class="line">1       -0.8476</span><br><span class="line">2        0.4238</span><br><span class="line">3        0.4238</span><br><span class="line"></span><br><span class="line">Bonds</span><br><span class="line"></span><br><span class="line">1   1      1      2</span><br><span class="line">2   1      1      3</span><br><span class="line"></span><br><span class="line">Angles</span><br><span class="line"></span><br><span class="line">1   1      2      1      3</span><br><span class="line"></span><br><span class="line">Shake Flags</span><br><span class="line"></span><br><span class="line">1 1</span><br><span class="line">2 1</span><br><span class="line">3 1</span><br><span class="line"></span><br><span class="line">Shake Atoms</span><br><span class="line"></span><br><span class="line">1 1 2 3</span><br><span class="line">2 1 2 3</span><br><span class="line">3 1 2 3</span><br><span class="line"></span><br><span class="line">Shake Bond Types</span><br><span class="line"></span><br><span class="line">1 1 1 1</span><br><span class="line">2 1 1 1</span><br><span class="line">3 1 1 1</span><br><span class="line"></span><br><span class="line">Special Bond Counts</span><br><span class="line"></span><br><span class="line">1 2 0 0</span><br><span class="line">2 1 1 0</span><br><span class="line">3 1 1 0</span><br><span class="line"></span><br><span class="line">Special Bonds</span><br><span class="line"></span><br><span class="line">1 2 3</span><br><span class="line">2 1 3</span><br><span class="line">3 1 2</span><br></pre></td></tr></table></figure>
+<p>This simulation fills the simulation box with 33 rigid SPC/E water
+molecules. It first performs energy minimization on the system, followed
+by an NVT ensemble simulation running for 20,000 steps at 300 K. The
+<code>thermo</code> command is used to output physical properties during
+the simulation. Now, let's analyze the workflow of this MD simulation
+step by step.</p>
+<h4 id="setting-up-the-simulation-environment">Setting up the Simulation
+Environment</h4>
+<p>The first command is <code>units real</code>, indicating the use of
+the real units system. The <code>units</code> command invokes the
+<code>Input::units()</code> function, defined at line 2003 of
+<code>src/input.cpp</code>. After performing some parameter checks, this
+function calls the <code>set_units()</code> function of the
+<code>update</code> object (denoted as
+<code>update-&gt;set_units()</code> in the following text), passing the
+first parameter. The detailed implementation of the
+<code>set_units()</code> function is located at line 134 of
+<code>src/update.cpp</code>. When it detects that <code>units</code> is
+set to <code>real</code>, it configures various physical constants and
+unit conversions within the <code>force</code> object, including the
+Boltzmann constant, unit conversion factors, electron charge, and so
+forth.</p>
+<p>The command <code>atom_style full</code> defines atom types and
+attributes as <code>full</code> (which includes all atom parameters such
+as coordinates, bonds, angles, dihedrals, charges, etc.). It creates an
+instance of the <code>AtomVecFull</code> class, used for managing atom
+data and setting its topology characteristics (such as the presence of
+angles and dihedrals). This class is defined in
+<code>src/MOLECULE/atom_vec_full.cpp</code> and inherits from the
+abstract <code>AtomVec</code> class (defined in
+<code>src/atom_vec.cpp</code>).</p>
+<p>The command <code>region box block -5 5 -5 5 -5 5</code> defines a
+cubic region with a side length of 10. This command calls the
+<code>domain-&gt;add_region()</code> function (defined at line 1967 of
+<code>src/domain.cpp</code>). After parameter checking and ID
+duplication checks, it invokes the <code>region_creator()</code>
+function, which is a template function (defined at line 55 of
+<code>src/domain.cpp</code>). This function essentially uses
+<code>region_map</code> to find and create the region object, mainly
+calculating edge vertices and face normals (implemented in
+<code>src/region_block.cpp</code>). Finally, returning to the
+<code>add_region()</code> function, the created region object is added
+to the <code>domain-&gt;regions</code> list.</p>
+<p>The <code>create_box</code> command invokes the function
+<code>CreateBox::command()</code>, mapped within
+<code>command_map</code>, defined in <code>src/create_box.cpp</code>.
+After performing certain checks, starting from line 196, it defines
+properties such as <code>nbondtypes</code>, <code>nangletypes</code>,
+<code>bond_per_atom</code>, and <code>angle_per_atom</code> for the
+<code>atom</code> object, based on keywords like
+<code>bond/types</code>, etc.</p>
+<p><br></p>
+<h4 id="setting-force-field-parameters">Setting Force Field
+Parameters</h4>
+<p>The command <code>mass 1 15.9994</code> sets the mass of atom type 1
+to 15.9994. The <code>mass</code> command invokes the function
+<code>atom-&gt;set_mass()</code> (defined at line 1933 in
+<code>src/atom.cpp</code>).</p>
+<p><br></p>
+<p>The command <code>pair_style lj/cut/coul/cut 10.0</code> specifies
+the interatomic interactions using the <code>lj/cut/coul/cut</code>
+potential with a cutoff distance of 10.0 Å. Specifically, it defines
+interactions to include van der Waals forces (<code>lj/cut</code>) and
+Coulombic interactions (<code>coul/cut</code>), both truncated at the
+given radius. This command calls the function
+<code>input-&gt;pair_style()</code> (at line 1787 in
+<code>src/input.cpp</code>). After checking that a previous pair style
+has not been defined, at line 1807, it invokes
+<code>force-&gt;create_pair()</code> (defined at line 227 in
+<code>src/force.cpp</code>) to instantiate the pair interaction.</p>
+<p>Within the <code>create_pair</code> function, the
+<code>force-&gt;new_pair()</code> method is called (line 247). This
+method internally uses <code>pair_map</code> to find if the specified
+pair style corresponds to a predefined class. For this example, the pair
+style <code>lj/cut/coul/cut</code> corresponds to the class
+<code>PairLJCutCoulCut</code> (defined at line 33 in
+<code>src/pair_lj_cut_coul_cut.cpp</code>). If a match is found, the
+corresponding function from <code>pair_map</code> is invoked, returning
+a pointer to the newly created Pair object.</p>
+<p>The creation process of <code>pair_map</code> itself is quite
+elegant. Defined at line 89 in <code>src/force.cpp</code>:
+<code>pair_map = new PairCreatorMap();</code>. This line initializes an
+empty <code>PairCreatorMap</code> object and stores its pointer in
+<code>pair_map</code>. The <code>PairCreatorMap</code> object itself is
+a mapping whose keys are strings like <code>"lj/cut/coul/cut"</code>,
+and values are pointers to functions returning pointers to
+<code>Pair</code>-type objects.</p>
+<p>Line 92 defines a macro <code>PairStyle</code> that accepts two
+arguments (<code>key</code> and <code>Class</code>). Its purpose is to
+assign the function pointer
+<code>&amp;style_creator&lt;Pair, Class&gt;</code> to
+<code>(*pair_map)[#key]</code>. For example:
+<code>PairStyle("lj/cut/coul/cut", PairLJCutCoulCut)</code> is
+equivalent to:
+<code>(*pair_map)["lj/cut/coul/cut"] = &amp;style_creator&lt;Pair, PairLJCutCoulCut&gt;;</code>.</p>
+<p>Here, <code>style_creator</code> is a generic factory function
+defined at line 41 in <code>src/force.cpp</code>. It dynamically creates
+an instance of the specified <code>Class</code> (in this example,
+<code>PairLJCutCoulCut</code>) and returns a pointer to it.</p>
+<p>Each header file beginning with <code>pair_</code> contains an
+<code>#ifdef PAIR_CLASS</code> block, within which the
+<code>PairStyle</code> macro is used. During compilation, these
+definitions are aggregated into the generated file
+<code>style_pair.h</code>, which includes all such <code>pair_</code>
+header files. The statement at line 93:
+<code>#include "style_pair.h"</code> registers all these pair classes
+into <code>pair_map</code>. Additionally, one can typically infer which
+input script command corresponds to a <code>.cpp</code> file by
+examining the beginning of its header file. For example,
+<code>PairStyle("lj/cut/coul/cut", PairLJCutCoulCut)</code> corresponds
+directly to the command <code>pair_style lj/cut/coul/cut</code>, and
+similarly, <code>FixStyle(nvt, FixNVT)</code> corresponds to the command
+<code>fix nvt</code>.</p>
+<p>This programming pattern of creating various instances of Pair
+classes is known as the "Style Factory." Many other functionalities
+adopt this design pattern, including creating bonds, angles, defining
+commands, adding fixes, as well as defining atom styles, as previously
+mentioned. Detailed explanations of this mechanism can be found in the
+<a
+target="_blank" rel="noopener" href="https://docs.lammps.org/Developer_code_design.html#style-factories">official
+documentation here</a> and <a
+target="_blank" rel="noopener" href="https://docs.lammps.org/Developer_write_pair.html#writing-new-pair-styles">here</a>.</p>
+<p>After creating the Pair object within the <code>create_pair</code>
+function, control returns to the <code>pair_style()</code> function,
+which then calls the <code>settings()</code> function associated with
+<code>force-&gt;pair</code>. In this example, it calls
+<code>PairLJCutCoulCut::settings()</code> (line 191 in
+<code>src/pair_lj_cut_coul_cut.cpp</code>) to set cutoff parameters.</p>
+<p><br></p>
+<p>The command <code>pair_coeff</code> defines interaction parameters
+between different atom types by invoking the function
+<code>PairLJCutCoulCut::coeff()</code>, defined at line 218 in
+<code>src/pair_lj_cut_coul_cut.cpp</code>. This function reads
+parameters such as atom type indices, epsilon, and sigma values and
+stores them accordingly.</p>
+<p>The procedure for setting bonds follows a similar logic: the command
+first enters the <code>force-&gt;create_bond()</code> function, looks up
+the corresponding bond style class in <code>bond_map</code>, and then
+creates the bond object. The <code>bond_coeff</code> command
+subsequently sets parameters for this bond object. Angles follow the
+same pattern.</p>
+<p><br></p>
+<h4 id="filling-molecules">Filling Molecules</h4>
+<p>The command <code>molecule water spce.mol</code> defines a molecular
+type named <code>water</code>, whose topology is provided in the file
+<code>spce.mol</code>. The <code>molecule</code> command invokes the
+function <code>atom-&gt;add_molecule()</code> defined in
+<code>src/atom.cpp</code>, where it creates a new <code>Molecule</code>
+object, reads and parses the topology from the file
+<code>spce.mol</code>, and stores this information in the
+<code>molecules</code> list within the <code>atom</code> object. The
+<code>Molecule</code> class itself is defined in
+<code>src/molecule.cpp</code>, and the file-reading function
+<code>Molecule::read()</code> starts at line 425.</p>
+<p>The command
+<code>create_atoms 0 random 33 34564 NULL mol water 25367 overlap 1.33</code>
+creates 33 water molecules randomly distributed within the simulation
+box. The <code>create_atoms</code> command invokes the function
+<code>CreateAtoms::command()</code>, mapped within
+<code>command_map</code> and defined at line 97 of
+<code>src/create_atoms.cpp</code>. Within this function, it begins
+parsing parameters at line 120 (our parameters here are
+<code>0 random 33 34564 NULL</code>) and keyword arguments at line 197
+(our keywords here are <code>mol water 25367 overlap 1.33</code>). After
+several complex checks, the function <code>add_random()</code> is called
+at line 532.</p>
+<p>In the <code>add_random()</code> function, the random number
+generator is initialized first, and then filling boundaries are
+determined according to the region specified. At line 835, the main loop
+begins: the outer loop runs <code>nrandom</code> times (33 times in our
+example), attempting to insert <code>nrandom</code> molecules. The inner
+loop runs up to <code>maxtry</code> times (default is 1000), trying at
+most <code>maxtry</code> times to find a valid position for each
+molecule.</p>
+<p>Inside the inner loop, random coordinates are first generated and
+then checked to see if they fall within the region. If the
+<code>overlap</code> keyword is defined, the newly generated atomic
+coordinates are checked against existing atoms for overlaps. MPI process
+0 calculates the coordinates of all atoms in the new molecule, while
+other MPI processes concurrently check each atom for overlaps with
+existing atoms.</p>
+<p>If all checks pass, the <code>add_molecule()</code> function (defined
+at line 1595 in <code>src/create_atoms.cpp</code>) is called to add the
+molecule into the <code>atomvec</code>.</p>
+<p><br></p>
+<h4 id="preprocessing-for-simulation">Preprocessing for Simulation</h4>
+<p>The command <code>timestep 1.0</code> sets the simulation timestep to
+1.0 fs. It calls the function <code>input-&gt;timestep()</code>, which
+sets <code>update-&gt;dt</code> to 1.0 fs.</p>
+<p>The command <code>fix rigid all shake 0.0001 10 10000 b 1 a 1</code>
+uses the SHAKE algorithm to constrain bonds numbered 1 and angles
+numbered 1, making the water molecules rigid. The <code>fix</code>
+command invokes the <code>modify-&gt;add_fix()</code> method, once again
+using the Style Factory pattern to create a <code>FixShake</code> object
+(defined in <code>src/RIGID/fix_shake.cpp</code>) and adds it to the
+<code>modify-&gt;fix</code> list.</p>
+<p>The command <code>minimize 0.0 0.0 1000 10000</code> performs energy
+minimization. This invokes the <code>Minimize::command()</code>
+function, which sets various parameters (such as energy and force
+criteria) within the <code>update</code> object, and then executes the
+<code>update-&gt;minimize-&gt;run()</code> method (defined at line 423
+in <code>src/min.cpp</code>). This function calls <code>iterate()</code>
+to carry out the actual energy minimization calculations. The default
+minimization algorithm in LAMMPS (<code>cg</code>, Conjugate Gradient)
+is employed, with the <code>iterate()</code> function defined in
+<code>src/min_cg.cpp</code>.</p>
+<p>The command <code>velocity all create 300.0 5463576</code>
+initializes the velocities of all atoms to correspond to 300 K. It calls
+the <code>Velocity::command()</code> function (defined at line 49 in
+<code>src/velocity.cpp</code>). Subsequently, it invokes the
+<code>Velocity::create()</code> function (at line 160) to assign
+velocities to all atoms.</p>
+<p>Note: notice that the <code>velocity</code> command assigns initial
+velocities randomly to each atom individually (line 274). This means
+atoms within the same molecule will likely have differing initial
+velocities, potentially subjecting bonds and angles within molecules to
+large forces at the start of the simulation. This could be problematic
+and may lead to an increased likelihood of instability or simulation
+crashes.</p>
+<p>The command <code>fix integrate all nvt temp 300.0 300.0 100.0</code>
+sets up the NVT integrator. Similar to the previous steps, the
+<code>fix</code> command invokes the <code>modify-&gt;add_fix()</code>
+method to create a <code>FixNVT</code> object (defined in
+<code>src/fix_nvt.cpp</code>) and adds it to the
+<code>modify-&gt;fix</code> list. The <code>FixNVT</code> class (as well
+as the NPT and NPH classes) inherits from the <code>FixNH</code> class
+("NH" stands for "Nose-Hoover," defined in <code>src/fix_nh.cpp</code>).
+Note that this fix does not override the previously defined rigid-body
+constraint fix.</p>
+<p><br></p>
+<h4 id="running-simulation-and-output">Running Simulation and
+Output</h4>
+<p>The command <code>thermo_style</code> sets the output format for
+thermo data. It calls the function
+<code>output-&gt;create_thermo()</code> (defined in
+<code>src/output.cpp</code>, line 899). Inside
+<code>create_thermo</code>, it checks whether a <code>thermo</code>
+object already exists. If not, it creates a new <code>Thermo</code>
+object (defined in <code>src/thermo.cpp</code>). During creation, the
+function <code>thermo-&gt;parse_fields()</code> (line 172) is invoked to
+process parameters such as
+<code>step temp press etotal density pe ke</code>.</p>
+<p>Note: I'm not particularly fond of this design decision. Compared to
+the <code>thermo_style</code> command, creating a new
+<code>Thermo</code> object should ideally be part of a dedicated
+<code>thermo</code> command or explicitly created using something like
+<code>new thermo t1</code>.</p>
+<p>The command <code>thermo 1000</code> sets the frequency of thermo
+data output to every 1000 timesteps. It calls
+<code>Thermo::set_thermo()</code> (defined in
+<code>src/thermo.cpp</code>, line 195), assigning the value 1000 to
+<code>output-&gt;thermo_every</code>.</p>
+<p><br></p>
+<p>The command <code>run 20000 upto</code> executes the NVT simulation
+defined above, running up to a total of 20,000 steps (including the
+steps used by <code>minimize</code>). It calls the function
+<code>Run::command()</code> (defined in <code>src/run.cpp</code>, line
+37).</p>
+<p>The default integrator in <code>update-&gt;integrate</code> is set to
+<code>verlet</code> (see <code>src/update.cpp</code>, line 91). After
+setting necessary parameters (such as the number of simulation steps)
+and initializing components, the simulation officially begins at line
+176 by calling <code>update-&gt;integrate-&gt;run()</code> (defined in
+<code>src/verlet.cpp</code>, line 229). Within this function, it
+performs a total of <code>nsteps</code> iterations (just under 20,000
+steps in this case), simulating one timestep per iteration.</p>
+<p>Note: The Velocity Verlet algorithm that is used here is one of the
+most widely used algorithms in molecular dynamics. Each timestep
+involves three stages: first, integrating to update atom positions;
+second, calculating forces based on new positions; and third,
+integrating again to update atom velocities using new forces.</p>
+<p><br></p>
+<p>In each iteration (starting at line 246), the simulation first checks
+whether a timeout condition is met, exiting if so. If no timeout occurs,
+it updates the current timestep (<code>ntimestep</code>). Next, it calls
+the <code>ev_set()</code> function to determine whether energies or
+virials (the spatial distribution of particle forces) need to be
+computed at this timestep.</p>
+<p>Subsequently, <code>modify-&gt;initial_integrate()</code> is invoked,
+calling the <code>initial_integrate()</code> methods of all fix objects
+to perform the first Velocity Verlet integration.</p>
+<p>Next, <code>neighbor-&gt;decide()</code> checks if a neighbor list
+update is necessary. If an update is not needed,
+<code>comm-&gt;forward_comm()</code> sends the coordinates of potential
+ghost atoms (atoms near subdomain boundaries interacting with atoms
+managed by other processors) to other processors.</p>
+<p>If a neighbor list update is required, <code>domain-&gt;pbc()</code>
+re-wraps atoms into the periodic boundaries. For triclinic systems, it
+also calls <code>domain-&gt;x2lamda()</code> to convert atom coordinates
+to fractional coordinates within the cell (ranging from 0 to 1). If the
+box dimensions have changed, <code>domain-&gt;reset_box()</code> resets
+box and subdomain dimensions. Next, <code>comm-&gt;exchange()</code>
+transfers atoms to the appropriate processors. If required, atoms are
+reordered using <code>atom-&gt;sort()</code>. Afterward,
+<code>comm-&gt;borders()</code> updates ghost atom lists and sends their
+coordinates to other processors. Finally,
+<code>neighbor-&gt;build()</code> constructs the neighbor list.</p>
+<p><br></p>
+<p>The next step (from line 301 onwards) is force calculation. It first
+calls <code>force_clear()</code> to clear atomic forces. Depending on
+system requirements, it sequentially calls the following:</p>
+<ul>
+<li><code>force-&gt;pair-&gt;compute()</code></li>
+<li><code>force-&gt;bond-&gt;compute()</code></li>
+<li><code>force-&gt;angle-&gt;compute()</code></li>
+<li><code>force-&gt;dihedral-&gt;compute()</code></li>
+<li><code>force-&gt;improper-&gt;compute()</code></li>
+<li><code>force-&gt;kspace-&gt;compute()</code> (for long-range Coulomb
+interactions)</li>
+</ul>
+<p>These compute functions calculate atomic forces. Taking
+<code>pair-&gt;compute()</code> as an example, the pair style used here
+(<code>PairLJCutCoulCut</code>) has its <code>compute()</code> function
+defined in <code>src/pair_lj_cut_coul_cut.cpp</code> (line 65). It
+iterates over atoms and their neighbor lists, calculates Coulomb and
+Lennard-Jones interactions, and accumulates these forces. If Newton's
+third law is enabled, it also updates forces for neighboring atoms
+accordingly.</p>
+<p>After force calculation, if Newton's third law is enabled, reverse
+communication via <code>comm-&gt;reverse_comm()</code> updates forces
+involving ghost atoms.</p>
+<p><br></p>
+<p>Finally, after computing forces, at line 348,
+<code>modify-&gt;final_integrate()</code> is called. It executes the
+<code>final_integrate()</code> methods of all fix objects, completing
+the second integration step of the Velocity Verlet algorithm.</p>
+<p>If output is required at the current step,
+<code>output-&gt;write()</code> outputs thermo data, dump data, and
+restart files.</p>
+<p><br></p>
+<p>Within the <code>update-&gt;integrate-&gt;run()</code> method,
+important steps (like initial integration or neighbor list construction)
+have checkpoints to determine if any fixes require additional
+adjustments. If so, corresponding methods (<code>post_integrate</code>,
+<code>pre_neighbor</code>, etc.) are called.</p>
+<p>Additionally, timing markers
+(<code>timer-&gt;stamp(); ...; timer-&gt;stamp(Timer::CATEGORY);</code>)
+record execution times at key steps.</p>
+<p>Finally, control returns to <code>Run::command()</code>, and
+<code>update-&gt;integrate-&gt;cleanup()</code> is called to perform any
+necessary cleanup operations.</p>
+<p><br></p>
+<p>The command <code>write_data spce.data nocoeff</code> outputs atomic
+coordinates at the end of the simulation into the file
+<code>spce.data</code>. It calls <code>WriteData::command()</code>
+(defined in <code>src/write_data.cpp</code>, line 51). Within this
+function, it calls <code>write_data-&gt;write()</code> (line 123),
+subsequently invoking <code>atom-&gt;lmap-&gt;write_data()</code> to
+write atom data to the output file.</p>
+<p><br></p>
+<h3 id="compiling-lammps">Compiling LAMMPS</h3>
+<p>This blog compiles LAMMPS using VSCode's CMake Tools extension.
+Additionally, the official <a
+target="_blank" rel="noopener" href="https://docs.lammps.org/Build_cmake.html">LAMMPS CMake compilation
+guide</a> provides instructions for compiling via the command line.</p>
+<p>First, open VSCode and navigate to the CMake panel. The extension
+will prompt you to select a <code>CMakeLists.txt</code> file. Here,
+choose <code>cmake/CMakeLists.txt</code>. If you later need to change
+the <code>CMakeLists.txt</code> file, specify the new path in
+<code>.vscode/settings.json</code> under
+<code>"cmake.sourceDirectory"</code>.</p>
+<p>Next, click the column below the "Configure" button to select a
+compiler. I use the GCC compiler provided by msys2-mingw64 (installation
+instructions available <a href="https://blog.tennisatw.com/post/76/">in
+my another blog</a>).</p>
+<p>Set the build variant to <code>Release</code> at the column below the
+"Selecting Compiler" column, then click the "Configure" button and
+VSCode will automatically create a <code>build</code> folder and
+generate a <code>CMakeCache.txt</code> file inside it.</p>
+<p>Then, click the "Build" button, and VSCode will automatically compile
+LAMMPS, generating executable files inside the <code>build</code>
+folder.</p>
+<p>Note: This version of LAMMPS has a bug at line 53 of
+<code>src\image.cpp</code>, where a locally defined constant
+<code>ABSOLUTE</code> conflicts with a global constant. A workaround is
+to rename it to <code>RANGE_ABSOLUTE</code> and replace all occurrences
+of <code>ABSOLUTE</code> in this file accordingly.</p>
+<p>Note 2: The above describes the simplest compilation method. For
+additional functionalities (such as GPU acceleration or Python scripting
+support), extra packages must be enabled at compilation. Add extra
+arguments in <code>.vscode/settings.json</code> using
+<code>"cmake.configureArgs": ["-D PKG_PYTHON=yes", "-D PKG_GPU=yes"]</code>.
+A list of supported packages can be found <a
+target="_blank" rel="noopener" href="https://docs.lammps.org/Packages_list.html">here</a>.</p>
+<p>Note 3: Although this compilation is done on Windows, it is
+recommended to compile on Linux systems to minimize potential
+issues.</p>
+<p><br></p>
+<h3 id="summary">Summary</h3>
+<p>Some insights gained from source-code reading:</p>
+<ol type="1">
+<li>Clearly define your goals and requirements before diving in;
+otherwise, you'll waste effort and lose focus.</li>
+<li>Start by directly using the software or reading documentation to
+gain a preliminary understanding. The more you understand the software’s
+features, the smoother code-reading becomes.</li>
+<li>Grasp the overall project structure and workflow first, then closely
+read the specific parts related to your needs.</li>
+<li>Utilize modern IDE features (e.g., jumping to definitions and search
+functionalities) available in tools like VSCode.</li>
+<li>Focus on essential code; skip irrelevant or less important
+functionalities.</li>
+<li>Consult ChatGPT as frequently as possible—ask whenever you encounter
+difficulties.</li>
+<li>If certain parts remain confusing, skip them initially and revisit
+after gaining more context elsewhere.</li>
+<li>Pay close attention to comments and official documentation. Reading
+notes from others can also be helpful.</li>
+</ol>
+<p><br></p>
+<p>Main achievements:</p>
+<ol type="1">
+<li>Achieved a comprehensive understanding ("enlightenment") of LAMMPS,
+allowing clear identification and localization of bugs.</li>
+<li>Gained deeper knowledge of the essential components of MD software
+and MD integration algorithms.</li>
+<li>Enhanced understanding of C++ syntax, advanced usage, and
+compilation processes.</li>
+</ol>
+<p><br></p>
+<p>Main challenges encountered:</p>
+<ol type="1">
+<li>The vast and complex codebase requires substantial time to
+understand, especially without prior familiarity with MD and LAMMPS
+workflows.</li>
+<li>Limited proficiency in C++ syntax and coding conventions led to
+difficulties quickly grasping code functions.</li>
+<li>These difficulties also significantly complicated debugging
+efforts.</li>
 </ol>
 
     </div>
@@ -514,8 +1138,8 @@ style为<code>PairLJCutCoulCut</code>，其<code>compute()</code>函数定义在
 
     <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E7%BC%96%E7%A8%8B-programming/" rel="tag"># 编程 - Programming</a>
               <a href="/tags/%E9%9A%8F%E6%83%B3-thoughts/" rel="tag"># 随想 - Thoughts</a>
+              <a href="/tags/%E7%BC%96%E7%A8%8B-programming/" rel="tag"># 编程 - Programming</a>
           </div>
 
         
@@ -562,7 +1186,7 @@ style为<code>PairLJCutCoulCut</code>，其<code>compute()</code>函数定义在
     <span class="author" itemprop="copyrightHolder">写给每一个像我的人 - To everyone like me</span>
     <div>
       <p class="footer-hidden"><br><br><br><br><br><br><br><br>本处广告位招租 - This ad space is available for rent</p>
-      <p class="footer-hidden">上次更新时间 - Last Updated: ||2025/05/14 21:18:41||</p>
+      <p class="footer-hidden">上次更新时间 - Last Updated: ||2025/05/15 00:56:39||</p>
     </div>
   </div>
 

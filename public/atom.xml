@@ -6,7 +6,7 @@
   <link href="https://blog.tennisatw.com/atom.xml" rel="self"/>
   
   <link href="https://blog.tennisatw.com/"/>
-  <updated>2025-05-15T03:18:12.258Z</updated>
+  <updated>2025-05-15T06:56:15.063Z</updated>
   <id>https://blog.tennisatw.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>深挖Lammps的源代码</title>
+    <title>深挖Lammps的源代码 - Delving Deeply into Lammps Source Code</title>
     <link href="https://blog.tennisatw.com/post/81/"/>
     <id>https://blog.tennisatw.com/post/81/</id>
     <published>2025-05-04T05:25:20.000Z</published>
-    <updated>2025-05-15T03:18:12.258Z</updated>
+    <updated>2025-05-15T06:56:15.063Z</updated>
     
     
     <summary type="html">&lt;!-- --&gt;</summary>
@@ -29,9 +29,9 @@
     
     
     
-    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
-    
     <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
     
   </entry>
   
@@ -89,14 +89,14 @@
   </entry>
   
   <entry>
-    <title>基于vscode的最简易的c/c++开发环境搭建</title>
+    <title>基于VSCode的最简易的C/C++开发环境搭建 - A Minimal C/C++ Development Environment with VSCode</title>
     <link href="https://blog.tennisatw.com/post/76/"/>
     <id>https://blog.tennisatw.com/post/76/</id>
     <published>2025-04-14T20:43:05.000Z</published>
-    <updated>2025-04-24T10:20:22.399Z</updated>
+    <updated>2025-05-15T05:55:31.621Z</updated>
     
     
-    <summary type="html">对于非计算机专业的人来说，c/c++的配置和构建相当复杂。这里给习惯vscode的windows用户推荐一个简单的方案：使用vscode及插件 + msys2作为开发环境。</summary>
+    <summary type="html">对于非计算机专业的人来说，C/C++的配置和构建相当复杂。这里给习惯VSCode的windows用户推荐一个简单的方案：使用VSCode及插件 + MSYS2作为开发环境。</summary>
     
     
     
@@ -224,9 +224,9 @@
     
     
     
-    <category term="日常 - Daily" scheme="https://blog.tennisatw.com/tags/%E6%97%A5%E5%B8%B8-daily/"/>
-    
     <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
+    
+    <category term="日常 - Daily" scheme="https://blog.tennisatw.com/tags/%E6%97%A5%E5%B8%B8-daily/"/>
     
   </entry>
   
@@ -330,9 +330,9 @@
     
     
     
-    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
-    
     <category term="敏感 - Sensitive" scheme="https://blog.tennisatw.com/tags/%E6%95%8F%E6%84%9F-sensitive/"/>
+    
+    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
     
   </entry>
   
@@ -576,9 +576,9 @@
     
     
     
-    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
-    
     <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
+    
+    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
     
   </entry>
   
@@ -699,11 +699,11 @@
     
     
     
+    <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
+    
     <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
     
     <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
-    
-    <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
     
   </entry>
   
@@ -771,11 +771,11 @@
     
     
     
-    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
-    
     <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
     
     <category term="敏感 - Sensitive" scheme="https://blog.tennisatw.com/tags/%E6%95%8F%E6%84%9F-sensitive/"/>
+    
+    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
     
   </entry>
   
@@ -1324,9 +1324,9 @@
     
     
     
-    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
-    
     <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
     
     <category term="敏感 - Sensitive" scheme="https://blog.tennisatw.com/tags/%E6%95%8F%E6%84%9F-sensitive/"/>
     
