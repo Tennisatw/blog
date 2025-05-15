@@ -605,7 +605,7 @@
   </url>
   
   <url>
-    <loc>https://blog.tennisatw.com/post/-15/</loc>
+    <loc>https://blog.tennisatw.com/post/-16/</loc>
     
     <lastmod>2025-02-05</lastmod>
     
@@ -614,7 +614,7 @@
   </url>
   
   <url>
-    <loc>https://blog.tennisatw.com/post/-16/</loc>
+    <loc>https://blog.tennisatw.com/post/-15/</loc>
     
     <lastmod>2025-02-05</lastmod>
     
@@ -641,7 +641,7 @@
   </url>
   
   <url>
-    <loc>https://blog.tennisatw.com/post/-8/</loc>
+    <loc>https://blog.tennisatw.com/post/-11/</loc>
     
     <lastmod>2025-02-05</lastmod>
     
@@ -659,7 +659,7 @@
   </url>
   
   <url>
-    <loc>https://blog.tennisatw.com/post/-11/</loc>
+    <loc>https://blog.tennisatw.com/post/-8/</loc>
     
     <lastmod>2025-02-05</lastmod>
     
@@ -704,7 +704,7 @@
   </url>
   
   <url>
-    <loc>https://blog.tennisatw.com/post/-2/</loc>
+    <loc>https://blog.tennisatw.com/post/-4/</loc>
     
     <lastmod>2025-02-05</lastmod>
     
@@ -722,7 +722,7 @@
   </url>
   
   <url>
-    <loc>https://blog.tennisatw.com/post/-4/</loc>
+    <loc>https://blog.tennisatw.com/post/-2/</loc>
     
     <lastmod>2025-02-05</lastmod>
     
@@ -875,15 +875,6 @@
   </url>
   
   <url>
-    <loc>https://blog.tennisatw.com/post/6/</loc>
-    
-    <lastmod>2024-11-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.tennisatw.com/post/4/</loc>
     
     <lastmod>2024-11-09</lastmod>
@@ -893,7 +884,7 @@
   </url>
   
   <url>
-    <loc>https://blog.tennisatw.com/post/10/</loc>
+    <loc>https://blog.tennisatw.com/post/6/</loc>
     
     <lastmod>2024-11-09</lastmod>
     
@@ -903,6 +894,15 @@
   
   <url>
     <loc>https://blog.tennisatw.com/post/11/</loc>
+    
+    <lastmod>2024-11-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.tennisatw.com/post/10/</loc>
     
     <lastmod>2024-11-09</lastmod>
     
