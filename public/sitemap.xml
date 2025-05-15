@@ -704,7 +704,7 @@
   </url>
   
   <url>
-    <loc>https://blog.tennisatw.com/post/-4/</loc>
+    <loc>https://blog.tennisatw.com/post/-3/</loc>
     
     <lastmod>2025-02-05</lastmod>
     
@@ -713,7 +713,7 @@
   </url>
   
   <url>
-    <loc>https://blog.tennisatw.com/post/-3/</loc>
+    <loc>https://blog.tennisatw.com/post/-4/</loc>
     
     <lastmod>2025-02-05</lastmod>
     
@@ -794,7 +794,7 @@
   </url>
   
   <url>
-    <loc>https://blog.tennisatw.com/post/19/</loc>
+    <loc>https://blog.tennisatw.com/post/24/</loc>
     
     <lastmod>2024-11-09</lastmod>
     
@@ -803,7 +803,7 @@
   </url>
   
   <url>
-    <loc>https://blog.tennisatw.com/post/24/</loc>
+    <loc>https://blog.tennisatw.com/post/19/</loc>
     
     <lastmod>2024-11-09</lastmod>
     
@@ -839,7 +839,7 @@
   </url>
   
   <url>
-    <loc>https://blog.tennisatw.com/post/44/</loc>
+    <loc>https://blog.tennisatw.com/post/45/</loc>
     
     <lastmod>2024-11-09</lastmod>
     
@@ -848,7 +848,7 @@
   </url>
   
   <url>
-    <loc>https://blog.tennisatw.com/post/45/</loc>
+    <loc>https://blog.tennisatw.com/post/44/</loc>
     
     <lastmod>2024-11-09</lastmod>
     
@@ -875,15 +875,6 @@
   </url>
   
   <url>
-    <loc>https://blog.tennisatw.com/post/4/</loc>
-    
-    <lastmod>2024-11-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.tennisatw.com/post/6/</loc>
     
     <lastmod>2024-11-09</lastmod>
@@ -893,7 +884,7 @@
   </url>
   
   <url>
-    <loc>https://blog.tennisatw.com/post/11/</loc>
+    <loc>https://blog.tennisatw.com/post/10/</loc>
     
     <lastmod>2024-11-09</lastmod>
     
@@ -902,7 +893,16 @@
   </url>
   
   <url>
-    <loc>https://blog.tennisatw.com/post/10/</loc>
+    <loc>https://blog.tennisatw.com/post/4/</loc>
+    
+    <lastmod>2024-11-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.tennisatw.com/post/11/</loc>
     
     <lastmod>2024-11-09</lastmod>
     
