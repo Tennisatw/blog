@@ -6,7 +6,7 @@
   <link href="https://blog.tennisatw.com/atom.xml" rel="self"/>
   
   <link href="https://blog.tennisatw.com/"/>
-  <updated>2025-05-15T07:09:21.832Z</updated>
+  <updated>2025-05-27T23:18:16.290Z</updated>
   <id>https://blog.tennisatw.com/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用Apptainer构建NequIP容器，并在DRAC上运行</title>
+    <link href="https://blog.tennisatw.com/post/82/"/>
+    <id>https://blog.tennisatw.com/post/82/</id>
+    <published>2025-05-27T19:52:27.000Z</published>
+    <updated>2025-05-27T23:18:16.290Z</updated>
+    
+    
+    <summary type="html">&lt;!-- --&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>深挖Lammps的源代码 - Delving Deeply into Lammps Source Code</title>

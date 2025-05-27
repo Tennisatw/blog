@@ -15,8 +15,25 @@
     <atom:link href="https://blog.tennisatw.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Thu, 15 May 2025 07:09:21 GMT</pubDate>
+    <pubDate>Tue, 27 May 2025 23:18:16 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>使用Apptainer构建NequIP容器，并在DRAC上运行</title>
+      <link>https://blog.tennisatw.com/post/82/</link>
+      <guid>https://blog.tennisatw.com/post/82/</guid>
+      <pubDate>Tue, 27 May 2025 19:52:27 GMT</pubDate>
+      
+      <description>&lt;!-- --&gt;</description>
+      
+      
+      
+      
+      
+      
+      <comments>https://blog.tennisatw.com/post/82/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>深挖Lammps的源代码 - Delving Deeply into Lammps Source Code</title>

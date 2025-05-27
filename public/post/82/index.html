@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#555080"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-50.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-50.png">
+  <link rel="mask-icon" href="/images/favicon-50.svg" color="#555080">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha256-wiz7ZSCn/btzhjKDQBms9Hx4sSeUYsDrTLg7roPstac=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"blog.tennisatw.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.19.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#555080","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"utterances","storage":true,"lazyload":false,"nav":null,"activeClass":"utterances"},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索 - Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits}个结果 - undefined results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta property="og:type" content="article">
+<meta property="og:title" content="使用Apptainer构建NequIP容器，并在DRAC上运行">
+<meta property="og:url" content="https://blog.tennisatw.com/post/82/">
+<meta property="og:site_name" content="Tennisatw的博客 - Blog of Tennisatw">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2025-05-27T19:52:27.000Z">
+<meta property="article:modified_time" content="2025-05-27T23:18:16.290Z">
+<meta property="article:author" content="Tennisatw">
+<meta property="article:tag" content="chemistry">
+<meta property="article:tag" content="programming">
+<meta property="article:tag" content="Tennisbot">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://blog.tennisatw.com/post/82/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://blog.tennisatw.com/post/82/","path":"/post/82/","title":"使用Apptainer构建NequIP容器，并在DRAC上运行"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>使用Apptainer构建NequIP容器，并在DRAC上运行 | Tennisatw的博客 - Blog of Tennisatw</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="Tennisatw的博客 - Blog of Tennisatw" type="application/atom+xml">
+<link rel="alternate" href="/rss2.xml" title="Tennisatw的博客 - Blog of Tennisatw" type="application/rss+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Tennisatw的博客 - Blog of Tennisatw</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索 - Search" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+    <div id="google_translate_element"></div>
+    <script type="text/javascript" async="async" >
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {pageLanguage: 'en,zh-CN', 
+        includedLanguages: 'en,zh-CN,zh-TW,es,ar,hi,ru,ja,de,fr', 
+        layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 
+        'google_translate_element');
+    }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script><li class="menu-item menu-item-首页---home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页 - Home</a></li><li class="menu-item menu-item-关于---about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于 - About</a></li><li class="menu-item menu-item-页面列表---pages"><a href="/pages/" rel="section"><i class="fa fa-sitemap fa-fw"></i>页面列表 - Pages</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索 - Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索 - Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          目录 - TOC
+        </li>
+        <li class="sidebar-nav-overview">
+          概览 - Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%96%E8%AF%91apptainer"><span class="nav-text">编译Apptainer</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85cuda-11.8"><span class="nav-text">安装CUDA 11.8</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9E%84%E5%BB%BAnequip%E5%AE%B9%E5%99%A8"><span class="nav-text">构建NequIP容器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9C%A8drac%E4%B8%8A%E8%BF%90%E8%A1%8C%E5%AE%B9%E5%99%A8"><span class="nav-text">在DRAC上运行容器</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Tennisatw"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">Tennisatw</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">97</span>
+          <span class="site-state-item-name">文章<br>posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/series/">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">系列<br>series</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">标签<br>tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="mailto:tennisatw@mail.com" title="Email → mailto:tennisatw@mail.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://github.com/tennisatw" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;tennisatw" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/tennisatw" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;tennisatw" rel="noopener me" target="_blank"><i class="fab fa-twitter fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://discord.gg/3eerBKZbpX" title="Discord → https:&#x2F;&#x2F;discord.gg&#x2F;3eerBKZbpX" rel="noopener me" target="_blank"><i class="fab fa-discord fa-fw"></i></a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://blog.tennisatw.com/post/82/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Tennisatw">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Tennisatw的博客 - Blog of Tennisatw">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="使用Apptainer构建NequIP容器，并在DRAC上运行 | Tennisatw的博客 - Blog of Tennisatw">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          使用Apptainer构建NequIP容器，并在DRAC上运行
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于 - Posted on</span>
+      
+
+      <time title="Created: 2025/05/27 13:52:27 / Modified: 17:18:16" itemprop="dateCreated datePublished" datetime="2025-05-27T13:52:27-06:00">2025/05/27</time>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="字数 - Word count">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">字数 - Word count: </span>
+      <span>3.7k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时间 - Reading time">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时间 - Reading time &asymp;</span>
+      <span>13 mins.</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>DRAC（前身computecanada）的运行节点不能联网，也没有sudo权限，想要在DRAC上编译/使用自定义的程序，或使用对环境有苛刻要求的程序，一个稍微省心的办法是通过容器，把程序运行所需的所有文件（代码、库、依赖、配置等）打包起来。</p>
+<p>Docker是最常用的容器工具，但DRAC只支持Apptainer。</p>
+<p><br></p>
+<h3 id="编译apptainer">编译Apptainer</h3>
+<p>因为DRAC是Linux环境，所以我们也要在Linux环境下编译Apptainer。</p>
+<p>Windows用户可以使用WSL（Windows Subsystem for
+Linux）进入Linux环境。如果没有安装WSL，可以参考<a
+target="_blank" rel="noopener" href="https://docs.microsoft.com/zh-cn/windows/wsl/install">这个网页</a>自行安装。</p>
+<p>在Windows中打开PowerShell，输入以下命令以进入WSL环境：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wsl</span><br></pre></td></tr></table></figure>
+<p>如果看到了类似于<code>yourname@hostname:~$</code>的彩色提示符，说明已经进入了WSL环境。</p>
+<p>Mac用户可以使用multipass等工具进入Linux环境。</p>
+<p><br></p>
+<p>然后，一行一行地输入以下命令以编译Apptainer：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~</span><br><span class="line">sudo apt-get install -y build-essential uidmap squashfs-tools libseccomp-dev pkg-config git wget cryptsetup</span><br><span class="line"></span><br><span class="line"><span class="comment"># Go 语言</span></span><br><span class="line">wget https://go.dev/dl/go1.22.2.linux-amd64.tar.gz</span><br><span class="line">sudo tar -C /usr/local -xzf go1.22.2.linux-amd64.tar.gz</span><br><span class="line"><span class="built_in">echo</span> <span class="string">&#x27;export PATH=$PATH:/usr/local/go/bin&#x27;</span> &gt;&gt; ~/.bashrc</span><br><span class="line"><span class="built_in">source</span> ~/.bashrc</span><br><span class="line"></span><br><span class="line"><span class="comment"># Apptainer</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/apptainer/apptainer.git</span><br><span class="line"><span class="built_in">cd</span> apptainer</span><br><span class="line">./mconfig --without-seccomp   <span class="comment"># 去掉seccomp可避免编译失败</span></span><br><span class="line">make -C builddir</span><br><span class="line">sudo make -C builddir install</span><br><span class="line">apptainer --version</span><br></pre></td></tr></table></figure>
+<p>如果最后一行命令输出了类似 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apptainer version 1.4.1+165-g49bb538c5</span><br></pre></td></tr></table></figure> 说明Apptainer编译成功。</p>
+<p>注：gpt-o3说WSL2默认禁用seccomp，所以使用apt安装的Apptainer无法运行，只能手动编译无seccomp的版本。此外，安装的版本也可能不支持fakeroot。但我没有亲自试过。</p>
+<p><br></p>
+<h3 id="安装cuda-11.8">安装CUDA 11.8</h3>
+<p>NequIP需要CUDA 11.8。我们可以在WSL环境中安装CUDA
+11.8，然后将其打包到容器中。此安装不会影响Windows系统中的CUDA。</p>
+<p>首先先检测CUDA是否已安装：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvidia-smi</span><br></pre></td></tr></table></figure>
+<p>如果报错<code>command not found</code>，则说明CUDA未安装。跳过下一步。</p>
+<p>如果其输出了一个表格，且表格中CUDA版本号不是<code>11.8</code>，则需要先清理现有的CUDA：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 清理现有的CUDA</span></span><br><span class="line">sudo apt-get remove --purge <span class="string">&#x27;cuda-*&#x27;</span> <span class="string">&#x27;libcudnn*&#x27;</span> <span class="string">&#x27;nvidia-cuda-toolkit&#x27;</span> || <span class="literal">true</span></span><br><span class="line">sudo apt-get autoremove -y</span><br></pre></td></tr></table></figure>
+<p>接下来安装CUDA 11.8。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 添加WSL专用仓库</span></span><br><span class="line">wget https://developer.download.nvidia.com/compute/cuda/repos/wsl-ubuntu/x86_64/cuda-wsl-ubuntu.pin</span><br><span class="line">sudo <span class="built_in">mv</span> cuda-wsl-ubuntu.pin /etc/apt/preferences.d/cuda-repository-pin-600</span><br><span class="line">sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/wsl-ubuntu/x86_64/7fa2af80.pub</span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;deb https://developer.download.nvidia.com/compute/cuda/repos/wsl-ubuntu/x86_64/ /&quot;</span> | sudo <span class="built_in">tee</span> /etc/apt/sources.list.d/cuda-wsl.list</span><br><span class="line">sudo apt-get update</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装CUDA 11.8</span></span><br><span class="line">sudo apt-get install cuda-toolkit-11-8</span><br><span class="line">/usr/local/cuda-11.8/bin/nvcc --version</span><br></pre></td></tr></table></figure>
+<p>如果最后一行命令输出11.8.x，说明CUDA 11.8安装成功。</p>
+<p><br></p>
+<h3 id="构建nequip容器">构建NequIP容器</h3>
+<p>接下来，我们可以使用Apptainer构建NequIP容器。建议新建一个文件夹用于存放容器相关的文件。</p>
+<p>新建一个名为<code>nequip.def</code>的文件，内容如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br></pre></td><td class="code"><pre><span class="line">Bootstrap: docker</span><br><span class="line">From: nvidia/cuda:11.8.0-runtime-ubuntu22.04</span><br><span class="line"></span><br><span class="line">%labels</span><br><span class="line">    Author      Tennisatw</span><br><span class="line"></span><br><span class="line">%environment</span><br><span class="line">    <span class="built_in">export</span> LANG=C.UTF-8</span><br><span class="line">    <span class="built_in">export</span> LC_ALL=C.UTF-8</span><br><span class="line">    <span class="built_in">export</span> PATH=/opt/python311/bin:<span class="variable">$PATH</span></span><br><span class="line">    <span class="built_in">export</span> PYTHONUNBUFFERED=1</span><br><span class="line">    <span class="built_in">export</span> WANDB_ANONYMOUS=must</span><br><span class="line"></span><br><span class="line">%post</span><br><span class="line">    <span class="comment"># Install tools and packages for compile python</span></span><br><span class="line">    apt-get update &amp;&amp; \</span><br><span class="line">    apt-get install -y --no-install-recommends \</span><br><span class="line">        build-essential wget curl git ca-certificates unzip \</span><br><span class="line">        libssl-dev zlib1g-dev libbz2-dev \</span><br><span class="line">        libreadline-dev libsqlite3-dev libffi-dev \</span><br><span class="line">        libncursesw5-dev libgdbm-dev liblzma-dev \</span><br><span class="line">        python3-venv &amp;&amp; \</span><br><span class="line">    <span class="built_in">rm</span> -rf /var/lib/apt/lists/*</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Compile Python 3.11.12</span></span><br><span class="line">    <span class="built_in">cd</span> /tmp &amp;&amp; \</span><br><span class="line">    wget https://www.python.org/ftp/python/3.11.12/Python-3.11.12.tgz &amp;&amp; \</span><br><span class="line">    tar -xzf Python-3.11.12.tgz &amp;&amp; \</span><br><span class="line">    <span class="built_in">cd</span> Python-3.11.12 &amp;&amp; \</span><br><span class="line">    ./configure --prefix=/opt/python311 --enable-optimizations &amp;&amp; \</span><br><span class="line">    make -j$(<span class="built_in">nproc</span>) &amp;&amp; make install &amp;&amp; \</span><br><span class="line">    <span class="built_in">cd</span> /</span><br><span class="line">    <span class="built_in">rm</span> -rf /tmp/Python-3.11.12 /tmp/Python-3.11.12.tgz</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Upgrade pip</span></span><br><span class="line">    /opt/python311/bin/python3 -m ensurepip</span><br><span class="line">    /opt/python311/bin/python3 -m pip install --upgrade pip</span><br><span class="line">    <span class="comment"># export PATH=/opt/python311/bin:$PATH</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment"># Install nequip, allegro, and torch</span></span><br><span class="line">    <span class="comment"># i.e., cp2k/colab/install_torch_cp2k_colab.sh</span></span><br><span class="line">    /opt/python311/bin/pip install wandb</span><br><span class="line">    /opt/python311/bin/pip install mkl mkl-include</span><br><span class="line">    /opt/python311/bin/pip install --force-reinstall nequip==0.6 torch==1.13</span><br><span class="line">    /opt/python311/bin/pip install --force-reinstall numpy==1.26.4</span><br><span class="line">    /opt/python311/bin/pip install jupyter jupyter_contrib_nbextensions nglview</span><br><span class="line">    <span class="comment"># cloning allegro</span></span><br><span class="line">    <span class="built_in">cd</span> / &amp;&amp; git <span class="built_in">clone</span> --depth 1 https://github.com/mir-group/allegro.git</span><br><span class="line">    <span class="comment"># Force reinstall allegro</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">&quot;Reinstalling allegro...&quot;</span></span><br><span class="line">    /opt/python311/bin/pip install --force-reinstall allegro</span><br><span class="line">    <span class="comment"># downloading libtorch</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">&quot;Downloading libtorch...&quot;</span></span><br><span class="line">    <span class="built_in">cd</span> / &amp;&amp; wget https://download.pytorch.org/libtorch/cu118/libtorch-cxx11-abi-shared-with-deps-2.0.0%2Bcu118.zip -O libtorch.zip</span><br><span class="line">    <span class="built_in">echo</span> <span class="string">&quot;Unzipping libtorch...&quot;</span></span><br><span class="line">    unzip /libtorch.zip -d /</span><br><span class="line">    <span class="built_in">cd</span> /libtorch/lib &amp;&amp; <span class="built_in">ln</span> -s libnvrtc-builtins-7237cb5d.so.11.7 libnvrtc-builtins.so.11.8</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Clean pip cache</span></span><br><span class="line">    /opt/python311/bin/pip cache purge</span><br><span class="line"></span><br><span class="line">%runscript</span><br><span class="line">    <span class="built_in">exec</span> <span class="string">&quot;<span class="variable">$@</span>&quot;</span></span><br><span class="line"></span><br><span class="line">%<span class="built_in">help</span></span><br><span class="line">    Container with:</span><br><span class="line">    - Python 3.11.12</span><br><span class="line">    - NequIP</span><br><span class="line">    - PyTorch 1.13.1 + cu118</span><br><span class="line">    - NumPy 1.26.4</span><br><span class="line">    Usage:</span><br><span class="line">        apptainer <span class="built_in">exec</span> --nv nequip.sif nequip-train nequip-water.yaml</span><br></pre></td></tr></table></figure>
+<p><code>nequip.def</code>是Apptainer的定义文件，这其中%post部分的脚本会在容器构建时执行，包括安装Python、NequIP、Allegro和PyTorch等。%runscript部分定义了容器的默认运行命令。如果需要的话，可以添加%files部分可以添加额外的文件或目录到容器中。</p>
+<p>然后，使用<code>cd</code>命令进入到存放<code>nequip.def</code>文件的目录，输入以下命令以构建容器：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apptainer build --fakeroot --nv nequip.sif nequip.def</span><br></pre></td></tr></table></figure>
+<p>这行命令会构建一个名为<code>nequip.sif</code>的容器文件。<code>--fakeroot</code>选项允许在没有root权限的情况下构建容器，<code>--nv</code>选项启用NVIDIA
+GPU支持。</p>
+<p>如果一切顺利，构建完成后会看到类似以下的输出：</p>
+<figure class="highlight plaintext"><figcaption><span>Creating SIF file...</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">INFO:    Build complete: nequip.sif</span><br></pre></td></tr></table></figure>
+<h3 id="在drac上运行容器">在DRAC上运行容器</h3>
+<p>将构建好的<code>nequip.sif</code>文件上传到DRAC的工作目录中。</p>
+<p>运行容器时，可以将nequip所需的yaml配置文件放在同一目录下，然后使用以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apptainer <span class="built_in">exec</span> --nv nequip.sif nequip-train your-yaml-file.yaml</span><br></pre></td></tr></table></figure>
+<p>官网上给出的一个简单的yaml配置文件示例：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br><span class="line">282</span><br><span class="line">283</span><br><span class="line">284</span><br><span class="line">285</span><br><span class="line">286</span><br><span class="line">287</span><br><span class="line">288</span><br><span class="line">289</span><br><span class="line">290</span><br><span class="line">291</span><br><span class="line">292</span><br><span class="line">293</span><br><span class="line">294</span><br><span class="line">295</span><br><span class="line">296</span><br><span class="line">297</span><br><span class="line">298</span><br><span class="line">299</span><br><span class="line">300</span><br><span class="line">301</span><br><span class="line">302</span><br><span class="line">303</span><br><span class="line">304</span><br><span class="line">305</span><br><span class="line">306</span><br><span class="line">307</span><br><span class="line">308</span><br><span class="line">309</span><br><span class="line">310</span><br><span class="line">311</span><br><span class="line">312</span><br><span class="line">313</span><br><span class="line">314</span><br><span class="line">315</span><br><span class="line">316</span><br><span class="line">317</span><br><span class="line">318</span><br><span class="line">319</span><br><span class="line">320</span><br><span class="line">321</span><br><span class="line">322</span><br><span class="line">323</span><br><span class="line">324</span><br><span class="line">325</span><br><span class="line">326</span><br><span class="line">327</span><br><span class="line">328</span><br><span class="line">329</span><br><span class="line">330</span><br><span class="line">331</span><br><span class="line">332</span><br><span class="line">333</span><br><span class="line">334</span><br><span class="line">335</span><br><span class="line">336</span><br><span class="line">337</span><br><span class="line">338</span><br><span class="line">339</span><br><span class="line">340</span><br><span class="line">341</span><br><span class="line">342</span><br><span class="line">343</span><br><span class="line">344</span><br><span class="line">345</span><br><span class="line">346</span><br><span class="line">347</span><br><span class="line">348</span><br><span class="line">349</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># IMPORTANT: READ THIS</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># This is a full yaml file with all nequip options.</span></span><br><span class="line"><span class="comment"># It is primarily intented to serve as documentation/reference for all options</span></span><br><span class="line"><span class="comment"># For a simpler yaml file containing all necessary features to get you started, we strongly recommend to start with configs/example.yaml</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Two folders will be used during the training: &#x27;root&#x27;/process and &#x27;root&#x27;/&#x27;run_name&#x27;</span></span><br><span class="line"><span class="comment"># run_name contains logfiles and saved models</span></span><br><span class="line"><span class="comment"># process contains processed data sets</span></span><br><span class="line"><span class="comment"># if &#x27;root&#x27;/&#x27;run_name&#x27; exists, &#x27;root&#x27;/&#x27;run_name&#x27;_&#x27;year&#x27;-&#x27;month&#x27;-&#x27;day&#x27;-&#x27;hour&#x27;-&#x27;min&#x27;-&#x27;s&#x27; will be used instead.</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">results</span></span><br><span class="line"><span class="attr">run_name:</span> <span class="string">water-example</span></span><br><span class="line"><span class="attr">seed:</span> <span class="number">123</span> <span class="comment"># model seed</span></span><br><span class="line"><span class="attr">dataset_seed:</span> <span class="number">456</span> <span class="comment"># data set seed</span></span><br><span class="line"><span class="attr">append:</span> <span class="literal">true</span> <span class="comment"># set true if a restarted run should append to the previous log file</span></span><br><span class="line"><span class="attr">default_dtype:</span> <span class="string">float32</span> <span class="comment"># type of float to use, e.g. float32 and float64</span></span><br><span class="line"><span class="attr">allow_tf32:</span> <span class="literal">false</span> <span class="comment"># whether to use TensorFloat32 if it is available</span></span><br><span class="line"><span class="comment"># device:  cuda                                                                   # which device to use. Default: automatically detected cuda or &quot;cpu&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># network</span></span><br><span class="line"><span class="attr">r_max:</span> <span class="number">4.9</span> <span class="comment"># cutoff radius in length units, here Angstrom, this is an important hyperparamter to scan</span></span><br><span class="line"><span class="attr">num_layers:</span> <span class="number">3</span> <span class="comment"># number of interaction blocks, we find 3-5 to work best</span></span><br><span class="line"></span><br><span class="line"><span class="attr">l_max:</span> <span class="number">1</span> <span class="comment"># the maximum irrep order (rotation order) for the network&#x27;s features, l=1 is a good default, l=2 is more accurate but slower</span></span><br><span class="line"><span class="attr">parity:</span> <span class="literal">true</span> <span class="comment"># whether to include features with odd mirror parityy; often turning parity off gives equally good results but faster networks, so do consider this</span></span><br><span class="line"><span class="attr">num_features:</span> <span class="number">32</span> <span class="comment"># the multiplicity of the features, 32 is a good default for accurate network, if you want to be more accurate, go larger, if you want to be faster, go lower</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># alternatively, the irreps of the features in various parts of the network can be specified directly:</span></span><br><span class="line"><span class="comment"># the following options use e3nn irreps notation</span></span><br><span class="line"><span class="comment"># either these four options, or the above three options, should be provided--- they cannot be mixed.</span></span><br><span class="line"><span class="comment"># chemical_embedding_irreps_out: 32x0e                                              # irreps for the chemical embedding of species</span></span><br><span class="line"><span class="comment"># feature_irreps_hidden: 32x0o + 32x0e + 32x1o + 32x1e                              # irreps used for hidden features, here we go up to lmax=1, with even and odd parities; for more accurate but slower networks, use l=2 or higher, smaller number of features is faster</span></span><br><span class="line"><span class="comment"># irreps_edge_sh: 0e + 1o                                                           # irreps of the spherical harmonics used for edges. If a single integer, indicates the full SH up to L_max=that_integer</span></span><br><span class="line"><span class="comment"># conv_to_output_hidden_irreps_out: 16x0e                                           # irreps used in hidden layer of output block</span></span><br><span class="line"></span><br><span class="line"><span class="attr">nonlinearity_type:</span> <span class="string">gate</span> <span class="comment"># may be &#x27;gate&#x27; or &#x27;norm&#x27;, &#x27;gate&#x27; is recommended</span></span><br><span class="line"><span class="attr">resnet:</span></span><br><span class="line">  <span class="literal">false</span> <span class="comment"># set true to make interaction block a resnet-style update</span></span><br><span class="line">  <span class="comment"># the resnet update will only be applied when the input and output irreps of the layer are the same</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># scalar nonlinearities to use — available options are silu, ssp (shifted softplus), tanh, and abs.</span></span><br><span class="line"><span class="comment"># Different nonlinearities are specified for e (even) and o (odd) parity;</span></span><br><span class="line"><span class="comment"># note that only tanh and abs are correct for o (odd parity).</span></span><br><span class="line"><span class="comment"># silu typically works best for even</span></span><br><span class="line"><span class="attr">nonlinearity_scalars:</span></span><br><span class="line">  <span class="attr">e:</span> <span class="string">silu</span></span><br><span class="line">  <span class="attr">o:</span> <span class="string">tanh</span></span><br><span class="line"></span><br><span class="line"><span class="attr">nonlinearity_gates:</span></span><br><span class="line">  <span class="attr">e:</span> <span class="string">silu</span></span><br><span class="line">  <span class="attr">o:</span> <span class="string">tanh</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># radial network basis</span></span><br><span class="line"><span class="attr">num_basis:</span> <span class="number">8</span> <span class="comment"># number of basis functions used in the radial basis, 8 usually works best</span></span><br><span class="line"><span class="attr">BesselBasis_trainable:</span> <span class="literal">true</span> <span class="comment"># set true to train the bessel weights</span></span><br><span class="line"><span class="attr">PolynomialCutoff_p:</span> <span class="number">6</span> <span class="comment"># p-exponent used in polynomial cutoff function, smaller p corresponds to stronger decay with distance</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># radial network</span></span><br><span class="line"><span class="attr">invariant_layers:</span> <span class="number">2</span> <span class="comment"># number of radial layers, usually 1-3 works best, smaller is faster</span></span><br><span class="line"><span class="attr">invariant_neurons:</span> <span class="number">64</span> <span class="comment"># number of hidden neurons in radial function, smaller is faster</span></span><br><span class="line"><span class="attr">avg_num_neighbors:</span> <span class="string">auto</span> <span class="comment"># number of neighbors to divide by, null =&gt; no normalization, auto computes it based on dataset</span></span><br><span class="line"><span class="attr">use_sc:</span> <span class="literal">true</span> <span class="comment"># use self-connection or not, usually gives big improvement</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># to specify different parameters for each convolutional layer, try examples below</span></span><br><span class="line"><span class="comment"># layer1_use_sc: true                                                             # use &quot;layer&#123;i&#125;_&quot; prefix to specify parameters for only one of the layer,</span></span><br><span class="line"><span class="comment"># priority for different definitions:</span></span><br><span class="line"><span class="comment">#   invariant_neurons &lt; InteractionBlock_invariant_neurons &lt; layer&#123;i&#125;_invariant_neurons</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># data set</span></span><br><span class="line"><span class="comment"># there are two options to specify a dataset, npz or ase</span></span><br><span class="line"><span class="comment"># npz works with npz files, ase can ready any format that ase.io.read can read</span></span><br><span class="line"><span class="comment"># in most cases working with the ase option and an extxyz file is by far the simplest way to do it and we strongly recommend using this</span></span><br><span class="line"><span class="comment"># simply provide a single extxyz file that contains the structures together with energies and forces (generated with ase.io.write(atoms, format=&#x27;extxyz&#x27;, append=True))</span></span><br><span class="line"></span><br><span class="line"><span class="attr">include_keys:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">user_label</span></span><br><span class="line"><span class="attr">key_mapping:</span></span><br><span class="line">  <span class="attr">user_label:</span> <span class="string">label0</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># alternatively, you can read directly from a VASP OUTCAR file (this will only read that single OUTCAR)</span></span><br><span class="line"><span class="comment"># # for VASP OUTCAR, the yaml input should be</span></span><br><span class="line"><span class="comment"># dataset: ase</span></span><br><span class="line"><span class="comment"># dataset_file_name: OUTCAR</span></span><br><span class="line"><span class="comment"># ase_args:</span></span><br><span class="line"><span class="comment">#   format: vasp-out</span></span><br><span class="line"><span class="comment"># important VASP note: the ase vasp parser stores the potential energy to &quot;free_energy&quot; instead of &quot;energy&quot;.</span></span><br><span class="line"><span class="comment"># Here, the key_mapping maps the external name (key) to the NequIP default name (value)</span></span><br><span class="line"><span class="comment"># key_mapping:</span></span><br><span class="line"><span class="comment">#   free_energy: total_energy</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># npz example</span></span><br><span class="line"><span class="comment"># the keys used need to be stated at least once in key_mapping, npz_fixed_field_keys or include_keys</span></span><br><span class="line"><span class="comment"># key_mapping is used to map the key in the npz file to the NequIP default values (see data/_key.py)</span></span><br><span class="line"><span class="comment"># all arrays are expected to have the shape of (nframe, natom, ?) except the fixed fields</span></span><br><span class="line"><span class="comment"># note that if your data set uses pbc, you need to also pass an array that maps to the nequip &quot;pbc&quot; key</span></span><br><span class="line"><span class="comment"># dataset: npz                                                                       # type of data set, can be npz or ase</span></span><br><span class="line"><span class="comment"># dataset_url: http://quantum-machine.org/gdml/data/npz/toluene_ccsd_t.zip           # url to download the npz. optional</span></span><br><span class="line"><span class="comment"># dataset_file_name: ./benchmark_data/toluene_ccsd_t-train.npz                       # path to data set file</span></span><br><span class="line"><span class="comment"># key_mapping:</span></span><br><span class="line"><span class="comment">#   z: atomic_numbers                                                                # atomic species, integers</span></span><br><span class="line"><span class="comment">#   E: total_energy                                                                  # total potential eneriges to train to</span></span><br><span class="line"><span class="comment">#   F: forces                                                                        # atomic forces to train to</span></span><br><span class="line"><span class="comment">#   R: pos                                                                           # raw atomic positions</span></span><br><span class="line"><span class="comment"># npz_fixed_field_keys:                                                              # fields that are repeated across different examples</span></span><br><span class="line"><span class="comment">#   - atomic_numbers</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># A list of chemical species found in the data. The NequIP atom types will be named after the chemical symbols and ordered by atomic number in ascending order.</span></span><br><span class="line"><span class="comment"># (In this case, NequIP&#x27;s internal atom type 0 will be named H and type 1 will be named C.)</span></span><br><span class="line"><span class="comment"># Atoms in the input will be assigned NequIP atom types according to their atomic numbers.</span></span><br><span class="line"><span class="attr">chemical_symbols:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">H</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">O</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Alternatively, you may explicitly specify which chemical species in the input will map to NequIP atom type 0, which to atom type 1, and so on.</span></span><br><span class="line"><span class="comment"># Other than providing an explicit order for the NequIP atom types, this option behaves the same as `chemical_symbols`</span></span><br><span class="line"><span class="comment"># chemical_symbol_to_type:</span></span><br><span class="line"><span class="comment">#   H: 0</span></span><br><span class="line"><span class="comment">#   C: 1</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Alternatively, if the dataset has type indices, you may give the names for the types in order:</span></span><br><span class="line"><span class="comment"># (this also sets the number of types)</span></span><br><span class="line"><span class="comment"># type_names:</span></span><br><span class="line"><span class="comment">#   - my_type</span></span><br><span class="line"><span class="comment">#   - atom</span></span><br><span class="line"><span class="comment">#   - thing</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># As an alternative option to npz, you can also pass data ase ASE Atoms-objects</span></span><br><span class="line"><span class="comment"># This can often be easier to work with, simply make sure the ASE Atoms object</span></span><br><span class="line"><span class="comment"># has a calculator for which atoms.get_potential_energy() and atoms.get_forces() are defined</span></span><br><span class="line"><span class="attr">dataset:</span> <span class="string">ase</span></span><br><span class="line"><span class="attr">dataset_file_name:</span> <span class="string">AIMD_data/conc_wat_pos_frc.extxyz</span> <span class="comment"># need to be a format accepted by ase.io.read</span></span><br><span class="line"><span class="attr">ase_args:</span> <span class="comment"># any arguments needed by ase.io.read</span></span><br><span class="line">  <span class="attr">format:</span> <span class="string">extxyz</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># If you want to use a different dataset for validation, you can specify</span></span><br><span class="line"><span class="comment"># the same types of options using a `validation_` prefix:</span></span><br><span class="line"><span class="comment"># validation_dataset: ase</span></span><br><span class="line"><span class="comment"># validation_dataset_file_name: xxx.xyz                                            # need to be a format accepted by ase.io.read</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># logging</span></span><br><span class="line"><span class="comment">#wandb: true # we recommend using wandb for logging</span></span><br><span class="line"><span class="comment">#wandb_project: water-example # project name used in wandb</span></span><br><span class="line"><span class="comment">#wandb_watch: false</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># see https://docs.wandb.ai/ref/python/watch</span></span><br><span class="line"><span class="comment"># wandb_watch_kwargs:</span></span><br><span class="line"><span class="comment">#   log: all</span></span><br><span class="line"><span class="comment">#   log_freq: 1</span></span><br><span class="line"><span class="comment">#   log_graph: true</span></span><br><span class="line"></span><br><span class="line"><span class="attr">verbose:</span> <span class="string">info</span> <span class="comment"># the same as python logging, e.g. warning, info, debug, error. case insensitive</span></span><br><span class="line"><span class="attr">log_batch_freq:</span> <span class="number">1</span> <span class="comment"># batch frequency, how often to print training errors withinin the same epoch</span></span><br><span class="line"><span class="attr">log_epoch_freq:</span> <span class="number">1</span> <span class="comment"># epoch frequency, how often to print</span></span><br><span class="line"><span class="attr">save_checkpoint_freq:</span> <span class="number">-1</span> <span class="comment"># frequency to save the intermediate checkpoint. no saving of intermediate checkpoints when the value is not positive.</span></span><br><span class="line"><span class="attr">save_ema_checkpoint_freq:</span> <span class="number">-1</span> <span class="comment"># frequency to save the intermediate ema checkpoint. no saving of intermediate checkpoints when the value is not positive.</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># training</span></span><br><span class="line"><span class="attr">n_train:</span> <span class="number">100</span> <span class="comment"># number of training data</span></span><br><span class="line"><span class="attr">n_val:</span> <span class="number">50</span> <span class="comment"># number of validation data</span></span><br><span class="line"><span class="attr">learning_rate:</span> <span class="number">0.005</span> <span class="comment"># learning rate, we found values between 0.01 and 0.005 to work best - this is often one of the most important hyperparameters to tune</span></span><br><span class="line"><span class="attr">batch_size:</span> <span class="number">5</span> <span class="comment"># batch size, we found it important to keep this small for most applications including forces (1-5); for energy-only training, higher batch sizes work better</span></span><br><span class="line"><span class="attr">validation_batch_size:</span> <span class="number">10</span> <span class="comment"># batch size for evaluating the model during validation. This does not affect the training results, but using the highest value possible (&lt;=n_val) without running out of memory will speed up your training.</span></span><br><span class="line"><span class="attr">max_epochs:</span> <span class="number">100000</span> <span class="comment"># stop training after _ number of epochs, we set a very large number here, it won&#x27;t take this long in practice and we will use early stopping instead</span></span><br><span class="line"><span class="attr">train_val_split:</span> <span class="string">random</span> <span class="comment"># can be random or sequential. if sequential, first n_train elements are training, next n_val are val, else random, usually random is the right choice</span></span><br><span class="line"><span class="attr">shuffle:</span> <span class="literal">true</span> <span class="comment"># If true, the data loader will shuffle the data, usually a good idea</span></span><br><span class="line"><span class="attr">metrics_key:</span> <span class="string">validation_loss</span> <span class="comment"># metrics used for scheduling and saving best model. Options: `set`_`quantity`, set can be either &quot;train&quot; or &quot;validation, &quot;quantity&quot; can be loss or anything that appears in the validation batch step header, such as f_mae, f_rmse, e_mae, e_rmse</span></span><br><span class="line"><span class="attr">use_ema:</span> <span class="literal">true</span> <span class="comment"># if true, use exponential moving average on weights for val/test, usually helps a lot with training, in particular for energy errors</span></span><br><span class="line"><span class="attr">ema_decay:</span> <span class="number">0.99</span> <span class="comment"># ema weight, typically set to 0.99 or 0.999</span></span><br><span class="line"><span class="attr">ema_use_num_updates:</span> <span class="literal">true</span> <span class="comment"># whether to use number of updates when computing averages</span></span><br><span class="line"><span class="attr">report_init_validation:</span> <span class="literal">true</span> <span class="comment"># if True, report the validation error for just initialized model</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># early stopping based on metrics values.</span></span><br><span class="line"><span class="comment"># LR, wall and any keys printed in the log file can be used.</span></span><br><span class="line"><span class="comment"># The key can start with Training or validation. If not defined, the validation value will be used.</span></span><br><span class="line"><span class="attr">early_stopping_patiences:</span> <span class="comment"># stop early if a metric value stopped decreasing for n epochs</span></span><br><span class="line">  <span class="attr">validation_loss:</span> <span class="number">50</span></span><br><span class="line"></span><br><span class="line"><span class="attr">early_stopping_delta:</span> <span class="comment"># If delta is defined, a decrease smaller than delta will not be considered as a decrease</span></span><br><span class="line">  <span class="attr">validation_loss:</span> <span class="number">0.005</span></span><br><span class="line"></span><br><span class="line"><span class="attr">early_stopping_cumulative_delta:</span> <span class="literal">false</span> <span class="comment"># If True, the minimum value recorded will not be updated when the decrease is smaller than delta</span></span><br><span class="line"></span><br><span class="line"><span class="attr">early_stopping_lower_bounds:</span> <span class="comment"># stop early if a metric value is lower than the bound</span></span><br><span class="line">  <span class="attr">LR:</span> <span class="number">1.0e-5</span></span><br><span class="line"></span><br><span class="line"><span class="attr">early_stopping_upper_bounds:</span> <span class="comment"># stop early if a metric value is higher than the bound</span></span><br><span class="line">  <span class="attr">cumulative_wall:</span> <span class="number">1.0e+100</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># loss function</span></span><br><span class="line"><span class="attr">loss_coeffs:</span> <span class="comment"># different weights to use in a weighted loss functions</span></span><br><span class="line">  <span class="attr">forces:</span> <span class="number">1</span> <span class="comment"># if using PerAtomMSELoss, a default weight of 1:1 on each should work well</span></span><br><span class="line">  <span class="attr">total_energy:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="number">1</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">PerAtomMSELoss</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># # default loss function is MSELoss, the name has to be exactly the same as those in torch.nn.</span></span><br><span class="line"><span class="comment"># the only supprted targets are forces and total_energy</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># here are some example of more ways to declare different types of loss functions, depending on your application:</span></span><br><span class="line"><span class="comment"># loss_coeffs:</span></span><br><span class="line"><span class="comment">#   total_energy: MSELoss</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># loss_coeffs:</span></span><br><span class="line"><span class="comment">#   total_energy:</span></span><br><span class="line"><span class="comment">#   - 3.0</span></span><br><span class="line"><span class="comment">#   - MSELoss</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># loss_coeffs:</span></span><br><span class="line"><span class="comment">#   total_energy:</span></span><br><span class="line"><span class="comment">#   - 1.0</span></span><br><span class="line"><span class="comment">#   - PerAtomMSELoss</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># loss_coeffs:</span></span><br><span class="line"><span class="comment">#   forces:</span></span><br><span class="line"><span class="comment">#   - 1.0</span></span><br><span class="line"><span class="comment">#   - PerSpeciesL1Loss</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># loss_coeffs: total_energy</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># loss_coeffs:</span></span><br><span class="line"><span class="comment">#   total_energy:</span></span><br><span class="line"><span class="comment">#   - 3.0</span></span><br><span class="line"><span class="comment">#   - L1Loss</span></span><br><span class="line"><span class="comment">#   forces: 1.0</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># output metrics</span></span><br><span class="line"><span class="attr">metrics_components:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="bullet">-</span> <span class="string">forces</span> <span class="comment"># key</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">mae</span> <span class="comment"># &quot;rmse&quot; or &quot;mae&quot;</span></span><br><span class="line">  <span class="bullet">-</span> <span class="bullet">-</span> <span class="string">forces</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">rmse</span></span><br><span class="line">  <span class="bullet">-</span> <span class="bullet">-</span> <span class="string">forces</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">mae</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">PerSpecies:</span> <span class="literal">True</span> <span class="comment"># if true, per species contribution is counted separately</span></span><br><span class="line">      <span class="attr">report_per_component:</span> <span class="literal">False</span> <span class="comment"># if true, statistics on each component (i.e. fx, fy, fz) will be counted separately</span></span><br><span class="line">  <span class="bullet">-</span> <span class="bullet">-</span> <span class="string">forces</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">rmse</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">PerSpecies:</span> <span class="literal">True</span></span><br><span class="line">      <span class="attr">report_per_component:</span> <span class="literal">False</span></span><br><span class="line">  <span class="bullet">-</span> <span class="bullet">-</span> <span class="string">total_energy</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">mae</span></span><br><span class="line">  <span class="bullet">-</span> <span class="bullet">-</span> <span class="string">total_energy</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">mae</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">PerAtom:</span> <span class="literal">True</span> <span class="comment"># if true, energy is normalized by the number of atoms</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># optimizer, may be any optimizer defined in torch.optim</span></span><br><span class="line"><span class="comment"># the name `optimizer_name`is case sensitive</span></span><br><span class="line"><span class="attr">optimizer_name:</span> <span class="string">Adam</span> <span class="comment"># default optimizer is Adam</span></span><br><span class="line"><span class="attr">optimizer_amsgrad:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">optimizer_betas:</span> <span class="type">!!python/tuple</span></span><br><span class="line">  <span class="bullet">-</span> <span class="number">0.9</span></span><br><span class="line">  <span class="bullet">-</span> <span class="number">0.999</span></span><br><span class="line"><span class="attr">optimizer_eps:</span> <span class="number">1.0e-08</span></span><br><span class="line"><span class="attr">optimizer_weight_decay:</span> <span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># gradient clipping using torch.nn.utils.clip_grad_norm_</span></span><br><span class="line"><span class="comment"># see https://pytorch.org/docs/stable/generated/torch.nn.utils.clip_grad_norm_.html#torch.nn.utils.clip_grad_norm_</span></span><br><span class="line"><span class="comment"># setting to inf or null disables it</span></span><br><span class="line"><span class="attr">max_gradient_norm:</span> <span class="literal">null</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># lr scheduler, currently only supports the two options listed below, if you need more please file an issue</span></span><br><span class="line"><span class="comment"># first: on-plateau, reduce lr by factory of lr_scheduler_factor if metrics_key hasn&#x27;t improved for lr_scheduler_patience epoch</span></span><br><span class="line"><span class="attr">lr_scheduler_name:</span> <span class="string">ReduceLROnPlateau</span></span><br><span class="line"><span class="attr">lr_scheduler_patience:</span> <span class="number">100</span></span><br><span class="line"><span class="attr">lr_scheduler_factor:</span> <span class="number">0.5</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># second, cosine annealing with warm restart</span></span><br><span class="line"><span class="comment"># lr_scheduler_name: CosineAnnealingWarmRestarts</span></span><br><span class="line"><span class="comment"># lr_scheduler_T_0: 10000</span></span><br><span class="line"><span class="comment"># lr_scheduler_T_mult: 2</span></span><br><span class="line"><span class="comment"># lr_scheduler_eta_min: 0</span></span><br><span class="line"><span class="comment"># lr_scheduler_last_epoch: -1</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># we provide a series of options to shift and scale the data</span></span><br><span class="line"><span class="comment"># these are for advanced use and usually the defaults work very well</span></span><br><span class="line"><span class="comment"># the default is to scale the energies and forces by scaling them by the force standard deviation and to shift the energy by its mean</span></span><br><span class="line"><span class="comment"># in certain cases, it can be useful to have a trainable shift/scale and to also have species-dependent shifts/scales for each atom</span></span><br><span class="line"></span><br><span class="line"><span class="attr">per_species_rescale_scales_trainable:</span> <span class="literal">false</span></span><br><span class="line"><span class="comment"># whether the scales are trainable. Defaults to False. Optional</span></span><br><span class="line"><span class="attr">per_species_rescale_shifts_trainable:</span> <span class="literal">false</span></span><br><span class="line"><span class="comment"># whether the shifts are trainable. Defaults to False. Optional</span></span><br><span class="line"><span class="attr">per_species_rescale_shifts:</span> <span class="string">dataset_per_atom_total_energy_mean</span></span><br><span class="line"><span class="comment"># initial atomic energy shift for each species. default to the mean of per atom energy. Optional</span></span><br><span class="line"><span class="comment"># the value can be a constant float value, an array for each species, or a string</span></span><br><span class="line"><span class="comment"># string option include:</span></span><br><span class="line"><span class="comment"># *  &quot;dataset_per_atom_total_energy_mean&quot;, which computes the per atom average</span></span><br><span class="line"><span class="comment"># *  &quot;dataset_per_species_total_energy_mean&quot;, which automatically compute the per atom energy mean using a GP model</span></span><br><span class="line"><span class="attr">per_species_rescale_scales:</span> <span class="string">dataset_forces_rms</span></span><br><span class="line"><span class="comment"># initial atomic energy scale for each species. Optional.</span></span><br><span class="line"><span class="comment"># the value can be a constant float value, an array for each species, or a string</span></span><br><span class="line"><span class="comment"># string option include:</span></span><br><span class="line"><span class="comment"># *  &quot;dataset_per_atom_total_energy_std&quot;, which computes the per atom energy std</span></span><br><span class="line"><span class="comment"># *  &quot;dataset_per_species_total_energy_std&quot;, which uses the GP model uncertainty</span></span><br><span class="line"><span class="comment"># *  &quot;dataset_per_species_forces_rms&quot;, which compute the force rms for each species</span></span><br><span class="line"><span class="comment"># If not provided, defaults to dataset_per_species_force_rms or dataset_per_atom_total_energy_std, depending on whether forces are being trained.</span></span><br><span class="line"><span class="comment"># per_species_rescale_kwargs:</span></span><br><span class="line"><span class="comment">#   total_energy:</span></span><br><span class="line"><span class="comment">#     alpha: 0.1</span></span><br><span class="line"><span class="comment">#     max_iteration: 20</span></span><br><span class="line"><span class="comment">#     stride: 100</span></span><br><span class="line"><span class="comment"># keywords for GP decomposition of per specie energy. Optional. Defaults to 0.1</span></span><br><span class="line"><span class="comment"># per_species_rescale_arguments_in_dataset_units: True</span></span><br><span class="line"><span class="comment"># if explicit numbers are given for the shifts/scales, this parameter must specify whether the given numbers are unitless shifts/scales or are in the units of the dataset. If ``True``, any global rescalings will correctly be applied to the per-species values.</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># global energy shift and scale</span></span><br><span class="line"><span class="comment"># When &quot;dataset_total_energy_mean&quot;, the mean energy of the dataset. When None, disables the global shift. When a number, used directly.</span></span><br><span class="line"><span class="comment"># Warning: if this value is not None, the model is no longer size extensive</span></span><br><span class="line"><span class="comment">#global_rescale_shift: null</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># global energy scale. When &quot;dataset_force_rms&quot;, the RMS of force components in the dataset. When &quot;dataset_total_energy_std&quot;, the stdev of energies in the dataset. When null, disables the global scale. When a number, used directly.</span></span><br><span class="line"><span class="comment"># If not provided, defaults to either dataset_force_rms or dataset_total_energy_std, depending on whether forces are being trained.</span></span><br><span class="line"><span class="comment">#global_rescale_scale: dataset_forces_rms</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># whether the shift of the final global energy rescaling should be trainable</span></span><br><span class="line"><span class="comment">#global_rescale_shift_trainable: false</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># whether the scale of the final global energy rescaling should be trainable</span></span><br><span class="line"><span class="comment"># global_rescale_scale_trainable: false</span></span><br><span class="line"><span class="comment"># # full block needed for per specie rescale</span></span><br><span class="line"><span class="comment"># global_rescale_shift: null</span></span><br><span class="line"><span class="comment"># global_rescale_shift_trainable: false</span></span><br><span class="line"><span class="comment"># global_rescale_scale: dataset_forces_rms</span></span><br><span class="line"><span class="comment"># global_rescale_scale_trainable: false</span></span><br><span class="line"><span class="comment"># per_species_rescale_trainable: true</span></span><br><span class="line"><span class="comment"># per_species_rescale_shifts: dataset_per_atom_total_energy_mean</span></span><br><span class="line"><span class="comment"># per_species_rescale_scales: dataset_per_atom_total_energy_std</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># # full block needed for global rescale</span></span><br><span class="line"><span class="comment"># global_rescale_shift: dataset_total_energy_mean</span></span><br><span class="line"><span class="comment"># global_rescale_shift_trainable: false</span></span><br><span class="line"><span class="comment"># global_rescale_scale: dataset_forces_rms</span></span><br><span class="line"><span class="comment"># global_rescale_scale_trainable: false</span></span><br><span class="line"><span class="comment"># per_species_rescale_trainable: false</span></span><br><span class="line"><span class="comment"># per_species_rescale_shifts: null</span></span><br><span class="line"><span class="comment"># per_species_rescale_scales: null</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Options for e3nn&#x27;s set_optimization_defaults. A dict:</span></span><br><span class="line"><span class="comment"># e3nn_optimization_defaults:</span></span><br><span class="line"><span class="comment">#   explicit_backward: True</span></span><br><span class="line"></span><br><span class="line"><span class="attr">global_rescale_shift:</span> <span class="literal">null</span></span><br><span class="line"><span class="attr">global_rescale_shift_trainable:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">global_rescale_scale:</span> <span class="string">dataset_forces_rms</span></span><br><span class="line"><span class="attr">global_rescale_scale_trainable:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">per_species_rescale_shifts_trainable:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">per_species_rescale_scales_trainable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">per_species_rescale_shifts:</span> <span class="string">dataset_per_species_total_energy_mean</span></span><br><span class="line"><span class="attr">per_species_rescale_scales:</span> <span class="string">dataset_per_species_forces_rms</span></span><br></pre></td></tr></table></figure>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+  <div class="social-like a2a_kit a2a_kit_size_32 a2a_default_style">
+    <a class="a2a_dd" target="_blank" rel="noopener" href="https://www.addtoany.com/share"></a>
+      <a class="a2a_button_facebook"></a>
+      <a class="a2a_button_sina_weibo"></a>
+      <a class="a2a_button_wechat"></a>
+      <a class="a2a_button_x"></a>
+      <a class="a2a_button_mastodon"></a>
+  </div>
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/post/81/" rel="prev" title="深挖Lammps的源代码 - Delving Deeply into Lammps Source Code">
+                  <i class="fa fa-angle-left"></i> 深挖Lammps的源代码 - Delving Deeply into Lammps Source Code
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments utterances-container"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2023 – 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class=""></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">写给每一个像我的人 - To everyone like me</span>
+    <div>
+      <p class="footer-hidden"><br><br><br><br><br><br><br><br>本处广告位招租 - This ad space is available for rent</p>
+      <p class="footer-hidden">上次更新时间 - Last Updated: ||2025/05/27 17:23:31||</p>
+    </div>
+  </div>
+
+    </div>
+  </footer>
+
+  
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+
+  <script src="/js/third-party/addtoany.js"></script>
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+<script class="next-config" data-name="utterances" type="application/json">{"enable":true,"repo":"user-name/repo-name","issue_term":"pathname","theme":"github-light"}</script>
+<script src="/js/third-party/comments/utterances.js"></script>
+
+
+</body>
+</html>
+
+<script src="/live2d-widget/autoload.js" async="async" ></script>
+<link rel="stylesheet" href="/waline/waline.css"/>
+<script type="module">
+    import { init } from '/waline/waline.mjs';
+    window.init = init;
+</script>
+
+<script type="module">
+  window.init({
+    el: '.comments',
+    lang: 'en',
+    serverURL: 'https://comment.tennisatw.com',
+  });
+</script>
+
+<script>
+  window.onload = function() {
+    // 延迟执行，确保动画已经完成
+    setTimeout(function() {
+      // 获取需要操作的元素
+      const targetLanguageDiv = document.getElementById(":0.targetLanguage");
+      const skipTranslateDiv = document.querySelector(".skiptranslate.goog-te-gadget");
+      
+      // 删除不需要的文本节点和span元素
+      if (skipTranslateDiv) {
+        const textNodes = Array.from(skipTranslateDiv.childNodes).filter(node => node.nodeType === Node.TEXT_NODE);
+        textNodes.forEach(node => node.remove());
+        
+        const spanElement = skipTranslateDiv.querySelector("span");
+        if (spanElement) {
+            spanElement.remove();
+        }
+      }
+
+      // 隐藏不需要的元素
+      var trans = document.getElementsByClassName('VIpgJd-ZVi9od-aZ2wEe-wOHMyf');
+        for (var i = 0; i < trans.length; i++) {
+            var tran = trans[i];
+                tran.className += " hidden";
+        }
+
+    }, 500); // 延迟时间
+  };
+</script>
