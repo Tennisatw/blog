@@ -30,19 +30,20 @@ Mac用户可以使用multipass等工具进入Linux环境。
 
 <br>
 
-然后，一行一行地输入以下命令以编译Apptainer：
+然后，输入以下命令以编译Apptainer：
 
 ```bash
 cd ~
-sudo apt-get install -y build-essential uidmap squashfs-tools libseccomp-dev pkg-config git wget cryptsetup
+sudo apt-get install -y build-essential uidmap squashfs-tools \
+    libseccomp-dev pkg-config git wget cryptsetup
 
-# Go 语言
+# 安装 Go 语言
 wget https://go.dev/dl/go1.22.2.linux-amd64.tar.gz
 sudo tar -C /usr/local -xzf go1.22.2.linux-amd64.tar.gz
 echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc
 source ~/.bashrc
 
-# Apptainer
+# 编译 Apptainer
 git clone https://github.com/apptainer/apptainer.git
 cd apptainer
 ./mconfig --without-seccomp   # 去掉seccomp可避免编译失败
@@ -186,7 +187,7 @@ From: nvidia/cuda:11.8.0-runtime-ubuntu22.04
 然后，使用`cd`命令进入到存放`nequip.def`文件的目录，输入以下命令以构建容器：
 
 ```bash
-apptainer build --fakeroot --nv nequip.sif nequip.def
+apptainer build --fakeroot nequip.sif nequip.def
 ```
 
 这行命令会构建一个名为`nequip.sif`的容器文件。`--fakeroot`选项允许在没有root权限的情况下构建容器，`--nv`选项启用NVIDIA GPU支持。
@@ -207,7 +208,9 @@ INFO:    Build complete: nequip.sif
 apptainer exec --nv nequip.sif nequip-train your-yaml-file.yaml
 ```
 
-官网上给出的一个简单的yaml配置文件示例：
+---
+
+附录：Nequip官方给出的一个简单的yaml配置文件：
 
 ```yaml
 # IMPORTANT: READ THIS
