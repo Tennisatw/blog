@@ -202,7 +202,7 @@ INFO:    Build complete: nequip.sif
 
 将构建好的`nequip.sif`文件上传到DRAC的工作目录中。
 
-运行容器时，可以将nequip所需的yaml配置文件放在同一目录下，然后使用以下命令：
+运行容器时，可以将nequip所需的yaml配置文件放在同一目录下，然后使用以下命令训练：
 
 ```bash
 apptainer exec --nv nequip.sif nequip-train your-yaml-file.yaml

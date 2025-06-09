@@ -6,7 +6,7 @@
   <link href="https://blog.tennisatw.com/atom.xml" rel="self"/>
   
   <link href="https://blog.tennisatw.com/"/>
-  <updated>2025-05-28T02:18:47.360Z</updated>
+  <updated>2025-06-09T15:51:51.388Z</updated>
   <id>https://blog.tennisatw.com/</id>
   
   <author>
@@ -17,11 +17,26 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>哥德尔不完备性定理</title>
+    <link href="https://blog.tennisatw.com/post/84/"/>
+    <id>https://blog.tennisatw.com/post/84/</id>
+    <published>2025-06-09T00:17:35.000Z</published>
+    <updated>2025-06-09T15:51:51.388Z</updated>
+    
+    
+    <summary type="html">&lt;!-- --&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>使用Apptainer构建NequIP容器，并在DRAC上运行</title>
     <link href="https://blog.tennisatw.com/post/82/"/>
     <id>https://blog.tennisatw.com/post/82/</id>
     <published>2025-05-27T19:52:27.000Z</published>
-    <updated>2025-05-28T02:18:47.360Z</updated>
+    <updated>2025-05-28T02:26:30.553Z</updated>
     
     
     <summary type="html">&lt;!-- --&gt;</summary>
