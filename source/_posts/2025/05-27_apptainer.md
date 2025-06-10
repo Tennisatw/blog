@@ -4,6 +4,8 @@ permalink: post/82/
 excerpt: <!-- -->
 date: 2025-05-27 13:52:27
 tags:
+- 编程 - Programming
+- 技术 - Technology
 ---
 
 DRAC（前身computecanada）的运行节点不能联网，也没有sudo权限，想要在DRAC上编译/使用自定义的程序，或使用对环境有苛刻要求的程序，一个稍微省心的办法是通过容器，把程序运行所需的所有文件（代码、库、依赖、配置等）打包起来。

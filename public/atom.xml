@@ -6,7 +6,7 @@
   <link href="https://blog.tennisatw.com/atom.xml" rel="self"/>
   
   <link href="https://blog.tennisatw.com/"/>
-  <updated>2025-06-10T01:59:40.011Z</updated>
+  <updated>2025-06-10T04:42:30.303Z</updated>
   <id>https://blog.tennisatw.com/</id>
   
   <author>
@@ -21,13 +21,17 @@
     <link href="https://blog.tennisatw.com/post/84/"/>
     <id>https://blog.tennisatw.com/post/84/</id>
     <published>2025-06-09T00:17:35.000Z</published>
-    <updated>2025-06-10T01:59:40.011Z</updated>
+    <updated>2025-06-10T04:42:30.303Z</updated>
     
     
     <summary type="html">&lt;!-- --&gt;</summary>
     
     
     
+    
+    <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
+    
+    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
     
   </entry>
   
@@ -36,13 +40,17 @@
     <link href="https://blog.tennisatw.com/post/82/"/>
     <id>https://blog.tennisatw.com/post/82/</id>
     <published>2025-05-27T19:52:27.000Z</published>
-    <updated>2025-05-28T02:26:30.553Z</updated>
+    <updated>2025-06-10T04:08:25.174Z</updated>
     
     
     <summary type="html">&lt;!-- --&gt;</summary>
     
     
     
+    
+    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
     
   </entry>
   
