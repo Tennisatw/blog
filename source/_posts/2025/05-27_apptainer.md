@@ -212,7 +212,7 @@ apptainer exec --nv nequip.sif nequip-train your-yaml-file.yaml
 
 ---
 
-附录：Nequip官方给出的一个简单的yaml配置文件：
+附录：[Nequip官方](https://colab.research.google.com/github/gabriele16/cp2k/blob/nequip-cp2k-colab/colab/nequip-cp2k-water-tutorial.ipynb)给出的一个简单的yaml配置文件：
 
 ```yaml
 # IMPORTANT: READ THIS
