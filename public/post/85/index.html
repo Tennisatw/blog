@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#555080"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-50.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-50.png">
+  <link rel="mask-icon" href="/images/favicon-50.svg" color="#555080">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha256-wiz7ZSCn/btzhjKDQBms9Hx4sSeUYsDrTLg7roPstac=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"blog.tennisatw.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.19.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#555080","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"utterances","storage":true,"lazyload":false,"nav":null,"activeClass":"utterances"},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索 - Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits}个结果 - undefined results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta property="og:type" content="article">
+<meta property="og:title" content="文章精读 - Paper Reading 2：Machine learning potentials for metal-organic frameworks using an incremental learning approach">
+<meta property="og:url" content="https://blog.tennisatw.com/post/85/">
+<meta property="og:site_name" content="Tennisatw的博客 - Blog of Tennisatw">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2025-07-09T21:25:54.000Z">
+<meta property="article:modified_time" content="2025-07-09T22:13:31.788Z">
+<meta property="article:author" content="Tennisatw">
+<meta property="article:tag" content="文章精读 - Paper Reading">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://blog.tennisatw.com/post/85/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://blog.tennisatw.com/post/85/","path":"/post/85/","title":"文章精读 - Paper Reading 2：Machine learning potentials for metal-organic frameworks using an incremental learning approach"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>文章精读 - Paper Reading 2：Machine learning potentials for metal-organic frameworks using an incremental learning approach | Tennisatw的博客 - Blog of Tennisatw</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="Tennisatw的博客 - Blog of Tennisatw" type="application/atom+xml">
+<link rel="alternate" href="/rss2.xml" title="Tennisatw的博客 - Blog of Tennisatw" type="application/rss+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Tennisatw的博客 - Blog of Tennisatw</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索 - Search" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+    <div id="google_translate_element"></div>
+    <script type="text/javascript" async="async" >
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {pageLanguage: 'en,zh-CN', 
+        includedLanguages: 'en,zh-CN,zh-TW,es,ar,hi,ru,ja,de,fr', 
+        layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 
+        'google_translate_element');
+    }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script><li class="menu-item menu-item-首页---home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页 - Home</a></li><li class="menu-item menu-item-关于---about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于 - About</a></li><li class="menu-item menu-item-页面列表---pages"><a href="/pages/" rel="section"><i class="fa fa-sitemap fa-fw"></i>页面列表 - Pages</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索 - Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索 - Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          目录 - TOC
+        </li>
+        <li class="sidebar-nav-overview">
+          概览 - Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Tennisatw"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">Tennisatw</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">99</span>
+          <span class="site-state-item-name">文章<br>posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/series/">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">系列<br>series</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">标签<br>tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="mailto:tennisatw@mail.com" title="Email → mailto:tennisatw@mail.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://github.com/tennisatw" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;tennisatw" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/tennisatw" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;tennisatw" rel="noopener me" target="_blank"><i class="fab fa-twitter fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://discord.gg/3eerBKZbpX" title="Discord → https:&#x2F;&#x2F;discord.gg&#x2F;3eerBKZbpX" rel="noopener me" target="_blank"><i class="fab fa-discord fa-fw"></i></a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://blog.tennisatw.com/post/85/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Tennisatw">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Tennisatw的博客 - Blog of Tennisatw">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="文章精读 - Paper Reading 2：Machine learning potentials for metal-organic frameworks using an incremental learning approach | Tennisatw的博客 - Blog of Tennisatw">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          文章精读 - Paper Reading 2：Machine learning potentials for metal-organic frameworks using an incremental learning approach
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于 - Posted on</span>
+      
+
+      <time title="Created: 2025/07/09 15:25:54 / Modified: 16:13:31" itemprop="dateCreated datePublished" datetime="2025-07-09T15:25:54-06:00">2025/07/09</time>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="字数 - Word count">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">字数 - Word count: </span>
+      <span>2.3k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时间 - Reading time">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时间 - Reading time &asymp;</span>
+      <span>9 mins.</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>使用不完美的MLP，利用Metadynamics对相空间采样，再利用采样的数据点训练MLP。<strong>简直是天才</strong>。</p>
+<p>看懂文章后，其实我们自己也能做。</p>
+<p>最后我们组没用这个方法，但Gabe也提出来一个类似的方法。</p>
+<p>They used imperfect MLPs, utilized Metadynamics for phase space
+sampling, and then trained the MLP with the sampled data points.
+<strong>It's simply genius</strong>.</p>
+<p>Actually we can do it by ourselves after understanding what they
+did.</p>
+<p>Although our group didn't use this method, Gabe proposed a similar
+approach.</p>
+<p><br></p>
+<hr />
+<p>链接 - Link：https://www.nature.com/articles/s41524-023-00969-x</p>
+<p>作者 - Author：Sander Vandenhaute, Maarten Cools-Ceuppens, Simon
+DeKeyser, Toon Verstraelen &amp; Veronique Van Speybroeck</p>
+<p>年份 - Year：2023</p>
+<p>期刊 - Journal (IF)：npj Computational Materials (9.4)</p>
+<p>标题 - Title：Machine learning potentials for metal-organic
+frameworks using an incremental learning approach</p>
+<p>关键词 - keywords：</p>
+<p>摘要 - Abstract：</p>
+<p>由于金属有机骨架 (MOF)
+中存在空间异质性以及影响其行为的复杂操作条件，对其物理过程进行计算建模极具挑战性。密度泛函理论
+(DFT)
+可以在量子力学层面描述原子间相互作用，但对于纳米和皮秒级以外的系统，计算成本过高。本文，我们提出了一种增量学习方案，用于构建精确且数据高效的
+MOF
+机器学习势。该方案基于等变神经网络势的强大功能，并结合并行增强采样和动态训练，以迭代方式同时探索和学习相空间。每种材料只需进行数百次单点
+DFT
+计算，即可获得精确且可迁移的势，即使对于具有多个结构不同相的柔性骨架也是如此。该增量学习方案具有普遍适用性，并可能为在更大的时空窗口内以更高的精度建模骨架材料铺平道路。</p>
+<p>Computational modeling of physical processes in metal-organic
+frameworks (MOFs) is highly challenging due to the presence of spatial
+heterogeneities and complex operating conditions which affect their
+behavior. Density functional theory (DFT) may describe interatomic
+interactions at the quantum mechanical level, but is computationally too
+expensive for systems beyond the nanometer and picosecond range. Herein,
+we propose an incremental learning scheme to construct accurate and
+data-efficient machine learning potentials for MOFs. The scheme builds
+on the power of equivariant neural network potentials in combination
+with parallelized enhanced sampling and on-the-fly training to
+simultaneously explore and learn the phase space in an iterative manner.
+With only a few hundred single-point DFT evaluations per material,
+accurate and transferable potentials are obtained, even for flexible
+frameworks with multiple structurally different phases. The incremental
+learning scheme is universally applicable and may pave the way to model
+framework materials in larger spatiotemporal windows with higher
+accuracy.</p>
+<p><br></p>
+<hr />
+<p>研究方法 - Research Methods:</p>
+<p>使用增量学习方案（让模型在已有知识的基础上，逐步学习新数据，而不是用新数据从头开始训练整个模型），使用
+MLP 本身对相空间进行采样，并在遇到未知区域时结合即时训练，采用NequIP
+（等变神经网络势）来构建 MOF 的机器学习势。</p>
+<p>In this work, we present an incremental learning scheme，sampling the
+phase space using the MLP itself, in combination with on-the-fly
+training whenever it encounters unknown regions.</p>
+<p>具体来说，该算法首先构建第一代 机器学习势（MLP），该 MLP
+基于一小组初始配置进行训练，这些初始配置是通过对初始配置的粒子位置和应变分量施加随机扰动获得的。然后，将第一代多层感知器
+(MLP) 用于短时间（约 1 ps）的多行走器赝动力学 (MTD)
+模拟，以探索初始构型周围的相空间。提取每个行走器的最终构型，并进行新的
+DFT
+计算以获取能量和力。将后者添加到训练集和验证集中，之后通过短时间训练模型获得下一代多层感知器
+(MLP)。即使采样是使用最初不准确的 MLP
+进行的，仍然足以探索相空间中有意义的区域并生成几乎不相关的样本。
+每次迭代的采样时间可以保持相对较短，因为它可以用于逐步探索更大范围的相空间。训练完成后，模型被认为已经学习了相空间中的一个增量区域，然后可以传递到下一次迭代，继续进行
+MTD
+采样。偏置势的状态从上一次迭代中保留下来，以确保步行者在每次迭代中探索略有不同的相空间区域。通过不断交替增强的采样和训练步骤，可以即时探索和学习集体变量的整个相空间，而无需执行昂贵的基于
+DFT 的分子动力学模拟。重要的是，我们的方法确保进行 QM
+评估的原子配置始终由 ~1 ps 的 MTD
+轨迹分隔，这意味着它们最多只是弱相关的。因此，即使我们不依赖于其他主动学习方案
+30、32 中发现的任何专门的不确定性测量，我们也能保证训练数据中 QM
+评估配置之间几乎没有冗余。</p>
+<p>The algorithm starts by constructing a first generation MLP, which is
+trained based on a small set of initial configurations that are obtained
+by applying random perturbations to the particle positions and strain
+components of the initial configuration. This first generation MLP is
+then used in a short (~1 ps) multiple walker metadynamics (MTD)
+simulation in order to explore the phase space around the initial
+configuration. The final configuration of each of the walkers is
+extracted and subjected to a new DFT calculation to obtain the energy
+and forces. The latter are added to the training and validation sets
+after which a next generation MLP is obtained by training the model for
+a short amount of time. Even though the sampling was performed with an
+initially inaccurate MLP, it still suffices to explore a meaningful
+region of phase space and generate almost decorrelated samples. The
+sampling time per iteration may be kept relatively short as it serves
+the purpose to gradually explore larger portions of phase space. After
+training, the model is considered to have learned an incremental region
+in phase space, and may then be passed on to the next iteration in which
+it continues the MTD sampling. The state of the bias potential is
+retained from the previous iteration as to ensure that the walkers
+explore a slightly different region of phase space in each iteration. By
+continuously alternating the enhanced sampling and training steps, the
+entire phase space of the collective variable is explored and learned
+on-the-fly without the need to perform expensive DFT-based molecular
+dynamics simulations. Importantly, our approach ensures that atomic
+configurations for which a QM evaluation is performed are always
+separated by a ~1 ps MTD trajectory, which implies that they are at most
+only weakly correlated. As such, we are guaranteed that there is little
+redundancy between the QM-evaluated configurations in the training data
+even though we did not rely on any specialized uncertainty measures as
+found in other active learning schemes30,32.</p>
+<p><br></p>
+<p>结论 - Conclusions：</p>
+<p>在本研究中，我们提出了一种构建用于框架材料的精确且可迁移的多层势函数
+(MLP) 的有效方法。即使对于多相体系，我们也表明大约 1000 次量子力学 (QM)
+评估足以构建精确的等变多层势函数
+(MPNN)。这种计算效率的提升对未来的研究至关重要，因为现在可以在 MLP
+训练期间采用更先进的量子力学 (QM)
+方法（例如混合泛函或更高），从而更准确地描述这些材料中的动态现象。此外，构建用于描述多种框架的单一势函数的能力前景广阔，尤其是因为我们观察到，每种材料的量子力学
+(QM) 评估次数实际上会随着训练集多样性的增加而减少（从大约 1000
+次减少到仅约 300 次）。</p>
+<p>In this work, we propose an efficient approach for the construction
+of accurate and transferable MLPs for framework materials. Even for
+systems with multiple phases, we show that about 1000 QM evaluations are
+sufficient to construct accurate equivariant MPNNs. This increased
+computational efficiency is important for future research, as it is now
+possible to employ more advanced QM methods (e.g., hybrid functionals or
+beyond) during MLP training and in this way allow for a more accurate
+description of dynamic phenomena in these materials. In addition, the
+ability to construct a single potential for the description of multiple
+frameworks is highly promising, especially because we observed that the
+number of QM evaluations per material actually decreases with increasing
+variety in the training set (from about 1000 to only about 300).</p>
+<p><br></p>
+<p>金句 - Quotes:</p>
+<p>广义上讲，这些模型（机器学习势能）可以分为核回归方法，通过将给定配置与一组参考配置进行比较来确定相互作用能量，或神经网络势，它直接根据数千甚至数百万个参数确定
+PES 的高维表示。</p>
+<p>Broadly speaking, these models (Machine learning potentials) may be
+categorized into either kernel regression methods, which determine the
+interaction energy by comparing a given configuration to a set of
+reference configurations21,22, or neural network potentials, which
+directly determine a high-dimensional representation of the PES based on
+thousands or even millions of parameters23.</p>
+<p><br></p>
+<p>对于具有多个稳定相的灵活框架，需要对相空间中所有相关区域进行适当的采样，不仅包括目标热力学条件下材料的稳定相，还包括活化区域以及重要转变路径上的所有点。使用平衡第一性原理分子动力学很难做到这一点，因为使用密度泛函理论
+(DFT)
+评估每个时间步长的原子间力时，模拟时间有限。此外，从平衡分子动力学获得的构型通常采样接近自由能最小值的区域，无法捕捉相间的重要过渡态，尽管这些过渡态对于训练数据至关重要。</p>
+<p>For flexible frameworks with multiple stable phases, all relevant
+regions in phase space need to be properly sampled, including not only
+the stable phases of the material within the thermodynamic conditions of
+interest but also activated regions and all points along important
+transition paths. This is very difficult to achieve using equilibrium
+first principles MD because simulation times are limited when using DFT
+to evaluate the interatomic forces at each timestep. In addition,
+configurations obtained from equilibrium MD typically sample regions
+close to free energy minima and fail to capture important transition
+states in between phases, even though these are essential to include in
+the training data.</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%96%87%E7%AB%A0%E7%B2%BE%E8%AF%BB-paper-reading/" rel="tag"># 文章精读 - Paper Reading</a>
+          </div>
+
+        
+  <div class="social-like a2a_kit a2a_kit_size_32 a2a_default_style">
+    <a class="a2a_dd" target="_blank" rel="noopener" href="https://www.addtoany.com/share"></a>
+      <a class="a2a_button_facebook"></a>
+      <a class="a2a_button_sina_weibo"></a>
+      <a class="a2a_button_wechat"></a>
+      <a class="a2a_button_x"></a>
+      <a class="a2a_button_mastodon"></a>
+  </div>
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/post/84/" rel="prev" title="哥德尔不完备性定理">
+                  <i class="fa fa-angle-left"></i> 哥德尔不完备性定理
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments utterances-container"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2023 – 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class=""></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">写给每一个像我的人 - To everyone like me</span>
+    <div>
+      <p class="footer-hidden"><br><br><br><br><br><br><br><br>本处广告位招租 - This ad space is available for rent</p>
+      <p class="footer-hidden">上次更新时间 - Last Updated: ||2025/07/09 16:13:50||</p>
+    </div>
+  </div>
+
+    </div>
+  </footer>
+
+  
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+
+  <script src="/js/third-party/addtoany.js"></script>
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+<script class="next-config" data-name="utterances" type="application/json">{"enable":true,"repo":"user-name/repo-name","issue_term":"pathname","theme":"github-light"}</script>
+<script src="/js/third-party/comments/utterances.js"></script>
+
+
+</body>
+</html>
+
+<script src="/live2d-widget/autoload.js" async="async" ></script>
+<link rel="stylesheet" href="/waline/waline.css"/>
+<script type="module">
+    import { init } from '/waline/waline.mjs';
+    window.init = init;
+</script>
+
+<script type="module">
+  window.init({
+    el: '.comments',
+    lang: 'en',
+    serverURL: 'https://comment.tennisatw.com',
+  });
+</script>
+
+<script>
+  window.onload = function() {
+    // 延迟执行，确保动画已经完成
+    setTimeout(function() {
+      // 获取需要操作的元素
+      const targetLanguageDiv = document.getElementById(":0.targetLanguage");
+      const skipTranslateDiv = document.querySelector(".skiptranslate.goog-te-gadget");
+      
+      // 删除不需要的文本节点和span元素
+      if (skipTranslateDiv) {
+        const textNodes = Array.from(skipTranslateDiv.childNodes).filter(node => node.nodeType === Node.TEXT_NODE);
+        textNodes.forEach(node => node.remove());
+        
+        const spanElement = skipTranslateDiv.querySelector("span");
+        if (spanElement) {
+            spanElement.remove();
+        }
+      }
+
+      // 隐藏不需要的元素
+      var trans = document.getElementsByClassName('VIpgJd-ZVi9od-aZ2wEe-wOHMyf');
+        for (var i = 0; i < trans.length; i++) {
+            var tran = trans[i];
+                tran.className += " hidden";
+        }
+
+    }, 500); // 延迟时间
+  };
+</script>
