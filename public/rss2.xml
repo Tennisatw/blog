@@ -15,8 +15,27 @@
     <atom:link href="https://blog.tennisatw.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Mon, 18 Aug 2025 06:22:50 GMT</pubDate>
+    <pubDate>Sun, 24 Aug 2025 04:46:07 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>野湖边的野草</title>
+      <link>https://blog.tennisatw.com/post/87/</link>
+      <guid>https://blog.tennisatw.com/post/87/</guid>
+      <pubDate>Sun, 24 Aug 2025 04:43:25 GMT</pubDate>
+      
+      <description>&lt;!-- --&gt;</description>
+      
+      
+      
+      
+      
+      <category domain="https://blog.tennisatw.com/tags/%E6%97%A5%E5%B8%B8-daily/">日常 - Daily</category>
+      
+      
+      <comments>https://blog.tennisatw.com/post/87/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>大语言模型定量能力评估表及测评 - Quantitative Capability Assessment of Commonly Used LLMs - 25/08/17</title>

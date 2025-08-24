@@ -6,7 +6,7 @@
   <link href="https://blog.tennisatw.com/atom.xml" rel="self"/>
   
   <link href="https://blog.tennisatw.com/"/>
-  <updated>2025-08-18T06:22:50.907Z</updated>
+  <updated>2025-08-24T04:46:07.302Z</updated>
   <id>https://blog.tennisatw.com/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>野湖边的野草</title>
+    <link href="https://blog.tennisatw.com/post/87/"/>
+    <id>https://blog.tennisatw.com/post/87/</id>
+    <published>2025-08-24T04:43:25.000Z</published>
+    <updated>2025-08-24T04:46:07.302Z</updated>
+    
+    
+    <summary type="html">&lt;!-- --&gt;</summary>
+    
+    
+    
+    
+    <category term="日常 - Daily" scheme="https://blog.tennisatw.com/tags/%E6%97%A5%E5%B8%B8-daily/"/>
+    
+  </entry>
   
   <entry>
     <title>大语言模型定量能力评估表及测评 - Quantitative Capability Assessment of Commonly Used LLMs - 25/08/17</title>
