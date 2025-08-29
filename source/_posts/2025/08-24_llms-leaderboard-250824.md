@@ -1,7 +1,7 @@
 ---
 title: 大语言模型定量能力评估表 - LLMs Leaderboard - 250824
 permalink: post/88/
-excerpt: <!-- -->
+excerpt: 本表格汇总了常用大语言模型在常用评测榜单上的表现，整合评测结果，得到综合排名。榜单涵盖人类偏好、知识与推理能力、数学能力、代码能力等多个方面。<br> This table summarizes the performance of popular large language models across well-known benchmark leaderboards, integrating evaluation results to obtain an overall ranking. These rankings cover a range of capabilities, including human preference, knowledge and reasoning, mathematical skills, and coding ability.
 date: 2025-08-24 23:57:11
 tags: 
 - 随想 - Thoughts

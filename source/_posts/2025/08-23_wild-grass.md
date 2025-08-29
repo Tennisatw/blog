@@ -1,7 +1,7 @@
 ---
 title: 野湖边的野草
 permalink: post/87/
-excerpt: <!-- -->
+excerpt: 关于埃德蒙顿的野外湖边的一些常见的野草的记录
 date: 2025-08-23 22:43:25
 tags: 日常 - Daily
 ---
