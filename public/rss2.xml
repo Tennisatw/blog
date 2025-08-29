@@ -15,8 +15,27 @@
     <atom:link href="https://blog.tennisatw.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Mon, 25 Aug 2025 06:42:05 GMT</pubDate>
+    <pubDate>Fri, 29 Aug 2025 03:10:41 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>夏末</title>
+      <link>https://blog.tennisatw.com/post/89/</link>
+      <guid>https://blog.tennisatw.com/post/89/</guid>
+      <pubDate>Fri, 29 Aug 2025 02:50:58 GMT</pubDate>
+      
+      <description>&lt;!-- --&gt;</description>
+      
+      
+      
+      
+      
+      <category domain="https://blog.tennisatw.com/tags/%E8%AF%97-poem/">诗 - Poem</category>
+      
+      
+      <comments>https://blog.tennisatw.com/post/89/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>大语言模型定量能力评估表 - LLMs Leaderboard - 250824</title>
