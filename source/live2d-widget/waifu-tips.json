@@ -19,7 +19,7 @@
 			]
 		},
 		{
-			"selector": "a[href='/pages/']",
+			"selector": "a[href='/page-list/']",
 			"text": [
 				"博文之外的所有页面的列表。A list of all pages other than posts."
 			]

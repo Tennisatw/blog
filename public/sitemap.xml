@@ -2,6 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.tennisatw.com/about/</loc>
+    
+    <lastmod>2025-08-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.tennisatw.com/page-list/</loc>
+    
+    <lastmod>2025-08-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.tennisatw.com/live2d-widget/waifu-tips.json</loc>
+    
+    <lastmod>2025-08-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.tennisatw.com/post/88/</loc>
     
     <lastmod>2025-08-30</lastmod>
@@ -21,24 +48,6 @@
   
   <url>
     <loc>https://blog.tennisatw.com/series/</loc>
-    
-    <lastmod>2025-08-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.tennisatw.com/page-list/</loc>
-    
-    <lastmod>2025-08-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.tennisatw.com/about/</loc>
     
     <lastmod>2025-08-30</lastmod>
     
@@ -302,15 +311,6 @@
     <loc>https://blog.tennisatw.com/post/76/</loc>
     
     <lastmod>2025-05-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.tennisatw.com/live2d-widget/waifu-tips.json</loc>
-    
-    <lastmod>2025-05-07</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

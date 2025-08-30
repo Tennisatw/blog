@@ -1,8 +1,9 @@
+https://blog.tennisatw.com/about/
+https://blog.tennisatw.com/page-list/
+https://blog.tennisatw.com/live2d-widget/waifu-tips.json
 https://blog.tennisatw.com/post/88/
 https://blog.tennisatw.com/post/86/
 https://blog.tennisatw.com/series/
-https://blog.tennisatw.com/page-list/
-https://blog.tennisatw.com/about/
 https://blog.tennisatw.com/info-sources/
 https://blog.tennisatw.com/post/37/
 https://blog.tennisatw.com/post/27/
@@ -32,7 +33,6 @@ https://blog.tennisatw.com/post/64/
 https://blog.tennisatw.com/post/82/
 https://blog.tennisatw.com/post/81/
 https://blog.tennisatw.com/post/76/
-https://blog.tennisatw.com/live2d-widget/waifu-tips.json
 https://blog.tennisatw.com/post/80/
 https://blog.tennisatw.com/post/78/
 https://blog.tennisatw.com/post/2/

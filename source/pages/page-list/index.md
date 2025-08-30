@@ -22,7 +22,7 @@ Some high-quality Chinese science/political/news information sources, recommende
 
 <br>
 
-**[页面列表 - Page list](/pages/)**
+**[页面列表 - Page list](/page-list/)**
 
 <p class="tennisbot" id="这说明本页面列表是一个包含了自身的页面列表，不涉及理发师悖论"> 和本博客相关的，博文之外的所有页面的列表。</p>
 

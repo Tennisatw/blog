@@ -98,7 +98,7 @@ open_graph:
 menu:
   首页 - Home: / || fa fa-home
   关于 - About: /about/ || fa fa-user
-  页面列表 - Pages: /page-list/ || fa fa-sitemap
+  页面列表 - Page list: /page-list/ || fa fa-sitemap
   #schedule: /schedule/ || fa fa-calendar
   #站点地图 - sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat
