@@ -76,12 +76,14 @@
     <link href="https://blog.tennisatw.com/post/86/"/>
     <id>https://blog.tennisatw.com/post/86/</id>
     <published>2025-08-17T22:11:52.000Z</published>
-    <updated>2025-08-29T05:17:59.879Z</updated>
+    <updated>2025-08-30T03:13:18.691Z</updated>
     
     
     <summary type="html">本表格汇总了常用大语言模型在常用评测榜单上的表现。榜单涵盖人类偏好、知识与推理能力、数学能力、代码能力、多模态能力等多个方面。&lt;br&gt;This table summarizes the performance of popular large language models across well-known benchmark leaderboards. These rankings cover a range of capabilities, including human preference, knowledge and reasoning, mathematical skills, coding ability, and multimodal performance.</summary>
     
     
+    
+    <category term="LLM排行榜 - LLM Leaderboard" scheme="https://blog.tennisatw.com/series/llm%E6%8E%92%E8%A1%8C%E6%A6%9C-llm-leaderboard/"/>
     
     
     <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
@@ -139,9 +141,9 @@
     
     
     
-    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
-    
     <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
     
   </entry>
   
@@ -298,9 +300,9 @@
     
     
     
-    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
-    
     <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
     
   </entry>
   
@@ -459,9 +461,9 @@
     
     
     
-    <category term="敏感 - Sensitive" scheme="https://blog.tennisatw.com/tags/%E6%95%8F%E6%84%9F-sensitive/"/>
-    
     <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+    <category term="敏感 - Sensitive" scheme="https://blog.tennisatw.com/tags/%E6%95%8F%E6%84%9F-sensitive/"/>
     
   </entry>
   
@@ -650,9 +652,9 @@
     
     
     
-    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
-    
     <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
     
   </entry>
   
@@ -686,9 +688,9 @@
     
     
     
-    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
-    
     <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
     
   </entry>
   
@@ -724,9 +726,9 @@
     
     
     
-    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
-    
     <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
     
   </entry>
   
@@ -830,9 +832,9 @@
     
     <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
     
-    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
-    
     <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
     
   </entry>
   
@@ -902,9 +904,9 @@
     
     <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
     
-    <category term="敏感 - Sensitive" scheme="https://blog.tennisatw.com/tags/%E6%95%8F%E6%84%9F-sensitive/"/>
-    
     <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+    <category term="敏感 - Sensitive" scheme="https://blog.tennisatw.com/tags/%E6%95%8F%E6%84%9F-sensitive/"/>
     
   </entry>
   
@@ -1413,9 +1415,9 @@
     <category term="SD WebUI" scheme="https://blog.tennisatw.com/series/sd-webui/"/>
     
     
-    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
-    
     <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
     
   </entry>
   
@@ -1434,9 +1436,9 @@
     <category term="SD WebUI" scheme="https://blog.tennisatw.com/series/sd-webui/"/>
     
     
-    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
-    
     <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
     
   </entry>
   
@@ -1472,9 +1474,9 @@
     
     <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
     
-    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
-    
     <category term="敏感 - Sensitive" scheme="https://blog.tennisatw.com/tags/%E6%95%8F%E6%84%9F-sensitive/"/>
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
     
   </entry>
   

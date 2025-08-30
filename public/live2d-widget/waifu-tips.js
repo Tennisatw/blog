@@ -292,8 +292,8 @@
             }, 0));
     }),
       (localStorage.getItem("waifu-display") &&
-      Date.now() - localStorage.getItem("waifu-display") <= 864e5) ||
-      window.innerWidth <= 768
+      Date.now() - localStorage.getItem("waifu-display") <= 864e5)
+      // Date.now() - localStorage.getItem("waifu-display") <= 864e5) || window.innerWidth <= 768
         ? (o.setAttribute("first-time", !0),
           setTimeout(() => {
             o.classList.add("waifu-toggle-active");

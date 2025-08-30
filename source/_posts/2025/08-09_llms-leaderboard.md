@@ -6,6 +6,7 @@ date: 2025-08-17 16:11:52
 tags: 
 - 随想 - Thoughts
 - 技术 - Technology
+categories: LLM排行榜 - LLM Leaderboard
 ---
 
 ![](chinese version.png)
