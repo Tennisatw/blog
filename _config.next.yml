@@ -98,7 +98,7 @@ open_graph:
 menu:
   首页 - Home: / || fa fa-home
   关于 - About: /about/ || fa fa-user
-  页面列表 - Pages: /pages/ || fa fa-sitemap
+  页面列表 - Pages: /page-list/ || fa fa-sitemap
   #schedule: /schedule/ || fa fa-calendar
   #站点地图 - sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat
@@ -215,7 +215,7 @@ footer:
 
   # If not defined, `author` from Hexo `_config.yml` will be used.
   # Set to `false` to disable the copyright statement.
-  copyright: "写给每一个像我的人 - To everyone like me"
+  copyright: "写给每一个像我的人 - To everyone like me<br>Powered by Hexo & NexT"
 
   # Powered by Hexo & NexT
   powered: false
