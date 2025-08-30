@@ -39,7 +39,7 @@ More often, both occur simultaneously: we update both our judgment of the person
 
 <br>
 
-Now, let's use the Bayesian method to analyze Wang Wenbin's statement. Here's the original text (in Chinese):
+Now, let's use the Bayesian method to analyze Wang Wenbin's statement. Here's the original text (translated to English):
 
 <br>
 
@@ -57,7 +57,7 @@ This statement contradicts my understanding of 'press freedom' (and also doesn't
 
 On one hand, I believe in the significance of press freedom. Press freedom is part of freedom of speech, which empowers ordinary people to oversee the government and maintain justice. For instance, the case of the mother of eight children would have been ignored without the continuous exposure by media and news.
 
-Moreover, even if Western countries like the United States and the United Kingdom haven't fully respected press freedom, it doesn't prove that press freedom is meaningless. Imperfection doesn't equal nonexistence.
+Moreover, even if Western countries like the United States and the United Kingdom haven't fully respected press freedom, it doesn't prove that press freedom is meaningless. Imperfection will never equal to nonexistence.
 
 <br>
 
@@ -69,7 +69,7 @@ Returning to this press conference, Wang Wenbin could have objectively and polit
 
 <br>
 
-However, as long as those who believe in the government continue to do so, and those who don't believe can't access normal press conferences or hear normal opinions, then the purpose of muddying the waters is achieved. I can't really understand their purpose.If they want to make most rational people indifferent to international affairs, then they are quite successful.
+However, as long as those who believe in the government continue to do so, and those who don't believe just can't access normal press conferences or hear normal opinions, then the purpose of muddying the waters is achieved. I can't really understand their purpose. If they want to make most rational people indifferent to international affairs, then they are quite successful.
 
 ---
 

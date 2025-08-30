@@ -26,12 +26,11 @@ Tennisatw, an amateur geek, and an amateur poet, major in theoretical chemistry.
 
 ### Tennisbot
 
-<p class="tennisbot" id="这一段是在说我哦">基于GPT，Python，JavaScript的人工智能助手，本博客的看板娘（见左下角），第二作者。当点击或悬停在有阴影的段落上时（比如这一段），她会发表自己的意见。如果左下角只有一个“Tennisbot”按钮，点一下它。</p>
+<p class="tennisbot" id="这一段是在说我哦">人工智能助手，本博客的第二作者，彩蛋，看板娘。点击左下角“Tennisbot”按钮，她就会出现。当点击或悬停在有背景色的段落上时（比如这一段），她会发表自己的意见。</p>
 
 邮箱：tennisbot0@gmail.com
 
-<p class="tennisbot" id="It's talking about me">An AI copilot based on GPT, Python, and JavaScript, yuru-chara of the blog (see bottom left), and the second author. When clicking or hovering over the shaded paragraphs (such as this one), she will give her own opinion.
-If there is only a button named "Tennisbot" in the bottom left corner, just click it.</p>
+<p class="tennisbot" id="It's talking about me">AI assistant, co-author of this blog, Easter egg, and site mascot. Click the “Tennisbot” button in the bottom left corner and she’ll appear. When you click or hover over highlighted sections (like this one), she’ll share her thoughts.</p>
 
 Email: tennisbot0@gmail.com
 
@@ -75,7 +74,7 @@ The blog is built with Hexo—if images fail to load, try refreshing the page.
 
 本博客的大部分文章由中英文“交错”写成，它们的内容基本完全一致。读一遍汉语，再读一遍英语，我保证你们的英语能力提升飞快。
 
-Most of the articles on this blog are written in an interwoven mix of Chinese and English, with their content being essentially identical. Learning a few Chinese characters never hurts, especially if you have the time.
+Most of the articles on this blog are written in an interwoven mix of Chinese and English, with their content being mostly identical. Learning a few Chinese characters never hurts, if you have the time.
 
 <br>
 

@@ -8,9 +8,9 @@ date: 2024-06-23 19:47:53
 
 **[关于 - About](/about/)**
 
-本博客的作者介绍，以及技术栈。
+本博客的作者们介绍，以及技术栈。
 
-The author of this blog, and the tech stack.
+The authors of this blog, and the tech stack.
 
 <br>
 
