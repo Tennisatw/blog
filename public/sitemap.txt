@@ -1,5 +1,5 @@
+https://blog.tennisatw.com/page-list/
 https://blog.tennisatw.com/about/
-https://blog.tennisatw.com/pages/
 https://blog.tennisatw.com/info-sources/
 https://blog.tennisatw.com/post/37/
 https://blog.tennisatw.com/post/27/
@@ -93,7 +93,7 @@ https://blog.tennisatw.com/post/63/
 https://blog.tennisatw.com/post/65/
 https://blog.tennisatw.com/post/49/
 https://blog.tennisatw.com/post/60/
-https://blog.tennisatw.com/series/
+https://blog.tennisatw.com/pages/series/
 https://blog.tennisatw.com/post/19/
 https://blog.tennisatw.com/post/24/
 https://blog.tennisatw.com/post/28/
@@ -107,7 +107,7 @@ https://blog.tennisatw.com/post/6/
 https://blog.tennisatw.com/post/4/
 https://blog.tennisatw.com/post/10/
 https://blog.tennisatw.com/post/11/
-https://blog.tennisatw.com/tags/
+https://blog.tennisatw.com/pages/tags/
 https://blog.tennisatw.com/live2d-widget/live2d_api/model_list.json
 https://blog.tennisatw.com/live2d-widget/live2d_api/model/undefined/index.json
 https://blog.tennisatw.com/live2d-widget/live2d_api/model/undefined/textures_order.json

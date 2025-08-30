@@ -1,6 +1,6 @@
 ---
-title: 文章精读 - Paper Reading 1：paper_title
-permalink: post/auto_increment_id/
+title: 文章精读 - Paper Reading 0：paper_title
+permalink: post/post_id/
 excerpt: <!-- -->
 date: {{ date }}
 tags: 文章精读 - Paper Reading

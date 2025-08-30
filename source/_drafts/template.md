@@ -62,7 +62,7 @@ print("Hello, World!")
 ```
 
 插入可下载文件：
-<a href="/post/5/xx.txt" download>Addendum xx</a>
+<a href="/post/0/xx.txt" download>Addendum xx</a>
 
 <br>
 

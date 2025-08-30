@@ -1,6 +1,6 @@
 ---
 title: 页面列表 - Page list
-permalink: pages/
+permalink: page-list/
 date: 2024-06-23 19:47:53
 ---
 

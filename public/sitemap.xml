@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.tennisatw.com/about/</loc>
+    <loc>https://blog.tennisatw.com/page-list/</loc>
     
     <lastmod>2025-08-30</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://blog.tennisatw.com/pages/</loc>
+    <loc>https://blog.tennisatw.com/about/</loc>
     
     <lastmod>2025-08-30</lastmod>
     
@@ -857,7 +857,7 @@
   </url>
   
   <url>
-    <loc>https://blog.tennisatw.com/series/</loc>
+    <loc>https://blog.tennisatw.com/pages/series/</loc>
     
     <lastmod>2024-11-09</lastmod>
     
@@ -983,7 +983,7 @@
   </url>
   
   <url>
-    <loc>https://blog.tennisatw.com/tags/</loc>
+    <loc>https://blog.tennisatw.com/pages/tags/</loc>
     
     <lastmod>2024-08-01</lastmod>
     
