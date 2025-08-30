@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>在夜里出发</title>
-    <url>//post/-18/</url>
+    <url>//post/-19/</url>
     <content><![CDATA[<p>出发在夜里</p>
 <p>在夜里出发</p>
 <p>现在有一个我</p>
@@ -38,7 +38,7 @@
   </entry>
   <entry>
     <title>梦想</title>
-    <url>//post/-16/</url>
+    <url>//post/-17/</url>
     <content><![CDATA[<p>小时候</p>
 <p>梦想是一袋甜甜的喜之郎</p>
 <p>我在外头</p>
@@ -65,7 +65,7 @@
   </entry>
   <entry>
     <title>小打油 - 假登黄鹤楼</title>
-    <url>//post/-17/</url>
+    <url>//post/-18/</url>
     <content><![CDATA[<p>（与朋友们一起登黄鹤楼。人太多了，没有登到最顶上，即兴而作）</p>
 <p><br></p>
 <p>携友同登黄鹤楼，楚天极目入了秋</p>
@@ -80,7 +80,7 @@
   </entry>
   <entry>
     <title>人上人上人</title>
-    <url>//post/-14/</url>
+    <url>//post/-15/</url>
     <content><![CDATA[<p>左面全是人</p>
 <p>右面全是人</p>
 <p>人挤人，人挨人</p>
@@ -117,7 +117,7 @@
   </entry>
   <entry>
     <title>日月行焉</title>
-    <url>//post/-15/</url>
+    <url>//post/-16/</url>
     <content><![CDATA[<p>明月望我</p>
 <p>灯影摇摇</p>
 <p>清风半夜听鸣蝉</p>
@@ -142,7 +142,7 @@
   </entry>
   <entry>
     <title>题老黑板</title>
-    <url>//post/-13/</url>
+    <url>//post/-14/</url>
     <content><![CDATA[<p>一寸长的粉笔头</p>
 <p>为几平方米的老黑板</p>
 <p>添上祝福的话语</p>
@@ -160,7 +160,7 @@
   </entry>
   <entry>
     <title>今晚的月光亮得刺眼</title>
-    <url>//post/-12/</url>
+    <url>//post/-13/</url>
     <content><![CDATA[<p>今晚入夜之后想你们了</p>
 <p>那晚我却什么都没说</p>
 <p><br></p>
@@ -210,7 +210,7 @@
   </entry>
   <entry>
     <title>可怜的意大利小孩 - A poor Italian kid</title>
-    <url>//post/-10/</url>
+    <url>//post/-11/</url>
     <content><![CDATA[<p>今天我们的午饭是</p>
 <p>西葫芦煮通心粉</p>
 <p>有一个意大利小孩</p>
@@ -247,7 +247,7 @@
   </entry>
   <entry>
     <title>致刘昊</title>
-    <url>//post/-11/</url>
+    <url>//post/-12/</url>
     <content><![CDATA[<p><img src="1.png" /></p>
 <p><br></p>
 <p>山连海兮海连山</p>
@@ -1602,42 +1602,6 @@ just need to redirect sys.stdout back to the default output stream.</p>
 <p>小到不会被记到历史书里</p>
 <p><br></p>
 <p>于爱城</p>
-]]></content>
-      <tags>
-        <tag>诗 - Poem</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>北萨斯喀彻温河</title>
-    <url>//post/14/</url>
-    <content><![CDATA[<p>我学会了双手脱把</p>
-<p>和侧身躺在河岸上</p>
-<p>看衣服一点点打湿</p>
-<p><br></p>
-<p>蜘蛛在网上当旁观者</p>
-<p>河水把树枝垒在岸边</p>
-<p>自行车轮吱呀呀地响</p>
-<p><br></p>
-<p>落叶搭成了松鼠的蹦床</p>
-<p>河两岸的树林被镶了金</p>
-<p>是西风，把秋天吹到这里来</p>
-<p><br></p>
-<p>黄昏，电车在桥上转弯</p>
-<p>当车灯光线划过河谷时</p>
-<p>济慈的诗句一闪而逝</p>
-<p><br></p>
-<p>河边的夜里从不孤独</p>
-<p>当我沿着河岸骑车时</p>
-<p>星星都跟在我身后</p>
-<p><br></p>
-<p>桥墩在与河水开会</p>
-<p>会议的大多数时候</p>
-<p>都只有河水在说话</p>
-<p><br></p>
-<p>2021.10.06 初稿</p>
-<p>2025.08.28 修改</p>
-<hr />
-<p>注：给博客手动换源的时候漏了这首诗，现在补上。</p>
 ]]></content>
       <tags>
         <tag>诗 - Poem</tag>
@@ -9744,19 +9708,53 @@ id="附4一些榜单网站---appendix-4-some-benchmark-websites">附4：一些�
 <p>然后是后天…</p>
 <p><br></p>
 <p>知了在枝条间奋斗，</p>
-<p>河浪在河滩上操劳。</p>
+<p>河浪对河两岸操劳。</p>
 <p>半空中掠过了0架无人机。</p>
 <p><br></p>
-<p>树上的梨子成熟了，</p>
+<p>树上的野梨掉了下来，</p>
 <p>然后是沙果，</p>
 <p>然后是苹果…</p>
 <p><br></p>
 <p>泥土的潮湿味道，说是，</p>
-<p>能让知了与河浪宁静下来。</p>
+<p>连接着永恒的宁静。</p>
 <p>凉风却掀走了1片树叶。</p>
 <p><br></p>
 <p>于爱城</p>
 <p>2025.08.22 初稿</p>
+<p>2025.08.28 修改</p>
+]]></content>
+      <tags>
+        <tag>诗 - Poem</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>北萨斯喀彻温河</title>
+    <url>//post/-10/</url>
+    <content><![CDATA[<p>我学会了双手脱把</p>
+<p>和侧身躺在河岸上</p>
+<p>看衣服一点点打湿</p>
+<p><br></p>
+<p>蜘蛛在网上当旁观者</p>
+<p>河水把树枝垒在岸边</p>
+<p>自行车轮吱呀呀地响</p>
+<p><br></p>
+<p>落叶搭成了松鼠的蹦床</p>
+<p>河两岸的树林被镶了金</p>
+<p>是西风，把秋天吹到这里来</p>
+<p><br></p>
+<p>黄昏，电车在桥上转弯</p>
+<p>当车灯光线划过河谷时</p>
+<p>济慈的诗句一闪而逝</p>
+<p><br></p>
+<p>河边的夜里从不孤独</p>
+<p>当我沿着河岸骑车时</p>
+<p>星星都跟在我身后</p>
+<p><br></p>
+<p>桥墩在与河水开会</p>
+<p>会议的大多数时候</p>
+<p>都只有河水在说话</p>
+<p><br></p>
+<p>2021.10.06 初稿</p>
 <p>2025.08.28 修改</p>
 ]]></content>
       <tags>
