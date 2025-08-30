@@ -291,9 +291,10 @@
               document.getElementById("waifu").style.bottom = 0;
             }, 0));
     }),
-      (localStorage.getItem("waifu-display") &&
-      Date.now() - localStorage.getItem("waifu-display") <= 864e5)
-      // Date.now() - localStorage.getItem("waifu-display") <= 864e5) || window.innerWidth <= 768
+      // (localStorage.getItem("waifu-display") &&
+      // Date.now() - localStorage.getItem("waifu-display") <= 864e5) ||
+      // window.innerWidth <= 768
+      true
         ? (o.setAttribute("first-time", !0),
           setTimeout(() => {
             o.classList.add("waifu-toggle-active");

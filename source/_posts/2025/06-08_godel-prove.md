@@ -1,7 +1,7 @@
 ---
 title: 哥德尔不完备性定理
 permalink: post/84/
-excerpt: <!-- -->
+excerpt: 尝试用通俗易懂的方法证明哥德尔不完备性定理
 date: 2025-06-08 18:17:35
 tags: 
 - 随想 - Thoughts
