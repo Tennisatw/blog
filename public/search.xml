@@ -9761,4 +9761,41 @@ id="附4一些榜单网站---appendix-4-some-benchmark-websites">附4：一些�
         <tag>技术 - Technology</tag>
       </tags>
   </entry>
+  <entry>
+    <title>LLM排行榜：25/08/31 - LLMs Leaderboard：25/08/31</title>
+    <url>//post/90/</url>
+    <content><![CDATA[<p><img src="zh.png" /></p>
+<p>本表格汇总了常用大语言模型在常用评测排行榜上的表现，并计算出综合排名。排行榜涵盖人类偏好、知识与推理能力、数学能力、代码能力等多个方面。</p>
+<p><br></p>
+<p><img src="en.png" /></p>
+<p>This table summarizes the performance of popular large language
+models across well-known benchmark leaderboards, integrating evaluation
+results to obtain an overall ranking. These rankings cover a range of
+capabilities, including human preference, knowledge and reasoning,
+mathematical skills, and coding ability.</p>
+<p><br></p>
+<p>本次更新新增了Vision Arena（与视觉相关的模型输出）和SWE
+Bench（软件工程以及代码错误修复）排行榜。新增了SWE
+Bench之后，Claude系列的模型整体排名上升了一截。此外，凭借着Text
+Arena和SWE Bench的超高分数，Claude Opus 4.1 不出意外地跻身前5。</p>
+<p>本周，OpenAI，Anthropic，和Google仍然是顶尖LLM的“御三家”，除此之外，Deepseek，阿里通义，XAI也完全不容小觑。</p>
+<p><br></p>
+<p>This update introduces two new leaderboards: Vision Arena (focused on
+vision-related model outputs) and SWE Bench (focused on software
+engineering and code error correction). With the addition of the SWE
+Bench, the overall ranking of the Claude model series has noticeably
+improved. Thanks to its outstanding performance in both Text Arena and
+SWE Bench, Claude Opus 4.1 has unsurprisingly entered the top five.</p>
+<p>This week, OpenAI, Anthropic, and Google remain the “Big Three” of
+top-tier LLMs, but Deepseek, Alibaba Tongyi, and xAI are also emerging
+as strong contenders.</p>
+]]></content>
+      <categories>
+        <category>LLM排行榜 - LLM Leaderboard</category>
+      </categories>
+      <tags>
+        <tag>随想 - Thoughts</tag>
+        <tag>技术 - Technology</tag>
+      </tags>
+  </entry>
 </search>

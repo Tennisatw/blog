@@ -6,7 +6,7 @@
   <link href="https://blog.tennisatw.com/atom.xml" rel="self"/>
   
   <link href="https://blog.tennisatw.com/"/>
-  <updated>2025-08-30T05:05:36.948Z</updated>
+  <updated>2025-08-31T06:30:53.888Z</updated>
   <id>https://blog.tennisatw.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>LLM排行榜：25/08/31 - LLMs Leaderboard：25/08/31</title>
+    <link href="https://blog.tennisatw.com/post/90/"/>
+    <id>https://blog.tennisatw.com/post/90/</id>
+    <published>2025-08-31T05:52:41.000Z</published>
+    <updated>2025-08-31T06:30:53.888Z</updated>
+    
+    
+    <summary type="html">本表格汇总了常用大语言模型在常用评测排行榜上的表现，并计算出综合排名。排行榜涵盖人类偏好、知识与推理能力、数学能力、代码能力等多个方面。&lt;br&gt; This table summarizes the performance of popular large language models across well-known benchmark leaderboards, integrating evaluation results to obtain an overall ranking. These rankings cover a range of capabilities, including human preference, knowledge and reasoning, mathematical skills, and coding ability.</summary>
+    
+    
+    
+    <category term="LLM排行榜 - LLM Leaderboard" scheme="https://blog.tennisatw.com/series/llm%E6%8E%92%E8%A1%8C%E6%A6%9C-llm-leaderboard/"/>
+    
+    
+    <category term="随想 - Thoughts" scheme="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/"/>
+    
+    <category term="技术 - Technology" scheme="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/"/>
+    
+  </entry>
   
   <entry>
     <title>夏末</title>
