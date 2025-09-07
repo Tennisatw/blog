@@ -1,7 +1,7 @@
 ---
 title: 大语言模型综合排行榜 - LLM Composite Rankings – 250907
 permalink: post/92/
-excerpt: <!-- -->
+excerpt: 本表格汇总了常用大语言模型在主流评测排行榜上的表现。评测范围涵盖：人类偏好（文字和视觉），知识与推理，数学能力，代码能力，和长文本推理。在整合各项评测结果的基础上，计算出综合排名。<br>This chart compiles the performance of commonly used large language models across major benchmark leaderboards. Evaluation categories include：Human preference (text & vision), Knowledge and reasoning, Mathematical ability, Coding capability, and Long-context reasoning. Based on the aggregated results from these evaluations, an overall ranking is produced.
 date: 2025-09-07 00:06:49
 tags: 
 - 随想 - Thoughts

@@ -15,7 +15,7 @@
     <atom:link href="https://blog.tennisatw.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Sun, 07 Sep 2025 06:10:14 GMT</pubDate>
+    <pubDate>Sun, 07 Sep 2025 18:44:47 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -24,7 +24,7 @@
       <guid>https://blog.tennisatw.com/post/92/</guid>
       <pubDate>Sun, 07 Sep 2025 06:06:49 GMT</pubDate>
       
-      <description>&lt;!-- --&gt;</description>
+      <description>本表格汇总了常用大语言模型在主流评测排行榜上的表现。评测范围涵盖：人类偏好（文字和视觉），知识与推理，数学能力，代码能力，和长文本推理。在整合各项评测结果的基础上，计算出综合排名。&lt;br&gt;This chart compiles the performance of commonly used large language models across major benchmark leaderboards. Evaluation categories include：Human preference (text &amp; vision), Knowledge and reasoning, Mathematical ability, Coding capability, and Long-context reasoning. Based on the aggregated results from these evaluations, an overall ranking is produced.</description>
       
       
       
