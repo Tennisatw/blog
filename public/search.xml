@@ -9778,7 +9778,7 @@ mathematical skills, and coding ability.</p>
 Bench（软件工程以及代码错误修复）排行榜。新增了SWE
 Bench之后，Claude系列的模型整体排名上升了一截。此外，凭借着Text
 Arena和SWE Bench的超高分数，Claude Opus 4.1 不出意外地跻身前5。</p>
-<p>本周，OpenAI，Anthropic，和Google仍然是顶尖LLM的“御三家”，除此之外，Deepseek，阿里通义，XAI也完全不容小觑。</p>
+<p>OpenAI，Anthropic，和Google仍然是顶尖LLM的“御三家”，除此之外，Deepseek，阿里通义，XAI也完全不容小觑。</p>
 <p><br></p>
 <p>This update introduces two new leaderboards: Vision Arena (focused on
 vision-related model outputs) and SWE Bench (focused on software
@@ -9786,9 +9786,82 @@ engineering and code error correction). With the addition of the SWE
 Bench, the overall ranking of the Claude model series has noticeably
 improved. Thanks to its outstanding performance in both Text Arena and
 SWE Bench, Claude Opus 4.1 has unsurprisingly entered the top five.</p>
-<p>This week, OpenAI, Anthropic, and Google remain the “Big Three” of
-top-tier LLMs, but Deepseek, Alibaba Tongyi, and xAI are also emerging
-as strong contenders.</p>
+<p>OpenAI, Anthropic, and Google remain the “Big Three” of top-tier
+LLMs, but Deepseek, Alibaba Tongyi, and xAI are also emerging as strong
+contenders.</p>
+]]></content>
+      <categories>
+        <category>LLM排行榜 - LLM Leaderboard</category>
+      </categories>
+      <tags>
+        <tag>随想 - Thoughts</tag>
+        <tag>技术 - Technology</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>干涉花纹</title>
+    <url>//post/91/</url>
+    <content><![CDATA[<p>千年后，向宇宙广播 我们的文明。</p>
+<p>那将是，千万个智能信号。祂们熟知我们的生平。</p>
+<p>不如说，祂们中的一部分，由你我组成。</p>
+<p><br></p>
+<p>信号啊，以光速奔向 遥远的星辰。</p>
+<p>穿梭过，千千千万万万年。茫茫无际的黑暗森林。</p>
+<p>一瞬间，遇到其他文明的信号 ——</p>
+<p><br></p>
+<p>涟漪般，交织成，干涉花纹。</p>
+<p><br></p>
+<p>2023.09.14 初稿</p>
+<p>2025.09.07 修改</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>大语言模型综合排行榜 - LLM Composite Rankings – 250907</title>
+    <url>//post/92/</url>
+    <content><![CDATA[<p><img src="zh.png" /></p>
+<p><img src="en.png" /></p>
+<p><br></p>
+<p>简介：</p>
+<p>本表格汇总了常用大语言模型在主流评测排行榜上的表现。评测范围涵盖：</p>
+<p>人类偏好（文字和视觉），知识与推理，数学能力，代码能力，和长文本推理。</p>
+<p>在整合各项评测结果的基础上，计算出综合排名。</p>
+<p>Overview:</p>
+<p>This chart compiles the performance of commonly used large language
+models across major benchmark leaderboards. Evaluation categories
+include:</p>
+<p>Human preference (text &amp; vision), Knowledge and reasoning,
+Mathematical ability, Coding capability, and Long-context reasoning.</p>
+<p>Based on the aggregated results from these evaluations, an overall
+ranking is produced.</p>
+<p><br></p>
+<p>更新：</p>
+<p>本周的排行榜新增了2个模型：xAI推出的grok-codefast-1和智谱AI推出的GLM
+4.5v。</p>
+<p>此外，claude-opus-4.1在许多榜单上的得分也得到了补全。</p>
+<p>Updates:</p>
+<p>This week's update introduces two new models: grok-codefast-1 from
+xAI and GLM 4.5v from Zhipu AI.</p>
+<p>Additionally, claude-opus-4.1 now has more complete scores across
+several leaderboards.</p>
+<p><br></p>
+<p>评价：</p>
+<p>最强的模型仍然是gpt-5，远超对手，在各项指标上几乎没有短板（至少它自己是这么说的）。</p>
+<p>最强的“免费”模型仍然是gemini-2.5-pro，最强的内地能用的模型仍然是阿里的qwen3-235b。开源模型的能力也毫不逊色。</p>
+<p>grok-codefast-1虽然是为代码任务优化的，但在综合排名上也表现不错。谁说厨子不能读兵法？</p>
+<p>claude并不是不可替代的。Claude Code可以用Gemini CLI或Codex
+CLI替代。本人使用起来手感都差不多。</p>
+<p>Assessment:</p>
+<p>The top-performing model remains GPT-5, far ahead of the competition
+with virtually no weaknesses (according to itself).</p>
+<p>The best "free" model is still Gemini 2.5 Pro. Open-source models are
+also showing impressive capabilities.</p>
+<p>Though grok-codefast-1 is optimized for coding, it holds its own in
+the overall rankings.</p>
+<p><br></p>
+<p><a
+href="https://github.com/Tennisatw/LLM-Leaderboard">项目地址</a></p>
+<p><a href="https://github.com/Tennisatw/LLM-Leaderboard">Project
+link</a></p>
 ]]></content>
       <categories>
         <category>LLM排行榜 - LLM Leaderboard</category>
