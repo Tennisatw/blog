@@ -6,7 +6,7 @@
   <link href="https://blog.tennisatw.com/atom.xml" rel="self"/>
   
   <link href="https://blog.tennisatw.com/"/>
-  <updated>2025-09-14T06:13:21.734Z</updated>
+  <updated>2025-10-13T04:14:50.058Z</updated>
   <id>https://blog.tennisatw.com/</id>
   
   <author>
@@ -17,14 +17,31 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>使用codex进行vibe-coding的过程记录</title>
+    <link href="https://blog.tennisatw.com/post/94/"/>
+    <id>https://blog.tennisatw.com/post/94/</id>
+    <published>2025-10-13T03:48:33.000Z</published>
+    <updated>2025-10-13T04:14:50.058Z</updated>
+    
+    
+    <summary type="html">&lt;!-- --&gt;</summary>
+    
+    
+    
+    
+    <category term="编程 - Programming" scheme="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/"/>
+    
+  </entry>
+  
+  <entry>
     <title>大语言模型综合排行榜 - LLM Composite Rankings – 250914</title>
     <link href="https://blog.tennisatw.com/post/93/"/>
     <id>https://blog.tennisatw.com/post/93/</id>
     <published>2025-09-14T06:11:29.000Z</published>
-    <updated>2025-09-14T06:13:21.734Z</updated>
+    <updated>2025-09-21T03:31:11.951Z</updated>
     
     
-    <summary type="html">&lt;!-- --&gt;</summary>
+    <summary type="html">本表格汇总了常用大语言模型在主流评测排行榜上的表现。评测范围涵盖：人类偏好（文字和视觉），知识与推理，数学能力，代码能力，和长文本推理。在整合各项评测结果的基础上，计算出综合排名。&lt;br&gt; This table summarizes the performance of commonly used large language models across major benchmark rankings. The evaluation covers：Human preference (text and vision), Knowledge and reasoning, Mathematical ability, Coding ability, Long-context reasoning. An overall ranking is calculated by aggregating results from these benchmarks.</summary>
     
     
     
@@ -63,13 +80,15 @@
     <link href="https://blog.tennisatw.com/post/91/"/>
     <id>https://blog.tennisatw.com/post/91/</id>
     <published>2025-09-02T08:23:28.000Z</published>
-    <updated>2025-09-07T18:43:50.988Z</updated>
+    <updated>2025-09-21T03:30:49.032Z</updated>
     
     
     <summary type="html">&lt;!-- --&gt;</summary>
     
     
     
+    
+    <category term="诗 - Poem" scheme="https://blog.tennisatw.com/tags/%E8%AF%97-poem/"/>
     
   </entry>
   
@@ -137,7 +156,7 @@
     <link href="https://blog.tennisatw.com/post/87/"/>
     <id>https://blog.tennisatw.com/post/87/</id>
     <published>2025-08-24T04:43:25.000Z</published>
-    <updated>2025-08-29T05:19:03.406Z</updated>
+    <updated>2025-09-30T22:13:34.680Z</updated>
     
     
     <summary type="html">关于埃德蒙顿的野外湖边的一些常见的野草的记录</summary>
@@ -175,7 +194,7 @@
     <link href="https://blog.tennisatw.com/post/85/"/>
     <id>https://blog.tennisatw.com/post/85/</id>
     <published>2025-07-09T21:25:54.000Z</published>
-    <updated>2025-07-09T22:13:31.788Z</updated>
+    <updated>2025-09-30T22:14:49.458Z</updated>
     
     
     <summary type="html">&lt;!-- --&gt;</summary>
@@ -1903,7 +1922,7 @@
     <link href="https://blog.tennisatw.com/post/-19/"/>
     <id>https://blog.tennisatw.com/post/-19/</id>
     <published>2018-10-03T07:20:51.000Z</published>
-    <updated>2025-08-30T05:42:04.128Z</updated>
+    <updated>2025-09-20T22:06:12.337Z</updated>
     
     
     <summary type="html">&lt;!-- --&gt;</summary>

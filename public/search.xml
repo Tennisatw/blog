@@ -66,13 +66,18 @@
   <entry>
     <title>小打油 - 假登黄鹤楼</title>
     <url>//post/-19/</url>
-    <content><![CDATA[<p>（与朋友们一起登黄鹤楼。人太多了，没有登到最顶上，即兴而作）</p>
+    <content><![CDATA[<p>国庆去武汉找朋友们玩，一起登黄鹤楼。</p>
+<p>但是人太多了，而且赶火车，时间来不及登顶。</p>
+<p>半途而反，即兴而作。</p>
 <p><br></p>
-<p>携友同登黄鹤楼，楚天极目入了秋</p>
-<p>人山人海图一啥？崔颢题诗在上头</p>
+<p>携友同登黄鹤楼，极目楚天入了秋。</p>
+<p>人山人海图一啥？崔颢题诗在上头。</p>
 <p><br></p>
-<p>火车震震就要发，故人依依就要走</p>
-<p>啤酒饮料黄鹤楼，烟波江上使人愁</p>
+<p>火车呜呜就要开，故人依依就要走。</p>
+<p>啤酒饮料黄鹤楼，烟波江上使人愁。</p>
+<p><br></p>
+<p>2018.10.03 初稿</p>
+<p>2025.09.20 修改</p>
 ]]></content>
       <tags>
         <tag>诗 - Poem</tag>
@@ -8323,16 +8328,17 @@ href="https://en.wikipedia.org/wiki/Paris%E2%80%93Harrington_theorem">英文维�
   <entry>
     <title>文章精读 - Paper Reading 2：Machine learning potentials for metal-organic frameworks using an incremental learning approach</title>
     <url>//post/85/</url>
-    <content><![CDATA[<p>使用不完美的MLP，利用Metadynamics对相空间采样，再利用采样的数据点训练MLP。<strong>简直是天才</strong>。</p>
+    <content><![CDATA[<p>使用不完美的MLP，利用Metadynamics对相空间采样，再利用采样的数据点训练MLP。发明出主动学习的策略的人<strong>简直是天才</strong>。</p>
 <p>看懂文章后，其实我们自己也能做。</p>
-<p>最后我们组没用这个方法，但Gabe也提出来一个类似的方法。</p>
+<p>虽然最后我们组没用这个方法，但Gabe也提出来一个类似的方法用于采样。</p>
 <p>They used imperfect MLPs, utilized Metadynamics for phase space
 sampling, and then trained the MLP with the sampled data points.
-<strong>It's simply genius</strong>.</p>
+<strong>It's simply genius</strong> to invent the active learning
+strategy.</p>
 <p>Actually we can do it by ourselves after understanding what they
 did.</p>
 <p>Although our group didn't use this method, Gabe proposed a similar
-approach.</p>
+approach for sampling.</p>
 <p><br></p>
 <hr />
 <p>链接 - Link：https://www.nature.com/articles/s41524-023-00969-x</p>
@@ -9332,7 +9338,7 @@ efforts.</li>
     <content><![CDATA[<p>埃德蒙顿的野湖边，夏季，太阳很晒，但风也很足，并不让人感到闷热。空气中有潮湿泥土味道，还有一点薰衣草的花香。</p>
 <p>这里的植物基本上都是一丛丛地生长。</p>
 <p><br></p>
-<p>我坐的地方附近长了一片牛鞭草。一棵牛鞭草的中间是一根浅绿色的细杆，每隔一定长度，会从细杆中长出一片浅绿色，细长的叶子。杆和叶子摸起来都很有质感，也非常结实。</p>
+<p>附近最多的是牛鞭草。一棵牛鞭草的中间是一根浅绿色的细杆，每隔一定长度，会从细杆中长出一片浅绿色，细长的叶子。杆和叶子摸起来都很有质感，也非常结实。</p>
 <p>细杆能长到80厘米高，顶端会结一个穗。每个穗有2个或6个“棱”，里面有一些草籽，还会在尖端长出“麦芒”。</p>
 <p>这种草踩起来有沙沙声，一踩就倒了。</p>
 <p>很难把这种草折断，折断后，会闻到草汁的味道。杆和叶子嚼起来都没什么滋味，但是穗嚼起来有点香味。</p>
@@ -9799,25 +9805,6 @@ contenders.</p>
       </tags>
   </entry>
   <entry>
-    <title>干涉花纹</title>
-    <url>//post/91/</url>
-    <content><![CDATA[<p>千年后，向宇宙广播 我们的文明。</p>
-<p>那将是，千万个智能信号。祂们熟知我们的生平。</p>
-<p>不如说，祂们中的一部分，由你我组成。</p>
-<p><br></p>
-<p>信号啊，以光速奔向 遥远的星辰。</p>
-<p>穿梭过，千千千万万万年。茫茫无际的黑暗森林。</p>
-<p>一瞬间，遇到其他文明的信号</p>
-<p>--O o--</p>
-<p><br></p>
-<p>涟漪般，交织成，干涉花纹</p>
-<p>o~~ ~~O</p>
-<p><br></p>
-<p>2023.09.14 初稿</p>
-<p>2025.09.07 修改</p>
-]]></content>
-  </entry>
-  <entry>
     <title>大语言模型综合排行榜 - LLM Composite Rankings – 250907</title>
     <url>//post/92/</url>
     <content><![CDATA[<p><img src="zh.png" /></p>
@@ -9955,6 +9942,68 @@ find this chart helpful, please give it a star.</p>
       <tags>
         <tag>随想 - Thoughts</tag>
         <tag>技术 - Technology</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用codex进行vibe-coding的过程记录</title>
+    <url>//post/94/</url>
+    <content><![CDATA[<p>codex是一个非常好用的项目辅助工具，功能十分强大。前一段时间，本人使用vscode的codex插件，将一个R语言的生信项目：Iris，用python进行了重构。</p>
+<p><br></p>
+<p>具体流程：</p>
+<ol type="1">
+<li>通读R代码，理解其框架</li>
+<li>手动搭出一个python项目框架，包括创建必要的文件夹，文件。提供函数名。</li>
+<li>以函数（或20行代码）为单位手动拆分R代码</li>
+<li>逐块发送给codex插件，转录成python代码，并添加至合适位置
+<ul>
+<li>注：每次使用codex之前先备份！</li>
+</ul></li>
+<li>逐块同步调试python和R代码，确保python代码能跑通，且关键变量的值与R代码一致</li>
+</ol>
+<p><br></p>
+<p>难点：</p>
+<ol type="1">
+<li>理解IRIS算法的框架，即某个函数究竟在做什么。实不相瞒，直到完成项目时我都没完全搞清楚。</li>
+<li>使用稀疏矩阵储存数据，需要决定用什么格式/怎么处理行列名/怎么修改代码。python没有和R的sparseMatrix完全对应的类型，所以需要自己实现class。</li>
+<li>调试很难，因为IRIS包已经被编译好了。所以只能使用github上的源码进行调试。出现bug时，由于不懂源代码的逻辑，所以很难看清楚是什么问题（不过可以让codex分析代码）。</li>
+<li>IRIS算法使用了很多生信的专业知识，比如RNA组学，基因表达矩阵等。还是用了一些机器学习的知识。本人知识储备实在是有限，只能靠codex帮忙理解。</li>
+</ol>
+<p><br></p>
+<p>一些体会：</p>
+<ol type="1">
+<li>vibe
+coding基本上靠谱，因为大语言模型的能力越来越强了。至少gpt-5-codex有能力理解需求并生成代码。</li>
+<li>vibe
+coding过程中是不需要本人懂细节，懂流程的。人需要做的事只有拆分任务，使用提示词指挥codex工作，运行代码，并将结果反馈给codex进行下一轮优化即可。当然，如果本人懂细节，懂流程，做起来会心里更踏实。</li>
+<li>vibe
+coding的提示词不需要多么精良。重要的是清晰，且提供必要的上下文。</li>
+<li>codex会犯错。遇到错误时重复追问几次，可能会得到更好的结果。</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>编程 - Programming</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>干涉花纹</title>
+    <url>//post/91/</url>
+    <content><![CDATA[<p>千年后，向宇宙 广播我们的文明。</p>
+<p>那将是，千万个智能信号。祂们熟知我们的生平。</p>
+<p>不如说，祂们中的一部分，由你我组成。</p>
+<p><br></p>
+<p>信号啊，以光速 奔向遥远的星辰。</p>
+<p>穿梭过，千千千万万万年。茫茫无际的黑暗森林。</p>
+<p>一瞬间，遇到了 其他文明的信号：</p>
+<p>--O o--</p>
+<p><br></p>
+<p>涟漪般，交织成，干涉花纹。</p>
+<p>o~~ ~~O</p>
+<p><br></p>
+<p>2023.09.14 初稿</p>
+<p>2025.09.20 修改</p>
+]]></content>
+      <tags>
+        <tag>诗 - Poem</tag>
       </tags>
   </entry>
 </search>
