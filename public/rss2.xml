@@ -15,11 +15,11 @@
     <atom:link href="https://blog.tennisatw.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Mon, 13 Oct 2025 04:14:50 GMT</pubDate>
+    <pubDate>Fri, 17 Oct 2025 05:35:24 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>使用codex进行vibe-coding的过程记录</title>
+      <title>使用codex进行Vibe-Coding的过程记录 - Process Log of Vibe-Coding with Codex</title>
       <link>https://blog.tennisatw.com/post/94/</link>
       <guid>https://blog.tennisatw.com/post/94/</guid>
       <pubDate>Mon, 13 Oct 2025 03:48:33 GMT</pubDate>
@@ -34,52 +34,6 @@
       
       
       <comments>https://blog.tennisatw.com/post/94/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>大语言模型综合排行榜 - LLM Composite Rankings – 250914</title>
-      <link>https://blog.tennisatw.com/post/93/</link>
-      <guid>https://blog.tennisatw.com/post/93/</guid>
-      <pubDate>Sun, 14 Sep 2025 06:11:29 GMT</pubDate>
-      
-      <description>本表格汇总了常用大语言模型在主流评测排行榜上的表现。评测范围涵盖：人类偏好（文字和视觉），知识与推理，数学能力，代码能力，和长文本推理。在整合各项评测结果的基础上，计算出综合排名。&lt;br&gt; This table summarizes the performance of commonly used large language models across major benchmark rankings. The evaluation covers：Human preference (text and vision), Knowledge and reasoning, Mathematical ability, Coding ability, Long-context reasoning. An overall ranking is calculated by aggregating results from these benchmarks.</description>
-      
-      
-      
-      
-      <category domain="https://blog.tennisatw.com/series/llm%E6%8E%92%E8%A1%8C%E6%A6%9C-llm-leaderboard/">LLM排行榜 - LLM Leaderboard</category>
-      
-      
-      <category domain="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/">随想 - Thoughts</category>
-      
-      <category domain="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/">技术 - Technology</category>
-      
-      
-      <comments>https://blog.tennisatw.com/post/93/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>大语言模型综合排行榜 - LLM Composite Rankings – 250907</title>
-      <link>https://blog.tennisatw.com/post/92/</link>
-      <guid>https://blog.tennisatw.com/post/92/</guid>
-      <pubDate>Sun, 07 Sep 2025 06:06:49 GMT</pubDate>
-      
-      <description>本表格汇总了常用大语言模型在主流评测排行榜上的表现。评测范围涵盖：人类偏好（文字和视觉），知识与推理，数学能力，代码能力，和长文本推理。在整合各项评测结果的基础上，计算出综合排名。&lt;br&gt;This chart compiles the performance of commonly used large language models across major benchmark leaderboards. Evaluation categories include：Human preference (text &amp; vision), Knowledge and reasoning, Mathematical ability, Coding capability, and Long-context reasoning. Based on the aggregated results from these evaluations, an overall ranking is produced.</description>
-      
-      
-      
-      
-      <category domain="https://blog.tennisatw.com/series/llm%E6%8E%92%E8%A1%8C%E6%A6%9C-llm-leaderboard/">LLM排行榜 - LLM Leaderboard</category>
-      
-      
-      <category domain="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/">随想 - Thoughts</category>
-      
-      <category domain="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/">技术 - Technology</category>
-      
-      
-      <comments>https://blog.tennisatw.com/post/92/#disqus_thread</comments>
       
     </item>
     
@@ -103,29 +57,6 @@
     </item>
     
     <item>
-      <title>LLM排行榜：25/08/31 - LLMs Leaderboard：25/08/31</title>
-      <link>https://blog.tennisatw.com/post/90/</link>
-      <guid>https://blog.tennisatw.com/post/90/</guid>
-      <pubDate>Sun, 31 Aug 2025 05:52:41 GMT</pubDate>
-      
-      <description>本表格汇总了常用大语言模型在常用评测排行榜上的表现，并计算出综合排名。排行榜涵盖人类偏好、知识与推理能力、数学能力、代码能力等多个方面。&lt;br&gt; This table summarizes the performance of popular large language models across well-known benchmark leaderboards, integrating evaluation results to obtain an overall ranking. These rankings cover a range of capabilities, including human preference, knowledge and reasoning, mathematical skills, and coding ability.</description>
-      
-      
-      
-      
-      <category domain="https://blog.tennisatw.com/series/llm%E6%8E%92%E8%A1%8C%E6%A6%9C-llm-leaderboard/">LLM排行榜 - LLM Leaderboard</category>
-      
-      
-      <category domain="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/">随想 - Thoughts</category>
-      
-      <category domain="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/">技术 - Technology</category>
-      
-      
-      <comments>https://blog.tennisatw.com/post/90/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
       <title>夏末</title>
       <link>https://blog.tennisatw.com/post/89/</link>
       <guid>https://blog.tennisatw.com/post/89/</guid>
@@ -141,29 +72,6 @@
       
       
       <comments>https://blog.tennisatw.com/post/89/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>LLM排行榜：25/08/24 - LLMs Leaderboard：25/08/24</title>
-      <link>https://blog.tennisatw.com/post/88/</link>
-      <guid>https://blog.tennisatw.com/post/88/</guid>
-      <pubDate>Mon, 25 Aug 2025 05:57:11 GMT</pubDate>
-      
-      <description>本表格汇总了常用大语言模型在常用评测榜单上的表现，整合评测结果，得到综合排名。榜单涵盖人类偏好、知识与推理能力、数学能力、代码能力等多个方面。&lt;br&gt; This table summarizes the performance of popular large language models across well-known benchmark leaderboards, integrating evaluation results to obtain an overall ranking. These rankings cover a range of capabilities, including human preference, knowledge and reasoning, mathematical skills, and coding ability.</description>
-      
-      
-      
-      
-      <category domain="https://blog.tennisatw.com/series/llm%E6%8E%92%E8%A1%8C%E6%A6%9C-llm-leaderboard/">LLM排行榜 - LLM Leaderboard</category>
-      
-      
-      <category domain="https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/">随想 - Thoughts</category>
-      
-      <category domain="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/">技术 - Technology</category>
-      
-      
-      <comments>https://blog.tennisatw.com/post/88/#disqus_thread</comments>
       
     </item>
     

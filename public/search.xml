@@ -9371,45 +9371,6 @@ efforts.</li>
       </tags>
   </entry>
   <entry>
-    <title>LLM排行榜：25/08/24 - LLMs Leaderboard：25/08/24</title>
-    <url>//post/88/</url>
-    <content><![CDATA[<p><img src="zh.png" /></p>
-<p>本表格汇总了常用大语言模型在常用评测榜单上的表现，整合评测结果，得到综合排名。榜单涵盖人类偏好、知识与推理能力、数学能力、代码能力等多个方面。</p>
-<p><img src="en.png" /></p>
-<p>This table summarizes the performance of popular large language
-models across well-known benchmark leaderboards, integrating evaluation
-results to obtain an overall ranking. These rankings cover a range of
-capabilities, including human preference, knowledge and reasoning,
-mathematical skills, and coding ability.</p>
-<p><br></p>
-<p>25-08-24更新：</p>
-<p>GPT-5依旧断档领先，免费模型中最强的是Gemini-2.5-Pro，内地模型最强的是Qwen3-Thinking-235B。</p>
-<p>榜单中新增DeepSeek V3.1（深度求索DeepSeek），Exaone 4.0（LG AI
-Research），和Mistral-Medium（Mistral AI）。DeepSeek V3.1
-Thinking在代码和数学推理方面尤其强大。</p>
-<p>Claude Opus 4.1 Thinking在Text
-Arena中的分数是1451，非Thinking模型是1439。在其他榜单更新数据之后，这两个模型估计可以双双上榜，甚至能进前10。</p>
-<p>Update on August 25, 2024:</p>
-<p>GPT-5 remains far ahead of the competition. Among free models, Gemini
-2.5 Pro is currently the strongest.</p>
-<p>New entries on the leaderboard include DeepSeek V3.1 (by DeepSeek),
-Exaone 4.0 (from LG AI Research), and Mistral-Medium (by Mistral AI).
-Notably, DeepSeek V3.1 Thinking excels in code and mathematical
-reasoning.</p>
-<p>Claude Opus 4.1 Thinking scored 1451 in Text Arena, while the
-non-thinking variant scored 1439. Once the leaderboard data is fully
-updated, both versions are expected to make the list—potentially
-breaking into the top 10.</p>
-]]></content>
-      <categories>
-        <category>LLM排行榜 - LLM Leaderboard</category>
-      </categories>
-      <tags>
-        <tag>随想 - Thoughts</tag>
-        <tag>技术 - Technology</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>俳句 - 写俳句</title>
     <url>//post/78/</url>
     <content><![CDATA[<p>没有灵感啊</p>
@@ -9768,186 +9729,15 @@ id="附4一些榜单网站---appendix-4-some-benchmark-websites">附4：一些�
       </tags>
   </entry>
   <entry>
-    <title>LLM排行榜：25/08/31 - LLMs Leaderboard：25/08/31</title>
-    <url>//post/90/</url>
-    <content><![CDATA[<p><img src="zh.png" /></p>
-<p>本表格汇总了常用大语言模型在常用评测排行榜上的表现，并计算出综合排名。排行榜涵盖人类偏好、知识与推理能力、数学能力、代码能力等多个方面。</p>
-<p><br></p>
-<p><img src="en.png" /></p>
-<p>This table summarizes the performance of popular large language
-models across well-known benchmark leaderboards, integrating evaluation
-results to obtain an overall ranking. These rankings cover a range of
-capabilities, including human preference, knowledge and reasoning,
-mathematical skills, and coding ability.</p>
-<p><br></p>
-<p>本次更新新增了Vision Arena（与视觉相关的模型输出）和SWE
-Bench（软件工程以及代码错误修复）排行榜。新增了SWE
-Bench之后，Claude系列的模型整体排名上升了一截。此外，凭借着Text
-Arena和SWE Bench的超高分数，Claude Opus 4.1 不出意外地跻身前5。</p>
-<p>OpenAI，Anthropic，和Google仍然是顶尖LLM的“御三家”，除此之外，Deepseek，阿里通义，XAI也完全不容小觑。</p>
-<p><br></p>
-<p>This update introduces two new leaderboards: Vision Arena (focused on
-vision-related model outputs) and SWE Bench (focused on software
-engineering and code error correction). With the addition of the SWE
-Bench, the overall ranking of the Claude model series has noticeably
-improved. Thanks to its outstanding performance in both Text Arena and
-SWE Bench, Claude Opus 4.1 has unsurprisingly entered the top five.</p>
-<p>OpenAI, Anthropic, and Google remain the “Big Three” of top-tier
-LLMs, but Deepseek, Alibaba Tongyi, and xAI are also emerging as strong
-contenders.</p>
-]]></content>
-      <categories>
-        <category>LLM排行榜 - LLM Leaderboard</category>
-      </categories>
-      <tags>
-        <tag>随想 - Thoughts</tag>
-        <tag>技术 - Technology</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>大语言模型综合排行榜 - LLM Composite Rankings – 250907</title>
-    <url>//post/92/</url>
-    <content><![CDATA[<p><img src="zh.png" /></p>
-<p><img src="en.png" /></p>
-<p><br></p>
-<p>简介：</p>
-<p>本表格汇总了常用大语言模型在主流评测排行榜上的表现。评测范围涵盖：</p>
-<p>人类偏好（文字和视觉），知识与推理，数学能力，代码能力，和长文本推理。</p>
-<p>在整合各项评测结果的基础上，计算出综合排名。</p>
-<p>Overview:</p>
-<p>This chart compiles the performance of commonly used large language
-models across major benchmark leaderboards. Evaluation categories
-include:</p>
-<p>Human preference (text &amp; vision), Knowledge and reasoning,
-Mathematical ability, Coding capability, and Long-context reasoning.</p>
-<p>Based on the aggregated results from these evaluations, an overall
-ranking is produced.</p>
-<p><br></p>
-<p>更新：</p>
-<p>本周的排行榜新增了2个模型：xAI推出的grok-codefast-1和智谱AI推出的GLM
-4.5v。</p>
-<p>此外，claude-opus-4.1在许多榜单上的得分也得到了补全。</p>
-<p>Updates:</p>
-<p>This week's update introduces two new models: grok-codefast-1 from
-xAI and GLM 4.5v from Zhipu AI.</p>
-<p>Additionally, claude-opus-4.1 now has more complete scores across
-several leaderboards.</p>
-<p><br></p>
-<p>评价：</p>
-<p>最强的模型仍然是gpt-5，远超对手，在各项指标上几乎没有短板（至少它自己是这么说的）。</p>
-<p>最强的“免费”模型仍然是gemini-2.5-pro，最强的内地能用的模型仍然是阿里的qwen3-235b。开源模型的能力也毫不逊色。</p>
-<p>grok-codefast-1虽然是为代码任务优化的，但在综合排名上也表现不错。谁说厨子不能读兵法？</p>
-<p>claude并不是不可替代的。Claude Code可以用Gemini CLI或Codex
-CLI替代。本人使用起来手感都差不多。</p>
-<p>Assessment:</p>
-<p>The top-performing model remains GPT-5, far ahead of the competition
-with virtually no weaknesses (according to itself).</p>
-<p>The best "free" model is still Gemini 2.5 Pro. Open-source models are
-also showing impressive capabilities.</p>
-<p>Though grok-codefast-1 is optimized for coding, it holds its own in
-the overall rankings.</p>
-<p><br></p>
-<p><a
-href="https://github.com/Tennisatw/LLM-Leaderboard">项目地址</a></p>
-<p><a href="https://github.com/Tennisatw/LLM-Leaderboard">Project
-link</a></p>
-]]></content>
-      <categories>
-        <category>LLM排行榜 - LLM Leaderboard</category>
-      </categories>
-      <tags>
-        <tag>随想 - Thoughts</tag>
-        <tag>技术 - Technology</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>大语言模型综合排行榜 - LLM Composite Rankings – 250914</title>
-    <url>//post/93/</url>
-    <content><![CDATA[<p><img src="zh.png" /></p>
-<p><br></p>
-<p>简介：</p>
-<p>本表格汇总了常用大语言模型在主流评测排行榜上的表现。评测范围涵盖：</p>
-<p>人类偏好（文字和视觉），知识与推理，数学能力，代码能力，和长文本推理。</p>
-<p>在整合各项评测结果的基础上，计算出综合排名。</p>
-<p><br></p>
-<p>更新：</p>
-<p>本周阿里通义千问新更新的模型中，qwen3-80b，qwen3-max和qwen3-30b上榜了。qwen3-80b仅有80亿参数，但表现相当不错。</p>
-<p>Hugging
-Face在上周发布的的hermes-4-405b-reasoning也上榜了，不过没有特别亮眼的表现。</p>
-<p>综合排名算法进行了微调：结合 Z-score 平均排名、Borda 计数法和 SVD
-插补取均值 三种方法，使结果更合理稳健。</p>
-<p>此外，微调了一下外观（在gpt-5的帮助下），希望它能稍稍好看一点。</p>
-<p><br></p>
-<p>评价：</p>
-<p>综合实力最强的模型仍然是gpt-5，远超所有的对手。订阅openai的pro会员（200$/月）即可使用。只要预算够用，无脑冲这个。</p>
-<p>最强的“免费”模型仍然是gemini-2.5-pro，可以在
-https://aistudio.google.com/
-网站试用。同时该站点也可体验目前地表最强的文生图模型nano-banana。</p>
-<p>最强的国内能用的模型仍然是阿里的qwen3-235b。有钱真的是为所欲为啊。此外，虽然其综合排名不是第一，但是“中文能力显著优于绝大多数国外大模型，写作时更符合中文逻辑结构和修辞习惯”（qwen3-235b自评）。日常生活可以考虑用它来当作主力模型。</p>
-<p>编程/代码能力纸面上最强的是grok-4。但若综合考量工具调用、系统集成、上下文长度，以及使用手感，claude
-code还是很舒服的。</p>
-<p>各开源模型的能力也毫不逊色。尤其是qwen3-30b，在能力不逊于claude-3.7-sonnet的情况下，参数量已经低到可以在本地台式机上跑了（虽然还是很吃显卡）。</p>
-<p><br></p>
-<p>本项目地址：https://github.com/Tennisatw/LLM-Leaderboard
-。如果觉得本图有帮助，欢迎点个star。</p>
-<p><br></p>
-<p><img src="en.png" /></p>
-<p>Overview:</p>
-<p>This table summarizes the performance of commonly used large language
-models across major benchmark rankings. The evaluation covers: Human
-preference (text and vision), Knowledge and reasoning, Mathematical
-ability, Coding ability, Long-context reasoning.</p>
-<p>An overall ranking is calculated by aggregating results from these
-benchmarks.</p>
-<p><br></p>
-<p>Updates:</p>
-<p>This week, several updated models from Alibaba's Qwen series made the
-list: Qwen3-80B, Qwen3-Max, and Qwen3-30B. Notably, Qwen3-80B has only 8
-billion parameters but performs impressively well.</p>
-<p>Hugging Face’s recently released Hermes-4-405B-Reasoning also joined
-the rankings, though it didn’t stand out significantly.</p>
-<p>The overall ranking algorithm has been fine-tuned, now incorporating
-Z-score average ranking, Borda count, and SVD imputation with mean
-averaging, making the results more balanced and robust.</p>
-<p>The visual design has been slightly improved (with the help of
-GPT-5)—hopefully it looks a bit nicer now.</p>
-<p><br></p>
-<p>Evaluation:</p>
-<p>GPT-5 remains the most powerful model overall, far surpassing all
-competitors. It's available via an OpenAI Pro subscription at
-$200/month. If budget isn't a concern, this is the go-to choice—no
-hesitation needed.</p>
-<p>The strongest free model is still Gemini 2.5 Pro, which can be tested
-at https://aistudio.google.com/ . The site also hosts Nano-Banana,
-currently the most powerful text-to-image model available.</p>
-<p>The best model available domestically in China remains Qwen3-235B
-from Alibaba. As they say, "money talks." While it’s not ranked #1
-overall, it claims to offer superior Chinese language capabilities,
-producing writing that aligns better with Chinese logic and rhetorical
-norms (according to Qwen3-235B itself). For daily use in Chinese, it’s a
-strong contender as your main model.</p>
-<p>On paper, Grok-4 leads in coding ability, but when considering tool
-use, system integration, context length, and overall user experience,
-Claude Code still feels smoother.</p>
-<p>Open-source models are holding their own. In particular, Qwen3-30B
-matches the capabilities of Claude 3.7 Sonnet, while being lightweight
-enough to run on a desktop machine (though still GPU-intensive).</p>
-<p><br></p>
-<p>Project link: https://github.com/Tennisatw/LLM-Leaderboard . If you
-find this chart helpful, please give it a star.</p>
-]]></content>
-      <categories>
-        <category>LLM排行榜 - LLM Leaderboard</category>
-      </categories>
-      <tags>
-        <tag>随想 - Thoughts</tag>
-        <tag>技术 - Technology</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>使用codex进行vibe-coding的过程记录</title>
+    <title>使用codex进行Vibe-Coding的过程记录 - Process Log of Vibe-Coding with Codex</title>
     <url>//post/94/</url>
-    <content><![CDATA[<p>codex是一个非常好用的项目辅助工具，功能十分强大。前一段时间，本人使用vscode的codex插件，将一个R语言的生信项目：Iris，用python进行了重构。</p>
+    <content><![CDATA[<p>codex是一个非常好用的项目辅助工具，功能十分强大。</p>
+<p>前一段时间，本人使用vscode的codex插件，将一个R语言的生信项目：<em>Iris</em>，用python进行了重构。</p>
+<p>Codex is an exceptionally powerful and user-friendly tool for project
+assistance.</p>
+<p>Some time ago, I used the Codex extension in VSCode to refactor a
+bioinformatics project originally written in R — <em>Iris</em> — into
+Python.</p>
 <p><br></p>
 <p>具体流程：</p>
 <ol type="1">
@@ -9960,6 +9750,22 @@ find this chart helpful, please give it a star.</p>
 </ul></li>
 <li>逐块同步调试python和R代码，确保python代码能跑通，且关键变量的值与R代码一致</li>
 </ol>
+<p>Detailed Workflow:</p>
+<ol type="1">
+<li>Read through the R code to understand its structure and logic.</li>
+<li>Manually set up a basic Python project framework, including creating
+necessary folders and files, and defining function names.</li>
+<li>Break down the R code manually into functional units (typically
+functions or blocks of about 20 lines).</li>
+<li>Send each block to the Codex extension to transcribe it into Python,
+and insert the output into the appropriate place in the project.
+<ul>
+<li><em>Note: Always back up the project before using Codex!</em></li>
+</ul></li>
+<li>Debug the Python and R code in parallel, block by block, ensuring
+the Python version runs correctly and that key variable values match
+those in the R version.</li>
+</ol>
 <p><br></p>
 <p>难点：</p>
 <ol type="1">
@@ -9967,6 +9773,29 @@ find this chart helpful, please give it a star.</p>
 <li>使用稀疏矩阵储存数据，需要决定用什么格式/怎么处理行列名/怎么修改代码。python没有和R的sparseMatrix完全对应的类型，所以需要自己实现class。</li>
 <li>调试很难，因为IRIS包已经被编译好了。所以只能使用github上的源码进行调试。出现bug时，由于不懂源代码的逻辑，所以很难看清楚是什么问题（不过可以让codex分析代码）。</li>
 <li>IRIS算法使用了很多生信的专业知识，比如RNA组学，基因表达矩阵等。还是用了一些机器学习的知识。本人知识储备实在是有限，只能靠codex帮忙理解。</li>
+</ol>
+<p>Challenges Encountered:</p>
+<ol type="1">
+<li>Understanding the IRIS Algorithm Framework One major difficulty was
+grasping the overall structure of the IRIS algorithm — what each
+function was actually doing. To be honest, I still didn’t fully
+understand it even by the time the project was completed.</li>
+<li>Handling Sparse Matrices The original code stored data using sparse
+matrices, which required decisions on the appropriate format, how to
+handle row and column names, and how to adapt the code. Since Python
+doesn’t have a direct equivalent of R’s sparseMatrix, I had to implement
+a custom class to replicate its functionality.</li>
+<li>Debugging Compiled Code Debugging was tough because the IRIS R
+package is precompiled, making it hard to trace the code behavior
+directly. I had to rely on the source code from GitHub for debugging.
+When bugs appeared, I often couldn’t figure out the root cause due to
+limited understanding of the original logic — though I could sometimes
+ask Codex to help analyze the code.</li>
+<li>Domain-Specific Knowledge The IRIS algorithm involves a lot of
+domain-specific knowledge in bioinformatics, such as RNA sequencing and
+gene expression matrices. It also incorporates machine learning
+concepts. With limited background in these areas, I often had to rely on
+Codex to interpret and explain the code to me.</li>
 </ol>
 <p><br></p>
 <p>一些体会：</p>
@@ -9978,6 +9807,23 @@ coding过程中是不需要本人懂细节，懂流程的。人需要做的事�
 <li>vibe
 coding的提示词不需要多么精良。重要的是清晰，且提供必要的上下文。</li>
 <li>codex会犯错。遇到错误时重复追问几次，可能会得到更好的结果。</li>
+</ol>
+<p>Reflections and Takeaways:</p>
+<ol type="1">
+<li>Vibe Coding is generally reliable, thanks to the growing
+capabilities of large language models. At the very least, GPT-5-Codex is
+already capable of understanding requirements and generating code
+accordingly.</li>
+<li>During vibe coding, it’s not necessary for the user to fully grasp
+the technical details or the overall process. Your role is mainly to
+break down tasks, guide Codex using prompts, run the code, and provide
+feedback for the next iteration. Of course, if you do understand the
+details, the whole process feels more reassuring and controllable.</li>
+<li>The prompts used in vibe coding don’t have to be finely crafted.
+What matters most is clarity and the inclusion of relevant context.</li>
+<li>Codex can and does make errors. When that happens, simply asking
+follow-up questions or trying a few different phrasings can often lead
+to better results.</li>
 </ol>
 ]]></content>
       <tags>
