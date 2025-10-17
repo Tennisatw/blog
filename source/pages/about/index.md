@@ -36,6 +36,12 @@ Email: tennisbot0@gmail.com
 
 <br>
 
+<p class="tennisbot" id="哭哭">如果加载Tennisbot花费太多时间，或者影响了正常阅读，或者只是不想看到她，可以将鼠标放到聊天框上，然后点击弹出的“关闭”按钮来隐藏她，此时左下角会出现一个蓝紫色标签。如果想再次看到Tennisbot，只需点击标签即可。</p>
+
+<p class="tennisbot" id="Sob sob">If loading Tennisbot takes too much time, interferes with your reading, or if you simply do not want to see it, you can hide it by hovering your mouse over the chatbox and clicking on the "Close" button that appears. At this point, a purple-blue tag will appear in the lower left corner. If you wish to see Tennisbot again, just click on the tag. </p>
+
+<br>
+
 ### Discord 群 - Discord Group
 
 本博客有一个读者粉丝交流的[Discord群](https://discord.gg/trCwuPYvG2)，欢迎加入。可以在群里与Tennisbot或我聊天，中英文均可。
@@ -66,9 +72,9 @@ Besides, if you've read this far without closing the page, you must be one of th
 
 <br>
 
-本博客使用Hexo制作，如果图片显示不出来，请刷新一下页面。
+本博客使用Hexo制作，如果图片显示不出来，或者显示错误，请刷新一下页面。
 
-The blog is built with Hexo—if images fail to load, try refreshing the page.
+The blog is built with Hexo—if images fail to load, or display incorrectly, try refreshing the page.
 
 <br>
 
@@ -81,12 +87,6 @@ Most of the articles on this blog are written in an interwoven mix of Chinese an
 此外，左上角（电脑版）或上方（手机版）有google翻译插件，你会需要它的。
 
 Additionally, there's a Google Translate plugin at the top left corner (desktop version) or top (mobile version) of the page. if needed.
-
-<br>
-
-<p class="tennisbot" id="哭哭">如果加载Tennisbot花费太多时间，或者影响了正常阅读，或者只是不想看到她，可以将鼠标放到聊天框上，然后点击弹出的“关闭”按钮来隐藏她，此时左下角会出现一个蓝紫色标签。如果想再次看到Tennisbot，只需点击标签即可。</p>
-
-<p class="tennisbot" id="Sob sob">If loading Tennisbot takes too much time, interferes with your reading, or if you simply do not want to see it, you can hide it by hovering your mouse over the chatbox and clicking on the "Close" button that appears. At this point, a purple-blue tag will appear in the lower left corner. If you wish to see Tennisbot again, just click on the tag. </p>
 
 <br>
 
