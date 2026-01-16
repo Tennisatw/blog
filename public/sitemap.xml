@@ -2,16 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.tennisatw.com/about/</loc>
+    <loc>https://blog.tennisatw.com/post/93/</loc>
     
-    <lastmod>2025-10-17</lastmod>
+    <lastmod>2026-01-16</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.tennisatw.com/post/94/</loc>
+    <loc>https://blog.tennisatw.com/post/-19/</loc>
+    
+    <lastmod>2025-10-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.tennisatw.com/post/92/</loc>
+    
+    <lastmod>2025-10-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.tennisatw.com/about/</loc>
     
     <lastmod>2025-10-17</lastmod>
     
@@ -41,15 +59,6 @@
     <loc>https://blog.tennisatw.com/post/91/</loc>
     
     <lastmod>2025-09-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.tennisatw.com/post/-19/</loc>
-    
-    <lastmod>2025-09-20</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1057,7 +1066,7 @@
 
   <url>
     <loc>https://blog.tennisatw.com/</loc>
-    <lastmod>2025-10-17</lastmod>
+    <lastmod>2026-01-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -1065,56 +1074,56 @@
   
   <url>
     <loc>https://blog.tennisatw.com/tags/%E8%AF%97-poem/</loc>
-    <lastmod>2025-10-17</lastmod>
+    <lastmod>2026-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.tennisatw.com/tags/%E9%9A%8F%E6%83%B3-thoughts/</loc>
-    <lastmod>2025-10-17</lastmod>
+    <lastmod>2026-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/</loc>
-    <lastmod>2025-10-17</lastmod>
+    <lastmod>2026-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.tennisatw.com/tags/%E6%95%8F%E6%84%9F-sensitive/</loc>
-    <lastmod>2025-10-17</lastmod>
+    <lastmod>2026-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/</loc>
-    <lastmod>2025-10-17</lastmod>
+    <lastmod>2026-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.tennisatw.com/tags/%E6%8E%A8%E8%8D%90-recommendation/</loc>
-    <lastmod>2025-10-17</lastmod>
+    <lastmod>2026-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.tennisatw.com/tags/%E6%97%A5%E5%B8%B8-daily/</loc>
-    <lastmod>2025-10-17</lastmod>
+    <lastmod>2026-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.tennisatw.com/tags/%E6%96%87%E7%AB%A0%E7%B2%BE%E8%AF%BB-paper-reading/</loc>
-    <lastmod>2025-10-17</lastmod>
+    <lastmod>2026-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -1123,21 +1132,21 @@
   
   <url>
     <loc>https://blog.tennisatw.com/series/sd-webui/</loc>
-    <lastmod>2025-10-17</lastmod>
+    <lastmod>2026-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.tennisatw.com/series/%E5%85%83%E9%94%AE%E6%94%BF-meta-political-discussion/</loc>
-    <lastmod>2025-10-17</lastmod>
+    <lastmod>2026-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.tennisatw.com/series/llm%E6%8E%92%E8%A1%8C%E6%A6%9C-llm-leaderboard/</loc>
-    <lastmod>2025-10-17</lastmod>
+    <lastmod>2026-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

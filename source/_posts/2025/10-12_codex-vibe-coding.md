@@ -1,6 +1,6 @@
 ---
 title: 使用codex进行Vibe-Coding的过程记录 - Process Log of Vibe-Coding with Codex
-permalink: post/94/
+permalink: post/92/
 excerpt: <!-- -->
 date: 2025-10-12 21:48:33
 tags: 

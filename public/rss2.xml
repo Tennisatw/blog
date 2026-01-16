@@ -15,13 +15,34 @@
     <atom:link href="https://blog.tennisatw.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Fri, 17 Oct 2025 05:35:24 GMT</pubDate>
+    <pubDate>Fri, 16 Jan 2026 07:58:28 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
+      <title>Tennisbot (v7)：多会话多 Agent 个人助手的架构与开发日志</title>
+      <link>https://blog.tennisatw.com/post/93/</link>
+      <guid>https://blog.tennisatw.com/post/93/</guid>
+      <pubDate>Fri, 16 Jan 2026 07:48:31 GMT</pubDate>
+      
+      <description>&lt;!-- --&gt;</description>
+      
+      
+      
+      
+      
+      <category domain="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/">编程 - Programming</category>
+      
+      <category domain="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/">技术 - Technology</category>
+      
+      
+      <comments>https://blog.tennisatw.com/post/93/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>使用codex进行Vibe-Coding的过程记录 - Process Log of Vibe-Coding with Codex</title>
-      <link>https://blog.tennisatw.com/post/94/</link>
-      <guid>https://blog.tennisatw.com/post/94/</guid>
+      <link>https://blog.tennisatw.com/post/92/</link>
+      <guid>https://blog.tennisatw.com/post/92/</guid>
       <pubDate>Mon, 13 Oct 2025 03:48:33 GMT</pubDate>
       
       <description>&lt;!-- --&gt;</description>
@@ -33,7 +54,7 @@
       <category domain="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/">编程 - Programming</category>
       
       
-      <comments>https://blog.tennisatw.com/post/94/#disqus_thread</comments>
+      <comments>https://blog.tennisatw.com/post/92/#disqus_thread</comments>
       
     </item>
     
