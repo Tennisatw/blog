@@ -15,7 +15,7 @@
     <atom:link href="https://blog.tennisatw.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Fri, 16 Jan 2026 07:58:28 GMT</pubDate>
+    <pubDate>Fri, 16 Jan 2026 07:59:57 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -24,7 +24,7 @@
       <guid>https://blog.tennisatw.com/post/93/</guid>
       <pubDate>Fri, 16 Jan 2026 07:48:31 GMT</pubDate>
       
-      <description>&lt;!-- --&gt;</description>
+      <description>Tennisbot v7 是一个基于 OpenAI Agents SDK 的多会话、多 Agent 个人助手。本文从入口与目录结构讲起，沿着 WebUI/CLI 两条执行链路下钻到会话存储、handoff、工具与多模态输入，记录它如何在“可自修”的约束下迭代到可用形态，并给出关键设计取舍与踩坑复盘。</description>
       
       
       

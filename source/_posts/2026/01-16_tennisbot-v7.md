@@ -1,7 +1,7 @@
 ---
 title: Tennisbot (v7)：多会话多 Agent 个人助手的架构与开发日志
 permalink: post/93/
-excerpt: <!-- -->
+excerpt: Tennisbot v7 是一个基于 OpenAI Agents SDK 的多会话、多 Agent 个人助手。本文从入口与目录结构讲起，沿着 WebUI/CLI 两条执行链路下钻到会话存储、handoff、工具与多模态输入，记录它如何在“可自修”的约束下迭代到可用形态，并给出关键设计取舍与踩坑复盘。
 date: 2026-01-16 00:48:31
 tags:
  - 编程 - Programming
