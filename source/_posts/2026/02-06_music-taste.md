@@ -106,7 +106,7 @@ tags: 日常 - Daily
 |电音-Avicii|The Nights|Avicii|2024s1|A神的氛围感无敌了|
 |音游-leaf|Wizdomiot|leaf|2024s2|artcore，旋律优美，不过这首歌不是通常leaf的风格|
 |Pop-funk|Forget Me Nots|Patrice Rushen|2024s2|经典funk神曲|
-|音游-Dubstep|Rebirth|3R2|SIHanatsuka|2024s2|很有氛围感，爽|
+|音游-Dubstep|Rebirth|3R2+SIHanatsuka|2024s2|很有氛围感，爽|
 |Pop-The Weeknd|I Feel It Coming|The Weeknd ft. Daft Punk|2024s3|星|
 |Kpop-LOL|Legend never die|LOL|2024s3|好听|
 |音游-Akira complex|Ether Strike|Akira complex|2024s3|华丽，有Akira complex独有的风格|
