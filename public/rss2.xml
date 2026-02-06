@@ -15,8 +15,27 @@
     <atom:link href="https://blog.tennisatw.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Fri, 16 Jan 2026 07:59:57 GMT</pubDate>
+    <pubDate>Fri, 06 Feb 2026 11:07:02 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>我的音乐品味</title>
+      <link>https://blog.tennisatw.com/post/94/</link>
+      <guid>https://blog.tennisatw.com/post/94/</guid>
+      <pubDate>Fri, 06 Feb 2026 07:43:43 GMT</pubDate>
+      
+      <description>&lt;!-- --&gt;</description>
+      
+      
+      
+      
+      
+      <category domain="https://blog.tennisatw.com/tags/%E6%97%A5%E5%B8%B8-daily/">日常 - Daily</category>
+      
+      
+      <comments>https://blog.tennisatw.com/post/94/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Tennisbot (v7)：多会话多 Agent 个人助手的架构与开发日志</title>
