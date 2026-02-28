@@ -22,9 +22,9 @@ tags: 日常 - Daily
 |音游-轻电音|Moonlight Of Sand Castle|旅人E（Ebico）|2017s1|泪崩，联想《阵与梦》|
 |音游-mmry|Variance|mmry|2017s1|piano trance，旋律好听|
 |音游-Street|Sakure Fubuki|Street|2017s2|和风电音，酷炫的drumstep，很神|
-|动漫-trance|鸟之诗（初音版）|折户伸治+初音|2017s2|真正的细糠，感动得啥也不是|
+|动漫-trance|鸟之诗（初音版）|折户伸治+初音|2017s2|神曲，真正的细糠，感动得啥也不是|
 |动漫-fripSide|Heaven is a Place on Earth|fripSide|2017s2|旋律好听感人|
-|音游-Happy hardcore|Freedom Dive|xi|2017s2|神曲，旋律极为耐听|
+|音游-Happy hardcore|Freedom Dive|xi|2017s2|神曲，音游界的不败魔王，旋律极为耐听|
 |音游-vk克|花水月|vk克|2017s3|旋律舒适，古风十足|
 |音游-TQ☆|Revival|TQ☆|2017s3|uplifting trance，好听，TQ☆的很多歌我都很喜欢|
 |音游-和风电音|Oriens|Ginkiha|2017s3|好听|
@@ -42,7 +42,7 @@ tags: 日常 - Daily
 |音游-xi-劲爆|Solar Storm|xi|2019s1|hardcore？，虽然劲爆，但旋律仍然极为耐听|
 |音游-钢琴摇滚|Oceanus|cosMo@暴走P|2019s1|旋律优美，暴走P实在是天才|
 |音游-Laur-早期|PRAGMATISM|Laur|2019s1|电音artcore，旋律性极强，少量的电音用的也是机器舒服|
-|音游-xi-抒情|Ascension to Heaven|xi|2019s1|超神曲，breakcore，抒情+叙事感无敌，泪崩，我的微信铃|
+|音游-xi-抒情|Ascension to Heaven|xi|2019s1|本命超神曲，breakcore，抒情+叙事感无敌，泪崩。只要你喜欢xi，我们就是一辈子的好朋友|
 |音游-onoken|Alexandrite|onoken|2019s2|artcore，旋律优美。onoken的很多歌我都喜欢。|
 |音游-USAO|Cyaegha|USAO|2019s2|frenchcore，有点东西的|
 |音游-sound souler|Paradise|sound souler|2019s2|小swing，不过这首不是sound souler最常见的风格|
@@ -52,7 +52,7 @@ tags: 日常 - Daily
 |音游-流行改编|漂流|THE SxPLAY(菅原紗由理)+KIVΛ|2019s3|神曲，难以形容的震撼，联想台湾生活|
 |东方-奇幻|fairy stage|C-CLAYS|2019s4|奇幻感十足，联想台湾生活|
 |音游-Jun Kuroda-劲爆|White Dwarf Star|Jun Kuroda|2020s1|劲爆感，drum and bass的神|
-|音游-Junk|Life is Piano|Junk|2020s1|钢琴小曲，旋律无敌|
+|音游-Junk|Life is Piano|Junk|2020s1|钢琴小曲，旋律无敌，微信铃|
 |音游-Laur-中期|Vindication|Laur|2020s1|神曲，电音artcore的真神|
 |音游-劲爆氛围|black lotus|wa.|2020s1|暗黑氛围感，疾走感|
 |音游-xi-华丽|Agartha|xi|2020s2|artcore，旋律优美，华丽感十足，心目中xi的代表作|
@@ -82,6 +82,7 @@ tags: 日常 - Daily
 |音游-kpop-warak|Flight|warak|2022s2|kpop中的非常抒情的小曲|
 |动漫-funk|Lost in Paradise|ALI|2022s2|神曲，这funk太有感觉了|
 |音游-猫叉master|Scars of FAUNA|猫叉master|2022s2|artcore，旋律优美至极|
+|音游-void|Testify|void|2022s2|神曲，超高级制作，void nb，arcaea能约到这东西，nb|
 |音游-artcore|雪月夜钟|guna|2022s2|artcore，旋律和氛围都很棒|
 |流行-funk|Sunny|Boney M.|2022s3|神曲，经典老funk|
 |音游-sobrem|Fauxmost|Lollipop+Sobrem|2022s3|有点小爵士小电音的钢琴|
@@ -96,7 +97,7 @@ tags: 日常 - Daily
 |音游-techno|ONE STAR DISCO|knot|2023s2|techno+disco的感觉很抓耳|
 |音游-RAVE|Get 'em up to R.A.V.E.|Disconation|2023s2|RAVE好听|
 |流行-Clean Bandit|Rather Be|Clean Bandit ft. Jess Glynne|2023s3|古典+house，有点意思|
-|音游-saaa+*wakadori|アスターワンダー|saaa+*wakadori|2023s3|nb的合作，这两人的风格融合得很好|
+|音游-saaa+*wakadori|アスターワンダー|saaa+*wakadori|2023s3|neurofunk+小爵士，nb的合作，这两人的风格融合得很好|
 |音游-aran|Mazy Metroplex|aran|2023s3|有点future bounce的电音，很有趣|
 |流行-Image Dragons|Shots (Broiler Remix)|Image Dragons|2023s4|神曲，有趣的小电音，旋律也很棒|
 |流行-DNCE|Cake by the Ocean|DNCE|2023s4|好听的小曲，有点disco-funk感觉|
@@ -123,24 +124,28 @@ tags: 日常 - Daily
 
 <br>
 
-我会因为三个原因喜欢一首歌。
+我喜欢一首歌主要有3个原因：
 
-首先，我相当喜欢旋律华丽优美的，或者说，旋律基本是我听歌的最重要的标准。
+旋律华丽优美，编曲复杂是我的金标准。一首歌旋律不行，编曲没意思，没味道，我基本上把它判死刑。这也是我不太喜欢听kpop的原因。
 
 此外，我希望它有点“感觉”，比如氛围感十足，或是炸裂，或是抒情，总之传达的情绪要到位。
 
-除此之外，我希望它有一些记忆点。比如说，节奏/配乐/编曲新颖，或者有故事性。有点“怪”的我最喜欢。
+除此之外，我希望它有一些记忆点。比如说，节奏/配乐/编曲新颖。最好带点“怪”味。
+
+Vindication(laur) 基本上满足了我对一首歌的所有要求。
 
 <br>
 
-我最喜欢的音乐算是电音，电音中我又非常喜欢artcore，dnb，piano trance，future funk，techno等类型。
+我最喜欢的音乐算是电音，日系电音我听着很舒服。欧美电音总是质量很高，但感觉有点过于千篇一律了。
 
-此外，爵士和放克我都挺喜欢的。
+日系电音中我又非常喜欢artcore，dnb，piano trance，future funk，techno等类型。
 
-摇滚和流行也不算讨厌。
+除了电音之外，小爵士和放克我都挺喜欢的，都属于“很有味道”的类型。但是太早期/太硬核的爵士我欣赏不来。
 
-我不太喜欢说唱，Eminem的除外。我找不到感觉。一般的流行我也不太喜欢，感觉没什么意思。
+摇滚和流行也不算讨厌，但是喜欢的不多，主要还是因为旋律。
 
-我也不太喜欢太炸裂的hardcore，或者speedcore。
+我不太喜欢说唱，Eminem的除外，因为一般的说唱让我找不到感觉。一般的流行我也不太喜欢，感觉没什么意思。
 
-kawaii core之类的非常二次元的歌曲，当今的番剧op/ed，如果不是特别抓耳，我也不喜欢，听腻了。
+我也不太喜欢太炸裂的hardcore，或者speedcore，或者是那种kawaii core。
+
+之类的非常二次元的歌曲，当今的番剧op/ed，如果不是特别抓耳，我也不喜欢，听腻了。
