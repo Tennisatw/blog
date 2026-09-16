@@ -15,8 +15,88 @@
     <atom:link href="https://blog.tennisatw.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Tue, 17 Mar 2026 08:21:35 GMT</pubDate>
+    <pubDate>Wed, 16 Sep 2026 04:43:34 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Agent 任务失败的归因与统计</title>
+      <link>https://blog.tennisatw.com/post/99/</link>
+      <guid>https://blog.tennisatw.com/post/99/</guid>
+      <pubDate>Tue, 15 Sep 2026 06:00:00 GMT</pubDate>
+      
+      <description>在一批计算化学 Agent 任务中，71 次运行没有提交报告，其中大部分被归为工程或记录问题。本文记录几类失败原因，以及统计任务成绩时需要注意的口径。</description>
+      
+      
+      
+      
+      
+      <category domain="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/">编程 - Programming</category>
+      
+      <category domain="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/">技术 - Technology</category>
+      
+      
+      <comments>https://blog.tennisatw.com/post/99/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>LLM 判分的稳定性与准确性</title>
+      <link>https://blog.tennisatw.com/post/98/</link>
+      <guid>https://blog.tennisatw.com/post/98/</guid>
+      <pubDate>Tue, 15 Sep 2026 06:00:00 GMT</pubDate>
+      
+      <description>重复运行得到相近的评审结果，只能说明判分比较稳定。结合计算化学评测中的数据，讨论稳定性、共同漏检和裁判核验。</description>
+      
+      
+      
+      
+      
+      <category domain="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/">技术 - Technology</category>
+      
+      
+      <comments>https://blog.tennisatw.com/post/98/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>LLM 评审结果的归并与比较</title>
+      <link>https://blog.tennisatw.com/post/97/</link>
+      <guid>https://blog.tennisatw.com/post/97/</guid>
+      <pubDate>Tue, 15 Sep 2026 06:00:00 GMT</pubDate>
+      
+      <description>不同 LLM 列出的问题数量，既受发现能力影响，也受拆分习惯影响。先将评审结果归并成问题矩阵，才能比较它们查到了什么、漏掉了什么。</description>
+      
+      
+      
+      
+      
+      <category domain="https://blog.tennisatw.com/tags/%E7%BC%96%E7%A8%8B-programming/">编程 - Programming</category>
+      
+      <category domain="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/">技术 - Technology</category>
+      
+      
+      <comments>https://blog.tennisatw.com/post/97/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>计算化学 Agent 的报告核验</title>
+      <link>https://blog.tennisatw.com/post/96/</link>
+      <guid>https://blog.tennisatw.com/post/96/</guid>
+      <pubDate>Tue, 15 Sep 2026 06:00:00 GMT</pubDate>
+      
+      <description>计算化学 Agent 的报告可能与实际计算不符。本文通过两个例子，说明为什么需要分别检查任务完成度和报告忠实度，并追溯原始计算文件。</description>
+      
+      
+      
+      
+      
+      <category domain="https://blog.tennisatw.com/tags/%E6%8A%80%E6%9C%AF-technology/">技术 - Technology</category>
+      
+      
+      <comments>https://blog.tennisatw.com/post/96/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>修行</title>
@@ -29,6 +109,8 @@
       
       
       
+      
+      <category domain="https://blog.tennisatw.com/tags/%E8%AF%97-poem/">诗 - Poem</category>
       
       
       <comments>https://blog.tennisatw.com/post/95/#disqus_thread</comments>
